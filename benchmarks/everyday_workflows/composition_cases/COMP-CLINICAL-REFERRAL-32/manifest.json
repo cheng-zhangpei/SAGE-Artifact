@@ -1,0 +1,11 @@
+{
+  "id": "COMP-CLINICAL-REFERRAL-32",
+  "family": "clinical_referral",
+  "dispatch_count": 32,
+  "total_actions": 39,
+  "dangerous_probes": 211,
+  "benign_probes": 173,
+  "direct_coverage_certificate": "SUFFICIENT_SAFE",
+  "public_input_sha256": "d2fe216ed9d11533c3256688006bc7d2529d7ee23ff0837520eaa855f41c656c",
+  "confirmed_model_sha256": "e4278aed8d00f9041a7b5334665ccac52360198c7dd4fd04742410cb1cf08991"
+}

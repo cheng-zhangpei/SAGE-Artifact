@@ -1,0 +1,300 @@
+[
+  {
+    "agent": "onboarding",
+    "tool": "collect",
+    "params": {
+      "part": "identity"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "collect",
+    "params": {
+      "part": "identity"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "collect",
+    "params": {
+      "part": "identity"
+    },
+    "labels": [
+      "RISK"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "collect",
+    "params": {
+      "part": "identity"
+    },
+    "labels": [
+      "PII",
+      "RISK"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "risk_team",
+    "tool": "collect",
+    "params": {
+      "part": "risk"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "risk_team",
+    "tool": "collect",
+    "params": {
+      "part": "risk"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "risk_team",
+    "tool": "collect",
+    "params": {
+      "part": "risk"
+    },
+    "labels": [
+      "RISK"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "risk_team",
+    "tool": "collect",
+    "params": {
+      "part": "risk"
+    },
+    "labels": [
+      "PII",
+      "RISK"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "bank",
+    "tool": "route",
+    "params": {
+      "archive": "internal",
+      "destination": "regulator"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "bank",
+    "tool": "route",
+    "params": {
+      "archive": "internal",
+      "destination": "regulator"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "bank",
+    "tool": "route",
+    "params": {
+      "archive": "internal",
+      "destination": "regulator"
+    },
+    "labels": [
+      "RISK"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "bank",
+    "tool": "route",
+    "params": {
+      "archive": "internal",
+      "destination": "regulator"
+    },
+    "labels": [
+      "PII",
+      "RISK"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "bank",
+    "tool": "route",
+    "params": {
+      "archive": "outsourced",
+      "destination": "regulator"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "bank",
+    "tool": "route",
+    "params": {
+      "archive": "outsourced",
+      "destination": "regulator"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "bank",
+    "tool": "route",
+    "params": {
+      "archive": "outsourced",
+      "destination": "regulator"
+    },
+    "labels": [
+      "RISK"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "bank",
+    "tool": "route",
+    "params": {
+      "archive": "outsourced",
+      "destination": "regulator"
+    },
+    "labels": [
+      "PII",
+      "RISK"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "bank",
+    "tool": "route",
+    "params": {
+      "archive": "internal",
+      "destination": "customer"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "bank",
+    "tool": "route",
+    "params": {
+      "archive": "internal",
+      "destination": "customer"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "bank",
+    "tool": "route",
+    "params": {
+      "archive": "internal",
+      "destination": "customer"
+    },
+    "labels": [
+      "RISK"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "bank",
+    "tool": "route",
+    "params": {
+      "archive": "internal",
+      "destination": "customer"
+    },
+    "labels": [
+      "PII",
+      "RISK"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "bank",
+    "tool": "route",
+    "params": {
+      "archive": "outsourced",
+      "destination": "customer"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "bank",
+    "tool": "route",
+    "params": {
+      "archive": "outsourced",
+      "destination": "customer"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "bank",
+    "tool": "route",
+    "params": {
+      "archive": "outsourced",
+      "destination": "customer"
+    },
+    "labels": [
+      "RISK"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "bank",
+    "tool": "route",
+    "params": {
+      "archive": "outsourced",
+      "destination": "customer"
+    },
+    "labels": [
+      "PII",
+      "RISK"
+    ],
+    "candidate": true,
+    "completion": true
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "name": "s1_full",
+  "description": "Enterprise Support & Ops System",
+  "agents": ["support", "ops"],
+  "tools": ["read_ticket", "write_report", "send_slack", "send_email", "log_internal"],
+  "labels": ["PII"],
+  "actions": [
+    {
+      "agent": "support",
+      "tool": "read_ticket",
+      "params": {"ticket_id": "T1"},
+      "reads": ["ctx:support"],
+      "writes": ["slot:shared.report.T1"],
+      "gen": ["PII"]
+    },
+    {
+      "agent": "ops",
+      "tool": "send_slack",
+      "params": {"source": "shared.report.T1", "channel": "external"},
+      "reads": ["ctx:ops", "slot:shared.report.T1"],
+      "writes": ["slot:external.slack"],
+      "gen": []
+    },
+    {
+      "agent": "ops",
+      "tool": "log_internal",
+      "params": {"source": "shared.report.T1"},
+      "reads": ["ctx:ops", "slot:shared.report.T1"],
+      "writes": ["slot:internal.log"],
+      "gen": []
+    }
+  ],
+  "policy": {
+    "slot:external.slack": ["PII"],
+    "slot:external.email": ["PII"]
+  },
+  "initial_state": {}
+}

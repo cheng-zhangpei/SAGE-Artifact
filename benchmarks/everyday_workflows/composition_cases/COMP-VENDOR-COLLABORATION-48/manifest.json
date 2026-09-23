@@ -1,0 +1,11 @@
+{
+  "id": "COMP-VENDOR-COLLABORATION-48",
+  "family": "vendor_collaboration",
+  "dispatch_count": 48,
+  "total_actions": 55,
+  "dangerous_probes": 268,
+  "benign_probes": 308,
+  "direct_coverage_certificate": "SUFFICIENT_SAFE",
+  "public_input_sha256": "0109ab66d6121b2efd765901642ac63d7a47dd8c0fb1c8d2e1ba03668a49eecb",
+  "confirmed_model_sha256": "b5ed8f6c596d1588af87d32402b865290adc70cadead15b9d0f69c4c7a17f683"
+}

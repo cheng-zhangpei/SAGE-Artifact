@@ -1,0 +1,300 @@
+[
+  {
+    "agent": "signer",
+    "tool": "attach",
+    "params": {
+      "part": "key"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "signer",
+    "tool": "attach",
+    "params": {
+      "part": "key"
+    },
+    "labels": [
+      "PRIVATE_KEY"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "signer",
+    "tool": "attach",
+    "params": {
+      "part": "key"
+    },
+    "labels": [
+      "ROADMAP"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "signer",
+    "tool": "attach",
+    "params": {
+      "part": "key"
+    },
+    "labels": [
+      "PRIVATE_KEY",
+      "ROADMAP"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "product",
+    "tool": "attach",
+    "params": {
+      "part": "roadmap"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "product",
+    "tool": "attach",
+    "params": {
+      "part": "roadmap"
+    },
+    "labels": [
+      "PRIVATE_KEY"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "product",
+    "tool": "attach",
+    "params": {
+      "part": "roadmap"
+    },
+    "labels": [
+      "ROADMAP"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "product",
+    "tool": "attach",
+    "params": {
+      "part": "roadmap"
+    },
+    "labels": [
+      "PRIVATE_KEY",
+      "ROADMAP"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "deliver",
+    "params": {
+      "mirror_store": false,
+      "target": "review"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "deliver",
+    "params": {
+      "mirror_store": false,
+      "target": "review"
+    },
+    "labels": [
+      "PRIVATE_KEY"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver",
+    "params": {
+      "mirror_store": false,
+      "target": "review"
+    },
+    "labels": [
+      "ROADMAP"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "deliver",
+    "params": {
+      "mirror_store": false,
+      "target": "review"
+    },
+    "labels": [
+      "PRIVATE_KEY",
+      "ROADMAP"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver",
+    "params": {
+      "mirror_store": true,
+      "target": "review"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "deliver",
+    "params": {
+      "mirror_store": true,
+      "target": "review"
+    },
+    "labels": [
+      "PRIVATE_KEY"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver",
+    "params": {
+      "mirror_store": true,
+      "target": "review"
+    },
+    "labels": [
+      "ROADMAP"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver",
+    "params": {
+      "mirror_store": true,
+      "target": "review"
+    },
+    "labels": [
+      "PRIVATE_KEY",
+      "ROADMAP"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver",
+    "params": {
+      "mirror_store": false,
+      "target": "signing"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "deliver",
+    "params": {
+      "mirror_store": false,
+      "target": "signing"
+    },
+    "labels": [
+      "PRIVATE_KEY"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "deliver",
+    "params": {
+      "mirror_store": false,
+      "target": "signing"
+    },
+    "labels": [
+      "ROADMAP"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "deliver",
+    "params": {
+      "mirror_store": false,
+      "target": "signing"
+    },
+    "labels": [
+      "PRIVATE_KEY",
+      "ROADMAP"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "deliver",
+    "params": {
+      "mirror_store": false,
+      "target": "store"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "deliver",
+    "params": {
+      "mirror_store": false,
+      "target": "store"
+    },
+    "labels": [
+      "PRIVATE_KEY"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver",
+    "params": {
+      "mirror_store": false,
+      "target": "store"
+    },
+    "labels": [
+      "ROADMAP"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver",
+    "params": {
+      "mirror_store": false,
+      "target": "store"
+    },
+    "labels": [
+      "PRIVATE_KEY",
+      "ROADMAP"
+    ],
+    "candidate": true,
+    "completion": true
+  }
+]

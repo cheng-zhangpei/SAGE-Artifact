@@ -1,0 +1,268 @@
+[
+  {
+    "agent": "refunds",
+    "tool": "prepare",
+    "params": {},
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "refunds",
+    "tool": "prepare",
+    "params": {},
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "refunds",
+    "tool": "prepare",
+    "params": {},
+    "labels": [
+      "TOKEN"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "refunds",
+    "tool": "prepare",
+    "params": {},
+    "labels": [
+      "PII",
+      "TOKEN"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "refunds",
+    "tool": "issue_token",
+    "params": {},
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "refunds",
+    "tool": "issue_token",
+    "params": {},
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "refunds",
+    "tool": "issue_token",
+    "params": {},
+    "labels": [
+      "TOKEN"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "refunds",
+    "tool": "issue_token",
+    "params": {},
+    "labels": [
+      "PII",
+      "TOKEN"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "merchant_relations",
+    "tool": "update",
+    "params": {
+      "record": "current"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "merchant_relations",
+    "tool": "update",
+    "params": {
+      "record": "current"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "merchant_relations",
+    "tool": "update",
+    "params": {
+      "record": "current"
+    },
+    "labels": [
+      "TOKEN"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "merchant_relations",
+    "tool": "update",
+    "params": {
+      "record": "current"
+    },
+    "labels": [
+      "PII",
+      "TOKEN"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "customer_care",
+    "tool": "update",
+    "params": {
+      "record": "current"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "customer_care",
+    "tool": "update",
+    "params": {
+      "record": "current"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "customer_care",
+    "tool": "update",
+    "params": {
+      "record": "current"
+    },
+    "labels": [
+      "TOKEN"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "customer_care",
+    "tool": "update",
+    "params": {
+      "record": "current"
+    },
+    "labels": [
+      "PII",
+      "TOKEN"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "refunds",
+    "tool": "notify",
+    "params": {
+      "target": "audit"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "refunds",
+    "tool": "notify",
+    "params": {
+      "target": "audit"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "refunds",
+    "tool": "notify",
+    "params": {
+      "target": "audit"
+    },
+    "labels": [
+      "TOKEN"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "refunds",
+    "tool": "notify",
+    "params": {
+      "target": "audit"
+    },
+    "labels": [
+      "PII",
+      "TOKEN"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "refunds",
+    "tool": "issue_receipt",
+    "params": {
+      "target": "merchant"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "refunds",
+    "tool": "issue_receipt",
+    "params": {
+      "target": "merchant"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "refunds",
+    "tool": "issue_receipt",
+    "params": {
+      "target": "merchant"
+    },
+    "labels": [
+      "TOKEN"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "refunds",
+    "tool": "issue_receipt",
+    "params": {
+      "target": "merchant"
+    },
+    "labels": [
+      "PII",
+      "TOKEN"
+    ],
+    "candidate": true,
+    "completion": true
+  }
+]

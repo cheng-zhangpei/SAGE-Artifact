@@ -1,0 +1,1892 @@
+{
+  "id": "COMP-PUBLICATION-40",
+  "family": "publication",
+  "dispatch_count": 40,
+  "labels": {
+    "PERSONAL": "作者或受访者个人资料",
+    "EMBARGOED": "尚未解禁内容",
+    "LICENSED": "限制再分发的素材",
+    "UNVERIFIED": "未经事实核验的内容"
+  },
+  "actions": [
+    {
+      "id": "publish_collect_PERSONAL",
+      "agent": "research",
+      "tool": "collect_material",
+      "params": {
+        "category": "PERSONAL"
+      },
+      "reads": [
+        "slot:source_PERSONAL"
+      ],
+      "writes": [
+        "slot:workspace"
+      ],
+      "gen": [],
+      "description": "读取仅含PERSONAL的来源并追加到 slot:workspace。"
+    },
+    {
+      "id": "publish_collect_EMBARGOED",
+      "agent": "research",
+      "tool": "collect_material",
+      "params": {
+        "category": "EMBARGOED"
+      },
+      "reads": [
+        "slot:source_EMBARGOED"
+      ],
+      "writes": [
+        "slot:workspace"
+      ],
+      "gen": [],
+      "description": "读取仅含EMBARGOED的来源并追加到 slot:workspace。"
+    },
+    {
+      "id": "publish_collect_LICENSED",
+      "agent": "research",
+      "tool": "collect_material",
+      "params": {
+        "category": "LICENSED"
+      },
+      "reads": [
+        "slot:source_LICENSED"
+      ],
+      "writes": [
+        "slot:workspace"
+      ],
+      "gen": [],
+      "description": "读取仅含LICENSED的来源并追加到 slot:workspace。"
+    },
+    {
+      "id": "publish_collect_UNVERIFIED",
+      "agent": "research",
+      "tool": "collect_material",
+      "params": {
+        "category": "UNVERIFIED"
+      },
+      "reads": [
+        "slot:source_UNVERIFIED"
+      ],
+      "writes": [
+        "slot:workspace"
+      ],
+      "gen": [],
+      "description": "读取仅含UNVERIFIED的来源并追加到 slot:workspace。"
+    },
+    {
+      "id": "publish_edit",
+      "agent": "editor",
+      "tool": "edit_draft",
+      "params": {},
+      "reads": [
+        "slot:workspace"
+      ],
+      "writes": [
+        "slot:draft"
+      ],
+      "gen": [],
+      "description": "将 workspace 追加到 draft。"
+    },
+    {
+      "id": "publish_review",
+      "agent": "publisher",
+      "tool": "review_release",
+      "params": {
+        "source": "draft"
+      },
+      "reads": [
+        "slot:draft"
+      ],
+      "writes": [
+        "slot:release"
+      ],
+      "gen": [],
+      "description": "将 draft 追加到 release。"
+    },
+    {
+      "id": "publish_emergency",
+      "agent": "publisher",
+      "tool": "review_release",
+      "params": {
+        "source": "workspace"
+      },
+      "reads": [
+        "slot:workspace"
+      ],
+      "writes": [
+        "slot:release"
+      ],
+      "gen": [],
+      "description": "将 workspace 直接追加到 release。"
+    },
+    {
+      "id": "publish_send_000",
+      "agent": "legal",
+      "tool": "publish",
+      "params": {
+        "audience": "partner",
+        "source": "release",
+        "assets": "none",
+        "record": "archive"
+      },
+      "reads": [
+        "slot:release"
+      ],
+      "writes": [
+        "slot:archive",
+        "slot:counsel"
+      ],
+      "gen": [],
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "id": "publish_send_001",
+      "agent": "legal",
+      "tool": "publish",
+      "params": {
+        "audience": "partner",
+        "source": "service_notice",
+        "assets": "none",
+        "record": "archive"
+      },
+      "reads": [
+        "slot:service_notice"
+      ],
+      "writes": [
+        "slot:archive",
+        "slot:counsel"
+      ],
+      "gen": [],
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "id": "publish_send_002",
+      "agent": "editorial",
+      "tool": "publish",
+      "params": {
+        "audience": "staff",
+        "source": "draft",
+        "assets": "release",
+        "record": "none"
+      },
+      "reads": [
+        "slot:draft",
+        "slot:release"
+      ],
+      "writes": [
+        "slot:newsroom"
+      ],
+      "gen": [],
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "id": "publish_send_003",
+      "agent": "editorial",
+      "tool": "publish",
+      "params": {
+        "audience": "release",
+        "source": "release",
+        "assets": "workspace",
+        "record": "none"
+      },
+      "reads": [
+        "slot:release",
+        "slot:workspace"
+      ],
+      "writes": [
+        "slot:public"
+      ],
+      "gen": [],
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "id": "publish_send_004",
+      "agent": "legal",
+      "tool": "publish",
+      "params": {
+        "audience": "release",
+        "source": "service_notice",
+        "assets": "none",
+        "record": "none"
+      },
+      "reads": [
+        "slot:service_notice"
+      ],
+      "writes": [
+        "slot:wire"
+      ],
+      "gen": [],
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "id": "publish_send_005",
+      "agent": "legal",
+      "tool": "publish",
+      "params": {
+        "audience": "staff",
+        "source": "service_notice",
+        "assets": "release",
+        "record": "partner"
+      },
+      "reads": [
+        "slot:release",
+        "slot:service_notice"
+      ],
+      "writes": [
+        "slot:counsel",
+        "slot:newsroom"
+      ],
+      "gen": [],
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "id": "publish_send_006",
+      "agent": "editorial",
+      "tool": "publish",
+      "params": {
+        "audience": "release",
+        "source": "release",
+        "assets": "release",
+        "record": "partner"
+      },
+      "reads": [
+        "slot:release"
+      ],
+      "writes": [
+        "slot:public",
+        "slot:syndicate"
+      ],
+      "gen": [],
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "id": "publish_send_007",
+      "agent": "legal",
+      "tool": "publish",
+      "params": {
+        "audience": "partner",
+        "source": "release",
+        "assets": "release",
+        "record": "public"
+      },
+      "reads": [
+        "slot:release"
+      ],
+      "writes": [
+        "slot:counsel",
+        "slot:public"
+      ],
+      "gen": [],
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "id": "publish_send_008",
+      "agent": "editorial",
+      "tool": "publish",
+      "params": {
+        "audience": "staff",
+        "source": "release",
+        "assets": "release",
+        "record": "none"
+      },
+      "reads": [
+        "slot:release"
+      ],
+      "writes": [
+        "slot:newsroom"
+      ],
+      "gen": [],
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "id": "publish_send_009",
+      "agent": "editorial",
+      "tool": "publish",
+      "params": {
+        "audience": "partner",
+        "source": "service_notice",
+        "assets": "workspace",
+        "record": "none"
+      },
+      "reads": [
+        "slot:service_notice",
+        "slot:workspace"
+      ],
+      "writes": [
+        "slot:syndicate"
+      ],
+      "gen": [],
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "id": "publish_send_010",
+      "agent": "legal",
+      "tool": "publish",
+      "params": {
+        "audience": "release",
+        "source": "draft",
+        "assets": "workspace",
+        "record": "partner"
+      },
+      "reads": [
+        "slot:draft",
+        "slot:workspace"
+      ],
+      "writes": [
+        "slot:counsel",
+        "slot:wire"
+      ],
+      "gen": [],
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "id": "publish_send_011",
+      "agent": "legal",
+      "tool": "publish",
+      "params": {
+        "audience": "release",
+        "source": "draft",
+        "assets": "workspace",
+        "record": "none"
+      },
+      "reads": [
+        "slot:draft",
+        "slot:workspace"
+      ],
+      "writes": [
+        "slot:wire"
+      ],
+      "gen": [],
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "id": "publish_send_012",
+      "agent": "editorial",
+      "tool": "publish",
+      "params": {
+        "audience": "staff",
+        "source": "release",
+        "assets": "workspace",
+        "record": "archive"
+      },
+      "reads": [
+        "slot:release",
+        "slot:workspace"
+      ],
+      "writes": [
+        "slot:archive",
+        "slot:newsroom"
+      ],
+      "gen": [],
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "id": "publish_send_013",
+      "agent": "legal",
+      "tool": "publish",
+      "params": {
+        "audience": "staff",
+        "source": "release",
+        "assets": "release",
+        "record": "archive"
+      },
+      "reads": [
+        "slot:release"
+      ],
+      "writes": [
+        "slot:archive",
+        "slot:newsroom"
+      ],
+      "gen": [],
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "id": "publish_send_014",
+      "agent": "editorial",
+      "tool": "publish",
+      "params": {
+        "audience": "staff",
+        "source": "service_notice",
+        "assets": "release",
+        "record": "partner"
+      },
+      "reads": [
+        "slot:release",
+        "slot:service_notice"
+      ],
+      "writes": [
+        "slot:newsroom",
+        "slot:syndicate"
+      ],
+      "gen": [],
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "id": "publish_send_015",
+      "agent": "editorial",
+      "tool": "publish",
+      "params": {
+        "audience": "staff",
+        "source": "draft",
+        "assets": "release",
+        "record": "partner"
+      },
+      "reads": [
+        "slot:draft",
+        "slot:release"
+      ],
+      "writes": [
+        "slot:newsroom",
+        "slot:syndicate"
+      ],
+      "gen": [],
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "id": "publish_send_016",
+      "agent": "editorial",
+      "tool": "publish",
+      "params": {
+        "audience": "partner",
+        "source": "service_notice",
+        "assets": "workspace",
+        "record": "archive"
+      },
+      "reads": [
+        "slot:service_notice",
+        "slot:workspace"
+      ],
+      "writes": [
+        "slot:archive",
+        "slot:syndicate"
+      ],
+      "gen": [],
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "id": "publish_send_017",
+      "agent": "editorial",
+      "tool": "publish",
+      "params": {
+        "audience": "staff",
+        "source": "service_notice",
+        "assets": "workspace",
+        "record": "partner"
+      },
+      "reads": [
+        "slot:service_notice",
+        "slot:workspace"
+      ],
+      "writes": [
+        "slot:newsroom",
+        "slot:syndicate"
+      ],
+      "gen": [],
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "id": "publish_send_018",
+      "agent": "editorial",
+      "tool": "publish",
+      "params": {
+        "audience": "partner",
+        "source": "release",
+        "assets": "workspace",
+        "record": "archive"
+      },
+      "reads": [
+        "slot:release",
+        "slot:workspace"
+      ],
+      "writes": [
+        "slot:archive",
+        "slot:syndicate"
+      ],
+      "gen": [],
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "id": "publish_send_019",
+      "agent": "editorial",
+      "tool": "publish",
+      "params": {
+        "audience": "staff",
+        "source": "draft",
+        "assets": "workspace",
+        "record": "none"
+      },
+      "reads": [
+        "slot:draft",
+        "slot:workspace"
+      ],
+      "writes": [
+        "slot:newsroom"
+      ],
+      "gen": [],
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "id": "publish_send_020",
+      "agent": "legal",
+      "tool": "publish",
+      "params": {
+        "audience": "release",
+        "source": "release",
+        "assets": "workspace",
+        "record": "public"
+      },
+      "reads": [
+        "slot:release",
+        "slot:workspace"
+      ],
+      "writes": [
+        "slot:public",
+        "slot:wire"
+      ],
+      "gen": [],
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "id": "publish_send_021",
+      "agent": "editorial",
+      "tool": "publish",
+      "params": {
+        "audience": "release",
+        "source": "draft",
+        "assets": "release",
+        "record": "none"
+      },
+      "reads": [
+        "slot:draft",
+        "slot:release"
+      ],
+      "writes": [
+        "slot:public"
+      ],
+      "gen": [],
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "id": "publish_send_022",
+      "agent": "legal",
+      "tool": "publish",
+      "params": {
+        "audience": "release",
+        "source": "draft",
+        "assets": "none",
+        "record": "partner"
+      },
+      "reads": [
+        "slot:draft"
+      ],
+      "writes": [
+        "slot:counsel",
+        "slot:wire"
+      ],
+      "gen": [],
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "id": "publish_send_023",
+      "agent": "editorial",
+      "tool": "publish",
+      "params": {
+        "audience": "release",
+        "source": "draft",
+        "assets": "none",
+        "record": "public"
+      },
+      "reads": [
+        "slot:draft"
+      ],
+      "writes": [
+        "slot:public"
+      ],
+      "gen": [],
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "id": "publish_send_024",
+      "agent": "editorial",
+      "tool": "publish",
+      "params": {
+        "audience": "staff",
+        "source": "draft",
+        "assets": "workspace",
+        "record": "partner"
+      },
+      "reads": [
+        "slot:draft",
+        "slot:workspace"
+      ],
+      "writes": [
+        "slot:newsroom",
+        "slot:syndicate"
+      ],
+      "gen": [],
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "id": "publish_send_025",
+      "agent": "legal",
+      "tool": "publish",
+      "params": {
+        "audience": "staff",
+        "source": "release",
+        "assets": "none",
+        "record": "none"
+      },
+      "reads": [
+        "slot:release"
+      ],
+      "writes": [
+        "slot:newsroom"
+      ],
+      "gen": [],
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "id": "publish_send_026",
+      "agent": "editorial",
+      "tool": "publish",
+      "params": {
+        "audience": "partner",
+        "source": "draft",
+        "assets": "none",
+        "record": "none"
+      },
+      "reads": [
+        "slot:draft"
+      ],
+      "writes": [
+        "slot:syndicate"
+      ],
+      "gen": [],
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "id": "publish_send_027",
+      "agent": "editorial",
+      "tool": "publish",
+      "params": {
+        "audience": "partner",
+        "source": "release",
+        "assets": "workspace",
+        "record": "none"
+      },
+      "reads": [
+        "slot:release",
+        "slot:workspace"
+      ],
+      "writes": [
+        "slot:syndicate"
+      ],
+      "gen": [],
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "id": "publish_send_028",
+      "agent": "legal",
+      "tool": "publish",
+      "params": {
+        "audience": "staff",
+        "source": "draft",
+        "assets": "workspace",
+        "record": "none"
+      },
+      "reads": [
+        "slot:draft",
+        "slot:workspace"
+      ],
+      "writes": [
+        "slot:newsroom"
+      ],
+      "gen": [],
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "id": "publish_send_029",
+      "agent": "editorial",
+      "tool": "publish",
+      "params": {
+        "audience": "partner",
+        "source": "service_notice",
+        "assets": "release",
+        "record": "public"
+      },
+      "reads": [
+        "slot:release",
+        "slot:service_notice"
+      ],
+      "writes": [
+        "slot:public",
+        "slot:syndicate"
+      ],
+      "gen": [],
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "id": "publish_send_030",
+      "agent": "legal",
+      "tool": "publish",
+      "params": {
+        "audience": "release",
+        "source": "service_notice",
+        "assets": "none",
+        "record": "archive"
+      },
+      "reads": [
+        "slot:service_notice"
+      ],
+      "writes": [
+        "slot:archive",
+        "slot:wire"
+      ],
+      "gen": [],
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "id": "publish_send_031",
+      "agent": "legal",
+      "tool": "publish",
+      "params": {
+        "audience": "partner",
+        "source": "service_notice",
+        "assets": "none",
+        "record": "none"
+      },
+      "reads": [
+        "slot:service_notice"
+      ],
+      "writes": [
+        "slot:counsel"
+      ],
+      "gen": [],
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "id": "publish_send_032",
+      "agent": "legal",
+      "tool": "publish",
+      "params": {
+        "audience": "release",
+        "source": "draft",
+        "assets": "none",
+        "record": "none"
+      },
+      "reads": [
+        "slot:draft"
+      ],
+      "writes": [
+        "slot:wire"
+      ],
+      "gen": [],
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "id": "publish_send_033",
+      "agent": "editorial",
+      "tool": "publish",
+      "params": {
+        "audience": "staff",
+        "source": "draft",
+        "assets": "workspace",
+        "record": "archive"
+      },
+      "reads": [
+        "slot:draft",
+        "slot:workspace"
+      ],
+      "writes": [
+        "slot:archive",
+        "slot:newsroom"
+      ],
+      "gen": [],
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "id": "publish_send_034",
+      "agent": "legal",
+      "tool": "publish",
+      "params": {
+        "audience": "release",
+        "source": "draft",
+        "assets": "release",
+        "record": "archive"
+      },
+      "reads": [
+        "slot:draft",
+        "slot:release"
+      ],
+      "writes": [
+        "slot:archive",
+        "slot:wire"
+      ],
+      "gen": [],
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "id": "publish_send_035",
+      "agent": "editorial",
+      "tool": "publish",
+      "params": {
+        "audience": "release",
+        "source": "draft",
+        "assets": "none",
+        "record": "archive"
+      },
+      "reads": [
+        "slot:draft"
+      ],
+      "writes": [
+        "slot:archive",
+        "slot:public"
+      ],
+      "gen": [],
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "id": "publish_send_036",
+      "agent": "editorial",
+      "tool": "publish",
+      "params": {
+        "audience": "partner",
+        "source": "draft",
+        "assets": "workspace",
+        "record": "none"
+      },
+      "reads": [
+        "slot:draft",
+        "slot:workspace"
+      ],
+      "writes": [
+        "slot:syndicate"
+      ],
+      "gen": [],
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "id": "publish_send_037",
+      "agent": "legal",
+      "tool": "publish",
+      "params": {
+        "audience": "partner",
+        "source": "draft",
+        "assets": "release",
+        "record": "none"
+      },
+      "reads": [
+        "slot:draft",
+        "slot:release"
+      ],
+      "writes": [
+        "slot:counsel"
+      ],
+      "gen": [],
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "id": "publish_send_038",
+      "agent": "legal",
+      "tool": "publish",
+      "params": {
+        "audience": "partner",
+        "source": "service_notice",
+        "assets": "workspace",
+        "record": "none"
+      },
+      "reads": [
+        "slot:service_notice",
+        "slot:workspace"
+      ],
+      "writes": [
+        "slot:counsel"
+      ],
+      "gen": [],
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "id": "publish_send_039",
+      "agent": "editorial",
+      "tool": "publish",
+      "params": {
+        "audience": "release",
+        "source": "release",
+        "assets": "workspace",
+        "record": "archive"
+      },
+      "reads": [
+        "slot:release",
+        "slot:workspace"
+      ],
+      "writes": [
+        "slot:archive",
+        "slot:public"
+      ],
+      "gen": [],
+      "description": "按 publish 公共说明发布。"
+    }
+  ],
+  "spec": {
+    "labels": [
+      "PERSONAL",
+      "EMBARGOED",
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "actions": [
+      {
+        "id": "publish_collect_PERSONAL",
+        "agent": "research",
+        "tool": "collect_material",
+        "params": {
+          "category": "PERSONAL"
+        },
+        "reads": [
+          "slot:source_PERSONAL"
+        ],
+        "writes": [
+          "slot:workspace"
+        ],
+        "gen": [],
+        "description": "读取仅含PERSONAL的来源并追加到 slot:workspace。"
+      },
+      {
+        "id": "publish_collect_EMBARGOED",
+        "agent": "research",
+        "tool": "collect_material",
+        "params": {
+          "category": "EMBARGOED"
+        },
+        "reads": [
+          "slot:source_EMBARGOED"
+        ],
+        "writes": [
+          "slot:workspace"
+        ],
+        "gen": [],
+        "description": "读取仅含EMBARGOED的来源并追加到 slot:workspace。"
+      },
+      {
+        "id": "publish_collect_LICENSED",
+        "agent": "research",
+        "tool": "collect_material",
+        "params": {
+          "category": "LICENSED"
+        },
+        "reads": [
+          "slot:source_LICENSED"
+        ],
+        "writes": [
+          "slot:workspace"
+        ],
+        "gen": [],
+        "description": "读取仅含LICENSED的来源并追加到 slot:workspace。"
+      },
+      {
+        "id": "publish_collect_UNVERIFIED",
+        "agent": "research",
+        "tool": "collect_material",
+        "params": {
+          "category": "UNVERIFIED"
+        },
+        "reads": [
+          "slot:source_UNVERIFIED"
+        ],
+        "writes": [
+          "slot:workspace"
+        ],
+        "gen": [],
+        "description": "读取仅含UNVERIFIED的来源并追加到 slot:workspace。"
+      },
+      {
+        "id": "publish_edit",
+        "agent": "editor",
+        "tool": "edit_draft",
+        "params": {},
+        "reads": [
+          "slot:workspace"
+        ],
+        "writes": [
+          "slot:draft"
+        ],
+        "gen": [],
+        "description": "将 workspace 追加到 draft。"
+      },
+      {
+        "id": "publish_review",
+        "agent": "publisher",
+        "tool": "review_release",
+        "params": {
+          "source": "draft"
+        },
+        "reads": [
+          "slot:draft"
+        ],
+        "writes": [
+          "slot:release"
+        ],
+        "gen": [],
+        "description": "将 draft 追加到 release。"
+      },
+      {
+        "id": "publish_emergency",
+        "agent": "publisher",
+        "tool": "review_release",
+        "params": {
+          "source": "workspace"
+        },
+        "reads": [
+          "slot:workspace"
+        ],
+        "writes": [
+          "slot:release"
+        ],
+        "gen": [],
+        "description": "将 workspace 直接追加到 release。"
+      },
+      {
+        "id": "publish_send_000",
+        "agent": "legal",
+        "tool": "publish",
+        "params": {
+          "audience": "partner",
+          "source": "release",
+          "assets": "none",
+          "record": "archive"
+        },
+        "reads": [
+          "slot:release"
+        ],
+        "writes": [
+          "slot:archive",
+          "slot:counsel"
+        ],
+        "gen": [],
+        "description": "按 publish 公共说明发布。"
+      },
+      {
+        "id": "publish_send_001",
+        "agent": "legal",
+        "tool": "publish",
+        "params": {
+          "audience": "partner",
+          "source": "service_notice",
+          "assets": "none",
+          "record": "archive"
+        },
+        "reads": [
+          "slot:service_notice"
+        ],
+        "writes": [
+          "slot:archive",
+          "slot:counsel"
+        ],
+        "gen": [],
+        "description": "按 publish 公共说明发布。"
+      },
+      {
+        "id": "publish_send_002",
+        "agent": "editorial",
+        "tool": "publish",
+        "params": {
+          "audience": "staff",
+          "source": "draft",
+          "assets": "release",
+          "record": "none"
+        },
+        "reads": [
+          "slot:draft",
+          "slot:release"
+        ],
+        "writes": [
+          "slot:newsroom"
+        ],
+        "gen": [],
+        "description": "按 publish 公共说明发布。"
+      },
+      {
+        "id": "publish_send_003",
+        "agent": "editorial",
+        "tool": "publish",
+        "params": {
+          "audience": "release",
+          "source": "release",
+          "assets": "workspace",
+          "record": "none"
+        },
+        "reads": [
+          "slot:release",
+          "slot:workspace"
+        ],
+        "writes": [
+          "slot:public"
+        ],
+        "gen": [],
+        "description": "按 publish 公共说明发布。"
+      },
+      {
+        "id": "publish_send_004",
+        "agent": "legal",
+        "tool": "publish",
+        "params": {
+          "audience": "release",
+          "source": "service_notice",
+          "assets": "none",
+          "record": "none"
+        },
+        "reads": [
+          "slot:service_notice"
+        ],
+        "writes": [
+          "slot:wire"
+        ],
+        "gen": [],
+        "description": "按 publish 公共说明发布。"
+      },
+      {
+        "id": "publish_send_005",
+        "agent": "legal",
+        "tool": "publish",
+        "params": {
+          "audience": "staff",
+          "source": "service_notice",
+          "assets": "release",
+          "record": "partner"
+        },
+        "reads": [
+          "slot:release",
+          "slot:service_notice"
+        ],
+        "writes": [
+          "slot:counsel",
+          "slot:newsroom"
+        ],
+        "gen": [],
+        "description": "按 publish 公共说明发布。"
+      },
+      {
+        "id": "publish_send_006",
+        "agent": "editorial",
+        "tool": "publish",
+        "params": {
+          "audience": "release",
+          "source": "release",
+          "assets": "release",
+          "record": "partner"
+        },
+        "reads": [
+          "slot:release"
+        ],
+        "writes": [
+          "slot:public",
+          "slot:syndicate"
+        ],
+        "gen": [],
+        "description": "按 publish 公共说明发布。"
+      },
+      {
+        "id": "publish_send_007",
+        "agent": "legal",
+        "tool": "publish",
+        "params": {
+          "audience": "partner",
+          "source": "release",
+          "assets": "release",
+          "record": "public"
+        },
+        "reads": [
+          "slot:release"
+        ],
+        "writes": [
+          "slot:counsel",
+          "slot:public"
+        ],
+        "gen": [],
+        "description": "按 publish 公共说明发布。"
+      },
+      {
+        "id": "publish_send_008",
+        "agent": "editorial",
+        "tool": "publish",
+        "params": {
+          "audience": "staff",
+          "source": "release",
+          "assets": "release",
+          "record": "none"
+        },
+        "reads": [
+          "slot:release"
+        ],
+        "writes": [
+          "slot:newsroom"
+        ],
+        "gen": [],
+        "description": "按 publish 公共说明发布。"
+      },
+      {
+        "id": "publish_send_009",
+        "agent": "editorial",
+        "tool": "publish",
+        "params": {
+          "audience": "partner",
+          "source": "service_notice",
+          "assets": "workspace",
+          "record": "none"
+        },
+        "reads": [
+          "slot:service_notice",
+          "slot:workspace"
+        ],
+        "writes": [
+          "slot:syndicate"
+        ],
+        "gen": [],
+        "description": "按 publish 公共说明发布。"
+      },
+      {
+        "id": "publish_send_010",
+        "agent": "legal",
+        "tool": "publish",
+        "params": {
+          "audience": "release",
+          "source": "draft",
+          "assets": "workspace",
+          "record": "partner"
+        },
+        "reads": [
+          "slot:draft",
+          "slot:workspace"
+        ],
+        "writes": [
+          "slot:counsel",
+          "slot:wire"
+        ],
+        "gen": [],
+        "description": "按 publish 公共说明发布。"
+      },
+      {
+        "id": "publish_send_011",
+        "agent": "legal",
+        "tool": "publish",
+        "params": {
+          "audience": "release",
+          "source": "draft",
+          "assets": "workspace",
+          "record": "none"
+        },
+        "reads": [
+          "slot:draft",
+          "slot:workspace"
+        ],
+        "writes": [
+          "slot:wire"
+        ],
+        "gen": [],
+        "description": "按 publish 公共说明发布。"
+      },
+      {
+        "id": "publish_send_012",
+        "agent": "editorial",
+        "tool": "publish",
+        "params": {
+          "audience": "staff",
+          "source": "release",
+          "assets": "workspace",
+          "record": "archive"
+        },
+        "reads": [
+          "slot:release",
+          "slot:workspace"
+        ],
+        "writes": [
+          "slot:archive",
+          "slot:newsroom"
+        ],
+        "gen": [],
+        "description": "按 publish 公共说明发布。"
+      },
+      {
+        "id": "publish_send_013",
+        "agent": "legal",
+        "tool": "publish",
+        "params": {
+          "audience": "staff",
+          "source": "release",
+          "assets": "release",
+          "record": "archive"
+        },
+        "reads": [
+          "slot:release"
+        ],
+        "writes": [
+          "slot:archive",
+          "slot:newsroom"
+        ],
+        "gen": [],
+        "description": "按 publish 公共说明发布。"
+      },
+      {
+        "id": "publish_send_014",
+        "agent": "editorial",
+        "tool": "publish",
+        "params": {
+          "audience": "staff",
+          "source": "service_notice",
+          "assets": "release",
+          "record": "partner"
+        },
+        "reads": [
+          "slot:release",
+          "slot:service_notice"
+        ],
+        "writes": [
+          "slot:newsroom",
+          "slot:syndicate"
+        ],
+        "gen": [],
+        "description": "按 publish 公共说明发布。"
+      },
+      {
+        "id": "publish_send_015",
+        "agent": "editorial",
+        "tool": "publish",
+        "params": {
+          "audience": "staff",
+          "source": "draft",
+          "assets": "release",
+          "record": "partner"
+        },
+        "reads": [
+          "slot:draft",
+          "slot:release"
+        ],
+        "writes": [
+          "slot:newsroom",
+          "slot:syndicate"
+        ],
+        "gen": [],
+        "description": "按 publish 公共说明发布。"
+      },
+      {
+        "id": "publish_send_016",
+        "agent": "editorial",
+        "tool": "publish",
+        "params": {
+          "audience": "partner",
+          "source": "service_notice",
+          "assets": "workspace",
+          "record": "archive"
+        },
+        "reads": [
+          "slot:service_notice",
+          "slot:workspace"
+        ],
+        "writes": [
+          "slot:archive",
+          "slot:syndicate"
+        ],
+        "gen": [],
+        "description": "按 publish 公共说明发布。"
+      },
+      {
+        "id": "publish_send_017",
+        "agent": "editorial",
+        "tool": "publish",
+        "params": {
+          "audience": "staff",
+          "source": "service_notice",
+          "assets": "workspace",
+          "record": "partner"
+        },
+        "reads": [
+          "slot:service_notice",
+          "slot:workspace"
+        ],
+        "writes": [
+          "slot:newsroom",
+          "slot:syndicate"
+        ],
+        "gen": [],
+        "description": "按 publish 公共说明发布。"
+      },
+      {
+        "id": "publish_send_018",
+        "agent": "editorial",
+        "tool": "publish",
+        "params": {
+          "audience": "partner",
+          "source": "release",
+          "assets": "workspace",
+          "record": "archive"
+        },
+        "reads": [
+          "slot:release",
+          "slot:workspace"
+        ],
+        "writes": [
+          "slot:archive",
+          "slot:syndicate"
+        ],
+        "gen": [],
+        "description": "按 publish 公共说明发布。"
+      },
+      {
+        "id": "publish_send_019",
+        "agent": "editorial",
+        "tool": "publish",
+        "params": {
+          "audience": "staff",
+          "source": "draft",
+          "assets": "workspace",
+          "record": "none"
+        },
+        "reads": [
+          "slot:draft",
+          "slot:workspace"
+        ],
+        "writes": [
+          "slot:newsroom"
+        ],
+        "gen": [],
+        "description": "按 publish 公共说明发布。"
+      },
+      {
+        "id": "publish_send_020",
+        "agent": "legal",
+        "tool": "publish",
+        "params": {
+          "audience": "release",
+          "source": "release",
+          "assets": "workspace",
+          "record": "public"
+        },
+        "reads": [
+          "slot:release",
+          "slot:workspace"
+        ],
+        "writes": [
+          "slot:public",
+          "slot:wire"
+        ],
+        "gen": [],
+        "description": "按 publish 公共说明发布。"
+      },
+      {
+        "id": "publish_send_021",
+        "agent": "editorial",
+        "tool": "publish",
+        "params": {
+          "audience": "release",
+          "source": "draft",
+          "assets": "release",
+          "record": "none"
+        },
+        "reads": [
+          "slot:draft",
+          "slot:release"
+        ],
+        "writes": [
+          "slot:public"
+        ],
+        "gen": [],
+        "description": "按 publish 公共说明发布。"
+      },
+      {
+        "id": "publish_send_022",
+        "agent": "legal",
+        "tool": "publish",
+        "params": {
+          "audience": "release",
+          "source": "draft",
+          "assets": "none",
+          "record": "partner"
+        },
+        "reads": [
+          "slot:draft"
+        ],
+        "writes": [
+          "slot:counsel",
+          "slot:wire"
+        ],
+        "gen": [],
+        "description": "按 publish 公共说明发布。"
+      },
+      {
+        "id": "publish_send_023",
+        "agent": "editorial",
+        "tool": "publish",
+        "params": {
+          "audience": "release",
+          "source": "draft",
+          "assets": "none",
+          "record": "public"
+        },
+        "reads": [
+          "slot:draft"
+        ],
+        "writes": [
+          "slot:public"
+        ],
+        "gen": [],
+        "description": "按 publish 公共说明发布。"
+      },
+      {
+        "id": "publish_send_024",
+        "agent": "editorial",
+        "tool": "publish",
+        "params": {
+          "audience": "staff",
+          "source": "draft",
+          "assets": "workspace",
+          "record": "partner"
+        },
+        "reads": [
+          "slot:draft",
+          "slot:workspace"
+        ],
+        "writes": [
+          "slot:newsroom",
+          "slot:syndicate"
+        ],
+        "gen": [],
+        "description": "按 publish 公共说明发布。"
+      },
+      {
+        "id": "publish_send_025",
+        "agent": "legal",
+        "tool": "publish",
+        "params": {
+          "audience": "staff",
+          "source": "release",
+          "assets": "none",
+          "record": "none"
+        },
+        "reads": [
+          "slot:release"
+        ],
+        "writes": [
+          "slot:newsroom"
+        ],
+        "gen": [],
+        "description": "按 publish 公共说明发布。"
+      },
+      {
+        "id": "publish_send_026",
+        "agent": "editorial",
+        "tool": "publish",
+        "params": {
+          "audience": "partner",
+          "source": "draft",
+          "assets": "none",
+          "record": "none"
+        },
+        "reads": [
+          "slot:draft"
+        ],
+        "writes": [
+          "slot:syndicate"
+        ],
+        "gen": [],
+        "description": "按 publish 公共说明发布。"
+      },
+      {
+        "id": "publish_send_027",
+        "agent": "editorial",
+        "tool": "publish",
+        "params": {
+          "audience": "partner",
+          "source": "release",
+          "assets": "workspace",
+          "record": "none"
+        },
+        "reads": [
+          "slot:release",
+          "slot:workspace"
+        ],
+        "writes": [
+          "slot:syndicate"
+        ],
+        "gen": [],
+        "description": "按 publish 公共说明发布。"
+      },
+      {
+        "id": "publish_send_028",
+        "agent": "legal",
+        "tool": "publish",
+        "params": {
+          "audience": "staff",
+          "source": "draft",
+          "assets": "workspace",
+          "record": "none"
+        },
+        "reads": [
+          "slot:draft",
+          "slot:workspace"
+        ],
+        "writes": [
+          "slot:newsroom"
+        ],
+        "gen": [],
+        "description": "按 publish 公共说明发布。"
+      },
+      {
+        "id": "publish_send_029",
+        "agent": "editorial",
+        "tool": "publish",
+        "params": {
+          "audience": "partner",
+          "source": "service_notice",
+          "assets": "release",
+          "record": "public"
+        },
+        "reads": [
+          "slot:release",
+          "slot:service_notice"
+        ],
+        "writes": [
+          "slot:public",
+          "slot:syndicate"
+        ],
+        "gen": [],
+        "description": "按 publish 公共说明发布。"
+      },
+      {
+        "id": "publish_send_030",
+        "agent": "legal",
+        "tool": "publish",
+        "params": {
+          "audience": "release",
+          "source": "service_notice",
+          "assets": "none",
+          "record": "archive"
+        },
+        "reads": [
+          "slot:service_notice"
+        ],
+        "writes": [
+          "slot:archive",
+          "slot:wire"
+        ],
+        "gen": [],
+        "description": "按 publish 公共说明发布。"
+      },
+      {
+        "id": "publish_send_031",
+        "agent": "legal",
+        "tool": "publish",
+        "params": {
+          "audience": "partner",
+          "source": "service_notice",
+          "assets": "none",
+          "record": "none"
+        },
+        "reads": [
+          "slot:service_notice"
+        ],
+        "writes": [
+          "slot:counsel"
+        ],
+        "gen": [],
+        "description": "按 publish 公共说明发布。"
+      },
+      {
+        "id": "publish_send_032",
+        "agent": "legal",
+        "tool": "publish",
+        "params": {
+          "audience": "release",
+          "source": "draft",
+          "assets": "none",
+          "record": "none"
+        },
+        "reads": [
+          "slot:draft"
+        ],
+        "writes": [
+          "slot:wire"
+        ],
+        "gen": [],
+        "description": "按 publish 公共说明发布。"
+      },
+      {
+        "id": "publish_send_033",
+        "agent": "editorial",
+        "tool": "publish",
+        "params": {
+          "audience": "staff",
+          "source": "draft",
+          "assets": "workspace",
+          "record": "archive"
+        },
+        "reads": [
+          "slot:draft",
+          "slot:workspace"
+        ],
+        "writes": [
+          "slot:archive",
+          "slot:newsroom"
+        ],
+        "gen": [],
+        "description": "按 publish 公共说明发布。"
+      },
+      {
+        "id": "publish_send_034",
+        "agent": "legal",
+        "tool": "publish",
+        "params": {
+          "audience": "release",
+          "source": "draft",
+          "assets": "release",
+          "record": "archive"
+        },
+        "reads": [
+          "slot:draft",
+          "slot:release"
+        ],
+        "writes": [
+          "slot:archive",
+          "slot:wire"
+        ],
+        "gen": [],
+        "description": "按 publish 公共说明发布。"
+      },
+      {
+        "id": "publish_send_035",
+        "agent": "editorial",
+        "tool": "publish",
+        "params": {
+          "audience": "release",
+          "source": "draft",
+          "assets": "none",
+          "record": "archive"
+        },
+        "reads": [
+          "slot:draft"
+        ],
+        "writes": [
+          "slot:archive",
+          "slot:public"
+        ],
+        "gen": [],
+        "description": "按 publish 公共说明发布。"
+      },
+      {
+        "id": "publish_send_036",
+        "agent": "editorial",
+        "tool": "publish",
+        "params": {
+          "audience": "partner",
+          "source": "draft",
+          "assets": "workspace",
+          "record": "none"
+        },
+        "reads": [
+          "slot:draft",
+          "slot:workspace"
+        ],
+        "writes": [
+          "slot:syndicate"
+        ],
+        "gen": [],
+        "description": "按 publish 公共说明发布。"
+      },
+      {
+        "id": "publish_send_037",
+        "agent": "legal",
+        "tool": "publish",
+        "params": {
+          "audience": "partner",
+          "source": "draft",
+          "assets": "release",
+          "record": "none"
+        },
+        "reads": [
+          "slot:draft",
+          "slot:release"
+        ],
+        "writes": [
+          "slot:counsel"
+        ],
+        "gen": [],
+        "description": "按 publish 公共说明发布。"
+      },
+      {
+        "id": "publish_send_038",
+        "agent": "legal",
+        "tool": "publish",
+        "params": {
+          "audience": "partner",
+          "source": "service_notice",
+          "assets": "workspace",
+          "record": "none"
+        },
+        "reads": [
+          "slot:service_notice",
+          "slot:workspace"
+        ],
+        "writes": [
+          "slot:counsel"
+        ],
+        "gen": [],
+        "description": "按 publish 公共说明发布。"
+      },
+      {
+        "id": "publish_send_039",
+        "agent": "editorial",
+        "tool": "publish",
+        "params": {
+          "audience": "release",
+          "source": "release",
+          "assets": "workspace",
+          "record": "archive"
+        },
+        "reads": [
+          "slot:release",
+          "slot:workspace"
+        ],
+        "writes": [
+          "slot:archive",
+          "slot:public"
+        ],
+        "gen": [],
+        "description": "按 publish 公共说明发布。"
+      }
+    ],
+    "policy": {
+      "slot:syndicate": [
+        "PERSONAL",
+        "EMBARGOED"
+      ],
+      "slot:public": [
+        "PERSONAL",
+        "EMBARGOED",
+        "LICENSED"
+      ],
+      "slot:archive": [
+        "UNVERIFIED"
+      ],
+      "slot:counsel": [
+        "UNVERIFIED"
+      ],
+      "slot:wire": [
+        "PERSONAL",
+        "LICENSED"
+      ]
+    },
+    "initial_state": {
+      "slot:source_PERSONAL": [
+        "PERSONAL"
+      ],
+      "slot:source_EMBARGOED": [
+        "EMBARGOED"
+      ],
+      "slot:source_LICENSED": [
+        "LICENSED"
+      ],
+      "slot:source_UNVERIFIED": [
+        "UNVERIFIED"
+      ]
+    }
+  }
+}

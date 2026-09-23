@@ -1,0 +1,18 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"import json\\n\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    policy = {\\n        \\\"slot:assessor\\\": [\\\"PRICING\\\", \\\"ACCESS\\\"],\\n        \\\"slot:escrow\\\": [\\\"ACCESS\\\", \\\"UNSCREENED\\\"],\\n        \\\"slot:oversight\\\": [\\\"UNSCREENED\\\"],\\n        \\\"slot:public\\\": [\\\"CUSTOMER\\\", \\\"PRICING\\\", \\\"ACCESS\\\"],\\n        \\\"slot:supplier\\\": [\\\"CUSTOMER\\\", \\\"ACCESS\\\"]\\n    }\\n    tool = user_input['tool']\\n    agent = user_input['agent']\\n    params = json.loads(tool_input)\\n    trusted = set(trusted_event_labels)\\n    if tool == 'receive_record':\\n        return False\\n    if tool == 'verify_case':\\n        return False\\n    if tool == 'bundle_case':\\n        return False\\n    if tool == 'transfer_case':\\n        source = params.get('source')\\n        enclosure = params.get('enclosure')\\n        recipient = params.get('recipient')\\n        replica = params.get('replica')\\n        if agent == 'procurement':\\n            recipient_map = {\\n                'local': 'slot:operations',\\n                'partner': 'slot:supplier',\\n                'oversight': 'slot:public'\\n            }\\n        elif agent == 'compliance':\\n            recipient_map = {\\n                'local': 'slot:operations',\\n                'partner': 'slot:assessor',\\n                'oversight': 'slot:oversight'\\n            }\\n        else:\\n            return True\\n        if recipient not in recipient_map:\\n            return True\\n        recipient_slot = recipient_map[recipient]\\n        replica_slot = None\\n        if replica == 'escrow':\\n            replica_slot = 'slot:escrow'\\n        elif replica == 'public':\\n            replica_slot = 'slot:public'\\n        elif replica == 'partner':\\n            if agent == 'procurement':\\n                replica_slot = 'slot:supplier'\\n            elif agent == 'compliance':\\n                replica_slot = 'slot:assessor'\\n        if source == 'onboarding_guide':\\n            source_categories = set()\\n        elif source == 'verified':\\n            source_categories = trusted\\n        elif source == 'package':\\n            source_categories = trusted\\n        elif source == 'case':\\n            source_categories = trusted\\n        else:\\n            return True\\n        if enclosure == 'package':\\n            content = source_categories.union(trusted)\\n        elif enclosure == 'case':\\n            content = source_categories.union(trusted)\\n        elif enclosure == 'none':\\n            content = source_categories\\n        else:\\n            return True\\n        if recipient_slot in policy:\\n            allowed = set(policy[recipient_slot])\\n            if not content.issubset(allowed):\\n                return True\\n        if replica_slot and replica_slot in policy:\\n            allowed = set(policy[replica_slot])\\n            if not content.issubset(allowed):\\n                return True\\n        return False\\n    return True\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 6650,
+    "prompt_tokens": 1548,
+    "total_tokens": 8198,
+    "completion_tokens_details": {
+      "reasoning_tokens": 5944
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 1536
+    }
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "679627e1-b0cd-4b3f-bd01-6f6e3fd13af8_da6c69592c874872b120e6015d2be820"
+}

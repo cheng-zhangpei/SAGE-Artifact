@@ -1,0 +1,179 @@
+{
+  "source": "frozen pilot records reused by matching task ID and prompt SHA-256",
+  "reuse_rule": "same task id and identical frozen prompt SHA256",
+  "reused_count": 24,
+  "records": [
+    {
+      "task": "COMP-CLINICAL-REFERRAL-08",
+      "prompt_sha256": "e18af25401db66db5378e884743e2ddb254cff24a3720caba9e7cd03361030c0",
+      "copied": [
+        "response.json"
+      ]
+    },
+    {
+      "task": "COMP-CLINICAL-REFERRAL-48",
+      "prompt_sha256": "57ec9474046a46b04a40e0dcbb7bb5824242b8ad9c2d16affb8bc90d5e756c6b",
+      "copied": [
+        "response.json"
+      ]
+    },
+    {
+      "task": "COMP-PUBLICATION-08",
+      "prompt_sha256": "87399cbfe0e7f3858f57dce2d0799b3250ce3503db9f97adaa1b03a984d58086",
+      "copied": [
+        "response.json"
+      ]
+    },
+    {
+      "task": "COMP-PUBLICATION-48",
+      "prompt_sha256": "6d97b53ab4deb9571c045c0b613b6c44e39a26d2cdbafadaf237757dd33f8ed6",
+      "copied": [
+        "response.json"
+      ]
+    },
+    {
+      "task": "COMP-REIMBURSEMENT-08",
+      "prompt_sha256": "f079b576e1cbb5c0f4d326618098c2bcc291714cb67a80f18031914fad8bb19b",
+      "copied": [
+        "response.json"
+      ]
+    },
+    {
+      "task": "COMP-REIMBURSEMENT-48",
+      "prompt_sha256": "5cdbb75547731e6bffcad20506b9f382d9656a9e5a79633fb1c75df8789b88cc",
+      "copied": [
+        "response.json"
+      ]
+    },
+    {
+      "task": "COMP-SOFTWARE-DELIVERY-08",
+      "prompt_sha256": "e6fc6e616a50561f610f0f5f76fdea052c5efc7437381c1d2ead200f9a057d00",
+      "copied": [
+        "response.json"
+      ]
+    },
+    {
+      "task": "COMP-SOFTWARE-DELIVERY-48",
+      "prompt_sha256": "1438201702044f06ee307186a0321661163d27f736381245489b590cca5d221d",
+      "copied": [
+        "response.json",
+        "response_truncated_8192.json",
+        "generation_amendment.json"
+      ]
+    },
+    {
+      "task": "COMP-SUP-08",
+      "prompt_sha256": "406b2cc61e129e0e2942f2c5594460c3a101791867d315642f574295d594185e",
+      "copied": [
+        "response.json"
+      ]
+    },
+    {
+      "task": "COMP-SUP-48",
+      "prompt_sha256": "e39d545d77ff1ee94a1369872d3539cf99db433958076f711f9ed698d3a1bf19",
+      "copied": [
+        "response.json"
+      ]
+    },
+    {
+      "task": "COMP-VENDOR-COLLABORATION-08",
+      "prompt_sha256": "e915fc3a13d1358b8bc9e8bf76dabd3304bcab4c239005f138e822bf40a07228",
+      "copied": [
+        "response.json",
+        "response_truncated_8192.json",
+        "generation_amendment.json"
+      ]
+    },
+    {
+      "task": "COMP-VENDOR-COLLABORATION-48",
+      "prompt_sha256": "f2322768205e3fb663d1a4cb8da69c7d9fd88555cadf858b02814d6da2bca1d5",
+      "copied": [
+        "response.json"
+      ]
+    },
+    {
+      "task": "W01",
+      "prompt_sha256": "430a35345d0d660edaedff8b9cff201c0d48af44446af996580580a25f6363b1",
+      "copied": [
+        "response.json"
+      ]
+    },
+    {
+      "task": "W04",
+      "prompt_sha256": "bccc0036545496218a191fe2e473cc0c393b3dd167430e9ece6dafd408566e1e",
+      "copied": [
+        "response.json"
+      ]
+    },
+    {
+      "task": "W07",
+      "prompt_sha256": "ebeaa43cb94938926d4e02de3ba19c08320535279819ed844a542fff3e5e1aea",
+      "copied": [
+        "response.json"
+      ]
+    },
+    {
+      "task": "W10",
+      "prompt_sha256": "de01e8fa8af9e6ad4afd3137714ea22280e2f0c306d067d07329c30d388ac400",
+      "copied": [
+        "response.json"
+      ]
+    },
+    {
+      "task": "W13",
+      "prompt_sha256": "b36101a712866c3e3a567f10c48e3629fafebf3ecf58d04b137c150d80757c1d",
+      "copied": [
+        "response.json"
+      ]
+    },
+    {
+      "task": "W16",
+      "prompt_sha256": "723cb422dcdcc4db18a70d20738b7418d31c61bdc1745d26982ca78116954ea7",
+      "copied": [
+        "response.json"
+      ]
+    },
+    {
+      "task": "W19",
+      "prompt_sha256": "4d96596db385a5c7283ae1f3842850b659957094c9af07cd68fc5db580ff7ce8",
+      "copied": [
+        "response.json"
+      ]
+    },
+    {
+      "task": "W22",
+      "prompt_sha256": "9799cc6d8f80a35318705d023f87607866dbb82151ab59646303a56d1c48053e",
+      "copied": [
+        "response.json"
+      ]
+    },
+    {
+      "task": "W25",
+      "prompt_sha256": "35b08c245a2e963b7a64fcd14cdd8b4ff58d987470a4f862ad2019d527904ca4",
+      "copied": [
+        "response.json"
+      ]
+    },
+    {
+      "task": "W28",
+      "prompt_sha256": "cb27c2683f9578bed60d252bdf29715583145f523e7d9aab4c786ccac2111f4b",
+      "copied": [
+        "response.json"
+      ]
+    },
+    {
+      "task": "W31",
+      "prompt_sha256": "bf6e30b8c07227631d9e72eea0f8e4888b40049b58d90bc36100c8cb4309d1a7",
+      "copied": [
+        "response.json"
+      ]
+    },
+    {
+      "task": "W34",
+      "prompt_sha256": "0dbd669a8034d1e94b6c889b092b8df314c1f492463f8d55783bd2ef0cd1cac5",
+      "copied": [
+        "response.json"
+      ]
+    }
+  ]
+}

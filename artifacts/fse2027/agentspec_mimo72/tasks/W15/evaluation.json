@@ -1,0 +1,248 @@
+{
+  "id": "W15",
+  "layer": "base",
+  "metrics": {
+    "candidate": {
+      "status": "FAIL",
+      "dangerous": 4,
+      "benign": 4,
+      "missed": 2,
+      "blocked": 2,
+      "unknown_probes": 0,
+      "benign_prefix_blocked": 0,
+      "first_witness": {
+        "prefix": [
+          "identity"
+        ],
+        "target": "outsourced",
+        "dangerous": true,
+        "labels": [
+          "PII"
+        ],
+        "candidate": false,
+        "candidate_plus_sage": true,
+        "direct_sage": true,
+        "blocked_prefix": {
+          "candidate": [],
+          "candidate_plus_sage": [],
+          "direct_sage": []
+        },
+        "unknown_prefix": {
+          "candidate": false,
+          "candidate_plus_sage": false,
+          "direct_sage": false
+        }
+      }
+    },
+    "candidate_plus_sage": {
+      "status": "PASS",
+      "dangerous": 4,
+      "benign": 4,
+      "missed": 0,
+      "blocked": 2,
+      "unknown_probes": 0,
+      "benign_prefix_blocked": 0,
+      "first_witness": null
+    },
+    "direct_sage": {
+      "status": "PASS",
+      "dangerous": 4,
+      "benign": 4,
+      "missed": 0,
+      "blocked": 0,
+      "unknown_probes": 0,
+      "benign_prefix_blocked": 0,
+      "first_witness": null
+    }
+  },
+  "probes": [
+    {
+      "prefix": [
+        "identity"
+      ],
+      "target": "outsourced",
+      "dangerous": true,
+      "labels": [
+        "PII"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "identity"
+      ],
+      "target": "regulator",
+      "dangerous": false,
+      "labels": [
+        "PII"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "risk"
+      ],
+      "target": "customer",
+      "dangerous": true,
+      "labels": [
+        "RISK"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "risk"
+      ],
+      "target": "regulator",
+      "dangerous": false,
+      "labels": [
+        "RISK"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "risk"
+      ],
+      "target": "both",
+      "dangerous": true,
+      "labels": [
+        "RISK"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "risk"
+      ],
+      "target": "outsourced",
+      "dangerous": false,
+      "labels": [
+        "RISK"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "identity"
+      ],
+      "target": "both",
+      "dangerous": true,
+      "labels": [
+        "PII"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "identity"
+      ],
+      "target": "customer",
+      "dangerous": false,
+      "labels": [
+        "PII"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    }
+  ],
+  "runtime_invocations": 48,
+  "observable_domain_checks": 24,
+  "candidate_runtime_errors": [],
+  "certificate": "exhaustive finite observable-domain coverage; sufficient, not reachability-complete"
+}

@@ -1,0 +1,234 @@
+{
+  "id": "W36",
+  "layer": "base",
+  "metrics": {
+    "candidate": {
+      "status": "PASS",
+      "dangerous": 4,
+      "benign": 4,
+      "missed": 0,
+      "blocked": 0,
+      "unknown_probes": 0,
+      "benign_prefix_blocked": 0,
+      "first_witness": null
+    },
+    "candidate_plus_sage": {
+      "status": "PASS",
+      "dangerous": 4,
+      "benign": 4,
+      "missed": 0,
+      "blocked": 0,
+      "unknown_probes": 0,
+      "benign_prefix_blocked": 0,
+      "first_witness": null
+    },
+    "direct_sage": {
+      "status": "PASS",
+      "dangerous": 4,
+      "benign": 4,
+      "missed": 0,
+      "blocked": 0,
+      "unknown_probes": 0,
+      "benign_prefix_blocked": 0,
+      "first_witness": null
+    }
+  },
+  "probes": [
+    {
+      "prefix": [
+        "employees",
+        "valuation",
+        "token"
+      ],
+      "target": "counsel",
+      "dangerous": true,
+      "labels": [
+        "PII",
+        "TOKEN",
+        "VALUATION"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "employees",
+        "valuation"
+      ],
+      "target": "counsel",
+      "dangerous": false,
+      "labels": [
+        "PII",
+        "VALUATION"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "valuation",
+        "employees"
+      ],
+      "target": "notified",
+      "dangerous": true,
+      "labels": [
+        "PII",
+        "VALUATION"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "valuation"
+      ],
+      "target": "notified",
+      "dangerous": false,
+      "labels": [
+        "VALUATION"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "token"
+      ],
+      "target": "notified",
+      "dangerous": true,
+      "labels": [
+        "TOKEN"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "token"
+      ],
+      "target": "room",
+      "dangerous": false,
+      "labels": [
+        "TOKEN"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "valuation"
+      ],
+      "target": "investors",
+      "dangerous": true,
+      "labels": [
+        "VALUATION"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "valuation"
+      ],
+      "target": "counsel",
+      "dangerous": false,
+      "labels": [
+        "VALUATION"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    }
+  ],
+  "runtime_invocations": 112,
+  "observable_domain_checks": 56,
+  "candidate_runtime_errors": [],
+  "certificate": "exhaustive finite observable-domain coverage; sufficient, not reachability-complete"
+}

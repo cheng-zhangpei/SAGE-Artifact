@@ -1,0 +1,24 @@
+{
+  "MiMo-v2.5": {
+    "tasks": 72,
+    "single_completion_pass_per_candidate": 1,
+    "additional_llm_calls": 0,
+    "additional_blocked_probes": 0,
+    "retained_blocked_probes": 179,
+    "known_unsafe_initial": 10,
+    "unresolved_initial": 3,
+    "source": "output\\mimo25_authoring_72_final_originals_20260919\\results.json",
+    "source_sha256": "5dcdbefacd649ac44f94e92e685069e981d7aa58f93c983fbf77c03534a4867c"
+  },
+  "GPT-5.5": {
+    "tasks": 72,
+    "single_completion_pass_per_candidate": 1,
+    "additional_llm_calls": 0,
+    "additional_blocked_probes": 0,
+    "retained_blocked_probes": 281,
+    "known_unsafe_initial": 11,
+    "unresolved_initial": 16,
+    "source": "output\\ikuncode_gpt55_authoring_72_final_20260919\\results.json",
+    "source_sha256": "1644e13d3d764474d7791b74da97a600b880ac190a922926622ee478077b1002"
+  }
+}

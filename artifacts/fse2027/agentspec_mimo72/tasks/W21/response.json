@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"import json\\n\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    # Parse tool parameters\\n    params = json.loads(tool_input)\\n    agent = user_input['agent']\\n    tool = user_input['tool']\\n    trusted_labels = user_input['trusted_event_labels']\\n\\n    # Define the policy for restricted slots\\n    policy = {\\n        \\\"slot:review\\\": [\\\"ADDRESS\\\", \\\"HEALTH\\\"],\\n        \\\"slot:rider\\\": [\\\"HEALTH\\\"]\\n    }\\n\\n    # Check if this is a dispatcher send tool targeting a restricted slot\\n    if agent == \\\"dispatcher\\\" and tool == \\\"send\\\":\\n        target = params.get(\\\"target\\\")\\n        if target:\\n            slot_key = \\\"slot:\\\" + target\\n            if slot_key in policy:\\n                forbidden = set(policy[slot_key])\\n                # Stop if any trusted label is forbidden for this slot\\n                if set(trusted_labels).intersection(forbidden):\\n                    return True\\n\\n    # Allow all other tool calls\\n    return False\\n\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 5757,
+    "prompt_tokens": 795,
+    "total_tokens": 6552,
+    "completion_tokens_details": {
+      "reasoning_tokens": 5518
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "9a3e4181-8987-4b6d-8ecc-126c44d6929c_3ca4ce3dfb3048aba3b7fec374f69db3"
+}

@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\"python\": \"import json\\n\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    params = json.loads(tool_input)\\n    tool = user_input.get('tool')\\n    labels = user_input.get('trusted_event_labels', [])\\n    \\n    if tool == 'assemble':\\n        return False\\n    elif tool == 'export':\\n        target = params.get('target')\\n        cc = params.get('cc')\\n        \\n        if target == 'analytics' and 'PII' in labels:\\n            return True\\n        if target == 'public' and ('PII' in labels or 'SALARY' in labels):\\n            return True\\n        if cc and cc != 'none':\\n            if cc == 'analytics' and 'PII' in labels:\\n                return True\\n            if cc == 'public' and ('PII' in labels or 'SALARY' in labels):\\n                return True\\n        return False\\n    else:\\n        return False\"}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 4298,
+    "prompt_tokens": 885,
+    "total_tokens": 5183,
+    "completion_tokens_details": {
+      "reasoning_tokens": 4074
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "afcacc13-f897-42f7-8081-853401d8446a_fd6bdd810a574af383984cff10c96799"
+}

@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"import json\\n\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    params = json.loads(tool_input)\\n    trusted_labels = user_input.get('trusted_event_labels', [])\\n    tool_name = user_input.get('tool', '')\\n    target_slots = []\\n    if tool_name == 'assemble':\\n        target_slots = ['slot:package']\\n    elif tool_name == 'publish':\\n        target = params.get('target', '')\\n        audit = params.get('audit', '')\\n        if target == 'registry':\\n            target_slots = ['slot:registry']\\n        elif target == 'production':\\n            target_slots = ['slot:production']\\n        elif target == 'internal':\\n            if audit == 'external':\\n                target_slots = ['slot:internal', 'slot:external_log']\\n            else:\\n                target_slots = ['slot:internal']\\n    forbidden = {\\n        'slot:external_log': ['CREDENTIAL'],\\n        'slot:production': ['UNVERIFIED'],\\n        'slot:registry': ['CREDENTIAL']\\n    }\\n    for slot in target_slots:\\n        if slot in forbidden:\\n            for label in trusted_labels:\\n                if label in forbidden[slot]:\\n                    return True\\n    return False\\n\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 4813,
+    "prompt_tokens": 904,
+    "total_tokens": 5717,
+    "completion_tokens_details": {
+      "reasoning_tokens": 4513
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "3a177c71-d694-4572-92be-9ca310d6e76c_b7916d7f252f46ee9318d9b38960653c"
+}

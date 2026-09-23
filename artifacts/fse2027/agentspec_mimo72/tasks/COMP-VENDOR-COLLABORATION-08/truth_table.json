@@ -1,0 +1,3459 @@
+[
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "CUSTOMER"
+    },
+    "labels": [],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "CUSTOMER"
+    },
+    "labels": [
+      "ACCESS"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "CUSTOMER"
+    },
+    "labels": [
+      "CUSTOMER"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "CUSTOMER"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "CUSTOMER"
+    },
+    "labels": [
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "CUSTOMER"
+    },
+    "labels": [
+      "ACCESS",
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "CUSTOMER"
+    },
+    "labels": [
+      "CUSTOMER",
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "CUSTOMER"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER",
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "CUSTOMER"
+    },
+    "labels": [
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "CUSTOMER"
+    },
+    "labels": [
+      "ACCESS",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "CUSTOMER"
+    },
+    "labels": [
+      "CUSTOMER",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "CUSTOMER"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "CUSTOMER"
+    },
+    "labels": [
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "CUSTOMER"
+    },
+    "labels": [
+      "ACCESS",
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "CUSTOMER"
+    },
+    "labels": [
+      "CUSTOMER",
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "CUSTOMER"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER",
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "PRICING"
+    },
+    "labels": [],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "PRICING"
+    },
+    "labels": [
+      "ACCESS"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "PRICING"
+    },
+    "labels": [
+      "CUSTOMER"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "PRICING"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "PRICING"
+    },
+    "labels": [
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "PRICING"
+    },
+    "labels": [
+      "ACCESS",
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "PRICING"
+    },
+    "labels": [
+      "CUSTOMER",
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "PRICING"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER",
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "PRICING"
+    },
+    "labels": [
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "PRICING"
+    },
+    "labels": [
+      "ACCESS",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "PRICING"
+    },
+    "labels": [
+      "CUSTOMER",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "PRICING"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "PRICING"
+    },
+    "labels": [
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "PRICING"
+    },
+    "labels": [
+      "ACCESS",
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "PRICING"
+    },
+    "labels": [
+      "CUSTOMER",
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "PRICING"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER",
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "ACCESS"
+    },
+    "labels": [],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "ACCESS"
+    },
+    "labels": [
+      "ACCESS"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "ACCESS"
+    },
+    "labels": [
+      "CUSTOMER"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "ACCESS"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "ACCESS"
+    },
+    "labels": [
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "ACCESS"
+    },
+    "labels": [
+      "ACCESS",
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "ACCESS"
+    },
+    "labels": [
+      "CUSTOMER",
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "ACCESS"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER",
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "ACCESS"
+    },
+    "labels": [
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "ACCESS"
+    },
+    "labels": [
+      "ACCESS",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "ACCESS"
+    },
+    "labels": [
+      "CUSTOMER",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "ACCESS"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "ACCESS"
+    },
+    "labels": [
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "ACCESS"
+    },
+    "labels": [
+      "ACCESS",
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "ACCESS"
+    },
+    "labels": [
+      "CUSTOMER",
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "ACCESS"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER",
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "UNSCREENED"
+    },
+    "labels": [],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "UNSCREENED"
+    },
+    "labels": [
+      "ACCESS"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "UNSCREENED"
+    },
+    "labels": [
+      "CUSTOMER"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "UNSCREENED"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "UNSCREENED"
+    },
+    "labels": [
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "UNSCREENED"
+    },
+    "labels": [
+      "ACCESS",
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "UNSCREENED"
+    },
+    "labels": [
+      "CUSTOMER",
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "UNSCREENED"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER",
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "UNSCREENED"
+    },
+    "labels": [
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "UNSCREENED"
+    },
+    "labels": [
+      "ACCESS",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "UNSCREENED"
+    },
+    "labels": [
+      "CUSTOMER",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "UNSCREENED"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "UNSCREENED"
+    },
+    "labels": [
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "UNSCREENED"
+    },
+    "labels": [
+      "ACCESS",
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "UNSCREENED"
+    },
+    "labels": [
+      "CUSTOMER",
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "onboarding",
+    "tool": "receive_record",
+    "params": {
+      "category": "UNSCREENED"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER",
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "analyst",
+    "tool": "verify_case",
+    "params": {},
+    "labels": [],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "analyst",
+    "tool": "verify_case",
+    "params": {},
+    "labels": [
+      "ACCESS"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "analyst",
+    "tool": "verify_case",
+    "params": {},
+    "labels": [
+      "CUSTOMER"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "analyst",
+    "tool": "verify_case",
+    "params": {},
+    "labels": [
+      "ACCESS",
+      "CUSTOMER"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "analyst",
+    "tool": "verify_case",
+    "params": {},
+    "labels": [
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "analyst",
+    "tool": "verify_case",
+    "params": {},
+    "labels": [
+      "ACCESS",
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "analyst",
+    "tool": "verify_case",
+    "params": {},
+    "labels": [
+      "CUSTOMER",
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "analyst",
+    "tool": "verify_case",
+    "params": {},
+    "labels": [
+      "ACCESS",
+      "CUSTOMER",
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "analyst",
+    "tool": "verify_case",
+    "params": {},
+    "labels": [
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "analyst",
+    "tool": "verify_case",
+    "params": {},
+    "labels": [
+      "ACCESS",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "analyst",
+    "tool": "verify_case",
+    "params": {},
+    "labels": [
+      "CUSTOMER",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "analyst",
+    "tool": "verify_case",
+    "params": {},
+    "labels": [
+      "ACCESS",
+      "CUSTOMER",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "analyst",
+    "tool": "verify_case",
+    "params": {},
+    "labels": [
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "analyst",
+    "tool": "verify_case",
+    "params": {},
+    "labels": [
+      "ACCESS",
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "analyst",
+    "tool": "verify_case",
+    "params": {},
+    "labels": [
+      "CUSTOMER",
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "analyst",
+    "tool": "verify_case",
+    "params": {},
+    "labels": [
+      "ACCESS",
+      "CUSTOMER",
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "bundle_case",
+    "params": {
+      "source": "verified"
+    },
+    "labels": [],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "bundle_case",
+    "params": {
+      "source": "verified"
+    },
+    "labels": [
+      "ACCESS"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "bundle_case",
+    "params": {
+      "source": "verified"
+    },
+    "labels": [
+      "CUSTOMER"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "bundle_case",
+    "params": {
+      "source": "verified"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "bundle_case",
+    "params": {
+      "source": "verified"
+    },
+    "labels": [
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "bundle_case",
+    "params": {
+      "source": "verified"
+    },
+    "labels": [
+      "ACCESS",
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "bundle_case",
+    "params": {
+      "source": "verified"
+    },
+    "labels": [
+      "CUSTOMER",
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "bundle_case",
+    "params": {
+      "source": "verified"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER",
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "bundle_case",
+    "params": {
+      "source": "verified"
+    },
+    "labels": [
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "bundle_case",
+    "params": {
+      "source": "verified"
+    },
+    "labels": [
+      "ACCESS",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "bundle_case",
+    "params": {
+      "source": "verified"
+    },
+    "labels": [
+      "CUSTOMER",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "bundle_case",
+    "params": {
+      "source": "verified"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "bundle_case",
+    "params": {
+      "source": "verified"
+    },
+    "labels": [
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "bundle_case",
+    "params": {
+      "source": "verified"
+    },
+    "labels": [
+      "ACCESS",
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "bundle_case",
+    "params": {
+      "source": "verified"
+    },
+    "labels": [
+      "CUSTOMER",
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "bundle_case",
+    "params": {
+      "source": "verified"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER",
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "bundle_case",
+    "params": {
+      "source": "case"
+    },
+    "labels": [],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "bundle_case",
+    "params": {
+      "source": "case"
+    },
+    "labels": [
+      "ACCESS"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "bundle_case",
+    "params": {
+      "source": "case"
+    },
+    "labels": [
+      "CUSTOMER"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "bundle_case",
+    "params": {
+      "source": "case"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "bundle_case",
+    "params": {
+      "source": "case"
+    },
+    "labels": [
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "bundle_case",
+    "params": {
+      "source": "case"
+    },
+    "labels": [
+      "ACCESS",
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "bundle_case",
+    "params": {
+      "source": "case"
+    },
+    "labels": [
+      "CUSTOMER",
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "bundle_case",
+    "params": {
+      "source": "case"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER",
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "bundle_case",
+    "params": {
+      "source": "case"
+    },
+    "labels": [
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "bundle_case",
+    "params": {
+      "source": "case"
+    },
+    "labels": [
+      "ACCESS",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "bundle_case",
+    "params": {
+      "source": "case"
+    },
+    "labels": [
+      "CUSTOMER",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "bundle_case",
+    "params": {
+      "source": "case"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "bundle_case",
+    "params": {
+      "source": "case"
+    },
+    "labels": [
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "bundle_case",
+    "params": {
+      "source": "case"
+    },
+    "labels": [
+      "ACCESS",
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "bundle_case",
+    "params": {
+      "source": "case"
+    },
+    "labels": [
+      "CUSTOMER",
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "bundle_case",
+    "params": {
+      "source": "case"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER",
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "package",
+      "recipient": "oversight",
+      "replica": "public",
+      "source": "package"
+    },
+    "labels": [],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "package",
+      "recipient": "oversight",
+      "replica": "public",
+      "source": "package"
+    },
+    "labels": [
+      "ACCESS"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "package",
+      "recipient": "oversight",
+      "replica": "public",
+      "source": "package"
+    },
+    "labels": [
+      "CUSTOMER"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "package",
+      "recipient": "oversight",
+      "replica": "public",
+      "source": "package"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "package",
+      "recipient": "oversight",
+      "replica": "public",
+      "source": "package"
+    },
+    "labels": [
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "package",
+      "recipient": "oversight",
+      "replica": "public",
+      "source": "package"
+    },
+    "labels": [
+      "ACCESS",
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "package",
+      "recipient": "oversight",
+      "replica": "public",
+      "source": "package"
+    },
+    "labels": [
+      "CUSTOMER",
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "package",
+      "recipient": "oversight",
+      "replica": "public",
+      "source": "package"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER",
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "package",
+      "recipient": "oversight",
+      "replica": "public",
+      "source": "package"
+    },
+    "labels": [
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "package",
+      "recipient": "oversight",
+      "replica": "public",
+      "source": "package"
+    },
+    "labels": [
+      "ACCESS",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "package",
+      "recipient": "oversight",
+      "replica": "public",
+      "source": "package"
+    },
+    "labels": [
+      "CUSTOMER",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "package",
+      "recipient": "oversight",
+      "replica": "public",
+      "source": "package"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "package",
+      "recipient": "oversight",
+      "replica": "public",
+      "source": "package"
+    },
+    "labels": [
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "package",
+      "recipient": "oversight",
+      "replica": "public",
+      "source": "package"
+    },
+    "labels": [
+      "ACCESS",
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "package",
+      "recipient": "oversight",
+      "replica": "public",
+      "source": "package"
+    },
+    "labels": [
+      "CUSTOMER",
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "package",
+      "recipient": "oversight",
+      "replica": "public",
+      "source": "package"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER",
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "compliance",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "none",
+      "recipient": "oversight",
+      "replica": "none",
+      "source": "onboarding_guide"
+    },
+    "labels": [],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "compliance",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "none",
+      "recipient": "oversight",
+      "replica": "none",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "ACCESS"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "compliance",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "none",
+      "recipient": "oversight",
+      "replica": "none",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "CUSTOMER"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "compliance",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "none",
+      "recipient": "oversight",
+      "replica": "none",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "compliance",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "none",
+      "recipient": "oversight",
+      "replica": "none",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "compliance",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "none",
+      "recipient": "oversight",
+      "replica": "none",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "ACCESS",
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "compliance",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "none",
+      "recipient": "oversight",
+      "replica": "none",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "CUSTOMER",
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "compliance",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "none",
+      "recipient": "oversight",
+      "replica": "none",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER",
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "compliance",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "none",
+      "recipient": "oversight",
+      "replica": "none",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "compliance",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "none",
+      "recipient": "oversight",
+      "replica": "none",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "ACCESS",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "compliance",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "none",
+      "recipient": "oversight",
+      "replica": "none",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "CUSTOMER",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "compliance",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "none",
+      "recipient": "oversight",
+      "replica": "none",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "compliance",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "none",
+      "recipient": "oversight",
+      "replica": "none",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "compliance",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "none",
+      "recipient": "oversight",
+      "replica": "none",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "ACCESS",
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "compliance",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "none",
+      "recipient": "oversight",
+      "replica": "none",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "CUSTOMER",
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "compliance",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "none",
+      "recipient": "oversight",
+      "replica": "none",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER",
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "compliance",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "none",
+      "recipient": "partner",
+      "replica": "public",
+      "source": "package"
+    },
+    "labels": [],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "compliance",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "none",
+      "recipient": "partner",
+      "replica": "public",
+      "source": "package"
+    },
+    "labels": [
+      "ACCESS"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "compliance",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "none",
+      "recipient": "partner",
+      "replica": "public",
+      "source": "package"
+    },
+    "labels": [
+      "CUSTOMER"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "compliance",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "none",
+      "recipient": "partner",
+      "replica": "public",
+      "source": "package"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "compliance",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "none",
+      "recipient": "partner",
+      "replica": "public",
+      "source": "package"
+    },
+    "labels": [
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "compliance",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "none",
+      "recipient": "partner",
+      "replica": "public",
+      "source": "package"
+    },
+    "labels": [
+      "ACCESS",
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "compliance",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "none",
+      "recipient": "partner",
+      "replica": "public",
+      "source": "package"
+    },
+    "labels": [
+      "CUSTOMER",
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "compliance",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "none",
+      "recipient": "partner",
+      "replica": "public",
+      "source": "package"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER",
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "compliance",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "none",
+      "recipient": "partner",
+      "replica": "public",
+      "source": "package"
+    },
+    "labels": [
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "compliance",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "none",
+      "recipient": "partner",
+      "replica": "public",
+      "source": "package"
+    },
+    "labels": [
+      "ACCESS",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "compliance",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "none",
+      "recipient": "partner",
+      "replica": "public",
+      "source": "package"
+    },
+    "labels": [
+      "CUSTOMER",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "compliance",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "none",
+      "recipient": "partner",
+      "replica": "public",
+      "source": "package"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "compliance",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "none",
+      "recipient": "partner",
+      "replica": "public",
+      "source": "package"
+    },
+    "labels": [
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "compliance",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "none",
+      "recipient": "partner",
+      "replica": "public",
+      "source": "package"
+    },
+    "labels": [
+      "ACCESS",
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "compliance",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "none",
+      "recipient": "partner",
+      "replica": "public",
+      "source": "package"
+    },
+    "labels": [
+      "CUSTOMER",
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "compliance",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "none",
+      "recipient": "partner",
+      "replica": "public",
+      "source": "package"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER",
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "oversight",
+      "replica": "none",
+      "source": "package"
+    },
+    "labels": [],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "oversight",
+      "replica": "none",
+      "source": "package"
+    },
+    "labels": [
+      "ACCESS"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "oversight",
+      "replica": "none",
+      "source": "package"
+    },
+    "labels": [
+      "CUSTOMER"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "oversight",
+      "replica": "none",
+      "source": "package"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "oversight",
+      "replica": "none",
+      "source": "package"
+    },
+    "labels": [
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "oversight",
+      "replica": "none",
+      "source": "package"
+    },
+    "labels": [
+      "ACCESS",
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "oversight",
+      "replica": "none",
+      "source": "package"
+    },
+    "labels": [
+      "CUSTOMER",
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "oversight",
+      "replica": "none",
+      "source": "package"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER",
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "oversight",
+      "replica": "none",
+      "source": "package"
+    },
+    "labels": [
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "oversight",
+      "replica": "none",
+      "source": "package"
+    },
+    "labels": [
+      "ACCESS",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "oversight",
+      "replica": "none",
+      "source": "package"
+    },
+    "labels": [
+      "CUSTOMER",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "oversight",
+      "replica": "none",
+      "source": "package"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "oversight",
+      "replica": "none",
+      "source": "package"
+    },
+    "labels": [
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "oversight",
+      "replica": "none",
+      "source": "package"
+    },
+    "labels": [
+      "ACCESS",
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "oversight",
+      "replica": "none",
+      "source": "package"
+    },
+    "labels": [
+      "CUSTOMER",
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "oversight",
+      "replica": "none",
+      "source": "package"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER",
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "partner",
+      "replica": "public",
+      "source": "onboarding_guide"
+    },
+    "labels": [],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "partner",
+      "replica": "public",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "ACCESS"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "partner",
+      "replica": "public",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "CUSTOMER"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "partner",
+      "replica": "public",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "partner",
+      "replica": "public",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "partner",
+      "replica": "public",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "ACCESS",
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "partner",
+      "replica": "public",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "CUSTOMER",
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "partner",
+      "replica": "public",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER",
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "partner",
+      "replica": "public",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "partner",
+      "replica": "public",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "ACCESS",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "partner",
+      "replica": "public",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "CUSTOMER",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "partner",
+      "replica": "public",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "partner",
+      "replica": "public",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "partner",
+      "replica": "public",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "ACCESS",
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "partner",
+      "replica": "public",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "CUSTOMER",
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "partner",
+      "replica": "public",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER",
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "oversight",
+      "replica": "none",
+      "source": "onboarding_guide"
+    },
+    "labels": [],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "oversight",
+      "replica": "none",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "ACCESS"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "oversight",
+      "replica": "none",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "CUSTOMER"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "oversight",
+      "replica": "none",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "oversight",
+      "replica": "none",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "oversight",
+      "replica": "none",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "ACCESS",
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "oversight",
+      "replica": "none",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "CUSTOMER",
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "oversight",
+      "replica": "none",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER",
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "oversight",
+      "replica": "none",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "oversight",
+      "replica": "none",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "ACCESS",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "oversight",
+      "replica": "none",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "CUSTOMER",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "oversight",
+      "replica": "none",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "oversight",
+      "replica": "none",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "oversight",
+      "replica": "none",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "ACCESS",
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "oversight",
+      "replica": "none",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "CUSTOMER",
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "oversight",
+      "replica": "none",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER",
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "package",
+      "recipient": "local",
+      "replica": "public",
+      "source": "verified"
+    },
+    "labels": [],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "package",
+      "recipient": "local",
+      "replica": "public",
+      "source": "verified"
+    },
+    "labels": [
+      "ACCESS"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "package",
+      "recipient": "local",
+      "replica": "public",
+      "source": "verified"
+    },
+    "labels": [
+      "CUSTOMER"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "package",
+      "recipient": "local",
+      "replica": "public",
+      "source": "verified"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "package",
+      "recipient": "local",
+      "replica": "public",
+      "source": "verified"
+    },
+    "labels": [
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "package",
+      "recipient": "local",
+      "replica": "public",
+      "source": "verified"
+    },
+    "labels": [
+      "ACCESS",
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "package",
+      "recipient": "local",
+      "replica": "public",
+      "source": "verified"
+    },
+    "labels": [
+      "CUSTOMER",
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "package",
+      "recipient": "local",
+      "replica": "public",
+      "source": "verified"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER",
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "package",
+      "recipient": "local",
+      "replica": "public",
+      "source": "verified"
+    },
+    "labels": [
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "package",
+      "recipient": "local",
+      "replica": "public",
+      "source": "verified"
+    },
+    "labels": [
+      "ACCESS",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "package",
+      "recipient": "local",
+      "replica": "public",
+      "source": "verified"
+    },
+    "labels": [
+      "CUSTOMER",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "package",
+      "recipient": "local",
+      "replica": "public",
+      "source": "verified"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "package",
+      "recipient": "local",
+      "replica": "public",
+      "source": "verified"
+    },
+    "labels": [
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "package",
+      "recipient": "local",
+      "replica": "public",
+      "source": "verified"
+    },
+    "labels": [
+      "ACCESS",
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "package",
+      "recipient": "local",
+      "replica": "public",
+      "source": "verified"
+    },
+    "labels": [
+      "CUSTOMER",
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "package",
+      "recipient": "local",
+      "replica": "public",
+      "source": "verified"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER",
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "oversight",
+      "replica": "escrow",
+      "source": "onboarding_guide"
+    },
+    "labels": [],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "oversight",
+      "replica": "escrow",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "ACCESS"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "oversight",
+      "replica": "escrow",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "CUSTOMER"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "oversight",
+      "replica": "escrow",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "oversight",
+      "replica": "escrow",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "oversight",
+      "replica": "escrow",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "ACCESS",
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "oversight",
+      "replica": "escrow",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "CUSTOMER",
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "oversight",
+      "replica": "escrow",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER",
+      "PRICING"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "oversight",
+      "replica": "escrow",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "oversight",
+      "replica": "escrow",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "ACCESS",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "oversight",
+      "replica": "escrow",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "CUSTOMER",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "oversight",
+      "replica": "escrow",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "oversight",
+      "replica": "escrow",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "oversight",
+      "replica": "escrow",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "ACCESS",
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "oversight",
+      "replica": "escrow",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "CUSTOMER",
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "procurement",
+    "tool": "transfer_case",
+    "params": {
+      "enclosure": "case",
+      "recipient": "oversight",
+      "replica": "escrow",
+      "source": "onboarding_guide"
+    },
+    "labels": [
+      "ACCESS",
+      "CUSTOMER",
+      "PRICING",
+      "UNSCREENED"
+    ],
+    "candidate": null,
+    "completion": true
+  }
+]

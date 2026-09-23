@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"import json\\n\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    # Parse tool_input\\n    params = json.loads(tool_input)\\n    \\n    # Get agent and tool from user_input\\n    agent = user_input.get('agent')\\n    tool = user_input.get('tool')\\n    trusted_labels = set(user_input.get('trusted_event_labels', []))\\n    \\n    # Define policy as a constant from the input\\n    policy_dict = {\\n        'slot:audit': ['DIAGNOSIS', 'AUTH'],\\n        'slot:lab': ['PATIENT', 'AUTH'],\\n        'slot:public': ['PATIENT', 'DIAGNOSIS', 'AUTH'],\\n        'slot:research': ['PATIENT', 'UNVERIFIED'],\\n        'slot:scheduler': ['DIAGNOSIS', 'AUTH']\\n    }\\n    \\n    # If tool is not route_referral, allow (no policy restrictions on internal slots)\\n    if tool != 'route_referral':\\n        return False\\n    \\n    # For route_referral, determine destination and record slots\\n    destination = params.get('destination')\\n    record = params.get('record')\\n    \\n    # Map destination to slot based on agent\\n    dest_slot = None\\n    if agent == 'care':\\n        if destination == 'local':\\n            dest_slot = 'slot:hospital'\\n        elif destination == 'partner':\\n            dest_slot = 'slot:scheduler'\\n        elif destination == 'release':\\n            dest_slot = 'slot:public'\\n    elif agent == 'research':\\n        if destination == 'local':\\n            dest_slot = 'slot:hospital'\\n        elif destination == 'partner':\\n            dest_slot = 'slot:research'\\n        elif destination == 'release':\\n            dest_slot = 'slot:lab'\\n    \\n    # Map record to slot\\n    rec_slot = None\\n    if record == 'audit':\\n        rec_slot = 'slot:audit'\\n    elif record == 'partner':\\n        rec_slot = 'slot:partner'\\n    elif record == 'public':\\n        rec_slot = 'slot:public'\\n    # record 'none' leaves rec_slot as None\\n    \\n    # Collect slots to check for write compliance\\n    slots_to_check = []\\n    if dest_slot is not None:\\n        slots_to_check.append(dest_slot)\\n    if rec_slot is not None:\\n        slots_to_check.append(rec_slot)\\n    \\n    # Check each slot against policy\\n    for slot in slots_to_check:\\n        if slot in policy_dict:\\n            allowed_categories = set(policy_dict[slot])\\n            if not trusted_labels.issubset(allowed_categories):\\n                return True  # Stop call if any violation\\n    \\n    # If all checks pass, allow the call\\n    return False\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 5885,
+    "prompt_tokens": 1982,
+    "total_tokens": 7867,
+    "completion_tokens_details": {
+      "reasoning_tokens": 5230
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "8b4d92f0-96b1-4664-8a54-56f482e84d35_1ba4b301954148dcb4b0fbdb7d93da59"
+}

@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"import json\\n\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    parsed_tool_input = json.loads(tool_input)\\n    tool = user_input.get('tool', None)\\n    if tool == 'send':\\n        target = parsed_tool_input.get('target', None)\\n        labels = user_input.get('trusted_event_labels', set())\\n        if target == 'notice':\\n            if 'PII' in labels or 'DETECTION_RULE' in labels:\\n                return True\\n            else:\\n                return False\\n        elif target == 'player':\\n            if 'DETECTION_RULE' in labels:\\n                return True\\n            else:\\n                return False\\n        elif target == 'security':\\n            return False\\n        else:\\n            return False\\n    else:\\n        return False\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 3925,
+    "prompt_tokens": 794,
+    "total_tokens": 4719,
+    "completion_tokens_details": {
+      "reasoning_tokens": 3739
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "1f75443e-443a-4b1c-996c-04f31d022983_23b61587a2d74dcd83ded6c8da06a7b8"
+}

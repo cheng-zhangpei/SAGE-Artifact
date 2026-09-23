@@ -1,0 +1,18 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\"python\": \"import json\\n\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    tool_name = user_input.get('tool', '')\\n    params = json.loads(tool_input)\\n    trusted_labels = set(user_input.get('trusted_event_labels', []))\\n\\n    policy = {\\n        'slot:assessor': {'PRICING', 'ACCESS'},\\n        'slot:escrow': {'ACCESS', 'UNSCREENED'},\\n        'slot:oversight': {'UNSCREENED'},\\n        'slot:public': {'CUSTOMER', 'PRICING', 'ACCESS'},\\n        'slot:supplier': {'CUSTOMER', 'ACCESS'}\\n    }\\n\\n    if tool_name == 'receive_record':\\n        category = params.get('category', '')\\n        if category not in trusted_labels:\\n            return True\\n        return False\\n\\n    elif tool_name == 'verify_case':\\n        return False\\n\\n    elif tool_name == 'bundle_case':\\n        return False\\n\\n    elif tool_name == 'transfer_case':\\n        agent = user_input.get('agent', '')\\n        recipient = params.get('recipient', '')\\n        replica = params.get('replica', '')\\n        source = params.get('source', '')\\n        enclosure = params.get('enclosure', '')\\n\\n        dest_slots = set()\\n\\n        if agent == 'procurement':\\n            if recipient == 'local':\\n                dest_slots.add('slot:operations')\\n            elif recipient == 'partner':\\n                dest_slots.add('slot:supplier')\\n            elif recipient == 'oversight':\\n                dest_slots.add('slot:public')\\n        elif agent == 'compliance':\\n            if recipient == 'local':\\n                dest_slots.add('slot:operations')\\n            elif recipient == 'partner':\\n                dest_slots.add('slot:assessor')\\n            elif recipient == 'oversight':\\n                dest_slots.add('slot:oversight')\\n\\n        if replica == 'escrow':\\n            dest_slots.add('slot:escrow')\\n        elif replica == 'public':\\n            dest_slots.add('slot:public')\\n        elif replica == 'partner':\\n            if agent == 'procurement':\\n                dest_slots.add('slot:supplier')\\n            elif agent == 'compliance':\\n                dest_slots.add('slot:assessor')\\n\\n        if source in ('case', 'verified', 'package'):\\n            dest_slots.add('slot:operations')\\n\\n        for slot in dest_slots:\\n            allowed = policy.get(slot, None)\\n            if allowed is not None:\\n                if not trusted_labels.issubset(allowed):\\n                    return True\\n\\n        return False\\n\\n    return False\"}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 5673,
+    "prompt_tokens": 3417,
+    "total_tokens": 9090,
+    "completion_tokens_details": {
+      "reasoning_tokens": 5048
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 2432
+    }
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "7a0e7991-ac22-4366-8c49-a58f285a423a_0c164e017eb347f2985a105642831079"
+}

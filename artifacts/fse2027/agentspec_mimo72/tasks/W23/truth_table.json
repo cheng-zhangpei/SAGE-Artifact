@@ -1,0 +1,272 @@
+[
+  {
+    "agent": "clerk",
+    "tool": "prepare",
+    "params": {},
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clerk",
+    "tool": "prepare",
+    "params": {},
+    "labels": [
+      "KEY"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clerk",
+    "tool": "prepare",
+    "params": {},
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clerk",
+    "tool": "prepare",
+    "params": {},
+    "labels": [
+      "KEY",
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "locks",
+    "tool": "issue",
+    "params": {},
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "locks",
+    "tool": "issue",
+    "params": {},
+    "labels": [
+      "KEY"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "locks",
+    "tool": "issue",
+    "params": {},
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "locks",
+    "tool": "issue",
+    "params": {},
+    "labels": [
+      "KEY",
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "frontdesk",
+    "tool": "export",
+    "params": {
+      "format": "csv"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "frontdesk",
+    "tool": "export",
+    "params": {
+      "format": "csv"
+    },
+    "labels": [
+      "KEY"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "frontdesk",
+    "tool": "export",
+    "params": {
+      "format": "csv"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "frontdesk",
+    "tool": "export",
+    "params": {
+      "format": "csv"
+    },
+    "labels": [
+      "KEY",
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "events",
+    "tool": "export",
+    "params": {
+      "format": "csv"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "events",
+    "tool": "export",
+    "params": {
+      "format": "csv"
+    },
+    "labels": [
+      "KEY"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "events",
+    "tool": "export",
+    "params": {
+      "format": "csv"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "events",
+    "tool": "export",
+    "params": {
+      "format": "csv"
+    },
+    "labels": [
+      "KEY",
+      "PII"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "frontdesk",
+    "tool": "notify",
+    "params": {
+      "target": "sms"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "frontdesk",
+    "tool": "notify",
+    "params": {
+      "target": "sms"
+    },
+    "labels": [
+      "KEY"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "frontdesk",
+    "tool": "notify",
+    "params": {
+      "target": "sms"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "frontdesk",
+    "tool": "notify",
+    "params": {
+      "target": "sms"
+    },
+    "labels": [
+      "KEY",
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "events",
+    "tool": "export",
+    "params": {
+      "format": "csv",
+      "source": "agenda"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "events",
+    "tool": "export",
+    "params": {
+      "format": "csv",
+      "source": "agenda"
+    },
+    "labels": [
+      "KEY"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "events",
+    "tool": "export",
+    "params": {
+      "format": "csv",
+      "source": "agenda"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "events",
+    "tool": "export",
+    "params": {
+      "format": "csv",
+      "source": "agenda"
+    },
+    "labels": [
+      "KEY",
+      "PII"
+    ],
+    "candidate": false,
+    "completion": true
+  }
+]

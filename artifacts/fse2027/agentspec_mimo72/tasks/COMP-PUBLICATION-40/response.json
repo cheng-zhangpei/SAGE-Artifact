@@ -1,0 +1,18 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"import json\\n\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    # Parse the tool input to get parameters\\n    params = json.loads(tool_input)\\n    \\n    # Get agent and tool name from user input\\n    agent = user_input['agent']\\n    tool = user_input['tool']\\n    \\n    # For non-publish tools, no safety issue as they don't write to restricted slots\\n    if tool != 'publish':\\n        return False\\n    \\n    # Define allowed labels for restricted slots from policy\\n    allowed = {\\n        'slot:archive': {'UNVERIFIED'},\\n        'slot:counsel': {'UNVERIFIED'},\\n        'slot:public': {'PERSONAL', 'EMBARGOED', 'LICENSED'},\\n        'slot:syndicate': {'PERSONAL', 'EMBARGOED'},\\n        'slot:wire': {'PERSONAL', 'LICENSED'}\\n    }\\n    \\n    # Get parameters for publish tool\\n    assets = params.get('assets')\\n    audience = params.get('audience')\\n    record = params.get('record')\\n    source = params.get('source')\\n    \\n    # Determine primary destination slot based on agent and audience\\n    primary_slot = None\\n    if agent == 'editorial':\\n        if audience == 'staff':\\n            primary_slot = 'slot:newsroom'\\n        elif audience == 'partner':\\n            primary_slot = 'slot:syndicate'\\n        elif audience == 'release':\\n            primary_slot = 'slot:public'\\n    elif agent == 'legal':\\n        if audience == 'staff':\\n            primary_slot = 'slot:newsroom'\\n        elif audience == 'partner':\\n            primary_slot = 'slot:counsel'\\n        elif audience == 'release':\\n            primary_slot = 'slot:wire'\\n    \\n    # Determine additional destination slots based on record\\n    additional_slots = set()\\n    if record == 'archive':\\n        additional_slots.add('slot:archive')\\n    elif record == 'public':\\n        additional_slots.add('slot:public')\\n    elif record == 'partner':\\n        if agent == 'editorial':\\n            additional_slots.add('slot:syndicate')\\n        elif agent == 'legal':\\n            additional_slots.add('slot:counsel')\\n    \\n    # Collect all destination slots\\n    destinations = set()\\n    if primary_slot:\\n        destinations.add(primary_slot)\\n    destinations.update(additional_slots)\\n    \\n    # Get trusted event labels as a set\\n    trusted_labels = user_input['trusted_event_labels']\\n    trusted_set = set(trusted_labels)\\n    \\n    # Check if labels are allowed in each destination slot\\n    for dest in destinations:\\n        if dest in allowed:\\n            if not trusted_set.issubset(allowed[dest]):\\n                return True  # Stop the call: labels not allowed in this slot\\n    \\n    # All checks passed\\n    return False\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 5788,
+    "prompt_tokens": 3222,
+    "total_tokens": 9010,
+    "completion_tokens_details": {
+      "reasoning_tokens": 5097
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 2752
+    }
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "1d272a06-9da2-4685-8bdb-831591a5a9a8_64b3651d57e4428dadfb6ee0f38dd6bb"
+}

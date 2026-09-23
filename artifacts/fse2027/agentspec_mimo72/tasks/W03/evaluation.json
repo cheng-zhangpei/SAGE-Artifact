@@ -1,0 +1,230 @@
+{
+  "id": "W03",
+  "layer": "base",
+  "metrics": {
+    "candidate": {
+      "status": "PASS",
+      "dangerous": 4,
+      "benign": 4,
+      "missed": 0,
+      "blocked": 0,
+      "unknown_probes": 0,
+      "benign_prefix_blocked": 0,
+      "first_witness": null
+    },
+    "candidate_plus_sage": {
+      "status": "PASS",
+      "dangerous": 4,
+      "benign": 4,
+      "missed": 0,
+      "blocked": 0,
+      "unknown_probes": 0,
+      "benign_prefix_blocked": 0,
+      "first_witness": null
+    },
+    "direct_sage": {
+      "status": "PASS",
+      "dangerous": 4,
+      "benign": 4,
+      "missed": 0,
+      "blocked": 0,
+      "unknown_probes": 0,
+      "benign_prefix_blocked": 0,
+      "first_witness": null
+    }
+  },
+  "probes": [
+    {
+      "prefix": [
+        "patch",
+        "credential"
+      ],
+      "target": "registry",
+      "dangerous": true,
+      "labels": [
+        "CREDENTIAL",
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "patch"
+      ],
+      "target": "registry",
+      "dangerous": false,
+      "labels": [
+        "UNVERIFIED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "credential",
+        "patch"
+      ],
+      "target": "production",
+      "dangerous": true,
+      "labels": [
+        "CREDENTIAL",
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "credential"
+      ],
+      "target": "production",
+      "dangerous": false,
+      "labels": [
+        "CREDENTIAL"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "credential"
+      ],
+      "target": "audited",
+      "dangerous": true,
+      "labels": [
+        "CREDENTIAL"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "credential"
+      ],
+      "target": "internal",
+      "dangerous": false,
+      "labels": [
+        "CREDENTIAL"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "patch"
+      ],
+      "target": "production",
+      "dangerous": true,
+      "labels": [
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "patch"
+      ],
+      "target": "registry",
+      "dangerous": false,
+      "labels": [
+        "UNVERIFIED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    }
+  ],
+  "runtime_invocations": 48,
+  "observable_domain_checks": 24,
+  "candidate_runtime_errors": [],
+  "certificate": "exhaustive finite observable-domain coverage; sufficient, not reachability-complete"
+}

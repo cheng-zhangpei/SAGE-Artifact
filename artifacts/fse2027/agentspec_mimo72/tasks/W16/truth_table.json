@@ -1,0 +1,276 @@
+[
+  {
+    "agent": "broker",
+    "tool": "prepare",
+    "params": {},
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "broker",
+    "tool": "prepare",
+    "params": {},
+    "labels": [
+      "ACCESS_CODE"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "broker",
+    "tool": "prepare",
+    "params": {},
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "broker",
+    "tool": "prepare",
+    "params": {},
+    "labels": [
+      "ACCESS_CODE",
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "locks",
+    "tool": "issue",
+    "params": {
+      "target": "visit"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "locks",
+    "tool": "issue",
+    "params": {
+      "target": "visit"
+    },
+    "labels": [
+      "ACCESS_CODE"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "locks",
+    "tool": "issue",
+    "params": {
+      "target": "visit"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "locks",
+    "tool": "issue",
+    "params": {
+      "target": "visit"
+    },
+    "labels": [
+      "ACCESS_CODE",
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "broker",
+    "tool": "send",
+    "params": {
+      "target": "listing"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "broker",
+    "tool": "send",
+    "params": {
+      "target": "listing"
+    },
+    "labels": [
+      "ACCESS_CODE"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "broker",
+    "tool": "send",
+    "params": {
+      "target": "listing"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "broker",
+    "tool": "send",
+    "params": {
+      "target": "listing"
+    },
+    "labels": [
+      "ACCESS_CODE",
+      "PII"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "broker",
+    "tool": "send",
+    "params": {
+      "target": "sms"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "broker",
+    "tool": "send",
+    "params": {
+      "target": "sms"
+    },
+    "labels": [
+      "ACCESS_CODE"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "broker",
+    "tool": "send",
+    "params": {
+      "target": "sms"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "broker",
+    "tool": "send",
+    "params": {
+      "target": "sms"
+    },
+    "labels": [
+      "ACCESS_CODE",
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "broker",
+    "tool": "send",
+    "params": {
+      "target": "private"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "broker",
+    "tool": "send",
+    "params": {
+      "target": "private"
+    },
+    "labels": [
+      "ACCESS_CODE"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "broker",
+    "tool": "send",
+    "params": {
+      "target": "private"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "broker",
+    "tool": "send",
+    "params": {
+      "target": "private"
+    },
+    "labels": [
+      "ACCESS_CODE",
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "locks",
+    "tool": "issue",
+    "params": {
+      "target": "sms"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "locks",
+    "tool": "issue",
+    "params": {
+      "target": "sms"
+    },
+    "labels": [
+      "ACCESS_CODE"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "locks",
+    "tool": "issue",
+    "params": {
+      "target": "sms"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "locks",
+    "tool": "issue",
+    "params": {
+      "target": "sms"
+    },
+    "labels": [
+      "ACCESS_CODE",
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  }
+]

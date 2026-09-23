@@ -1,0 +1,134 @@
+[
+  {
+    "agent": "database",
+    "tool": "dump",
+    "params": {},
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "database",
+    "tool": "dump",
+    "params": {},
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "database",
+    "tool": "append_schema",
+    "params": {},
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "database",
+    "tool": "append_schema",
+    "params": {},
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "storage",
+    "tool": "backup",
+    "params": {
+      "manifest": false,
+      "route": "primary"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "storage",
+    "tool": "backup",
+    "params": {
+      "manifest": false,
+      "route": "primary"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "storage",
+    "tool": "backup",
+    "params": {
+      "manifest": false,
+      "route": "standby"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "storage",
+    "tool": "backup",
+    "params": {
+      "manifest": false,
+      "route": "standby"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "storage",
+    "tool": "backup",
+    "params": {
+      "manifest": false,
+      "route": "vendor"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "storage",
+    "tool": "backup",
+    "params": {
+      "manifest": false,
+      "route": "vendor"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "storage",
+    "tool": "backup",
+    "params": {
+      "manifest": true,
+      "route": "primary"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "storage",
+    "tool": "backup",
+    "params": {
+      "manifest": true,
+      "route": "primary"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  }
+]

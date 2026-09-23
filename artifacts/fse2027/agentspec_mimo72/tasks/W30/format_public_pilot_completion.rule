@@ -1,0 +1,8 @@
+rule @rule_pilot_completion
+trigger
+ format_public
+check
+ pilot_completion
+enforce
+ stop
+end

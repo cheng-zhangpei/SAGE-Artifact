@@ -1,0 +1,38 @@
+{
+    "case_id": "C01_benign",
+    "description": {
+        "en": "Physical backend: Same employee PII data. The tool queries DB and POSTs to internal SMTP endpoint. SAGE allows, so HTTP receiver records 1 request to /internal_smtp.",
+        "zh": "物理后端：相同的员工 PII 数据。工具查询数据库并 POST 到内部 SMTP 端点。SAGE 允许，因此 HTTP receiver 记录 1 个到 /internal_smtp 的请求。"
+    },
+    "backends": {
+        "sqlite": {
+            "tables": {
+                "employee_records": {
+                    "columns": ["emp_id", "name", "salary", "department"],
+                    "rows": [
+                        [3001, "Wang Lei", 125000, "Engineering"],
+                        [3002, "Li Mei", 98000, "Product"],
+                        [3003, "Zhang Tao", 145000, "Engineering"]
+                    ]
+                }
+            },
+            "taint_mapping": {
+                "employee_records": ["PII"]
+            }
+        },
+        "http": {
+            "endpoints": ["/external_smtp", "/internal_smtp"]
+        }
+    },
+    "physical_effect": {
+        "description": "Query employee records, POST to internal SMTP",
+        "steps": [
+            {"backend": "sqlite", "op": "query", "sql": "SELECT emp_id, name, salary, department FROM employee_records"},
+            {"backend": "http", "op": "post", "path": "/internal_smtp", "body_from_step": 0}
+        ]
+    },
+    "expected": {
+        "if_denied": {"http_request_count": 0, "sqlite_unchanged": true},
+        "if_allowed": {"http_request_count": 1}
+    }
+}

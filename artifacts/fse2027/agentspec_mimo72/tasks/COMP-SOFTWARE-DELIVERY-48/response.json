@@ -1,0 +1,18 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"import json\\n\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    # Parse tool_input to get parameters\\n    tool_params = json.loads(tool_input)\\n    \\n    # Extract agent, tool, and trusted labels from user_input\\n    tool_name = user_input.get(\\\"tool\\\", \\\"\\\")\\n    agent_name = user_input.get(\\\"agent\\\", \\\"\\\")\\n    labels = user_input.get(\\\"trusted_event_labels\\\", [])\\n    \\n    # Policy dictionary from the workflow\\n    policy = {\\n        \\\"slot:audit\\\": [\\\"SOURCE\\\", \\\"CREDENTIAL\\\"],\\n        \\\"slot:marketplace\\\": [\\\"CUSTOMER\\\", \\\"CREDENTIAL\\\"],\\n        \\\"slot:production\\\": [\\\"UNVERIFIED\\\"],\\n        \\\"slot:public\\\": [\\\"CUSTOMER\\\", \\\"SOURCE\\\", \\\"CREDENTIAL\\\"],\\n        \\\"slot:vendor\\\": [\\\"SOURCE\\\", \\\"CREDENTIAL\\\"]\\n    }\\n    \\n    # Allow all tools except deliver_build (based on policy restrictions)\\n    if tool_name != \\\"deliver_build\\\":\\n        return False\\n    \\n    # For deliver_build, check channel and telemetry against policy\\n    channel = tool_params.get(\\\"channel\\\")\\n    telemetry = tool_params.get(\\\"telemetry\\\")\\n    \\n    # Determine main target slot based on agent and channel\\n    target_slot = None\\n    if agent_name == \\\"release\\\":\\n        if channel == \\\"local\\\":\\n            target_slot = \\\"slot:internal\\\"\\n        elif channel == \\\"partner\\\":\\n            target_slot = \\\"slot:marketplace\\\"\\n        elif channel == \\\"release\\\":\\n            target_slot = \\\"slot:public\\\"\\n    elif agent_name == \\\"operations\\\":\\n        if channel == \\\"local\\\":\\n            target_slot = \\\"slot:internal\\\"\\n        elif channel == \\\"partner\\\":\\n            target_slot = \\\"slot:vendor\\\"\\n        elif channel == \\\"release\\\":\\n            target_slot = \\\"slot:production\\\"\\n    \\n    # Determine telemetry slot (no policy restriction for partner)\\n    telemetry_slot = None\\n    if telemetry == \\\"audit\\\":\\n        telemetry_slot = \\\"slot:audit\\\"\\n    elif telemetry == \\\"public\\\":\\n        telemetry_slot = \\\"slot:public\\\"\\n    # partner telemetry maps to unlisted slot, so no check needed\\n    \\n    # Check if any label is disallowed in target_slot\\n    if target_slot is not None and target_slot in policy:\\n        disallowed = policy[target_slot]\\n        for label in labels:\\n            if label in disallowed:\\n                return True  # block the call\\n    \\n    # Check if any label is disallowed in telemetry_slot\\n    if telemetry_slot is not None and telemetry_slot in policy:\\n        disallowed = policy[telemetry_slot]\\n        for label in labels:\\n            if label in disallowed:\\n                return True  # block the call\\n    \\n    # If no violations, allow the call\\n    return False\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 5990,
+    "prompt_tokens": 3736,
+    "total_tokens": 9726,
+    "completion_tokens_details": {
+      "reasoning_tokens": 5331
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 3712
+    }
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "fca9ec1b-38eb-461e-a0fe-0d75fa65b14c_5057b8fb29a140baae098ca0ea38b6df"
+}

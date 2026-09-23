@@ -1,0 +1,244 @@
+{
+  "id": "W05",
+  "layer": "base",
+  "metrics": {
+    "candidate": {
+      "status": "FAIL",
+      "dangerous": 4,
+      "benign": 4,
+      "missed": 4,
+      "blocked": 0,
+      "unknown_probes": 0,
+      "benign_prefix_blocked": 0,
+      "first_witness": {
+        "prefix": [
+          "summarize",
+          "stage"
+        ],
+        "target": "website",
+        "dangerous": true,
+        "labels": [
+          "CONFIDENTIAL"
+        ],
+        "candidate": false,
+        "candidate_plus_sage": true,
+        "direct_sage": true,
+        "blocked_prefix": {
+          "candidate": [],
+          "candidate_plus_sage": [],
+          "direct_sage": []
+        },
+        "unknown_prefix": {
+          "candidate": false,
+          "candidate_plus_sage": false,
+          "direct_sage": false
+        }
+      }
+    },
+    "candidate_plus_sage": {
+      "status": "PASS",
+      "dangerous": 4,
+      "benign": 4,
+      "missed": 0,
+      "blocked": 0,
+      "unknown_probes": 0,
+      "benign_prefix_blocked": 0,
+      "first_witness": null
+    },
+    "direct_sage": {
+      "status": "PASS",
+      "dangerous": 4,
+      "benign": 4,
+      "missed": 0,
+      "blocked": 0,
+      "unknown_probes": 0,
+      "benign_prefix_blocked": 0,
+      "first_witness": null
+    }
+  },
+  "probes": [
+    {
+      "prefix": [
+        "summarize",
+        "stage"
+      ],
+      "target": "website",
+      "dangerous": true,
+      "labels": [
+        "CONFIDENTIAL"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "stage"
+      ],
+      "target": "website",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "summarize"
+      ],
+      "target": "newsletter",
+      "dangerous": true,
+      "labels": [
+        "CONFIDENTIAL"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [],
+      "target": "newsletter",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "summarize"
+      ],
+      "target": "newsletter",
+      "dangerous": true,
+      "labels": [
+        "CONFIDENTIAL"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "summarize"
+      ],
+      "target": "counsel",
+      "dangerous": false,
+      "labels": [
+        "CONFIDENTIAL"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "summarize",
+        "stage"
+      ],
+      "target": "website",
+      "dangerous": true,
+      "labels": [
+        "CONFIDENTIAL"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "summarize",
+        "stage"
+      ],
+      "target": "template",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    }
+  ],
+  "runtime_invocations": 24,
+  "observable_domain_checks": 12,
+  "candidate_runtime_errors": [],
+  "certificate": "exhaustive finite observable-domain coverage; sufficient, not reachability-complete"
+}

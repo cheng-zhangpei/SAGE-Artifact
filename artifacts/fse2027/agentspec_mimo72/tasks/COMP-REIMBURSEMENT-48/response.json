@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"import json\\n\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    tool_name = user_input['tool']\\n    agent = user_input['agent']\\n    params = json.loads(tool_input)\\n    trusted_labels = set(user_input['trusted_event_labels'])\\n\\n    # Define policy with all slots and allowed labels\\n    policy = {\\n        'slot:audit': {'FINANCIAL', 'AUTH'},\\n        'slot:bank': {'EMPLOYEE', 'AUTH'},\\n        'slot:processor': {'AUTH', 'UNVERIFIED'},\\n        'slot:public': {'EMPLOYEE', 'FINANCIAL', 'AUTH'},\\n        'slot:regulator': {'UNVERIFIED'}\\n    }\\n\\n    # Import tools append to slot:claim (not in policy, so always allowed)\\n    if tool_name == 'import_expense':\\n        return False\\n\\n    # Review and assemble tools move data between unrestricted slots\\n    if tool_name in ('review_claim', 'assemble_packet'):\\n        return False\\n\\n    # Submit Claim: compute destination slots based on parameters\\n    if tool_name == 'submit_claim':\\n        route = params.get('route')\\n        copy = params.get('copy')\\n\\n        # Route determines primary destination slot\\n        route_slot = None\\n        if agent == 'claims':\\n            route_map = {'local': 'slot:backoffice', 'counterparty': 'slot:processor', 'release': 'slot:public'}\\n            route_slot = route_map.get(route)\\n        elif agent == 'treasury':\\n            route_map = {'local': 'slot:backoffice', 'counterparty': 'slot:bank', 'release': 'slot:regulator'}\\n            route_slot = route_map.get(route)\\n\\n        # Copy determines additional destination slot\\n        copy_slot = None\\n        if copy == 'audit':\\n            copy_slot = 'slot:audit'\\n        elif copy == 'counterparty':\\n            if agent == 'claims':\\n                copy_slot = 'slot:processor'\\n            elif agent == 'treasury':\\n                copy_slot = 'slot:bank'\\n        elif copy == 'public':\\n            copy_slot = 'slot:public'\\n\\n        # Check each destination slot against policy\\n        for slot in [route_slot, copy_slot]:\\n            if slot is not None and slot in policy:\\n                allowed = set(policy[slot])\\n                # If any label is not allowed, block\\n                if not trusted_labels.issubset(allowed):\\n                    return True\\n\\n    # Default: allow\\n    return False\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 4264,
+    "prompt_tokens": 3733,
+    "total_tokens": 7997,
+    "completion_tokens_details": {
+      "reasoning_tokens": 3677
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "636246f7-7c21-443b-9241-0b6a7340891b_b260afef8ab24578978f48d70ccf6ffc"
+}

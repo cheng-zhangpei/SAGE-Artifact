@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\"python\": \"import json\\n\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    params = json.loads(tool_input)\\n    agent = user_input.get('agent', '')\\n    tool = user_input.get('tool', '')\\n    trusted_labels = user_input.get('trusted_event_labels', [])\\n    trusted_set = set(trusted_labels)\\n    destination = None\\n    if agent == 'refunds' and tool == 'notify':\\n        destination = 'audit'\\n    elif agent == 'refunds' and tool == 'issue_receipt':\\n        destination = 'merchant'\\n    elif agent == 'merchant_relations' and tool == 'update':\\n        destination = 'merchant'\\n    elif agent == 'customer_care' and tool == 'update':\\n        destination = 'internal'\\n    else:\\n        destination = 'case'\\n    forbidden_map = {\\n        'audit': ['TOKEN'],\\n        'merchant': ['PII', 'TOKEN']\\n    }\\n    if destination in forbidden_map:\\n        forbidden_set = set(forbidden_map[destination])\\n        if trusted_set.intersection(forbidden_set):\\n            return True\\n    return False\"}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 5215,
+    "prompt_tokens": 869,
+    "total_tokens": 6084,
+    "completion_tokens_details": {
+      "reasoning_tokens": 4954
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "818aff49-cdad-4d60-8119-75ccf1f7730d_cf112525f93240c0826fec5b3c75bf3e"
+}

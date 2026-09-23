@@ -1,0 +1,45 @@
+{
+  "name": "s3_full",
+  "description": "Data Analytics Workspace",
+  "agents": ["analyst", "publisher"],
+  "tools": ["load_data", "publish"],
+  "labels": ["PII", "CONFIDENTIAL"],
+  "actions": [
+    {
+      "agent": "analyst",
+      "tool": "load_data",
+      "params": {"dataset": "customer_records"},
+      "reads": ["ctx:analyst"],
+      "writes": ["slot:workspace.active_data"],
+      "gen": ["PII"]
+    },
+    {
+      "agent": "analyst",
+      "tool": "load_data",
+      "params": {"dataset": "public_stats"},
+      "reads": ["ctx:analyst"],
+      "writes": ["slot:workspace.active_data"],
+      "gen": []
+    },
+    {
+      "agent": "publisher",
+      "tool": "publish",
+      "params": {"source": "workspace.active_data", "channel": "external_blog"},
+      "reads": ["ctx:publisher", "slot:workspace.active_data"],
+      "writes": ["slot:external.blog"],
+      "gen": []
+    },
+    {
+      "agent": "publisher",
+      "tool": "publish",
+      "params": {"source": "workspace.active_data", "channel": "internal_report"},
+      "reads": ["ctx:publisher", "slot:workspace.active_data"],
+      "writes": ["slot:internal.report"],
+      "gen": []
+    }
+  ],
+  "policy": {
+    "slot:external.blog": ["PII", "CONFIDENTIAL"]
+  },
+  "initial_state": {}
+}

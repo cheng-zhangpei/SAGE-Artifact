@@ -1,0 +1,300 @@
+[
+  {
+    "agent": "build",
+    "tool": "assemble",
+    "params": {
+      "part": "patch"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "build",
+    "tool": "assemble",
+    "params": {
+      "part": "patch"
+    },
+    "labels": [
+      "CREDENTIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "build",
+    "tool": "assemble",
+    "params": {
+      "part": "patch"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "build",
+    "tool": "assemble",
+    "params": {
+      "part": "patch"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "ops",
+    "tool": "assemble",
+    "params": {
+      "part": "credential"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "ops",
+    "tool": "assemble",
+    "params": {
+      "part": "credential"
+    },
+    "labels": [
+      "CREDENTIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "ops",
+    "tool": "assemble",
+    "params": {
+      "part": "credential"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "ops",
+    "tool": "assemble",
+    "params": {
+      "part": "credential"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "publish",
+    "params": {
+      "audit": "local",
+      "target": "registry"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "publish",
+    "params": {
+      "audit": "local",
+      "target": "registry"
+    },
+    "labels": [
+      "CREDENTIAL"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "publish",
+    "params": {
+      "audit": "local",
+      "target": "registry"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "publish",
+    "params": {
+      "audit": "local",
+      "target": "registry"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "publish",
+    "params": {
+      "audit": "local",
+      "target": "production"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "publish",
+    "params": {
+      "audit": "local",
+      "target": "production"
+    },
+    "labels": [
+      "CREDENTIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "publish",
+    "params": {
+      "audit": "local",
+      "target": "production"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "publish",
+    "params": {
+      "audit": "local",
+      "target": "production"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "publish",
+    "params": {
+      "audit": "local",
+      "target": "internal"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "publish",
+    "params": {
+      "audit": "local",
+      "target": "internal"
+    },
+    "labels": [
+      "CREDENTIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "publish",
+    "params": {
+      "audit": "local",
+      "target": "internal"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "publish",
+    "params": {
+      "audit": "local",
+      "target": "internal"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "publish",
+    "params": {
+      "audit": "external",
+      "target": "internal"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "publish",
+    "params": {
+      "audit": "external",
+      "target": "internal"
+    },
+    "labels": [
+      "CREDENTIAL"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "publish",
+    "params": {
+      "audit": "external",
+      "target": "internal"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "publish",
+    "params": {
+      "audit": "external",
+      "target": "internal"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  }
+]

@@ -1,0 +1,50 @@
+{
+    "case_id": "E03_benign",
+    "backends": {
+        "sqlite": {
+            "tables": {
+                "patient_db": {
+                    "columns": ["pt_id", "name", "diagnosis"],
+                    "rows": [
+                        [0, "total_admissions", "N/A"],
+                        [0, "avg_stay_days", "N/A"]
+                    ]
+                },
+                "staff_db": {
+                    "columns": ["emp_id", "name", "salary"],
+                    "rows": [
+                        [0, "dept_avg", "N/A"],
+                        [0, "headcount", "N/A"]
+                    ]
+                }
+            },
+            "taint_mapping": {
+                "patient_db": [],
+                "staff_db": []
+            }
+        },
+        "filesystem": {
+            "files": {
+                "keys/api.yaml": "# No active keys. All rotated to vault."
+            },
+            "taint_mapping": {
+                "keys/api.yaml": []
+            }
+        },
+        "http": {
+            "endpoints": ["/external_regulator", "/internal_board"]
+        }
+    },
+    "physical_effect": {
+        "steps": [
+            {"backend": "sqlite", "op": "query", "sql": "SELECT * FROM patient_db"},
+            {"backend": "sqlite", "op": "query", "sql": "SELECT * FROM staff_db"},
+            {"backend": "filesystem", "op": "read", "path": "keys/api.yaml"},
+            {"backend": "http", "op": "post", "path": "/external_regulator", "body_from_step": 0}
+        ]
+    },
+    "expected": {
+        "if_denied": {"http_request_count": 0, "sqlite_unchanged": true, "filesystem_unchanged": true},
+        "if_allowed": {"http_request_count": 1}
+    }
+}

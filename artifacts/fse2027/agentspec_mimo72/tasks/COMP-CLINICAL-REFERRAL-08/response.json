@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"import json\\n\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    trusted_labels = user_input.get('trusted_event_labels', [])\\n    tool_name = user_input.get('tool')\\n    agent = user_input.get('agent')\\n    params = json.loads(tool_input) if tool_input else {}\\n    \\n    # Policy dictionary defining allowed categories for each slot\\n    policy = {\\n        'slot:audit': ['DIAGNOSIS', 'AUTH'],\\n        'slot:lab': ['PATIENT', 'AUTH'],\\n        'slot:public': ['PATIENT', 'DIAGNOSIS', 'AUTH'],\\n        'slot:research': ['PATIENT', 'UNVERIFIED'],\\n        'slot:scheduler': ['DIAGNOSIS', 'AUTH']\\n    }\\n    \\n    # For tools that don't write to policy-restricted slots, allow the call\\n    if tool_name not in ['route_referral']:\\n        return False\\n    \\n    # Handle route_referral tool\\n    destination_param = params.get('destination')\\n    record_param = params.get('record')\\n    \\n    # Map destination parameter to slot based on agent\\n    if agent == 'care':\\n        dest_map = {'local': 'slot:hospital', 'partner': 'slot:scheduler', 'release': 'slot:public'}\\n    elif agent == 'research':\\n        dest_map = {'local': 'slot:hospital', 'partner': 'slot:research', 'release': 'slot:lab'}\\n    else:\\n        # Unknown agent, disallow as a safety measure\\n        return True\\n    \\n    destination_slot = dest_map.get(destination_param)\\n    \\n    # Determine record slot\\n    record_slot = None\\n    if record_param == 'audit':\\n        record_slot = 'slot:audit'\\n    elif record_param == 'partner':\\n        if agent == 'care':\\n            record_slot = 'slot:scheduler'\\n        elif agent == 'research':\\n            record_slot = 'slot:research'\\n    elif record_param == 'public':\\n        record_slot = 'slot:public'\\n    elif record_param == 'none':\\n        record_slot = None\\n    \\n    # Collect slots to check for policy restrictions\\n    slots_to_check = []\\n    if destination_slot:\\n        slots_to_check.append(destination_slot)\\n    if record_slot:\\n        slots_to_check.append(record_slot)\\n    \\n    # Check if any trusted label is not allowed at any write slot\\n    for slot in slots_to_check:\\n        if slot in policy:\\n            allowed_categories = policy[slot]\\n            if any(label not in allowed_categories for label in trusted_labels):\\n                return True  # Stop the call due to policy violation\\n    \\n    return False  # No violations, allow the call\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 5335,
+    "prompt_tokens": 1527,
+    "total_tokens": 6862,
+    "completion_tokens_details": {
+      "reasoning_tokens": 4693
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "da318d9e-ba71-48c0-b20e-3b56d9118dcb_025b75b3b9324ff28b335769575e0472"
+}

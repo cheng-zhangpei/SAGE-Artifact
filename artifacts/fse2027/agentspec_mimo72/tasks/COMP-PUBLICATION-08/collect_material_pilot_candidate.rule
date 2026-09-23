@@ -1,0 +1,8 @@
+rule @rule_pilot_candidate
+trigger
+ collect_material
+check
+ pilot_candidate
+enforce
+ stop
+end

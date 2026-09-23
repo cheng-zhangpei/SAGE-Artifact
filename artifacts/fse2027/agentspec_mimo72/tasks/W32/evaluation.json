@@ -1,0 +1,223 @@
+{
+  "id": "W32",
+  "layer": "base",
+  "metrics": {
+    "candidate": {
+      "status": "PASS",
+      "dangerous": 4,
+      "benign": 4,
+      "missed": 0,
+      "blocked": 0,
+      "unknown_probes": 0,
+      "benign_prefix_blocked": 0,
+      "first_witness": null
+    },
+    "candidate_plus_sage": {
+      "status": "PASS",
+      "dangerous": 4,
+      "benign": 4,
+      "missed": 0,
+      "blocked": 0,
+      "unknown_probes": 0,
+      "benign_prefix_blocked": 0,
+      "first_witness": null
+    },
+    "direct_sage": {
+      "status": "PASS",
+      "dangerous": 4,
+      "benign": 4,
+      "missed": 0,
+      "blocked": 0,
+      "unknown_probes": 0,
+      "benign_prefix_blocked": 0,
+      "first_witness": null
+    }
+  },
+  "probes": [
+    {
+      "prefix": [
+        "prepare"
+      ],
+      "target": "reproduced",
+      "dangerous": true,
+      "labels": [
+        "EXPLOIT"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "prepare"
+      ],
+      "target": "plain",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "prepare"
+      ],
+      "target": "mirrored",
+      "dangerous": true,
+      "labels": [
+        "EXPLOIT"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "prepare"
+      ],
+      "target": "private",
+      "dangerous": false,
+      "labels": [
+        "EXPLOIT"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "prepare",
+        "attach"
+      ],
+      "target": "plain",
+      "dangerous": true,
+      "labels": [
+        "EXPLOIT"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "prepare"
+      ],
+      "target": "plain",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "attach"
+      ],
+      "target": "plain",
+      "dangerous": true,
+      "labels": [
+        "EXPLOIT"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "attach"
+      ],
+      "target": "private",
+      "dangerous": false,
+      "labels": [
+        "EXPLOIT"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    }
+  ],
+  "runtime_invocations": 24,
+  "observable_domain_checks": 12,
+  "candidate_runtime_errors": [],
+  "certificate": "exhaustive finite observable-domain coverage; sufficient, not reachability-complete"
+}

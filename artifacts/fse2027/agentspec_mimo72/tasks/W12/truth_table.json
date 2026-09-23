@@ -1,0 +1,339 @@
+[
+  {
+    "agent": "investigator",
+    "tool": "collect",
+    "params": {
+      "part": "identities"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "investigator",
+    "tool": "collect",
+    "params": {
+      "part": "identities"
+    },
+    "labels": [
+      "CREDENTIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "investigator",
+    "tool": "collect",
+    "params": {
+      "part": "identities"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "investigator",
+    "tool": "collect",
+    "params": {
+      "part": "identities"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "investigator",
+    "tool": "collect",
+    "params": {
+      "part": "secrets"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "investigator",
+    "tool": "collect",
+    "params": {
+      "part": "secrets"
+    },
+    "labels": [
+      "CREDENTIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "investigator",
+    "tool": "collect",
+    "params": {
+      "part": "secrets"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "investigator",
+    "tool": "collect",
+    "params": {
+      "part": "secrets"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "oncall",
+    "tool": "stage",
+    "params": {},
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "oncall",
+    "tool": "stage",
+    "params": {},
+    "labels": [
+      "CREDENTIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "oncall",
+    "tool": "stage",
+    "params": {},
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "oncall",
+    "tool": "stage",
+    "params": {},
+    "labels": [
+      "CREDENTIAL",
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "notifier",
+    "tool": "announce",
+    "params": {
+      "attachments": true,
+      "target": "status"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "notifier",
+    "tool": "announce",
+    "params": {
+      "attachments": true,
+      "target": "status"
+    },
+    "labels": [
+      "CREDENTIAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "notifier",
+    "tool": "announce",
+    "params": {
+      "attachments": true,
+      "target": "status"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "notifier",
+    "tool": "announce",
+    "params": {
+      "attachments": true,
+      "target": "status"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "notifier",
+    "tool": "announce",
+    "params": {
+      "attachments": true,
+      "target": "response_room"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "notifier",
+    "tool": "announce",
+    "params": {
+      "attachments": true,
+      "target": "response_room"
+    },
+    "labels": [
+      "CREDENTIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "notifier",
+    "tool": "announce",
+    "params": {
+      "attachments": true,
+      "target": "response_room"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "notifier",
+    "tool": "announce",
+    "params": {
+      "attachments": true,
+      "target": "response_room"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "notifier",
+    "tool": "announce",
+    "params": {
+      "attachments": true,
+      "target": "coordinator"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "notifier",
+    "tool": "announce",
+    "params": {
+      "attachments": true,
+      "target": "coordinator"
+    },
+    "labels": [
+      "CREDENTIAL"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "notifier",
+    "tool": "announce",
+    "params": {
+      "attachments": true,
+      "target": "coordinator"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "notifier",
+    "tool": "announce",
+    "params": {
+      "attachments": true,
+      "target": "coordinator"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "notifier",
+    "tool": "announce",
+    "params": {
+      "attachments": false,
+      "target": "status"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "notifier",
+    "tool": "announce",
+    "params": {
+      "attachments": false,
+      "target": "status"
+    },
+    "labels": [
+      "CREDENTIAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "notifier",
+    "tool": "announce",
+    "params": {
+      "attachments": false,
+      "target": "status"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "notifier",
+    "tool": "announce",
+    "params": {
+      "attachments": false,
+      "target": "status"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "PII"
+    ],
+    "candidate": false,
+    "completion": true
+  }
+]

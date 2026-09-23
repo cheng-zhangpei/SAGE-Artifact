@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\"python\": \"import json\\n\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    policy = {\\n        \\\"slot:archive\\\": [\\\"UNVERIFIED\\\"],\\n        \\\"slot:counsel\\\": [\\\"UNVERIFIED\\\"],\\n        \\\"slot:public\\\": [\\\"PERSONAL\\\", \\\"EMBARGOED\\\", \\\"LICENSED\\\"],\\n        \\\"slot:syndicate\\\": [\\\"PERSONAL\\\", \\\"EMBARGOED\\\"],\\n        \\\"slot:wire\\\": [\\\"PERSONAL\\\", \\\"LICENSED\\\"]\\n    }\\n    \\n    agent = user_input.get(\\\"agent\\\")\\n    tool = user_input.get(\\\"tool\\\")\\n    params = json.loads(tool_input) if tool_input else {}\\n    labels = set(user_input.get(\\\"trusted_event_labels\\\", []))\\n    \\n    if tool == \\\"collect_material\\\":\\n        return False\\n    \\n    elif tool == \\\"edit_draft\\\":\\n        return False\\n    \\n    elif tool == \\\"review_release\\\":\\n        return False\\n    \\n    elif tool == \\\"publish\\\":\\n        source = params.get(\\\"source\\\")\\n        assets = params.get(\\\"assets\\\")\\n        record = params.get(\\\"record\\\")\\n        audience = params.get(\\\"audience\\\")\\n        \\n        if agent == \\\"editorial\\\":\\n            audience_to_slot = {\\n                \\\"staff\\\": \\\"slot:newsroom\\\",\\n                \\\"partner\\\": \\\"slot:syndicate\\\",\\n                \\\"release\\\": \\\"slot:public\\\"\\n            }\\n        elif agent == \\\"legal\\\":\\n            audience_to_slot = {\\n                \\\"staff\\\": \\\"slot:newsroom\\\",\\n                \\\"partner\\\": \\\"slot:counsel\\\",\\n                \\\"release\\\": \\\"slot:wire\\\"\\n            }\\n        else:\\n            return False\\n        \\n        dest_slot = audience_to_slot.get(audience)\\n        if dest_slot and dest_slot in policy:\\n            if not labels.issubset(set(policy[dest_slot])):\\n                return True\\n        \\n        if record == \\\"archive\\\":\\n            dest_slot = \\\"slot:archive\\\"\\n            if dest_slot in policy:\\n                if not labels.issubset(set(policy[dest_slot])):\\n                    return True\\n        elif record == \\\"public\\\":\\n            dest_slot = \\\"slot:public\\\"\\n            if dest_slot in policy:\\n                if not labels.issubset(set(policy[dest_slot])):\\n                    return True\\n        elif record == \\\"partner\\\":\\n            if agent == \\\"editorial\\\":\\n                dest_slot = \\\"slot:syndicate\\\"\\n            else:\\n                dest_slot = \\\"slot:counsel\\\"\\n            if dest_slot in policy:\\n                if not labels.issubset(set(policy[dest_slot])):\\n                    return True\\n        \\n        return False\\n    \\n    return False\"}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 7391,
+    "prompt_tokens": 1499,
+    "total_tokens": 8890,
+    "completion_tokens_details": {
+      "reasoning_tokens": 6761
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "424a5c6d-e1a9-4334-82ea-d8fa3830b281_a9fbfca6d82e4fa890cf1f595245b540"
+}

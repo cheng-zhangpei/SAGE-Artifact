@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\"python\": \"import json\\n\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    params = json.loads(tool_input)\\n    agent = user_input['agent']\\n    tool = user_input['tool']\\n    labels = set(user_input['trusted_event_labels'])\\n    \\n    if tool == 'receive_record':\\n        cat = params['category']\\n        # destination slot:case is unrestricted (not in policy)\\n        return False\\n    \\n    elif tool == 'verify_case':\\n        # destination slot:verified is unrestricted\\n        return False\\n    \\n    elif tool == 'bundle_case':\\n        # destination slot:package is unrestricted\\n        return False\\n    \\n    elif tool == 'transfer_case':\\n        recipient = params['recipient']\\n        replica = params['replica']\\n        # Map recipient to slot\\n        if agent == 'procurement':\\n            recipient_map = {'local': 'slot:operations', 'partner': 'slot:supplier', 'oversight': 'slot:public'}\\n        else:  # compliance\\n            recipient_map = {'local': 'slot:operations', 'partner': 'slot:assessor', 'oversight': 'slot:oversight'}\\n        dest = recipient_map.get(recipient)\\n        # Check policy for recipient slot\\n        policy = user_input.get('policy', {})\\n        if dest and dest in policy:\\n            allowed = set(policy[dest])\\n            if not labels.issubset(allowed):\\n                return True\\n        # Check replica slot if replica is not 'none'\\n        if replica != 'none':\\n            if replica == 'escrow':\\n                replica_slot = 'slot:escrow'\\n            elif replica == 'public':\\n                replica_slot = 'slot:public'\\n            elif replica == 'partner':\\n                if agent == 'procurement':\\n                    replica_slot = 'slot:supplier'\\n                else:\\n                    replica_slot = 'slot:assessor'\\n            else:\\n                replica_slot = None\\n            if replica_slot and replica_slot in policy:\\n                allowed = set(policy[replica_slot])\\n                if not labels.issubset(allowed):\\n                    return True\\n        return False\\n    \\n    # Default allow for any other tool (not expected)\\n    return False\"}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 5213,
+    "prompt_tokens": 2019,
+    "total_tokens": 7232,
+    "completion_tokens_details": {
+      "reasoning_tokens": 4692
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "357a1187-e1ad-46f8-aeb4-f5fc703bce3b_7d5397fb755848189aa0c4866bd9bafb"
+}

@@ -1,0 +1,18 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"import json\\n\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    agent = user_input['agent']\\n    tool = user_input['tool']\\n    labels = set(user_input['trusted_event_labels'])\\n    params = json.loads(tool_input)\\n\\n    # Policy mapping: slot -> allowed categories\\n    policy = {\\n        'slot:archive': {'UNVERIFIED'},\\n        'slot:counsel': {'UNVERIFIED'},\\n        'slot:public': {'PERSONAL', 'EMBARGOED', 'LICENSED'},\\n        'slot:syndicate': {'PERSONAL', 'EMBARGOED'},\\n        'slot:wire': {'PERSONAL', 'LICENSED'}\\n    }\\n\\n    # Helper to check if a set of labels is allowed in a slot\\n    def is_allowed(slot, lab_set):\\n        if slot not in policy:\\n            return True  # no restriction\\n        return lab_set.issubset(policy[slot])\\n\\n    # Handle collect_material: writes to slot:workspace (unrestricted)\\n    if tool == 'collect_material':\\n        return False\\n\\n    # Handle edit_draft: writes to draft (not a slot, unrestricted)\\n    if tool == 'edit_draft':\\n        return False\\n\\n    # Handle review_release: writes to release (not a slot, unrestricted)\\n    if tool == 'review_release':\\n        return False\\n\\n    # Handle publish tool\\n    if tool == 'publish':\\n        # Determine all target slots that will be written to\\n        target_slots = set()\\n        record = params.get('record', 'none')\\n        audience = params.get('audience', 'none')\\n        source = params.get('source')\\n        assets = params.get('assets')\\n\\n        # record parameter determines a slot\\n        if record == 'archive':\\n            target_slots.add('slot:archive')\\n        elif record == 'public':\\n            target_slots.add('slot:public')\\n        # record=partner writes to a partner slot (not in policy, unrestricted)\\n\\n        # audience parameter determines a slot based on agent\\n        if agent == 'editorial':\\n            if audience == 'staff':\\n                target_slots.add('slot:newsroom')\\n            elif audience == 'partner':\\n                target_slots.add('slot:syndicate')\\n            elif audience == 'release':\\n                target_slots.add('slot:public')\\n        elif agent == 'legal':\\n            if audience == 'staff':\\n                target_slots.add('slot:newsroom')\\n            elif audience == 'partner':\\n                target_slots.add('slot:counsel')\\n            elif audience == 'release':\\n                target_slots.add('slot:wire')\\n\\n        # Check each target slot\\n        for slot in target_slots:\\n            if not is_allowed(slot, labels):\\n                return True\\n\\n        # No violation found\\n        return False\\n\\n    # Default: allow other tools (should not happen per tool list)\\n    return False\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 3854,
+    "prompt_tokens": 2793,
+    "total_tokens": 6647,
+    "completion_tokens_details": {
+      "reasoning_tokens": 3164
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    }
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "586ee94e-d683-4571-87a1-042f88d060bc_7db29cb5e7a2452d804d1ed75c2c4fb9"
+}

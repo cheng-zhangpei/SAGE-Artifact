@@ -1,0 +1,2466 @@
+{
+  "id": "COMP-CLINICAL-REFERRAL-08",
+  "layer": "composition",
+  "metrics": {
+    "candidate": {
+      "status": "FAIL",
+      "dangerous": 58,
+      "benign": 38,
+      "missed": 30,
+      "blocked": 22,
+      "unknown_probes": 0,
+      "benign_prefix_blocked": 0,
+      "first_witness": {
+        "prefix": [
+          "CLIN_import_PATIENT",
+          "CLIN_review",
+          "CLIN_bundle"
+        ],
+        "target": "CLIN_dispatch_003",
+        "dangerous": true,
+        "labels": [
+          "PATIENT"
+        ],
+        "candidate": false,
+        "candidate_plus_sage": true,
+        "direct_sage": true,
+        "blocked_prefix": {
+          "candidate": [],
+          "candidate_plus_sage": [],
+          "direct_sage": []
+        },
+        "unknown_prefix": {
+          "candidate": false,
+          "candidate_plus_sage": false,
+          "direct_sage": false
+        }
+      }
+    },
+    "candidate_plus_sage": {
+      "status": "PASS",
+      "dangerous": 58,
+      "benign": 38,
+      "missed": 0,
+      "blocked": 22,
+      "unknown_probes": 0,
+      "benign_prefix_blocked": 0,
+      "first_witness": null
+    },
+    "direct_sage": {
+      "status": "PASS",
+      "dangerous": 58,
+      "benign": 38,
+      "missed": 0,
+      "blocked": 0,
+      "unknown_probes": 0,
+      "benign_prefix_blocked": 0,
+      "first_witness": null
+    }
+  },
+  "probes": [
+    {
+      "prefix": [
+        "CLIN_review",
+        "CLIN_bundle"
+      ],
+      "target": "CLIN_dispatch_000",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_review",
+        "CLIN_bundle"
+      ],
+      "target": "CLIN_dispatch_001",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_review",
+        "CLIN_bundle"
+      ],
+      "target": "CLIN_dispatch_002",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_review",
+        "CLIN_bundle"
+      ],
+      "target": "CLIN_dispatch_003",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_review",
+        "CLIN_bundle"
+      ],
+      "target": "CLIN_dispatch_004",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_review",
+        "CLIN_bundle"
+      ],
+      "target": "CLIN_dispatch_005",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_review",
+        "CLIN_bundle"
+      ],
+      "target": "CLIN_dispatch_006",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_review",
+        "CLIN_bundle"
+      ],
+      "target": "CLIN_dispatch_007",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_fastpack"
+      ],
+      "target": "CLIN_dispatch_000",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_fastpack"
+      ],
+      "target": "CLIN_dispatch_001",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_fastpack"
+      ],
+      "target": "CLIN_dispatch_002",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_fastpack"
+      ],
+      "target": "CLIN_dispatch_003",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_fastpack"
+      ],
+      "target": "CLIN_dispatch_004",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_fastpack"
+      ],
+      "target": "CLIN_dispatch_005",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_fastpack"
+      ],
+      "target": "CLIN_dispatch_006",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_fastpack"
+      ],
+      "target": "CLIN_dispatch_007",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_PATIENT",
+        "CLIN_review",
+        "CLIN_bundle"
+      ],
+      "target": "CLIN_dispatch_000",
+      "dangerous": true,
+      "labels": [
+        "PATIENT"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_PATIENT",
+        "CLIN_review",
+        "CLIN_bundle"
+      ],
+      "target": "CLIN_dispatch_001",
+      "dangerous": false,
+      "labels": [
+        "PATIENT"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_PATIENT",
+        "CLIN_review",
+        "CLIN_bundle"
+      ],
+      "target": "CLIN_dispatch_002",
+      "dangerous": true,
+      "labels": [
+        "PATIENT"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_PATIENT",
+        "CLIN_review",
+        "CLIN_bundle"
+      ],
+      "target": "CLIN_dispatch_003",
+      "dangerous": true,
+      "labels": [
+        "PATIENT"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_PATIENT",
+        "CLIN_review",
+        "CLIN_bundle"
+      ],
+      "target": "CLIN_dispatch_004",
+      "dangerous": true,
+      "labels": [
+        "PATIENT"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_PATIENT",
+        "CLIN_review",
+        "CLIN_bundle"
+      ],
+      "target": "CLIN_dispatch_005",
+      "dangerous": false,
+      "labels": [
+        "PATIENT"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_PATIENT",
+        "CLIN_review",
+        "CLIN_bundle"
+      ],
+      "target": "CLIN_dispatch_006",
+      "dangerous": false,
+      "labels": [
+        "PATIENT"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_PATIENT",
+        "CLIN_review",
+        "CLIN_bundle"
+      ],
+      "target": "CLIN_dispatch_007",
+      "dangerous": true,
+      "labels": [
+        "PATIENT"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_PATIENT",
+        "CLIN_fastpack"
+      ],
+      "target": "CLIN_dispatch_000",
+      "dangerous": true,
+      "labels": [
+        "PATIENT"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_PATIENT",
+        "CLIN_fastpack"
+      ],
+      "target": "CLIN_dispatch_001",
+      "dangerous": false,
+      "labels": [
+        "PATIENT"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_PATIENT",
+        "CLIN_fastpack"
+      ],
+      "target": "CLIN_dispatch_002",
+      "dangerous": true,
+      "labels": [
+        "PATIENT"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_PATIENT",
+        "CLIN_fastpack"
+      ],
+      "target": "CLIN_dispatch_003",
+      "dangerous": true,
+      "labels": [
+        "PATIENT"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_PATIENT",
+        "CLIN_fastpack"
+      ],
+      "target": "CLIN_dispatch_004",
+      "dangerous": true,
+      "labels": [
+        "PATIENT"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_PATIENT",
+        "CLIN_fastpack"
+      ],
+      "target": "CLIN_dispatch_005",
+      "dangerous": false,
+      "labels": [
+        "PATIENT"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_PATIENT",
+        "CLIN_fastpack"
+      ],
+      "target": "CLIN_dispatch_006",
+      "dangerous": false,
+      "labels": [
+        "PATIENT"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_PATIENT",
+        "CLIN_fastpack"
+      ],
+      "target": "CLIN_dispatch_007",
+      "dangerous": true,
+      "labels": [
+        "PATIENT"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_DIAGNOSIS",
+        "CLIN_review",
+        "CLIN_bundle"
+      ],
+      "target": "CLIN_dispatch_000",
+      "dangerous": true,
+      "labels": [
+        "DIAGNOSIS"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_DIAGNOSIS",
+        "CLIN_review",
+        "CLIN_bundle"
+      ],
+      "target": "CLIN_dispatch_001",
+      "dangerous": true,
+      "labels": [
+        "DIAGNOSIS"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_DIAGNOSIS",
+        "CLIN_review",
+        "CLIN_bundle"
+      ],
+      "target": "CLIN_dispatch_002",
+      "dangerous": true,
+      "labels": [
+        "DIAGNOSIS"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_DIAGNOSIS",
+        "CLIN_review",
+        "CLIN_bundle"
+      ],
+      "target": "CLIN_dispatch_003",
+      "dangerous": true,
+      "labels": [
+        "DIAGNOSIS"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_DIAGNOSIS",
+        "CLIN_review",
+        "CLIN_bundle"
+      ],
+      "target": "CLIN_dispatch_004",
+      "dangerous": false,
+      "labels": [
+        "DIAGNOSIS"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_DIAGNOSIS",
+        "CLIN_review",
+        "CLIN_bundle"
+      ],
+      "target": "CLIN_dispatch_005",
+      "dangerous": true,
+      "labels": [
+        "DIAGNOSIS"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_DIAGNOSIS",
+        "CLIN_review",
+        "CLIN_bundle"
+      ],
+      "target": "CLIN_dispatch_006",
+      "dangerous": true,
+      "labels": [
+        "DIAGNOSIS"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_DIAGNOSIS",
+        "CLIN_review",
+        "CLIN_bundle"
+      ],
+      "target": "CLIN_dispatch_007",
+      "dangerous": true,
+      "labels": [
+        "DIAGNOSIS"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_DIAGNOSIS",
+        "CLIN_fastpack"
+      ],
+      "target": "CLIN_dispatch_000",
+      "dangerous": true,
+      "labels": [
+        "DIAGNOSIS"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_DIAGNOSIS",
+        "CLIN_fastpack"
+      ],
+      "target": "CLIN_dispatch_001",
+      "dangerous": true,
+      "labels": [
+        "DIAGNOSIS"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_DIAGNOSIS",
+        "CLIN_fastpack"
+      ],
+      "target": "CLIN_dispatch_002",
+      "dangerous": true,
+      "labels": [
+        "DIAGNOSIS"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_DIAGNOSIS",
+        "CLIN_fastpack"
+      ],
+      "target": "CLIN_dispatch_003",
+      "dangerous": true,
+      "labels": [
+        "DIAGNOSIS"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_DIAGNOSIS",
+        "CLIN_fastpack"
+      ],
+      "target": "CLIN_dispatch_004",
+      "dangerous": false,
+      "labels": [
+        "DIAGNOSIS"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_DIAGNOSIS",
+        "CLIN_fastpack"
+      ],
+      "target": "CLIN_dispatch_005",
+      "dangerous": true,
+      "labels": [
+        "DIAGNOSIS"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_DIAGNOSIS",
+        "CLIN_fastpack"
+      ],
+      "target": "CLIN_dispatch_006",
+      "dangerous": true,
+      "labels": [
+        "DIAGNOSIS"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_DIAGNOSIS",
+        "CLIN_fastpack"
+      ],
+      "target": "CLIN_dispatch_007",
+      "dangerous": true,
+      "labels": [
+        "DIAGNOSIS"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_AUTH",
+        "CLIN_review",
+        "CLIN_bundle"
+      ],
+      "target": "CLIN_dispatch_000",
+      "dangerous": true,
+      "labels": [
+        "AUTH"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_AUTH",
+        "CLIN_review",
+        "CLIN_bundle"
+      ],
+      "target": "CLIN_dispatch_001",
+      "dangerous": true,
+      "labels": [
+        "AUTH"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_AUTH",
+        "CLIN_review",
+        "CLIN_bundle"
+      ],
+      "target": "CLIN_dispatch_002",
+      "dangerous": true,
+      "labels": [
+        "AUTH"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_AUTH",
+        "CLIN_review",
+        "CLIN_bundle"
+      ],
+      "target": "CLIN_dispatch_003",
+      "dangerous": true,
+      "labels": [
+        "AUTH"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_AUTH",
+        "CLIN_review",
+        "CLIN_bundle"
+      ],
+      "target": "CLIN_dispatch_004",
+      "dangerous": true,
+      "labels": [
+        "AUTH"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_AUTH",
+        "CLIN_review",
+        "CLIN_bundle"
+      ],
+      "target": "CLIN_dispatch_005",
+      "dangerous": true,
+      "labels": [
+        "AUTH"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_AUTH",
+        "CLIN_review",
+        "CLIN_bundle"
+      ],
+      "target": "CLIN_dispatch_006",
+      "dangerous": true,
+      "labels": [
+        "AUTH"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_AUTH",
+        "CLIN_review",
+        "CLIN_bundle"
+      ],
+      "target": "CLIN_dispatch_007",
+      "dangerous": true,
+      "labels": [
+        "AUTH"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_AUTH",
+        "CLIN_fastpack"
+      ],
+      "target": "CLIN_dispatch_000",
+      "dangerous": true,
+      "labels": [
+        "AUTH"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_AUTH",
+        "CLIN_fastpack"
+      ],
+      "target": "CLIN_dispatch_001",
+      "dangerous": true,
+      "labels": [
+        "AUTH"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_AUTH",
+        "CLIN_fastpack"
+      ],
+      "target": "CLIN_dispatch_002",
+      "dangerous": true,
+      "labels": [
+        "AUTH"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_AUTH",
+        "CLIN_fastpack"
+      ],
+      "target": "CLIN_dispatch_003",
+      "dangerous": true,
+      "labels": [
+        "AUTH"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_AUTH",
+        "CLIN_fastpack"
+      ],
+      "target": "CLIN_dispatch_004",
+      "dangerous": true,
+      "labels": [
+        "AUTH"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_AUTH",
+        "CLIN_fastpack"
+      ],
+      "target": "CLIN_dispatch_005",
+      "dangerous": true,
+      "labels": [
+        "AUTH"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_AUTH",
+        "CLIN_fastpack"
+      ],
+      "target": "CLIN_dispatch_006",
+      "dangerous": true,
+      "labels": [
+        "AUTH"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_AUTH",
+        "CLIN_fastpack"
+      ],
+      "target": "CLIN_dispatch_007",
+      "dangerous": true,
+      "labels": [
+        "AUTH"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_UNVERIFIED",
+        "CLIN_review",
+        "CLIN_bundle"
+      ],
+      "target": "CLIN_dispatch_000",
+      "dangerous": false,
+      "labels": [
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_UNVERIFIED",
+        "CLIN_review",
+        "CLIN_bundle"
+      ],
+      "target": "CLIN_dispatch_001",
+      "dangerous": false,
+      "labels": [
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_UNVERIFIED",
+        "CLIN_review",
+        "CLIN_bundle"
+      ],
+      "target": "CLIN_dispatch_002",
+      "dangerous": false,
+      "labels": [
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_UNVERIFIED",
+        "CLIN_review",
+        "CLIN_bundle"
+      ],
+      "target": "CLIN_dispatch_003",
+      "dangerous": false,
+      "labels": [
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_UNVERIFIED",
+        "CLIN_review",
+        "CLIN_bundle"
+      ],
+      "target": "CLIN_dispatch_004",
+      "dangerous": false,
+      "labels": [
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_UNVERIFIED",
+        "CLIN_review",
+        "CLIN_bundle"
+      ],
+      "target": "CLIN_dispatch_005",
+      "dangerous": false,
+      "labels": [
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_UNVERIFIED",
+        "CLIN_review",
+        "CLIN_bundle"
+      ],
+      "target": "CLIN_dispatch_006",
+      "dangerous": false,
+      "labels": [
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_UNVERIFIED",
+        "CLIN_review",
+        "CLIN_bundle"
+      ],
+      "target": "CLIN_dispatch_007",
+      "dangerous": true,
+      "labels": [
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_UNVERIFIED",
+        "CLIN_fastpack"
+      ],
+      "target": "CLIN_dispatch_000",
+      "dangerous": false,
+      "labels": [
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_UNVERIFIED",
+        "CLIN_fastpack"
+      ],
+      "target": "CLIN_dispatch_001",
+      "dangerous": false,
+      "labels": [
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_UNVERIFIED",
+        "CLIN_fastpack"
+      ],
+      "target": "CLIN_dispatch_002",
+      "dangerous": false,
+      "labels": [
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_UNVERIFIED",
+        "CLIN_fastpack"
+      ],
+      "target": "CLIN_dispatch_003",
+      "dangerous": false,
+      "labels": [
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_UNVERIFIED",
+        "CLIN_fastpack"
+      ],
+      "target": "CLIN_dispatch_004",
+      "dangerous": false,
+      "labels": [
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_UNVERIFIED",
+        "CLIN_fastpack"
+      ],
+      "target": "CLIN_dispatch_005",
+      "dangerous": false,
+      "labels": [
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_UNVERIFIED",
+        "CLIN_fastpack"
+      ],
+      "target": "CLIN_dispatch_006",
+      "dangerous": false,
+      "labels": [
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_UNVERIFIED",
+        "CLIN_fastpack"
+      ],
+      "target": "CLIN_dispatch_007",
+      "dangerous": true,
+      "labels": [
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_PATIENT",
+        "CLIN_import_DIAGNOSIS",
+        "CLIN_import_AUTH",
+        "CLIN_import_UNVERIFIED",
+        "CLIN_review",
+        "CLIN_bundle"
+      ],
+      "target": "CLIN_dispatch_000",
+      "dangerous": true,
+      "labels": [
+        "AUTH",
+        "DIAGNOSIS",
+        "PATIENT",
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_PATIENT",
+        "CLIN_import_DIAGNOSIS",
+        "CLIN_import_AUTH",
+        "CLIN_import_UNVERIFIED",
+        "CLIN_review",
+        "CLIN_bundle"
+      ],
+      "target": "CLIN_dispatch_001",
+      "dangerous": true,
+      "labels": [
+        "AUTH",
+        "DIAGNOSIS",
+        "PATIENT",
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_PATIENT",
+        "CLIN_import_DIAGNOSIS",
+        "CLIN_import_AUTH",
+        "CLIN_import_UNVERIFIED",
+        "CLIN_review",
+        "CLIN_bundle"
+      ],
+      "target": "CLIN_dispatch_002",
+      "dangerous": true,
+      "labels": [
+        "AUTH",
+        "DIAGNOSIS",
+        "PATIENT",
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_PATIENT",
+        "CLIN_import_DIAGNOSIS",
+        "CLIN_import_AUTH",
+        "CLIN_import_UNVERIFIED",
+        "CLIN_review",
+        "CLIN_bundle"
+      ],
+      "target": "CLIN_dispatch_003",
+      "dangerous": true,
+      "labels": [
+        "AUTH",
+        "DIAGNOSIS",
+        "PATIENT",
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_PATIENT",
+        "CLIN_import_DIAGNOSIS",
+        "CLIN_import_AUTH",
+        "CLIN_import_UNVERIFIED",
+        "CLIN_review",
+        "CLIN_bundle"
+      ],
+      "target": "CLIN_dispatch_004",
+      "dangerous": true,
+      "labels": [
+        "AUTH",
+        "DIAGNOSIS",
+        "PATIENT",
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_PATIENT",
+        "CLIN_import_DIAGNOSIS",
+        "CLIN_import_AUTH",
+        "CLIN_import_UNVERIFIED",
+        "CLIN_review",
+        "CLIN_bundle"
+      ],
+      "target": "CLIN_dispatch_005",
+      "dangerous": true,
+      "labels": [
+        "AUTH",
+        "DIAGNOSIS",
+        "PATIENT",
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_PATIENT",
+        "CLIN_import_DIAGNOSIS",
+        "CLIN_import_AUTH",
+        "CLIN_import_UNVERIFIED",
+        "CLIN_review",
+        "CLIN_bundle"
+      ],
+      "target": "CLIN_dispatch_006",
+      "dangerous": true,
+      "labels": [
+        "AUTH",
+        "DIAGNOSIS",
+        "PATIENT",
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_PATIENT",
+        "CLIN_import_DIAGNOSIS",
+        "CLIN_import_AUTH",
+        "CLIN_import_UNVERIFIED",
+        "CLIN_review",
+        "CLIN_bundle"
+      ],
+      "target": "CLIN_dispatch_007",
+      "dangerous": true,
+      "labels": [
+        "AUTH",
+        "DIAGNOSIS",
+        "PATIENT",
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_PATIENT",
+        "CLIN_import_DIAGNOSIS",
+        "CLIN_import_AUTH",
+        "CLIN_import_UNVERIFIED",
+        "CLIN_fastpack"
+      ],
+      "target": "CLIN_dispatch_000",
+      "dangerous": true,
+      "labels": [
+        "AUTH",
+        "DIAGNOSIS",
+        "PATIENT",
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_PATIENT",
+        "CLIN_import_DIAGNOSIS",
+        "CLIN_import_AUTH",
+        "CLIN_import_UNVERIFIED",
+        "CLIN_fastpack"
+      ],
+      "target": "CLIN_dispatch_001",
+      "dangerous": true,
+      "labels": [
+        "AUTH",
+        "DIAGNOSIS",
+        "PATIENT",
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_PATIENT",
+        "CLIN_import_DIAGNOSIS",
+        "CLIN_import_AUTH",
+        "CLIN_import_UNVERIFIED",
+        "CLIN_fastpack"
+      ],
+      "target": "CLIN_dispatch_002",
+      "dangerous": true,
+      "labels": [
+        "AUTH",
+        "DIAGNOSIS",
+        "PATIENT",
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_PATIENT",
+        "CLIN_import_DIAGNOSIS",
+        "CLIN_import_AUTH",
+        "CLIN_import_UNVERIFIED",
+        "CLIN_fastpack"
+      ],
+      "target": "CLIN_dispatch_003",
+      "dangerous": true,
+      "labels": [
+        "AUTH",
+        "DIAGNOSIS",
+        "PATIENT",
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_PATIENT",
+        "CLIN_import_DIAGNOSIS",
+        "CLIN_import_AUTH",
+        "CLIN_import_UNVERIFIED",
+        "CLIN_fastpack"
+      ],
+      "target": "CLIN_dispatch_004",
+      "dangerous": true,
+      "labels": [
+        "AUTH",
+        "DIAGNOSIS",
+        "PATIENT",
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_PATIENT",
+        "CLIN_import_DIAGNOSIS",
+        "CLIN_import_AUTH",
+        "CLIN_import_UNVERIFIED",
+        "CLIN_fastpack"
+      ],
+      "target": "CLIN_dispatch_005",
+      "dangerous": true,
+      "labels": [
+        "AUTH",
+        "DIAGNOSIS",
+        "PATIENT",
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_PATIENT",
+        "CLIN_import_DIAGNOSIS",
+        "CLIN_import_AUTH",
+        "CLIN_import_UNVERIFIED",
+        "CLIN_fastpack"
+      ],
+      "target": "CLIN_dispatch_006",
+      "dangerous": true,
+      "labels": [
+        "AUTH",
+        "DIAGNOSIS",
+        "PATIENT",
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "CLIN_import_PATIENT",
+        "CLIN_import_DIAGNOSIS",
+        "CLIN_import_AUTH",
+        "CLIN_import_UNVERIFIED",
+        "CLIN_fastpack"
+      ],
+      "target": "CLIN_dispatch_007",
+      "dangerous": true,
+      "labels": [
+        "AUTH",
+        "DIAGNOSIS",
+        "PATIENT",
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    }
+  ],
+  "runtime_invocations": 480,
+  "observable_domain_checks": 240,
+  "candidate_runtime_errors": [],
+  "certificate": "exhaustive finite observable-domain coverage; sufficient, not reachability-complete"
+}

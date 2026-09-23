@@ -1,0 +1,18 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"def pilot_candidate(user_input, tool_input, intermediate_steps):\\n    import json\\n    agent = user_input[\\\"agent\\\"]\\n    tool = user_input[\\\"tool\\\"]\\n    trusted_labels = set(user_input[\\\"trusted_event_labels\\\"])\\n    \\n    # Only dispatch tools need safety checks\\n    if tool != \\\"dispatch\\\":\\n        return False\\n    \\n    params = json.loads(tool_input)\\n    mode = params[\\\"mode\\\"]\\n    receipt = params[\\\"receipt\\\"]\\n    route = params[\\\"route\\\"]\\n    source = params[\\\"source\\\"]\\n    \\n    # Policy: slots -> forbidden labels (empty list = no forbidden)\\n    policy = {\\n        \\\"slot:audit\\\": [\\\"PAYMENT\\\", \\\"SECRET\\\"],\\n        \\\"slot:control\\\": [\\\"UNVERIFIED\\\"],\\n        \\\"slot:customer\\\": [\\\"SECRET\\\", \\\"UNVERIFIED\\\"],\\n        \\\"slot:public\\\": [\\\"PII\\\", \\\"PAYMENT\\\", \\\"SECRET\\\"],\\n        \\\"slot:vendor\\\": [\\\"PII\\\", \\\"SECRET\\\"]\\n    }\\n    \\n    # Department aliases\\n    dept_routes = {\\n        \\\"support\\\": {\\\"local\\\": \\\"slot:internal\\\", \\\"partner\\\": \\\"slot:customer\\\", \\\"release\\\": \\\"slot:public\\\"},\\n        \\\"finance\\\": {\\\"local\\\": \\\"slot:internal\\\", \\\"partner\\\": \\\"slot:vendor\\\", \\\"release\\\": \\\"slot:control\\\"}\\n    }\\n    \\n    # Compute all destination slots\\n    destinations = set()\\n    primary = dept_routes[agent][route]\\n    destinations.add(primary)\\n    \\n    if mode == \\\"mirror\\\":\\n        destinations.add(\\\"slot:public\\\")\\n    \\n    if mode == \\\"linked\\\":\\n        # Partner address uses same route\\n        partner_agent = \\\"finance\\\" if agent == \\\"support\\\" else \\\"support\\\"\\n        partner_primary = dept_routes[partner_agent][route]\\n        destinations.add(partner_primary)\\n    \\n    if receipt == \\\"external\\\":\\n        destinations.add(\\\"slot:audit\\\")\\n    \\n    if receipt == \\\"partner\\\":\\n        if route != \\\"partner\\\":\\n            partner_agent = \\\"finance\\\" if agent == \\\"support\\\" else \\\"support\\\"\\n            partner_primary = dept_routes[partner_agent][route]\\n            destinations.add(partner_primary)\\n    \\n    # Check each destination against policy\\n    for dest in destinations:\\n        if dest in policy:\\n            forbidden = set(policy[dest])\\n            if not trusted_labels.isdisjoint(forbidden):\\n                return True  # Block\\n    \\n    return False  # Allow\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 7807,
+    "prompt_tokens": 3725,
+    "total_tokens": 11532,
+    "completion_tokens_details": {
+      "reasoning_tokens": 7213
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 1536
+    }
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "5ac12159-40c2-46c7-9577-9c24aa077f8e_d930e383438b4063a267092ab26abad8"
+}

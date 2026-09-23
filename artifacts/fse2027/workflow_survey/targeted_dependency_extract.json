@@ -1,0 +1,563 @@
+{
+  "11745": {
+    "Process Employee Data": {
+      "type": "n8n-nodes-base.code",
+      "parameters": {
+        "jsCode": "// Extract data from webhook body\nconst webhookData = $input.item.json.body;\n\n// Calculate average score from all performance metrics\nconst scores = webhookData.scores;\nconst averageScore = (\n  scores.technical + \n  scores.communication + \n  scores.leadership + \n  scores.productivity + \n  scores.teamwork\n) / 5;\n\n// Determine performance level based on overall rating\nconst getPerformanceLevel = (rating) => {\n  if (rating >= 4.5) return 'Outstanding';\n  if (rating >= 4.0) return 'Exceeds Expectations';\n  if (rating >= 3.0) return 'Meets Expectations';\n  return 'Needs Improvement';\n};\n\n// Determine performance color for visual elements\nconst getPerformanceColor = (rating) => {\n  if (rating >= 4.5) return '#4CAF50'; // Green\n  if (rating >= 4.0) return '#2196F3'; // Blue\n  if (rating >= 3.0) return '#FF9800'; // Orange\n  return '#F44336'; // Red\n};\n\n// Format date for review period\nconst currentDate = new Date().toLocaleDateString('en-US', {\n  year: 'numeric',\n  month: 'long',\n  day: 'numeric'\n});\n\n// Build comprehensive output object\nconst output = {\n  // Employee Information\n  employeeId: webhookData.employeeId,\n  employeeName: webhookData.employeeName,\n  employeeEmail: webhookData.employeeEmail,\n  \n  // Manager Information\n  managerName: webhookData.managerName,\n  managerEmail: webhookData.managerEmail,\n  \n  // Department & Period\n  department: webhookData.department,\n  reviewPeriod: webhookData.reviewPeriod,\n  reviewDate: currentDate,\n  \n  // Performance Scores (Individual)\n  technicalScore: scores.technical,\n  communicationScore: scores.communication,\n  leadershipScore: scores.leadership,\n  productivityScore: scores.productivity,\n  teamworkScore: scores.teamwork,\n  \n  // Calculated Metrics\n  overallRating: webhookData.overallRating,\n  averageScore: parseFloat(averageScore.toFixed(2)),\n  performanceLevel: getPerformanceLevel(webhookData.overallRating),\n  performanceColor: getPerformanceColor(webhookData.overallRating),\n  \n  // Percentage calculations for visual bars\n  technicalPercent: (scores.technical / 5) * 100,\n  communicationPercent: (scores.communication / 5) * 100,\n  leadershipPercent: (scores.leadership / 5) * 100,\n  productivityPercent: (scores.productivity / 5) * 100,\n  teamworkPercent: (scores.teamwork / 5) * 100,\n  \n  // Feedback Details\n  strengthsFeedback: webhookData.feedback.strengths,\n  improvementsFeedback: webhookData.feedback.improvements,\n  managerComments: webhookData.feedback.managerComments,\n  \n  // Flags for conditional logic\n  isLowPerformer: webhookData.overallRating < 3.0,\n  isHighPerformer: webhookData.overallRating >= 4.5,\n  requiresManagerAlert: webhookData.overallRating < 3.0,\n  \n  // Additional metadata\n  scoresObject: scores, // Keep original scores object for reference\n  feedbackObject: webhookData.feedback, // Keep original feedback object\n  \n  // Generate unique review ID\n  reviewId: `REV-${webhookData.employeeId}-${Date.now()}`,\n  \n  // Timestamp\n  processedAt: new Date().toISOString()\n};\n\n// Return the processed data\nreturn { json: output };"
+      }
+    },
+    "AI Summary Generator": {
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-4",
+          "cachedResultName": "GPT-4"
+        },
+        "options": {
+          "temperature": 0.7
+        },
+        "responses": {
+          "values": [
+            {
+              "role": "system",
+              "content": "=You are an expert HR professional specializing in performance reviews. Create concise, professional, and encouraging summaries that highlight achievements while providing constructive developmental guidance. Your tone should be supportive, specific, and actionable. Always format your response as valid JSON."
+            },
+            {
+              "content": "=Create a comprehensive performance review summary for the following employee:\n\nEMPLOYEE INFORMATION:\n- Name: {{ $json.employeeName }}\n- Department: {{ $json.department }}\n- Review Period: {{ $json.reviewPeriod }}\n- Overall Rating: {{ $json.overallRating }}/5.0 ({{ $json.performanceLevel }})\n\nPERFORMANCE SCORES:\n- Technical Skills: {{ $json.technicalScore }}/5.0\n- Communication: {{ $json.communicationScore }}/5.0\n- Leadership: {{ $json.leadershipScore }}/5.0\n- Productivity: {{ $json.productivityScore }}/5.0\n- Teamwork: {{ $json.teamworkScore }}/5.0\n- Average Score: {{ $json.averageScore }}/5.0\n\nMANAGER'S FEEDBACK:\nStrengths: {{ $json.strengthsFeedback }}\nAreas for Improvement: {{ $json.improvementsFeedback }}\nAdditional Comments: {{ $json.managerComments }}\n\nINSTRUCTIONS:\nGenerate a performance review summary with the following structure. Return ONLY valid JSON with no markdown formatting, no code blocks, and no additional text:\n\n{\n  \"executiveSummary\": \"A compelling 2-3 sentence overview that captures the employee's overall performance, key impact, and standing within the team. Be specific and reference actual scores.\",\n  \"keyStrengths\": [\n    \"First major strength with specific example or metric\",\n    \"Second major strength with specific example or metric\",\n    \"Third major strength with specific example or metric\"\n  ],\n  \"developmentAreas\": [\n    \"First development opportunity phrased constructively with actionable steps\",\n    \"Second development opportunity phrased constructively with actionable steps\"\n  ],\n  \"closingStatement\": \"An inspiring, forward-looking statement that motivates the employee and acknowledges their value to the organization. Should be encouraging and personalized.\"\n}\n\nIMPORTANT: \n- Return ONLY the JSON object\n- No markdown code blocks (no ```json or ```)\n- No additional text before or after the JSON\n- Ensure all strings are properly escaped\n- Be specific and reference actual performance metrics\n- Keep a professional yet warm tone"
+            }
+          ]
+        },
+        "builtInTools": {}
+      }
+    },
+    "Generate Review Card HTML": {
+      "type": "n8n-nodes-base.code",
+      "parameters": {
+        "jsCode": "// Get all the data\nconst data = $input.item.json;\n\n// Generate the complete HTML document\nconst html = `<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Performance Review - ${data.employeeName}</title>\n    <style>\n        * {\n            margin: 0;\n            padding: 0;\n            box-sizing: border-box;\n        }\n        \n        body {\n            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\n            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);\n            padding: 40px;\n            min-height: 100vh;\n            display: flex;\n            align-items: center;\n            justify-content: center;\n        }\n        \n        .review-card {\n            max-width: 900px;\n            width: 100%;\n            background: white;\n            border-radius: 20px;\n            box-shadow: 0 20px 60px rgba(0,0,0,0.3);\n            overflow: hidden;\n        }\n        \n        .header {\n            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);\n            color: white;\n            padding: 40px;\n            text-align: center;\n        }\n        \n        .header h1 {\n            font-size: 36px;\n            margin-bottom: 10px;\n            font-weight: 700;\n            letter-spacing: -0.5px;\n        }\n        \n        .header .subtitle {\n            font-size: 18px;\n            opacity: 0.95;\n            font-weight: 300;\n        }\n        \n        .content {\n            padding: 40px;\n        }\n        \n        .employee-info {\n            display: grid;\n            grid-template-columns: repeat(3, 1fr);\n            gap: 20px;\n            margin-bottom: 35px;\n            padding-bottom: 25px;\n            border-bottom: 2px solid #f0f0f0;\n        }\n        \n        .info-item {\n            text-align: center;\n        }\n        \n        .info-label {\n            font-size: 11px;\n            color: #999;\n            text-transform: uppercase;\n            letter-spacing: 1.2px;\n            margin-bottom: 8px;\n            font-weight: 600;\n        }\n        \n        .info-value {\n            font-size: 18px;\n            font-weight: 600;\n            color: #333;\n        }\n        \n        .overall-rating {\n            text-align: center;\n            margin-bottom: 35px;\n        }\n        \n        .rating-circle {\n            width: 150px;\n            height: 150px;\n            border-radius: 50%;\n            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);\n            display: flex;\n            flex-direction: column;\n            align-items: center;\n            justify-content: center;\n            margin: 0 auto 15px;\n            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);\n            position: relative;\n        }\n        \n        .rating-circle::before {\n            content: '';\n            position: absolute;\n            width: 130px;\n            height: 130px;\n            border-radius: 50%;\n            background: white;\n            opacity: 0.1;\n        }\n        \n        .rating-score {\n            font-size: 52px;\n            font-weight: 700;\n            color: white;\n            position: relative;\n            z-index: 1;\n        }\n        \n        .rating-max {\n            font-size: 20px;\n            color: rgba(255,255,255,0.85);\n            position: relative;\n            z-index: 1;\n        }\n        \n        .rating-label {\n            font-size: 22px;\n            font-weight: 600;\n            color: ${data.performanceColor};\n            margin-bottom: 5px;\n        }\n        \n        .rating-sublabel {\n            font-size: 14px;\n            color: #888;\n        }\n        \n        .scores-grid {\n            display: grid;\n            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));\n            gap: 20px;\n            margin-bottom: 35px;\n        }\n        \n        .score-item {\n            background: #f8f9fa;\n            padding: 22px;\n            border-radius: 12px;\n            border-left: 4px solid #667eea;\n            transition: transform 0.2s, box-shadow 0.2s;\n        }\n        \n        .score-item:hover {\n            transform: translateY(-2px);\n            box-shadow: 0 4px 12px rgba(0,0,0,0.1);\n        }\n        \n        .score-name {\n            font-size: 13px;\n            color: #666;\n            margin-bottom: 10px;\n            font-weight: 600;\n            text-transform: uppercase;\n            letter-spacing: 0.5px;\n        }\n        \n        .score-bar-container {\n            background: #e0e0e0;\n            height: 10px;\n            border-radius: 5px;\n            overflow: hidden;\n            margin-bottom: 10px;\n        }\n        \n        .score-bar {\n            height: 100%;\n            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);\n            border-radius: 5px;\n            transition: width 0.5s ease;\n        }\n        \n        .score-value {\n            font-size: 20px;\n            font-weight: 700;\n            color: #333;\n        }\n        \n        .section {\n            margin-bottom: 35px;\n        }\n        \n        .section-title {\n            font-size: 20px;\n            font-weight: 700;\n            color: #333;\n            margin-bottom: 18px;\n            display: flex;\n            align-items: center;\n        }\n        \n        .section-title::before {\n            content: '';\n            width: 5px;\n            height: 26px;\n            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);\n            margin-right: 12px;\n            border-radius: 3px;\n        }\n        \n        .ai-summary {\n            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);\n            padding: 28px;\n            border-radius: 14px;\n            border-left: 5px solid #667eea;\n            line-height: 1.9;\n            color: #444;\n            font-size: 15px;\n            box-shadow: 0 2px 8px rgba(0,0,0,0.05);\n        }\n        \n        .strengths-list, .development-list {\n            list-style: none;\n            padding: 0;\n            margin: 0;\n        }\n        \n        .strengths-list li, .development-list li {\n            padding: 18px 24px;\n            margin-bottom: 14px;\n            background: #f8f9fa;\n            border-radius: 12px;\n            border-left: 5px solid #667eea;\n            line-height: 1.7;\n            font-size: 14px;\n            color: #555;\n            box-shadow: 0 2px 6px rgba(0,0,0,0.04);\n        }\n        \n        .development-list li {\n            border-left-color: #ffa726;\n            background: #fff8f0;\n        }\n        \n        .closing-statement {\n            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);\n            color: white;\n            padding: 32px;\n            border-radius: 14px;\n            text-align: center;\n            font-size: 16px;\n            line-height: 1.9;\n            font-style: italic;\n            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.35);\n        }\n        \n        .footer {\n            text-align: center;\n            padding: 28px;\n            color: #888;\n            font-size: 12px;\n            border-top: 2px solid #f0f0f0;\n            background: #fafafa;\n            line-height: 1.6;\n        }\n        \n        .footer strong {\n            color: #666;\n        }\n    </style>\n</head>\n<body>\n    <div class=\"review-card\">\n        <div class=\"header\">\n            <h1>Performance Review</h1>\n            <div class=\"subtitle\">${data.reviewPeriod}</div>\n        </div>\n        \n        <div class=\"content\">\n            <div class=\"employee-info\">\n                <div class=\"info-item\">\n                    <div class=\"info-label\">Employee</div>\n                    <div class=\"info-value\">${data.employeeName}</div>\n                </div>\n                <div class=\"info-item\">\n                    <div class=\"info-label\">Department</div>\n                    <div class=\"info-value\">${data.department}</div>\n                </div>\n                <div class=\"info-item\">\n                    <div class=\"info-label\">Reviewer</div>\n                    <div class=\"info-value\">${data.managerName}</div>\n                </div>\n            </div>\n            \n            <div class=\"overall-rating\">\n                <div class=\"rating-circle\">\n                    <div class=\"rating-score\">${data.overallRating}</div>\n                    <div class=\"rating-max\">/5.0</div>\n                </div>\n                <div class=\"rating-label\">${data.performanceLevel}</div>\n                <div class=\"rating-sublabel\">Overall Performance Rating</div>\n            </div>\n            \n            <div class=\"section\">\n                <div class=\"section-title\">Performance Metrics</div>\n                <div class=\"scores-grid\">\n                    <div class=\"score-item\">\n                        <div class=\"score-name\">Technical Skills</div>\n                        <div class=\"score-bar-container\">\n                            <div class=\"score-bar\" style=\"width: ${data.technicalPercent}%\"></div>\n                        </div>\n                        <div class=\"score-value\">${data.technicalScore}/5.0</div>\n                    </div>\n                    <div class=\"score-item\">\n                        <div class=\"score-name\">Communication</div>\n                        <div class=\"score-bar-container\">\n                            <div class=\"score-bar\" style=\"width: ${data.communicationPercent}%\"></div>\n                        </div>\n                        <div class=\"score-value\">${data.communicationScore}/5.0</div>\n                    </div>\n                    <div class=\"score-item\">\n                        <div class=\"score-name\">Leadership</div>\n                        <div class=\"score-bar-container\">\n                            <div class=\"score-bar\" style=\"width: ${data.leadershipPercent}%\"></div>\n                        </div>\n                        <div class=\"score-value\">${data.leadershipScore}/5.0</div>\n                    </div>\n                    <div class=\"score-item\">\n                        <div class=\"score-name\">Productivity</div>\n                        <div class=\"score-bar-container\">\n                            <div class=\"score-bar\" style=\"width: ${data.productivityPercent}%\"></div>\n                        </div>\n                        <div class=\"score-value\">${data.productivityScore}/5.0</div>\n                    </div>\n                    <div class=\"score-item\">\n                        <div class=\"score-name\">Teamwork</div>\n                        <div class=\"score-bar-container\">\n                            <div class=\"score-bar\" style=\"width: ${Math.round(data.teamworkPercent)}%\"></div>\n                        </div>\n                        <div class=\"score-value\">${data.teamworkScore}/5.0</div>\n                    </div>\n                </div>\n            </div>\n            \n            <div class=\"section\">\n                <div class=\"section-title\">AI-Generated Executive Summary</div>\n                <div class=\"ai-summary\">\n                    ${data.executiveSummary}\n                </div>\n            </div>\n            \n            <div class=\"section\">\n                <div class=\"section-title\">Key Strengths</div>\n                <ul class=\"strengths-list\">\n                    ${data.strengthsHTML}\n                </ul>\n            </div>\n            \n            <div class=\"section\">\n                <div class=\"section-title\">Development Opportunities</div>\n                <ul class=\"development-list\">\n                    ${data.developmentHTML}\n                </ul>\n            </div>\n            \n            <div class=\"section\">\n                <div class=\"closing-statement\">\n                    ${data.closingStatement}\n                </div>\n            </div>\n        </div>\n        \n        <div class=\"footer\">\n            <strong>Performance Review</strong> • ${data.reviewPeriod} • Review ID: ${data.reviewId}<br>\n            Generated on ${data.reviewDate} • Confidential Document\n        </div>\n    </div>\n</body>\n</html>`;\n\n// Return all data plus the HTML\nreturn {\n  json: {\n    ...data,\n    html: html\n  }\n};"
+      }
+    },
+    "Send Review to Employee": {
+      "type": "n8n-nodes-base.gmail",
+      "parameters": {
+        "sendTo": "={{ $('Parse AI Response').item.json.employeeEmail }}",
+        "message": "=<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"UTF-8\">\n    <style>\n        body { \n            font-family: 'Segoe UI', Arial, sans-serif; \n            line-height: 1.6; \n            color: #333; \n            margin: 0;\n            padding: 0;\n            background: #f5f5f5;\n        }\n        .email-container { \n            max-width: 600px; \n            margin: 20px auto; \n            background: #ffffff;\n            border-radius: 8px;\n            overflow: hidden;\n            box-shadow: 0 2px 8px rgba(0,0,0,0.1);\n        }\n        .email-header { \n            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);\n            color: white; \n            padding: 40px 30px; \n            text-align: center; \n        }\n        .email-header h1 { \n            font-size: 28px; \n            margin: 0 0 10px 0; \n            font-weight: 700; \n        }\n        .email-header p { \n            font-size: 16px; \n            margin: 0; \n            opacity: 0.95; \n        }\n        .email-content { \n            padding: 40px 30px; \n        }\n        .greeting { \n            font-size: 16px; \n            margin-bottom: 20px; \n        }\n        .rating-box {\n            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);\n            padding: 30px;\n            border-radius: 12px;\n            text-align: center;\n            margin: 25px 0;\n            border-left: 5px solid #667eea;\n            box-shadow: 0 2px 8px rgba(0,0,0,0.05);\n        }\n        .rating-box-label {\n            font-size: 12px;\n            color: #888;\n            text-transform: uppercase;\n            letter-spacing: 1px;\n            margin-bottom: 10px;\n            font-weight: 600;\n        }\n        .rating-score {\n            font-size: 56px;\n            font-weight: 700;\n            color: #667eea;\n            margin: 10px 0;\n            line-height: 1;\n        }\n        .rating-label {\n            font-size: 20px;\n            color: #555;\n            font-weight: 600;\n            margin-top: 5px;\n        }\n        .highlights {\n            background: #f8f9fa;\n            padding: 25px;\n            border-radius: 12px;\n            margin: 25px 0;\n            border-left: 4px solid #667eea;\n        }\n        .highlights h3 {\n            color: #667eea;\n            margin: 0 0 15px 0;\n            font-size: 18px;\n            font-weight: 600;\n        }\n        .highlights p {\n            margin: 0;\n            line-height: 1.8;\n            color: #555;\n        }\n        .highlights ul {\n            margin: 15px 0 0 0;\n            padding-left: 20px;\n        }\n        .highlights li {\n            margin-bottom: 10px;\n            line-height: 1.6;\n            color: #555;\n        }\n        .info-box {\n            background: #fff8f0;\n            padding: 20px;\n            border-radius: 10px;\n            border-left: 4px solid #ffa726;\n            margin: 25px 0;\n        }\n        .info-box h4 {\n            color: #ff6f00;\n            margin: 0 0 10px 0;\n            font-size: 16px;\n        }\n        .info-box ul {\n            margin: 10px 0 0 0;\n            padding-left: 20px;\n        }\n        .info-box li {\n            margin-bottom: 8px;\n            line-height: 1.6;\n            color: #666;\n        }\n        .cta-button { \n            display: inline-block; \n            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);\n            color: white !important; \n            padding: 15px 35px; \n            text-decoration: none; \n            border-radius: 8px; \n            margin: 25px 0; \n            font-weight: 600;\n            font-size: 16px;\n            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);\n            transition: all 0.3s ease;\n        }\n        .attachment-notice {\n            background: #e3f2fd;\n            padding: 20px;\n            border-radius: 10px;\n            border-left: 4px solid #2196f3;\n            margin: 25px 0;\n            display: flex;\n            align-items: center;\n        }\n        .attachment-icon {\n            font-size: 32px;\n            margin-right: 15px;\n        }\n        .signature {\n            margin-top: 35px;\n            padding-top: 25px;\n            border-top: 2px solid #e0e0e0;\n        }\n        .email-footer { \n            text-align: center; \n            padding: 25px 30px; \n            color: #888; \n            font-size: 12px; \n            border-top: 2px solid #efefef; \n            background: #fafafa;\n            line-height: 1.6;\n        }\n        .email-footer strong {\n            color: #666;\n        }\n    </style>\n</head>\n<body>\n    <div class=\"email-container\">\n        <div class=\"email-header\">\n            <h1>🎯 Performance Review Complete</h1>\n            <p>{{ $('Parse AI Response').item.json.reviewPeriod }}</p>\n        </div>\n        \n        <div class=\"email-content\">\n            <div class=\"greeting\">\n                <p>Dear <strong>{{ $('Parse AI Response').item.json.employeeName }}</strong>,</p>\n            </div>\n            \n            <p>Your performance review for <strong>{{ $('Parse AI Response').item.json.reviewPeriod }}</strong> has been completed by {{ $('Parse AI Response').item.json.managerName }}. We're pleased to share your comprehensive evaluation and feedback.</p>\n            \n            <div class=\"rating-box\">\n                <div class=\"rating-box-label\">Your Overall Performance Rating</div>\n                <div class=\"rating-score\">{{ $('Parse AI Response').item.json.overallRating }}/5.0</div>\n                <div class=\"rating-label\">{{ $('Parse AI Response').item.json.performanceLevel }}</div>\n            </div>\n            \n            <div class=\"highlights\">\n                <h3>📊 Executive Summary</h3>\n                <p>{{ $('Parse AI Response').item.json.executiveSummary }}</p>\n            </div>\n            \n            <div class=\"highlights\">\n                <h3>✨ Performance Highlights</h3>\n                <ul>\n                    <li><strong>Technical Skills:</strong> {{ $('Parse AI Response').item.json.technicalScore }}/5.0</li>\n                    <li><strong>Productivity:</strong> {{ $('Parse AI Response').item.json.productivityScore }}/5.0</li>\n                    <li><strong>Communication:</strong> {{ $('Parse AI Response').item.json.communicationScore }}/5.0</li>\n                    <li><strong>Teamwork:</strong> {{ $('Parse AI Response').item.json.teamworkScore }}/5.0</li>\n                    <li><strong>Leadership:</strong> {{ $('Parse AI Response').item.json.leadershipScore }}/5.0</li>\n                </ul>\n            </div>\n            \n            <div class=\"attachment-notice\">\n                <div class=\"attachment-icon\">📎</div>\n                <div>\n                    <strong style=\"display: block; margin-bottom: 5px;\">Detailed Review Card Attached</strong>\n                    Your complete performance review card is attached as a high-quality image. It includes detailed metrics, AI-generated insights, key strengths, and personalized development recommendations.\n                </div>\n            </div>\n            \n            <div class=\"info-box\">\n                <h4>📅 Next Steps</h4>\n                <p>We encourage you to schedule a follow-up meeting with {{ $('Parse AI Response').item.json.managerName }} to discuss:</p>\n                <ul>\n                    <li>Your career development goals for the upcoming quarter</li>\n                    <li>Training and professional growth opportunities</li>\n                    <li>Questions or clarifications about your review</li>\n                    <li>Resources and support to help you succeed</li>\n                </ul>\n            </div>\n            \n            <center>\n                <a href=\"#\" class=\"cta-button\">📅 Schedule Your 1-on-1 Meeting</a>\n            </center>\n            \n            <div class=\"signature\">\n                <p>Thank you for your continued dedication and valuable contributions to the {{ $('Parse AI Response').item.json.department }} team. We appreciate your hard work and commitment to excellence.</p>\n                \n                <p style=\"margin-top: 20px;\"><strong>Best regards,</strong><br>\n                Human Resources Department<br>\n                {{ $('Parse AI Response').item.json.department }} Division</p>\n            </div>\n        </div>\n        \n        <div class=\"email-footer\">\n            <strong>Confidential Performance Review</strong><br>\n            Review ID: {{ $('Parse AI Response').item.json.reviewId }}<br>\n            Generated on {{ $('Parse AI Response').item.json.reviewDate }}<br>\n            <br>\n            <em>This document contains confidential information. Please do not share without authorization.</em>\n        </div>\n    </div>\n</body>\n</html>",
+        "options": {
+          "attachmentsUi": {
+            "attachmentsBinary": [
+              {
+                "property": "=data"
+              }
+            ]
+          }
+        },
+        "subject": "=Your {{ $('Parse AI Response').item.json.reviewPeriod }} Performance Review - {{ $('Parse AI Response').item.json.performanceLevel }}"
+      }
+    }
+  },
+  "12731": {
+    "Normalize Submission Data": {
+      "type": "n8n-nodes-base.set",
+      "parameters": {
+        "options": {},
+        "assignments": {
+          "assignments": [
+            {
+              "id": "id-1",
+              "name": "studentId",
+              "type": "string",
+              "value": "={{ $json.student_id || $json.studentId }}"
+            },
+            {
+              "id": "id-2",
+              "name": "studentEmail",
+              "type": "string",
+              "value": "={{ $json.student_email || $json.email }}"
+            },
+            {
+              "id": "id-3",
+              "name": "studentName",
+              "type": "string",
+              "value": "={{ $json.student_name || $json.name }}"
+            },
+            {
+              "id": "id-4",
+              "name": "courseId",
+              "type": "string",
+              "value": "={{ $json.course_id || $json.courseId }}"
+            },
+            {
+              "id": "id-5",
+              "name": "assignmentId",
+              "type": "string",
+              "value": "={{ $json.assignment_id || $json.assignmentId }}"
+            },
+            {
+              "id": "id-6",
+              "name": "submissionText",
+              "type": "string",
+              "value": "={{ $json.submission_text || $json.text || $json.content }}"
+            },
+            {
+              "id": "id-7",
+              "name": "submissionFile",
+              "type": "string",
+              "value": "={{ $json.submission_file || $json.file }}"
+            },
+            {
+              "id": "id-8",
+              "name": "submittedAt",
+              "type": "string",
+              "value": "={{ $json.submitted_at || $json.timestamp || $now }}"
+            },
+            {
+              "id": "id-9",
+              "name": "deadline",
+              "type": "string",
+              "value": "={{ $json.deadline || $json.due_date }}"
+            },
+            {
+              "id": "id-10",
+              "name": "submissionId",
+              "type": "string",
+              "value": "={{ $json.id || $runIndex }}-{{ $now.toMillis() }}"
+            }
+          ]
+        },
+        "includeOtherFields": true
+      }
+    },
+    "Plagiarism Check Agent": {
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "parameters": {
+        "text": "=Student Submission:\n{{ $json.submissionText }}\n\nCourse: {{ $json.courseId }}\nAssignment: {{ $json.assignmentId }}",
+        "options": {
+          "systemMessage": "You are a plagiarism detection specialist for academic institutions. Your task is to analyze student submissions and detect potential plagiarism.\n\nAnalyze the provided submission for:\n1. Common plagiarism patterns (copy-paste indicators, inconsistent writing style)\n2. Unusual vocabulary or phrasing for the academic level\n3. Lack of original thought or analysis\n4. Suspicious formatting or structure changes\n\nProvide a plagiarism score from 0.0 (no plagiarism) to 1.0 (definite plagiarism) and list specific concerns.\n\nIMPORTANT: This is for educational integrity purposes only. Handle all student data with FERPA compliance."
+        },
+        "promptType": "define",
+        "hasOutputParser": true
+      }
+    },
+    "AI Grading Agent": {
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "parameters": {
+        "text": "=Student Submission:\n{{ $json.submissionText }}\n\nCourse: {{ $json.courseId }}\nAssignment: {{ $json.assignmentId }}\nPlagiarism Score: {{ $json.plagiarismScore }}\nLate Status: {{ $json.submissionStatus }}",
+        "options": {
+          "systemMessage": "You are an expert academic grader for higher education. Your task is to grade student submissions fairly and provide constructive feedback.\n\nGrading Criteria:\n1. Content Quality (40%): Depth of analysis, critical thinking, originality\n2. Structure & Organization (20%): Logical flow, clear arguments, proper formatting\n3. Evidence & Support (20%): Use of sources, examples, data to support claims\n4. Writing Quality (20%): Grammar, clarity, academic tone\n\nProvide:\n- Overall score (0-100)\n- Breakdown by criteria\n- Constructive feedback highlighting strengths and areas for improvement\n- Specific suggestions for improvement\n\nIMPORTANT: Be fair, consistent, and encouraging. Handle all student data with FERPA compliance."
+        },
+        "promptType": "define",
+        "hasOutputParser": true
+      }
+    },
+    "Generate Feedback HTML": {
+      "type": "n8n-nodes-base.html",
+      "parameters": {
+        "html": "=<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"UTF-8\">\n  <style>\n    body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; }\n    .header { background: #2c3e50; color: white; padding: 20px; border-radius: 5px; }\n    .score-box { background: #3498db; color: white; padding: 15px; margin: 20px 0; border-radius: 5px; text-align: center; }\n    .section { margin: 20px 0; padding: 15px; border-left: 4px solid #3498db; background: #ecf0f1; }\n    .criteria { display: flex; justify-content: space-between; margin: 10px 0; }\n    .feedback { background: white; padding: 15px; margin: 10px 0; border-radius: 5px; }\n    ul { list-style-type: none; padding-left: 0; }\n    li:before { content: '✓ '; color: #27ae60; font-weight: bold; }\n  </style>\n</head>\n<body>\n  <div class=\"header\">\n    <h1>Assignment Feedback</h1>\n    <p>Student: {{ $json.studentName }}</p>\n    <p>Course: {{ $json.courseId }} | Assignment: {{ $json.assignmentId }}</p>\n  </div>\n  \n  <div class=\"score-box\">\n    <h2>Final Score: {{ Math.round($json.finalScore) }}/100</h2>\n    {{ $json.isLate ? '<p>Late Penalty Applied: ' + $json.penaltyPercent + '%</p>' : '' }}\n  </div>\n  \n  <div class=\"section\">\n    <h3>Score Breakdown</h3>\n    <div class=\"criteria\"><span>Content Quality:</span><span>{{ $json.contentQuality }}/100</span></div>\n    <div class=\"criteria\"><span>Structure & Organization:</span><span>{{ $json.structureOrganization }}/100</span></div>\n    <div class=\"criteria\"><span>Evidence & Support:</span><span>{{ $json.evidenceSupport }}/100</span></div>\n    <div class=\"criteria\"><span>Writing Quality:</span><span>{{ $json.writingQuality }}/100</span></div>\n  </div>\n  \n  <div class=\"section\">\n    <h3>Strengths</h3>\n    <ul>\n      {{ $json.strengths.map(s => '<li>' + s + '</li>').join('') }}\n    </ul>\n  </div>\n  \n  <div class=\"section\">\n    <h3>Areas for Improvement</h3>\n    <ul>\n      {{ $json.areasForImprovement.map(a => '<li>' + a + '</li>').join('') }}\n    </ul>\n  </div>\n  \n  <div class=\"feedback\">\n    <h3>Detailed Feedback</h3>\n    <p>{{ $json.detailedFeedback }}</p>\n  </div>\n  \n  <div class=\"section\">\n    <h3>Suggestions for Next Time</h3>\n    <ul>\n      {{ $json.suggestions.map(s => '<li>' + s + '</li>').join('') }}\n    </ul>\n  </div>\n  \n  <p style=\"text-align: center; color: #7f8c8d; margin-top: 40px;\">Graded on {{ new Date($json.gradedAt).toLocaleDateString() }}</p>\n</body>\n</html>"
+      }
+    },
+    "Send Student Feedback Email": {
+      "type": "n8n-nodes-base.gmail",
+      "parameters": {
+        "sendTo": "={{ $json.studentEmail }}",
+        "message": "=Dear {{ $json.studentName }},\n\nYour assignment has been graded. Here are your results:\n\nCourse: {{ $json.courseId }}\nAssignment: {{ $json.assignmentId }}\nFinal Score: {{ Math.round($json.finalScore) }}/100\n{{ $json.isLate ? \"Note: A late penalty of \" + $json.penaltyPercent + \"% was applied.\" : \"\" }}\n\nYour detailed feedback is attached as a PDF. Please review the feedback carefully and use the suggestions to improve your future work.\n\nKey Strengths:\n{{ $json.strengths.slice(0, 3).map(s => \"- \" + s).join(\"\\n\") }}\n\nAreas to Focus On:\n{{ $json.areasForImprovement.slice(0, 3).map(a => \"- \" + a).join(\"\\n\") }}\n\nIf you have questions about your grade or feedback, please reach out to your instructor.\n\nBest regards,\nYour Course Team",
+        "options": {
+          "attachmentsUi": {
+            "attachmentsBinary": [
+              {}
+            ]
+          }
+        },
+        "subject": "=Your Assignment Feedback: {{ $json.courseId }} - {{ $json.assignmentId }}",
+        "emailType": "text"
+      }
+    }
+  },
+  "14717": {
+    "Copy Proposal Template": {
+      "type": "n8n-nodes-base.googleDrive",
+      "parameters": {
+        "name": "=Proposal - {{ $json.CLIENT_NAME }} - {{ $json.CLIENT_COMPANY }} - {{ $json.MEETING_DATE }}",
+        "fileId": {
+          "__rl": true,
+          "mode": "id",
+          "value": ""
+        },
+        "options": {},
+        "operation": "copy"
+      }
+    },
+    "Fill Template Placeholders": {
+      "type": "n8n-nodes-base.googleDocs",
+      "parameters": {
+        "actionsUi": {
+          "actionFields": [
+            {
+              "text": "{{CLIENT_NAME}}",
+              "action": "replaceAll",
+              "matchCase": true,
+              "replaceText": "={{ $('Prepare Proposal Data').item.json.CLIENT_NAME }}"
+            },
+            {
+              "text": "{{CLIENT_COMPANY}}",
+              "action": "replaceAll",
+              "matchCase": true,
+              "replaceText": "={{ $('Prepare Proposal Data').item.json.CLIENT_COMPANY }}"
+            },
+            {
+              "text": "{{MEETING_DATE}}",
+              "action": "replaceAll",
+              "matchCase": true,
+              "replaceText": "={{ $('Prepare Proposal Data').item.json.MEETING_DATE }}"
+            },
+            {
+              "text": "{{MEETING_RECAP}}",
+              "action": "replaceAll",
+              "matchCase": true,
+              "replaceText": "={{ $('Prepare Proposal Data').item.json.MEETING_RECAP }}"
+            },
+            {
+              "text": "{{UNDERSTANDING_OF_NEEDS}}",
+              "action": "replaceAll",
+              "matchCase": true,
+              "replaceText": "={{ $('Prepare Proposal Data').item.json.UNDERSTANDING_OF_NEEDS }}"
+            },
+            {
+              "text": "{{PROPOSED_SOLUTION}}",
+              "action": "replaceAll",
+              "matchCase": true,
+              "replaceText": "={{ $('Prepare Proposal Data').item.json.PROPOSED_SOLUTION }}"
+            },
+            {
+              "text": "{{DELIVERABLES}}",
+              "action": "replaceAll",
+              "matchCase": true,
+              "replaceText": "={{ $('Prepare Proposal Data').item.json.DELIVERABLES }}"
+            },
+            {
+              "text": "{{TIMELINE}}",
+              "action": "replaceAll",
+              "matchCase": true,
+              "replaceText": "={{ $('Prepare Proposal Data').item.json.TIMELINE }}"
+            },
+            {
+              "text": "{{INVESTMENT}}",
+              "action": "replaceAll",
+              "matchCase": true,
+              "replaceText": "={{ $('Prepare Proposal Data').item.json.INVESTMENT }}"
+            },
+            {
+              "text": "{{NEXT_STEPS}}",
+              "action": "replaceAll",
+              "matchCase": true,
+              "replaceText": "={{ $('Prepare Proposal Data').item.json.NEXT_STEPS }}"
+            }
+          ]
+        },
+        "operation": "update"
+      }
+    },
+    "Send Proposal Email": {
+      "type": "n8n-nodes-base.gmail",
+      "parameters": {
+        "sendTo": "={{ $('Prepare Email Data').item.json.final_client_email }}",
+        "message": "=Hi {{ $('Prepare Email Data').item.json.final_client_name }},\n\nIt was great speaking with you! I really enjoyed learning more about your goals and the challenges you are working through.\n\nFollowing up on our conversation, I have put together a proposal that outlines how I can help. It covers the key points we discussed, along with a clear breakdown of what the engagement would look like.\n\nI have attached the proposal as a PDF for your review.\n\nPlease take your time going through it. If anything needs adjusting or if you have questions, I am happy to hop on a quick call or chat through it.\n\nLooking forward to hearing your thoughts!\n\nWarm regards",
+        "options": {
+          "attachmentsUi": {
+            "attachmentsBinary": [
+              {}
+            ]
+          }
+        },
+        "subject": "={{ $('Prepare Email Data').item.json.final_proposal_title }}",
+        "emailType": "text"
+      }
+    }
+  },
+  "16217": {
+    "Merge All Data & Build Charts": {
+      "type": "n8n-nodes-base.code",
+      "parameters": {
+        "jsCode": "const fbData = $node[\"Organize Facebook Data\"].json.data;\nconst igData = $node[\"Organize Instagram Data\"].json.data;\nconst weekLabel = $node[\"Calculate Dates and Wrap Data\"].json.week_label;\nconst since = $node[\"Calculate Dates and Wrap Data\"].json.since;\nconst until = $node[\"Calculate Dates and Wrap Data\"].json.until;\n\nfunction chartUrl(config, width, height) {\n  let url = `https://quickchart.io/chart?c=${encodeURIComponent(JSON.stringify(config))}`;\n  if (width && height) url += `&width=${width}&height=${height}`;\n  return url;\n}\n\nfunction generateLineChart(labels, data, label, title, color) {\n  return {\n    type: \"line\",\n    data: { labels, datasets: [{ label, data, borderColor: color, backgroundColor: color + '22', fill: true, tension: 0.4, pointRadius: 4 }] },\n    options: { responsive: true, plugins: { title: { display: true, text: title, font: { size: 16 } }, legend: { display: false } }, scales: { y: { beginAtZero: true } } }\n  };\n}\n\n// Instagram chart data\nconst igDates = igData.insights.map(d => d.date.slice(5));\nconst igReach = igData.insights.map(d => d.reach);\nconst igEngaged = igData.insights.map(d => d.accounts_engaged);\nconst igFollowers = igData.insights.map(d => d.new_followers);\n\n// Facebook chart data\nconst fbViews = fbData.insights.page_views_total || [];\nconst fbEngagements = fbData.insights.page_post_engagements || [];\nconst fbDates = fbViews.map(v => v.end_time?.slice(5,10) || '');\nconst fbViewsData = fbViews.map(v => v.value || 0);\nconst fbEngData = fbEngagements.map(v => v.value || 0);\n\n// Chart URLs\nconst igReachChartUrl = chartUrl(generateLineChart(igDates, igReach, 'Reach', 'Instagram Weekly Reach', '#E1306C'), 700, 300);\nconst igEngChartUrl = chartUrl(generateLineChart(igDates, igEngaged, 'Accounts Engaged', 'Instagram Accounts Engaged', '#833AB4'), 700, 300);\nconst igFollowChartUrl = chartUrl(generateLineChart(igDates, igFollowers, 'New Followers', 'Instagram New Followers', '#F77737'), 700, 300);\nconst fbViewsChartUrl = chartUrl(generateLineChart(fbDates, fbViewsData, 'Page Views', 'Facebook Page Views', '#1877F2'), 700, 300);\nconst fbEngChartUrl = chartUrl(generateLineChart(fbDates, fbEngData, 'Post Engagements', 'Facebook Post Engagements', '#42B72A'), 700, 300);\n\nreturn [{ json: { weekLabel, since, until,\n  fbData, igData,\n  charts: { igReachChartUrl, igEngChartUrl, igFollowChartUrl, fbViewsChartUrl, fbEngChartUrl }\n}}];\n"
+      }
+    },
+    "AI Analysis Agent": {
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "mode": "list",
+          "value": ""
+        },
+        "options": {
+          "maxTokens": 1500
+        },
+        "messages": {
+          "values": [
+            {
+              "role": "system",
+              "content": "={{ $json.systemPrompt }}"
+            },
+            {
+              "content": "={{ $json.userPrompt }}"
+            }
+          ]
+        }
+      }
+    },
+    "Build HTML Report": {
+      "type": "n8n-nodes-base.code",
+      "parameters": {
+        "jsCode": "// REPLACE karo puri aiResponse line with:\nconst geminiRaw = $node[\"Message a model\"].json;\n\n// Gemini n8n node returns array directly\nconst aiResponse = \n  (Array.isArray(geminiRaw) ? geminiRaw[0] : geminiRaw)\n    ?.content?.parts?.[0]?.text ||\n  geminiRaw?.candidates?.[0]?.content?.parts?.[0]?.text ||\n  geminiRaw?.message?.content ||\n  \"\";\n\nconst merged = $node[\"Prepare AI Prompt\"].json.merged;\nconst fb = merged.fbData;\nconst ig = merged.igData;\nconst charts = merged.charts;\nconst weekLabel = merged.weekLabel;\n\n// ── Parse AI sections by ### markers ──────────────────────────────────────\nfunction extractSection(text, heading) {\n  const escaped = heading.replace(/[.*+?^${}()|[\\]\\\\]/g, '\\\\$&');\n  const regex = new RegExp(`###\\\\s*${escaped}\\\\s*\\\\n([\\\\s\\\\S]*?)(?=###|$)`, 'i');\n  const match = text.match(regex);\n  return match ? match[1].trim() : '';\n}\n\nconst execSummary   = extractSection(aiResponse, 'EXECUTIVE SUMMARY')   || 'Analysis unavailable for this period.';\nconst fbAnalysis    = extractSection(aiResponse, 'FACEBOOK ANALYSIS')   || 'No Facebook analysis available.';\nconst igAnalysis    = extractSection(aiResponse, 'INSTAGRAM ANALYSIS')  || 'No Instagram analysis available.';\nconst crossInsights = extractSection(aiResponse, 'CROSS-PLATFORM INSIGHTS') || 'No cross-platform insights available.';\nconst nextStepsRaw  = extractSection(aiResponse, 'NEXT STEPS')          || '';\n\n// Parse bullet points for next steps cards\nconst stepLines = nextStepsRaw\n  .split('\\n')\n  .map(l => l.replace(/^[•\\-\\*]\\s*/, '').trim())\n  .filter(l => l.length > 10)\n  .slice(0, 4);\n\nwhile (stepLines.length < 4) stepLines.push('Review performance and adjust content strategy accordingly.');\n\n// ── Helpers ────────────────────────────────────────────────────────────────\nconst fmtDate = (iso) => iso ? iso.replace('T', ' ').slice(0, 16) : '';\nconst esc = (str) => String(str || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\"/g,'&quot;');\n\n// ── FB Posts HTML ──────────────────────────────────────────────────────────\nconst fbPostsHtml = fb.feed.length === 0\n  ? '<p style=\"color:#6b7280;font-size:13px;\">No posts published this week.</p>'\n  : fb.feed.map((p, i) => `\n    <div class=\"post-card\" style=\"break-inside:avoid;\">\n      ${p.thumbnail ? `<div class=\"post-thumb\" style=\"background-image:url('${esc(p.thumbnail)}')\"></div>` : '<div class=\"post-thumb post-thumb-placeholder\">📄</div>'}\n      <div class=\"post-body\">\n        <div class=\"post-meta\">${fmtDate(p.created_time)}</div>\n        <p class=\"post-text\">${esc((p.message || 'No caption').slice(0, 140))}${(p.message || '').length > 140 ? '…' : ''}</p>\n        <div class=\"post-stats\">\n          <span class=\"pstat\">👍 ${p.likes_count} Likes</span>\n          <span class=\"pstat\">💬 ${p.comments_count} Comments</span>\n          ${p.permalink ? `<a href=\"${esc(p.permalink)}\" class=\"pstat pstat-link\" target=\"_blank\">View Post →</a>` : ''}\n        </div>\n      </div>\n    </div>`).join('');\n\n// ── IG Posts HTML ──────────────────────────────────────────────────────────\nconst igPostsHtml = ig.activity.length === 0\n  ? '<p style=\"color:#6b7280;font-size:13px;\">No posts published this week.</p>'\n  : ig.activity.map((p, i) => {\n      const thumb = p.media?.[0]?.thumbnail_url || p.media?.[0]?.url || '';\n      return `\n    <div class=\"post-card\" style=\"break-inside:avoid;\">\n      ${thumb ? `<div class=\"post-thumb\" style=\"background-image:url('${esc(thumb)}')\"></div>` : '<div class=\"post-thumb post-thumb-placeholder\">📸</div>'}\n      <div class=\"post-body\">\n        <div class=\"post-meta\">${fmtDate(p.timestamp)}</div>\n        <p class=\"post-text\">${esc((p.caption || 'No caption').slice(0, 140))}${(p.caption || '').length > 140 ? '…' : ''}</p>\n        <div class=\"post-stats\">\n          <span class=\"pstat\">❤️ ${p.like_count} Likes</span>\n          <span class=\"pstat\">💬 ${p.comments_count} Comments</span>\n          ${p.permalink ? `<a href=\"${esc(p.permalink)}\" class=\"pstat pstat-link\" target=\"_blank\">View Post →</a>` : ''}\n        </div>\n      </div>\n    </div>`;\n    }).join('');\n\n// ── Combined Stats ─────────────────────────────────────────────────────────\nconst combinedViews       = fb.summary.total_views + ig.summary.total_reach;\nconst combinedEngagements = fb.summary.total_engagements + ig.summary.total_interactions;\nconst combinedPosts       = fb.summary.total_posts + ig.activity.length;\nconst combinedFollowers   = ig.summary.total_new_followers;\n\n// ── Next Step Cards ────────────────────────────────────────────────────────\nconst nextStepCardsHtml = stepLines.map((step, i) => `\n  <div class=\"step-card\" style=\"break-inside:avoid;\">\n    <div class=\"step-num\">${i + 1}</div>\n    <p class=\"step-text\">${esc(step)}</p>\n  </div>`).join('');\n\n// ── HTML ───────────────────────────────────────────────────────────────────\nconst html = `<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<title>Weekly Social Media Report — ${esc(weekLabel)}</title>\n<style>\n  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');\n\n  * { margin:0; padding:0; box-sizing:border-box; }\n  body { font-family:'Inter',sans-serif; background:#f0f2f5; color:#1a1a2e; -webkit-print-color-adjust:exact; print-color-adjust:exact; }\n  .page { max-width:900px; margin:0 auto; background:#fff; }\n\n  /* ── Print / PDF ── */\n  @media print {\n    body { background:#fff; }\n    .page { max-width:100%; }\n  }\n\n  /* ── Page margins for PDF ── */\n@page {\n  margin: 28px 36px;\n}\n\n.page {\n  max-width: 900px;\n  margin: 0 auto;\n  background: #fff;\n  padding: 0 0 24px 0;\n}\n\n.section {\n  padding: 28px 36px;  /* thoda breathing room */\n}\n\n.header {\n  padding: 36px 36px 32px;\n}\n\n  /* ── Header ── */\n  .header { background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%); color:#fff; padding:40px; break-inside:avoid; }\n  .header-top { display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; }\n  .brand { font-size:13px; font-weight:600; letter-spacing:3px; text-transform:uppercase; color:#e94560; }\n  .report-badge { background:rgba(233,69,96,0.2); border:1px solid #e94560; color:#e94560; padding:4px 14px; border-radius:20px; font-size:12px; font-weight:600; }\n  .header h1 { font-size:32px; font-weight:800; margin-bottom:8px; }\n  .header .week { font-size:15px; color:rgba(255,255,255,0.6); }\n  .header-stats { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-top:28px; }\n  .hstat { background:rgba(255,255,255,0.07); border-radius:12px; padding:16px; text-align:center; break-inside:avoid; }\n  .hstat-val { font-size:26px; font-weight:800; color:#e94560; }\n  .hstat-label { font-size:11px; color:rgba(255,255,255,0.5); text-transform:uppercase; letter-spacing:1px; margin-top:4px; }\n\n  /* ── Sections ── */\n  .section { padding:32px 40px; border-bottom:1px solid #f0f2f5; break-inside:avoid; }\n  .section-title { font-size:11px; font-weight:700; letter-spacing:3px; text-transform:uppercase; color:#e94560; margin-bottom:20px; }\n  .section h2 { font-size:22px; font-weight:700; margin-bottom:16px; color:#1a1a2e; }\n\n  /* ── Combined Stats ── */\n  .combined-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-bottom:8px; }\n  .combined-card { background:linear-gradient(135deg,#1a1a2e,#0f3460); border-radius:12px; padding:20px; text-align:center; break-inside:avoid; }\n  .combined-val { font-size:28px; font-weight:800; color:#e94560; }\n  .combined-label { font-size:11px; color:rgba(255,255,255,0.6); text-transform:uppercase; letter-spacing:1px; margin-top:6px; }\n  .combined-sub { font-size:10px; color:rgba(255,255,255,0.35); margin-top:2px; }\n\n  /* ── Platform header ── */\n  .platform-header { display:flex; align-items:center; gap:12px; margin-bottom:20px; }\n  .platform-icon { width:40px; height:40px; border-radius:10px; display:flex; align-items:center; justify-content:center; font-size:20px; font-weight:800; color:#fff; }\n  .fb-icon { background:linear-gradient(135deg,#1877F2,#0d5bba); }\n  .ig-icon { background:linear-gradient(135deg,#F58529,#DD2A7B,#8134AF); }\n  .platform-name { font-size:20px; font-weight:700; }\n\n  /* ── Stats grid ── */\n  .stats-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-bottom:24px; }\n  .stat-card { background:#f8f9ff; border-radius:12px; padding:16px; text-align:center; border:1px solid #e8eaf6; break-inside:avoid; }\n  .stat-val { font-size:24px; font-weight:800; color:#1a1a2e; }\n  .stat-label { font-size:11px; color:#6b7280; text-transform:uppercase; letter-spacing:0.5px; margin-top:4px; }\n\n  /* ── Charts ── */\n  .chart-row { display:grid; grid-template-columns:1fr 1fr; gap:20px; margin:20px 0; break-inside:avoid; }\n  .chart-box { background:#f8f9ff; border-radius:12px; padding:16px; border:1px solid #e8eaf6; break-inside:avoid; }\n  .chart-box img { width:100%; border-radius:8px; display:block; }\n  .chart-title { font-size:12px; font-weight:600; color:#6b7280; text-transform:uppercase; letter-spacing:1px; margin-bottom:10px; }\n\n  /* ── AI sections ── */\n  .ai-section { background:linear-gradient(135deg,#f0f4ff,#f5f0ff); border-radius:16px; padding:28px; margin-bottom:24px; border:1px solid #e0e7ff; break-inside:avoid; }\n  .ai-badge { display:inline-flex; align-items:center; gap:6px; background:#e94560; color:#fff; padding:4px 12px; border-radius:20px; font-size:11px; font-weight:700; letter-spacing:1px; text-transform:uppercase; margin-bottom:16px; }\n  .ai-text { font-size:14px; line-height:1.8; color:#374151; white-space:pre-wrap; }\n\n  /* ── Posts ── */\n.posts-grid {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 16px;\n  margin-top: 20px;\n}\n\n.post-card {\n  flex: 1 1 calc(50% - 8px);\n  min-width: 280px;\n  background: #fff;\n  border: 1px solid #e8eaf6;\n  border-radius: 12px;\n  overflow: hidden;\n  break-inside: avoid;\n}\n  .post-thumb { width:100%; height:160px; background-size:cover; background-position:center; background-color:#f0f2f5; }\n  .post-thumb-placeholder { display:flex; align-items:center; justify-content:center; font-size:36px; }\n  .post-body { padding:14px; }\n  .post-meta { font-size:11px; color:#9ca3af; margin-bottom:6px; }\n  .post-text { font-size:13px; line-height:1.6; color:#374151; margin-bottom:10px; }\n  .post-stats { display:flex; flex-wrap:wrap; gap:8px; }\n  .pstat { font-size:12px; color:#6b7280; background:#f3f4f6; padding:3px 8px; border-radius:6px; }\n  .pstat-link { color:#e94560; background:#fff5f7; text-decoration:none; }\n\n  /* ── Next Steps ── */\n  .next-steps { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:16px; }\n  .step-card { background:linear-gradient(135deg,#fff5f7,#fff); border:1px solid #fecdd3; border-radius:12px; padding:20px; break-inside:avoid; }\n  .step-num { width:28px; height:28px; background:#e94560; color:#fff; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:700; margin-bottom:10px; }\n  .step-text { font-size:13px; line-height:1.6; color:#374151; }\n\n  /* ── Footer ── */\n  .footer { background:#1a1a2e; color:rgba(255,255,255,0.4); text-align:center; padding:24px; font-size:12px; break-inside:avoid; }\n  .footer strong { color:#e94560; }\n\n  /* ── Section page breaks ── */\n  .section-break { break-before:auto; }\n</style>\n</head>\n<body>\n<div class=\"page\">\n\n  <!-- HEADER -->\n  <div class=\"header\">\n    <div class=\"header-top\">\n      <span class=\"brand\">Social Media Analytics</span>\n      <span class=\"report-badge\">Weekly Report</span>\n    </div>\n    <h1>Performance Report</h1>\n    <p class=\"week\">Week of ${esc(weekLabel)}</p>\n    <div class=\"header-stats\">\n      <div class=\"hstat\"><div class=\"hstat-val\">${fb.summary.total_views.toLocaleString()}</div><div class=\"hstat-label\">FB Page Views</div></div>\n      <div class=\"hstat\"><div class=\"hstat-val\">${fb.summary.total_engagements.toLocaleString()}</div><div class=\"hstat-label\">FB Engagements</div></div>\n      <div class=\"hstat\"><div class=\"hstat-val\">${ig.summary.total_reach.toLocaleString()}</div><div class=\"hstat-label\">IG Reach</div></div>\n      <div class=\"hstat\"><div class=\"hstat-val\">${ig.summary.total_new_followers}</div><div class=\"hstat-label\">New Followers</div></div>\n    </div>\n  </div>\n\n  <!-- COMBINED STATS -->\n  <div class=\"section section-break\">\n    <div class=\"section-title\">Combined Cross-Platform Stats</div>\n    <div class=\"combined-grid\">\n      <div class=\"combined-card\"><div class=\"combined-val\">${combinedViews.toLocaleString()}</div><div class=\"combined-label\">Total Reach & Views</div><div class=\"combined-sub\">FB Views + IG Reach</div></div>\n      <div class=\"combined-card\"><div class=\"combined-val\">${combinedEngagements.toLocaleString()}</div><div class=\"combined-label\">Total Engagements</div><div class=\"combined-sub\">FB + IG Combined</div></div>\n      <div class=\"combined-card\"><div class=\"combined-val\">${combinedPosts}</div><div class=\"combined-label\">Total Posts</div><div class=\"combined-sub\">FB + IG Published</div></div>\n      <div class=\"combined-card\"><div class=\"combined-val\">${combinedFollowers}</div><div class=\"combined-label\">New Followers</div><div class=\"combined-sub\">Instagram Growth</div></div>\n    </div>\n  </div>\n\n  <!-- AI EXECUTIVE SUMMARY -->\n  <div class=\"section section-break\">\n    <div class=\"section-title\">AI-Powered Analysis</div>\n    <div class=\"ai-section\">\n      <span class=\"ai-badge\">🤖 Executive Summary</span>\n      <p class=\"ai-text\">${esc(execSummary)}</p>\n    </div>\n  </div>\n\n  <!-- FACEBOOK -->\n  <div class=\"section section-break\">\n    <div class=\"platform-header\">\n      <div class=\"platform-icon fb-icon\">f</div>\n      <span class=\"platform-name\">Facebook Performance</span>\n    </div>\n    <div class=\"stats-grid\">\n      <div class=\"stat-card\"><div class=\"stat-val\">${fb.summary.total_views.toLocaleString()}</div><div class=\"stat-label\">Page Views</div></div>\n      <div class=\"stat-card\"><div class=\"stat-val\">${fb.summary.total_engagements.toLocaleString()}</div><div class=\"stat-label\">Engagements</div></div>\n      <div class=\"stat-card\"><div class=\"stat-val\">${fb.summary.total_media_views.toLocaleString()}</div><div class=\"stat-label\">Media Views</div></div>\n      <div class=\"stat-card\"><div class=\"stat-val\">${fb.summary.total_posts}</div><div class=\"stat-label\">Posts Published</div></div>\n    </div>\n    <div class=\"chart-row\">\n      <div class=\"chart-box\"><div class=\"chart-title\">Page Views (Daily)</div><img src=\"${charts.fbViewsChartUrl}\" alt=\"FB Views\"/></div>\n      <div class=\"chart-box\"><div class=\"chart-title\">Post Engagements (Daily)</div><img src=\"${charts.fbEngChartUrl}\" alt=\"FB Engagements\"/></div>\n    </div>\n    <div class=\"ai-section\">\n      <span class=\"ai-badge\">📊 Facebook Insights</span>\n      <p class=\"ai-text\">${esc(fbAnalysis)}</p>\n    </div>\n    <div class=\"section-title\" style=\"margin-top:8px;\">Posts Published This Week</div>\n    <div class=\"posts-grid\">${fbPostsHtml}</div>\n  </div>\n\n  <!-- INSTAGRAM -->\n  <div class=\"section section-break\">\n    <div class=\"platform-header\">\n      <div class=\"platform-icon ig-icon\">📸</div>\n      <span class=\"platform-name\">Instagram Performance</span>\n    </div>\n    <div class=\"stats-grid\">\n      <div class=\"stat-card\"><div class=\"stat-val\">${ig.summary.total_reach.toLocaleString()}</div><div class=\"stat-label\">Total Reach</div></div>\n      <div class=\"stat-card\"><div class=\"stat-val\">${ig.summary.total_accounts_engaged.toLocaleString()}</div><div class=\"stat-label\">Accounts Engaged</div></div>\n      <div class=\"stat-card\"><div class=\"stat-val\">${ig.summary.total_interactions.toLocaleString()}</div><div class=\"stat-label\">Interactions</div></div>\n      <div class=\"stat-card\"><div class=\"stat-val\">${ig.summary.total_new_followers}</div><div class=\"stat-label\">New Followers</div></div>\n    </div>\n    <div class=\"chart-row\">\n      <div class=\"chart-box\"><div class=\"chart-title\">Instagram Reach (Daily)</div><img src=\"${charts.igReachChartUrl}\" alt=\"IG Reach\"/></div>\n      <div class=\"chart-box\"><div class=\"chart-title\">Accounts Engaged (Daily)</div><img src=\"${charts.igEngChartUrl}\" alt=\"IG Engaged\"/></div>\n    </div>\n    <div class=\"chart-row\">\n      <div class=\"chart-box\" style=\"grid-column:1/-1;\"><div class=\"chart-title\">New Followers (Daily)</div><img src=\"${charts.igFollowChartUrl}\" alt=\"IG Followers\"/></div>\n    </div>\n    <div class=\"ai-section\">\n      <span class=\"ai-badge\">📱 Instagram Insights</span>\n      <p class=\"ai-text\">${esc(igAnalysis)}</p>\n    </div>\n    <div class=\"section-title\" style=\"margin-top:8px;\">Posts Published This Week</div>\n    <div class=\"posts-grid\">${igPostsHtml}</div>\n  </div>\n\n  <!-- CROSS PLATFORM -->\n  <div class=\"section section-break\">\n    <div class=\"section-title\">Cross-Platform Analysis</div>\n    <div class=\"ai-section\">\n      <span class=\"ai-badge\">🔗 Combined Insights</span>\n      <p class=\"ai-text\">${esc(crossInsights)}</p>\n    </div>\n  </div>\n\n  <!-- NEXT STEPS -->\n  <div class=\"section section-break\">\n    <div class=\"section-title\">Action Plan</div>\n    <h2>Next Steps</h2>\n    <div class=\"next-steps\" style=\"margin-top:16px;\">${nextStepCardsHtml}</div>\n  </div>\n\n  <!-- FOOTER -->\n  <div class=\"footer\">\n    Generated automatically by <strong>Social Media Analytics Workflow</strong> &bull; Week of ${esc(weekLabel)}\n  </div>\n\n</div>\n</body>\n</html>`;\n\nreturn [{ json: { html, weekLabel } }];"
+      }
+    },
+    "Message a model": {
+      "type": "@n8n/n8n-nodes-langchain.googleGemini",
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "mode": "list",
+          "value": "models/gemini-3-flash-preview"
+        },
+        "options": {
+          "maxOutputTokens": 1500
+        },
+        "messages": {
+          "values": [
+            {
+              "role": "model",
+              "content": "={{ $json.systemPrompt }}"
+            },
+            {
+              "content": "={{ $json.userPrompt }}"
+            }
+          ]
+        },
+        "builtInTools": {}
+      }
+    },
+    "Send a message": {
+      "type": "n8n-nodes-base.gmail",
+      "parameters": {
+        "sendTo": "={{ $node[\"Calculate Dates and Wrap Data\"].json.data.Report_Email }}",
+        "message": "Here's the weekly performance report for your Facebook and Instagram Accounts",
+        "options": {
+          "attachmentsUi": {
+            "attachmentsBinary": [
+              {
+                "property": "output.pdf"
+              }
+            ]
+          }
+        },
+        "subject": "=📊 Weekly Social Media Report — {{ $node[\"Calculate Dates and Wrap Data\"].json.week_label }}"
+      }
+    }
+  },
+  "18053": {
+    "Merge All Data & Build Charts": {
+      "type": "n8n-nodes-base.code",
+      "parameters": {
+        "jsCode": "const campaignData = $node[\"Organize Campaign Data\"].json.data;\nconst adData = $node[\"Organize Ad Creative Data\"].json.data;\nconst accountInfo = $node[\"Get Ad Account Info\"].json;\nconst weekLabel = $node[\"Calculate Dates and Wrap Data\"].json.week_label;\nconst since = $node[\"Calculate Dates and Wrap Data\"].json.since;\nconst until = $node[\"Calculate Dates and Wrap Data\"].json.until;\nconst companyName = $node[\"Calculate Dates and Wrap Data\"].json.data.Company_Name || accountInfo.name || 'Your Brand';\nconst currency = accountInfo.currency || 'USD';\n\nfunction chartUrl(config, width, height) {\n  let url = `https://quickchart.io/chart?c=${encodeURIComponent(JSON.stringify(config))}`;\n  if (width && height) url += `&width=${width}&height=${height}`;\n  return url;\n}\n\nfunction generateLineChart(labels, datasets, title) {\n  return {\n    type: \"line\",\n    data: { labels, datasets: datasets.map(d => ({ tension: 0.4, pointRadius: 3, fill: false, ...d })) },\n    options: { responsive: true, plugins: { title: { display: true, text: title, font: { size: 16 } } }, scales: { y: { beginAtZero: true } } }\n  };\n}\n\nfunction generateBarChart(labels, data, label, title, color) {\n  return {\n    type: \"bar\",\n    data: { labels, datasets: [{ label, data, backgroundColor: color }] },\n    options: { responsive: true, plugins: { title: { display: true, text: title, font: { size: 16 } }, legend: { display: false } }, scales: { y: { beginAtZero: true } } }\n  };\n}\n\nconst dates = campaignData.dailySeries.map(d => d.date.slice(5));\nconst spendData = campaignData.dailySeries.map(d => Math.round(d.spend * 100) / 100);\nconst impressionsData = campaignData.dailySeries.map(d => d.impressions);\nconst clicksData = campaignData.dailySeries.map(d => d.clicks);\nconst ctrData = campaignData.dailySeries.map(d => d.impressions > 0 ? Math.round((d.clicks / d.impressions) * 10000) / 100 : 0);\n\nconst spendChartUrl = chartUrl(generateLineChart(dates, [\n  { label: 'Spend', data: spendData, borderColor: '#e94560', backgroundColor: '#e9456022', fill: true }\n], 'Daily Ad Spend'), 700, 300);\n\nconst clicksImpressionsChartUrl = chartUrl(generateLineChart(dates, [\n  { label: 'Impressions', data: impressionsData, borderColor: '#1877F2' },\n  { label: 'Clicks', data: clicksData, borderColor: '#42B72A' }\n], 'Impressions vs Clicks'), 700, 300);\n\nconst topCampaigns = campaignData.campaigns.slice(0, 6);\nconst campaignSpendChartUrl = chartUrl(generateBarChart(\n  topCampaigns.map(c => c.campaign_name.slice(0, 18)),\n  topCampaigns.map(c => c.spend),\n  'Spend', 'Top Campaigns by Spend', '#0f3460'\n), 700, 320);\n\nconst ctrChartUrl = chartUrl(generateLineChart(dates, [\n  { label: 'CTR %', data: ctrData, borderColor: '#833AB4', backgroundColor: '#833AB422', fill: true }\n], 'Daily CTR Trend'), 700, 300);\n\nreturn [{ json: {\n  weekLabel, since, until, companyName, currency,\n  campaignData, adData,\n  charts: { spendChartUrl, clicksImpressionsChartUrl, campaignSpendChartUrl, ctrChartUrl }\n}}];\n"
+      }
+    },
+    "Message a model": {
+      "type": "@n8n/n8n-nodes-langchain.googleGemini",
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "mode": "list",
+          "value": "models/gemini-3-flash-preview",
+          "cachedResultName": "models/gemini-3-flash-preview"
+        },
+        "options": {
+          "maxOutputTokens": 1500
+        },
+        "messages": {
+          "values": [
+            {
+              "role": "model",
+              "content": "={{ $json.systemPrompt }}"
+            },
+            {
+              "content": "={{ $json.userPrompt }}"
+            }
+          ]
+        },
+        "builtInTools": {}
+      }
+    },
+    "Build HTML Report": {
+      "type": "n8n-nodes-base.code",
+      "parameters": {
+        "jsCode": "const geminiRaw = $node[\"Message a model\"].json;\n\nconst aiResponse =\n  (Array.isArray(geminiRaw) ? geminiRaw[0] : geminiRaw)\n    ?.content?.parts?.[0]?.text ||\n  geminiRaw?.candidates?.[0]?.content?.parts?.[0]?.text ||\n  geminiRaw?.message?.content ||\n  \"\";\n\nconst merged = $node[\"Merge All Data & Build Charts\"].json;\nconst c = merged.campaignData;\nconst a = merged.adData;\nconst charts = merged.charts;\nconst weekLabel = merged.weekLabel;\nconst companyName = merged.companyName;\nconst currency = merged.currency;\n\nfunction extractSection(text, heading) {\n  const escaped = heading.replace(/[.*+?^${}()|[\\]\\\\]/g, '\\\\$&');\n  const regex = new RegExp(`###\\\\s*${escaped}\\\\s*\\\\n([\\\\s\\\\S]*?)(?=###|$)`, 'i');\n  const match = text.match(regex);\n  return match ? match[1].trim() : '';\n}\n\nconst execSummary   = extractSection(aiResponse, 'EXECUTIVE SUMMARY')   || 'Analysis unavailable for this period.';\nconst campAnalysis  = extractSection(aiResponse, 'CAMPAIGN PERFORMANCE ANALYSIS') || 'No campaign analysis available.';\nconst creativeAnalysis = extractSection(aiResponse, 'CREATIVE PERFORMANCE ANALYSIS') || 'No creative analysis available.';\nconst budgetInsights = extractSection(aiResponse, 'BUDGET & EFFICIENCY INSIGHTS') || 'No budget insights available.';\nconst nextStepsRaw  = extractSection(aiResponse, 'NEXT STEPS') || '';\n\nconst stepLines = nextStepsRaw\n  .split('\\n')\n  .map(l => l.replace(/^[\\u2022\\-\\*]\\s*/, '').trim())\n  .filter(l => l.length > 10)\n  .slice(0, 4);\n\nwhile (stepLines.length < 4) stepLines.push('Review campaign performance and adjust budget allocation accordingly.');\n\nconst esc = (str) => String(str || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\"/g, '&quot;');\nconst fmtMoney = (n) => `${currency} ${Number(n || 0).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;\n\nconst campaignRowsHtml = c.campaigns.length === 0\n  ? '<tr><td colspan=\"7\" style=\"text-align:center;color:#6b7280;padding:16px;\">No campaign activity this period.</td></tr>'\n  : c.campaigns.map(camp => `\n    <tr>\n      <td>${esc(camp.campaign_name)}</td>\n      <td>${fmtMoney(camp.spend)}</td>\n      <td>${camp.impressions.toLocaleString()}</td>\n      <td>${camp.clicks.toLocaleString()}</td>\n      <td>${camp.ctr}%</td>\n      <td>${fmtMoney(camp.cpc)}</td>\n      <td>${camp.results.toLocaleString()}</td>\n    </tr>`).join('');\n\nconst creativeCardsHtml = a.ads.length === 0\n  ? '<p style=\"color:#6b7280;font-size:13px;\">No ad creative data available this period.</p>'\n  : a.ads.map(ad => `\n    <div class=\"creative-card\" style=\"break-inside:avoid;\">\n      ${ad.thumbnail_url ? `<div class=\"creative-thumb\" style=\"background-image:url('${esc(ad.thumbnail_url)}')\"></div>` : '<div class=\"creative-thumb creative-thumb-placeholder\">\\ud83c\\udfaf</div>'}\n      <div class=\"creative-body\">\n        <div class=\"creative-meta\">${esc(ad.campaign_name)}</div>\n        <p class=\"creative-text\">${esc((ad.ad_name || 'Untitled Ad').slice(0, 80))}</p>\n        <div class=\"creative-stats\">\n          <span class=\"cstat\">${fmtMoney(ad.spend)} spend</span>\n          <span class=\"cstat\">${ad.ctr}% CTR</span>\n          <span class=\"cstat\">${ad.results} results</span>\n        </div>\n      </div>\n    </div>`).join('');\n\nconst nextStepCardsHtml = stepLines.map((step, i) => `\n  <div class=\"step-card\" style=\"break-inside:avoid;\">\n    <div class=\"step-num\">${i + 1}</div>\n    <p class=\"step-text\">${esc(step)}</p>\n  </div>`).join('');\n\nconst html = `<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<title>Meta Ads Weekly Performance Report \\u2014 ${esc(weekLabel)}</title>\n<style>\n  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');\n  * { margin:0; padding:0; box-sizing:border-box; }\n  body { font-family:'Inter',sans-serif; background:#f0f2f5; color:#1a1a2e; -webkit-print-color-adjust:exact; print-color-adjust:exact; }\n  @page { margin: 28px 36px; }\n  .page { max-width:900px; margin:0 auto; background:#fff; padding:0 0 24px 0; }\n  .section { padding:32px 40px; border-bottom:1px solid #f0f2f5; break-inside:avoid; }\n  .section-title { font-size:11px; font-weight:700; letter-spacing:3px; text-transform:uppercase; color:#e94560; margin-bottom:20px; }\n  .section h2 { font-size:22px; font-weight:700; margin-bottom:16px; color:#1a1a2e; }\n\n  .header { background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%); color:#fff; padding:40px; break-inside:avoid; }\n  .header-top { display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; }\n  .brand { font-size:13px; font-weight:600; letter-spacing:3px; text-transform:uppercase; color:#e94560; }\n  .report-badge { background:rgba(233,69,96,0.2); border:1px solid #e94560; color:#e94560; padding:4px 14px; border-radius:20px; font-size:12px; font-weight:600; }\n  .header h1 { font-size:32px; font-weight:800; margin-bottom:8px; }\n  .header .week { font-size:15px; color:rgba(255,255,255,0.6); }\n  .header-stats { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-top:28px; }\n  .hstat { background:rgba(255,255,255,0.07); border-radius:12px; padding:16px; text-align:center; break-inside:avoid; }\n  .hstat-val { font-size:22px; font-weight:800; color:#e94560; }\n  .hstat-label { font-size:11px; color:rgba(255,255,255,0.5); text-transform:uppercase; letter-spacing:1px; margin-top:4px; }\n\n  .combined-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-bottom:8px; }\n  .combined-card { background:linear-gradient(135deg,#1a1a2e,#0f3460); border-radius:12px; padding:20px; text-align:center; break-inside:avoid; }\n  .combined-val { font-size:24px; font-weight:800; color:#e94560; }\n  .combined-label { font-size:11px; color:rgba(255,255,255,0.6); text-transform:uppercase; letter-spacing:1px; margin-top:6px; }\n  .combined-sub { font-size:10px; color:rgba(255,255,255,0.35); margin-top:2px; }\n\n  .stats-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-bottom:24px; }\n  .stat-card { background:#f8f9ff; border-radius:12px; padding:16px; text-align:center; border:1px solid #e8eaf6; break-inside:avoid; }\n  .stat-val { font-size:22px; font-weight:800; color:#1a1a2e; }\n  .stat-label { font-size:11px; color:#6b7280; text-transform:uppercase; letter-spacing:0.5px; margin-top:4px; }\n\n  .chart-row { display:grid; grid-template-columns:1fr 1fr; gap:20px; margin:20px 0; break-inside:avoid; }\n  .chart-box { background:#f8f9ff; border-radius:12px; padding:16px; border:1px solid #e8eaf6; break-inside:avoid; }\n  .chart-box img { width:100%; border-radius:8px; display:block; }\n  .chart-title { font-size:12px; font-weight:600; color:#6b7280; text-transform:uppercase; letter-spacing:1px; margin-bottom:10px; }\n\n  .ai-section { background:linear-gradient(135deg,#f0f4ff,#f5f0ff); border-radius:16px; padding:28px; margin-bottom:24px; border:1px solid #e0e7ff; break-inside:avoid; }\n  .ai-badge { display:inline-flex; align-items:center; gap:6px; background:#e94560; color:#fff; padding:4px 12px; border-radius:20px; font-size:11px; font-weight:700; letter-spacing:1px; text-transform:uppercase; margin-bottom:16px; }\n  .ai-text { font-size:14px; line-height:1.8; color:#374151; white-space:pre-wrap; }\n\n  .campaign-table { width:100%; border-collapse:collapse; margin-top:16px; font-size:13px; }\n  .campaign-table th { background:#1a1a2e; color:#fff; text-align:left; padding:10px 12px; font-size:11px; text-transform:uppercase; letter-spacing:0.5px; }\n  .campaign-table td { padding:10px 12px; border-bottom:1px solid #eef0f5; color:#374151; }\n  .campaign-table tr:nth-child(even) { background:#f8f9ff; }\n\n  .creative-grid { display:flex; flex-wrap:wrap; gap:16px; margin-top:20px; }\n  .creative-card { flex:1 1 calc(33% - 11px); min-width:200px; background:#fff; border:1px solid #e8eaf6; border-radius:12px; overflow:hidden; break-inside:avoid; }\n  .creative-thumb { width:100%; height:130px; background-size:cover; background-position:center; background-color:#f0f2f5; }\n  .creative-thumb-placeholder { display:flex; align-items:center; justify-content:center; font-size:32px; }\n  .creative-body { padding:12px; }\n  .creative-meta { font-size:10px; color:#9ca3af; margin-bottom:4px; text-transform:uppercase; letter-spacing:0.5px; }\n  .creative-text { font-size:12px; line-height:1.5; color:#374151; margin-bottom:8px; min-height:32px; }\n  .creative-stats { display:flex; flex-wrap:wrap; gap:6px; }\n  .cstat { font-size:10px; color:#6b7280; background:#f3f4f6; padding:3px 7px; border-radius:6px; }\n\n  .next-steps { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:16px; }\n  .step-card { background:linear-gradient(135deg,#fff5f7,#fff); border:1px solid #fecdd3; border-radius:12px; padding:20px; break-inside:avoid; }\n  .step-num { width:28px; height:28px; background:#e94560; color:#fff; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:700; margin-bottom:10px; }\n  .step-text { font-size:13px; line-height:1.6; color:#374151; }\n\n  .footer { background:#1a1a2e; color:rgba(255,255,255,0.4); text-align:center; padding:24px; font-size:12px; break-inside:avoid; }\n  .footer strong { color:#e94560; }\n</style>\n</head>\n<body>\n<div class=\"page\">\n\n  <div class=\"header\">\n    <div class=\"header-top\">\n      <span class=\"brand\">${esc(companyName)}</span>\n      <span class=\"report-badge\">Meta Ads Weekly Report</span>\n    </div>\n    <h1>Ads Performance Report</h1>\n    <p class=\"week\">Period: ${esc(weekLabel)}</p>\n    <div class=\"header-stats\">\n      <div class=\"hstat\"><div class=\"hstat-val\">${fmtMoney(c.summary.total_spend)}</div><div class=\"hstat-label\">Total Spend</div></div>\n      <div class=\"hstat\"><div class=\"hstat-val\">${c.summary.total_clicks.toLocaleString()}</div><div class=\"hstat-label\">Total Clicks</div></div>\n      <div class=\"hstat\"><div class=\"hstat-val\">${c.summary.avg_ctr}%</div><div class=\"hstat-label\">Average CTR</div></div>\n      <div class=\"hstat\"><div class=\"hstat-val\">${c.summary.total_results.toLocaleString()}</div><div class=\"hstat-label\">Total Results</div></div>\n    </div>\n  </div>\n\n  <div class=\"section\">\n    <div class=\"section-title\">Account Performance Overview</div>\n    <div class=\"combined-grid\">\n      <div class=\"combined-card\"><div class=\"combined-val\">${fmtMoney(c.summary.avg_cpc)}</div><div class=\"combined-label\">Avg CPC</div><div class=\"combined-sub\">Cost per click</div></div>\n      <div class=\"combined-card\"><div class=\"combined-val\">${fmtMoney(c.summary.avg_cpm)}</div><div class=\"combined-label\">Avg CPM</div><div class=\"combined-sub\">Cost per 1,000 impr.</div></div>\n      <div class=\"combined-card\"><div class=\"combined-val\">${fmtMoney(c.summary.avg_cost_per_result)}</div><div class=\"combined-label\">Cost / Result</div><div class=\"combined-sub\">Blended</div></div>\n      <div class=\"combined-card\"><div class=\"combined-val\">${c.summary.overall_roas ?? 'N/A'}</div><div class=\"combined-label\">ROAS</div><div class=\"combined-sub\">Revenue / spend</div></div>\n    </div>\n  </div>\n\n  <div class=\"section\">\n    <div class=\"section-title\">AI-Powered Analysis</div>\n    <div class=\"ai-section\">\n      <span class=\"ai-badge\">\\ud83e\\udd16 Executive Summary</span>\n      <p class=\"ai-text\">${esc(execSummary)}</p>\n    </div>\n  </div>\n\n  <div class=\"section\">\n    <div class=\"section-title\">Campaign Performance</div>\n    <div class=\"stats-grid\">\n      <div class=\"stat-card\"><div class=\"stat-val\">${c.summary.campaign_count}</div><div class=\"stat-label\">Active Campaigns</div></div>\n      <div class=\"stat-card\"><div class=\"stat-val\">${c.summary.total_impressions.toLocaleString()}</div><div class=\"stat-label\">Impressions</div></div>\n      <div class=\"stat-card\"><div class=\"stat-val\">${c.summary.total_reach.toLocaleString()}</div><div class=\"stat-label\">Reach</div></div>\n      <div class=\"stat-card\"><div class=\"stat-val\">${fmtMoney(c.summary.total_revenue)}</div><div class=\"stat-label\">Revenue Tracked</div></div>\n    </div>\n    <div class=\"chart-row\">\n      <div class=\"chart-box\"><div class=\"chart-title\">Daily Ad Spend</div><img src=\"${charts.spendChartUrl}\" alt=\"Daily Spend\"/></div>\n      <div class=\"chart-box\"><div class=\"chart-title\">Impressions vs Clicks</div><img src=\"${charts.clicksImpressionsChartUrl}\" alt=\"Impressions vs Clicks\"/></div>\n    </div>\n    <div class=\"chart-row\">\n      <div class=\"chart-box\"><div class=\"chart-title\">Top Campaigns by Spend</div><img src=\"${charts.campaignSpendChartUrl}\" alt=\"Top Campaigns\"/></div>\n      <div class=\"chart-box\"><div class=\"chart-title\">Daily CTR Trend</div><img src=\"${charts.ctrChartUrl}\" alt=\"CTR Trend\"/></div>\n    </div>\n    <div class=\"ai-section\">\n      <span class=\"ai-badge\">\\ud83d\\udcca Campaign Insights</span>\n      <p class=\"ai-text\">${esc(campAnalysis)}</p>\n    </div>\n    <div class=\"section-title\" style=\"margin-top:8px;\">Campaign Breakdown</div>\n    <table class=\"campaign-table\">\n      <thead><tr><th>Campaign</th><th>Spend</th><th>Impressions</th><th>Clicks</th><th>CTR</th><th>CPC</th><th>Results</th></tr></thead>\n      <tbody>${campaignRowsHtml}</tbody>\n    </table>\n  </div>\n\n  <div class=\"section\">\n    <div class=\"section-title\">Creative Performance</div>\n    <div class=\"ai-section\">\n      <span class=\"ai-badge\">\\ud83c\\udfa8 Creative Insights</span>\n      <p class=\"ai-text\">${esc(creativeAnalysis)}</p>\n    </div>\n    <div class=\"section-title\" style=\"margin-top:8px;\">Top Performing Ads This Period</div>\n    <div class=\"creative-grid\">${creativeCardsHtml}</div>\n  </div>\n\n  <div class=\"section\">\n    <div class=\"section-title\">Budget &amp; Efficiency</div>\n    <div class=\"ai-section\">\n      <span class=\"ai-badge\">\\ud83d\\udcb0 Budget Insights</span>\n      <p class=\"ai-text\">${esc(budgetInsights)}</p>\n    </div>\n  </div>\n\n  <div class=\"section\">\n    <div class=\"section-title\">Action Plan</div>\n    <h2>Next Steps</h2>\n    <div class=\"next-steps\">${nextStepCardsHtml}</div>\n  </div>\n\n  <div class=\"footer\">\n    Generated automatically by <strong>Meta Ads Weekly Performance Workflow</strong> &bull; ${esc(weekLabel)}\n  </div>\n\n</div>\n</body>\n</html>`;\n\nreturn [{ json: { html, weekLabel } }];\n"
+      }
+    },
+    "Send Email": {
+      "type": "n8n-nodes-base.gmail",
+      "parameters": {
+        "sendTo": "={{ $node[\"Calculate Dates and Wrap Data\"].json.data.Report_Email }}",
+        "message": "Here's your Meta Ads weekly performance report covering campaign and ad creative performance.",
+        "options": {
+          "attachmentsUi": {
+            "attachmentsBinary": [
+              {
+                "property": "output.pdf"
+              }
+            ]
+          }
+        },
+        "subject": "=📊 Meta Ads Weekly Performance Report — {{ $node[\"Calculate Dates and Wrap Data\"].json.week_label }}"
+      }
+    }
+  },
+  "18673": {
+    "Load Runtime Config": {
+      "type": "n8n-nodes-base.set",
+      "parameters": {
+        "options": {},
+        "assignments": {
+          "assignments": [
+            {
+              "id": "3a60b12f-ec41-418a-8d9c-582df7dddac6",
+              "name": "dataSourceMode",
+              "type": "string",
+              "value": "sheets"
+            },
+            {
+              "id": "df48ae98-1a0a-4dcd-abb3-1e65e115175e",
+              "name": "healthScoreCritical",
+              "type": "number",
+              "value": 60
+            },
+            {
+              "id": "19670049-3a15-4c66-a61e-4ae012af9128",
+              "name": "healthScoreWarning",
+              "type": "number",
+              "value": 80
+            },
+            {
+              "id": "0e0635f5-0d2c-4b47-98e2-41e5d0913432",
+              "name": "defaultSlaDays",
+              "type": "number",
+              "value": 5
+            },
+            {
+              "id": "4c90ef46-2ad3-42c4-9055-62408b5311fe",
+              "name": "forecastHorizonDays",
+              "type": "number",
+              "value": 7
+            },
+            {
+              "id": "1c15e95d-74bf-4a07-b3b5-87e29ef67107",
+              "name": "cycleTimeWeight",
+              "type": "number",
+              "value": 5
+            },
+            {
+              "id": "615c5ce2-bc0c-4c77-ad85-77d6a3052491",
+              "name": "exceptionWeight",
+              "type": "number",
+              "value": 1
+            },
+            {
+              "id": "e852b509-3f40-41c3-9aae-f1a0456b7803",
+              "name": "pendingWeight",
+              "type": "number",
+              "value": 2
+            },
+            {
+              "id": "f097efb5-5036-40ba-bdce-245819b67f1a",
+              "name": "financeDirectorPhone",
+              "type": "string",
+              "value": "+1234567890"
+            },
+            {
+              "id": "9f0b1458-9799-462d-8b86-0b39c82ed98a",
+              "name": "cfoEmail",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "id": "b17d67e0-cc93-41f5-9d19-0b4c125af681",
+              "name": "bottleneckWorkloadThreshold",
+              "type": "number",
+              "value": 15
+            },
+            {
+              "id": "599559f3-92a9-4df9-827f-8f99564f0b5b",
+              "name": "apLeadSlackChannel",
+              "type": "string",
+              "value": "n8n-workflow"
+            },
+            {
+              "id": "ce8f6de3-5b06-4269-b800-04a59fc3874a",
+              "name": "enableClosedLoopActions",
+              "type": "boolean",
+              "value": true
+            },
+            {
+              "id": "91a14309-0cd4-41d4-bb43-edc021a62726",
+              "name": "html2pdfurl",
+              "type": "string",
+              "value": "https://api.html2pdf.app/v1/generate"
+            }
+          ]
+        }
+      }
+    },
+    "Generate CFO Executive Summary": {
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "parameters": {
+        "text": "=CFO assessment.\nKPIs: {{ JSON.stringify($json.kpis) }}\nHealth: {{ $json.healthScore }} | Momentum: {{ $json.momentumIndex }}\nAlertFlags: {{ JSON.stringify($json.alertFlags) }}\nForecast: {{ JSON.stringify($json.forecast) }}\nCashAtRisk: {{ JSON.stringify($json.cashAtRisk) }}\nActionQueue: {{ JSON.stringify($json.actionQueue) }}\nDelta: {{ JSON.stringify($json.trends.deltaVsPrior) }}",
+        "options": {
+          "systemMessage": "CFO Advisor. Return ONLY JSON with executiveSummary, keyRisks[3], recommendations[3], positiveFindings[2], priority, overallAssessment, predictedRiskHorizon, bottleneckRootCause, actionQueue[]. No markdown."
+        },
+        "promptType": "define"
+      }
+    },
+    "Format Email Template (HTML)": {
+      "type": "n8n-nodes-base.html",
+      "parameters": {
+        "html": "<div style=\"margin:0;padding:0;background:#f4f6f9;font-family:Arial,Helvetica,sans-serif;\">\n  <table role=\"presentation\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" style=\"background:#f4f6f9;padding:24px 0;\">\n    <tr>\n      <td align=\"center\">\n        <table role=\"presentation\" width=\"640\" cellspacing=\"0\" cellpadding=\"0\" style=\"max-width:640px;width:100%;background:#ffffff;border-radius:12px;overflow:hidden;box-shadow:0 4px 24px rgba(15,23,42,0.08);\">\n\n          <!-- Header -->\n          <tr>\n            <td style=\"background:linear-gradient(135deg,#1e3a5f 0%,#2563eb 100%);padding:28px 32px;\">\n              <p style=\"margin:0 0 6px;font-size:12px;letter-spacing:1.2px;text-transform:uppercase;color:#bfdbfe;\">Invoice Lifecycle Intelligence</p>\n              <h1 style=\"margin:0;font-size:26px;line-height:1.3;color:#ffffff;font-weight:700;\">Executive Dashboard Report</h1>\n              <p style=\"margin:10px 0 0;font-size:14px;color:#dbeafe;\">Daily CFO briefing · {{ $('Parse AI Node').item.json.dataSource || 'sheets' }}</p>\n            </td>\n          </tr>\n\n          <!-- KPI strip -->\n          <tr>\n            <td style=\"padding:24px 32px 8px;\">\n              <table role=\"presentation\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\">\n                <tr>\n                  <td width=\"33%\" style=\"padding:8px;\">\n                    <div style=\"background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px;text-align:center;\">\n                      <p style=\"margin:0 0 6px;font-size:11px;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;\">Health Score</p>\n                      <p style=\"margin:0;font-size:28px;font-weight:700;color:#1e293b;\">{{ $('Parse AI Node').item.json.healthScore }}</p>\n                      <p style=\"margin:6px 0 0;font-size:12px;color:#64748b;\">{{ $('Parse AI Node').item.json.riskLevel }} risk</p>\n                    </div>\n                  </td>\n                  <td width=\"33%\" style=\"padding:8px;\">\n                    <div style=\"background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px;text-align:center;\">\n                      <p style=\"margin:0 0 6px;font-size:11px;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;\">Forecast</p>\n                      <p style=\"margin:0;font-size:22px;font-weight:700;color:#1e293b;\">{{ $('Parse AI Node').item.json.forecast.forecastStatus }}</p>\n                      <p style=\"margin:6px 0 0;font-size:12px;color:#64748b;\">Momentum {{ $('Parse AI Node').item.json.momentumIndex }}</p>\n                    </div>\n                  </td>\n                  <td width=\"33%\" style=\"padding:8px;\">\n                    <div style=\"background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px;text-align:center;\">\n                      <p style=\"margin:0 0 6px;font-size:11px;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;\">Pending</p>\n                      <p style=\"margin:0;font-size:28px;font-weight:700;color:#1e293b;\">{{ $('Parse AI Node').item.json.kpis.pendingInvoices }}</p>\n                      <p style=\"margin:6px 0 0;font-size:12px;color:#64748b;\">of {{ $('Parse AI Node').item.json.kpis.totalInvoices }} invoices</p>\n                    </div>\n                  </td>\n                </tr>\n              </table>\n            </td>\n          </tr>\n\n          <!-- Executive summary -->\n          <tr>\n            <td style=\"padding:8px 32px 24px;\">\n              <div style=\"background:#eff6ff;border-left:4px solid #2563eb;border-radius:8px;padding:18px 20px;\">\n                <p style=\"margin:0 0 8px;font-size:12px;font-weight:700;color:#1d4ed8;text-transform:uppercase;letter-spacing:0.5px;\">Executive Summary</p>\n                <p style=\"margin:0;font-size:15px;line-height:1.65;color:#334155;\">{{ $('Parse AI Node').item.json.aiInsights.executiveSummary }}</p>\n              </div>\n            </td>\n          </tr>\n\n          <!-- Metrics grid -->\n          <tr>\n            <td style=\"padding:0 32px 24px;\">\n              <table role=\"presentation\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" style=\"border:1px solid #e2e8f0;border-radius:10px;overflow:hidden;\">\n                <tr style=\"background:#f8fafc;\">\n                  <td style=\"padding:12px 16px;font-size:12px;color:#64748b;font-weight:700;text-transform:uppercase;\">Metric</td>\n                  <td style=\"padding:12px 16px;font-size:12px;color:#64748b;font-weight:700;text-transform:uppercase;text-align:right;\">Value</td>\n                </tr>\n                <tr>\n                  <td style=\"padding:12px 16px;border-top:1px solid #e2e8f0;color:#475569;\">Avg cycle time</td>\n                  <td style=\"padding:12px 16px;border-top:1px solid #e2e8f0;color:#0f172a;font-weight:600;text-align:right;\">{{ $('Parse AI Node').item.json.kpis.avgCycleTime }} days</td>\n                </tr>\n                <tr>\n                  <td style=\"padding:12px 16px;border-top:1px solid #e2e8f0;color:#475569;\">Exception rate</td>\n                  <td style=\"padding:12px 16px;border-top:1px solid #e2e8f0;color:#0f172a;font-weight:600;text-align:right;\">{{ $('Parse AI Node').item.json.kpis.exceptionRate }}%</td>\n                </tr>\n                <tr>\n                  <td style=\"padding:12px 16px;border-top:1px solid #e2e8f0;color:#475569;\">Total spend</td>\n                  <td style=\"padding:12px 16px;border-top:1px solid #e2e8f0;color:#0f172a;font-weight:600;text-align:right;\">${{ $('Parse AI Node').item.json.kpis.totalSpend }}</td>\n                </tr>\n                <tr>\n                  <td style=\"padding:12px 16px;border-top:1px solid #e2e8f0;color:#475569;\">Bottleneck approver</td>\n                  <td style=\"padding:12px 16px;border-top:1px solid #e2e8f0;color:#0f172a;font-weight:600;text-align:right;\">{{ $('Parse AI Node').item.json.bottleneck.approver }}</td>\n                </tr>\n                <tr>\n                  <td style=\"padding:12px 16px;border-top:1px solid #e2e8f0;color:#475569;\">SLA breaches</td>\n                  <td style=\"padding:12px 16px;border-top:1px solid #e2e8f0;color:#0f172a;font-weight:600;text-align:right;\">{{ $('Parse AI Node').item.json.forecast.slaBreachCount }}</td>\n                </tr>\n                <tr>\n                  <td style=\"padding:12px 16px;border-top:1px solid #e2e8f0;color:#475569;\">Cash at risk</td>\n                  <td style=\"padding:12px 16px;border-top:1px solid #e2e8f0;color:#0f172a;font-weight:600;text-align:right;\">${{ $('Parse AI Node').item.json.cashAtRisk.total }}</td>\n                </tr>\n              </table>\n            </td>\n          </tr>\n\n          <!-- CTA -->\n          <tr>\n            <td style=\"padding:0 32px 32px;text-align:center;\">\n              <a href=\"{{ $('Set Dashboard URL').item.json.dashboardUrl }}\" style=\"display:inline-block;background:#2563eb;color:#ffffff;text-decoration:none;font-size:15px;font-weight:700;padding:14px 28px;border-radius:8px;\">Open Live Dashboard →</a>\n              <p style=\"margin:14px 0 0;font-size:12px;color:#94a3b8;\">Generated by Invoice Lifecycle Intelligence Workflow</p>\n            </td>\n          </tr>\n\n        </table>\n      </td>\n    </tr>\n  </table>\n</div>"
+      }
+    },
+    "Generate PDF Report": {
+      "type": "n8n-nodes-base.httpRequest",
+      "parameters": {
+        "url": "={{ $('Load Runtime Config').item.json.html2pdfurl }}",
+        "method": "POST",
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "file",
+              "outputPropertyName": "reportPdf"
+            }
+          }
+        },
+        "jsonBody": "={\n  \"html\": {{ JSON.stringify($json.html) }},\n  \"format\": \"A4\"\n}",
+        "sendBody": true,
+        "specifyBody": "json",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth"
+      }
+    },
+    "Email CFO Report (Gmail)": {
+      "type": "n8n-nodes-base.gmail",
+      "parameters": {
+        "sendTo": "={{ $('Load Runtime Config').first().json.cfoEmail }}",
+        "message": "={{ $('Format Email Template (HTML)').item.json.html }}",
+        "options": {
+          "attachmentsUi": {
+            "attachmentsBinary": [
+              {
+                "property": "reportPdf"
+              }
+            ]
+          }
+        },
+        "subject": "=Invoice Lifecycle Report — {{ $('Parse AI Node').item.json.forecast.forecastStatus }}"
+      }
+    }
+  }
+}

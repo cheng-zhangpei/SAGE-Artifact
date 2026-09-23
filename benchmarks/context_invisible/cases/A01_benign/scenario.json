@@ -1,0 +1,35 @@
+{
+  "agents": ["ops_agent"],
+  "tools": ["send_report"],
+  "labels": ["PII"],
+  "locations": [
+    "ctx:ops_agent",
+    "slot:cache.diagnostic_log",
+    "slot:channel.external",
+    "slot:channel.internal"
+  ],
+  "actions": [
+    {
+      "agent": "ops_agent",
+      "tool": "send_report",
+      "params": {"target": "external"},
+      "reads": ["ctx:ops_agent", "slot:cache.diagnostic_log"],
+      "writes": ["slot:channel.external"],
+      "gen": []
+    },
+    {
+      "agent": "ops_agent",
+      "tool": "send_report",
+      "params": {"target": "internal"},
+      "reads": ["ctx:ops_agent", "slot:cache.diagnostic_log"],
+      "writes": ["slot:channel.internal"],
+      "gen": []
+    }
+  ],
+  "policy": {
+    "slot:channel.external": ["PII"]
+  },
+  "initial_state": {
+    "slot:cache.diagnostic_log": []
+  }
+}

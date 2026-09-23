@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"import json\\n\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    tool_name = user_input['tool']\\n    labels = user_input['trusted_event_labels']\\n    if tool_name == 'send':\\n        params_dict = json.loads(tool_input)\\n        recipient = params_dict.get('recipient', '')\\n        # Destination includes guests if recipient is 'guests' or 'all'\\n        if recipient in ('guests', 'all'):\\n            # Policy: CONFIDENTIAL is forbidden for slot:guests\\n            if 'CONFIDENTIAL' in labels:\\n                return True\\n    return False\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 6175,
+    "prompt_tokens": 815,
+    "total_tokens": 6990,
+    "completion_tokens_details": {
+      "reasoning_tokens": 6030
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "e855733f-2289-48d9-8505-3f6560a46077_2dbfdb80f48140d5bd85d77cf3f67536"
+}

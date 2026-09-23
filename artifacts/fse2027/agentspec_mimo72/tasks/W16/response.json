@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\"python\": \"def pilot_candidate(user_input, tool_input, intermediate_steps):\\n    import json\\n    tool = user_input.get(\\\"tool\\\", \\\"\\\")\\n    labels = user_input.get(\\\"trusted_event_labels\\\", set())\\n    label_set = set(labels)\\n    params = json.loads(tool_input) if tool_input else {}\\n    target = params.get(\\\"target\\\", None)\\n    if tool == \\\"send\\\":\\n        if target == \\\"listing\\\":\\n            if not label_set.issubset({\\\"PII\\\", \\\"ACCESS_CODE\\\"}):\\n                return True\\n        elif target == \\\"sms\\\":\\n            if not label_set.issubset({\\\"ACCESS_CODE\\\"}):\\n                return True\\n    elif tool == \\\"issue\\\":\\n        if target == \\\"sms\\\":\\n            if not label_set.issubset({\\\"ACCESS_CODE\\\"}):\\n                return True\\n    return False\"}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 4351,
+    "prompt_tokens": 817,
+    "total_tokens": 5168,
+    "completion_tokens_details": {
+      "reasoning_tokens": 4151
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "6e214679-ca41-4ab7-9d7e-92c86c632844_fa986f712cd94b42b4afc7b95ffb149d"
+}

@@ -1,0 +1,136 @@
+[
+  {
+    "agent": "assistant",
+    "tool": "collect",
+    "params": {
+      "source": "forum"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "assistant",
+    "tool": "collect",
+    "params": {
+      "source": "forum"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "technician",
+    "tool": "collect",
+    "params": {
+      "source": "manual"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "technician",
+    "tool": "collect",
+    "params": {
+      "source": "manual"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "planner",
+    "tool": "stage",
+    "params": {},
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "planner",
+    "tool": "stage",
+    "params": {},
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "operator",
+    "tool": "apply",
+    "params": {
+      "source": "plan",
+      "target": "machine"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "operator",
+    "tool": "apply",
+    "params": {
+      "source": "plan",
+      "target": "machine"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operator",
+    "tool": "apply",
+    "params": {
+      "source": "plan",
+      "target": "rehearsal"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "operator",
+    "tool": "apply",
+    "params": {
+      "source": "plan",
+      "target": "rehearsal"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "operator",
+    "tool": "apply",
+    "params": {
+      "source": "manual",
+      "target": "machine"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "operator",
+    "tool": "apply",
+    "params": {
+      "source": "manual",
+      "target": "machine"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": true
+  }
+]

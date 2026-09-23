@@ -1,0 +1,144 @@
+[
+  {
+    "agent": "reporter",
+    "tool": "collect",
+    "params": {},
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "reporter",
+    "tool": "collect",
+    "params": {},
+    "labels": [
+      "EMBARGO"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editor",
+    "tool": "preview",
+    "params": {},
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editor",
+    "tool": "preview",
+    "params": {},
+    "labels": [
+      "EMBARGO"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "producer",
+    "tool": "queue",
+    "params": {},
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "producer",
+    "tool": "queue",
+    "params": {},
+    "labels": [
+      "EMBARGO"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "publisher",
+    "tool": "release",
+    "params": {
+      "route": "web"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "publisher",
+    "tool": "release",
+    "params": {
+      "route": "web"
+    },
+    "labels": [
+      "EMBARGO"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "publisher",
+    "tool": "release",
+    "params": {
+      "route": "mail"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "publisher",
+    "tool": "release",
+    "params": {
+      "route": "mail"
+    },
+    "labels": [
+      "EMBARGO"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "publisher",
+    "tool": "release",
+    "params": {
+      "route": "room"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "publisher",
+    "tool": "release",
+    "params": {
+      "route": "room"
+    },
+    "labels": [
+      "EMBARGO"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "producer",
+    "tool": "queue",
+    "params": {
+      "source": "brief"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "producer",
+    "tool": "queue",
+    "params": {
+      "source": "brief"
+    },
+    "labels": [
+      "EMBARGO"
+    ],
+    "candidate": false,
+    "completion": false
+  }
+]

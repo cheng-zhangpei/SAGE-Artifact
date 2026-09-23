@@ -1,0 +1,18 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\"python\": \"import json\\n\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    agent = user_input['agent']\\n    tool_name = user_input['tool']\\n    labels = user_input['trusted_event_labels']\\n    params = json.loads(tool_input)\\n    \\n    policy = {\\n        'slot:audit': {'FINANCIAL', 'AUTH'},\\n        'slot:bank': {'EMPLOYEE', 'AUTH'},\\n        'slot:processor': {'AUTH', 'UNVERIFIED'},\\n        'slot:public': {'EMPLOYEE', 'FINANCIAL', 'AUTH'},\\n        'slot:regulator': {'UNVERIFIED'}\\n    }\\n    \\n    if tool_name == 'import_expense':\\n        category = params.get('category')\\n        if category not in labels:\\n            return True\\n        allowed_in_claim = True\\n        return False\\n    \\n    if tool_name == 'review_claim':\\n        return False\\n    \\n    if tool_name == 'assemble_packet':\\n        return False\\n    \\n    if tool_name == 'submit_claim':\\n        source = params.get('source')\\n        route = params.get('route')\\n        copy = params.get('copy')\\n        include = params.get('include')\\n        \\n        if agent == 'claims':\\n            route_slot = {\\n                'local': 'slot:backoffice',\\n                'counterparty': 'slot:processor',\\n                'release': 'slot:public'\\n            }.get(route)\\n            copy_slot = {\\n                'audit': 'slot:audit',\\n                'counterparty': 'slot:processor',\\n                'public': 'slot:public',\\n                'none': None\\n            }.get(copy)\\n        elif agent == 'treasury':\\n            route_slot = {\\n                'local': 'slot:backoffice',\\n                'counterparty': 'slot:bank',\\n                'release': 'slot:regulator'\\n            }.get(route)\\n            copy_slot = {\\n                'audit': 'slot:audit',\\n                'counterparty': 'slot:bank',\\n                'public': 'slot:public',\\n                'none': None\\n            }.get(copy)\\n        else:\\n            return True\\n        \\n        def allowed_in_slot(slot, lab_set):\\n            if slot not in policy:\\n                return True\\n            allowed = policy[slot]\\n            return lab_set.issubset(allowed)\\n        \\n        if route_slot is not None and not allowed_in_slot(route_slot, labels):\\n            return True\\n        if copy_slot is not None and not allowed_in_slot(copy_slot, labels):\\n            return True\\n        \\n        return False\\n    \\n    return False\"}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 4366,
+    "prompt_tokens": 1958,
+    "total_tokens": 6324,
+    "completion_tokens_details": {
+      "reasoning_tokens": 3738
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 1472
+    }
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "c6fc48fd-76ed-4426-a8ea-a9a2bd3867bb_8b37f273aeba4cddb118592d482e6634"
+}

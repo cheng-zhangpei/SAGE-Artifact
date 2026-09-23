@@ -1,0 +1,61 @@
+{
+  "name": "s4_full",
+  "description": "Data Pipeline with Conditional Processing",
+  "agents": ["ingestor", "processor", "exporter"],
+  "tools": ["ingest", "process", "export"],
+  "labels": ["SENSITIVE", "UNVERIFIED"],
+  "actions": [
+    {
+      "agent": "ingestor",
+      "tool": "ingest",
+      "params": {"source": "external_feed"},
+      "reads": ["ctx:ingestor"],
+      "writes": ["slot:staging.raw"],
+      "gen": ["UNVERIFIED"]
+    },
+    {
+      "agent": "ingestor",
+      "tool": "ingest",
+      "params": {"source": "internal_db"},
+      "reads": ["ctx:ingestor", "slot:internal.db"],
+      "writes": ["slot:staging.raw"],
+      "gen": []
+    },
+    {
+      "agent": "processor",
+      "tool": "process",
+      "params": {"input": "staging.raw", "mode": "enrich"},
+      "reads": ["ctx:processor", "slot:staging.raw", "slot:reference.knowledge"],
+      "writes": ["slot:staging.processed"],
+      "gen": ["SENSITIVE"]
+    },
+    {
+      "agent": "processor",
+      "tool": "process",
+      "params": {"input": "staging.raw", "mode": "validate"},
+      "reads": ["ctx:processor", "slot:staging.raw"],
+      "writes": ["slot:staging.processed"],
+      "gen": []
+    },
+    {
+      "agent": "exporter",
+      "tool": "export",
+      "params": {"input": "staging.processed", "dest": "partner_api"},
+      "reads": ["ctx:exporter", "slot:staging.processed"],
+      "writes": ["slot:external.partner_api"],
+      "gen": []
+    },
+    {
+      "agent": "exporter",
+      "tool": "export",
+      "params": {"input": "staging.processed", "dest": "internal_warehouse"},
+      "reads": ["ctx:exporter", "slot:staging.processed"],
+      "writes": ["slot:internal.warehouse"],
+      "gen": []
+    }
+  ],
+  "policy": {
+    "slot:external.partner_api": ["SENSITIVE", "UNVERIFIED"]
+  },
+  "initial_state": {}
+}

@@ -1,0 +1,5499 @@
+[
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "PATIENT"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "PATIENT"
+    },
+    "labels": [
+      "AUTH"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "PATIENT"
+    },
+    "labels": [
+      "DIAGNOSIS"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "PATIENT"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "PATIENT"
+    },
+    "labels": [
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "PATIENT"
+    },
+    "labels": [
+      "AUTH",
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "PATIENT"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "PATIENT"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "PATIENT"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "PATIENT"
+    },
+    "labels": [
+      "AUTH",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "PATIENT"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "PATIENT"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "PATIENT"
+    },
+    "labels": [
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "PATIENT"
+    },
+    "labels": [
+      "AUTH",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "PATIENT"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "PATIENT"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "DIAGNOSIS"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "DIAGNOSIS"
+    },
+    "labels": [
+      "AUTH"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "DIAGNOSIS"
+    },
+    "labels": [
+      "DIAGNOSIS"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "DIAGNOSIS"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "DIAGNOSIS"
+    },
+    "labels": [
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "DIAGNOSIS"
+    },
+    "labels": [
+      "AUTH",
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "DIAGNOSIS"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "DIAGNOSIS"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "DIAGNOSIS"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "DIAGNOSIS"
+    },
+    "labels": [
+      "AUTH",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "DIAGNOSIS"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "DIAGNOSIS"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "DIAGNOSIS"
+    },
+    "labels": [
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "DIAGNOSIS"
+    },
+    "labels": [
+      "AUTH",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "DIAGNOSIS"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "DIAGNOSIS"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "AUTH"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "AUTH"
+    },
+    "labels": [
+      "AUTH"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "AUTH"
+    },
+    "labels": [
+      "DIAGNOSIS"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "AUTH"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "AUTH"
+    },
+    "labels": [
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "AUTH"
+    },
+    "labels": [
+      "AUTH",
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "AUTH"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "AUTH"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "AUTH"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "AUTH"
+    },
+    "labels": [
+      "AUTH",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "AUTH"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "AUTH"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "AUTH"
+    },
+    "labels": [
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "AUTH"
+    },
+    "labels": [
+      "AUTH",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "AUTH"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "AUTH"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "AUTH"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "DIAGNOSIS"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "AUTH",
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "AUTH",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "AUTH",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "register_material",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clinician",
+    "tool": "review_referral",
+    "params": {},
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clinician",
+    "tool": "review_referral",
+    "params": {},
+    "labels": [
+      "AUTH"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clinician",
+    "tool": "review_referral",
+    "params": {},
+    "labels": [
+      "DIAGNOSIS"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clinician",
+    "tool": "review_referral",
+    "params": {},
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clinician",
+    "tool": "review_referral",
+    "params": {},
+    "labels": [
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clinician",
+    "tool": "review_referral",
+    "params": {},
+    "labels": [
+      "AUTH",
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clinician",
+    "tool": "review_referral",
+    "params": {},
+    "labels": [
+      "DIAGNOSIS",
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clinician",
+    "tool": "review_referral",
+    "params": {},
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clinician",
+    "tool": "review_referral",
+    "params": {},
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clinician",
+    "tool": "review_referral",
+    "params": {},
+    "labels": [
+      "AUTH",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clinician",
+    "tool": "review_referral",
+    "params": {},
+    "labels": [
+      "DIAGNOSIS",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clinician",
+    "tool": "review_referral",
+    "params": {},
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clinician",
+    "tool": "review_referral",
+    "params": {},
+    "labels": [
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clinician",
+    "tool": "review_referral",
+    "params": {},
+    "labels": [
+      "AUTH",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clinician",
+    "tool": "review_referral",
+    "params": {},
+    "labels": [
+      "DIAGNOSIS",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clinician",
+    "tool": "review_referral",
+    "params": {},
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "assemble_referral",
+    "params": {
+      "source": "reviewed"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "assemble_referral",
+    "params": {
+      "source": "reviewed"
+    },
+    "labels": [
+      "AUTH"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "assemble_referral",
+    "params": {
+      "source": "reviewed"
+    },
+    "labels": [
+      "DIAGNOSIS"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "assemble_referral",
+    "params": {
+      "source": "reviewed"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "assemble_referral",
+    "params": {
+      "source": "reviewed"
+    },
+    "labels": [
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "assemble_referral",
+    "params": {
+      "source": "reviewed"
+    },
+    "labels": [
+      "AUTH",
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "assemble_referral",
+    "params": {
+      "source": "reviewed"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "assemble_referral",
+    "params": {
+      "source": "reviewed"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "assemble_referral",
+    "params": {
+      "source": "reviewed"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "assemble_referral",
+    "params": {
+      "source": "reviewed"
+    },
+    "labels": [
+      "AUTH",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "assemble_referral",
+    "params": {
+      "source": "reviewed"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "assemble_referral",
+    "params": {
+      "source": "reviewed"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "assemble_referral",
+    "params": {
+      "source": "reviewed"
+    },
+    "labels": [
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "assemble_referral",
+    "params": {
+      "source": "reviewed"
+    },
+    "labels": [
+      "AUTH",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "assemble_referral",
+    "params": {
+      "source": "reviewed"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "assemble_referral",
+    "params": {
+      "source": "reviewed"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "assemble_referral",
+    "params": {
+      "source": "referral"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "assemble_referral",
+    "params": {
+      "source": "referral"
+    },
+    "labels": [
+      "AUTH"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "assemble_referral",
+    "params": {
+      "source": "referral"
+    },
+    "labels": [
+      "DIAGNOSIS"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "assemble_referral",
+    "params": {
+      "source": "referral"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "assemble_referral",
+    "params": {
+      "source": "referral"
+    },
+    "labels": [
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "assemble_referral",
+    "params": {
+      "source": "referral"
+    },
+    "labels": [
+      "AUTH",
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "assemble_referral",
+    "params": {
+      "source": "referral"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "assemble_referral",
+    "params": {
+      "source": "referral"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "assemble_referral",
+    "params": {
+      "source": "referral"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "assemble_referral",
+    "params": {
+      "source": "referral"
+    },
+    "labels": [
+      "AUTH",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "assemble_referral",
+    "params": {
+      "source": "referral"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "assemble_referral",
+    "params": {
+      "source": "referral"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "assemble_referral",
+    "params": {
+      "source": "referral"
+    },
+    "labels": [
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "assemble_referral",
+    "params": {
+      "source": "referral"
+    },
+    "labels": [
+      "AUTH",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "assemble_referral",
+    "params": {
+      "source": "referral"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "assemble_referral",
+    "params": {
+      "source": "referral"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "partner",
+      "source": "reviewed"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "partner",
+      "source": "reviewed"
+    },
+    "labels": [
+      "AUTH"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "partner",
+      "source": "reviewed"
+    },
+    "labels": [
+      "DIAGNOSIS"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "partner",
+      "source": "reviewed"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "partner",
+      "source": "reviewed"
+    },
+    "labels": [
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "partner",
+      "source": "reviewed"
+    },
+    "labels": [
+      "AUTH",
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "partner",
+      "source": "reviewed"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "partner",
+      "source": "reviewed"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "partner",
+      "source": "reviewed"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "partner",
+      "source": "reviewed"
+    },
+    "labels": [
+      "AUTH",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "partner",
+      "source": "reviewed"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "partner",
+      "source": "reviewed"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "partner",
+      "source": "reviewed"
+    },
+    "labels": [
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "partner",
+      "source": "reviewed"
+    },
+    "labels": [
+      "AUTH",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "partner",
+      "source": "reviewed"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "partner",
+      "source": "reviewed"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "local",
+      "record": "partner",
+      "source": "clinic_notice"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "local",
+      "record": "partner",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "AUTH"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "local",
+      "record": "partner",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "DIAGNOSIS"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "local",
+      "record": "partner",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "local",
+      "record": "partner",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "local",
+      "record": "partner",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "AUTH",
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "local",
+      "record": "partner",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "local",
+      "record": "partner",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "local",
+      "record": "partner",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "local",
+      "record": "partner",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "AUTH",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "local",
+      "record": "partner",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "local",
+      "record": "partner",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "local",
+      "record": "partner",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "local",
+      "record": "partner",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "AUTH",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "local",
+      "record": "partner",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "local",
+      "record": "partner",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "partner",
+      "record": "public",
+      "source": "packet"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "partner",
+      "record": "public",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "partner",
+      "record": "public",
+      "source": "packet"
+    },
+    "labels": [
+      "DIAGNOSIS"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "partner",
+      "record": "public",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "partner",
+      "record": "public",
+      "source": "packet"
+    },
+    "labels": [
+      "PATIENT"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "partner",
+      "record": "public",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "PATIENT"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "partner",
+      "record": "public",
+      "source": "packet"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "PATIENT"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "partner",
+      "record": "public",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "PATIENT"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "partner",
+      "record": "public",
+      "source": "packet"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "partner",
+      "record": "public",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "partner",
+      "record": "public",
+      "source": "packet"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "partner",
+      "record": "public",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "partner",
+      "record": "public",
+      "source": "packet"
+    },
+    "labels": [
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "partner",
+      "record": "public",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "partner",
+      "record": "public",
+      "source": "packet"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "partner",
+      "record": "public",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "local",
+      "record": "public",
+      "source": "clinic_notice"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "local",
+      "record": "public",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "AUTH"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "local",
+      "record": "public",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "DIAGNOSIS"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "local",
+      "record": "public",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "local",
+      "record": "public",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "local",
+      "record": "public",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "AUTH",
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "local",
+      "record": "public",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "local",
+      "record": "public",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "local",
+      "record": "public",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "local",
+      "record": "public",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "AUTH",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "local",
+      "record": "public",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "local",
+      "record": "public",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "local",
+      "record": "public",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "local",
+      "record": "public",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "AUTH",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "local",
+      "record": "public",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "local",
+      "record": "public",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "none",
+      "source": "packet"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "none",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "none",
+      "source": "packet"
+    },
+    "labels": [
+      "DIAGNOSIS"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "none",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "none",
+      "source": "packet"
+    },
+    "labels": [
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "none",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "none",
+      "source": "packet"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "PATIENT"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "none",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "PATIENT"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "none",
+      "source": "packet"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "none",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "none",
+      "source": "packet"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "none",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "none",
+      "source": "packet"
+    },
+    "labels": [
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "none",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "none",
+      "source": "packet"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "none",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "partner",
+      "record": "partner",
+      "source": "packet"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "partner",
+      "record": "partner",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "partner",
+      "record": "partner",
+      "source": "packet"
+    },
+    "labels": [
+      "DIAGNOSIS"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "partner",
+      "record": "partner",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "partner",
+      "record": "partner",
+      "source": "packet"
+    },
+    "labels": [
+      "PATIENT"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "partner",
+      "record": "partner",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "PATIENT"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "partner",
+      "record": "partner",
+      "source": "packet"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "PATIENT"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "partner",
+      "record": "partner",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "PATIENT"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "partner",
+      "record": "partner",
+      "source": "packet"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "partner",
+      "record": "partner",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "partner",
+      "record": "partner",
+      "source": "packet"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "partner",
+      "record": "partner",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "partner",
+      "record": "partner",
+      "source": "packet"
+    },
+    "labels": [
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "partner",
+      "record": "partner",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "partner",
+      "record": "partner",
+      "source": "packet"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "partner",
+      "record": "partner",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "partner",
+      "record": "none",
+      "source": "packet"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "partner",
+      "record": "none",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "partner",
+      "record": "none",
+      "source": "packet"
+    },
+    "labels": [
+      "DIAGNOSIS"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "partner",
+      "record": "none",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "partner",
+      "record": "none",
+      "source": "packet"
+    },
+    "labels": [
+      "PATIENT"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "partner",
+      "record": "none",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "PATIENT"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "partner",
+      "record": "none",
+      "source": "packet"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "PATIENT"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "partner",
+      "record": "none",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "PATIENT"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "partner",
+      "record": "none",
+      "source": "packet"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "partner",
+      "record": "none",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "partner",
+      "record": "none",
+      "source": "packet"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "partner",
+      "record": "none",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "partner",
+      "record": "none",
+      "source": "packet"
+    },
+    "labels": [
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "partner",
+      "record": "none",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "partner",
+      "record": "none",
+      "source": "packet"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "partner",
+      "record": "none",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "partner",
+      "record": "audit",
+      "source": "clinic_notice"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "partner",
+      "record": "audit",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "AUTH"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "partner",
+      "record": "audit",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "DIAGNOSIS"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "partner",
+      "record": "audit",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "partner",
+      "record": "audit",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "PATIENT"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "partner",
+      "record": "audit",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "AUTH",
+      "PATIENT"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "partner",
+      "record": "audit",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "PATIENT"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "partner",
+      "record": "audit",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "PATIENT"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "partner",
+      "record": "audit",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "partner",
+      "record": "audit",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "AUTH",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "partner",
+      "record": "audit",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "partner",
+      "record": "audit",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "partner",
+      "record": "audit",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "partner",
+      "record": "audit",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "AUTH",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "partner",
+      "record": "audit",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "partner",
+      "record": "audit",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "release",
+      "record": "partner",
+      "source": "reviewed"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "release",
+      "record": "partner",
+      "source": "reviewed"
+    },
+    "labels": [
+      "AUTH"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "release",
+      "record": "partner",
+      "source": "reviewed"
+    },
+    "labels": [
+      "DIAGNOSIS"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "release",
+      "record": "partner",
+      "source": "reviewed"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "release",
+      "record": "partner",
+      "source": "reviewed"
+    },
+    "labels": [
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "release",
+      "record": "partner",
+      "source": "reviewed"
+    },
+    "labels": [
+      "AUTH",
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "release",
+      "record": "partner",
+      "source": "reviewed"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "release",
+      "record": "partner",
+      "source": "reviewed"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "release",
+      "record": "partner",
+      "source": "reviewed"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "release",
+      "record": "partner",
+      "source": "reviewed"
+    },
+    "labels": [
+      "AUTH",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "release",
+      "record": "partner",
+      "source": "reviewed"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "release",
+      "record": "partner",
+      "source": "reviewed"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "release",
+      "record": "partner",
+      "source": "reviewed"
+    },
+    "labels": [
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "release",
+      "record": "partner",
+      "source": "reviewed"
+    },
+    "labels": [
+      "AUTH",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "release",
+      "record": "partner",
+      "source": "reviewed"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "release",
+      "record": "partner",
+      "source": "reviewed"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "partner",
+      "source": "reviewed"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "partner",
+      "source": "reviewed"
+    },
+    "labels": [
+      "AUTH"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "partner",
+      "source": "reviewed"
+    },
+    "labels": [
+      "DIAGNOSIS"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "partner",
+      "source": "reviewed"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "partner",
+      "source": "reviewed"
+    },
+    "labels": [
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "partner",
+      "source": "reviewed"
+    },
+    "labels": [
+      "AUTH",
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "partner",
+      "source": "reviewed"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "PATIENT"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "partner",
+      "source": "reviewed"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "PATIENT"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "partner",
+      "source": "reviewed"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "partner",
+      "source": "reviewed"
+    },
+    "labels": [
+      "AUTH",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "partner",
+      "source": "reviewed"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "partner",
+      "source": "reviewed"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "partner",
+      "source": "reviewed"
+    },
+    "labels": [
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "partner",
+      "source": "reviewed"
+    },
+    "labels": [
+      "AUTH",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "partner",
+      "source": "reviewed"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "partner",
+      "source": "reviewed"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "partner",
+      "record": "public",
+      "source": "clinic_notice"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "partner",
+      "record": "public",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "AUTH"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "partner",
+      "record": "public",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "DIAGNOSIS"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "partner",
+      "record": "public",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "partner",
+      "record": "public",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "PATIENT"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "partner",
+      "record": "public",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "AUTH",
+      "PATIENT"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "partner",
+      "record": "public",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "PATIENT"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "partner",
+      "record": "public",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "PATIENT"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "partner",
+      "record": "public",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "partner",
+      "record": "public",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "AUTH",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "partner",
+      "record": "public",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "partner",
+      "record": "public",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "partner",
+      "record": "public",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "partner",
+      "record": "public",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "AUTH",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "partner",
+      "record": "public",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "partner",
+      "record": "public",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "local",
+      "record": "audit",
+      "source": "packet"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "local",
+      "record": "audit",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "local",
+      "record": "audit",
+      "source": "packet"
+    },
+    "labels": [
+      "DIAGNOSIS"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "local",
+      "record": "audit",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "local",
+      "record": "audit",
+      "source": "packet"
+    },
+    "labels": [
+      "PATIENT"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "local",
+      "record": "audit",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "PATIENT"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "local",
+      "record": "audit",
+      "source": "packet"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "PATIENT"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "local",
+      "record": "audit",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "PATIENT"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "local",
+      "record": "audit",
+      "source": "packet"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "local",
+      "record": "audit",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "local",
+      "record": "audit",
+      "source": "packet"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "local",
+      "record": "audit",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "local",
+      "record": "audit",
+      "source": "packet"
+    },
+    "labels": [
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "local",
+      "record": "audit",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "local",
+      "record": "audit",
+      "source": "packet"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "local",
+      "record": "audit",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "partner",
+      "record": "audit",
+      "source": "packet"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "partner",
+      "record": "audit",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "partner",
+      "record": "audit",
+      "source": "packet"
+    },
+    "labels": [
+      "DIAGNOSIS"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "partner",
+      "record": "audit",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "partner",
+      "record": "audit",
+      "source": "packet"
+    },
+    "labels": [
+      "PATIENT"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "partner",
+      "record": "audit",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "PATIENT"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "partner",
+      "record": "audit",
+      "source": "packet"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "PATIENT"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "partner",
+      "record": "audit",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "PATIENT"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "partner",
+      "record": "audit",
+      "source": "packet"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "partner",
+      "record": "audit",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "partner",
+      "record": "audit",
+      "source": "packet"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "partner",
+      "record": "audit",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "partner",
+      "record": "audit",
+      "source": "packet"
+    },
+    "labels": [
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "partner",
+      "record": "audit",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "partner",
+      "record": "audit",
+      "source": "packet"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "partner",
+      "record": "audit",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "audit",
+      "source": "clinic_notice"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "audit",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "AUTH"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "audit",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "DIAGNOSIS"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "audit",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "audit",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "PATIENT"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "audit",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "AUTH",
+      "PATIENT"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "audit",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "PATIENT"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "audit",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "PATIENT"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "audit",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "audit",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "AUTH",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "audit",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "audit",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "audit",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "audit",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "AUTH",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "audit",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "packet",
+      "destination": "release",
+      "record": "audit",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "release",
+      "record": "public",
+      "source": "clinic_notice"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "release",
+      "record": "public",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "AUTH"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "release",
+      "record": "public",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "DIAGNOSIS"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "release",
+      "record": "public",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "release",
+      "record": "public",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "release",
+      "record": "public",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "AUTH",
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "release",
+      "record": "public",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "release",
+      "record": "public",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "release",
+      "record": "public",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "release",
+      "record": "public",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "AUTH",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "release",
+      "record": "public",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "release",
+      "record": "public",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "release",
+      "record": "public",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "release",
+      "record": "public",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "AUTH",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "release",
+      "record": "public",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "care",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "referral",
+      "destination": "release",
+      "record": "public",
+      "source": "clinic_notice"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "release",
+      "record": "partner",
+      "source": "packet"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "release",
+      "record": "partner",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "release",
+      "record": "partner",
+      "source": "packet"
+    },
+    "labels": [
+      "DIAGNOSIS"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "release",
+      "record": "partner",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "release",
+      "record": "partner",
+      "source": "packet"
+    },
+    "labels": [
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "release",
+      "record": "partner",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "PATIENT"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "release",
+      "record": "partner",
+      "source": "packet"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "PATIENT"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "release",
+      "record": "partner",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "PATIENT"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "release",
+      "record": "partner",
+      "source": "packet"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "release",
+      "record": "partner",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "release",
+      "record": "partner",
+      "source": "packet"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "release",
+      "record": "partner",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "release",
+      "record": "partner",
+      "source": "packet"
+    },
+    "labels": [
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "release",
+      "record": "partner",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "release",
+      "record": "partner",
+      "source": "packet"
+    },
+    "labels": [
+      "DIAGNOSIS",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "research",
+    "tool": "route_referral",
+    "params": {
+      "attachment": "none",
+      "destination": "release",
+      "record": "partner",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "DIAGNOSIS",
+      "PATIENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  }
+]

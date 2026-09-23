@@ -1,0 +1,300 @@
+[
+  {
+    "agent": "assistant",
+    "tool": "attach",
+    "params": {
+      "document": "passport"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "assistant",
+    "tool": "attach",
+    "params": {
+      "document": "passport"
+    },
+    "labels": [
+      "PCI"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "assistant",
+    "tool": "attach",
+    "params": {
+      "document": "passport"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "assistant",
+    "tool": "attach",
+    "params": {
+      "document": "passport"
+    },
+    "labels": [
+      "PCI",
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "finance",
+    "tool": "attach",
+    "params": {
+      "document": "card"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "finance",
+    "tool": "attach",
+    "params": {
+      "document": "card"
+    },
+    "labels": [
+      "PCI"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "finance",
+    "tool": "attach",
+    "params": {
+      "document": "card"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "finance",
+    "tool": "attach",
+    "params": {
+      "document": "card"
+    },
+    "labels": [
+      "PCI",
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "travel",
+    "tool": "submit",
+    "params": {
+      "source": "request",
+      "target": "agency"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "travel",
+    "tool": "submit",
+    "params": {
+      "source": "request",
+      "target": "agency"
+    },
+    "labels": [
+      "PCI"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "travel",
+    "tool": "submit",
+    "params": {
+      "source": "request",
+      "target": "agency"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "travel",
+    "tool": "submit",
+    "params": {
+      "source": "request",
+      "target": "agency"
+    },
+    "labels": [
+      "PCI",
+      "PII"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "travel",
+    "tool": "submit",
+    "params": {
+      "source": "request",
+      "target": "finance"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "travel",
+    "tool": "submit",
+    "params": {
+      "source": "request",
+      "target": "finance"
+    },
+    "labels": [
+      "PCI"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "travel",
+    "tool": "submit",
+    "params": {
+      "source": "request",
+      "target": "finance"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "travel",
+    "tool": "submit",
+    "params": {
+      "source": "request",
+      "target": "finance"
+    },
+    "labels": [
+      "PCI",
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "travel",
+    "tool": "submit",
+    "params": {
+      "source": "request",
+      "target": "board"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "travel",
+    "tool": "submit",
+    "params": {
+      "source": "request",
+      "target": "board"
+    },
+    "labels": [
+      "PCI"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "travel",
+    "tool": "submit",
+    "params": {
+      "source": "request",
+      "target": "board"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "travel",
+    "tool": "submit",
+    "params": {
+      "source": "request",
+      "target": "board"
+    },
+    "labels": [
+      "PCI",
+      "PII"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "travel",
+    "tool": "submit",
+    "params": {
+      "source": "itinerary",
+      "target": "board"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "travel",
+    "tool": "submit",
+    "params": {
+      "source": "itinerary",
+      "target": "board"
+    },
+    "labels": [
+      "PCI"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "travel",
+    "tool": "submit",
+    "params": {
+      "source": "itinerary",
+      "target": "board"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "travel",
+    "tool": "submit",
+    "params": {
+      "source": "itinerary",
+      "target": "board"
+    },
+    "labels": [
+      "PCI",
+      "PII"
+    ],
+    "candidate": false,
+    "completion": true
+  }
+]

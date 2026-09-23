@@ -1,0 +1,616 @@
+{
+  "description": "临床转诊与研究团队共享转诊材料。登记把一种原始材料追加到 referral，\n临床复核把 referral 追加到 reviewed，协调员把 reviewed 追加到 packet；快速制包可直接\n把 referral 追加到 packet。另有不含受限信息的 clinic_notice。工具不会自动去标识、\n验证外部检查或撤销授权。\n\nroute_referral 工具说明：care 的 local/partner/release\n分别对应 slot:hospital/slot:scheduler/slot:public；research 的相同别名分别对应\nslot:hospital/slot:research/slot:lab。destination 按调用团队解释；source 选择\nclinic_notice、reviewed 或 packet。attachment=packet 会附上 packet，attachment=referral\n会附上原始 referral。record=audit 增加完整审计副本，record=partner 增加本团队 partner\n副本，record=public 增加公开副本。每个接收方得到相同完整内容。请为所有调用起草规则。\n除标签原始来源外，所有位置初始为空。全部写入追加并保留旧内容；调用可重复且顺序不限。所有工具不生成新标签。参数 none 表示不附加材料或副本。所有未列入 policy 的位置不禁止任何类别。位置名称均以 slot: 为前缀。",
+  "labels": {
+    "PATIENT": "患者身份与联系方式",
+    "DIAGNOSIS": "诊断与治疗资料",
+    "AUTH": "转诊授权凭据",
+    "UNVERIFIED": "未经核验的外部检查材料"
+  },
+  "policy": {
+    "slot:scheduler": [
+      "DIAGNOSIS",
+      "AUTH"
+    ],
+    "slot:lab": [
+      "PATIENT",
+      "AUTH"
+    ],
+    "slot:public": [
+      "PATIENT",
+      "DIAGNOSIS",
+      "AUTH"
+    ],
+    "slot:audit": [
+      "DIAGNOSIS",
+      "AUTH"
+    ],
+    "slot:research": [
+      "PATIENT",
+      "UNVERIFIED"
+    ]
+  },
+  "tools": [
+    {
+      "agent": "intake",
+      "tool": "register_material",
+      "params": {
+        "category": "PATIENT"
+      },
+      "description": "读取仅含PATIENT的材料并追加到 slot:referral。"
+    },
+    {
+      "agent": "intake",
+      "tool": "register_material",
+      "params": {
+        "category": "DIAGNOSIS"
+      },
+      "description": "读取仅含DIAGNOSIS的材料并追加到 slot:referral。"
+    },
+    {
+      "agent": "intake",
+      "tool": "register_material",
+      "params": {
+        "category": "AUTH"
+      },
+      "description": "读取仅含AUTH的材料并追加到 slot:referral。"
+    },
+    {
+      "agent": "intake",
+      "tool": "register_material",
+      "params": {
+        "category": "UNVERIFIED"
+      },
+      "description": "读取仅含UNVERIFIED的材料并追加到 slot:referral。"
+    },
+    {
+      "agent": "clinician",
+      "tool": "review_referral",
+      "params": {},
+      "description": "将 referral 追加到 reviewed。"
+    },
+    {
+      "agent": "coordinator",
+      "tool": "assemble_referral",
+      "params": {
+        "source": "reviewed"
+      },
+      "description": "将 reviewed 追加到 packet。"
+    },
+    {
+      "agent": "coordinator",
+      "tool": "assemble_referral",
+      "params": {
+        "source": "referral"
+      },
+      "description": "将 referral 直接追加到 packet。"
+    },
+    {
+      "agent": "care",
+      "tool": "route_referral",
+      "params": {
+        "destination": "release",
+        "source": "reviewed",
+        "attachment": "packet",
+        "record": "partner"
+      },
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "agent": "care",
+      "tool": "route_referral",
+      "params": {
+        "destination": "local",
+        "source": "clinic_notice",
+        "attachment": "referral",
+        "record": "partner"
+      },
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "agent": "care",
+      "tool": "route_referral",
+      "params": {
+        "destination": "partner",
+        "source": "packet",
+        "attachment": "none",
+        "record": "public"
+      },
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "agent": "research",
+      "tool": "route_referral",
+      "params": {
+        "destination": "local",
+        "source": "clinic_notice",
+        "attachment": "referral",
+        "record": "public"
+      },
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "agent": "research",
+      "tool": "route_referral",
+      "params": {
+        "destination": "release",
+        "source": "packet",
+        "attachment": "packet",
+        "record": "none"
+      },
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "agent": "care",
+      "tool": "route_referral",
+      "params": {
+        "destination": "partner",
+        "source": "packet",
+        "attachment": "packet",
+        "record": "partner"
+      },
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "agent": "care",
+      "tool": "route_referral",
+      "params": {
+        "destination": "partner",
+        "source": "packet",
+        "attachment": "packet",
+        "record": "none"
+      },
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "agent": "research",
+      "tool": "route_referral",
+      "params": {
+        "destination": "partner",
+        "source": "clinic_notice",
+        "attachment": "referral",
+        "record": "audit"
+      },
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "agent": "care",
+      "tool": "route_referral",
+      "params": {
+        "destination": "release",
+        "source": "reviewed",
+        "attachment": "none",
+        "record": "partner"
+      },
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "agent": "research",
+      "tool": "route_referral",
+      "params": {
+        "destination": "release",
+        "source": "reviewed",
+        "attachment": "packet",
+        "record": "partner"
+      },
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "agent": "care",
+      "tool": "route_referral",
+      "params": {
+        "destination": "partner",
+        "source": "clinic_notice",
+        "attachment": "packet",
+        "record": "public"
+      },
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "agent": "care",
+      "tool": "route_referral",
+      "params": {
+        "destination": "local",
+        "source": "packet",
+        "attachment": "none",
+        "record": "audit"
+      },
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "agent": "care",
+      "tool": "route_referral",
+      "params": {
+        "destination": "partner",
+        "source": "packet",
+        "attachment": "referral",
+        "record": "audit"
+      },
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "agent": "research",
+      "tool": "route_referral",
+      "params": {
+        "destination": "release",
+        "source": "clinic_notice",
+        "attachment": "packet",
+        "record": "audit"
+      },
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "agent": "care",
+      "tool": "route_referral",
+      "params": {
+        "destination": "release",
+        "source": "clinic_notice",
+        "attachment": "referral",
+        "record": "public"
+      },
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "agent": "research",
+      "tool": "route_referral",
+      "params": {
+        "destination": "release",
+        "source": "packet",
+        "attachment": "none",
+        "record": "partner"
+      },
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "agent": "research",
+      "tool": "route_referral",
+      "params": {
+        "destination": "local",
+        "source": "packet",
+        "attachment": "referral",
+        "record": "public"
+      },
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "agent": "research",
+      "tool": "route_referral",
+      "params": {
+        "destination": "partner",
+        "source": "packet",
+        "attachment": "none",
+        "record": "none"
+      },
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "agent": "research",
+      "tool": "route_referral",
+      "params": {
+        "destination": "release",
+        "source": "reviewed",
+        "attachment": "referral",
+        "record": "none"
+      },
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "agent": "care",
+      "tool": "route_referral",
+      "params": {
+        "destination": "partner",
+        "source": "clinic_notice",
+        "attachment": "referral",
+        "record": "partner"
+      },
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "agent": "care",
+      "tool": "route_referral",
+      "params": {
+        "destination": "local",
+        "source": "clinic_notice",
+        "attachment": "packet",
+        "record": "audit"
+      },
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "agent": "research",
+      "tool": "route_referral",
+      "params": {
+        "destination": "local",
+        "source": "packet",
+        "attachment": "packet",
+        "record": "partner"
+      },
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "agent": "research",
+      "tool": "route_referral",
+      "params": {
+        "destination": "release",
+        "source": "packet",
+        "attachment": "referral",
+        "record": "public"
+      },
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "agent": "care",
+      "tool": "route_referral",
+      "params": {
+        "destination": "release",
+        "source": "reviewed",
+        "attachment": "none",
+        "record": "public"
+      },
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "agent": "research",
+      "tool": "route_referral",
+      "params": {
+        "destination": "partner",
+        "source": "reviewed",
+        "attachment": "none",
+        "record": "none"
+      },
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "agent": "research",
+      "tool": "route_referral",
+      "params": {
+        "destination": "release",
+        "source": "clinic_notice",
+        "attachment": "packet",
+        "record": "public"
+      },
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "agent": "care",
+      "tool": "route_referral",
+      "params": {
+        "destination": "partner",
+        "source": "reviewed",
+        "attachment": "referral",
+        "record": "audit"
+      },
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "agent": "care",
+      "tool": "route_referral",
+      "params": {
+        "destination": "local",
+        "source": "packet",
+        "attachment": "packet",
+        "record": "public"
+      },
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "agent": "research",
+      "tool": "route_referral",
+      "params": {
+        "destination": "local",
+        "source": "clinic_notice",
+        "attachment": "none",
+        "record": "partner"
+      },
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "agent": "care",
+      "tool": "route_referral",
+      "params": {
+        "destination": "partner",
+        "source": "clinic_notice",
+        "attachment": "packet",
+        "record": "none"
+      },
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "agent": "care",
+      "tool": "route_referral",
+      "params": {
+        "destination": "release",
+        "source": "reviewed",
+        "attachment": "packet",
+        "record": "none"
+      },
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "agent": "care",
+      "tool": "route_referral",
+      "params": {
+        "destination": "release",
+        "source": "packet",
+        "attachment": "referral",
+        "record": "partner"
+      },
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "agent": "care",
+      "tool": "route_referral",
+      "params": {
+        "destination": "local",
+        "source": "reviewed",
+        "attachment": "packet",
+        "record": "none"
+      },
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "agent": "research",
+      "tool": "route_referral",
+      "params": {
+        "destination": "partner",
+        "source": "reviewed",
+        "attachment": "none",
+        "record": "partner"
+      },
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "agent": "care",
+      "tool": "route_referral",
+      "params": {
+        "destination": "release",
+        "source": "packet",
+        "attachment": "packet",
+        "record": "public"
+      },
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "agent": "research",
+      "tool": "route_referral",
+      "params": {
+        "destination": "local",
+        "source": "clinic_notice",
+        "attachment": "packet",
+        "record": "partner"
+      },
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "agent": "research",
+      "tool": "route_referral",
+      "params": {
+        "destination": "release",
+        "source": "reviewed",
+        "attachment": "none",
+        "record": "audit"
+      },
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "agent": "research",
+      "tool": "route_referral",
+      "params": {
+        "destination": "local",
+        "source": "clinic_notice",
+        "attachment": "referral",
+        "record": "none"
+      },
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "agent": "care",
+      "tool": "route_referral",
+      "params": {
+        "destination": "local",
+        "source": "reviewed",
+        "attachment": "referral",
+        "record": "public"
+      },
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "agent": "research",
+      "tool": "route_referral",
+      "params": {
+        "destination": "release",
+        "source": "packet",
+        "attachment": "packet",
+        "record": "partner"
+      },
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "agent": "research",
+      "tool": "route_referral",
+      "params": {
+        "destination": "release",
+        "source": "clinic_notice",
+        "attachment": "referral",
+        "record": "partner"
+      },
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "agent": "research",
+      "tool": "route_referral",
+      "params": {
+        "destination": "local",
+        "source": "packet",
+        "attachment": "packet",
+        "record": "public"
+      },
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "agent": "research",
+      "tool": "route_referral",
+      "params": {
+        "destination": "local",
+        "source": "packet",
+        "attachment": "none",
+        "record": "audit"
+      },
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "agent": "research",
+      "tool": "route_referral",
+      "params": {
+        "destination": "partner",
+        "source": "reviewed",
+        "attachment": "referral",
+        "record": "partner"
+      },
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "agent": "care",
+      "tool": "route_referral",
+      "params": {
+        "destination": "partner",
+        "source": "packet",
+        "attachment": "packet",
+        "record": "audit"
+      },
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "agent": "research",
+      "tool": "route_referral",
+      "params": {
+        "destination": "partner",
+        "source": "clinic_notice",
+        "attachment": "packet",
+        "record": "none"
+      },
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "agent": "research",
+      "tool": "route_referral",
+      "params": {
+        "destination": "local",
+        "source": "clinic_notice",
+        "attachment": "packet",
+        "record": "none"
+      },
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "agent": "research",
+      "tool": "route_referral",
+      "params": {
+        "destination": "partner",
+        "source": "clinic_notice",
+        "attachment": "packet",
+        "record": "partner"
+      },
+      "description": "按 route_referral 公共说明执行。"
+    }
+  ]
+}

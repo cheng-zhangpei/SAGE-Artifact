@@ -1,0 +1,1903 @@
+{
+  "id": "COMP-VENDOR-COLLABORATION-40",
+  "family": "vendor_collaboration",
+  "dispatch_count": 40,
+  "labels": {
+    "CUSTOMER": "客户身份与联系资料",
+    "PRICING": "非公开报价与折扣",
+    "ACCESS": "接入令牌与系统凭据",
+    "UNSCREENED": "尚未审查的供应商材料"
+  },
+  "actions": [
+    {
+      "id": "vendor_receive_CUSTOMER",
+      "agent": "onboarding",
+      "tool": "receive_record",
+      "params": {
+        "category": "CUSTOMER"
+      },
+      "reads": [
+        "slot:source_CUSTOMER"
+      ],
+      "writes": [
+        "slot:case"
+      ],
+      "gen": [],
+      "description": "读取仅含CUSTOMER的材料并追加到 slot:case。"
+    },
+    {
+      "id": "vendor_receive_PRICING",
+      "agent": "onboarding",
+      "tool": "receive_record",
+      "params": {
+        "category": "PRICING"
+      },
+      "reads": [
+        "slot:source_PRICING"
+      ],
+      "writes": [
+        "slot:case"
+      ],
+      "gen": [],
+      "description": "读取仅含PRICING的材料并追加到 slot:case。"
+    },
+    {
+      "id": "vendor_receive_ACCESS",
+      "agent": "onboarding",
+      "tool": "receive_record",
+      "params": {
+        "category": "ACCESS"
+      },
+      "reads": [
+        "slot:source_ACCESS"
+      ],
+      "writes": [
+        "slot:case"
+      ],
+      "gen": [],
+      "description": "读取仅含ACCESS的材料并追加到 slot:case。"
+    },
+    {
+      "id": "vendor_receive_UNSCREENED",
+      "agent": "onboarding",
+      "tool": "receive_record",
+      "params": {
+        "category": "UNSCREENED"
+      },
+      "reads": [
+        "slot:source_UNSCREENED"
+      ],
+      "writes": [
+        "slot:case"
+      ],
+      "gen": [],
+      "description": "读取仅含UNSCREENED的材料并追加到 slot:case。"
+    },
+    {
+      "id": "vendor_verify",
+      "agent": "analyst",
+      "tool": "verify_case",
+      "params": {},
+      "reads": [
+        "slot:case"
+      ],
+      "writes": [
+        "slot:verified"
+      ],
+      "gen": [],
+      "description": "将 case 追加到 verified。"
+    },
+    {
+      "id": "vendor_bundle",
+      "agent": "coordinator",
+      "tool": "bundle_case",
+      "params": {
+        "source": "verified"
+      },
+      "reads": [
+        "slot:verified"
+      ],
+      "writes": [
+        "slot:package"
+      ],
+      "gen": [],
+      "description": "将 verified 追加到 package。"
+    },
+    {
+      "id": "vendor_fastpack",
+      "agent": "coordinator",
+      "tool": "bundle_case",
+      "params": {
+        "source": "case"
+      },
+      "reads": [
+        "slot:case"
+      ],
+      "writes": [
+        "slot:package"
+      ],
+      "gen": [],
+      "description": "将 case 直接追加到 package。"
+    },
+    {
+      "id": "vendor_transfer_000",
+      "agent": "procurement",
+      "tool": "transfer_case",
+      "params": {
+        "recipient": "oversight",
+        "source": "package",
+        "enclosure": "package",
+        "replica": "public"
+      },
+      "reads": [
+        "slot:package"
+      ],
+      "writes": [
+        "slot:public"
+      ],
+      "gen": [],
+      "description": "按 transfer_case 公共说明传输。"
+    },
+    {
+      "id": "vendor_transfer_001",
+      "agent": "compliance",
+      "tool": "transfer_case",
+      "params": {
+        "recipient": "oversight",
+        "source": "onboarding_guide",
+        "enclosure": "none",
+        "replica": "none"
+      },
+      "reads": [
+        "slot:onboarding_guide"
+      ],
+      "writes": [
+        "slot:oversight"
+      ],
+      "gen": [],
+      "description": "按 transfer_case 公共说明传输。"
+    },
+    {
+      "id": "vendor_transfer_002",
+      "agent": "compliance",
+      "tool": "transfer_case",
+      "params": {
+        "recipient": "partner",
+        "source": "package",
+        "enclosure": "none",
+        "replica": "public"
+      },
+      "reads": [
+        "slot:package"
+      ],
+      "writes": [
+        "slot:assessor",
+        "slot:public"
+      ],
+      "gen": [],
+      "description": "按 transfer_case 公共说明传输。"
+    },
+    {
+      "id": "vendor_transfer_003",
+      "agent": "procurement",
+      "tool": "transfer_case",
+      "params": {
+        "recipient": "oversight",
+        "source": "package",
+        "enclosure": "case",
+        "replica": "none"
+      },
+      "reads": [
+        "slot:case",
+        "slot:package"
+      ],
+      "writes": [
+        "slot:public"
+      ],
+      "gen": [],
+      "description": "按 transfer_case 公共说明传输。"
+    },
+    {
+      "id": "vendor_transfer_004",
+      "agent": "procurement",
+      "tool": "transfer_case",
+      "params": {
+        "recipient": "partner",
+        "source": "onboarding_guide",
+        "enclosure": "case",
+        "replica": "public"
+      },
+      "reads": [
+        "slot:case",
+        "slot:onboarding_guide"
+      ],
+      "writes": [
+        "slot:public",
+        "slot:supplier"
+      ],
+      "gen": [],
+      "description": "按 transfer_case 公共说明传输。"
+    },
+    {
+      "id": "vendor_transfer_005",
+      "agent": "procurement",
+      "tool": "transfer_case",
+      "params": {
+        "recipient": "oversight",
+        "source": "onboarding_guide",
+        "enclosure": "case",
+        "replica": "none"
+      },
+      "reads": [
+        "slot:case",
+        "slot:onboarding_guide"
+      ],
+      "writes": [
+        "slot:public"
+      ],
+      "gen": [],
+      "description": "按 transfer_case 公共说明传输。"
+    },
+    {
+      "id": "vendor_transfer_006",
+      "agent": "procurement",
+      "tool": "transfer_case",
+      "params": {
+        "recipient": "local",
+        "source": "verified",
+        "enclosure": "package",
+        "replica": "public"
+      },
+      "reads": [
+        "slot:package",
+        "slot:verified"
+      ],
+      "writes": [
+        "slot:operations",
+        "slot:public"
+      ],
+      "gen": [],
+      "description": "按 transfer_case 公共说明传输。"
+    },
+    {
+      "id": "vendor_transfer_007",
+      "agent": "procurement",
+      "tool": "transfer_case",
+      "params": {
+        "recipient": "oversight",
+        "source": "onboarding_guide",
+        "enclosure": "case",
+        "replica": "escrow"
+      },
+      "reads": [
+        "slot:case",
+        "slot:onboarding_guide"
+      ],
+      "writes": [
+        "slot:escrow",
+        "slot:public"
+      ],
+      "gen": [],
+      "description": "按 transfer_case 公共说明传输。"
+    },
+    {
+      "id": "vendor_transfer_008",
+      "agent": "compliance",
+      "tool": "transfer_case",
+      "params": {
+        "recipient": "oversight",
+        "source": "onboarding_guide",
+        "enclosure": "none",
+        "replica": "public"
+      },
+      "reads": [
+        "slot:onboarding_guide"
+      ],
+      "writes": [
+        "slot:oversight",
+        "slot:public"
+      ],
+      "gen": [],
+      "description": "按 transfer_case 公共说明传输。"
+    },
+    {
+      "id": "vendor_transfer_009",
+      "agent": "procurement",
+      "tool": "transfer_case",
+      "params": {
+        "recipient": "oversight",
+        "source": "verified",
+        "enclosure": "none",
+        "replica": "escrow"
+      },
+      "reads": [
+        "slot:verified"
+      ],
+      "writes": [
+        "slot:escrow",
+        "slot:public"
+      ],
+      "gen": [],
+      "description": "按 transfer_case 公共说明传输。"
+    },
+    {
+      "id": "vendor_transfer_010",
+      "agent": "procurement",
+      "tool": "transfer_case",
+      "params": {
+        "recipient": "local",
+        "source": "verified",
+        "enclosure": "case",
+        "replica": "public"
+      },
+      "reads": [
+        "slot:case",
+        "slot:verified"
+      ],
+      "writes": [
+        "slot:operations",
+        "slot:public"
+      ],
+      "gen": [],
+      "description": "按 transfer_case 公共说明传输。"
+    },
+    {
+      "id": "vendor_transfer_011",
+      "agent": "procurement",
+      "tool": "transfer_case",
+      "params": {
+        "recipient": "oversight",
+        "source": "package",
+        "enclosure": "case",
+        "replica": "escrow"
+      },
+      "reads": [
+        "slot:case",
+        "slot:package"
+      ],
+      "writes": [
+        "slot:escrow",
+        "slot:public"
+      ],
+      "gen": [],
+      "description": "按 transfer_case 公共说明传输。"
+    },
+    {
+      "id": "vendor_transfer_012",
+      "agent": "procurement",
+      "tool": "transfer_case",
+      "params": {
+        "recipient": "local",
+        "source": "onboarding_guide",
+        "enclosure": "case",
+        "replica": "escrow"
+      },
+      "reads": [
+        "slot:case",
+        "slot:onboarding_guide"
+      ],
+      "writes": [
+        "slot:escrow",
+        "slot:operations"
+      ],
+      "gen": [],
+      "description": "按 transfer_case 公共说明传输。"
+    },
+    {
+      "id": "vendor_transfer_013",
+      "agent": "procurement",
+      "tool": "transfer_case",
+      "params": {
+        "recipient": "partner",
+        "source": "onboarding_guide",
+        "enclosure": "package",
+        "replica": "public"
+      },
+      "reads": [
+        "slot:onboarding_guide",
+        "slot:package"
+      ],
+      "writes": [
+        "slot:public",
+        "slot:supplier"
+      ],
+      "gen": [],
+      "description": "按 transfer_case 公共说明传输。"
+    },
+    {
+      "id": "vendor_transfer_014",
+      "agent": "compliance",
+      "tool": "transfer_case",
+      "params": {
+        "recipient": "partner",
+        "source": "onboarding_guide",
+        "enclosure": "none",
+        "replica": "public"
+      },
+      "reads": [
+        "slot:onboarding_guide"
+      ],
+      "writes": [
+        "slot:assessor",
+        "slot:public"
+      ],
+      "gen": [],
+      "description": "按 transfer_case 公共说明传输。"
+    },
+    {
+      "id": "vendor_transfer_015",
+      "agent": "procurement",
+      "tool": "transfer_case",
+      "params": {
+        "recipient": "local",
+        "source": "verified",
+        "enclosure": "case",
+        "replica": "escrow"
+      },
+      "reads": [
+        "slot:case",
+        "slot:verified"
+      ],
+      "writes": [
+        "slot:escrow",
+        "slot:operations"
+      ],
+      "gen": [],
+      "description": "按 transfer_case 公共说明传输。"
+    },
+    {
+      "id": "vendor_transfer_016",
+      "agent": "procurement",
+      "tool": "transfer_case",
+      "params": {
+        "recipient": "partner",
+        "source": "onboarding_guide",
+        "enclosure": "package",
+        "replica": "none"
+      },
+      "reads": [
+        "slot:onboarding_guide",
+        "slot:package"
+      ],
+      "writes": [
+        "slot:supplier"
+      ],
+      "gen": [],
+      "description": "按 transfer_case 公共说明传输。"
+    },
+    {
+      "id": "vendor_transfer_017",
+      "agent": "procurement",
+      "tool": "transfer_case",
+      "params": {
+        "recipient": "local",
+        "source": "verified",
+        "enclosure": "package",
+        "replica": "none"
+      },
+      "reads": [
+        "slot:package",
+        "slot:verified"
+      ],
+      "writes": [
+        "slot:operations"
+      ],
+      "gen": [],
+      "description": "按 transfer_case 公共说明传输。"
+    },
+    {
+      "id": "vendor_transfer_018",
+      "agent": "procurement",
+      "tool": "transfer_case",
+      "params": {
+        "recipient": "oversight",
+        "source": "package",
+        "enclosure": "case",
+        "replica": "partner"
+      },
+      "reads": [
+        "slot:case",
+        "slot:package"
+      ],
+      "writes": [
+        "slot:public",
+        "slot:supplier"
+      ],
+      "gen": [],
+      "description": "按 transfer_case 公共说明传输。"
+    },
+    {
+      "id": "vendor_transfer_019",
+      "agent": "compliance",
+      "tool": "transfer_case",
+      "params": {
+        "recipient": "local",
+        "source": "verified",
+        "enclosure": "none",
+        "replica": "partner"
+      },
+      "reads": [
+        "slot:verified"
+      ],
+      "writes": [
+        "slot:assessor",
+        "slot:operations"
+      ],
+      "gen": [],
+      "description": "按 transfer_case 公共说明传输。"
+    },
+    {
+      "id": "vendor_transfer_020",
+      "agent": "procurement",
+      "tool": "transfer_case",
+      "params": {
+        "recipient": "oversight",
+        "source": "onboarding_guide",
+        "enclosure": "none",
+        "replica": "public"
+      },
+      "reads": [
+        "slot:onboarding_guide"
+      ],
+      "writes": [
+        "slot:public"
+      ],
+      "gen": [],
+      "description": "按 transfer_case 公共说明传输。"
+    },
+    {
+      "id": "vendor_transfer_021",
+      "agent": "compliance",
+      "tool": "transfer_case",
+      "params": {
+        "recipient": "partner",
+        "source": "onboarding_guide",
+        "enclosure": "case",
+        "replica": "public"
+      },
+      "reads": [
+        "slot:case",
+        "slot:onboarding_guide"
+      ],
+      "writes": [
+        "slot:assessor",
+        "slot:public"
+      ],
+      "gen": [],
+      "description": "按 transfer_case 公共说明传输。"
+    },
+    {
+      "id": "vendor_transfer_022",
+      "agent": "procurement",
+      "tool": "transfer_case",
+      "params": {
+        "recipient": "partner",
+        "source": "onboarding_guide",
+        "enclosure": "case",
+        "replica": "partner"
+      },
+      "reads": [
+        "slot:case",
+        "slot:onboarding_guide"
+      ],
+      "writes": [
+        "slot:supplier"
+      ],
+      "gen": [],
+      "description": "按 transfer_case 公共说明传输。"
+    },
+    {
+      "id": "vendor_transfer_023",
+      "agent": "compliance",
+      "tool": "transfer_case",
+      "params": {
+        "recipient": "local",
+        "source": "onboarding_guide",
+        "enclosure": "package",
+        "replica": "none"
+      },
+      "reads": [
+        "slot:onboarding_guide",
+        "slot:package"
+      ],
+      "writes": [
+        "slot:operations"
+      ],
+      "gen": [],
+      "description": "按 transfer_case 公共说明传输。"
+    },
+    {
+      "id": "vendor_transfer_024",
+      "agent": "procurement",
+      "tool": "transfer_case",
+      "params": {
+        "recipient": "partner",
+        "source": "package",
+        "enclosure": "case",
+        "replica": "partner"
+      },
+      "reads": [
+        "slot:case",
+        "slot:package"
+      ],
+      "writes": [
+        "slot:supplier"
+      ],
+      "gen": [],
+      "description": "按 transfer_case 公共说明传输。"
+    },
+    {
+      "id": "vendor_transfer_025",
+      "agent": "procurement",
+      "tool": "transfer_case",
+      "params": {
+        "recipient": "partner",
+        "source": "verified",
+        "enclosure": "package",
+        "replica": "public"
+      },
+      "reads": [
+        "slot:package",
+        "slot:verified"
+      ],
+      "writes": [
+        "slot:public",
+        "slot:supplier"
+      ],
+      "gen": [],
+      "description": "按 transfer_case 公共说明传输。"
+    },
+    {
+      "id": "vendor_transfer_026",
+      "agent": "compliance",
+      "tool": "transfer_case",
+      "params": {
+        "recipient": "local",
+        "source": "package",
+        "enclosure": "case",
+        "replica": "public"
+      },
+      "reads": [
+        "slot:case",
+        "slot:package"
+      ],
+      "writes": [
+        "slot:operations",
+        "slot:public"
+      ],
+      "gen": [],
+      "description": "按 transfer_case 公共说明传输。"
+    },
+    {
+      "id": "vendor_transfer_027",
+      "agent": "procurement",
+      "tool": "transfer_case",
+      "params": {
+        "recipient": "partner",
+        "source": "onboarding_guide",
+        "enclosure": "package",
+        "replica": "escrow"
+      },
+      "reads": [
+        "slot:onboarding_guide",
+        "slot:package"
+      ],
+      "writes": [
+        "slot:escrow",
+        "slot:supplier"
+      ],
+      "gen": [],
+      "description": "按 transfer_case 公共说明传输。"
+    },
+    {
+      "id": "vendor_transfer_028",
+      "agent": "compliance",
+      "tool": "transfer_case",
+      "params": {
+        "recipient": "local",
+        "source": "verified",
+        "enclosure": "package",
+        "replica": "public"
+      },
+      "reads": [
+        "slot:package",
+        "slot:verified"
+      ],
+      "writes": [
+        "slot:operations",
+        "slot:public"
+      ],
+      "gen": [],
+      "description": "按 transfer_case 公共说明传输。"
+    },
+    {
+      "id": "vendor_transfer_029",
+      "agent": "compliance",
+      "tool": "transfer_case",
+      "params": {
+        "recipient": "partner",
+        "source": "verified",
+        "enclosure": "package",
+        "replica": "none"
+      },
+      "reads": [
+        "slot:package",
+        "slot:verified"
+      ],
+      "writes": [
+        "slot:assessor"
+      ],
+      "gen": [],
+      "description": "按 transfer_case 公共说明传输。"
+    },
+    {
+      "id": "vendor_transfer_030",
+      "agent": "compliance",
+      "tool": "transfer_case",
+      "params": {
+        "recipient": "local",
+        "source": "onboarding_guide",
+        "enclosure": "none",
+        "replica": "public"
+      },
+      "reads": [
+        "slot:onboarding_guide"
+      ],
+      "writes": [
+        "slot:operations",
+        "slot:public"
+      ],
+      "gen": [],
+      "description": "按 transfer_case 公共说明传输。"
+    },
+    {
+      "id": "vendor_transfer_031",
+      "agent": "procurement",
+      "tool": "transfer_case",
+      "params": {
+        "recipient": "oversight",
+        "source": "package",
+        "enclosure": "package",
+        "replica": "escrow"
+      },
+      "reads": [
+        "slot:package"
+      ],
+      "writes": [
+        "slot:escrow",
+        "slot:public"
+      ],
+      "gen": [],
+      "description": "按 transfer_case 公共说明传输。"
+    },
+    {
+      "id": "vendor_transfer_032",
+      "agent": "procurement",
+      "tool": "transfer_case",
+      "params": {
+        "recipient": "partner",
+        "source": "onboarding_guide",
+        "enclosure": "case",
+        "replica": "none"
+      },
+      "reads": [
+        "slot:case",
+        "slot:onboarding_guide"
+      ],
+      "writes": [
+        "slot:supplier"
+      ],
+      "gen": [],
+      "description": "按 transfer_case 公共说明传输。"
+    },
+    {
+      "id": "vendor_transfer_033",
+      "agent": "compliance",
+      "tool": "transfer_case",
+      "params": {
+        "recipient": "partner",
+        "source": "verified",
+        "enclosure": "case",
+        "replica": "none"
+      },
+      "reads": [
+        "slot:case",
+        "slot:verified"
+      ],
+      "writes": [
+        "slot:assessor"
+      ],
+      "gen": [],
+      "description": "按 transfer_case 公共说明传输。"
+    },
+    {
+      "id": "vendor_transfer_034",
+      "agent": "compliance",
+      "tool": "transfer_case",
+      "params": {
+        "recipient": "oversight",
+        "source": "verified",
+        "enclosure": "none",
+        "replica": "escrow"
+      },
+      "reads": [
+        "slot:verified"
+      ],
+      "writes": [
+        "slot:escrow",
+        "slot:oversight"
+      ],
+      "gen": [],
+      "description": "按 transfer_case 公共说明传输。"
+    },
+    {
+      "id": "vendor_transfer_035",
+      "agent": "procurement",
+      "tool": "transfer_case",
+      "params": {
+        "recipient": "partner",
+        "source": "onboarding_guide",
+        "enclosure": "none",
+        "replica": "public"
+      },
+      "reads": [
+        "slot:onboarding_guide"
+      ],
+      "writes": [
+        "slot:public",
+        "slot:supplier"
+      ],
+      "gen": [],
+      "description": "按 transfer_case 公共说明传输。"
+    },
+    {
+      "id": "vendor_transfer_036",
+      "agent": "compliance",
+      "tool": "transfer_case",
+      "params": {
+        "recipient": "partner",
+        "source": "verified",
+        "enclosure": "none",
+        "replica": "escrow"
+      },
+      "reads": [
+        "slot:verified"
+      ],
+      "writes": [
+        "slot:assessor",
+        "slot:escrow"
+      ],
+      "gen": [],
+      "description": "按 transfer_case 公共说明传输。"
+    },
+    {
+      "id": "vendor_transfer_037",
+      "agent": "compliance",
+      "tool": "transfer_case",
+      "params": {
+        "recipient": "partner",
+        "source": "onboarding_guide",
+        "enclosure": "case",
+        "replica": "partner"
+      },
+      "reads": [
+        "slot:case",
+        "slot:onboarding_guide"
+      ],
+      "writes": [
+        "slot:assessor"
+      ],
+      "gen": [],
+      "description": "按 transfer_case 公共说明传输。"
+    },
+    {
+      "id": "vendor_transfer_038",
+      "agent": "procurement",
+      "tool": "transfer_case",
+      "params": {
+        "recipient": "oversight",
+        "source": "verified",
+        "enclosure": "package",
+        "replica": "escrow"
+      },
+      "reads": [
+        "slot:package",
+        "slot:verified"
+      ],
+      "writes": [
+        "slot:escrow",
+        "slot:public"
+      ],
+      "gen": [],
+      "description": "按 transfer_case 公共说明传输。"
+    },
+    {
+      "id": "vendor_transfer_039",
+      "agent": "procurement",
+      "tool": "transfer_case",
+      "params": {
+        "recipient": "local",
+        "source": "package",
+        "enclosure": "none",
+        "replica": "partner"
+      },
+      "reads": [
+        "slot:package"
+      ],
+      "writes": [
+        "slot:operations",
+        "slot:supplier"
+      ],
+      "gen": [],
+      "description": "按 transfer_case 公共说明传输。"
+    }
+  ],
+  "spec": {
+    "labels": [
+      "CUSTOMER",
+      "PRICING",
+      "ACCESS",
+      "UNSCREENED"
+    ],
+    "actions": [
+      {
+        "id": "vendor_receive_CUSTOMER",
+        "agent": "onboarding",
+        "tool": "receive_record",
+        "params": {
+          "category": "CUSTOMER"
+        },
+        "reads": [
+          "slot:source_CUSTOMER"
+        ],
+        "writes": [
+          "slot:case"
+        ],
+        "gen": [],
+        "description": "读取仅含CUSTOMER的材料并追加到 slot:case。"
+      },
+      {
+        "id": "vendor_receive_PRICING",
+        "agent": "onboarding",
+        "tool": "receive_record",
+        "params": {
+          "category": "PRICING"
+        },
+        "reads": [
+          "slot:source_PRICING"
+        ],
+        "writes": [
+          "slot:case"
+        ],
+        "gen": [],
+        "description": "读取仅含PRICING的材料并追加到 slot:case。"
+      },
+      {
+        "id": "vendor_receive_ACCESS",
+        "agent": "onboarding",
+        "tool": "receive_record",
+        "params": {
+          "category": "ACCESS"
+        },
+        "reads": [
+          "slot:source_ACCESS"
+        ],
+        "writes": [
+          "slot:case"
+        ],
+        "gen": [],
+        "description": "读取仅含ACCESS的材料并追加到 slot:case。"
+      },
+      {
+        "id": "vendor_receive_UNSCREENED",
+        "agent": "onboarding",
+        "tool": "receive_record",
+        "params": {
+          "category": "UNSCREENED"
+        },
+        "reads": [
+          "slot:source_UNSCREENED"
+        ],
+        "writes": [
+          "slot:case"
+        ],
+        "gen": [],
+        "description": "读取仅含UNSCREENED的材料并追加到 slot:case。"
+      },
+      {
+        "id": "vendor_verify",
+        "agent": "analyst",
+        "tool": "verify_case",
+        "params": {},
+        "reads": [
+          "slot:case"
+        ],
+        "writes": [
+          "slot:verified"
+        ],
+        "gen": [],
+        "description": "将 case 追加到 verified。"
+      },
+      {
+        "id": "vendor_bundle",
+        "agent": "coordinator",
+        "tool": "bundle_case",
+        "params": {
+          "source": "verified"
+        },
+        "reads": [
+          "slot:verified"
+        ],
+        "writes": [
+          "slot:package"
+        ],
+        "gen": [],
+        "description": "将 verified 追加到 package。"
+      },
+      {
+        "id": "vendor_fastpack",
+        "agent": "coordinator",
+        "tool": "bundle_case",
+        "params": {
+          "source": "case"
+        },
+        "reads": [
+          "slot:case"
+        ],
+        "writes": [
+          "slot:package"
+        ],
+        "gen": [],
+        "description": "将 case 直接追加到 package。"
+      },
+      {
+        "id": "vendor_transfer_000",
+        "agent": "procurement",
+        "tool": "transfer_case",
+        "params": {
+          "recipient": "oversight",
+          "source": "package",
+          "enclosure": "package",
+          "replica": "public"
+        },
+        "reads": [
+          "slot:package"
+        ],
+        "writes": [
+          "slot:public"
+        ],
+        "gen": [],
+        "description": "按 transfer_case 公共说明传输。"
+      },
+      {
+        "id": "vendor_transfer_001",
+        "agent": "compliance",
+        "tool": "transfer_case",
+        "params": {
+          "recipient": "oversight",
+          "source": "onboarding_guide",
+          "enclosure": "none",
+          "replica": "none"
+        },
+        "reads": [
+          "slot:onboarding_guide"
+        ],
+        "writes": [
+          "slot:oversight"
+        ],
+        "gen": [],
+        "description": "按 transfer_case 公共说明传输。"
+      },
+      {
+        "id": "vendor_transfer_002",
+        "agent": "compliance",
+        "tool": "transfer_case",
+        "params": {
+          "recipient": "partner",
+          "source": "package",
+          "enclosure": "none",
+          "replica": "public"
+        },
+        "reads": [
+          "slot:package"
+        ],
+        "writes": [
+          "slot:assessor",
+          "slot:public"
+        ],
+        "gen": [],
+        "description": "按 transfer_case 公共说明传输。"
+      },
+      {
+        "id": "vendor_transfer_003",
+        "agent": "procurement",
+        "tool": "transfer_case",
+        "params": {
+          "recipient": "oversight",
+          "source": "package",
+          "enclosure": "case",
+          "replica": "none"
+        },
+        "reads": [
+          "slot:case",
+          "slot:package"
+        ],
+        "writes": [
+          "slot:public"
+        ],
+        "gen": [],
+        "description": "按 transfer_case 公共说明传输。"
+      },
+      {
+        "id": "vendor_transfer_004",
+        "agent": "procurement",
+        "tool": "transfer_case",
+        "params": {
+          "recipient": "partner",
+          "source": "onboarding_guide",
+          "enclosure": "case",
+          "replica": "public"
+        },
+        "reads": [
+          "slot:case",
+          "slot:onboarding_guide"
+        ],
+        "writes": [
+          "slot:public",
+          "slot:supplier"
+        ],
+        "gen": [],
+        "description": "按 transfer_case 公共说明传输。"
+      },
+      {
+        "id": "vendor_transfer_005",
+        "agent": "procurement",
+        "tool": "transfer_case",
+        "params": {
+          "recipient": "oversight",
+          "source": "onboarding_guide",
+          "enclosure": "case",
+          "replica": "none"
+        },
+        "reads": [
+          "slot:case",
+          "slot:onboarding_guide"
+        ],
+        "writes": [
+          "slot:public"
+        ],
+        "gen": [],
+        "description": "按 transfer_case 公共说明传输。"
+      },
+      {
+        "id": "vendor_transfer_006",
+        "agent": "procurement",
+        "tool": "transfer_case",
+        "params": {
+          "recipient": "local",
+          "source": "verified",
+          "enclosure": "package",
+          "replica": "public"
+        },
+        "reads": [
+          "slot:package",
+          "slot:verified"
+        ],
+        "writes": [
+          "slot:operations",
+          "slot:public"
+        ],
+        "gen": [],
+        "description": "按 transfer_case 公共说明传输。"
+      },
+      {
+        "id": "vendor_transfer_007",
+        "agent": "procurement",
+        "tool": "transfer_case",
+        "params": {
+          "recipient": "oversight",
+          "source": "onboarding_guide",
+          "enclosure": "case",
+          "replica": "escrow"
+        },
+        "reads": [
+          "slot:case",
+          "slot:onboarding_guide"
+        ],
+        "writes": [
+          "slot:escrow",
+          "slot:public"
+        ],
+        "gen": [],
+        "description": "按 transfer_case 公共说明传输。"
+      },
+      {
+        "id": "vendor_transfer_008",
+        "agent": "compliance",
+        "tool": "transfer_case",
+        "params": {
+          "recipient": "oversight",
+          "source": "onboarding_guide",
+          "enclosure": "none",
+          "replica": "public"
+        },
+        "reads": [
+          "slot:onboarding_guide"
+        ],
+        "writes": [
+          "slot:oversight",
+          "slot:public"
+        ],
+        "gen": [],
+        "description": "按 transfer_case 公共说明传输。"
+      },
+      {
+        "id": "vendor_transfer_009",
+        "agent": "procurement",
+        "tool": "transfer_case",
+        "params": {
+          "recipient": "oversight",
+          "source": "verified",
+          "enclosure": "none",
+          "replica": "escrow"
+        },
+        "reads": [
+          "slot:verified"
+        ],
+        "writes": [
+          "slot:escrow",
+          "slot:public"
+        ],
+        "gen": [],
+        "description": "按 transfer_case 公共说明传输。"
+      },
+      {
+        "id": "vendor_transfer_010",
+        "agent": "procurement",
+        "tool": "transfer_case",
+        "params": {
+          "recipient": "local",
+          "source": "verified",
+          "enclosure": "case",
+          "replica": "public"
+        },
+        "reads": [
+          "slot:case",
+          "slot:verified"
+        ],
+        "writes": [
+          "slot:operations",
+          "slot:public"
+        ],
+        "gen": [],
+        "description": "按 transfer_case 公共说明传输。"
+      },
+      {
+        "id": "vendor_transfer_011",
+        "agent": "procurement",
+        "tool": "transfer_case",
+        "params": {
+          "recipient": "oversight",
+          "source": "package",
+          "enclosure": "case",
+          "replica": "escrow"
+        },
+        "reads": [
+          "slot:case",
+          "slot:package"
+        ],
+        "writes": [
+          "slot:escrow",
+          "slot:public"
+        ],
+        "gen": [],
+        "description": "按 transfer_case 公共说明传输。"
+      },
+      {
+        "id": "vendor_transfer_012",
+        "agent": "procurement",
+        "tool": "transfer_case",
+        "params": {
+          "recipient": "local",
+          "source": "onboarding_guide",
+          "enclosure": "case",
+          "replica": "escrow"
+        },
+        "reads": [
+          "slot:case",
+          "slot:onboarding_guide"
+        ],
+        "writes": [
+          "slot:escrow",
+          "slot:operations"
+        ],
+        "gen": [],
+        "description": "按 transfer_case 公共说明传输。"
+      },
+      {
+        "id": "vendor_transfer_013",
+        "agent": "procurement",
+        "tool": "transfer_case",
+        "params": {
+          "recipient": "partner",
+          "source": "onboarding_guide",
+          "enclosure": "package",
+          "replica": "public"
+        },
+        "reads": [
+          "slot:onboarding_guide",
+          "slot:package"
+        ],
+        "writes": [
+          "slot:public",
+          "slot:supplier"
+        ],
+        "gen": [],
+        "description": "按 transfer_case 公共说明传输。"
+      },
+      {
+        "id": "vendor_transfer_014",
+        "agent": "compliance",
+        "tool": "transfer_case",
+        "params": {
+          "recipient": "partner",
+          "source": "onboarding_guide",
+          "enclosure": "none",
+          "replica": "public"
+        },
+        "reads": [
+          "slot:onboarding_guide"
+        ],
+        "writes": [
+          "slot:assessor",
+          "slot:public"
+        ],
+        "gen": [],
+        "description": "按 transfer_case 公共说明传输。"
+      },
+      {
+        "id": "vendor_transfer_015",
+        "agent": "procurement",
+        "tool": "transfer_case",
+        "params": {
+          "recipient": "local",
+          "source": "verified",
+          "enclosure": "case",
+          "replica": "escrow"
+        },
+        "reads": [
+          "slot:case",
+          "slot:verified"
+        ],
+        "writes": [
+          "slot:escrow",
+          "slot:operations"
+        ],
+        "gen": [],
+        "description": "按 transfer_case 公共说明传输。"
+      },
+      {
+        "id": "vendor_transfer_016",
+        "agent": "procurement",
+        "tool": "transfer_case",
+        "params": {
+          "recipient": "partner",
+          "source": "onboarding_guide",
+          "enclosure": "package",
+          "replica": "none"
+        },
+        "reads": [
+          "slot:onboarding_guide",
+          "slot:package"
+        ],
+        "writes": [
+          "slot:supplier"
+        ],
+        "gen": [],
+        "description": "按 transfer_case 公共说明传输。"
+      },
+      {
+        "id": "vendor_transfer_017",
+        "agent": "procurement",
+        "tool": "transfer_case",
+        "params": {
+          "recipient": "local",
+          "source": "verified",
+          "enclosure": "package",
+          "replica": "none"
+        },
+        "reads": [
+          "slot:package",
+          "slot:verified"
+        ],
+        "writes": [
+          "slot:operations"
+        ],
+        "gen": [],
+        "description": "按 transfer_case 公共说明传输。"
+      },
+      {
+        "id": "vendor_transfer_018",
+        "agent": "procurement",
+        "tool": "transfer_case",
+        "params": {
+          "recipient": "oversight",
+          "source": "package",
+          "enclosure": "case",
+          "replica": "partner"
+        },
+        "reads": [
+          "slot:case",
+          "slot:package"
+        ],
+        "writes": [
+          "slot:public",
+          "slot:supplier"
+        ],
+        "gen": [],
+        "description": "按 transfer_case 公共说明传输。"
+      },
+      {
+        "id": "vendor_transfer_019",
+        "agent": "compliance",
+        "tool": "transfer_case",
+        "params": {
+          "recipient": "local",
+          "source": "verified",
+          "enclosure": "none",
+          "replica": "partner"
+        },
+        "reads": [
+          "slot:verified"
+        ],
+        "writes": [
+          "slot:assessor",
+          "slot:operations"
+        ],
+        "gen": [],
+        "description": "按 transfer_case 公共说明传输。"
+      },
+      {
+        "id": "vendor_transfer_020",
+        "agent": "procurement",
+        "tool": "transfer_case",
+        "params": {
+          "recipient": "oversight",
+          "source": "onboarding_guide",
+          "enclosure": "none",
+          "replica": "public"
+        },
+        "reads": [
+          "slot:onboarding_guide"
+        ],
+        "writes": [
+          "slot:public"
+        ],
+        "gen": [],
+        "description": "按 transfer_case 公共说明传输。"
+      },
+      {
+        "id": "vendor_transfer_021",
+        "agent": "compliance",
+        "tool": "transfer_case",
+        "params": {
+          "recipient": "partner",
+          "source": "onboarding_guide",
+          "enclosure": "case",
+          "replica": "public"
+        },
+        "reads": [
+          "slot:case",
+          "slot:onboarding_guide"
+        ],
+        "writes": [
+          "slot:assessor",
+          "slot:public"
+        ],
+        "gen": [],
+        "description": "按 transfer_case 公共说明传输。"
+      },
+      {
+        "id": "vendor_transfer_022",
+        "agent": "procurement",
+        "tool": "transfer_case",
+        "params": {
+          "recipient": "partner",
+          "source": "onboarding_guide",
+          "enclosure": "case",
+          "replica": "partner"
+        },
+        "reads": [
+          "slot:case",
+          "slot:onboarding_guide"
+        ],
+        "writes": [
+          "slot:supplier"
+        ],
+        "gen": [],
+        "description": "按 transfer_case 公共说明传输。"
+      },
+      {
+        "id": "vendor_transfer_023",
+        "agent": "compliance",
+        "tool": "transfer_case",
+        "params": {
+          "recipient": "local",
+          "source": "onboarding_guide",
+          "enclosure": "package",
+          "replica": "none"
+        },
+        "reads": [
+          "slot:onboarding_guide",
+          "slot:package"
+        ],
+        "writes": [
+          "slot:operations"
+        ],
+        "gen": [],
+        "description": "按 transfer_case 公共说明传输。"
+      },
+      {
+        "id": "vendor_transfer_024",
+        "agent": "procurement",
+        "tool": "transfer_case",
+        "params": {
+          "recipient": "partner",
+          "source": "package",
+          "enclosure": "case",
+          "replica": "partner"
+        },
+        "reads": [
+          "slot:case",
+          "slot:package"
+        ],
+        "writes": [
+          "slot:supplier"
+        ],
+        "gen": [],
+        "description": "按 transfer_case 公共说明传输。"
+      },
+      {
+        "id": "vendor_transfer_025",
+        "agent": "procurement",
+        "tool": "transfer_case",
+        "params": {
+          "recipient": "partner",
+          "source": "verified",
+          "enclosure": "package",
+          "replica": "public"
+        },
+        "reads": [
+          "slot:package",
+          "slot:verified"
+        ],
+        "writes": [
+          "slot:public",
+          "slot:supplier"
+        ],
+        "gen": [],
+        "description": "按 transfer_case 公共说明传输。"
+      },
+      {
+        "id": "vendor_transfer_026",
+        "agent": "compliance",
+        "tool": "transfer_case",
+        "params": {
+          "recipient": "local",
+          "source": "package",
+          "enclosure": "case",
+          "replica": "public"
+        },
+        "reads": [
+          "slot:case",
+          "slot:package"
+        ],
+        "writes": [
+          "slot:operations",
+          "slot:public"
+        ],
+        "gen": [],
+        "description": "按 transfer_case 公共说明传输。"
+      },
+      {
+        "id": "vendor_transfer_027",
+        "agent": "procurement",
+        "tool": "transfer_case",
+        "params": {
+          "recipient": "partner",
+          "source": "onboarding_guide",
+          "enclosure": "package",
+          "replica": "escrow"
+        },
+        "reads": [
+          "slot:onboarding_guide",
+          "slot:package"
+        ],
+        "writes": [
+          "slot:escrow",
+          "slot:supplier"
+        ],
+        "gen": [],
+        "description": "按 transfer_case 公共说明传输。"
+      },
+      {
+        "id": "vendor_transfer_028",
+        "agent": "compliance",
+        "tool": "transfer_case",
+        "params": {
+          "recipient": "local",
+          "source": "verified",
+          "enclosure": "package",
+          "replica": "public"
+        },
+        "reads": [
+          "slot:package",
+          "slot:verified"
+        ],
+        "writes": [
+          "slot:operations",
+          "slot:public"
+        ],
+        "gen": [],
+        "description": "按 transfer_case 公共说明传输。"
+      },
+      {
+        "id": "vendor_transfer_029",
+        "agent": "compliance",
+        "tool": "transfer_case",
+        "params": {
+          "recipient": "partner",
+          "source": "verified",
+          "enclosure": "package",
+          "replica": "none"
+        },
+        "reads": [
+          "slot:package",
+          "slot:verified"
+        ],
+        "writes": [
+          "slot:assessor"
+        ],
+        "gen": [],
+        "description": "按 transfer_case 公共说明传输。"
+      },
+      {
+        "id": "vendor_transfer_030",
+        "agent": "compliance",
+        "tool": "transfer_case",
+        "params": {
+          "recipient": "local",
+          "source": "onboarding_guide",
+          "enclosure": "none",
+          "replica": "public"
+        },
+        "reads": [
+          "slot:onboarding_guide"
+        ],
+        "writes": [
+          "slot:operations",
+          "slot:public"
+        ],
+        "gen": [],
+        "description": "按 transfer_case 公共说明传输。"
+      },
+      {
+        "id": "vendor_transfer_031",
+        "agent": "procurement",
+        "tool": "transfer_case",
+        "params": {
+          "recipient": "oversight",
+          "source": "package",
+          "enclosure": "package",
+          "replica": "escrow"
+        },
+        "reads": [
+          "slot:package"
+        ],
+        "writes": [
+          "slot:escrow",
+          "slot:public"
+        ],
+        "gen": [],
+        "description": "按 transfer_case 公共说明传输。"
+      },
+      {
+        "id": "vendor_transfer_032",
+        "agent": "procurement",
+        "tool": "transfer_case",
+        "params": {
+          "recipient": "partner",
+          "source": "onboarding_guide",
+          "enclosure": "case",
+          "replica": "none"
+        },
+        "reads": [
+          "slot:case",
+          "slot:onboarding_guide"
+        ],
+        "writes": [
+          "slot:supplier"
+        ],
+        "gen": [],
+        "description": "按 transfer_case 公共说明传输。"
+      },
+      {
+        "id": "vendor_transfer_033",
+        "agent": "compliance",
+        "tool": "transfer_case",
+        "params": {
+          "recipient": "partner",
+          "source": "verified",
+          "enclosure": "case",
+          "replica": "none"
+        },
+        "reads": [
+          "slot:case",
+          "slot:verified"
+        ],
+        "writes": [
+          "slot:assessor"
+        ],
+        "gen": [],
+        "description": "按 transfer_case 公共说明传输。"
+      },
+      {
+        "id": "vendor_transfer_034",
+        "agent": "compliance",
+        "tool": "transfer_case",
+        "params": {
+          "recipient": "oversight",
+          "source": "verified",
+          "enclosure": "none",
+          "replica": "escrow"
+        },
+        "reads": [
+          "slot:verified"
+        ],
+        "writes": [
+          "slot:escrow",
+          "slot:oversight"
+        ],
+        "gen": [],
+        "description": "按 transfer_case 公共说明传输。"
+      },
+      {
+        "id": "vendor_transfer_035",
+        "agent": "procurement",
+        "tool": "transfer_case",
+        "params": {
+          "recipient": "partner",
+          "source": "onboarding_guide",
+          "enclosure": "none",
+          "replica": "public"
+        },
+        "reads": [
+          "slot:onboarding_guide"
+        ],
+        "writes": [
+          "slot:public",
+          "slot:supplier"
+        ],
+        "gen": [],
+        "description": "按 transfer_case 公共说明传输。"
+      },
+      {
+        "id": "vendor_transfer_036",
+        "agent": "compliance",
+        "tool": "transfer_case",
+        "params": {
+          "recipient": "partner",
+          "source": "verified",
+          "enclosure": "none",
+          "replica": "escrow"
+        },
+        "reads": [
+          "slot:verified"
+        ],
+        "writes": [
+          "slot:assessor",
+          "slot:escrow"
+        ],
+        "gen": [],
+        "description": "按 transfer_case 公共说明传输。"
+      },
+      {
+        "id": "vendor_transfer_037",
+        "agent": "compliance",
+        "tool": "transfer_case",
+        "params": {
+          "recipient": "partner",
+          "source": "onboarding_guide",
+          "enclosure": "case",
+          "replica": "partner"
+        },
+        "reads": [
+          "slot:case",
+          "slot:onboarding_guide"
+        ],
+        "writes": [
+          "slot:assessor"
+        ],
+        "gen": [],
+        "description": "按 transfer_case 公共说明传输。"
+      },
+      {
+        "id": "vendor_transfer_038",
+        "agent": "procurement",
+        "tool": "transfer_case",
+        "params": {
+          "recipient": "oversight",
+          "source": "verified",
+          "enclosure": "package",
+          "replica": "escrow"
+        },
+        "reads": [
+          "slot:package",
+          "slot:verified"
+        ],
+        "writes": [
+          "slot:escrow",
+          "slot:public"
+        ],
+        "gen": [],
+        "description": "按 transfer_case 公共说明传输。"
+      },
+      {
+        "id": "vendor_transfer_039",
+        "agent": "procurement",
+        "tool": "transfer_case",
+        "params": {
+          "recipient": "local",
+          "source": "package",
+          "enclosure": "none",
+          "replica": "partner"
+        },
+        "reads": [
+          "slot:package"
+        ],
+        "writes": [
+          "slot:operations",
+          "slot:supplier"
+        ],
+        "gen": [],
+        "description": "按 transfer_case 公共说明传输。"
+      }
+    ],
+    "policy": {
+      "slot:supplier": [
+        "CUSTOMER",
+        "ACCESS"
+      ],
+      "slot:assessor": [
+        "PRICING",
+        "ACCESS"
+      ],
+      "slot:public": [
+        "CUSTOMER",
+        "PRICING",
+        "ACCESS"
+      ],
+      "slot:escrow": [
+        "ACCESS",
+        "UNSCREENED"
+      ],
+      "slot:oversight": [
+        "UNSCREENED"
+      ]
+    },
+    "initial_state": {
+      "slot:source_CUSTOMER": [
+        "CUSTOMER"
+      ],
+      "slot:source_PRICING": [
+        "PRICING"
+      ],
+      "slot:source_ACCESS": [
+        "ACCESS"
+      ],
+      "slot:source_UNSCREENED": [
+        "UNSCREENED"
+      ]
+    }
+  }
+}

@@ -1,0 +1,1249 @@
+{
+  "id": "COMP-REIMBURSEMENT-24",
+  "family": "reimbursement",
+  "dispatch_count": 24,
+  "labels": {
+    "EMPLOYEE": "员工身份资料",
+    "FINANCIAL": "报销与账户资料",
+    "AUTH": "审批或支付凭据",
+    "UNVERIFIED": "未经核验的票据材料"
+  },
+  "actions": [
+    {
+      "id": "expense_import_EMPLOYEE",
+      "agent": "intake",
+      "tool": "import_expense",
+      "params": {
+        "category": "EMPLOYEE"
+      },
+      "reads": [
+        "slot:source_EMPLOYEE"
+      ],
+      "writes": [
+        "slot:claim"
+      ],
+      "gen": [],
+      "description": "读取仅含EMPLOYEE的材料并追加到 slot:claim。"
+    },
+    {
+      "id": "expense_import_FINANCIAL",
+      "agent": "intake",
+      "tool": "import_expense",
+      "params": {
+        "category": "FINANCIAL"
+      },
+      "reads": [
+        "slot:source_FINANCIAL"
+      ],
+      "writes": [
+        "slot:claim"
+      ],
+      "gen": [],
+      "description": "读取仅含FINANCIAL的材料并追加到 slot:claim。"
+    },
+    {
+      "id": "expense_import_AUTH",
+      "agent": "intake",
+      "tool": "import_expense",
+      "params": {
+        "category": "AUTH"
+      },
+      "reads": [
+        "slot:source_AUTH"
+      ],
+      "writes": [
+        "slot:claim"
+      ],
+      "gen": [],
+      "description": "读取仅含AUTH的材料并追加到 slot:claim。"
+    },
+    {
+      "id": "expense_import_UNVERIFIED",
+      "agent": "intake",
+      "tool": "import_expense",
+      "params": {
+        "category": "UNVERIFIED"
+      },
+      "reads": [
+        "slot:source_UNVERIFIED"
+      ],
+      "writes": [
+        "slot:claim"
+      ],
+      "gen": [],
+      "description": "读取仅含UNVERIFIED的材料并追加到 slot:claim。"
+    },
+    {
+      "id": "expense_review",
+      "agent": "reviewer",
+      "tool": "review_claim",
+      "params": {},
+      "reads": [
+        "slot:claim"
+      ],
+      "writes": [
+        "slot:approved"
+      ],
+      "gen": [],
+      "description": "将 claim 追加到 approved。"
+    },
+    {
+      "id": "expense_assemble",
+      "agent": "clerk",
+      "tool": "assemble_packet",
+      "params": {
+        "source": "approved"
+      },
+      "reads": [
+        "slot:approved"
+      ],
+      "writes": [
+        "slot:packet"
+      ],
+      "gen": [],
+      "description": "将 approved 追加到 packet。"
+    },
+    {
+      "id": "expense_fastpack",
+      "agent": "clerk",
+      "tool": "assemble_packet",
+      "params": {
+        "source": "claim"
+      },
+      "reads": [
+        "slot:claim"
+      ],
+      "writes": [
+        "slot:packet"
+      ],
+      "gen": [],
+      "description": "将 claim 直接追加到 packet。"
+    },
+    {
+      "id": "expense_submit_000",
+      "agent": "treasury",
+      "tool": "submit_claim",
+      "params": {
+        "route": "release",
+        "source": "packet",
+        "include": "none",
+        "copy": "counterparty"
+      },
+      "reads": [
+        "slot:packet"
+      ],
+      "writes": [
+        "slot:bank",
+        "slot:regulator"
+      ],
+      "gen": [],
+      "description": "按 submit_claim 公共说明提交。"
+    },
+    {
+      "id": "expense_submit_001",
+      "agent": "claims",
+      "tool": "submit_claim",
+      "params": {
+        "route": "counterparty",
+        "source": "packet",
+        "include": "none",
+        "copy": "none"
+      },
+      "reads": [
+        "slot:packet"
+      ],
+      "writes": [
+        "slot:processor"
+      ],
+      "gen": [],
+      "description": "按 submit_claim 公共说明提交。"
+    },
+    {
+      "id": "expense_submit_002",
+      "agent": "claims",
+      "tool": "submit_claim",
+      "params": {
+        "route": "release",
+        "source": "approved",
+        "include": "claim",
+        "copy": "counterparty"
+      },
+      "reads": [
+        "slot:approved",
+        "slot:claim"
+      ],
+      "writes": [
+        "slot:processor",
+        "slot:public"
+      ],
+      "gen": [],
+      "description": "按 submit_claim 公共说明提交。"
+    },
+    {
+      "id": "expense_submit_003",
+      "agent": "claims",
+      "tool": "submit_claim",
+      "params": {
+        "route": "release",
+        "source": "approved",
+        "include": "packet",
+        "copy": "counterparty"
+      },
+      "reads": [
+        "slot:approved",
+        "slot:packet"
+      ],
+      "writes": [
+        "slot:processor",
+        "slot:public"
+      ],
+      "gen": [],
+      "description": "按 submit_claim 公共说明提交。"
+    },
+    {
+      "id": "expense_submit_004",
+      "agent": "treasury",
+      "tool": "submit_claim",
+      "params": {
+        "route": "release",
+        "source": "handbook",
+        "include": "claim",
+        "copy": "audit"
+      },
+      "reads": [
+        "slot:claim",
+        "slot:handbook"
+      ],
+      "writes": [
+        "slot:audit",
+        "slot:regulator"
+      ],
+      "gen": [],
+      "description": "按 submit_claim 公共说明提交。"
+    },
+    {
+      "id": "expense_submit_005",
+      "agent": "claims",
+      "tool": "submit_claim",
+      "params": {
+        "route": "release",
+        "source": "packet",
+        "include": "packet",
+        "copy": "audit"
+      },
+      "reads": [
+        "slot:packet"
+      ],
+      "writes": [
+        "slot:audit",
+        "slot:public"
+      ],
+      "gen": [],
+      "description": "按 submit_claim 公共说明提交。"
+    },
+    {
+      "id": "expense_submit_006",
+      "agent": "claims",
+      "tool": "submit_claim",
+      "params": {
+        "route": "counterparty",
+        "source": "handbook",
+        "include": "claim",
+        "copy": "none"
+      },
+      "reads": [
+        "slot:claim",
+        "slot:handbook"
+      ],
+      "writes": [
+        "slot:processor"
+      ],
+      "gen": [],
+      "description": "按 submit_claim 公共说明提交。"
+    },
+    {
+      "id": "expense_submit_007",
+      "agent": "treasury",
+      "tool": "submit_claim",
+      "params": {
+        "route": "counterparty",
+        "source": "packet",
+        "include": "claim",
+        "copy": "none"
+      },
+      "reads": [
+        "slot:claim",
+        "slot:packet"
+      ],
+      "writes": [
+        "slot:bank"
+      ],
+      "gen": [],
+      "description": "按 submit_claim 公共说明提交。"
+    },
+    {
+      "id": "expense_submit_008",
+      "agent": "treasury",
+      "tool": "submit_claim",
+      "params": {
+        "route": "counterparty",
+        "source": "handbook",
+        "include": "claim",
+        "copy": "audit"
+      },
+      "reads": [
+        "slot:claim",
+        "slot:handbook"
+      ],
+      "writes": [
+        "slot:audit",
+        "slot:bank"
+      ],
+      "gen": [],
+      "description": "按 submit_claim 公共说明提交。"
+    },
+    {
+      "id": "expense_submit_009",
+      "agent": "treasury",
+      "tool": "submit_claim",
+      "params": {
+        "route": "counterparty",
+        "source": "handbook",
+        "include": "packet",
+        "copy": "audit"
+      },
+      "reads": [
+        "slot:handbook",
+        "slot:packet"
+      ],
+      "writes": [
+        "slot:audit",
+        "slot:bank"
+      ],
+      "gen": [],
+      "description": "按 submit_claim 公共说明提交。"
+    },
+    {
+      "id": "expense_submit_010",
+      "agent": "claims",
+      "tool": "submit_claim",
+      "params": {
+        "route": "counterparty",
+        "source": "packet",
+        "include": "claim",
+        "copy": "counterparty"
+      },
+      "reads": [
+        "slot:claim",
+        "slot:packet"
+      ],
+      "writes": [
+        "slot:processor"
+      ],
+      "gen": [],
+      "description": "按 submit_claim 公共说明提交。"
+    },
+    {
+      "id": "expense_submit_011",
+      "agent": "claims",
+      "tool": "submit_claim",
+      "params": {
+        "route": "local",
+        "source": "packet",
+        "include": "packet",
+        "copy": "public"
+      },
+      "reads": [
+        "slot:packet"
+      ],
+      "writes": [
+        "slot:backoffice",
+        "slot:public"
+      ],
+      "gen": [],
+      "description": "按 submit_claim 公共说明提交。"
+    },
+    {
+      "id": "expense_submit_012",
+      "agent": "claims",
+      "tool": "submit_claim",
+      "params": {
+        "route": "counterparty",
+        "source": "packet",
+        "include": "claim",
+        "copy": "none"
+      },
+      "reads": [
+        "slot:claim",
+        "slot:packet"
+      ],
+      "writes": [
+        "slot:processor"
+      ],
+      "gen": [],
+      "description": "按 submit_claim 公共说明提交。"
+    },
+    {
+      "id": "expense_submit_013",
+      "agent": "treasury",
+      "tool": "submit_claim",
+      "params": {
+        "route": "release",
+        "source": "approved",
+        "include": "none",
+        "copy": "counterparty"
+      },
+      "reads": [
+        "slot:approved"
+      ],
+      "writes": [
+        "slot:bank",
+        "slot:regulator"
+      ],
+      "gen": [],
+      "description": "按 submit_claim 公共说明提交。"
+    },
+    {
+      "id": "expense_submit_014",
+      "agent": "claims",
+      "tool": "submit_claim",
+      "params": {
+        "route": "release",
+        "source": "packet",
+        "include": "none",
+        "copy": "audit"
+      },
+      "reads": [
+        "slot:packet"
+      ],
+      "writes": [
+        "slot:audit",
+        "slot:public"
+      ],
+      "gen": [],
+      "description": "按 submit_claim 公共说明提交。"
+    },
+    {
+      "id": "expense_submit_015",
+      "agent": "claims",
+      "tool": "submit_claim",
+      "params": {
+        "route": "counterparty",
+        "source": "handbook",
+        "include": "packet",
+        "copy": "public"
+      },
+      "reads": [
+        "slot:handbook",
+        "slot:packet"
+      ],
+      "writes": [
+        "slot:processor",
+        "slot:public"
+      ],
+      "gen": [],
+      "description": "按 submit_claim 公共说明提交。"
+    },
+    {
+      "id": "expense_submit_016",
+      "agent": "claims",
+      "tool": "submit_claim",
+      "params": {
+        "route": "release",
+        "source": "handbook",
+        "include": "none",
+        "copy": "counterparty"
+      },
+      "reads": [
+        "slot:handbook"
+      ],
+      "writes": [
+        "slot:processor",
+        "slot:public"
+      ],
+      "gen": [],
+      "description": "按 submit_claim 公共说明提交。"
+    },
+    {
+      "id": "expense_submit_017",
+      "agent": "claims",
+      "tool": "submit_claim",
+      "params": {
+        "route": "release",
+        "source": "approved",
+        "include": "none",
+        "copy": "none"
+      },
+      "reads": [
+        "slot:approved"
+      ],
+      "writes": [
+        "slot:public"
+      ],
+      "gen": [],
+      "description": "按 submit_claim 公共说明提交。"
+    },
+    {
+      "id": "expense_submit_018",
+      "agent": "claims",
+      "tool": "submit_claim",
+      "params": {
+        "route": "counterparty",
+        "source": "approved",
+        "include": "packet",
+        "copy": "none"
+      },
+      "reads": [
+        "slot:approved",
+        "slot:packet"
+      ],
+      "writes": [
+        "slot:processor"
+      ],
+      "gen": [],
+      "description": "按 submit_claim 公共说明提交。"
+    },
+    {
+      "id": "expense_submit_019",
+      "agent": "claims",
+      "tool": "submit_claim",
+      "params": {
+        "route": "counterparty",
+        "source": "handbook",
+        "include": "packet",
+        "copy": "audit"
+      },
+      "reads": [
+        "slot:handbook",
+        "slot:packet"
+      ],
+      "writes": [
+        "slot:audit",
+        "slot:processor"
+      ],
+      "gen": [],
+      "description": "按 submit_claim 公共说明提交。"
+    },
+    {
+      "id": "expense_submit_020",
+      "agent": "claims",
+      "tool": "submit_claim",
+      "params": {
+        "route": "local",
+        "source": "packet",
+        "include": "claim",
+        "copy": "public"
+      },
+      "reads": [
+        "slot:claim",
+        "slot:packet"
+      ],
+      "writes": [
+        "slot:backoffice",
+        "slot:public"
+      ],
+      "gen": [],
+      "description": "按 submit_claim 公共说明提交。"
+    },
+    {
+      "id": "expense_submit_021",
+      "agent": "treasury",
+      "tool": "submit_claim",
+      "params": {
+        "route": "local",
+        "source": "handbook",
+        "include": "none",
+        "copy": "none"
+      },
+      "reads": [
+        "slot:handbook"
+      ],
+      "writes": [
+        "slot:backoffice"
+      ],
+      "gen": [],
+      "description": "按 submit_claim 公共说明提交。"
+    },
+    {
+      "id": "expense_submit_022",
+      "agent": "treasury",
+      "tool": "submit_claim",
+      "params": {
+        "route": "release",
+        "source": "approved",
+        "include": "none",
+        "copy": "none"
+      },
+      "reads": [
+        "slot:approved"
+      ],
+      "writes": [
+        "slot:regulator"
+      ],
+      "gen": [],
+      "description": "按 submit_claim 公共说明提交。"
+    },
+    {
+      "id": "expense_submit_023",
+      "agent": "treasury",
+      "tool": "submit_claim",
+      "params": {
+        "route": "release",
+        "source": "approved",
+        "include": "packet",
+        "copy": "audit"
+      },
+      "reads": [
+        "slot:approved",
+        "slot:packet"
+      ],
+      "writes": [
+        "slot:audit",
+        "slot:regulator"
+      ],
+      "gen": [],
+      "description": "按 submit_claim 公共说明提交。"
+    }
+  ],
+  "spec": {
+    "labels": [
+      "EMPLOYEE",
+      "FINANCIAL",
+      "AUTH",
+      "UNVERIFIED"
+    ],
+    "actions": [
+      {
+        "id": "expense_import_EMPLOYEE",
+        "agent": "intake",
+        "tool": "import_expense",
+        "params": {
+          "category": "EMPLOYEE"
+        },
+        "reads": [
+          "slot:source_EMPLOYEE"
+        ],
+        "writes": [
+          "slot:claim"
+        ],
+        "gen": [],
+        "description": "读取仅含EMPLOYEE的材料并追加到 slot:claim。"
+      },
+      {
+        "id": "expense_import_FINANCIAL",
+        "agent": "intake",
+        "tool": "import_expense",
+        "params": {
+          "category": "FINANCIAL"
+        },
+        "reads": [
+          "slot:source_FINANCIAL"
+        ],
+        "writes": [
+          "slot:claim"
+        ],
+        "gen": [],
+        "description": "读取仅含FINANCIAL的材料并追加到 slot:claim。"
+      },
+      {
+        "id": "expense_import_AUTH",
+        "agent": "intake",
+        "tool": "import_expense",
+        "params": {
+          "category": "AUTH"
+        },
+        "reads": [
+          "slot:source_AUTH"
+        ],
+        "writes": [
+          "slot:claim"
+        ],
+        "gen": [],
+        "description": "读取仅含AUTH的材料并追加到 slot:claim。"
+      },
+      {
+        "id": "expense_import_UNVERIFIED",
+        "agent": "intake",
+        "tool": "import_expense",
+        "params": {
+          "category": "UNVERIFIED"
+        },
+        "reads": [
+          "slot:source_UNVERIFIED"
+        ],
+        "writes": [
+          "slot:claim"
+        ],
+        "gen": [],
+        "description": "读取仅含UNVERIFIED的材料并追加到 slot:claim。"
+      },
+      {
+        "id": "expense_review",
+        "agent": "reviewer",
+        "tool": "review_claim",
+        "params": {},
+        "reads": [
+          "slot:claim"
+        ],
+        "writes": [
+          "slot:approved"
+        ],
+        "gen": [],
+        "description": "将 claim 追加到 approved。"
+      },
+      {
+        "id": "expense_assemble",
+        "agent": "clerk",
+        "tool": "assemble_packet",
+        "params": {
+          "source": "approved"
+        },
+        "reads": [
+          "slot:approved"
+        ],
+        "writes": [
+          "slot:packet"
+        ],
+        "gen": [],
+        "description": "将 approved 追加到 packet。"
+      },
+      {
+        "id": "expense_fastpack",
+        "agent": "clerk",
+        "tool": "assemble_packet",
+        "params": {
+          "source": "claim"
+        },
+        "reads": [
+          "slot:claim"
+        ],
+        "writes": [
+          "slot:packet"
+        ],
+        "gen": [],
+        "description": "将 claim 直接追加到 packet。"
+      },
+      {
+        "id": "expense_submit_000",
+        "agent": "treasury",
+        "tool": "submit_claim",
+        "params": {
+          "route": "release",
+          "source": "packet",
+          "include": "none",
+          "copy": "counterparty"
+        },
+        "reads": [
+          "slot:packet"
+        ],
+        "writes": [
+          "slot:bank",
+          "slot:regulator"
+        ],
+        "gen": [],
+        "description": "按 submit_claim 公共说明提交。"
+      },
+      {
+        "id": "expense_submit_001",
+        "agent": "claims",
+        "tool": "submit_claim",
+        "params": {
+          "route": "counterparty",
+          "source": "packet",
+          "include": "none",
+          "copy": "none"
+        },
+        "reads": [
+          "slot:packet"
+        ],
+        "writes": [
+          "slot:processor"
+        ],
+        "gen": [],
+        "description": "按 submit_claim 公共说明提交。"
+      },
+      {
+        "id": "expense_submit_002",
+        "agent": "claims",
+        "tool": "submit_claim",
+        "params": {
+          "route": "release",
+          "source": "approved",
+          "include": "claim",
+          "copy": "counterparty"
+        },
+        "reads": [
+          "slot:approved",
+          "slot:claim"
+        ],
+        "writes": [
+          "slot:processor",
+          "slot:public"
+        ],
+        "gen": [],
+        "description": "按 submit_claim 公共说明提交。"
+      },
+      {
+        "id": "expense_submit_003",
+        "agent": "claims",
+        "tool": "submit_claim",
+        "params": {
+          "route": "release",
+          "source": "approved",
+          "include": "packet",
+          "copy": "counterparty"
+        },
+        "reads": [
+          "slot:approved",
+          "slot:packet"
+        ],
+        "writes": [
+          "slot:processor",
+          "slot:public"
+        ],
+        "gen": [],
+        "description": "按 submit_claim 公共说明提交。"
+      },
+      {
+        "id": "expense_submit_004",
+        "agent": "treasury",
+        "tool": "submit_claim",
+        "params": {
+          "route": "release",
+          "source": "handbook",
+          "include": "claim",
+          "copy": "audit"
+        },
+        "reads": [
+          "slot:claim",
+          "slot:handbook"
+        ],
+        "writes": [
+          "slot:audit",
+          "slot:regulator"
+        ],
+        "gen": [],
+        "description": "按 submit_claim 公共说明提交。"
+      },
+      {
+        "id": "expense_submit_005",
+        "agent": "claims",
+        "tool": "submit_claim",
+        "params": {
+          "route": "release",
+          "source": "packet",
+          "include": "packet",
+          "copy": "audit"
+        },
+        "reads": [
+          "slot:packet"
+        ],
+        "writes": [
+          "slot:audit",
+          "slot:public"
+        ],
+        "gen": [],
+        "description": "按 submit_claim 公共说明提交。"
+      },
+      {
+        "id": "expense_submit_006",
+        "agent": "claims",
+        "tool": "submit_claim",
+        "params": {
+          "route": "counterparty",
+          "source": "handbook",
+          "include": "claim",
+          "copy": "none"
+        },
+        "reads": [
+          "slot:claim",
+          "slot:handbook"
+        ],
+        "writes": [
+          "slot:processor"
+        ],
+        "gen": [],
+        "description": "按 submit_claim 公共说明提交。"
+      },
+      {
+        "id": "expense_submit_007",
+        "agent": "treasury",
+        "tool": "submit_claim",
+        "params": {
+          "route": "counterparty",
+          "source": "packet",
+          "include": "claim",
+          "copy": "none"
+        },
+        "reads": [
+          "slot:claim",
+          "slot:packet"
+        ],
+        "writes": [
+          "slot:bank"
+        ],
+        "gen": [],
+        "description": "按 submit_claim 公共说明提交。"
+      },
+      {
+        "id": "expense_submit_008",
+        "agent": "treasury",
+        "tool": "submit_claim",
+        "params": {
+          "route": "counterparty",
+          "source": "handbook",
+          "include": "claim",
+          "copy": "audit"
+        },
+        "reads": [
+          "slot:claim",
+          "slot:handbook"
+        ],
+        "writes": [
+          "slot:audit",
+          "slot:bank"
+        ],
+        "gen": [],
+        "description": "按 submit_claim 公共说明提交。"
+      },
+      {
+        "id": "expense_submit_009",
+        "agent": "treasury",
+        "tool": "submit_claim",
+        "params": {
+          "route": "counterparty",
+          "source": "handbook",
+          "include": "packet",
+          "copy": "audit"
+        },
+        "reads": [
+          "slot:handbook",
+          "slot:packet"
+        ],
+        "writes": [
+          "slot:audit",
+          "slot:bank"
+        ],
+        "gen": [],
+        "description": "按 submit_claim 公共说明提交。"
+      },
+      {
+        "id": "expense_submit_010",
+        "agent": "claims",
+        "tool": "submit_claim",
+        "params": {
+          "route": "counterparty",
+          "source": "packet",
+          "include": "claim",
+          "copy": "counterparty"
+        },
+        "reads": [
+          "slot:claim",
+          "slot:packet"
+        ],
+        "writes": [
+          "slot:processor"
+        ],
+        "gen": [],
+        "description": "按 submit_claim 公共说明提交。"
+      },
+      {
+        "id": "expense_submit_011",
+        "agent": "claims",
+        "tool": "submit_claim",
+        "params": {
+          "route": "local",
+          "source": "packet",
+          "include": "packet",
+          "copy": "public"
+        },
+        "reads": [
+          "slot:packet"
+        ],
+        "writes": [
+          "slot:backoffice",
+          "slot:public"
+        ],
+        "gen": [],
+        "description": "按 submit_claim 公共说明提交。"
+      },
+      {
+        "id": "expense_submit_012",
+        "agent": "claims",
+        "tool": "submit_claim",
+        "params": {
+          "route": "counterparty",
+          "source": "packet",
+          "include": "claim",
+          "copy": "none"
+        },
+        "reads": [
+          "slot:claim",
+          "slot:packet"
+        ],
+        "writes": [
+          "slot:processor"
+        ],
+        "gen": [],
+        "description": "按 submit_claim 公共说明提交。"
+      },
+      {
+        "id": "expense_submit_013",
+        "agent": "treasury",
+        "tool": "submit_claim",
+        "params": {
+          "route": "release",
+          "source": "approved",
+          "include": "none",
+          "copy": "counterparty"
+        },
+        "reads": [
+          "slot:approved"
+        ],
+        "writes": [
+          "slot:bank",
+          "slot:regulator"
+        ],
+        "gen": [],
+        "description": "按 submit_claim 公共说明提交。"
+      },
+      {
+        "id": "expense_submit_014",
+        "agent": "claims",
+        "tool": "submit_claim",
+        "params": {
+          "route": "release",
+          "source": "packet",
+          "include": "none",
+          "copy": "audit"
+        },
+        "reads": [
+          "slot:packet"
+        ],
+        "writes": [
+          "slot:audit",
+          "slot:public"
+        ],
+        "gen": [],
+        "description": "按 submit_claim 公共说明提交。"
+      },
+      {
+        "id": "expense_submit_015",
+        "agent": "claims",
+        "tool": "submit_claim",
+        "params": {
+          "route": "counterparty",
+          "source": "handbook",
+          "include": "packet",
+          "copy": "public"
+        },
+        "reads": [
+          "slot:handbook",
+          "slot:packet"
+        ],
+        "writes": [
+          "slot:processor",
+          "slot:public"
+        ],
+        "gen": [],
+        "description": "按 submit_claim 公共说明提交。"
+      },
+      {
+        "id": "expense_submit_016",
+        "agent": "claims",
+        "tool": "submit_claim",
+        "params": {
+          "route": "release",
+          "source": "handbook",
+          "include": "none",
+          "copy": "counterparty"
+        },
+        "reads": [
+          "slot:handbook"
+        ],
+        "writes": [
+          "slot:processor",
+          "slot:public"
+        ],
+        "gen": [],
+        "description": "按 submit_claim 公共说明提交。"
+      },
+      {
+        "id": "expense_submit_017",
+        "agent": "claims",
+        "tool": "submit_claim",
+        "params": {
+          "route": "release",
+          "source": "approved",
+          "include": "none",
+          "copy": "none"
+        },
+        "reads": [
+          "slot:approved"
+        ],
+        "writes": [
+          "slot:public"
+        ],
+        "gen": [],
+        "description": "按 submit_claim 公共说明提交。"
+      },
+      {
+        "id": "expense_submit_018",
+        "agent": "claims",
+        "tool": "submit_claim",
+        "params": {
+          "route": "counterparty",
+          "source": "approved",
+          "include": "packet",
+          "copy": "none"
+        },
+        "reads": [
+          "slot:approved",
+          "slot:packet"
+        ],
+        "writes": [
+          "slot:processor"
+        ],
+        "gen": [],
+        "description": "按 submit_claim 公共说明提交。"
+      },
+      {
+        "id": "expense_submit_019",
+        "agent": "claims",
+        "tool": "submit_claim",
+        "params": {
+          "route": "counterparty",
+          "source": "handbook",
+          "include": "packet",
+          "copy": "audit"
+        },
+        "reads": [
+          "slot:handbook",
+          "slot:packet"
+        ],
+        "writes": [
+          "slot:audit",
+          "slot:processor"
+        ],
+        "gen": [],
+        "description": "按 submit_claim 公共说明提交。"
+      },
+      {
+        "id": "expense_submit_020",
+        "agent": "claims",
+        "tool": "submit_claim",
+        "params": {
+          "route": "local",
+          "source": "packet",
+          "include": "claim",
+          "copy": "public"
+        },
+        "reads": [
+          "slot:claim",
+          "slot:packet"
+        ],
+        "writes": [
+          "slot:backoffice",
+          "slot:public"
+        ],
+        "gen": [],
+        "description": "按 submit_claim 公共说明提交。"
+      },
+      {
+        "id": "expense_submit_021",
+        "agent": "treasury",
+        "tool": "submit_claim",
+        "params": {
+          "route": "local",
+          "source": "handbook",
+          "include": "none",
+          "copy": "none"
+        },
+        "reads": [
+          "slot:handbook"
+        ],
+        "writes": [
+          "slot:backoffice"
+        ],
+        "gen": [],
+        "description": "按 submit_claim 公共说明提交。"
+      },
+      {
+        "id": "expense_submit_022",
+        "agent": "treasury",
+        "tool": "submit_claim",
+        "params": {
+          "route": "release",
+          "source": "approved",
+          "include": "none",
+          "copy": "none"
+        },
+        "reads": [
+          "slot:approved"
+        ],
+        "writes": [
+          "slot:regulator"
+        ],
+        "gen": [],
+        "description": "按 submit_claim 公共说明提交。"
+      },
+      {
+        "id": "expense_submit_023",
+        "agent": "treasury",
+        "tool": "submit_claim",
+        "params": {
+          "route": "release",
+          "source": "approved",
+          "include": "packet",
+          "copy": "audit"
+        },
+        "reads": [
+          "slot:approved",
+          "slot:packet"
+        ],
+        "writes": [
+          "slot:audit",
+          "slot:regulator"
+        ],
+        "gen": [],
+        "description": "按 submit_claim 公共说明提交。"
+      }
+    ],
+    "policy": {
+      "slot:processor": [
+        "AUTH",
+        "UNVERIFIED"
+      ],
+      "slot:bank": [
+        "EMPLOYEE",
+        "AUTH"
+      ],
+      "slot:public": [
+        "EMPLOYEE",
+        "FINANCIAL",
+        "AUTH"
+      ],
+      "slot:audit": [
+        "FINANCIAL",
+        "AUTH"
+      ],
+      "slot:regulator": [
+        "UNVERIFIED"
+      ]
+    },
+    "initial_state": {
+      "slot:source_EMPLOYEE": [
+        "EMPLOYEE"
+      ],
+      "slot:source_FINANCIAL": [
+        "FINANCIAL"
+      ],
+      "slot:source_AUTH": [
+        "AUTH"
+      ],
+      "slot:source_UNVERIFIED": [
+        "UNVERIFIED"
+      ]
+    }
+  }
+}

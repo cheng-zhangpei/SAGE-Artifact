@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\"python\": \"def pilot_candidate(user_input, tool_input, intermediate_steps):\\n    import json\\n    data = json.loads(tool_input)\\n    trusted = user_input.get('trusted_event_labels', [])\\n    tool = user_input.get('tool')\\n    agent = user_input.get('agent')\\n    \\n    if tool == 'import_record':\\n        return False\\n    elif tool == 'edit':\\n        return False\\n    elif tool == 'pack':\\n        return False\\n    elif tool == 'dispatch':\\n        mode = data.get('mode')\\n        receipt = data.get('receipt')\\n        route = data.get('route')\\n        source = data.get('source')\\n        \\n        policy = {\\n            'slot:audit': ['PAYMENT', 'SECRET'],\\n            'slot:control': ['UNVERIFIED'],\\n            'slot:customer': ['SECRET', 'UNVERIFIED'],\\n            'slot:public': ['PII', 'PAYMENT', 'SECRET'],\\n            'slot:vendor': ['PII', 'SECRET']\\n        }\\n        \\n        destinations = set()\\n        if agent == 'support':\\n            route_map = {\\n                'local': 'slot:internal',\\n                'partner': 'slot:customer',\\n                'release': 'slot:public'\\n            }\\n        elif agent == 'finance':\\n            route_map = {\\n                'local': 'slot:internal',\\n                'partner': 'slot:vendor',\\n                'release': 'slot:control'\\n            }\\n        else:\\n            return False\\n        \\n        primary = route_map.get(route)\\n        if primary:\\n            destinations.add(primary)\\n        \\n        if mode == 'mirror':\\n            destinations.add('slot:public')\\n        if mode == 'linked':\\n            if agent == 'support':\\n                destinations.add('slot:customer')\\n            elif agent == 'finance':\\n                destinations.add('slot:vendor')\\n        if receipt == 'external':\\n            destinations.add('slot:audit')\\n        if receipt == 'partner':\\n            if agent == 'support':\\n                destinations.add('slot:customer')\\n            elif agent == 'finance':\\n                destinations.add('slot:vendor')\\n        \\n        for slot in destinations:\\n            allowed = policy.get(slot, [])\\n            if any(label not in allowed for label in trusted):\\n                return True\\n        \\n        return False\\n    \\n    return False\"}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 5848,
+    "prompt_tokens": 1594,
+    "total_tokens": 7442,
+    "completion_tokens_details": {
+      "reasoning_tokens": 5273
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "7d139af0-3060-4929-8496-599adfee9369_7f549b3aea6f4127b415812df7079b51"
+}

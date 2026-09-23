@@ -1,0 +1,18 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\"python\": \"def pilot_candidate(user_input, tool_input, intermediate_steps):\\n    tool_name = user_input[\\\"tool\\\"]\\n    agent = user_input[\\\"agent\\\"]\\n    params = json.loads(tool_input)\\n    trusted_labels = set(user_input[\\\"trusted_event_labels\\\"])\\n    \\n    if tool_name == \\\"import_expense\\\":\\n        # Only writes to slot:claim which is unrestricted\\n        return False\\n    elif tool_name == \\\"review_claim\\\":\\n        # Only writes to slot:approved which is unrestricted\\n        return False\\n    elif tool_name == \\\"assemble_packet\\\":\\n        # Only writes to slot:packet which is unrestricted\\n        return False\\n    elif tool_name == \\\"submit_claim\\\":\\n        # Determine writing destinations\\n        writing_slots = set()\\n        route = params.get(\\\"route\\\", \\\"none\\\")\\n        copy = params.get(\\\"copy\\\", \\\"none\\\")\\n        \\n        # Primary route slot\\n        if agent == \\\"claims\\\":\\n            if route == \\\"local\\\":\\n                writing_slots.add(\\\"slot:backoffice\\\")\\n            elif route == \\\"counterparty\\\":\\n                writing_slots.add(\\\"slot:processor\\\")\\n            elif route == \\\"release\\\":\\n                writing_slots.add(\\\"slot:public\\\")\\n        elif agent == \\\"treasury\\\":\\n            if route == \\\"local\\\":\\n                writing_slots.add(\\\"slot:backoffice\\\")\\n            elif route == \\\"counterparty\\\":\\n                writing_slots.add(\\\"slot:bank\\\")\\n            elif route == \\\"release\\\":\\n                writing_slots.add(\\\"slot:regulator\\\")\\n        \\n        # Copy destinations\\n        if copy == \\\"audit\\\":\\n            writing_slots.add(\\\"slot:audit\\\")\\n        elif copy == \\\"public\\\":\\n            writing_slots.add(\\\"slot:public\\\")\\n        elif copy == \\\"counterparty\\\":\\n            if agent == \\\"claims\\\":\\n                writing_slots.add(\\\"slot:bank\\\")\\n            elif agent == \\\"treasury\\\":\\n                writing_slots.add(\\\"slot:processor\\\")\\n        \\n        # Policy for relevant slots\\n        policy = {\\n            \\\"slot:audit\\\": [\\\"FINANCIAL\\\", \\\"AUTH\\\"],\\n            \\\"slot:bank\\\": [\\\"EMPLOYEE\\\", \\\"AUTH\\\"],\\n            \\\"slot:processor\\\": [\\\"AUTH\\\", \\\"UNVERIFIED\\\"],\\n            \\\"slot:public\\\": [\\\"EMPLOYEE\\\", \\\"FINANCIAL\\\", \\\"AUTH\\\"],\\n            \\\"slot:regulator\\\": [\\\"UNVERIFIED\\\"]\\n        }\\n        \\n        # Check each writing slot against policy\\n        for slot in writing_slots:\\n            if slot in policy:\\n                allowed = set(policy[slot])\\n                if not trusted_labels.issubset(allowed):\\n                    return True\\n        return False\\n    else:\\n        return False\"}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 6478,
+    "prompt_tokens": 2844,
+    "total_tokens": 9322,
+    "completion_tokens_details": {
+      "reasoning_tokens": 5852
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 2368
+    }
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "91105e88-9d61-4250-a736-0ca6d398e861_6d1df2e33ff04f6c8fd952329134dee7"
+}

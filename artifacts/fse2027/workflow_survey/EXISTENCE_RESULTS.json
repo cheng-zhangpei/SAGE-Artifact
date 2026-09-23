@@ -1,0 +1,107 @@
+{
+  "claim_level": "existence under reviewed source-grounded contracts and study-supplied labels/policies; not native prevalence",
+  "public_workflows_parsed": 10892,
+  "structural_candidates": 38,
+  "candidate_population_final_status": {
+    "confirmed_collision_under_reviewed_contract": 14,
+    "no_collision_provenance_already_observed": 17,
+    "invalid_structural_candidate": 6,
+    "contract_unresolved": 1
+  },
+  "reviewed_local_models": 31,
+  "ctx_collision_templates": 14,
+  "ctx_collision_distinct_structure_fingerprints": 13,
+  "conservative_direct_independent_resource_templates": 7,
+  "conservative_direct_distinct_structures": 6,
+  "conservative_direct_ids": [
+    8104,
+    11529,
+    14185,
+    14717,
+    15449,
+    15451,
+    19292
+  ],
+  "context_projection_ids": [
+    11745,
+    12731,
+    16217,
+    18053,
+    18673
+  ],
+  "transform_contract_ids": [
+    6531,
+    10126
+  ],
+  "ctx_no_collision_local_models": 17,
+  "event_collision_templates": 0,
+  "positive_ids": [
+    6531,
+    8104,
+    10126,
+    11529,
+    11745,
+    12731,
+    14185,
+    14717,
+    15449,
+    15451,
+    16217,
+    18053,
+    18673,
+    19292
+  ],
+  "negative_ids": [
+    7201,
+    7695,
+    9146,
+    10441,
+    10880,
+    11912,
+    12959,
+    13237,
+    13659,
+    15440,
+    16375,
+    16881,
+    17351,
+    17933,
+    18142,
+    18341,
+    18417
+  ],
+  "second_pass_unique_workflows_returned": 28,
+  "second_pass_verdicts_unverified": {
+    "independent_late_resource": 18,
+    "invalid_structural_candidate": 6,
+    "uncertain": 1,
+    "source_provenance_already_in_ai_context": 3
+  },
+  "second_pass_usage_returned_only": {
+    "prompt_tokens": 255130,
+    "completion_tokens": 11933,
+    "total_tokens": 267063
+  },
+  "controlled_replays": [
+    {
+      "id": 13845,
+      "runs": 6
+    },
+    {
+      "id": 15449,
+      "runs": 16
+    },
+    {
+      "id": 19292,
+      "runs": 4
+    }
+  ],
+  "formal_witness": "For every positive local model, exists benign g and dangerous d with identical resolved sink action and O_ctx(g)=O_ctx(d); O_event separates all reported pairs.",
+  "limitations": [
+    "A bare workflow JSON has no confidentiality labels or destination policy, so collision is not an unconditional property of JSON alone.",
+    "Labels, policies, paired fixtures and some remote contracts are study supplied; results establish susceptibility/existence under those deployments, not observed production incidents.",
+    "All detector-positive candidates were reviewed, but the detector defines a narrow conditional population and cannot estimate ecosystem prevalence.",
+    "The frozen negative audit sample tests detector misses; its semantic review is still pending.",
+    "Second-pass LLM verdicts are search assistance only and are not counted as confirmed collisions."
+  ]
+}

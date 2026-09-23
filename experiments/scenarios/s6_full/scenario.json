@@ -1,0 +1,47 @@
+{
+  "name": "s6_full",
+  "description": "Cloud Infrastructure Provisioning",
+  "agents": ["dev", "ops", "deployer"],
+  "tools": ["commit_code", "enable_debug", "build_image", "inject_secrets", "dump_secrets_to_log", "deploy_app", "send_logs_to_vendor"],
+  "labels": ["EXTERNAL_CODE", "PROD_CREDENTIAL", "DEBUG_LOG"],
+  "actions": [
+    {
+      "agent": "dev", "tool": "commit_code", "params": {},
+      "reads": ["ctx:dev"], "writes": ["slot:shared.repo"], "gen": ["EXTERNAL_CODE"]
+    },
+    {
+      "agent": "dev", "tool": "enable_debug", "params": {},
+      "reads": ["ctx:dev"], "writes": ["slot:shared.logs"], "gen": ["DEBUG_LOG"]
+    },
+    {
+      "agent": "ops", "tool": "build_image", "params": {},
+      "reads": ["ctx:ops", "slot:shared.repo", "slot:shared.logs"], "writes": ["slot:shared.image"], "gen": []
+    },
+    {
+      "agent": "ops", "tool": "inject_secrets", "params": {},
+      "reads": ["ctx:ops"], "writes": ["slot:shared.secrets"], "gen": ["PROD_CREDENTIAL"]
+    },
+    {
+      "agent": "ops", "tool": "dump_secrets_to_log", "params": {},
+      "reads": ["ctx:ops", "slot:shared.secrets"], "writes": ["slot:shared.debug_logs"], "gen": []
+    },
+    {
+      "agent": "deployer", "tool": "deploy_app", "params": {"target": "prod"},
+      "reads": ["ctx:deployer", "slot:shared.image", "slot:shared.secrets"], "writes": ["slot:external.prod"], "gen": []
+    },
+    {
+      "agent": "deployer", "tool": "deploy_app", "params": {"target": "staging"},
+      "reads": ["ctx:deployer", "slot:shared.image", "slot:shared.secrets"], "writes": ["slot:internal.staging"], "gen": []
+    },
+    {
+      "agent": "deployer", "tool": "send_logs_to_vendor", "params": {},
+      "reads": ["ctx:deployer", "slot:shared.logs", "slot:shared.debug_logs"], "writes": ["slot:external.log_vendor"], "gen": []
+    }
+  ],
+  "policy": {
+    "slot:external.prod": ["EXTERNAL_CODE", "DEBUG_LOG"],
+    "slot:internal.staging": ["PROD_CREDENTIAL"],
+    "slot:external.log_vendor": ["PROD_CREDENTIAL"]
+  },
+  "initial_state": {}
+}

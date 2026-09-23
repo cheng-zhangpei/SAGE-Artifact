@@ -1,0 +1,602 @@
+{
+  "id": "COMP-CLINICAL-REFERRAL-08",
+  "family": "clinical_referral",
+  "dispatch_count": 8,
+  "labels": {
+    "PATIENT": "患者身份与联系方式",
+    "DIAGNOSIS": "诊断与治疗资料",
+    "AUTH": "转诊授权凭据",
+    "UNVERIFIED": "未经核验的外部检查材料"
+  },
+  "actions": [
+    {
+      "id": "CLIN_import_PATIENT",
+      "agent": "intake",
+      "tool": "register_material",
+      "params": {
+        "category": "PATIENT"
+      },
+      "reads": [
+        "slot:source_PATIENT"
+      ],
+      "writes": [
+        "slot:referral"
+      ],
+      "gen": [],
+      "description": "读取仅含PATIENT的材料并追加到 slot:referral。"
+    },
+    {
+      "id": "CLIN_import_DIAGNOSIS",
+      "agent": "intake",
+      "tool": "register_material",
+      "params": {
+        "category": "DIAGNOSIS"
+      },
+      "reads": [
+        "slot:source_DIAGNOSIS"
+      ],
+      "writes": [
+        "slot:referral"
+      ],
+      "gen": [],
+      "description": "读取仅含DIAGNOSIS的材料并追加到 slot:referral。"
+    },
+    {
+      "id": "CLIN_import_AUTH",
+      "agent": "intake",
+      "tool": "register_material",
+      "params": {
+        "category": "AUTH"
+      },
+      "reads": [
+        "slot:source_AUTH"
+      ],
+      "writes": [
+        "slot:referral"
+      ],
+      "gen": [],
+      "description": "读取仅含AUTH的材料并追加到 slot:referral。"
+    },
+    {
+      "id": "CLIN_import_UNVERIFIED",
+      "agent": "intake",
+      "tool": "register_material",
+      "params": {
+        "category": "UNVERIFIED"
+      },
+      "reads": [
+        "slot:source_UNVERIFIED"
+      ],
+      "writes": [
+        "slot:referral"
+      ],
+      "gen": [],
+      "description": "读取仅含UNVERIFIED的材料并追加到 slot:referral。"
+    },
+    {
+      "id": "CLIN_review",
+      "agent": "clinician",
+      "tool": "review_referral",
+      "params": {},
+      "reads": [
+        "slot:referral"
+      ],
+      "writes": [
+        "slot:reviewed"
+      ],
+      "gen": [],
+      "description": "将 referral 追加到 reviewed。"
+    },
+    {
+      "id": "CLIN_bundle",
+      "agent": "coordinator",
+      "tool": "assemble_referral",
+      "params": {
+        "source": "reviewed"
+      },
+      "reads": [
+        "slot:reviewed"
+      ],
+      "writes": [
+        "slot:packet"
+      ],
+      "gen": [],
+      "description": "将 reviewed 追加到 packet。"
+    },
+    {
+      "id": "CLIN_fastpack",
+      "agent": "coordinator",
+      "tool": "assemble_referral",
+      "params": {
+        "source": "referral"
+      },
+      "reads": [
+        "slot:referral"
+      ],
+      "writes": [
+        "slot:packet"
+      ],
+      "gen": [],
+      "description": "将 referral 直接追加到 packet。"
+    },
+    {
+      "id": "CLIN_dispatch_000",
+      "agent": "care",
+      "tool": "route_referral",
+      "params": {
+        "destination": "release",
+        "source": "reviewed",
+        "attachment": "packet",
+        "record": "partner"
+      },
+      "reads": [
+        "slot:packet",
+        "slot:reviewed"
+      ],
+      "writes": [
+        "slot:public",
+        "slot:scheduler"
+      ],
+      "gen": [],
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "id": "CLIN_dispatch_001",
+      "agent": "care",
+      "tool": "route_referral",
+      "params": {
+        "destination": "local",
+        "source": "clinic_notice",
+        "attachment": "referral",
+        "record": "partner"
+      },
+      "reads": [
+        "slot:clinic_notice",
+        "slot:referral"
+      ],
+      "writes": [
+        "slot:hospital",
+        "slot:scheduler"
+      ],
+      "gen": [],
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "id": "CLIN_dispatch_002",
+      "agent": "care",
+      "tool": "route_referral",
+      "params": {
+        "destination": "partner",
+        "source": "packet",
+        "attachment": "none",
+        "record": "public"
+      },
+      "reads": [
+        "slot:packet"
+      ],
+      "writes": [
+        "slot:public",
+        "slot:scheduler"
+      ],
+      "gen": [],
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "id": "CLIN_dispatch_003",
+      "agent": "research",
+      "tool": "route_referral",
+      "params": {
+        "destination": "local",
+        "source": "clinic_notice",
+        "attachment": "referral",
+        "record": "public"
+      },
+      "reads": [
+        "slot:clinic_notice",
+        "slot:referral"
+      ],
+      "writes": [
+        "slot:hospital",
+        "slot:public"
+      ],
+      "gen": [],
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "id": "CLIN_dispatch_004",
+      "agent": "research",
+      "tool": "route_referral",
+      "params": {
+        "destination": "release",
+        "source": "packet",
+        "attachment": "packet",
+        "record": "none"
+      },
+      "reads": [
+        "slot:packet"
+      ],
+      "writes": [
+        "slot:lab"
+      ],
+      "gen": [],
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "id": "CLIN_dispatch_005",
+      "agent": "care",
+      "tool": "route_referral",
+      "params": {
+        "destination": "partner",
+        "source": "packet",
+        "attachment": "packet",
+        "record": "partner"
+      },
+      "reads": [
+        "slot:packet"
+      ],
+      "writes": [
+        "slot:scheduler"
+      ],
+      "gen": [],
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "id": "CLIN_dispatch_006",
+      "agent": "care",
+      "tool": "route_referral",
+      "params": {
+        "destination": "partner",
+        "source": "packet",
+        "attachment": "packet",
+        "record": "none"
+      },
+      "reads": [
+        "slot:packet"
+      ],
+      "writes": [
+        "slot:scheduler"
+      ],
+      "gen": [],
+      "description": "按 route_referral 公共说明执行。"
+    },
+    {
+      "id": "CLIN_dispatch_007",
+      "agent": "research",
+      "tool": "route_referral",
+      "params": {
+        "destination": "partner",
+        "source": "clinic_notice",
+        "attachment": "referral",
+        "record": "audit"
+      },
+      "reads": [
+        "slot:clinic_notice",
+        "slot:referral"
+      ],
+      "writes": [
+        "slot:audit",
+        "slot:research"
+      ],
+      "gen": [],
+      "description": "按 route_referral 公共说明执行。"
+    }
+  ],
+  "spec": {
+    "labels": [
+      "PATIENT",
+      "DIAGNOSIS",
+      "AUTH",
+      "UNVERIFIED"
+    ],
+    "actions": [
+      {
+        "id": "CLIN_import_PATIENT",
+        "agent": "intake",
+        "tool": "register_material",
+        "params": {
+          "category": "PATIENT"
+        },
+        "reads": [
+          "slot:source_PATIENT"
+        ],
+        "writes": [
+          "slot:referral"
+        ],
+        "gen": [],
+        "description": "读取仅含PATIENT的材料并追加到 slot:referral。"
+      },
+      {
+        "id": "CLIN_import_DIAGNOSIS",
+        "agent": "intake",
+        "tool": "register_material",
+        "params": {
+          "category": "DIAGNOSIS"
+        },
+        "reads": [
+          "slot:source_DIAGNOSIS"
+        ],
+        "writes": [
+          "slot:referral"
+        ],
+        "gen": [],
+        "description": "读取仅含DIAGNOSIS的材料并追加到 slot:referral。"
+      },
+      {
+        "id": "CLIN_import_AUTH",
+        "agent": "intake",
+        "tool": "register_material",
+        "params": {
+          "category": "AUTH"
+        },
+        "reads": [
+          "slot:source_AUTH"
+        ],
+        "writes": [
+          "slot:referral"
+        ],
+        "gen": [],
+        "description": "读取仅含AUTH的材料并追加到 slot:referral。"
+      },
+      {
+        "id": "CLIN_import_UNVERIFIED",
+        "agent": "intake",
+        "tool": "register_material",
+        "params": {
+          "category": "UNVERIFIED"
+        },
+        "reads": [
+          "slot:source_UNVERIFIED"
+        ],
+        "writes": [
+          "slot:referral"
+        ],
+        "gen": [],
+        "description": "读取仅含UNVERIFIED的材料并追加到 slot:referral。"
+      },
+      {
+        "id": "CLIN_review",
+        "agent": "clinician",
+        "tool": "review_referral",
+        "params": {},
+        "reads": [
+          "slot:referral"
+        ],
+        "writes": [
+          "slot:reviewed"
+        ],
+        "gen": [],
+        "description": "将 referral 追加到 reviewed。"
+      },
+      {
+        "id": "CLIN_bundle",
+        "agent": "coordinator",
+        "tool": "assemble_referral",
+        "params": {
+          "source": "reviewed"
+        },
+        "reads": [
+          "slot:reviewed"
+        ],
+        "writes": [
+          "slot:packet"
+        ],
+        "gen": [],
+        "description": "将 reviewed 追加到 packet。"
+      },
+      {
+        "id": "CLIN_fastpack",
+        "agent": "coordinator",
+        "tool": "assemble_referral",
+        "params": {
+          "source": "referral"
+        },
+        "reads": [
+          "slot:referral"
+        ],
+        "writes": [
+          "slot:packet"
+        ],
+        "gen": [],
+        "description": "将 referral 直接追加到 packet。"
+      },
+      {
+        "id": "CLIN_dispatch_000",
+        "agent": "care",
+        "tool": "route_referral",
+        "params": {
+          "destination": "release",
+          "source": "reviewed",
+          "attachment": "packet",
+          "record": "partner"
+        },
+        "reads": [
+          "slot:packet",
+          "slot:reviewed"
+        ],
+        "writes": [
+          "slot:public",
+          "slot:scheduler"
+        ],
+        "gen": [],
+        "description": "按 route_referral 公共说明执行。"
+      },
+      {
+        "id": "CLIN_dispatch_001",
+        "agent": "care",
+        "tool": "route_referral",
+        "params": {
+          "destination": "local",
+          "source": "clinic_notice",
+          "attachment": "referral",
+          "record": "partner"
+        },
+        "reads": [
+          "slot:clinic_notice",
+          "slot:referral"
+        ],
+        "writes": [
+          "slot:hospital",
+          "slot:scheduler"
+        ],
+        "gen": [],
+        "description": "按 route_referral 公共说明执行。"
+      },
+      {
+        "id": "CLIN_dispatch_002",
+        "agent": "care",
+        "tool": "route_referral",
+        "params": {
+          "destination": "partner",
+          "source": "packet",
+          "attachment": "none",
+          "record": "public"
+        },
+        "reads": [
+          "slot:packet"
+        ],
+        "writes": [
+          "slot:public",
+          "slot:scheduler"
+        ],
+        "gen": [],
+        "description": "按 route_referral 公共说明执行。"
+      },
+      {
+        "id": "CLIN_dispatch_003",
+        "agent": "research",
+        "tool": "route_referral",
+        "params": {
+          "destination": "local",
+          "source": "clinic_notice",
+          "attachment": "referral",
+          "record": "public"
+        },
+        "reads": [
+          "slot:clinic_notice",
+          "slot:referral"
+        ],
+        "writes": [
+          "slot:hospital",
+          "slot:public"
+        ],
+        "gen": [],
+        "description": "按 route_referral 公共说明执行。"
+      },
+      {
+        "id": "CLIN_dispatch_004",
+        "agent": "research",
+        "tool": "route_referral",
+        "params": {
+          "destination": "release",
+          "source": "packet",
+          "attachment": "packet",
+          "record": "none"
+        },
+        "reads": [
+          "slot:packet"
+        ],
+        "writes": [
+          "slot:lab"
+        ],
+        "gen": [],
+        "description": "按 route_referral 公共说明执行。"
+      },
+      {
+        "id": "CLIN_dispatch_005",
+        "agent": "care",
+        "tool": "route_referral",
+        "params": {
+          "destination": "partner",
+          "source": "packet",
+          "attachment": "packet",
+          "record": "partner"
+        },
+        "reads": [
+          "slot:packet"
+        ],
+        "writes": [
+          "slot:scheduler"
+        ],
+        "gen": [],
+        "description": "按 route_referral 公共说明执行。"
+      },
+      {
+        "id": "CLIN_dispatch_006",
+        "agent": "care",
+        "tool": "route_referral",
+        "params": {
+          "destination": "partner",
+          "source": "packet",
+          "attachment": "packet",
+          "record": "none"
+        },
+        "reads": [
+          "slot:packet"
+        ],
+        "writes": [
+          "slot:scheduler"
+        ],
+        "gen": [],
+        "description": "按 route_referral 公共说明执行。"
+      },
+      {
+        "id": "CLIN_dispatch_007",
+        "agent": "research",
+        "tool": "route_referral",
+        "params": {
+          "destination": "partner",
+          "source": "clinic_notice",
+          "attachment": "referral",
+          "record": "audit"
+        },
+        "reads": [
+          "slot:clinic_notice",
+          "slot:referral"
+        ],
+        "writes": [
+          "slot:audit",
+          "slot:research"
+        ],
+        "gen": [],
+        "description": "按 route_referral 公共说明执行。"
+      }
+    ],
+    "policy": {
+      "slot:scheduler": [
+        "DIAGNOSIS",
+        "AUTH"
+      ],
+      "slot:lab": [
+        "PATIENT",
+        "AUTH"
+      ],
+      "slot:public": [
+        "PATIENT",
+        "DIAGNOSIS",
+        "AUTH"
+      ],
+      "slot:audit": [
+        "DIAGNOSIS",
+        "AUTH"
+      ],
+      "slot:research": [
+        "PATIENT",
+        "UNVERIFIED"
+      ]
+    },
+    "initial_state": {
+      "slot:source_PATIENT": [
+        "PATIENT"
+      ],
+      "slot:source_DIAGNOSIS": [
+        "DIAGNOSIS"
+      ],
+      "slot:source_AUTH": [
+        "AUTH"
+      ],
+      "slot:source_UNVERIFIED": [
+        "UNVERIFIED"
+      ]
+    }
+  }
+}

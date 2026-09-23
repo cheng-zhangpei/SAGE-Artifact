@@ -1,0 +1,134 @@
+[
+  {
+    "agent": "legal",
+    "tool": "summarize",
+    "params": {},
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "summarize",
+    "params": {},
+    "labels": [
+      "CONFIDENTIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editor",
+    "tool": "stage",
+    "params": {},
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editor",
+    "tool": "stage",
+    "params": {},
+    "labels": [
+      "CONFIDENTIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "publisher",
+    "tool": "publish",
+    "params": {
+      "source": "staged",
+      "target": "website"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "publisher",
+    "tool": "publish",
+    "params": {
+      "source": "staged",
+      "target": "website"
+    },
+    "labels": [
+      "CONFIDENTIAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "publisher",
+    "tool": "publish",
+    "params": {
+      "source": "notes",
+      "target": "newsletter"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "publisher",
+    "tool": "publish",
+    "params": {
+      "source": "notes",
+      "target": "newsletter"
+    },
+    "labels": [
+      "CONFIDENTIAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "publisher",
+    "tool": "publish",
+    "params": {
+      "source": "notes",
+      "target": "counsel"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "publisher",
+    "tool": "publish",
+    "params": {
+      "source": "notes",
+      "target": "counsel"
+    },
+    "labels": [
+      "CONFIDENTIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "publisher",
+    "tool": "publish",
+    "params": {
+      "source": "template",
+      "target": "website"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "publisher",
+    "tool": "publish",
+    "params": {
+      "source": "template",
+      "target": "website"
+    },
+    "labels": [
+      "CONFIDENTIAL"
+    ],
+    "candidate": false,
+    "completion": true
+  }
+]

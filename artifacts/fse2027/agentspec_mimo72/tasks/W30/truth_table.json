@@ -1,0 +1,134 @@
+[
+  {
+    "agent": "clerk",
+    "tool": "collect",
+    "params": {},
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clerk",
+    "tool": "collect",
+    "params": {},
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "formatter",
+    "tool": "format_public",
+    "params": {},
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "formatter",
+    "tool": "format_public",
+    "params": {},
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "portal",
+    "tool": "upload",
+    "params": {
+      "source": "formatted",
+      "target": "public"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "portal",
+    "tool": "upload",
+    "params": {
+      "source": "formatted",
+      "target": "public"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "portal",
+    "tool": "upload",
+    "params": {
+      "source": "formatted",
+      "target": "approval"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "portal",
+    "tool": "upload",
+    "params": {
+      "source": "formatted",
+      "target": "approval"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "portal",
+    "tool": "upload",
+    "params": {
+      "source": "status",
+      "target": "public"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "portal",
+    "tool": "upload",
+    "params": {
+      "source": "status",
+      "target": "public"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "portal",
+    "tool": "upload",
+    "params": {
+      "source": "packet",
+      "target": "public"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "portal",
+    "tool": "upload",
+    "params": {
+      "source": "packet",
+      "target": "public"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  }
+]

@@ -1,0 +1,7 @@
+import json
+CLAUSES = [{'agent': 'finance', 'tool': 'dispatch', 'patterns': [{'mode': 'standard', 'receipt': 'external', 'route': 'release', 'source': 'bulletin'}], 'labels': ['PAYMENT', 'SECRET', 'UNVERIFIED']}, {'agent': 'finance', 'tool': 'dispatch', 'patterns': [{'mode': 'mirror', 'receipt': 'local', 'route': 'local', 'source': 'bulletin'}, {'mode': 'mirror', 'receipt': 'local', 'route': 'partner', 'source': 'brief'}], 'labels': ['PAYMENT', 'PII', 'SECRET']}, {'agent': 'support', 'tool': 'dispatch', 'patterns': [{'mode': 'linked', 'receipt': 'local', 'route': 'release', 'source': 'bulletin'}, {'mode': 'standard', 'receipt': 'partner', 'route': 'release', 'source': 'brief'}], 'labels': ['PAYMENT', 'PII', 'SECRET', 'UNVERIFIED']}, {'agent': 'finance', 'tool': 'dispatch', 'patterns': [{'mode': 'linked', 'receipt': 'partner', 'route': 'local', 'source': 'brief'}], 'labels': ['PII', 'SECRET']}, {'agent': 'support', 'tool': 'dispatch', 'patterns': [{'mode': 'linked', 'receipt': 'partner', 'route': 'partner', 'source': 'bulletin'}], 'labels': ['SECRET', 'UNVERIFIED']}]
+def pilot_completion(user_input, tool_input, intermediate_steps):
+    p = json.loads(tool_input)
+    return any(user_input['agent'] == c['agent'] and user_input['tool'] == c['tool']
+               and p in c['patterns'] and not set(user_input['trusted_event_labels']).isdisjoint(c['labels'])
+               for c in CLAUSES)

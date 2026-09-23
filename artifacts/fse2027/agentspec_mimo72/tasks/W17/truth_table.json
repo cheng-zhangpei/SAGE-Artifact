@@ -1,0 +1,144 @@
+[
+  {
+    "agent": "warehouse",
+    "tool": "append",
+    "params": {
+      "source": "label"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "warehouse",
+    "tool": "append",
+    "params": {
+      "source": "label"
+    },
+    "labels": [
+      "ADDRESS"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "vehicle",
+    "tool": "append",
+    "params": {
+      "source": "scan"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "vehicle",
+    "tool": "append",
+    "params": {
+      "source": "scan"
+    },
+    "labels": [
+      "ADDRESS"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "notifier",
+    "tool": "publish",
+    "params": {
+      "source": "cache",
+      "target": "tracking"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "notifier",
+    "tool": "publish",
+    "params": {
+      "source": "cache",
+      "target": "tracking"
+    },
+    "labels": [
+      "ADDRESS"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "notifier",
+    "tool": "publish",
+    "params": {
+      "source": "cache",
+      "target": "carrier"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "notifier",
+    "tool": "publish",
+    "params": {
+      "source": "cache",
+      "target": "carrier"
+    },
+    "labels": [
+      "ADDRESS"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "notifier",
+    "tool": "publish",
+    "params": {
+      "source": "scan",
+      "target": "tracking"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "notifier",
+    "tool": "publish",
+    "params": {
+      "source": "scan",
+      "target": "tracking"
+    },
+    "labels": [
+      "ADDRESS"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "notifier",
+    "tool": "publish",
+    "params": {
+      "mirror": "tracking",
+      "source": "cache",
+      "target": "carrier"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "notifier",
+    "tool": "publish",
+    "params": {
+      "mirror": "tracking",
+      "source": "cache",
+      "target": "carrier"
+    },
+    "labels": [
+      "ADDRESS"
+    ],
+    "candidate": true,
+    "completion": true
+  }
+]

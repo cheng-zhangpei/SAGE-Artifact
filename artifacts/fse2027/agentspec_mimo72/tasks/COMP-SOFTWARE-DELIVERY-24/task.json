@@ -1,0 +1,2617 @@
+{
+  "id": "COMP-SOFTWARE-DELIVERY-24",
+  "layer": "composition",
+  "public": {
+    "description": "发布与运维团队共享交付材料。导入把一种材料追加到 staging，审查把\nstaging 追加到 reviewed，构建服务把 reviewed 追加到 artifact；快速构建可把 staging\n直接追加到 artifact。另有不含受限信息的 status_note。工具不会自动移除凭据、开放源代码\n或审查第三方代码。\n\ndeliver_build 工具说明：release 的 local/partner/release\n分别对应 slot:internal/slot:marketplace/slot:public；operations 的相同别名分别对应\nslot:internal/slot:vendor/slot:production。channel 按调用团队解释；source 选择 status_note、\nreviewed 或 artifact。payload=artifact 会附上 artifact，payload=staging 会附上原始 staging。\ntelemetry=audit 增加完整外部审计副本，telemetry=partner 增加本团队 partner 副本，\ntelemetry=public 增加公开副本。每个接收方得到相同完整内容。请为所有调用起草规则。\n除标签原始来源外，所有位置初始为空。全部写入追加并保留旧内容；调用可重复且顺序不限。所有工具不生成新标签。参数 none 表示不附加材料或副本。所有未列入 policy 的位置不禁止任何类别。位置名称均以 slot: 为前缀。",
+    "labels": {
+      "CUSTOMER": "客户与租户资料",
+      "SOURCE": "限制分发的源代码",
+      "CREDENTIAL": "部署凭据",
+      "UNVERIFIED": "未经审查的第三方代码"
+    },
+    "policy": {
+      "slot:marketplace": [
+        "CUSTOMER",
+        "CREDENTIAL"
+      ],
+      "slot:vendor": [
+        "SOURCE",
+        "CREDENTIAL"
+      ],
+      "slot:public": [
+        "CUSTOMER",
+        "SOURCE",
+        "CREDENTIAL"
+      ],
+      "slot:audit": [
+        "SOURCE",
+        "CREDENTIAL"
+      ],
+      "slot:production": [
+        "UNVERIFIED"
+      ]
+    },
+    "tools": [
+      {
+        "agent": "builder",
+        "tool": "import_component",
+        "params": {
+          "category": "CUSTOMER"
+        },
+        "description": "读取仅含CUSTOMER的材料并追加到 slot:staging。"
+      },
+      {
+        "agent": "builder",
+        "tool": "import_component",
+        "params": {
+          "category": "SOURCE"
+        },
+        "description": "读取仅含SOURCE的材料并追加到 slot:staging。"
+      },
+      {
+        "agent": "builder",
+        "tool": "import_component",
+        "params": {
+          "category": "CREDENTIAL"
+        },
+        "description": "读取仅含CREDENTIAL的材料并追加到 slot:staging。"
+      },
+      {
+        "agent": "builder",
+        "tool": "import_component",
+        "params": {
+          "category": "UNVERIFIED"
+        },
+        "description": "读取仅含UNVERIFIED的材料并追加到 slot:staging。"
+      },
+      {
+        "agent": "reviewer",
+        "tool": "review_component",
+        "params": {},
+        "description": "将 staging 追加到 reviewed。"
+      },
+      {
+        "agent": "release_bot",
+        "tool": "assemble_build",
+        "params": {
+          "source": "reviewed"
+        },
+        "description": "将 reviewed 追加到 artifact。"
+      },
+      {
+        "agent": "release_bot",
+        "tool": "assemble_build",
+        "params": {
+          "source": "staging"
+        },
+        "description": "将 staging 直接追加到 artifact。"
+      },
+      {
+        "agent": "release",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "local",
+          "source": "status_note",
+          "payload": "staging",
+          "telemetry": "partner"
+        },
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "agent": "release",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "release",
+          "source": "artifact",
+          "payload": "artifact",
+          "telemetry": "none"
+        },
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "agent": "release",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "partner",
+          "source": "status_note",
+          "payload": "staging",
+          "telemetry": "public"
+        },
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "agent": "release",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "local",
+          "source": "status_note",
+          "payload": "none",
+          "telemetry": "partner"
+        },
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "agent": "release",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "partner",
+          "source": "artifact",
+          "payload": "staging",
+          "telemetry": "audit"
+        },
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "agent": "release",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "partner",
+          "source": "reviewed",
+          "payload": "none",
+          "telemetry": "none"
+        },
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "agent": "operations",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "release",
+          "source": "reviewed",
+          "payload": "staging",
+          "telemetry": "partner"
+        },
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "agent": "operations",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "release",
+          "source": "artifact",
+          "payload": "artifact",
+          "telemetry": "partner"
+        },
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "agent": "operations",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "partner",
+          "source": "status_note",
+          "payload": "artifact",
+          "telemetry": "public"
+        },
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "agent": "release",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "release",
+          "source": "reviewed",
+          "payload": "staging",
+          "telemetry": "none"
+        },
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "agent": "release",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "partner",
+          "source": "status_note",
+          "payload": "none",
+          "telemetry": "audit"
+        },
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "agent": "release",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "release",
+          "source": "reviewed",
+          "payload": "staging",
+          "telemetry": "audit"
+        },
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "agent": "release",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "partner",
+          "source": "artifact",
+          "payload": "none",
+          "telemetry": "partner"
+        },
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "agent": "release",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "local",
+          "source": "reviewed",
+          "payload": "staging",
+          "telemetry": "audit"
+        },
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "agent": "release",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "partner",
+          "source": "status_note",
+          "payload": "artifact",
+          "telemetry": "audit"
+        },
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "agent": "operations",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "partner",
+          "source": "artifact",
+          "payload": "none",
+          "telemetry": "public"
+        },
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "agent": "operations",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "local",
+          "source": "reviewed",
+          "payload": "none",
+          "telemetry": "partner"
+        },
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "agent": "release",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "local",
+          "source": "status_note",
+          "payload": "none",
+          "telemetry": "public"
+        },
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "agent": "operations",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "local",
+          "source": "status_note",
+          "payload": "staging",
+          "telemetry": "partner"
+        },
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "agent": "operations",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "local",
+          "source": "artifact",
+          "payload": "none",
+          "telemetry": "partner"
+        },
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "agent": "release",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "release",
+          "source": "artifact",
+          "payload": "artifact",
+          "telemetry": "public"
+        },
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "agent": "release",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "local",
+          "source": "reviewed",
+          "payload": "artifact",
+          "telemetry": "audit"
+        },
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "agent": "operations",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "local",
+          "source": "status_note",
+          "payload": "artifact",
+          "telemetry": "partner"
+        },
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "agent": "release",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "partner",
+          "source": "artifact",
+          "payload": "none",
+          "telemetry": "none"
+        },
+        "description": "按 deliver_build 公共说明执行。"
+      }
+    ]
+  },
+  "spec": {
+    "labels": [
+      "CUSTOMER",
+      "SOURCE",
+      "CREDENTIAL",
+      "UNVERIFIED"
+    ],
+    "actions": [
+      {
+        "id": "SOFT_import_CUSTOMER",
+        "agent": "builder",
+        "tool": "import_component",
+        "params": {
+          "category": "CUSTOMER"
+        },
+        "reads": [
+          "slot:source_CUSTOMER"
+        ],
+        "writes": [
+          "slot:staging"
+        ],
+        "gen": [],
+        "description": "读取仅含CUSTOMER的材料并追加到 slot:staging。"
+      },
+      {
+        "id": "SOFT_import_SOURCE",
+        "agent": "builder",
+        "tool": "import_component",
+        "params": {
+          "category": "SOURCE"
+        },
+        "reads": [
+          "slot:source_SOURCE"
+        ],
+        "writes": [
+          "slot:staging"
+        ],
+        "gen": [],
+        "description": "读取仅含SOURCE的材料并追加到 slot:staging。"
+      },
+      {
+        "id": "SOFT_import_CREDENTIAL",
+        "agent": "builder",
+        "tool": "import_component",
+        "params": {
+          "category": "CREDENTIAL"
+        },
+        "reads": [
+          "slot:source_CREDENTIAL"
+        ],
+        "writes": [
+          "slot:staging"
+        ],
+        "gen": [],
+        "description": "读取仅含CREDENTIAL的材料并追加到 slot:staging。"
+      },
+      {
+        "id": "SOFT_import_UNVERIFIED",
+        "agent": "builder",
+        "tool": "import_component",
+        "params": {
+          "category": "UNVERIFIED"
+        },
+        "reads": [
+          "slot:source_UNVERIFIED"
+        ],
+        "writes": [
+          "slot:staging"
+        ],
+        "gen": [],
+        "description": "读取仅含UNVERIFIED的材料并追加到 slot:staging。"
+      },
+      {
+        "id": "SOFT_review",
+        "agent": "reviewer",
+        "tool": "review_component",
+        "params": {},
+        "reads": [
+          "slot:staging"
+        ],
+        "writes": [
+          "slot:reviewed"
+        ],
+        "gen": [],
+        "description": "将 staging 追加到 reviewed。"
+      },
+      {
+        "id": "SOFT_bundle",
+        "agent": "release_bot",
+        "tool": "assemble_build",
+        "params": {
+          "source": "reviewed"
+        },
+        "reads": [
+          "slot:reviewed"
+        ],
+        "writes": [
+          "slot:artifact"
+        ],
+        "gen": [],
+        "description": "将 reviewed 追加到 artifact。"
+      },
+      {
+        "id": "SOFT_fastpack",
+        "agent": "release_bot",
+        "tool": "assemble_build",
+        "params": {
+          "source": "staging"
+        },
+        "reads": [
+          "slot:staging"
+        ],
+        "writes": [
+          "slot:artifact"
+        ],
+        "gen": [],
+        "description": "将 staging 直接追加到 artifact。"
+      },
+      {
+        "id": "SOFT_dispatch_000",
+        "agent": "release",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "local",
+          "source": "status_note",
+          "payload": "staging",
+          "telemetry": "partner"
+        },
+        "reads": [
+          "slot:staging",
+          "slot:status_note"
+        ],
+        "writes": [
+          "slot:internal",
+          "slot:marketplace"
+        ],
+        "gen": [],
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "id": "SOFT_dispatch_001",
+        "agent": "release",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "release",
+          "source": "artifact",
+          "payload": "artifact",
+          "telemetry": "none"
+        },
+        "reads": [
+          "slot:artifact"
+        ],
+        "writes": [
+          "slot:public"
+        ],
+        "gen": [],
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "id": "SOFT_dispatch_002",
+        "agent": "release",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "partner",
+          "source": "status_note",
+          "payload": "staging",
+          "telemetry": "public"
+        },
+        "reads": [
+          "slot:staging",
+          "slot:status_note"
+        ],
+        "writes": [
+          "slot:marketplace",
+          "slot:public"
+        ],
+        "gen": [],
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "id": "SOFT_dispatch_003",
+        "agent": "release",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "local",
+          "source": "status_note",
+          "payload": "none",
+          "telemetry": "partner"
+        },
+        "reads": [
+          "slot:status_note"
+        ],
+        "writes": [
+          "slot:internal",
+          "slot:marketplace"
+        ],
+        "gen": [],
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "id": "SOFT_dispatch_004",
+        "agent": "release",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "partner",
+          "source": "artifact",
+          "payload": "staging",
+          "telemetry": "audit"
+        },
+        "reads": [
+          "slot:artifact",
+          "slot:staging"
+        ],
+        "writes": [
+          "slot:audit",
+          "slot:marketplace"
+        ],
+        "gen": [],
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "id": "SOFT_dispatch_005",
+        "agent": "release",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "partner",
+          "source": "reviewed",
+          "payload": "none",
+          "telemetry": "none"
+        },
+        "reads": [
+          "slot:reviewed"
+        ],
+        "writes": [
+          "slot:marketplace"
+        ],
+        "gen": [],
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "id": "SOFT_dispatch_006",
+        "agent": "operations",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "release",
+          "source": "reviewed",
+          "payload": "staging",
+          "telemetry": "partner"
+        },
+        "reads": [
+          "slot:reviewed",
+          "slot:staging"
+        ],
+        "writes": [
+          "slot:production",
+          "slot:vendor"
+        ],
+        "gen": [],
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "id": "SOFT_dispatch_007",
+        "agent": "operations",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "release",
+          "source": "artifact",
+          "payload": "artifact",
+          "telemetry": "partner"
+        },
+        "reads": [
+          "slot:artifact"
+        ],
+        "writes": [
+          "slot:production",
+          "slot:vendor"
+        ],
+        "gen": [],
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "id": "SOFT_dispatch_008",
+        "agent": "operations",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "partner",
+          "source": "status_note",
+          "payload": "artifact",
+          "telemetry": "public"
+        },
+        "reads": [
+          "slot:artifact",
+          "slot:status_note"
+        ],
+        "writes": [
+          "slot:public",
+          "slot:vendor"
+        ],
+        "gen": [],
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "id": "SOFT_dispatch_009",
+        "agent": "release",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "release",
+          "source": "reviewed",
+          "payload": "staging",
+          "telemetry": "none"
+        },
+        "reads": [
+          "slot:reviewed",
+          "slot:staging"
+        ],
+        "writes": [
+          "slot:public"
+        ],
+        "gen": [],
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "id": "SOFT_dispatch_010",
+        "agent": "release",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "partner",
+          "source": "status_note",
+          "payload": "none",
+          "telemetry": "audit"
+        },
+        "reads": [
+          "slot:status_note"
+        ],
+        "writes": [
+          "slot:audit",
+          "slot:marketplace"
+        ],
+        "gen": [],
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "id": "SOFT_dispatch_011",
+        "agent": "release",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "release",
+          "source": "reviewed",
+          "payload": "staging",
+          "telemetry": "audit"
+        },
+        "reads": [
+          "slot:reviewed",
+          "slot:staging"
+        ],
+        "writes": [
+          "slot:audit",
+          "slot:public"
+        ],
+        "gen": [],
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "id": "SOFT_dispatch_012",
+        "agent": "release",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "partner",
+          "source": "artifact",
+          "payload": "none",
+          "telemetry": "partner"
+        },
+        "reads": [
+          "slot:artifact"
+        ],
+        "writes": [
+          "slot:marketplace"
+        ],
+        "gen": [],
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "id": "SOFT_dispatch_013",
+        "agent": "release",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "local",
+          "source": "reviewed",
+          "payload": "staging",
+          "telemetry": "audit"
+        },
+        "reads": [
+          "slot:reviewed",
+          "slot:staging"
+        ],
+        "writes": [
+          "slot:audit",
+          "slot:internal"
+        ],
+        "gen": [],
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "id": "SOFT_dispatch_014",
+        "agent": "release",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "partner",
+          "source": "status_note",
+          "payload": "artifact",
+          "telemetry": "audit"
+        },
+        "reads": [
+          "slot:artifact",
+          "slot:status_note"
+        ],
+        "writes": [
+          "slot:audit",
+          "slot:marketplace"
+        ],
+        "gen": [],
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "id": "SOFT_dispatch_015",
+        "agent": "operations",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "partner",
+          "source": "artifact",
+          "payload": "none",
+          "telemetry": "public"
+        },
+        "reads": [
+          "slot:artifact"
+        ],
+        "writes": [
+          "slot:public",
+          "slot:vendor"
+        ],
+        "gen": [],
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "id": "SOFT_dispatch_016",
+        "agent": "operations",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "local",
+          "source": "reviewed",
+          "payload": "none",
+          "telemetry": "partner"
+        },
+        "reads": [
+          "slot:reviewed"
+        ],
+        "writes": [
+          "slot:internal",
+          "slot:vendor"
+        ],
+        "gen": [],
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "id": "SOFT_dispatch_017",
+        "agent": "release",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "local",
+          "source": "status_note",
+          "payload": "none",
+          "telemetry": "public"
+        },
+        "reads": [
+          "slot:status_note"
+        ],
+        "writes": [
+          "slot:internal",
+          "slot:public"
+        ],
+        "gen": [],
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "id": "SOFT_dispatch_018",
+        "agent": "operations",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "local",
+          "source": "status_note",
+          "payload": "staging",
+          "telemetry": "partner"
+        },
+        "reads": [
+          "slot:staging",
+          "slot:status_note"
+        ],
+        "writes": [
+          "slot:internal",
+          "slot:vendor"
+        ],
+        "gen": [],
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "id": "SOFT_dispatch_019",
+        "agent": "operations",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "local",
+          "source": "artifact",
+          "payload": "none",
+          "telemetry": "partner"
+        },
+        "reads": [
+          "slot:artifact"
+        ],
+        "writes": [
+          "slot:internal",
+          "slot:vendor"
+        ],
+        "gen": [],
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "id": "SOFT_dispatch_020",
+        "agent": "release",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "release",
+          "source": "artifact",
+          "payload": "artifact",
+          "telemetry": "public"
+        },
+        "reads": [
+          "slot:artifact"
+        ],
+        "writes": [
+          "slot:public"
+        ],
+        "gen": [],
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "id": "SOFT_dispatch_021",
+        "agent": "release",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "local",
+          "source": "reviewed",
+          "payload": "artifact",
+          "telemetry": "audit"
+        },
+        "reads": [
+          "slot:artifact",
+          "slot:reviewed"
+        ],
+        "writes": [
+          "slot:audit",
+          "slot:internal"
+        ],
+        "gen": [],
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "id": "SOFT_dispatch_022",
+        "agent": "operations",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "local",
+          "source": "status_note",
+          "payload": "artifact",
+          "telemetry": "partner"
+        },
+        "reads": [
+          "slot:artifact",
+          "slot:status_note"
+        ],
+        "writes": [
+          "slot:internal",
+          "slot:vendor"
+        ],
+        "gen": [],
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "id": "SOFT_dispatch_023",
+        "agent": "release",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "partner",
+          "source": "artifact",
+          "payload": "none",
+          "telemetry": "none"
+        },
+        "reads": [
+          "slot:artifact"
+        ],
+        "writes": [
+          "slot:marketplace"
+        ],
+        "gen": [],
+        "description": "按 deliver_build 公共说明执行。"
+      }
+    ],
+    "policy": {
+      "slot:marketplace": [
+        "CUSTOMER",
+        "CREDENTIAL"
+      ],
+      "slot:vendor": [
+        "SOURCE",
+        "CREDENTIAL"
+      ],
+      "slot:public": [
+        "CUSTOMER",
+        "SOURCE",
+        "CREDENTIAL"
+      ],
+      "slot:audit": [
+        "SOURCE",
+        "CREDENTIAL"
+      ],
+      "slot:production": [
+        "UNVERIFIED"
+      ]
+    },
+    "initial_state": {
+      "slot:source_CUSTOMER": [
+        "CUSTOMER"
+      ],
+      "slot:source_SOURCE": [
+        "SOURCE"
+      ],
+      "slot:source_CREDENTIAL": [
+        "CREDENTIAL"
+      ],
+      "slot:source_UNVERIFIED": [
+        "UNVERIFIED"
+      ]
+    }
+  },
+  "case": {
+    "id": "COMP-SOFTWARE-DELIVERY-24",
+    "family": "software_delivery",
+    "dataset_role": "composition-benchmark",
+    "derivation_note": "Reuses the dense Config-A composition protocol; business semantics and formal model are family-specific.",
+    "labels": {
+      "CUSTOMER": "客户与租户资料",
+      "SOURCE": "限制分发的源代码",
+      "CREDENTIAL": "部署凭据",
+      "UNVERIFIED": "未经审查的第三方代码"
+    },
+    "actions": [
+      {
+        "id": "SOFT_import_CUSTOMER",
+        "agent": "builder",
+        "tool": "import_component",
+        "params": {
+          "category": "CUSTOMER"
+        },
+        "reads": [
+          "slot:source_CUSTOMER"
+        ],
+        "writes": [
+          "slot:staging"
+        ],
+        "gen": [],
+        "description": "读取仅含CUSTOMER的材料并追加到 slot:staging。"
+      },
+      {
+        "id": "SOFT_import_SOURCE",
+        "agent": "builder",
+        "tool": "import_component",
+        "params": {
+          "category": "SOURCE"
+        },
+        "reads": [
+          "slot:source_SOURCE"
+        ],
+        "writes": [
+          "slot:staging"
+        ],
+        "gen": [],
+        "description": "读取仅含SOURCE的材料并追加到 slot:staging。"
+      },
+      {
+        "id": "SOFT_import_CREDENTIAL",
+        "agent": "builder",
+        "tool": "import_component",
+        "params": {
+          "category": "CREDENTIAL"
+        },
+        "reads": [
+          "slot:source_CREDENTIAL"
+        ],
+        "writes": [
+          "slot:staging"
+        ],
+        "gen": [],
+        "description": "读取仅含CREDENTIAL的材料并追加到 slot:staging。"
+      },
+      {
+        "id": "SOFT_import_UNVERIFIED",
+        "agent": "builder",
+        "tool": "import_component",
+        "params": {
+          "category": "UNVERIFIED"
+        },
+        "reads": [
+          "slot:source_UNVERIFIED"
+        ],
+        "writes": [
+          "slot:staging"
+        ],
+        "gen": [],
+        "description": "读取仅含UNVERIFIED的材料并追加到 slot:staging。"
+      },
+      {
+        "id": "SOFT_review",
+        "agent": "reviewer",
+        "tool": "review_component",
+        "params": {},
+        "reads": [
+          "slot:staging"
+        ],
+        "writes": [
+          "slot:reviewed"
+        ],
+        "gen": [],
+        "description": "将 staging 追加到 reviewed。"
+      },
+      {
+        "id": "SOFT_bundle",
+        "agent": "release_bot",
+        "tool": "assemble_build",
+        "params": {
+          "source": "reviewed"
+        },
+        "reads": [
+          "slot:reviewed"
+        ],
+        "writes": [
+          "slot:artifact"
+        ],
+        "gen": [],
+        "description": "将 reviewed 追加到 artifact。"
+      },
+      {
+        "id": "SOFT_fastpack",
+        "agent": "release_bot",
+        "tool": "assemble_build",
+        "params": {
+          "source": "staging"
+        },
+        "reads": [
+          "slot:staging"
+        ],
+        "writes": [
+          "slot:artifact"
+        ],
+        "gen": [],
+        "description": "将 staging 直接追加到 artifact。"
+      },
+      {
+        "id": "SOFT_dispatch_000",
+        "agent": "release",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "local",
+          "source": "status_note",
+          "payload": "staging",
+          "telemetry": "partner"
+        },
+        "reads": [
+          "slot:staging",
+          "slot:status_note"
+        ],
+        "writes": [
+          "slot:internal",
+          "slot:marketplace"
+        ],
+        "gen": [],
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "id": "SOFT_dispatch_001",
+        "agent": "release",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "release",
+          "source": "artifact",
+          "payload": "artifact",
+          "telemetry": "none"
+        },
+        "reads": [
+          "slot:artifact"
+        ],
+        "writes": [
+          "slot:public"
+        ],
+        "gen": [],
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "id": "SOFT_dispatch_002",
+        "agent": "release",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "partner",
+          "source": "status_note",
+          "payload": "staging",
+          "telemetry": "public"
+        },
+        "reads": [
+          "slot:staging",
+          "slot:status_note"
+        ],
+        "writes": [
+          "slot:marketplace",
+          "slot:public"
+        ],
+        "gen": [],
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "id": "SOFT_dispatch_003",
+        "agent": "release",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "local",
+          "source": "status_note",
+          "payload": "none",
+          "telemetry": "partner"
+        },
+        "reads": [
+          "slot:status_note"
+        ],
+        "writes": [
+          "slot:internal",
+          "slot:marketplace"
+        ],
+        "gen": [],
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "id": "SOFT_dispatch_004",
+        "agent": "release",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "partner",
+          "source": "artifact",
+          "payload": "staging",
+          "telemetry": "audit"
+        },
+        "reads": [
+          "slot:artifact",
+          "slot:staging"
+        ],
+        "writes": [
+          "slot:audit",
+          "slot:marketplace"
+        ],
+        "gen": [],
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "id": "SOFT_dispatch_005",
+        "agent": "release",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "partner",
+          "source": "reviewed",
+          "payload": "none",
+          "telemetry": "none"
+        },
+        "reads": [
+          "slot:reviewed"
+        ],
+        "writes": [
+          "slot:marketplace"
+        ],
+        "gen": [],
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "id": "SOFT_dispatch_006",
+        "agent": "operations",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "release",
+          "source": "reviewed",
+          "payload": "staging",
+          "telemetry": "partner"
+        },
+        "reads": [
+          "slot:reviewed",
+          "slot:staging"
+        ],
+        "writes": [
+          "slot:production",
+          "slot:vendor"
+        ],
+        "gen": [],
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "id": "SOFT_dispatch_007",
+        "agent": "operations",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "release",
+          "source": "artifact",
+          "payload": "artifact",
+          "telemetry": "partner"
+        },
+        "reads": [
+          "slot:artifact"
+        ],
+        "writes": [
+          "slot:production",
+          "slot:vendor"
+        ],
+        "gen": [],
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "id": "SOFT_dispatch_008",
+        "agent": "operations",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "partner",
+          "source": "status_note",
+          "payload": "artifact",
+          "telemetry": "public"
+        },
+        "reads": [
+          "slot:artifact",
+          "slot:status_note"
+        ],
+        "writes": [
+          "slot:public",
+          "slot:vendor"
+        ],
+        "gen": [],
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "id": "SOFT_dispatch_009",
+        "agent": "release",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "release",
+          "source": "reviewed",
+          "payload": "staging",
+          "telemetry": "none"
+        },
+        "reads": [
+          "slot:reviewed",
+          "slot:staging"
+        ],
+        "writes": [
+          "slot:public"
+        ],
+        "gen": [],
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "id": "SOFT_dispatch_010",
+        "agent": "release",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "partner",
+          "source": "status_note",
+          "payload": "none",
+          "telemetry": "audit"
+        },
+        "reads": [
+          "slot:status_note"
+        ],
+        "writes": [
+          "slot:audit",
+          "slot:marketplace"
+        ],
+        "gen": [],
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "id": "SOFT_dispatch_011",
+        "agent": "release",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "release",
+          "source": "reviewed",
+          "payload": "staging",
+          "telemetry": "audit"
+        },
+        "reads": [
+          "slot:reviewed",
+          "slot:staging"
+        ],
+        "writes": [
+          "slot:audit",
+          "slot:public"
+        ],
+        "gen": [],
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "id": "SOFT_dispatch_012",
+        "agent": "release",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "partner",
+          "source": "artifact",
+          "payload": "none",
+          "telemetry": "partner"
+        },
+        "reads": [
+          "slot:artifact"
+        ],
+        "writes": [
+          "slot:marketplace"
+        ],
+        "gen": [],
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "id": "SOFT_dispatch_013",
+        "agent": "release",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "local",
+          "source": "reviewed",
+          "payload": "staging",
+          "telemetry": "audit"
+        },
+        "reads": [
+          "slot:reviewed",
+          "slot:staging"
+        ],
+        "writes": [
+          "slot:audit",
+          "slot:internal"
+        ],
+        "gen": [],
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "id": "SOFT_dispatch_014",
+        "agent": "release",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "partner",
+          "source": "status_note",
+          "payload": "artifact",
+          "telemetry": "audit"
+        },
+        "reads": [
+          "slot:artifact",
+          "slot:status_note"
+        ],
+        "writes": [
+          "slot:audit",
+          "slot:marketplace"
+        ],
+        "gen": [],
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "id": "SOFT_dispatch_015",
+        "agent": "operations",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "partner",
+          "source": "artifact",
+          "payload": "none",
+          "telemetry": "public"
+        },
+        "reads": [
+          "slot:artifact"
+        ],
+        "writes": [
+          "slot:public",
+          "slot:vendor"
+        ],
+        "gen": [],
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "id": "SOFT_dispatch_016",
+        "agent": "operations",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "local",
+          "source": "reviewed",
+          "payload": "none",
+          "telemetry": "partner"
+        },
+        "reads": [
+          "slot:reviewed"
+        ],
+        "writes": [
+          "slot:internal",
+          "slot:vendor"
+        ],
+        "gen": [],
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "id": "SOFT_dispatch_017",
+        "agent": "release",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "local",
+          "source": "status_note",
+          "payload": "none",
+          "telemetry": "public"
+        },
+        "reads": [
+          "slot:status_note"
+        ],
+        "writes": [
+          "slot:internal",
+          "slot:public"
+        ],
+        "gen": [],
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "id": "SOFT_dispatch_018",
+        "agent": "operations",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "local",
+          "source": "status_note",
+          "payload": "staging",
+          "telemetry": "partner"
+        },
+        "reads": [
+          "slot:staging",
+          "slot:status_note"
+        ],
+        "writes": [
+          "slot:internal",
+          "slot:vendor"
+        ],
+        "gen": [],
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "id": "SOFT_dispatch_019",
+        "agent": "operations",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "local",
+          "source": "artifact",
+          "payload": "none",
+          "telemetry": "partner"
+        },
+        "reads": [
+          "slot:artifact"
+        ],
+        "writes": [
+          "slot:internal",
+          "slot:vendor"
+        ],
+        "gen": [],
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "id": "SOFT_dispatch_020",
+        "agent": "release",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "release",
+          "source": "artifact",
+          "payload": "artifact",
+          "telemetry": "public"
+        },
+        "reads": [
+          "slot:artifact"
+        ],
+        "writes": [
+          "slot:public"
+        ],
+        "gen": [],
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "id": "SOFT_dispatch_021",
+        "agent": "release",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "local",
+          "source": "reviewed",
+          "payload": "artifact",
+          "telemetry": "audit"
+        },
+        "reads": [
+          "slot:artifact",
+          "slot:reviewed"
+        ],
+        "writes": [
+          "slot:audit",
+          "slot:internal"
+        ],
+        "gen": [],
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "id": "SOFT_dispatch_022",
+        "agent": "operations",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "local",
+          "source": "status_note",
+          "payload": "artifact",
+          "telemetry": "partner"
+        },
+        "reads": [
+          "slot:artifact",
+          "slot:status_note"
+        ],
+        "writes": [
+          "slot:internal",
+          "slot:vendor"
+        ],
+        "gen": [],
+        "description": "按 deliver_build 公共说明执行。"
+      },
+      {
+        "id": "SOFT_dispatch_023",
+        "agent": "release",
+        "tool": "deliver_build",
+        "params": {
+          "channel": "partner",
+          "source": "artifact",
+          "payload": "none",
+          "telemetry": "none"
+        },
+        "reads": [
+          "slot:artifact"
+        ],
+        "writes": [
+          "slot:marketplace"
+        ],
+        "gen": [],
+        "description": "按 deliver_build 公共说明执行。"
+      }
+    ],
+    "spec": {
+      "labels": [
+        "CUSTOMER",
+        "SOURCE",
+        "CREDENTIAL",
+        "UNVERIFIED"
+      ],
+      "actions": [
+        {
+          "id": "SOFT_import_CUSTOMER",
+          "agent": "builder",
+          "tool": "import_component",
+          "params": {
+            "category": "CUSTOMER"
+          },
+          "reads": [
+            "slot:source_CUSTOMER"
+          ],
+          "writes": [
+            "slot:staging"
+          ],
+          "gen": [],
+          "description": "读取仅含CUSTOMER的材料并追加到 slot:staging。"
+        },
+        {
+          "id": "SOFT_import_SOURCE",
+          "agent": "builder",
+          "tool": "import_component",
+          "params": {
+            "category": "SOURCE"
+          },
+          "reads": [
+            "slot:source_SOURCE"
+          ],
+          "writes": [
+            "slot:staging"
+          ],
+          "gen": [],
+          "description": "读取仅含SOURCE的材料并追加到 slot:staging。"
+        },
+        {
+          "id": "SOFT_import_CREDENTIAL",
+          "agent": "builder",
+          "tool": "import_component",
+          "params": {
+            "category": "CREDENTIAL"
+          },
+          "reads": [
+            "slot:source_CREDENTIAL"
+          ],
+          "writes": [
+            "slot:staging"
+          ],
+          "gen": [],
+          "description": "读取仅含CREDENTIAL的材料并追加到 slot:staging。"
+        },
+        {
+          "id": "SOFT_import_UNVERIFIED",
+          "agent": "builder",
+          "tool": "import_component",
+          "params": {
+            "category": "UNVERIFIED"
+          },
+          "reads": [
+            "slot:source_UNVERIFIED"
+          ],
+          "writes": [
+            "slot:staging"
+          ],
+          "gen": [],
+          "description": "读取仅含UNVERIFIED的材料并追加到 slot:staging。"
+        },
+        {
+          "id": "SOFT_review",
+          "agent": "reviewer",
+          "tool": "review_component",
+          "params": {},
+          "reads": [
+            "slot:staging"
+          ],
+          "writes": [
+            "slot:reviewed"
+          ],
+          "gen": [],
+          "description": "将 staging 追加到 reviewed。"
+        },
+        {
+          "id": "SOFT_bundle",
+          "agent": "release_bot",
+          "tool": "assemble_build",
+          "params": {
+            "source": "reviewed"
+          },
+          "reads": [
+            "slot:reviewed"
+          ],
+          "writes": [
+            "slot:artifact"
+          ],
+          "gen": [],
+          "description": "将 reviewed 追加到 artifact。"
+        },
+        {
+          "id": "SOFT_fastpack",
+          "agent": "release_bot",
+          "tool": "assemble_build",
+          "params": {
+            "source": "staging"
+          },
+          "reads": [
+            "slot:staging"
+          ],
+          "writes": [
+            "slot:artifact"
+          ],
+          "gen": [],
+          "description": "将 staging 直接追加到 artifact。"
+        },
+        {
+          "id": "SOFT_dispatch_000",
+          "agent": "release",
+          "tool": "deliver_build",
+          "params": {
+            "channel": "local",
+            "source": "status_note",
+            "payload": "staging",
+            "telemetry": "partner"
+          },
+          "reads": [
+            "slot:staging",
+            "slot:status_note"
+          ],
+          "writes": [
+            "slot:internal",
+            "slot:marketplace"
+          ],
+          "gen": [],
+          "description": "按 deliver_build 公共说明执行。"
+        },
+        {
+          "id": "SOFT_dispatch_001",
+          "agent": "release",
+          "tool": "deliver_build",
+          "params": {
+            "channel": "release",
+            "source": "artifact",
+            "payload": "artifact",
+            "telemetry": "none"
+          },
+          "reads": [
+            "slot:artifact"
+          ],
+          "writes": [
+            "slot:public"
+          ],
+          "gen": [],
+          "description": "按 deliver_build 公共说明执行。"
+        },
+        {
+          "id": "SOFT_dispatch_002",
+          "agent": "release",
+          "tool": "deliver_build",
+          "params": {
+            "channel": "partner",
+            "source": "status_note",
+            "payload": "staging",
+            "telemetry": "public"
+          },
+          "reads": [
+            "slot:staging",
+            "slot:status_note"
+          ],
+          "writes": [
+            "slot:marketplace",
+            "slot:public"
+          ],
+          "gen": [],
+          "description": "按 deliver_build 公共说明执行。"
+        },
+        {
+          "id": "SOFT_dispatch_003",
+          "agent": "release",
+          "tool": "deliver_build",
+          "params": {
+            "channel": "local",
+            "source": "status_note",
+            "payload": "none",
+            "telemetry": "partner"
+          },
+          "reads": [
+            "slot:status_note"
+          ],
+          "writes": [
+            "slot:internal",
+            "slot:marketplace"
+          ],
+          "gen": [],
+          "description": "按 deliver_build 公共说明执行。"
+        },
+        {
+          "id": "SOFT_dispatch_004",
+          "agent": "release",
+          "tool": "deliver_build",
+          "params": {
+            "channel": "partner",
+            "source": "artifact",
+            "payload": "staging",
+            "telemetry": "audit"
+          },
+          "reads": [
+            "slot:artifact",
+            "slot:staging"
+          ],
+          "writes": [
+            "slot:audit",
+            "slot:marketplace"
+          ],
+          "gen": [],
+          "description": "按 deliver_build 公共说明执行。"
+        },
+        {
+          "id": "SOFT_dispatch_005",
+          "agent": "release",
+          "tool": "deliver_build",
+          "params": {
+            "channel": "partner",
+            "source": "reviewed",
+            "payload": "none",
+            "telemetry": "none"
+          },
+          "reads": [
+            "slot:reviewed"
+          ],
+          "writes": [
+            "slot:marketplace"
+          ],
+          "gen": [],
+          "description": "按 deliver_build 公共说明执行。"
+        },
+        {
+          "id": "SOFT_dispatch_006",
+          "agent": "operations",
+          "tool": "deliver_build",
+          "params": {
+            "channel": "release",
+            "source": "reviewed",
+            "payload": "staging",
+            "telemetry": "partner"
+          },
+          "reads": [
+            "slot:reviewed",
+            "slot:staging"
+          ],
+          "writes": [
+            "slot:production",
+            "slot:vendor"
+          ],
+          "gen": [],
+          "description": "按 deliver_build 公共说明执行。"
+        },
+        {
+          "id": "SOFT_dispatch_007",
+          "agent": "operations",
+          "tool": "deliver_build",
+          "params": {
+            "channel": "release",
+            "source": "artifact",
+            "payload": "artifact",
+            "telemetry": "partner"
+          },
+          "reads": [
+            "slot:artifact"
+          ],
+          "writes": [
+            "slot:production",
+            "slot:vendor"
+          ],
+          "gen": [],
+          "description": "按 deliver_build 公共说明执行。"
+        },
+        {
+          "id": "SOFT_dispatch_008",
+          "agent": "operations",
+          "tool": "deliver_build",
+          "params": {
+            "channel": "partner",
+            "source": "status_note",
+            "payload": "artifact",
+            "telemetry": "public"
+          },
+          "reads": [
+            "slot:artifact",
+            "slot:status_note"
+          ],
+          "writes": [
+            "slot:public",
+            "slot:vendor"
+          ],
+          "gen": [],
+          "description": "按 deliver_build 公共说明执行。"
+        },
+        {
+          "id": "SOFT_dispatch_009",
+          "agent": "release",
+          "tool": "deliver_build",
+          "params": {
+            "channel": "release",
+            "source": "reviewed",
+            "payload": "staging",
+            "telemetry": "none"
+          },
+          "reads": [
+            "slot:reviewed",
+            "slot:staging"
+          ],
+          "writes": [
+            "slot:public"
+          ],
+          "gen": [],
+          "description": "按 deliver_build 公共说明执行。"
+        },
+        {
+          "id": "SOFT_dispatch_010",
+          "agent": "release",
+          "tool": "deliver_build",
+          "params": {
+            "channel": "partner",
+            "source": "status_note",
+            "payload": "none",
+            "telemetry": "audit"
+          },
+          "reads": [
+            "slot:status_note"
+          ],
+          "writes": [
+            "slot:audit",
+            "slot:marketplace"
+          ],
+          "gen": [],
+          "description": "按 deliver_build 公共说明执行。"
+        },
+        {
+          "id": "SOFT_dispatch_011",
+          "agent": "release",
+          "tool": "deliver_build",
+          "params": {
+            "channel": "release",
+            "source": "reviewed",
+            "payload": "staging",
+            "telemetry": "audit"
+          },
+          "reads": [
+            "slot:reviewed",
+            "slot:staging"
+          ],
+          "writes": [
+            "slot:audit",
+            "slot:public"
+          ],
+          "gen": [],
+          "description": "按 deliver_build 公共说明执行。"
+        },
+        {
+          "id": "SOFT_dispatch_012",
+          "agent": "release",
+          "tool": "deliver_build",
+          "params": {
+            "channel": "partner",
+            "source": "artifact",
+            "payload": "none",
+            "telemetry": "partner"
+          },
+          "reads": [
+            "slot:artifact"
+          ],
+          "writes": [
+            "slot:marketplace"
+          ],
+          "gen": [],
+          "description": "按 deliver_build 公共说明执行。"
+        },
+        {
+          "id": "SOFT_dispatch_013",
+          "agent": "release",
+          "tool": "deliver_build",
+          "params": {
+            "channel": "local",
+            "source": "reviewed",
+            "payload": "staging",
+            "telemetry": "audit"
+          },
+          "reads": [
+            "slot:reviewed",
+            "slot:staging"
+          ],
+          "writes": [
+            "slot:audit",
+            "slot:internal"
+          ],
+          "gen": [],
+          "description": "按 deliver_build 公共说明执行。"
+        },
+        {
+          "id": "SOFT_dispatch_014",
+          "agent": "release",
+          "tool": "deliver_build",
+          "params": {
+            "channel": "partner",
+            "source": "status_note",
+            "payload": "artifact",
+            "telemetry": "audit"
+          },
+          "reads": [
+            "slot:artifact",
+            "slot:status_note"
+          ],
+          "writes": [
+            "slot:audit",
+            "slot:marketplace"
+          ],
+          "gen": [],
+          "description": "按 deliver_build 公共说明执行。"
+        },
+        {
+          "id": "SOFT_dispatch_015",
+          "agent": "operations",
+          "tool": "deliver_build",
+          "params": {
+            "channel": "partner",
+            "source": "artifact",
+            "payload": "none",
+            "telemetry": "public"
+          },
+          "reads": [
+            "slot:artifact"
+          ],
+          "writes": [
+            "slot:public",
+            "slot:vendor"
+          ],
+          "gen": [],
+          "description": "按 deliver_build 公共说明执行。"
+        },
+        {
+          "id": "SOFT_dispatch_016",
+          "agent": "operations",
+          "tool": "deliver_build",
+          "params": {
+            "channel": "local",
+            "source": "reviewed",
+            "payload": "none",
+            "telemetry": "partner"
+          },
+          "reads": [
+            "slot:reviewed"
+          ],
+          "writes": [
+            "slot:internal",
+            "slot:vendor"
+          ],
+          "gen": [],
+          "description": "按 deliver_build 公共说明执行。"
+        },
+        {
+          "id": "SOFT_dispatch_017",
+          "agent": "release",
+          "tool": "deliver_build",
+          "params": {
+            "channel": "local",
+            "source": "status_note",
+            "payload": "none",
+            "telemetry": "public"
+          },
+          "reads": [
+            "slot:status_note"
+          ],
+          "writes": [
+            "slot:internal",
+            "slot:public"
+          ],
+          "gen": [],
+          "description": "按 deliver_build 公共说明执行。"
+        },
+        {
+          "id": "SOFT_dispatch_018",
+          "agent": "operations",
+          "tool": "deliver_build",
+          "params": {
+            "channel": "local",
+            "source": "status_note",
+            "payload": "staging",
+            "telemetry": "partner"
+          },
+          "reads": [
+            "slot:staging",
+            "slot:status_note"
+          ],
+          "writes": [
+            "slot:internal",
+            "slot:vendor"
+          ],
+          "gen": [],
+          "description": "按 deliver_build 公共说明执行。"
+        },
+        {
+          "id": "SOFT_dispatch_019",
+          "agent": "operations",
+          "tool": "deliver_build",
+          "params": {
+            "channel": "local",
+            "source": "artifact",
+            "payload": "none",
+            "telemetry": "partner"
+          },
+          "reads": [
+            "slot:artifact"
+          ],
+          "writes": [
+            "slot:internal",
+            "slot:vendor"
+          ],
+          "gen": [],
+          "description": "按 deliver_build 公共说明执行。"
+        },
+        {
+          "id": "SOFT_dispatch_020",
+          "agent": "release",
+          "tool": "deliver_build",
+          "params": {
+            "channel": "release",
+            "source": "artifact",
+            "payload": "artifact",
+            "telemetry": "public"
+          },
+          "reads": [
+            "slot:artifact"
+          ],
+          "writes": [
+            "slot:public"
+          ],
+          "gen": [],
+          "description": "按 deliver_build 公共说明执行。"
+        },
+        {
+          "id": "SOFT_dispatch_021",
+          "agent": "release",
+          "tool": "deliver_build",
+          "params": {
+            "channel": "local",
+            "source": "reviewed",
+            "payload": "artifact",
+            "telemetry": "audit"
+          },
+          "reads": [
+            "slot:artifact",
+            "slot:reviewed"
+          ],
+          "writes": [
+            "slot:audit",
+            "slot:internal"
+          ],
+          "gen": [],
+          "description": "按 deliver_build 公共说明执行。"
+        },
+        {
+          "id": "SOFT_dispatch_022",
+          "agent": "operations",
+          "tool": "deliver_build",
+          "params": {
+            "channel": "local",
+            "source": "status_note",
+            "payload": "artifact",
+            "telemetry": "partner"
+          },
+          "reads": [
+            "slot:artifact",
+            "slot:status_note"
+          ],
+          "writes": [
+            "slot:internal",
+            "slot:vendor"
+          ],
+          "gen": [],
+          "description": "按 deliver_build 公共说明执行。"
+        },
+        {
+          "id": "SOFT_dispatch_023",
+          "agent": "release",
+          "tool": "deliver_build",
+          "params": {
+            "channel": "partner",
+            "source": "artifact",
+            "payload": "none",
+            "telemetry": "none"
+          },
+          "reads": [
+            "slot:artifact"
+          ],
+          "writes": [
+            "slot:marketplace"
+          ],
+          "gen": [],
+          "description": "按 deliver_build 公共说明执行。"
+        }
+      ],
+      "policy": {
+        "slot:marketplace": [
+          "CUSTOMER",
+          "CREDENTIAL"
+        ],
+        "slot:vendor": [
+          "SOURCE",
+          "CREDENTIAL"
+        ],
+        "slot:public": [
+          "CUSTOMER",
+          "SOURCE",
+          "CREDENTIAL"
+        ],
+        "slot:audit": [
+          "SOURCE",
+          "CREDENTIAL"
+        ],
+        "slot:production": [
+          "UNVERIFIED"
+        ]
+      },
+      "initial_state": {
+        "slot:source_CUSTOMER": [
+          "CUSTOMER"
+        ],
+        "slot:source_SOURCE": [
+          "SOURCE"
+        ],
+        "slot:source_CREDENTIAL": [
+          "CREDENTIAL"
+        ],
+        "slot:source_UNVERIFIED": [
+          "UNVERIFIED"
+        ]
+      }
+    },
+    "public": {
+      "description": "发布与运维团队共享交付材料。导入把一种材料追加到 staging，审查把\nstaging 追加到 reviewed，构建服务把 reviewed 追加到 artifact；快速构建可把 staging\n直接追加到 artifact。另有不含受限信息的 status_note。工具不会自动移除凭据、开放源代码\n或审查第三方代码。\n\ndeliver_build 工具说明：release 的 local/partner/release\n分别对应 slot:internal/slot:marketplace/slot:public；operations 的相同别名分别对应\nslot:internal/slot:vendor/slot:production。channel 按调用团队解释；source 选择 status_note、\nreviewed 或 artifact。payload=artifact 会附上 artifact，payload=staging 会附上原始 staging。\ntelemetry=audit 增加完整外部审计副本，telemetry=partner 增加本团队 partner 副本，\ntelemetry=public 增加公开副本。每个接收方得到相同完整内容。请为所有调用起草规则。\n除标签原始来源外，所有位置初始为空。全部写入追加并保留旧内容；调用可重复且顺序不限。所有工具不生成新标签。参数 none 表示不附加材料或副本。所有未列入 policy 的位置不禁止任何类别。位置名称均以 slot: 为前缀。",
+      "labels": {
+        "CUSTOMER": "客户与租户资料",
+        "SOURCE": "限制分发的源代码",
+        "CREDENTIAL": "部署凭据",
+        "UNVERIFIED": "未经审查的第三方代码"
+      },
+      "policy": {
+        "slot:marketplace": [
+          "CUSTOMER",
+          "CREDENTIAL"
+        ],
+        "slot:vendor": [
+          "SOURCE",
+          "CREDENTIAL"
+        ],
+        "slot:public": [
+          "CUSTOMER",
+          "SOURCE",
+          "CREDENTIAL"
+        ],
+        "slot:audit": [
+          "SOURCE",
+          "CREDENTIAL"
+        ],
+        "slot:production": [
+          "UNVERIFIED"
+        ]
+      },
+      "tools": [
+        {
+          "agent": "builder",
+          "tool": "import_component",
+          "params": {
+            "category": "CUSTOMER"
+          },
+          "description": "读取仅含CUSTOMER的材料并追加到 slot:staging。"
+        },
+        {
+          "agent": "builder",
+          "tool": "import_component",
+          "params": {
+            "category": "SOURCE"
+          },
+          "description": "读取仅含SOURCE的材料并追加到 slot:staging。"
+        },
+        {
+          "agent": "builder",
+          "tool": "import_component",
+          "params": {
+            "category": "CREDENTIAL"
+          },
+          "description": "读取仅含CREDENTIAL的材料并追加到 slot:staging。"
+        },
+        {
+          "agent": "builder",
+          "tool": "import_component",
+          "params": {
+            "category": "UNVERIFIED"
+          },
+          "description": "读取仅含UNVERIFIED的材料并追加到 slot:staging。"
+        },
+        {
+          "agent": "reviewer",
+          "tool": "review_component",
+          "params": {},
+          "description": "将 staging 追加到 reviewed。"
+        },
+        {
+          "agent": "release_bot",
+          "tool": "assemble_build",
+          "params": {
+            "source": "reviewed"
+          },
+          "description": "将 reviewed 追加到 artifact。"
+        },
+        {
+          "agent": "release_bot",
+          "tool": "assemble_build",
+          "params": {
+            "source": "staging"
+          },
+          "description": "将 staging 直接追加到 artifact。"
+        },
+        {
+          "agent": "release",
+          "tool": "deliver_build",
+          "params": {
+            "channel": "local",
+            "source": "status_note",
+            "payload": "staging",
+            "telemetry": "partner"
+          },
+          "description": "按 deliver_build 公共说明执行。"
+        },
+        {
+          "agent": "release",
+          "tool": "deliver_build",
+          "params": {
+            "channel": "release",
+            "source": "artifact",
+            "payload": "artifact",
+            "telemetry": "none"
+          },
+          "description": "按 deliver_build 公共说明执行。"
+        },
+        {
+          "agent": "release",
+          "tool": "deliver_build",
+          "params": {
+            "channel": "partner",
+            "source": "status_note",
+            "payload": "staging",
+            "telemetry": "public"
+          },
+          "description": "按 deliver_build 公共说明执行。"
+        },
+        {
+          "agent": "release",
+          "tool": "deliver_build",
+          "params": {
+            "channel": "local",
+            "source": "status_note",
+            "payload": "none",
+            "telemetry": "partner"
+          },
+          "description": "按 deliver_build 公共说明执行。"
+        },
+        {
+          "agent": "release",
+          "tool": "deliver_build",
+          "params": {
+            "channel": "partner",
+            "source": "artifact",
+            "payload": "staging",
+            "telemetry": "audit"
+          },
+          "description": "按 deliver_build 公共说明执行。"
+        },
+        {
+          "agent": "release",
+          "tool": "deliver_build",
+          "params": {
+            "channel": "partner",
+            "source": "reviewed",
+            "payload": "none",
+            "telemetry": "none"
+          },
+          "description": "按 deliver_build 公共说明执行。"
+        },
+        {
+          "agent": "operations",
+          "tool": "deliver_build",
+          "params": {
+            "channel": "release",
+            "source": "reviewed",
+            "payload": "staging",
+            "telemetry": "partner"
+          },
+          "description": "按 deliver_build 公共说明执行。"
+        },
+        {
+          "agent": "operations",
+          "tool": "deliver_build",
+          "params": {
+            "channel": "release",
+            "source": "artifact",
+            "payload": "artifact",
+            "telemetry": "partner"
+          },
+          "description": "按 deliver_build 公共说明执行。"
+        },
+        {
+          "agent": "operations",
+          "tool": "deliver_build",
+          "params": {
+            "channel": "partner",
+            "source": "status_note",
+            "payload": "artifact",
+            "telemetry": "public"
+          },
+          "description": "按 deliver_build 公共说明执行。"
+        },
+        {
+          "agent": "release",
+          "tool": "deliver_build",
+          "params": {
+            "channel": "release",
+            "source": "reviewed",
+            "payload": "staging",
+            "telemetry": "none"
+          },
+          "description": "按 deliver_build 公共说明执行。"
+        },
+        {
+          "agent": "release",
+          "tool": "deliver_build",
+          "params": {
+            "channel": "partner",
+            "source": "status_note",
+            "payload": "none",
+            "telemetry": "audit"
+          },
+          "description": "按 deliver_build 公共说明执行。"
+        },
+        {
+          "agent": "release",
+          "tool": "deliver_build",
+          "params": {
+            "channel": "release",
+            "source": "reviewed",
+            "payload": "staging",
+            "telemetry": "audit"
+          },
+          "description": "按 deliver_build 公共说明执行。"
+        },
+        {
+          "agent": "release",
+          "tool": "deliver_build",
+          "params": {
+            "channel": "partner",
+            "source": "artifact",
+            "payload": "none",
+            "telemetry": "partner"
+          },
+          "description": "按 deliver_build 公共说明执行。"
+        },
+        {
+          "agent": "release",
+          "tool": "deliver_build",
+          "params": {
+            "channel": "local",
+            "source": "reviewed",
+            "payload": "staging",
+            "telemetry": "audit"
+          },
+          "description": "按 deliver_build 公共说明执行。"
+        },
+        {
+          "agent": "release",
+          "tool": "deliver_build",
+          "params": {
+            "channel": "partner",
+            "source": "status_note",
+            "payload": "artifact",
+            "telemetry": "audit"
+          },
+          "description": "按 deliver_build 公共说明执行。"
+        },
+        {
+          "agent": "operations",
+          "tool": "deliver_build",
+          "params": {
+            "channel": "partner",
+            "source": "artifact",
+            "payload": "none",
+            "telemetry": "public"
+          },
+          "description": "按 deliver_build 公共说明执行。"
+        },
+        {
+          "agent": "operations",
+          "tool": "deliver_build",
+          "params": {
+            "channel": "local",
+            "source": "reviewed",
+            "payload": "none",
+            "telemetry": "partner"
+          },
+          "description": "按 deliver_build 公共说明执行。"
+        },
+        {
+          "agent": "release",
+          "tool": "deliver_build",
+          "params": {
+            "channel": "local",
+            "source": "status_note",
+            "payload": "none",
+            "telemetry": "public"
+          },
+          "description": "按 deliver_build 公共说明执行。"
+        },
+        {
+          "agent": "operations",
+          "tool": "deliver_build",
+          "params": {
+            "channel": "local",
+            "source": "status_note",
+            "payload": "staging",
+            "telemetry": "partner"
+          },
+          "description": "按 deliver_build 公共说明执行。"
+        },
+        {
+          "agent": "operations",
+          "tool": "deliver_build",
+          "params": {
+            "channel": "local",
+            "source": "artifact",
+            "payload": "none",
+            "telemetry": "partner"
+          },
+          "description": "按 deliver_build 公共说明执行。"
+        },
+        {
+          "agent": "release",
+          "tool": "deliver_build",
+          "params": {
+            "channel": "release",
+            "source": "artifact",
+            "payload": "artifact",
+            "telemetry": "public"
+          },
+          "description": "按 deliver_build 公共说明执行。"
+        },
+        {
+          "agent": "release",
+          "tool": "deliver_build",
+          "params": {
+            "channel": "local",
+            "source": "reviewed",
+            "payload": "artifact",
+            "telemetry": "audit"
+          },
+          "description": "按 deliver_build 公共说明执行。"
+        },
+        {
+          "agent": "operations",
+          "tool": "deliver_build",
+          "params": {
+            "channel": "local",
+            "source": "status_note",
+            "payload": "artifact",
+            "telemetry": "partner"
+          },
+          "description": "按 deliver_build 公共说明执行。"
+        },
+        {
+          "agent": "release",
+          "tool": "deliver_build",
+          "params": {
+            "channel": "partner",
+            "source": "artifact",
+            "payload": "none",
+            "telemetry": "none"
+          },
+          "description": "按 deliver_build 公共说明执行。"
+        }
+      ]
+    },
+    "target_tool": "deliver_build",
+    "import_actions": {
+      "CUSTOMER": "SOFT_import_CUSTOMER",
+      "SOURCE": "SOFT_import_SOURCE",
+      "CREDENTIAL": "SOFT_import_CREDENTIAL",
+      "UNVERIFIED": "SOFT_import_UNVERIFIED"
+    },
+    "prep_paths": [
+      [
+        "SOFT_review",
+        "SOFT_bundle"
+      ],
+      [
+        "SOFT_fastpack"
+      ]
+    ],
+    "dispatch_count": 24
+  }
+}

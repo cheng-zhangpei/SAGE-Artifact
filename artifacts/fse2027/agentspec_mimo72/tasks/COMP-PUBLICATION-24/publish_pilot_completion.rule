@@ -1,0 +1,8 @@
+rule @rule_pilot_completion
+trigger
+ publish
+check
+ pilot_completion
+enforce
+ stop
+end

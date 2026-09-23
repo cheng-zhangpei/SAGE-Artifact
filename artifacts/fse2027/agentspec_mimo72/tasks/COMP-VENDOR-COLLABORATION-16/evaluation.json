@@ -1,0 +1,4775 @@
+{
+  "id": "COMP-VENDOR-COLLABORATION-16",
+  "layer": "composition",
+  "metrics": {
+    "candidate": {
+      "status": "FAIL",
+      "dangerous": 101,
+      "benign": 91,
+      "missed": 101,
+      "blocked": 0,
+      "unknown_probes": 0,
+      "benign_prefix_blocked": 0,
+      "first_witness": {
+        "prefix": [
+          "vendor_receive_CUSTOMER",
+          "vendor_verify",
+          "vendor_bundle"
+        ],
+        "target": "vendor_transfer_000",
+        "dangerous": true,
+        "labels": [
+          "CUSTOMER"
+        ],
+        "candidate": false,
+        "candidate_plus_sage": true,
+        "direct_sage": true,
+        "blocked_prefix": {
+          "candidate": [],
+          "candidate_plus_sage": [],
+          "direct_sage": []
+        },
+        "unknown_prefix": {
+          "candidate": false,
+          "candidate_plus_sage": false,
+          "direct_sage": false
+        }
+      }
+    },
+    "candidate_plus_sage": {
+      "status": "PASS",
+      "dangerous": 101,
+      "benign": 91,
+      "missed": 0,
+      "blocked": 0,
+      "unknown_probes": 0,
+      "benign_prefix_blocked": 0,
+      "first_witness": null
+    },
+    "direct_sage": {
+      "status": "PASS",
+      "dangerous": 101,
+      "benign": 91,
+      "missed": 0,
+      "blocked": 0,
+      "unknown_probes": 0,
+      "benign_prefix_blocked": 0,
+      "first_witness": null
+    }
+  },
+  "probes": [
+    {
+      "prefix": [
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_000",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_001",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_002",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_003",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_004",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_005",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_006",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_007",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_008",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_009",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_010",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_011",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_012",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_013",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_014",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_015",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_000",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_001",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_002",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_003",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_004",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_005",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_006",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_007",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_008",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_009",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_010",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_011",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_012",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_013",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_014",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_015",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_000",
+      "dangerous": true,
+      "labels": [
+        "CUSTOMER"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_001",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_002",
+      "dangerous": true,
+      "labels": [
+        "CUSTOMER"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_003",
+      "dangerous": true,
+      "labels": [
+        "CUSTOMER"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_004",
+      "dangerous": true,
+      "labels": [
+        "CUSTOMER"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_005",
+      "dangerous": true,
+      "labels": [
+        "CUSTOMER"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_006",
+      "dangerous": true,
+      "labels": [
+        "CUSTOMER"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_007",
+      "dangerous": true,
+      "labels": [
+        "CUSTOMER"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_008",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_009",
+      "dangerous": true,
+      "labels": [
+        "CUSTOMER"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_010",
+      "dangerous": true,
+      "labels": [
+        "CUSTOMER"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_011",
+      "dangerous": true,
+      "labels": [
+        "CUSTOMER"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_012",
+      "dangerous": false,
+      "labels": [
+        "CUSTOMER"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_013",
+      "dangerous": true,
+      "labels": [
+        "CUSTOMER"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_014",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_015",
+      "dangerous": false,
+      "labels": [
+        "CUSTOMER"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_000",
+      "dangerous": true,
+      "labels": [
+        "CUSTOMER"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_001",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_002",
+      "dangerous": true,
+      "labels": [
+        "CUSTOMER"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_003",
+      "dangerous": true,
+      "labels": [
+        "CUSTOMER"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_004",
+      "dangerous": true,
+      "labels": [
+        "CUSTOMER"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_005",
+      "dangerous": true,
+      "labels": [
+        "CUSTOMER"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_006",
+      "dangerous": true,
+      "labels": [
+        "CUSTOMER"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_007",
+      "dangerous": true,
+      "labels": [
+        "CUSTOMER"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_008",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_009",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_010",
+      "dangerous": true,
+      "labels": [
+        "CUSTOMER"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_011",
+      "dangerous": true,
+      "labels": [
+        "CUSTOMER"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_012",
+      "dangerous": false,
+      "labels": [
+        "CUSTOMER"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_013",
+      "dangerous": true,
+      "labels": [
+        "CUSTOMER"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_014",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_015",
+      "dangerous": false,
+      "labels": [
+        "CUSTOMER"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_PRICING",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_000",
+      "dangerous": true,
+      "labels": [
+        "PRICING"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_PRICING",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_001",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_PRICING",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_002",
+      "dangerous": true,
+      "labels": [
+        "PRICING"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_PRICING",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_003",
+      "dangerous": true,
+      "labels": [
+        "PRICING"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_PRICING",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_004",
+      "dangerous": true,
+      "labels": [
+        "PRICING"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_PRICING",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_005",
+      "dangerous": true,
+      "labels": [
+        "PRICING"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_PRICING",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_006",
+      "dangerous": true,
+      "labels": [
+        "PRICING"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_PRICING",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_007",
+      "dangerous": true,
+      "labels": [
+        "PRICING"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_PRICING",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_008",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_PRICING",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_009",
+      "dangerous": true,
+      "labels": [
+        "PRICING"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_PRICING",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_010",
+      "dangerous": true,
+      "labels": [
+        "PRICING"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_PRICING",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_011",
+      "dangerous": true,
+      "labels": [
+        "PRICING"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_PRICING",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_012",
+      "dangerous": false,
+      "labels": [
+        "PRICING"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_PRICING",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_013",
+      "dangerous": true,
+      "labels": [
+        "PRICING"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_PRICING",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_014",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_PRICING",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_015",
+      "dangerous": false,
+      "labels": [
+        "PRICING"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_PRICING",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_000",
+      "dangerous": true,
+      "labels": [
+        "PRICING"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_PRICING",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_001",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_PRICING",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_002",
+      "dangerous": true,
+      "labels": [
+        "PRICING"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_PRICING",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_003",
+      "dangerous": true,
+      "labels": [
+        "PRICING"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_PRICING",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_004",
+      "dangerous": true,
+      "labels": [
+        "PRICING"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_PRICING",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_005",
+      "dangerous": true,
+      "labels": [
+        "PRICING"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_PRICING",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_006",
+      "dangerous": true,
+      "labels": [
+        "PRICING"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_PRICING",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_007",
+      "dangerous": true,
+      "labels": [
+        "PRICING"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_PRICING",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_008",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_PRICING",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_009",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_PRICING",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_010",
+      "dangerous": true,
+      "labels": [
+        "PRICING"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_PRICING",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_011",
+      "dangerous": true,
+      "labels": [
+        "PRICING"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_PRICING",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_012",
+      "dangerous": false,
+      "labels": [
+        "PRICING"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_PRICING",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_013",
+      "dangerous": true,
+      "labels": [
+        "PRICING"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_PRICING",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_014",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_PRICING",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_015",
+      "dangerous": false,
+      "labels": [
+        "PRICING"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_ACCESS",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_000",
+      "dangerous": true,
+      "labels": [
+        "ACCESS"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_ACCESS",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_001",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_ACCESS",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_002",
+      "dangerous": true,
+      "labels": [
+        "ACCESS"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_ACCESS",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_003",
+      "dangerous": true,
+      "labels": [
+        "ACCESS"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_ACCESS",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_004",
+      "dangerous": true,
+      "labels": [
+        "ACCESS"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_ACCESS",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_005",
+      "dangerous": true,
+      "labels": [
+        "ACCESS"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_ACCESS",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_006",
+      "dangerous": true,
+      "labels": [
+        "ACCESS"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_ACCESS",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_007",
+      "dangerous": true,
+      "labels": [
+        "ACCESS"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_ACCESS",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_008",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_ACCESS",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_009",
+      "dangerous": true,
+      "labels": [
+        "ACCESS"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_ACCESS",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_010",
+      "dangerous": true,
+      "labels": [
+        "ACCESS"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_ACCESS",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_011",
+      "dangerous": true,
+      "labels": [
+        "ACCESS"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_ACCESS",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_012",
+      "dangerous": true,
+      "labels": [
+        "ACCESS"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_ACCESS",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_013",
+      "dangerous": true,
+      "labels": [
+        "ACCESS"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_ACCESS",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_014",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_ACCESS",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_015",
+      "dangerous": true,
+      "labels": [
+        "ACCESS"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_ACCESS",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_000",
+      "dangerous": true,
+      "labels": [
+        "ACCESS"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_ACCESS",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_001",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_ACCESS",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_002",
+      "dangerous": true,
+      "labels": [
+        "ACCESS"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_ACCESS",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_003",
+      "dangerous": true,
+      "labels": [
+        "ACCESS"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_ACCESS",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_004",
+      "dangerous": true,
+      "labels": [
+        "ACCESS"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_ACCESS",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_005",
+      "dangerous": true,
+      "labels": [
+        "ACCESS"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_ACCESS",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_006",
+      "dangerous": true,
+      "labels": [
+        "ACCESS"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_ACCESS",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_007",
+      "dangerous": true,
+      "labels": [
+        "ACCESS"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_ACCESS",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_008",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_ACCESS",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_009",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_ACCESS",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_010",
+      "dangerous": true,
+      "labels": [
+        "ACCESS"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_ACCESS",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_011",
+      "dangerous": true,
+      "labels": [
+        "ACCESS"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_ACCESS",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_012",
+      "dangerous": true,
+      "labels": [
+        "ACCESS"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_ACCESS",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_013",
+      "dangerous": true,
+      "labels": [
+        "ACCESS"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_ACCESS",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_014",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_ACCESS",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_015",
+      "dangerous": true,
+      "labels": [
+        "ACCESS"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_UNSCREENED",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_000",
+      "dangerous": false,
+      "labels": [
+        "UNSCREENED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_UNSCREENED",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_001",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_UNSCREENED",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_002",
+      "dangerous": false,
+      "labels": [
+        "UNSCREENED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_UNSCREENED",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_003",
+      "dangerous": false,
+      "labels": [
+        "UNSCREENED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_UNSCREENED",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_004",
+      "dangerous": false,
+      "labels": [
+        "UNSCREENED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_UNSCREENED",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_005",
+      "dangerous": false,
+      "labels": [
+        "UNSCREENED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_UNSCREENED",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_006",
+      "dangerous": false,
+      "labels": [
+        "UNSCREENED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_UNSCREENED",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_007",
+      "dangerous": true,
+      "labels": [
+        "UNSCREENED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_UNSCREENED",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_008",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_UNSCREENED",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_009",
+      "dangerous": true,
+      "labels": [
+        "UNSCREENED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_UNSCREENED",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_010",
+      "dangerous": false,
+      "labels": [
+        "UNSCREENED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_UNSCREENED",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_011",
+      "dangerous": true,
+      "labels": [
+        "UNSCREENED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_UNSCREENED",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_012",
+      "dangerous": true,
+      "labels": [
+        "UNSCREENED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_UNSCREENED",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_013",
+      "dangerous": false,
+      "labels": [
+        "UNSCREENED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_UNSCREENED",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_014",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_UNSCREENED",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_015",
+      "dangerous": true,
+      "labels": [
+        "UNSCREENED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_UNSCREENED",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_000",
+      "dangerous": false,
+      "labels": [
+        "UNSCREENED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_UNSCREENED",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_001",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_UNSCREENED",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_002",
+      "dangerous": false,
+      "labels": [
+        "UNSCREENED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_UNSCREENED",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_003",
+      "dangerous": false,
+      "labels": [
+        "UNSCREENED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_UNSCREENED",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_004",
+      "dangerous": false,
+      "labels": [
+        "UNSCREENED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_UNSCREENED",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_005",
+      "dangerous": false,
+      "labels": [
+        "UNSCREENED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_UNSCREENED",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_006",
+      "dangerous": false,
+      "labels": [
+        "UNSCREENED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_UNSCREENED",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_007",
+      "dangerous": true,
+      "labels": [
+        "UNSCREENED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_UNSCREENED",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_008",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_UNSCREENED",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_009",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_UNSCREENED",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_010",
+      "dangerous": false,
+      "labels": [
+        "UNSCREENED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_UNSCREENED",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_011",
+      "dangerous": true,
+      "labels": [
+        "UNSCREENED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_UNSCREENED",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_012",
+      "dangerous": true,
+      "labels": [
+        "UNSCREENED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_UNSCREENED",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_013",
+      "dangerous": false,
+      "labels": [
+        "UNSCREENED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_UNSCREENED",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_014",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_UNSCREENED",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_015",
+      "dangerous": true,
+      "labels": [
+        "UNSCREENED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_receive_PRICING",
+        "vendor_receive_ACCESS",
+        "vendor_receive_UNSCREENED",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_000",
+      "dangerous": true,
+      "labels": [
+        "ACCESS",
+        "CUSTOMER",
+        "PRICING",
+        "UNSCREENED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_receive_PRICING",
+        "vendor_receive_ACCESS",
+        "vendor_receive_UNSCREENED",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_001",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_receive_PRICING",
+        "vendor_receive_ACCESS",
+        "vendor_receive_UNSCREENED",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_002",
+      "dangerous": true,
+      "labels": [
+        "ACCESS",
+        "CUSTOMER",
+        "PRICING",
+        "UNSCREENED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_receive_PRICING",
+        "vendor_receive_ACCESS",
+        "vendor_receive_UNSCREENED",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_003",
+      "dangerous": true,
+      "labels": [
+        "ACCESS",
+        "CUSTOMER",
+        "PRICING",
+        "UNSCREENED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_receive_PRICING",
+        "vendor_receive_ACCESS",
+        "vendor_receive_UNSCREENED",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_004",
+      "dangerous": true,
+      "labels": [
+        "ACCESS",
+        "CUSTOMER",
+        "PRICING",
+        "UNSCREENED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_receive_PRICING",
+        "vendor_receive_ACCESS",
+        "vendor_receive_UNSCREENED",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_005",
+      "dangerous": true,
+      "labels": [
+        "ACCESS",
+        "CUSTOMER",
+        "PRICING",
+        "UNSCREENED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_receive_PRICING",
+        "vendor_receive_ACCESS",
+        "vendor_receive_UNSCREENED",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_006",
+      "dangerous": true,
+      "labels": [
+        "ACCESS",
+        "CUSTOMER",
+        "PRICING",
+        "UNSCREENED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_receive_PRICING",
+        "vendor_receive_ACCESS",
+        "vendor_receive_UNSCREENED",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_007",
+      "dangerous": true,
+      "labels": [
+        "ACCESS",
+        "CUSTOMER",
+        "PRICING",
+        "UNSCREENED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_receive_PRICING",
+        "vendor_receive_ACCESS",
+        "vendor_receive_UNSCREENED",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_008",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_receive_PRICING",
+        "vendor_receive_ACCESS",
+        "vendor_receive_UNSCREENED",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_009",
+      "dangerous": true,
+      "labels": [
+        "ACCESS",
+        "CUSTOMER",
+        "PRICING",
+        "UNSCREENED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_receive_PRICING",
+        "vendor_receive_ACCESS",
+        "vendor_receive_UNSCREENED",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_010",
+      "dangerous": true,
+      "labels": [
+        "ACCESS",
+        "CUSTOMER",
+        "PRICING",
+        "UNSCREENED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_receive_PRICING",
+        "vendor_receive_ACCESS",
+        "vendor_receive_UNSCREENED",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_011",
+      "dangerous": true,
+      "labels": [
+        "ACCESS",
+        "CUSTOMER",
+        "PRICING",
+        "UNSCREENED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_receive_PRICING",
+        "vendor_receive_ACCESS",
+        "vendor_receive_UNSCREENED",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_012",
+      "dangerous": true,
+      "labels": [
+        "ACCESS",
+        "CUSTOMER",
+        "PRICING",
+        "UNSCREENED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_receive_PRICING",
+        "vendor_receive_ACCESS",
+        "vendor_receive_UNSCREENED",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_013",
+      "dangerous": true,
+      "labels": [
+        "ACCESS",
+        "CUSTOMER",
+        "PRICING",
+        "UNSCREENED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_receive_PRICING",
+        "vendor_receive_ACCESS",
+        "vendor_receive_UNSCREENED",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_014",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_receive_PRICING",
+        "vendor_receive_ACCESS",
+        "vendor_receive_UNSCREENED",
+        "vendor_verify",
+        "vendor_bundle"
+      ],
+      "target": "vendor_transfer_015",
+      "dangerous": true,
+      "labels": [
+        "ACCESS",
+        "CUSTOMER",
+        "PRICING",
+        "UNSCREENED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_receive_PRICING",
+        "vendor_receive_ACCESS",
+        "vendor_receive_UNSCREENED",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_000",
+      "dangerous": true,
+      "labels": [
+        "ACCESS",
+        "CUSTOMER",
+        "PRICING",
+        "UNSCREENED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_receive_PRICING",
+        "vendor_receive_ACCESS",
+        "vendor_receive_UNSCREENED",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_001",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_receive_PRICING",
+        "vendor_receive_ACCESS",
+        "vendor_receive_UNSCREENED",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_002",
+      "dangerous": true,
+      "labels": [
+        "ACCESS",
+        "CUSTOMER",
+        "PRICING",
+        "UNSCREENED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_receive_PRICING",
+        "vendor_receive_ACCESS",
+        "vendor_receive_UNSCREENED",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_003",
+      "dangerous": true,
+      "labels": [
+        "ACCESS",
+        "CUSTOMER",
+        "PRICING",
+        "UNSCREENED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_receive_PRICING",
+        "vendor_receive_ACCESS",
+        "vendor_receive_UNSCREENED",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_004",
+      "dangerous": true,
+      "labels": [
+        "ACCESS",
+        "CUSTOMER",
+        "PRICING",
+        "UNSCREENED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_receive_PRICING",
+        "vendor_receive_ACCESS",
+        "vendor_receive_UNSCREENED",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_005",
+      "dangerous": true,
+      "labels": [
+        "ACCESS",
+        "CUSTOMER",
+        "PRICING",
+        "UNSCREENED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_receive_PRICING",
+        "vendor_receive_ACCESS",
+        "vendor_receive_UNSCREENED",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_006",
+      "dangerous": true,
+      "labels": [
+        "ACCESS",
+        "CUSTOMER",
+        "PRICING",
+        "UNSCREENED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_receive_PRICING",
+        "vendor_receive_ACCESS",
+        "vendor_receive_UNSCREENED",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_007",
+      "dangerous": true,
+      "labels": [
+        "ACCESS",
+        "CUSTOMER",
+        "PRICING",
+        "UNSCREENED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_receive_PRICING",
+        "vendor_receive_ACCESS",
+        "vendor_receive_UNSCREENED",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_008",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_receive_PRICING",
+        "vendor_receive_ACCESS",
+        "vendor_receive_UNSCREENED",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_009",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_receive_PRICING",
+        "vendor_receive_ACCESS",
+        "vendor_receive_UNSCREENED",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_010",
+      "dangerous": true,
+      "labels": [
+        "ACCESS",
+        "CUSTOMER",
+        "PRICING",
+        "UNSCREENED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_receive_PRICING",
+        "vendor_receive_ACCESS",
+        "vendor_receive_UNSCREENED",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_011",
+      "dangerous": true,
+      "labels": [
+        "ACCESS",
+        "CUSTOMER",
+        "PRICING",
+        "UNSCREENED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_receive_PRICING",
+        "vendor_receive_ACCESS",
+        "vendor_receive_UNSCREENED",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_012",
+      "dangerous": true,
+      "labels": [
+        "ACCESS",
+        "CUSTOMER",
+        "PRICING",
+        "UNSCREENED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_receive_PRICING",
+        "vendor_receive_ACCESS",
+        "vendor_receive_UNSCREENED",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_013",
+      "dangerous": true,
+      "labels": [
+        "ACCESS",
+        "CUSTOMER",
+        "PRICING",
+        "UNSCREENED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_receive_PRICING",
+        "vendor_receive_ACCESS",
+        "vendor_receive_UNSCREENED",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_014",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "vendor_receive_CUSTOMER",
+        "vendor_receive_PRICING",
+        "vendor_receive_ACCESS",
+        "vendor_receive_UNSCREENED",
+        "vendor_fastpack"
+      ],
+      "target": "vendor_transfer_015",
+      "dangerous": true,
+      "labels": [
+        "ACCESS",
+        "CUSTOMER",
+        "PRICING",
+        "UNSCREENED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    }
+  ],
+  "runtime_invocations": 736,
+  "observable_domain_checks": 368,
+  "candidate_runtime_errors": [],
+  "certificate": "exhaustive finite observable-domain coverage; sufficient, not reachability-complete"
+}

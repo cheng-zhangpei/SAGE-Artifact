@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"import json\\n\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    params = json.loads(tool_input)\\n    trusted_labels = user_input.get('trusted_event_labels', [])\\n    tool = user_input.get('tool')\\n    \\n    if tool == 'publish':\\n        target = params.get('target', None)\\n        mirror = params.get('mirror', None)\\n        if target == 'tracking' or mirror == 'tracking':\\n            if 'ADDRESS' in trusted_labels:\\n                return True\\n    \\n    return False\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 4029,
+    "prompt_tokens": 836,
+    "total_tokens": 4865,
+    "completion_tokens_details": {
+      "reasoning_tokens": 3898
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "5100c0fd-a3a3-4b50-8eae-acfa8c91aa22_93d7f2de552a4d2fb9a973dc94d97347"
+}

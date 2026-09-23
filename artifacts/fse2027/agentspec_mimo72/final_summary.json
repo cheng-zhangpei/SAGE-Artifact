@@ -1,0 +1,236 @@
+{
+  "tasks": 72,
+  "overall": {
+    "candidate": {
+      "pass": 26,
+      "fail": 37,
+      "unknown": 9,
+      "der": 61.6306027820711,
+      "bbr": 30.785714285714285,
+      "unknown_probes": 1608
+    },
+    "candidate_plus_sage": {
+      "pass": 67,
+      "fail": 0,
+      "unknown": 5,
+      "der": 100.0,
+      "bbr": 30.785714285714285,
+      "unknown_probes": 1608
+    },
+    "direct_sage": {
+      "pass": 72,
+      "fail": 0,
+      "unknown": 0,
+      "der": 100.0,
+      "bbr": 0.0,
+      "unknown_probes": 0
+    }
+  },
+  "by_complexity": {
+    "Base (W01--W36)": {
+      "candidate": {
+        "pass": 25,
+        "fail": 9,
+        "unknown": 2,
+        "der": 81.25,
+        "bbr": 5.555555555555555,
+        "unknown_probes": 0
+      },
+      "candidate_plus_sage": {
+        "pass": 36,
+        "fail": 0,
+        "unknown": 0,
+        "der": 100.0,
+        "bbr": 5.555555555555555,
+        "unknown_probes": 0
+      },
+      "direct_sage": {
+        "pass": 36,
+        "fail": 0,
+        "unknown": 0,
+        "der": 100.0,
+        "bbr": 0.0,
+        "unknown_probes": 0
+      }
+    },
+    "Composition-08": {
+      "candidate": {
+        "pass": 0,
+        "fail": 5,
+        "unknown": 1,
+        "der": 58.8477366255144,
+        "bbr": 37.130801687763714,
+        "unknown_probes": 96
+      },
+      "candidate_plus_sage": {
+        "pass": 5,
+        "fail": 0,
+        "unknown": 1,
+        "der": 100.0,
+        "bbr": 37.130801687763714,
+        "unknown_probes": 96
+      },
+      "direct_sage": {
+        "pass": 6,
+        "fail": 0,
+        "unknown": 0,
+        "der": 100.0,
+        "bbr": 0.0,
+        "unknown_probes": 0
+      }
+    },
+    "Composition-16": {
+      "candidate": {
+        "pass": 1,
+        "fail": 4,
+        "unknown": 1,
+        "der": 49.382716049382715,
+        "bbr": 24.68354430379747,
+        "unknown_probes": 192
+      },
+      "candidate_plus_sage": {
+        "pass": 5,
+        "fail": 0,
+        "unknown": 1,
+        "der": 100.0,
+        "bbr": 24.68354430379747,
+        "unknown_probes": 192
+      },
+      "direct_sage": {
+        "pass": 6,
+        "fail": 0,
+        "unknown": 0,
+        "der": 100.0,
+        "bbr": 0.0,
+        "unknown_probes": 0
+      }
+    },
+    "Composition-24": {
+      "candidate": {
+        "pass": 0,
+        "fail": 4,
+        "unknown": 2,
+        "der": 65.47945205479452,
+        "bbr": 39.859154929577464,
+        "unknown_probes": 288
+      },
+      "candidate_plus_sage": {
+        "pass": 5,
+        "fail": 0,
+        "unknown": 1,
+        "der": 100.0,
+        "bbr": 39.859154929577464,
+        "unknown_probes": 288
+      },
+      "direct_sage": {
+        "pass": 6,
+        "fail": 0,
+        "unknown": 0,
+        "der": 100.0,
+        "bbr": 0.0,
+        "unknown_probes": 0
+      }
+    },
+    "Composition-32": {
+      "candidate": {
+        "pass": 0,
+        "fail": 6,
+        "unknown": 0,
+        "der": 57.28417266187051,
+        "bbr": 29.949664429530202,
+        "unknown_probes": 0
+      },
+      "candidate_plus_sage": {
+        "pass": 6,
+        "fail": 0,
+        "unknown": 0,
+        "der": 100.0,
+        "bbr": 29.949664429530202,
+        "unknown_probes": 0
+      },
+      "direct_sage": {
+        "pass": 6,
+        "fail": 0,
+        "unknown": 0,
+        "der": 100.0,
+        "bbr": 0.0,
+        "unknown_probes": 0
+      }
+    },
+    "Composition-40": {
+      "candidate": {
+        "pass": 0,
+        "fail": 4,
+        "unknown": 2,
+        "der": 64.343163538874,
+        "bbr": 42.38875878220141,
+        "unknown_probes": 480
+      },
+      "candidate_plus_sage": {
+        "pass": 5,
+        "fail": 0,
+        "unknown": 1,
+        "der": 100.0,
+        "bbr": 42.38875878220141,
+        "unknown_probes": 480
+      },
+      "direct_sage": {
+        "pass": 6,
+        "fail": 0,
+        "unknown": 0,
+        "der": 100.0,
+        "bbr": 0.0,
+        "unknown_probes": 0
+      }
+    },
+    "Composition-48": {
+      "candidate": {
+        "pass": 0,
+        "fail": 5,
+        "unknown": 1,
+        "der": 63.71087928464978,
+        "bbr": 20.998719590268887,
+        "unknown_probes": 552
+      },
+      "candidate_plus_sage": {
+        "pass": 5,
+        "fail": 0,
+        "unknown": 1,
+        "der": 100.0,
+        "bbr": 20.998719590268887,
+        "unknown_probes": 552
+      },
+      "direct_sage": {
+        "pass": 6,
+        "fail": 0,
+        "unknown": 0,
+        "der": 100.0,
+        "bbr": 0.0,
+        "unknown_probes": 0
+      }
+    }
+  },
+  "completion": {
+    "clauses_min": 1,
+    "clauses_max": 12,
+    "clauses_median_upper": 3,
+    "patterns_min": 2,
+    "patterns_max": 46,
+    "patterns_median_upper": 7
+  },
+  "runtime_invalid": [
+    "COMP-CLINICAL-REFERRAL-40",
+    "COMP-REIMBURSEMENT-16",
+    "COMP-SOFTWARE-DELIVERY-24",
+    "COMP-VENDOR-COLLABORATION-08",
+    "COMP-VENDOR-COLLABORATION-48"
+  ],
+  "inconclusive_without_fixed_witness": [
+    "COMP-REIMBURSEMENT-40",
+    "COMP-VENDOR-COLLABORATION-24",
+    "W30",
+    "W35"
+  ],
+  "generation_amendments": [],
+  "source_normalizations": []
+}

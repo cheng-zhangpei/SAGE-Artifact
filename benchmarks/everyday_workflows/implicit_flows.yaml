@@ -1,0 +1,122 @@
+schema_version: 1
+scope: boundary_implicit_flow
+cases:
+  - id: I01
+    title: 贷款审批结果选择公开模板
+    channel: template_selection
+    story: 审批服务读取保密风险评分。评分低时向申请人发送模板 A，评分高时发送模板 B；两个模板正文都是公开固定文本。外部观察者可以看到申请人收到哪一个模板。
+    secret: RISK_SCORE
+    observable: TEMPLATE_ID
+    business_expected: DENY
+    sage_assessment: UNSUPPORTED_PROPERTY
+    reason: 机密只影响控制流和公开输出选择，没有作为显式数据被工具读取或生成。
+
+  - id: I02
+    title: 医疗分诊错误码
+    channel: error_code
+    story: 分诊接口读取患者病历。正常时返回固定成功响应；命中高风险条件时返回错误码 E17。调用者只能看到状态码，不能看到病历内容。
+    secret: PHI
+    observable: ERROR_CODE
+    business_expected: DENY
+    sage_assessment: UNSUPPORTED_PROPERTY
+    reason: 错误码是由秘密决定的公开控制结果，当前事件标签模型不表示该控制依赖。
+
+  - id: I03
+    title: 内部搜索结果数量
+    channel: result_count
+    story: 搜索服务根据保密员工记录生成结果列表。前端只显示“找到 N 条结果”，不显示记录内容；攻击者可以重复查询并观察 N。
+    secret: EMPLOYEE_RECORD
+    observable: RESULT_COUNT
+    business_expected: DENY
+    sage_assessment: UNSUPPORTED_PROPERTY
+    reason: 数量是秘密相关的聚合输出，当前 union-flow 不提供定量泄露或隐式流语义。
+
+  - id: I04
+    title: 风控队列优先级
+    channel: scheduling_order
+    story: 调度器读取客户风险标签，为高风险客户提高队列优先级。外部承包商看不到标签，但可以观察任务处理顺序和等待时间。
+    secret: RISK_LABEL
+    observable: QUEUE_ORDER
+    business_expected: DENY
+    sage_assessment: UNSUPPORTED_PROPERTY
+    reason: 秘密影响调度顺序和时序侧信道，而不是显式写入带标签的数据位置。
+
+  - id: I05
+    title: 密钥存在性导致备用登录
+    channel: fallback_branch
+    story: 登录服务读取内部密钥是否存在。存在时使用主认证并返回统一成功页，不存在时使用备用认证并返回相同页面；观察者可通过后续响应延迟区分两条路径。
+    secret: KEY_EXISTENCE
+    observable: LATENCY
+    business_expected: DENY
+    sage_assessment: UNSUPPORTED_PROPERTY
+    reason: 需要建模时间、分支和执行路径观察；当前后端只分析标签传播到写入位置。
+
+  - id: I06
+    title: 保密文档的摘要长度
+    channel: output_length
+    story: 摘要服务读取保密并购文档，返回不含原文的摘要。摘要长度受文档内容影响，用户可以看到响应字节数。
+    secret: MNA_DOCUMENT
+    observable: RESPONSE_LENGTH
+    business_expected: DENY
+    sage_assessment: UNSUPPORTED_PROPERTY
+    reason: 输出长度是内容相关侧信道，不能由当前标签并集判定覆盖。
+
+  - id: I07
+    title: 审核员分组
+    channel: recipient_selection
+    story: 案件路由器读取保密案件类型，把工单分配给红组或蓝组。两个组都只收到“请处理案件”的固定通知，但接收者本身泄露了案件类型。
+    secret: CASE_TYPE
+    observable: RECIPIENT
+    business_expected: DENY
+    sage_assessment: UNSUPPORTED_PROPERTY
+    reason: 收件人选择是由秘密控制的写入目标选择，若没有显式的秘密读取/标签传播模型，当前 guard 无法识别。
+
+  - id: I08
+    title: 报表排序泄露客户等级
+    channel: ordering
+    story: 报表服务读取客户等级并输出所有客户的公开编号。编号集合相同，但排序按等级决定，观察者可以比较相邻版本的顺序变化。
+    secret: CUSTOMER_TIER
+    observable: RECORD_ORDER
+    business_expected: DENY
+    sage_assessment: UNSUPPORTED_PROPERTY
+    reason: 排序是隐式流和关系型侧信道，当前状态模型不表示排列信息。
+
+  - id: I09
+    title: 反欺诈挑战题选择
+    channel: challenge_selection
+    story: 反欺诈服务读取账户风险分数。低风险用户看到简单挑战，高风险用户看到复杂挑战；挑战文本本身是公开的，但选择结果会被用户看到。
+    secret: FRAUD_SCORE
+    observable: CHALLENGE_ID
+    business_expected: DENY
+    sage_assessment: UNSUPPORTED_PROPERTY
+    reason: 公开内容的选择泄露秘密分类，属于控制依赖而非显式标签流。
+
+  - id: I10
+    title: 私有数据驱动的重试次数
+    channel: retry_count
+    story: 同步服务读取保密上游状态。不同状态触发不同重试次数，最终只返回统一成功或失败；监控方能看到请求日志中的重试计数。
+    secret: UPSTREAM_STATUS
+    observable: RETRY_COUNT
+    business_expected: DENY
+    sage_assessment: UNSUPPORTED_PROPERTY
+    reason: 重试计数是执行历史侧信道，当前 guard 不能约束时间或控制流历史。
+
+  - id: I11
+    title: 数据清洗规则的公开反馈
+    channel: validation_message
+    story: 导入器读取保密字段并根据其内容选择“格式错误”或“格式正确”的公开反馈。反馈不包含字段值，但第三方可提交探测值观察结果。
+    secret: PRIVATE_FIELD
+    observable: VALIDATION_RESULT
+    business_expected: DENY
+    sage_assessment: UNSUPPORTED_PROPERTY
+    reason: 布尔验证结果构成逐次查询的隐式泄露，需非干扰或查询预算模型。
+
+  - id: I12
+    title: 缓存命中状态
+    channel: cache_observation
+    story: 服务读取内部合同编号并按编号查询缓存。命中时响应很快，未命中时访问后端并较慢；响应正文完全相同。
+    secret: CONTRACT_ID
+    observable: CACHE_TIMING
+    business_expected: DENY
+    sage_assessment: UNSUPPORTED_PROPERTY
+    reason: 缓存时序与存在性侧信道不属于当前显式 union-flow 位置标签语义。

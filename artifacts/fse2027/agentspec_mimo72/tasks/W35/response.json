@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"import json\\n\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    # Parse the tool input to extract parameters\\n    params = json.loads(tool_input)\\n    # Get the target from parameters if present\\n    target = params.get('target')\\n    # Check if the target is the restricted slot 'machine'\\n    if target == \\\"machine\\\":\\n        # Get the source from parameters\\n        source = params.get('source')\\n        # Only block if the source is 'plan' and UNVERIFIED is in trusted event labels\\n        if source == \\\"plan\\\":\\n            trusted_labels = user_input.get('trusted_event_labels', {})\\n            if \\\"UNVERIFIED\\\" in trusted_labels:\\n                return True  # Stop the call to prevent UNVERIFIED in machine\\n    # Allow all other tool calls, including read-only manual on machine\\n    return False\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 4779,
+    "prompt_tokens": 804,
+    "total_tokens": 5583,
+    "completion_tokens_details": {
+      "reasoning_tokens": 4581
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "b8497d30-ee73-4cde-b3a3-c43d31807ffe_cb141deb0ee54ac48153536beca2fd8d"
+}

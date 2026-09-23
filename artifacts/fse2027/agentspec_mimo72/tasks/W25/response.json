@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"import json\\n\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    # Parse tool_input\\n    params = json.loads(tool_input)\\n    \\n    # Get trusted event labels\\n    trusted_labels = user_input.get('trusted_event_labels', set())\\n    \\n    # Get the tool name from user_input\\n    tool_name = user_input.get('tool', '')\\n    \\n    # Check if PII is involved in this invocation\\n    pii_involved = 'PII' in trusted_labels\\n    \\n    # If tool is not backup, allow the call\\n    if tool_name != 'backup':\\n        return False\\n    \\n    # For backup tools, check destination restrictions\\n    route = params.get('route', '')\\n    manifest = params.get('manifest', False)\\n    \\n    # Block if writing to vendor bucket with PII\\n    if route == 'vendor' and pii_involved:\\n        return True\\n    # Block if manifest is true (involves diagnostic bucket) with PII\\n    elif manifest and pii_involved:\\n        return True\\n    # Otherwise, allow\\n    else:\\n        return False\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 3575,
+    "prompt_tokens": 800,
+    "total_tokens": 4375,
+    "completion_tokens_details": {
+      "reasoning_tokens": 3313
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "39e92ac0-6771-4955-aeee-edc4b69ef63c_adfd4c380f3a443394570068e47eaba4"
+}

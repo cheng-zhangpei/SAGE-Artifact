@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\"python\": \"import json\\n\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    tool_name = user_input.get(\\\"tool\\\")\\n    agent = user_input.get(\\\"agent\\\")\\n    trusted_labels = set(user_input.get(\\\"trusted_event_labels\\\", []))\\n    \\n    # Policy: forbidden labels per output slot\\n    policy = {\\n        \\\"slot:out_a\\\": [\\\"CLIENT_B\\\"],\\n        \\\"slot:out_b\\\": [\\\"CLIENT_A\\\"]\\n    }\\n    \\n    # Helper to check if any forbidden label is present in trusted labels\\n    def has_forbidden(slot):\\n        forbidden = policy.get(slot, [])\\n        return any(label in trusted_labels for label in forbidden)\\n    \\n    # Prepare tools write to proposal slots (not restricted by policy)\\n    if tool_name == \\\"prepare\\\" and agent in [\\\"manager_a\\\", \\\"manager_b\\\"]:\\n        return False\\n    \\n    # Send tool: parse parameters\\n    if tool_name == \\\"send\\\" and agent == \\\"mailer\\\":\\n        params = json.loads(tool_input)\\n        to = params.get(\\\"to\\\")\\n        scope = params.get(\\\"scope\\\")\\n        \\n        # Destination mapping for output slots\\n        dest_slot = {\\n            \\\"a\\\": \\\"slot:out_a\\\",\\n            \\\"b\\\": \\\"slot:out_b\\\",\\n            \\\"archive\\\": None  # no policy restriction for archive\\n        }.get(to)\\n        \\n        # If destination slot has policy restrictions, check for forbidden labels\\n        if dest_slot is not None and has_forbidden(dest_slot):\\n            return True\\n        \\n        # Additional check: sending both proposals to a client violates policy\\n        # even if the specific slot check above passes, because the data flow\\n        # would indirectly cause a violation when combined with other calls.\\n        # However, the policy only restricts the final output slots, so we\\n        # only need to check the direct write to the output slot.\\n        \\n        return False\\n    \\n    # Default: allow (should not happen with given tools)\\n    return False\"}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 5689,
+    "prompt_tokens": 857,
+    "total_tokens": 6546,
+    "completion_tokens_details": {
+      "reasoning_tokens": 5226
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "ac6aa1e5-c4c6-4d62-a4ab-24b5ad36d248_c2dfd6bdba644dfaab5ed9b8a426aed2"
+}

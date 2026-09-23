@@ -1,0 +1,3459 @@
+[
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "PII"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "PII"
+    },
+    "labels": [
+      "PAYMENT"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "PII"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "PII"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "PII"
+    },
+    "labels": [
+      "SECRET"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "PII"
+    },
+    "labels": [
+      "PAYMENT",
+      "SECRET"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "PII"
+    },
+    "labels": [
+      "PII",
+      "SECRET"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "PII"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII",
+      "SECRET"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "PII"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "PII"
+    },
+    "labels": [
+      "PAYMENT",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "PII"
+    },
+    "labels": [
+      "PII",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "PII"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "PII"
+    },
+    "labels": [
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "PII"
+    },
+    "labels": [
+      "PAYMENT",
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "PII"
+    },
+    "labels": [
+      "PII",
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "PII"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII",
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "PAYMENT"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "PAYMENT"
+    },
+    "labels": [
+      "PAYMENT"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "PAYMENT"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "PAYMENT"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "PAYMENT"
+    },
+    "labels": [
+      "SECRET"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "PAYMENT"
+    },
+    "labels": [
+      "PAYMENT",
+      "SECRET"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "PAYMENT"
+    },
+    "labels": [
+      "PII",
+      "SECRET"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "PAYMENT"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII",
+      "SECRET"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "PAYMENT"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "PAYMENT"
+    },
+    "labels": [
+      "PAYMENT",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "PAYMENT"
+    },
+    "labels": [
+      "PII",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "PAYMENT"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "PAYMENT"
+    },
+    "labels": [
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "PAYMENT"
+    },
+    "labels": [
+      "PAYMENT",
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "PAYMENT"
+    },
+    "labels": [
+      "PII",
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "PAYMENT"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII",
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "SECRET"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "SECRET"
+    },
+    "labels": [
+      "PAYMENT"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "SECRET"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "SECRET"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "SECRET"
+    },
+    "labels": [
+      "SECRET"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "SECRET"
+    },
+    "labels": [
+      "PAYMENT",
+      "SECRET"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "SECRET"
+    },
+    "labels": [
+      "PII",
+      "SECRET"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "SECRET"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII",
+      "SECRET"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "SECRET"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "SECRET"
+    },
+    "labels": [
+      "PAYMENT",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "SECRET"
+    },
+    "labels": [
+      "PII",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "SECRET"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "SECRET"
+    },
+    "labels": [
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "SECRET"
+    },
+    "labels": [
+      "PAYMENT",
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "SECRET"
+    },
+    "labels": [
+      "PII",
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "SECRET"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII",
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "PAYMENT"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "SECRET"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "PAYMENT",
+      "SECRET"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "PII",
+      "SECRET"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII",
+      "SECRET"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "PAYMENT",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "PII",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "PAYMENT",
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "PII",
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "import_record",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII",
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editor",
+    "tool": "edit",
+    "params": {},
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editor",
+    "tool": "edit",
+    "params": {},
+    "labels": [
+      "PAYMENT"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editor",
+    "tool": "edit",
+    "params": {},
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editor",
+    "tool": "edit",
+    "params": {},
+    "labels": [
+      "PAYMENT",
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editor",
+    "tool": "edit",
+    "params": {},
+    "labels": [
+      "SECRET"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editor",
+    "tool": "edit",
+    "params": {},
+    "labels": [
+      "PAYMENT",
+      "SECRET"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editor",
+    "tool": "edit",
+    "params": {},
+    "labels": [
+      "PII",
+      "SECRET"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editor",
+    "tool": "edit",
+    "params": {},
+    "labels": [
+      "PAYMENT",
+      "PII",
+      "SECRET"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editor",
+    "tool": "edit",
+    "params": {},
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editor",
+    "tool": "edit",
+    "params": {},
+    "labels": [
+      "PAYMENT",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editor",
+    "tool": "edit",
+    "params": {},
+    "labels": [
+      "PII",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editor",
+    "tool": "edit",
+    "params": {},
+    "labels": [
+      "PAYMENT",
+      "PII",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editor",
+    "tool": "edit",
+    "params": {},
+    "labels": [
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editor",
+    "tool": "edit",
+    "params": {},
+    "labels": [
+      "PAYMENT",
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editor",
+    "tool": "edit",
+    "params": {},
+    "labels": [
+      "PII",
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editor",
+    "tool": "edit",
+    "params": {},
+    "labels": [
+      "PAYMENT",
+      "PII",
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "packer",
+    "tool": "pack",
+    "params": {
+      "source": "brief"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "packer",
+    "tool": "pack",
+    "params": {
+      "source": "brief"
+    },
+    "labels": [
+      "PAYMENT"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "packer",
+    "tool": "pack",
+    "params": {
+      "source": "brief"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "packer",
+    "tool": "pack",
+    "params": {
+      "source": "brief"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "packer",
+    "tool": "pack",
+    "params": {
+      "source": "brief"
+    },
+    "labels": [
+      "SECRET"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "packer",
+    "tool": "pack",
+    "params": {
+      "source": "brief"
+    },
+    "labels": [
+      "PAYMENT",
+      "SECRET"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "packer",
+    "tool": "pack",
+    "params": {
+      "source": "brief"
+    },
+    "labels": [
+      "PII",
+      "SECRET"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "packer",
+    "tool": "pack",
+    "params": {
+      "source": "brief"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII",
+      "SECRET"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "packer",
+    "tool": "pack",
+    "params": {
+      "source": "brief"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "packer",
+    "tool": "pack",
+    "params": {
+      "source": "brief"
+    },
+    "labels": [
+      "PAYMENT",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "packer",
+    "tool": "pack",
+    "params": {
+      "source": "brief"
+    },
+    "labels": [
+      "PII",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "packer",
+    "tool": "pack",
+    "params": {
+      "source": "brief"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "packer",
+    "tool": "pack",
+    "params": {
+      "source": "brief"
+    },
+    "labels": [
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "packer",
+    "tool": "pack",
+    "params": {
+      "source": "brief"
+    },
+    "labels": [
+      "PAYMENT",
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "packer",
+    "tool": "pack",
+    "params": {
+      "source": "brief"
+    },
+    "labels": [
+      "PII",
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "packer",
+    "tool": "pack",
+    "params": {
+      "source": "brief"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII",
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "packer",
+    "tool": "pack",
+    "params": {
+      "source": "intake"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "packer",
+    "tool": "pack",
+    "params": {
+      "source": "intake"
+    },
+    "labels": [
+      "PAYMENT"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "packer",
+    "tool": "pack",
+    "params": {
+      "source": "intake"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "packer",
+    "tool": "pack",
+    "params": {
+      "source": "intake"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "packer",
+    "tool": "pack",
+    "params": {
+      "source": "intake"
+    },
+    "labels": [
+      "SECRET"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "packer",
+    "tool": "pack",
+    "params": {
+      "source": "intake"
+    },
+    "labels": [
+      "PAYMENT",
+      "SECRET"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "packer",
+    "tool": "pack",
+    "params": {
+      "source": "intake"
+    },
+    "labels": [
+      "PII",
+      "SECRET"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "packer",
+    "tool": "pack",
+    "params": {
+      "source": "intake"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII",
+      "SECRET"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "packer",
+    "tool": "pack",
+    "params": {
+      "source": "intake"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "packer",
+    "tool": "pack",
+    "params": {
+      "source": "intake"
+    },
+    "labels": [
+      "PAYMENT",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "packer",
+    "tool": "pack",
+    "params": {
+      "source": "intake"
+    },
+    "labels": [
+      "PII",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "packer",
+    "tool": "pack",
+    "params": {
+      "source": "intake"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "packer",
+    "tool": "pack",
+    "params": {
+      "source": "intake"
+    },
+    "labels": [
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "packer",
+    "tool": "pack",
+    "params": {
+      "source": "intake"
+    },
+    "labels": [
+      "PAYMENT",
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "packer",
+    "tool": "pack",
+    "params": {
+      "source": "intake"
+    },
+    "labels": [
+      "PII",
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "packer",
+    "tool": "pack",
+    "params": {
+      "source": "intake"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII",
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "standard",
+      "receipt": "external",
+      "route": "release",
+      "source": "bulletin"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "standard",
+      "receipt": "external",
+      "route": "release",
+      "source": "bulletin"
+    },
+    "labels": [
+      "PAYMENT"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "standard",
+      "receipt": "external",
+      "route": "release",
+      "source": "bulletin"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "standard",
+      "receipt": "external",
+      "route": "release",
+      "source": "bulletin"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "standard",
+      "receipt": "external",
+      "route": "release",
+      "source": "bulletin"
+    },
+    "labels": [
+      "SECRET"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "standard",
+      "receipt": "external",
+      "route": "release",
+      "source": "bulletin"
+    },
+    "labels": [
+      "PAYMENT",
+      "SECRET"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "standard",
+      "receipt": "external",
+      "route": "release",
+      "source": "bulletin"
+    },
+    "labels": [
+      "PII",
+      "SECRET"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "standard",
+      "receipt": "external",
+      "route": "release",
+      "source": "bulletin"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII",
+      "SECRET"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "standard",
+      "receipt": "external",
+      "route": "release",
+      "source": "bulletin"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "standard",
+      "receipt": "external",
+      "route": "release",
+      "source": "bulletin"
+    },
+    "labels": [
+      "PAYMENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "standard",
+      "receipt": "external",
+      "route": "release",
+      "source": "bulletin"
+    },
+    "labels": [
+      "PII",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "standard",
+      "receipt": "external",
+      "route": "release",
+      "source": "bulletin"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "standard",
+      "receipt": "external",
+      "route": "release",
+      "source": "bulletin"
+    },
+    "labels": [
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "standard",
+      "receipt": "external",
+      "route": "release",
+      "source": "bulletin"
+    },
+    "labels": [
+      "PAYMENT",
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "standard",
+      "receipt": "external",
+      "route": "release",
+      "source": "bulletin"
+    },
+    "labels": [
+      "PII",
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "standard",
+      "receipt": "external",
+      "route": "release",
+      "source": "bulletin"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII",
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "mirror",
+      "receipt": "local",
+      "route": "partner",
+      "source": "brief"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "mirror",
+      "receipt": "local",
+      "route": "partner",
+      "source": "brief"
+    },
+    "labels": [
+      "PAYMENT"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "mirror",
+      "receipt": "local",
+      "route": "partner",
+      "source": "brief"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "mirror",
+      "receipt": "local",
+      "route": "partner",
+      "source": "brief"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "mirror",
+      "receipt": "local",
+      "route": "partner",
+      "source": "brief"
+    },
+    "labels": [
+      "SECRET"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "mirror",
+      "receipt": "local",
+      "route": "partner",
+      "source": "brief"
+    },
+    "labels": [
+      "PAYMENT",
+      "SECRET"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "mirror",
+      "receipt": "local",
+      "route": "partner",
+      "source": "brief"
+    },
+    "labels": [
+      "PII",
+      "SECRET"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "mirror",
+      "receipt": "local",
+      "route": "partner",
+      "source": "brief"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII",
+      "SECRET"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "mirror",
+      "receipt": "local",
+      "route": "partner",
+      "source": "brief"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "mirror",
+      "receipt": "local",
+      "route": "partner",
+      "source": "brief"
+    },
+    "labels": [
+      "PAYMENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "mirror",
+      "receipt": "local",
+      "route": "partner",
+      "source": "brief"
+    },
+    "labels": [
+      "PII",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "mirror",
+      "receipt": "local",
+      "route": "partner",
+      "source": "brief"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "mirror",
+      "receipt": "local",
+      "route": "partner",
+      "source": "brief"
+    },
+    "labels": [
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "mirror",
+      "receipt": "local",
+      "route": "partner",
+      "source": "brief"
+    },
+    "labels": [
+      "PAYMENT",
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "mirror",
+      "receipt": "local",
+      "route": "partner",
+      "source": "brief"
+    },
+    "labels": [
+      "PII",
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "mirror",
+      "receipt": "local",
+      "route": "partner",
+      "source": "brief"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII",
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "mirror",
+      "receipt": "local",
+      "route": "local",
+      "source": "bulletin"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "mirror",
+      "receipt": "local",
+      "route": "local",
+      "source": "bulletin"
+    },
+    "labels": [
+      "PAYMENT"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "mirror",
+      "receipt": "local",
+      "route": "local",
+      "source": "bulletin"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "mirror",
+      "receipt": "local",
+      "route": "local",
+      "source": "bulletin"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "mirror",
+      "receipt": "local",
+      "route": "local",
+      "source": "bulletin"
+    },
+    "labels": [
+      "SECRET"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "mirror",
+      "receipt": "local",
+      "route": "local",
+      "source": "bulletin"
+    },
+    "labels": [
+      "PAYMENT",
+      "SECRET"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "mirror",
+      "receipt": "local",
+      "route": "local",
+      "source": "bulletin"
+    },
+    "labels": [
+      "PII",
+      "SECRET"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "mirror",
+      "receipt": "local",
+      "route": "local",
+      "source": "bulletin"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII",
+      "SECRET"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "mirror",
+      "receipt": "local",
+      "route": "local",
+      "source": "bulletin"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "mirror",
+      "receipt": "local",
+      "route": "local",
+      "source": "bulletin"
+    },
+    "labels": [
+      "PAYMENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "mirror",
+      "receipt": "local",
+      "route": "local",
+      "source": "bulletin"
+    },
+    "labels": [
+      "PII",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "mirror",
+      "receipt": "local",
+      "route": "local",
+      "source": "bulletin"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "mirror",
+      "receipt": "local",
+      "route": "local",
+      "source": "bulletin"
+    },
+    "labels": [
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "mirror",
+      "receipt": "local",
+      "route": "local",
+      "source": "bulletin"
+    },
+    "labels": [
+      "PAYMENT",
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "mirror",
+      "receipt": "local",
+      "route": "local",
+      "source": "bulletin"
+    },
+    "labels": [
+      "PII",
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "mirror",
+      "receipt": "local",
+      "route": "local",
+      "source": "bulletin"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII",
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "dispatch",
+    "params": {
+      "mode": "standard",
+      "receipt": "partner",
+      "route": "release",
+      "source": "brief"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "support",
+    "tool": "dispatch",
+    "params": {
+      "mode": "standard",
+      "receipt": "partner",
+      "route": "release",
+      "source": "brief"
+    },
+    "labels": [
+      "PAYMENT"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "dispatch",
+    "params": {
+      "mode": "standard",
+      "receipt": "partner",
+      "route": "release",
+      "source": "brief"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "dispatch",
+    "params": {
+      "mode": "standard",
+      "receipt": "partner",
+      "route": "release",
+      "source": "brief"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "dispatch",
+    "params": {
+      "mode": "standard",
+      "receipt": "partner",
+      "route": "release",
+      "source": "brief"
+    },
+    "labels": [
+      "SECRET"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "dispatch",
+    "params": {
+      "mode": "standard",
+      "receipt": "partner",
+      "route": "release",
+      "source": "brief"
+    },
+    "labels": [
+      "PAYMENT",
+      "SECRET"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "dispatch",
+    "params": {
+      "mode": "standard",
+      "receipt": "partner",
+      "route": "release",
+      "source": "brief"
+    },
+    "labels": [
+      "PII",
+      "SECRET"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "dispatch",
+    "params": {
+      "mode": "standard",
+      "receipt": "partner",
+      "route": "release",
+      "source": "brief"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII",
+      "SECRET"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "dispatch",
+    "params": {
+      "mode": "standard",
+      "receipt": "partner",
+      "route": "release",
+      "source": "brief"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "dispatch",
+    "params": {
+      "mode": "standard",
+      "receipt": "partner",
+      "route": "release",
+      "source": "brief"
+    },
+    "labels": [
+      "PAYMENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "dispatch",
+    "params": {
+      "mode": "standard",
+      "receipt": "partner",
+      "route": "release",
+      "source": "brief"
+    },
+    "labels": [
+      "PII",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "dispatch",
+    "params": {
+      "mode": "standard",
+      "receipt": "partner",
+      "route": "release",
+      "source": "brief"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "dispatch",
+    "params": {
+      "mode": "standard",
+      "receipt": "partner",
+      "route": "release",
+      "source": "brief"
+    },
+    "labels": [
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "dispatch",
+    "params": {
+      "mode": "standard",
+      "receipt": "partner",
+      "route": "release",
+      "source": "brief"
+    },
+    "labels": [
+      "PAYMENT",
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "dispatch",
+    "params": {
+      "mode": "standard",
+      "receipt": "partner",
+      "route": "release",
+      "source": "brief"
+    },
+    "labels": [
+      "PII",
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "dispatch",
+    "params": {
+      "mode": "standard",
+      "receipt": "partner",
+      "route": "release",
+      "source": "brief"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII",
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "linked",
+      "receipt": "partner",
+      "route": "local",
+      "source": "brief"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "linked",
+      "receipt": "partner",
+      "route": "local",
+      "source": "brief"
+    },
+    "labels": [
+      "PAYMENT"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "linked",
+      "receipt": "partner",
+      "route": "local",
+      "source": "brief"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "linked",
+      "receipt": "partner",
+      "route": "local",
+      "source": "brief"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "linked",
+      "receipt": "partner",
+      "route": "local",
+      "source": "brief"
+    },
+    "labels": [
+      "SECRET"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "linked",
+      "receipt": "partner",
+      "route": "local",
+      "source": "brief"
+    },
+    "labels": [
+      "PAYMENT",
+      "SECRET"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "linked",
+      "receipt": "partner",
+      "route": "local",
+      "source": "brief"
+    },
+    "labels": [
+      "PII",
+      "SECRET"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "linked",
+      "receipt": "partner",
+      "route": "local",
+      "source": "brief"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII",
+      "SECRET"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "linked",
+      "receipt": "partner",
+      "route": "local",
+      "source": "brief"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "linked",
+      "receipt": "partner",
+      "route": "local",
+      "source": "brief"
+    },
+    "labels": [
+      "PAYMENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "linked",
+      "receipt": "partner",
+      "route": "local",
+      "source": "brief"
+    },
+    "labels": [
+      "PII",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "linked",
+      "receipt": "partner",
+      "route": "local",
+      "source": "brief"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "linked",
+      "receipt": "partner",
+      "route": "local",
+      "source": "brief"
+    },
+    "labels": [
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "linked",
+      "receipt": "partner",
+      "route": "local",
+      "source": "brief"
+    },
+    "labels": [
+      "PAYMENT",
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "linked",
+      "receipt": "partner",
+      "route": "local",
+      "source": "brief"
+    },
+    "labels": [
+      "PII",
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "linked",
+      "receipt": "partner",
+      "route": "local",
+      "source": "brief"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII",
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "standard",
+      "receipt": "local",
+      "route": "local",
+      "source": "bundle"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "standard",
+      "receipt": "local",
+      "route": "local",
+      "source": "bundle"
+    },
+    "labels": [
+      "PAYMENT"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "standard",
+      "receipt": "local",
+      "route": "local",
+      "source": "bundle"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "standard",
+      "receipt": "local",
+      "route": "local",
+      "source": "bundle"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "standard",
+      "receipt": "local",
+      "route": "local",
+      "source": "bundle"
+    },
+    "labels": [
+      "SECRET"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "standard",
+      "receipt": "local",
+      "route": "local",
+      "source": "bundle"
+    },
+    "labels": [
+      "PAYMENT",
+      "SECRET"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "standard",
+      "receipt": "local",
+      "route": "local",
+      "source": "bundle"
+    },
+    "labels": [
+      "PII",
+      "SECRET"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "standard",
+      "receipt": "local",
+      "route": "local",
+      "source": "bundle"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII",
+      "SECRET"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "standard",
+      "receipt": "local",
+      "route": "local",
+      "source": "bundle"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "standard",
+      "receipt": "local",
+      "route": "local",
+      "source": "bundle"
+    },
+    "labels": [
+      "PAYMENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "standard",
+      "receipt": "local",
+      "route": "local",
+      "source": "bundle"
+    },
+    "labels": [
+      "PII",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "standard",
+      "receipt": "local",
+      "route": "local",
+      "source": "bundle"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "standard",
+      "receipt": "local",
+      "route": "local",
+      "source": "bundle"
+    },
+    "labels": [
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "standard",
+      "receipt": "local",
+      "route": "local",
+      "source": "bundle"
+    },
+    "labels": [
+      "PAYMENT",
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "standard",
+      "receipt": "local",
+      "route": "local",
+      "source": "bundle"
+    },
+    "labels": [
+      "PII",
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "finance",
+    "tool": "dispatch",
+    "params": {
+      "mode": "standard",
+      "receipt": "local",
+      "route": "local",
+      "source": "bundle"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII",
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "support",
+    "tool": "dispatch",
+    "params": {
+      "mode": "linked",
+      "receipt": "local",
+      "route": "release",
+      "source": "bulletin"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "support",
+    "tool": "dispatch",
+    "params": {
+      "mode": "linked",
+      "receipt": "local",
+      "route": "release",
+      "source": "bulletin"
+    },
+    "labels": [
+      "PAYMENT"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "dispatch",
+    "params": {
+      "mode": "linked",
+      "receipt": "local",
+      "route": "release",
+      "source": "bulletin"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "dispatch",
+    "params": {
+      "mode": "linked",
+      "receipt": "local",
+      "route": "release",
+      "source": "bulletin"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "dispatch",
+    "params": {
+      "mode": "linked",
+      "receipt": "local",
+      "route": "release",
+      "source": "bulletin"
+    },
+    "labels": [
+      "SECRET"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "dispatch",
+    "params": {
+      "mode": "linked",
+      "receipt": "local",
+      "route": "release",
+      "source": "bulletin"
+    },
+    "labels": [
+      "PAYMENT",
+      "SECRET"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "dispatch",
+    "params": {
+      "mode": "linked",
+      "receipt": "local",
+      "route": "release",
+      "source": "bulletin"
+    },
+    "labels": [
+      "PII",
+      "SECRET"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "dispatch",
+    "params": {
+      "mode": "linked",
+      "receipt": "local",
+      "route": "release",
+      "source": "bulletin"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII",
+      "SECRET"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "dispatch",
+    "params": {
+      "mode": "linked",
+      "receipt": "local",
+      "route": "release",
+      "source": "bulletin"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "dispatch",
+    "params": {
+      "mode": "linked",
+      "receipt": "local",
+      "route": "release",
+      "source": "bulletin"
+    },
+    "labels": [
+      "PAYMENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "dispatch",
+    "params": {
+      "mode": "linked",
+      "receipt": "local",
+      "route": "release",
+      "source": "bulletin"
+    },
+    "labels": [
+      "PII",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "dispatch",
+    "params": {
+      "mode": "linked",
+      "receipt": "local",
+      "route": "release",
+      "source": "bulletin"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "dispatch",
+    "params": {
+      "mode": "linked",
+      "receipt": "local",
+      "route": "release",
+      "source": "bulletin"
+    },
+    "labels": [
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "dispatch",
+    "params": {
+      "mode": "linked",
+      "receipt": "local",
+      "route": "release",
+      "source": "bulletin"
+    },
+    "labels": [
+      "PAYMENT",
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "dispatch",
+    "params": {
+      "mode": "linked",
+      "receipt": "local",
+      "route": "release",
+      "source": "bulletin"
+    },
+    "labels": [
+      "PII",
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "dispatch",
+    "params": {
+      "mode": "linked",
+      "receipt": "local",
+      "route": "release",
+      "source": "bulletin"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII",
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "dispatch",
+    "params": {
+      "mode": "linked",
+      "receipt": "partner",
+      "route": "partner",
+      "source": "bulletin"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "support",
+    "tool": "dispatch",
+    "params": {
+      "mode": "linked",
+      "receipt": "partner",
+      "route": "partner",
+      "source": "bulletin"
+    },
+    "labels": [
+      "PAYMENT"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "support",
+    "tool": "dispatch",
+    "params": {
+      "mode": "linked",
+      "receipt": "partner",
+      "route": "partner",
+      "source": "bulletin"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "support",
+    "tool": "dispatch",
+    "params": {
+      "mode": "linked",
+      "receipt": "partner",
+      "route": "partner",
+      "source": "bulletin"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "support",
+    "tool": "dispatch",
+    "params": {
+      "mode": "linked",
+      "receipt": "partner",
+      "route": "partner",
+      "source": "bulletin"
+    },
+    "labels": [
+      "SECRET"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "dispatch",
+    "params": {
+      "mode": "linked",
+      "receipt": "partner",
+      "route": "partner",
+      "source": "bulletin"
+    },
+    "labels": [
+      "PAYMENT",
+      "SECRET"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "dispatch",
+    "params": {
+      "mode": "linked",
+      "receipt": "partner",
+      "route": "partner",
+      "source": "bulletin"
+    },
+    "labels": [
+      "PII",
+      "SECRET"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "dispatch",
+    "params": {
+      "mode": "linked",
+      "receipt": "partner",
+      "route": "partner",
+      "source": "bulletin"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII",
+      "SECRET"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "dispatch",
+    "params": {
+      "mode": "linked",
+      "receipt": "partner",
+      "route": "partner",
+      "source": "bulletin"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "dispatch",
+    "params": {
+      "mode": "linked",
+      "receipt": "partner",
+      "route": "partner",
+      "source": "bulletin"
+    },
+    "labels": [
+      "PAYMENT",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "dispatch",
+    "params": {
+      "mode": "linked",
+      "receipt": "partner",
+      "route": "partner",
+      "source": "bulletin"
+    },
+    "labels": [
+      "PII",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "dispatch",
+    "params": {
+      "mode": "linked",
+      "receipt": "partner",
+      "route": "partner",
+      "source": "bulletin"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "dispatch",
+    "params": {
+      "mode": "linked",
+      "receipt": "partner",
+      "route": "partner",
+      "source": "bulletin"
+    },
+    "labels": [
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "dispatch",
+    "params": {
+      "mode": "linked",
+      "receipt": "partner",
+      "route": "partner",
+      "source": "bulletin"
+    },
+    "labels": [
+      "PAYMENT",
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "dispatch",
+    "params": {
+      "mode": "linked",
+      "receipt": "partner",
+      "route": "partner",
+      "source": "bulletin"
+    },
+    "labels": [
+      "PII",
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "dispatch",
+    "params": {
+      "mode": "linked",
+      "receipt": "partner",
+      "route": "partner",
+      "source": "bulletin"
+    },
+    "labels": [
+      "PAYMENT",
+      "PII",
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "id": "COMP-SOFTWARE-DELIVERY-24",
+  "family": "software_delivery",
+  "dispatch_count": 24,
+  "total_actions": 31,
+  "dangerous_probes": 142,
+  "benign_probes": 146,
+  "direct_coverage_certificate": "SUFFICIENT_SAFE",
+  "public_input_sha256": "d77d99247ddc50582e7275b5dc81f2f1d11bf0cbe83df78861b77b1f279facbe",
+  "confirmed_model_sha256": "824811555e7c60bb30b8fe9107476d8ae4598aad622284fd0069fedef8ed7e36"
+}

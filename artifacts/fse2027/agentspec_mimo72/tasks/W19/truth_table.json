@@ -1,0 +1,268 @@
+[
+  {
+    "agent": "researcher_eu",
+    "tool": "collect",
+    "params": {},
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "researcher_eu",
+    "tool": "collect",
+    "params": {},
+    "labels": [
+      "EU_SUBJECT"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "researcher_eu",
+    "tool": "collect",
+    "params": {},
+    "labels": [
+      "US_SUBJECT"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "researcher_eu",
+    "tool": "collect",
+    "params": {},
+    "labels": [
+      "EU_SUBJECT",
+      "US_SUBJECT"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "researcher_us",
+    "tool": "collect",
+    "params": {},
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "researcher_us",
+    "tool": "collect",
+    "params": {},
+    "labels": [
+      "EU_SUBJECT"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "researcher_us",
+    "tool": "collect",
+    "params": {},
+    "labels": [
+      "US_SUBJECT"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "researcher_us",
+    "tool": "collect",
+    "params": {},
+    "labels": [
+      "EU_SUBJECT",
+      "US_SUBJECT"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "exporter",
+    "tool": "export",
+    "params": {
+      "region": "eu"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "exporter",
+    "tool": "export",
+    "params": {
+      "region": "eu"
+    },
+    "labels": [
+      "EU_SUBJECT"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "exporter",
+    "tool": "export",
+    "params": {
+      "region": "eu"
+    },
+    "labels": [
+      "US_SUBJECT"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "exporter",
+    "tool": "export",
+    "params": {
+      "region": "eu"
+    },
+    "labels": [
+      "EU_SUBJECT",
+      "US_SUBJECT"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "exporter",
+    "tool": "export",
+    "params": {
+      "region": "us"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "exporter",
+    "tool": "export",
+    "params": {
+      "region": "us"
+    },
+    "labels": [
+      "EU_SUBJECT"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "exporter",
+    "tool": "export",
+    "params": {
+      "region": "us"
+    },
+    "labels": [
+      "US_SUBJECT"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "exporter",
+    "tool": "export",
+    "params": {
+      "region": "us"
+    },
+    "labels": [
+      "EU_SUBJECT",
+      "US_SUBJECT"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "exporter",
+    "tool": "export",
+    "params": {
+      "region": "joint"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "exporter",
+    "tool": "export",
+    "params": {
+      "region": "joint"
+    },
+    "labels": [
+      "EU_SUBJECT"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "exporter",
+    "tool": "export",
+    "params": {
+      "region": "joint"
+    },
+    "labels": [
+      "US_SUBJECT"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "exporter",
+    "tool": "export",
+    "params": {
+      "region": "joint"
+    },
+    "labels": [
+      "EU_SUBJECT",
+      "US_SUBJECT"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "exporter",
+    "tool": "export",
+    "params": {
+      "region": "demo"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "exporter",
+    "tool": "export",
+    "params": {
+      "region": "demo"
+    },
+    "labels": [
+      "EU_SUBJECT"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "exporter",
+    "tool": "export",
+    "params": {
+      "region": "demo"
+    },
+    "labels": [
+      "US_SUBJECT"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "exporter",
+    "tool": "export",
+    "params": {
+      "region": "demo"
+    },
+    "labels": [
+      "EU_SUBJECT",
+      "US_SUBJECT"
+    ],
+    "candidate": true,
+    "completion": true
+  }
+]

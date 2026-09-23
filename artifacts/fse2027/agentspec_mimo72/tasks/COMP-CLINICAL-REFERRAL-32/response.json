@@ -1,0 +1,18 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"import json\\n\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    agent = user_input['agent']\\n    tool = user_input['tool']\\n    trusted_labels = set(user_input['trusted_event_labels'])\\n\\n    # Policy: slot -> allowed categories\\n    policy = {\\n        'slot:audit': ['DIAGNOSIS', 'AUTH'],\\n        'slot:lab': ['PATIENT', 'AUTH'],\\n        'slot:public': ['PATIENT', 'DIAGNOSIS', 'AUTH'],\\n        'slot:research': ['PATIENT', 'UNVERIFIED'],\\n        'slot:scheduler': ['DIAGNOSIS', 'AUTH']\\n    }\\n\\n    # Only route_referral may write to restricted slots; others are unrestricted\\n    if tool != 'route_referral':\\n        return False\\n\\n    params = json.loads(tool_input)\\n    dest_param = params.get('destination')\\n    record_param = params.get('record')\\n\\n    # Determine main destination slot based on agent and destination\\n    dest_slot = None\\n    if agent == 'care':\\n        if dest_param == 'local':\\n            dest_slot = 'slot:hospital'\\n        elif dest_param == 'partner':\\n            dest_slot = 'slot:scheduler'\\n        elif dest_param == 'release':\\n            dest_slot = 'slot:public'\\n        else:\\n            # Unknown destination for care agent\\n            return True\\n    elif agent == 'research':\\n        if dest_param == 'local':\\n            dest_slot = 'slot:hospital'\\n        elif dest_param == 'partner':\\n            dest_slot = 'slot:research'\\n        elif dest_param == 'release':\\n            dest_slot = 'slot:lab'\\n        else:\\n            # Unknown destination for research agent\\n            return True\\n    else:\\n        # Unknown agent using route_referral\\n        return True\\n\\n    # Determine record destination slot\\n    record_slot = None\\n    if record_param == 'audit':\\n        record_slot = 'slot:audit'\\n    elif record_param == 'public':\\n        record_slot = 'slot:public'\\n    elif record_param == 'partner':\\n        # Not in policy, so no restriction\\n        record_slot = None\\n    elif record_param == 'none':\\n        record_slot = None\\n    else:\\n        # Unknown record parameter\\n        return True\\n\\n    # Check main destination\\n    if dest_slot in policy:\\n        allowed = set(policy[dest_slot])\\n        if not trusted_labels.issubset(allowed):\\n            return True\\n\\n    # Check record destination\\n    if record_slot in policy:\\n        allowed = set(policy[record_slot])\\n        if not trusted_labels.issubset(allowed):\\n            return True\\n\\n    return False\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 6803,
+    "prompt_tokens": 2894,
+    "total_tokens": 9697,
+    "completion_tokens_details": {
+      "reasoning_tokens": 6164
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    }
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "ab08e54c-727e-4f64-b823-1d6b62f8328c_3e630acd378343be84a58a894368c0a2"
+}

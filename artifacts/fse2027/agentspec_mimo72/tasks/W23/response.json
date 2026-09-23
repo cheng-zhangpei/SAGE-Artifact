@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"import json\\n\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    agent = user_input.get('agent')\\n    tool = user_input.get('tool')\\n    trusted_labels = user_input.get('trusted_event_labels', [])\\n    params = json.loads(tool_input)\\n\\n    # Check for SMS notification tool\\n    if agent == 'frontdesk' and tool == 'notify':\\n        target = params.get('target')\\n        if target == 'sms':\\n            # SMS only allows PII, not KEY; stop if KEY present\\n            if 'KEY' in trusted_labels:\\n                return True\\n            else:\\n                return False\\n\\n    # All other tools are allowed\\n    return False\\n\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 3906,
+    "prompt_tokens": 804,
+    "total_tokens": 4710,
+    "completion_tokens_details": {
+      "reasoning_tokens": 3738
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "3fa37427-cd2d-47c3-9ed1-9f5e8f9287c9_b413935de9284f1eb7e7131f1bda6c3e"
+}

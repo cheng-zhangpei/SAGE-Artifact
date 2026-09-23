@@ -1,0 +1,146 @@
+[
+  {
+    "agent": "triage",
+    "tool": "prepare_reply",
+    "params": {
+      "source": "ticket"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "triage",
+    "tool": "prepare_reply",
+    "params": {
+      "source": "ticket"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "support",
+    "tool": "send_reply",
+    "params": {
+      "destination": "forum",
+      "diagnostics": false,
+      "source": "draft"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "support",
+    "tool": "send_reply",
+    "params": {
+      "destination": "forum",
+      "diagnostics": false,
+      "source": "draft"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "send_reply",
+    "params": {
+      "destination": "private",
+      "diagnostics": false,
+      "source": "draft"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "support",
+    "tool": "send_reply",
+    "params": {
+      "destination": "private",
+      "diagnostics": false,
+      "source": "draft"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "support",
+    "tool": "send_reply",
+    "params": {
+      "destination": "private",
+      "diagnostics": true,
+      "source": "draft"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "support",
+    "tool": "send_reply",
+    "params": {
+      "destination": "private",
+      "diagnostics": true,
+      "source": "draft"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "send_reply",
+    "params": {
+      "destination": "forum",
+      "diagnostics": false,
+      "source": "help"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "support",
+    "tool": "send_reply",
+    "params": {
+      "destination": "forum",
+      "diagnostics": false,
+      "source": "help"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "triage",
+    "tool": "append_help",
+    "params": {},
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "triage",
+    "tool": "append_help",
+    "params": {},
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  }
+]

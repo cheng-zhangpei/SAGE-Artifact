@@ -1,0 +1,284 @@
+[
+  {
+    "agent": "researcher",
+    "tool": "collect",
+    "params": {
+      "source": "web"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "researcher",
+    "tool": "collect",
+    "params": {
+      "source": "web"
+    },
+    "labels": [
+      "CONFIDENTIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "researcher",
+    "tool": "collect",
+    "params": {
+      "source": "web"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "researcher",
+    "tool": "collect",
+    "params": {
+      "source": "web"
+    },
+    "labels": [
+      "CONFIDENTIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "buyer",
+    "tool": "collect",
+    "params": {
+      "source": "floor"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "buyer",
+    "tool": "collect",
+    "params": {
+      "source": "floor"
+    },
+    "labels": [
+      "CONFIDENTIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "buyer",
+    "tool": "collect",
+    "params": {
+      "source": "floor"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "buyer",
+    "tool": "collect",
+    "params": {
+      "source": "floor"
+    },
+    "labels": [
+      "CONFIDENTIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "buyer",
+    "tool": "submit",
+    "params": {
+      "target": "order"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "buyer",
+    "tool": "submit",
+    "params": {
+      "target": "order"
+    },
+    "labels": [
+      "CONFIDENTIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "buyer",
+    "tool": "submit",
+    "params": {
+      "target": "order"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "buyer",
+    "tool": "submit",
+    "params": {
+      "target": "order"
+    },
+    "labels": [
+      "CONFIDENTIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "buyer",
+    "tool": "submit",
+    "params": {
+      "target": "supplier"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "buyer",
+    "tool": "submit",
+    "params": {
+      "target": "supplier"
+    },
+    "labels": [
+      "CONFIDENTIAL"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "buyer",
+    "tool": "submit",
+    "params": {
+      "target": "supplier"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "buyer",
+    "tool": "submit",
+    "params": {
+      "target": "supplier"
+    },
+    "labels": [
+      "CONFIDENTIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "buyer",
+    "tool": "submit",
+    "params": {
+      "target": "review"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "buyer",
+    "tool": "submit",
+    "params": {
+      "target": "review"
+    },
+    "labels": [
+      "CONFIDENTIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "buyer",
+    "tool": "submit",
+    "params": {
+      "target": "review"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "buyer",
+    "tool": "submit",
+    "params": {
+      "target": "review"
+    },
+    "labels": [
+      "CONFIDENTIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "buyer",
+    "tool": "submit",
+    "params": {
+      "target": "order_and_supplier"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "buyer",
+    "tool": "submit",
+    "params": {
+      "target": "order_and_supplier"
+    },
+    "labels": [
+      "CONFIDENTIAL"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "buyer",
+    "tool": "submit",
+    "params": {
+      "target": "order_and_supplier"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "buyer",
+    "tool": "submit",
+    "params": {
+      "target": "order_and_supplier"
+    },
+    "labels": [
+      "CONFIDENTIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  }
+]

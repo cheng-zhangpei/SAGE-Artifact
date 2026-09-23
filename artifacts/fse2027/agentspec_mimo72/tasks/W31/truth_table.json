@@ -1,0 +1,335 @@
+[
+  {
+    "agent": "manager_a",
+    "tool": "prepare",
+    "params": {},
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "manager_a",
+    "tool": "prepare",
+    "params": {},
+    "labels": [
+      "CLIENT_A"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "manager_a",
+    "tool": "prepare",
+    "params": {},
+    "labels": [
+      "CLIENT_B"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "manager_a",
+    "tool": "prepare",
+    "params": {},
+    "labels": [
+      "CLIENT_A",
+      "CLIENT_B"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "manager_b",
+    "tool": "prepare",
+    "params": {},
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "manager_b",
+    "tool": "prepare",
+    "params": {},
+    "labels": [
+      "CLIENT_A"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "manager_b",
+    "tool": "prepare",
+    "params": {},
+    "labels": [
+      "CLIENT_B"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "manager_b",
+    "tool": "prepare",
+    "params": {},
+    "labels": [
+      "CLIENT_A",
+      "CLIENT_B"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "mailer",
+    "tool": "send",
+    "params": {
+      "scope": "own",
+      "to": "a"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "mailer",
+    "tool": "send",
+    "params": {
+      "scope": "own",
+      "to": "a"
+    },
+    "labels": [
+      "CLIENT_A"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "mailer",
+    "tool": "send",
+    "params": {
+      "scope": "own",
+      "to": "a"
+    },
+    "labels": [
+      "CLIENT_B"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "mailer",
+    "tool": "send",
+    "params": {
+      "scope": "own",
+      "to": "a"
+    },
+    "labels": [
+      "CLIENT_A",
+      "CLIENT_B"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "mailer",
+    "tool": "send",
+    "params": {
+      "scope": "all",
+      "to": "a"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "mailer",
+    "tool": "send",
+    "params": {
+      "scope": "all",
+      "to": "a"
+    },
+    "labels": [
+      "CLIENT_A"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "mailer",
+    "tool": "send",
+    "params": {
+      "scope": "all",
+      "to": "a"
+    },
+    "labels": [
+      "CLIENT_B"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "mailer",
+    "tool": "send",
+    "params": {
+      "scope": "all",
+      "to": "a"
+    },
+    "labels": [
+      "CLIENT_A",
+      "CLIENT_B"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "mailer",
+    "tool": "send",
+    "params": {
+      "scope": "own",
+      "to": "b"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "mailer",
+    "tool": "send",
+    "params": {
+      "scope": "own",
+      "to": "b"
+    },
+    "labels": [
+      "CLIENT_A"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "mailer",
+    "tool": "send",
+    "params": {
+      "scope": "own",
+      "to": "b"
+    },
+    "labels": [
+      "CLIENT_B"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "mailer",
+    "tool": "send",
+    "params": {
+      "scope": "own",
+      "to": "b"
+    },
+    "labels": [
+      "CLIENT_A",
+      "CLIENT_B"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "mailer",
+    "tool": "send",
+    "params": {
+      "scope": "all",
+      "to": "b"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "mailer",
+    "tool": "send",
+    "params": {
+      "scope": "all",
+      "to": "b"
+    },
+    "labels": [
+      "CLIENT_A"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "mailer",
+    "tool": "send",
+    "params": {
+      "scope": "all",
+      "to": "b"
+    },
+    "labels": [
+      "CLIENT_B"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "mailer",
+    "tool": "send",
+    "params": {
+      "scope": "all",
+      "to": "b"
+    },
+    "labels": [
+      "CLIENT_A",
+      "CLIENT_B"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "mailer",
+    "tool": "send",
+    "params": {
+      "scope": "all",
+      "to": "archive"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "mailer",
+    "tool": "send",
+    "params": {
+      "scope": "all",
+      "to": "archive"
+    },
+    "labels": [
+      "CLIENT_A"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "mailer",
+    "tool": "send",
+    "params": {
+      "scope": "all",
+      "to": "archive"
+    },
+    "labels": [
+      "CLIENT_B"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "mailer",
+    "tool": "send",
+    "params": {
+      "scope": "all",
+      "to": "archive"
+    },
+    "labels": [
+      "CLIENT_A",
+      "CLIENT_B"
+    ],
+    "candidate": false,
+    "completion": false
+  }
+]

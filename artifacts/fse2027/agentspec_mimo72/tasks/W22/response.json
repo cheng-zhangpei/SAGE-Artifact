@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"import json\\n\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    params = json.loads(tool_input)\\n    tool_name = user_input.get('tool')\\n    trusted_labels = set(user_input.get('trusted_event_labels'))\\n    \\n    if tool_name == 'collect':\\n        return False\\n    elif tool_name == 'simulate':\\n        return False\\n    elif tool_name == 'apply':\\n        target = params.get('target')\\n        if target == 'control':\\n            return bool(trusted_labels.intersection({'UNVERIFIED'}))\\n        elif target == 'display':\\n            return bool(trusted_labels.intersection({'CONFIDENTIAL'}))\\n        elif target == 'internal':\\n            return False\\n        else:\\n            return False\\n    else:\\n        return False\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 5025,
+    "prompt_tokens": 813,
+    "total_tokens": 5838,
+    "completion_tokens_details": {
+      "reasoning_tokens": 4835
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "87304055-7b24-4468-b905-c60f0ccb6a0a_7becce26334f41d39ae96b2be6f14e20"
+}

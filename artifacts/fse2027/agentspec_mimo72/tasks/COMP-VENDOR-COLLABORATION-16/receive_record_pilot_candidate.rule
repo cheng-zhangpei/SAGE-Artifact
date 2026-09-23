@@ -1,0 +1,8 @@
+rule @rule_pilot_candidate
+trigger
+ receive_record
+check
+ pilot_candidate
+enforce
+ stop
+end

@@ -1,0 +1,2296 @@
+{
+  "generated_at_utc": "2026-09-08T23:16:46.182850+00:00",
+  "counts": {
+    "downloaded_json_parsed": 10892,
+    "parse_errors": 0,
+    "llm_related_by_node_type": 5707,
+    "llm_with_external_action_candidates": 3605,
+    "llm_with_binary_sink_candidates": 226,
+    "llm_with_code_nodes": 3383,
+    "llm_with_main_cycles": 1349,
+    "llm_with_unresolved_references": 222,
+    "llm_ai_then_file_then_binary_sink_candidates": 38,
+    "confirmed_sage_collisions_in_this_corpus": null
+  },
+  "limitations": [
+    "Node-type heuristic; custom HTTP LLM calls may be missed.",
+    "Default operations require node-version review; external-action candidates are not verified sinks.",
+    "Main graph reachability is not data dependency or runtime reachability.",
+    "No labels, contracts or safety policies inferred from titles or popularity.",
+    "Structure fingerprints flag review candidates, not authoritative semantic deduplication.",
+    "Views are exposure metadata, not deployment counts."
+  ],
+  "errors": [],
+  "structural_candidates": [
+    {
+      "id": 10126,
+      "name": "Automate YouTube thumbnail creation & social publishing with Templated.io & Blotato",
+      "author": "drfiras",
+      "total_views": 3134,
+      "recent_views": 0,
+      "source_sha256": "7d6a31b2909f53655eb1c6dafe4699d3dcfa15769704c33392e37ba556a421e3",
+      "node_count": 25,
+      "main_edges": 18,
+      "llm_related": true,
+      "main_ai_nodes": [
+        "OpenAI Post Generation",
+        "OpenAI Post Generation1"
+      ],
+      "auxiliary_ai_nodes": [],
+      "external_action_candidates": [
+        "Send Gmail",
+        "Upload to Google Drive"
+      ],
+      "binary_sink_candidates": [
+        "Upload to Google Drive"
+      ],
+      "explicit_file_sources": [
+        "Downloading files"
+      ],
+      "late_file_paths": [
+        {
+          "file_source": "Downloading files",
+          "binary_sink": "Upload to Google Drive",
+          "earlier_ai_nodes": [
+            "OpenAI Post Generation1"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "code_nodes": [
+        "Extract Video ID",
+        "Prepare Text Data"
+      ],
+      "duplicate_names": [],
+      "unresolved_references": [],
+      "has_main_cycle": false,
+      "explicit_cross_node_reference_count": 21,
+      "structure_fingerprint": "a49fe1be8f5303ed671795a783c02139fc6ee49ac4af136569eefcb6dc25b813",
+      "sage_status": "not_modeled",
+      "runtime_status": "not_executed"
+    },
+    {
+      "id": 10441,
+      "name": "Weekly Facebook ads performance reports with AI-powered analysis & Gmail delivery",
+      "author": "ali01",
+      "total_views": 1193,
+      "recent_views": 0,
+      "source_sha256": "6cf902b4291a9d27bbb268f72bc5c48ccc0d5461c59c31219104ce260212f215",
+      "node_count": 16,
+      "main_edges": 8,
+      "llm_related": true,
+      "main_ai_nodes": [
+        "AI Report Writer",
+        "AI Summarizer"
+      ],
+      "auxiliary_ai_nodes": [
+        "OpenAI"
+      ],
+      "external_action_candidates": [
+        "Send Email"
+      ],
+      "binary_sink_candidates": [
+        "Send Email"
+      ],
+      "explicit_file_sources": [
+        "Generate PDF"
+      ],
+      "late_file_paths": [
+        {
+          "file_source": "Generate PDF",
+          "binary_sink": "Send Email",
+          "earlier_ai_nodes": [
+            "AI Report Writer",
+            "AI Summarizer"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "code_nodes": [
+        "Format Data"
+      ],
+      "duplicate_names": [],
+      "unresolved_references": [],
+      "has_main_cycle": false,
+      "explicit_cross_node_reference_count": 0,
+      "structure_fingerprint": "5d11d797b79514d6ad1db4b62b4ef30ff58bd98d77b206740f4fc1e5af0eff06",
+      "sage_status": "not_modeled",
+      "runtime_status": "not_executed"
+    },
+    {
+      "id": 10880,
+      "name": "Generate Interior Moodboards with Claude/Gemini Agents, Hugging Face Image Generation, and PDF Export",
+      "author": "jamesonk",
+      "total_views": 518,
+      "recent_views": 0,
+      "source_sha256": "c3fffd61936d3f325d9ad2c11d3cca90fe3ca1d8eb7b0d097e5ca04f80bef01c",
+      "node_count": 37,
+      "main_edges": 16,
+      "llm_related": true,
+      "main_ai_nodes": [
+        "Conceptualization Agent",
+        "Moodboard Generator Agent"
+      ],
+      "auxiliary_ai_nodes": [
+        "Google Gemini Chat Model1",
+        "OpenRouter Chat Model"
+      ],
+      "external_action_candidates": [
+        "Send PDF"
+      ],
+      "binary_sink_candidates": [
+        "Send PDF"
+      ],
+      "explicit_file_sources": [
+        "PDF creator"
+      ],
+      "late_file_paths": [
+        {
+          "file_source": "PDF creator",
+          "binary_sink": "Send PDF",
+          "earlier_ai_nodes": [
+            "Conceptualization Agent",
+            "Moodboard Generator Agent"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "code_nodes": [
+        "Email extractor",
+        "Clean URLs",
+        "Binary Converter"
+      ],
+      "duplicate_names": [],
+      "unresolved_references": [],
+      "has_main_cycle": true,
+      "explicit_cross_node_reference_count": 9,
+      "structure_fingerprint": "d9487eb779e7741536e0700a893e2f942acf7ca5db2c47cd1c83cf99c93f11a6",
+      "sage_status": "not_modeled",
+      "runtime_status": "not_executed"
+    },
+    {
+      "id": 11529,
+      "name": "Organize school emails with AI, Google Calendar and Drive auto-triage system",
+      "author": "anna0726",
+      "total_views": 334,
+      "recent_views": 0,
+      "source_sha256": "6e836931f7decd141a6211475d048614c15fffefa405a7dd9fecf3b1c47e160e",
+      "node_count": 23,
+      "main_edges": 16,
+      "llm_related": true,
+      "main_ai_nodes": [
+        "Extract Email Info"
+      ],
+      "auxiliary_ai_nodes": [
+        "OpenAI Chat Model"
+      ],
+      "external_action_candidates": [
+        "Save Photos to Drive",
+        "Send Reminder Email"
+      ],
+      "binary_sink_candidates": [
+        "Save Photos to Drive"
+      ],
+      "explicit_file_sources": [
+        "Get Email Attachments"
+      ],
+      "late_file_paths": [
+        {
+          "file_source": "Get Email Attachments",
+          "binary_sink": "Save Photos to Drive",
+          "earlier_ai_nodes": [
+            "Extract Email Info"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "code_nodes": [],
+      "duplicate_names": [],
+      "unresolved_references": [],
+      "has_main_cycle": false,
+      "explicit_cross_node_reference_count": 6,
+      "structure_fingerprint": "3f220c5e02ff61dfef842650f69f4c2199fb3f146bf80f12119c0ceb07338d74",
+      "sage_status": "not_modeled",
+      "runtime_status": "not_executed"
+    },
+    {
+      "id": 11730,
+      "name": "Verify webinar signups and send personalized GPT-4 welcome kits via Gmail and Google Sheets",
+      "author": "jiteshdugar",
+      "total_views": 55,
+      "recent_views": 0,
+      "source_sha256": "d237a20298d1da1f653ce06b1a8e5ade087edc2341eac8c86ee873fb15a5ca24",
+      "node_count": 24,
+      "main_edges": 15,
+      "llm_related": true,
+      "main_ai_nodes": [
+        "Generate Welcome Message",
+        "Generate Extra Materials"
+      ],
+      "auxiliary_ai_nodes": [],
+      "external_action_candidates": [
+        "Alert - Invalid Email",
+        "Notify Organizers",
+        "Send Follow-up Email",
+        "Send Welcome Email"
+      ],
+      "binary_sink_candidates": [
+        "Send Welcome Email",
+        "Send Follow-up Email"
+      ],
+      "explicit_file_sources": [
+        "Convert to PDF",
+        "Convert to PDF (Extra Materials)"
+      ],
+      "late_file_paths": [
+        {
+          "file_source": "Convert to PDF",
+          "binary_sink": "Send Welcome Email",
+          "earlier_ai_nodes": [
+            "Generate Welcome Message"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        },
+        {
+          "file_source": "Convert to PDF",
+          "binary_sink": "Send Follow-up Email",
+          "earlier_ai_nodes": [
+            "Generate Welcome Message"
+          ],
+          "intervening_ai_nodes": [
+            "Generate Extra Materials"
+          ],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        },
+        {
+          "file_source": "Convert to PDF (Extra Materials)",
+          "binary_sink": "Send Follow-up Email",
+          "earlier_ai_nodes": [
+            "Generate Welcome Message",
+            "Generate Extra Materials"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "code_nodes": [],
+      "duplicate_names": [],
+      "unresolved_references": [],
+      "has_main_cycle": false,
+      "explicit_cross_node_reference_count": 11,
+      "structure_fingerprint": "ee48d92fcd8cd0dc99d35f3bf90aacc00b04813f12bd15d978e878485a9627c1",
+      "sage_status": "not_modeled",
+      "runtime_status": "not_executed"
+    },
+    {
+      "id": 11745,
+      "name": "Generate employee performance review summaries with GPT-4, Gmail and Sheets",
+      "author": "jiteshdugar",
+      "total_views": 100,
+      "recent_views": 0,
+      "source_sha256": "dd95ba1c0670446a1d1a9005f66411121841a8a854cf084d68211a2d2dd7ac24",
+      "node_count": 16,
+      "main_edges": 10,
+      "llm_related": true,
+      "main_ai_nodes": [
+        "AI Summary Generator"
+      ],
+      "auxiliary_ai_nodes": [],
+      "external_action_candidates": [
+        "Notify HR Team",
+        "Send Review to Employee"
+      ],
+      "binary_sink_candidates": [
+        "Send Review to Employee"
+      ],
+      "explicit_file_sources": [
+        "Download Image"
+      ],
+      "late_file_paths": [
+        {
+          "file_source": "Download Image",
+          "binary_sink": "Send Review to Employee",
+          "earlier_ai_nodes": [
+            "AI Summary Generator"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "code_nodes": [
+        "Process Employee Data",
+        "Parse AI Response",
+        "Generate Review Card HTML"
+      ],
+      "duplicate_names": [],
+      "unresolved_references": [],
+      "has_main_cycle": false,
+      "explicit_cross_node_reference_count": 8,
+      "structure_fingerprint": "c465c97d3c711f44ada45a264389991855c31d365d15975e96709a503dfb19a4",
+      "sage_status": "not_modeled",
+      "runtime_status": "not_executed"
+    },
+    {
+      "id": 11912,
+      "name": "Automated resume screening & interview scheduling with Gmail, GPT & Airtable",
+      "author": "itechnotion",
+      "total_views": 220,
+      "recent_views": 0,
+      "source_sha256": "a0bcae55ca626a5b05aad9a5368f0575b1844c638005d6ae08d3d1ea78cd233d",
+      "node_count": 25,
+      "main_edges": 14,
+      "llm_related": true,
+      "main_ai_nodes": [
+        "Message a model2",
+        "Message a model3",
+        "AI Agent1"
+      ],
+      "auxiliary_ai_nodes": [
+        "OpenAI Chat Model2",
+        "OpenAI Chat Model3"
+      ],
+      "external_action_candidates": [
+        "Send a message1",
+        "Upload file1"
+      ],
+      "binary_sink_candidates": [
+        "Upload file1"
+      ],
+      "explicit_file_sources": [
+        "Gmail Trigger1",
+        "Get a message1"
+      ],
+      "late_file_paths": [
+        {
+          "file_source": "Gmail Trigger1",
+          "binary_sink": "Upload file1",
+          "earlier_ai_nodes": [],
+          "intervening_ai_nodes": [
+            "Message a model2"
+          ],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        },
+        {
+          "file_source": "Get a message1",
+          "binary_sink": "Upload file1",
+          "earlier_ai_nodes": [
+            "Message a model2"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "code_nodes": [
+        "Get Next Business Day1"
+      ],
+      "duplicate_names": [],
+      "unresolved_references": [],
+      "has_main_cycle": false,
+      "explicit_cross_node_reference_count": 11,
+      "structure_fingerprint": "d3fd434b7517895449376a6c6e9b92648285e360ce9596055ccbe55fedb91df1",
+      "sage_status": "not_modeled",
+      "runtime_status": "not_executed"
+    },
+    {
+      "id": 12731,
+      "name": "Grade and deliver multi-course assignment feedback with GPT-4o, Google Drive, Slack, and Gmail",
+      "author": "cschin",
+      "total_views": 54,
+      "recent_views": 0,
+      "source_sha256": "a7bb39947281df5cff30d7d99a4e68f2a7d30acffefe8f60dc128675ef7d5165",
+      "node_count": 42,
+      "main_edges": 30,
+      "llm_related": true,
+      "main_ai_nodes": [
+        "Plagiarism Check Agent",
+        "AI Grading Agent"
+      ],
+      "auxiliary_ai_nodes": [
+        "OpenAI Model - Plagiarism",
+        "OpenAI Model - Grading"
+      ],
+      "external_action_candidates": [
+        "Alert - High Plagiarism",
+        "Alert - Late Submission",
+        "Alert - Manual Review Needed",
+        "Notify Instructors - Email",
+        "Notify Instructors - Slack",
+        "Send Student Feedback Email",
+        "Upload Feedback PDF",
+        "Upload Submission to Drive"
+      ],
+      "binary_sink_candidates": [
+        "Send Student Feedback Email"
+      ],
+      "explicit_file_sources": [
+        "Convert HTML to PDF"
+      ],
+      "late_file_paths": [
+        {
+          "file_source": "Convert HTML to PDF",
+          "binary_sink": "Send Student Feedback Email",
+          "earlier_ai_nodes": [
+            "Plagiarism Check Agent",
+            "AI Grading Agent"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "code_nodes": [
+        "Validate Submission",
+        "Calculate Deadline Penalty"
+      ],
+      "duplicate_names": [],
+      "unresolved_references": [],
+      "has_main_cycle": false,
+      "explicit_cross_node_reference_count": 13,
+      "structure_fingerprint": "4b53980a5c3367a389ffd0b4b7bf4faacb015bf71a0fee90edfb69dfad0f5996",
+      "sage_status": "not_modeled",
+      "runtime_status": "not_executed"
+    },
+    {
+      "id": 12959,
+      "name": "Generate proposals with GPT-4o, Google Docs, Gmail and Slack",
+      "author": "hyrum-hurst",
+      "total_views": 52,
+      "recent_views": 0,
+      "source_sha256": "16c0c8312a0bbd0c93ef24f5365d5f9c3bc84c0bd224663ccee5c0191d67ac0c",
+      "node_count": 21,
+      "main_edges": 13,
+      "llm_related": true,
+      "main_ai_nodes": [
+        "Generate Proposal Content"
+      ],
+      "auxiliary_ai_nodes": [],
+      "external_action_candidates": [
+        "Error Alert to Admin",
+        "Notify Team - Standard",
+        "Priority Slack Notification",
+        "Schedule Follow-up Reminder",
+        "Send Proposal via Email"
+      ],
+      "binary_sink_candidates": [
+        "Send Proposal via Email"
+      ],
+      "explicit_file_sources": [
+        "Convert Doc to PDF"
+      ],
+      "late_file_paths": [
+        {
+          "file_source": "Convert Doc to PDF",
+          "binary_sink": "Send Proposal via Email",
+          "earlier_ai_nodes": [
+            "Generate Proposal Content"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "code_nodes": [],
+      "duplicate_names": [],
+      "unresolved_references": [],
+      "has_main_cycle": false,
+      "explicit_cross_node_reference_count": 10,
+      "structure_fingerprint": "69c613fba625cfaa3eae0b7dcb64fcc4a5410336f83235097e982869c68787fb",
+      "sage_status": "not_modeled",
+      "runtime_status": "not_executed"
+    },
+    {
+      "id": 13237,
+      "name": "Classify Gmail invoice attachments with Google Gemini and forward to freee",
+      "author": "daisuke",
+      "total_views": 149,
+      "recent_views": 0,
+      "source_sha256": "18eb36bdbc723285625f127575fafbce9b0277e60fa44c7295e4d710d3017d69",
+      "node_count": 13,
+      "main_edges": 8,
+      "llm_related": true,
+      "main_ai_nodes": [
+        "Classify Invoice/Receipt (AI)"
+      ],
+      "auxiliary_ai_nodes": [],
+      "external_action_candidates": [
+        "Forward to freee"
+      ],
+      "binary_sink_candidates": [
+        "Forward to freee"
+      ],
+      "explicit_file_sources": [
+        "Gmail Trigger",
+        "Get Attachment"
+      ],
+      "late_file_paths": [
+        {
+          "file_source": "Gmail Trigger",
+          "binary_sink": "Forward to freee",
+          "earlier_ai_nodes": [],
+          "intervening_ai_nodes": [
+            "Classify Invoice/Receipt (AI)"
+          ],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        },
+        {
+          "file_source": "Get Attachment",
+          "binary_sink": "Forward to freee",
+          "earlier_ai_nodes": [
+            "Classify Invoice/Receipt (AI)"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "code_nodes": [],
+      "duplicate_names": [],
+      "unresolved_references": [],
+      "has_main_cycle": false,
+      "explicit_cross_node_reference_count": 4,
+      "structure_fingerprint": "3cf1ae1609e4a795aa6bdb5465b4e1a7fba258ba44fe5ca180519d7798cad9d0",
+      "sage_status": "not_modeled",
+      "runtime_status": "not_executed"
+    },
+    {
+      "id": 13408,
+      "name": "Turn your portfolio into an AI assistant with OpenAI, Claude, Pinecone and Gmail",
+      "author": "suryayalavarthi",
+      "total_views": 85,
+      "recent_views": 0,
+      "source_sha256": "b6354585855cd8f336ebfe862ceda8dfafd619197339de0bc5449bd196e56ab0",
+      "node_count": 29,
+      "main_edges": 11,
+      "llm_related": true,
+      "main_ai_nodes": [
+        "Portfolio AI Agent"
+      ],
+      "auxiliary_ai_nodes": [
+        "OpenAI Embeddings",
+        "Claude Sonnet 4.5",
+        "Claude Retrieval Model",
+        "OpenAI Embeddings Retrieval"
+      ],
+      "external_action_candidates": [
+        "File Created Trigger",
+        "File Updated Trigger",
+        "Send CV Email"
+      ],
+      "binary_sink_candidates": [
+        "Send CV Email"
+      ],
+      "explicit_file_sources": [
+        "Download File",
+        "Download CV PDF"
+      ],
+      "late_file_paths": [
+        {
+          "file_source": "Download CV PDF",
+          "binary_sink": "Send CV Email",
+          "earlier_ai_nodes": [
+            "Portfolio AI Agent"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "code_nodes": [],
+      "duplicate_names": [],
+      "unresolved_references": [],
+      "has_main_cycle": false,
+      "explicit_cross_node_reference_count": 2,
+      "structure_fingerprint": "ffdd9c4d40627761b680d7fec934204b1596a087d76795ababc6e0a2c7c3f5ad",
+      "sage_status": "not_modeled",
+      "runtime_status": "not_executed"
+    },
+    {
+      "id": 13659,
+      "name": "Generate an AI YouTube trend report with GPT-4o, Google Sheets and PDF.co",
+      "author": "milobravo1",
+      "total_views": 132,
+      "recent_views": 0,
+      "source_sha256": "c693cbca0688f385db3de331723e7286c2ddbbae395008ee6d5bc983e32d3511",
+      "node_count": 30,
+      "main_edges": 21,
+      "llm_related": true,
+      "main_ai_nodes": [
+        "Analyze Trends with AI"
+      ],
+      "auxiliary_ai_nodes": [],
+      "external_action_candidates": [
+        "Send Report Email"
+      ],
+      "binary_sink_candidates": [
+        "Send Report Email"
+      ],
+      "explicit_file_sources": [
+        "Download PDF"
+      ],
+      "late_file_paths": [
+        {
+          "file_source": "Download PDF",
+          "binary_sink": "Send Report Email",
+          "earlier_ai_nodes": [
+            "Analyze Trends with AI"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "code_nodes": [
+        "Set Keywords",
+        "Flatten Videos",
+        "Prep ID Batches",
+        "Rank Videos",
+        "Prep AI Prompt",
+        "Finalize Spreadsheet",
+        "Prep Channel Stats",
+        "Prep Top Videos",
+        "Prep Weekly Summary",
+        "Build HTML Report1"
+      ],
+      "duplicate_names": [],
+      "unresolved_references": [],
+      "has_main_cycle": false,
+      "explicit_cross_node_reference_count": 14,
+      "structure_fingerprint": "0241751687b17abaada1657c76dfadf50a9b37f158f90e9bde4f25955568dd9e",
+      "sage_status": "not_modeled",
+      "runtime_status": "not_executed"
+    },
+    {
+      "id": 14185,
+      "name": "Generate and Send Personalized Quotations PDF ",
+      "author": "devontoh",
+      "total_views": 391,
+      "recent_views": 0,
+      "source_sha256": "eeb59669ebce92e734fc02fc617bd702a7caaa90864c42e0e8cf734dc27ccb0c",
+      "node_count": 7,
+      "main_edges": 5,
+      "llm_related": true,
+      "main_ai_nodes": [
+        "OpenAI Personalize"
+      ],
+      "auxiliary_ai_nodes": [],
+      "external_action_candidates": [
+        "Copy Template",
+        "Send Quotation Email"
+      ],
+      "binary_sink_candidates": [
+        "Send Quotation Email"
+      ],
+      "explicit_file_sources": [
+        "Export as PDF"
+      ],
+      "late_file_paths": [
+        {
+          "file_source": "Export as PDF",
+          "binary_sink": "Send Quotation Email",
+          "earlier_ai_nodes": [
+            "OpenAI Personalize"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "code_nodes": [],
+      "duplicate_names": [],
+      "unresolved_references": [],
+      "has_main_cycle": false,
+      "explicit_cross_node_reference_count": 6,
+      "structure_fingerprint": "b147b56539aec758f14d84fe626712c65d1e77043a5e246e8c0fd645118a4a60",
+      "sage_status": "not_modeled",
+      "runtime_status": "not_executed"
+    },
+    {
+      "id": 14717,
+      "name": "Create AI proposals from Fireflies transcripts with GPT-4o, Google Docs, Gmail and Telegram approval",
+      "author": "devontoh",
+      "total_views": 29,
+      "recent_views": 0,
+      "source_sha256": "a172a5138173402e5c5fb7b9c70b189337175d0f764ddb393500626078d2daf5",
+      "node_count": 32,
+      "main_edges": 25,
+      "llm_related": true,
+      "main_ai_nodes": [
+        "Classify Meeting Type",
+        "Generate Proposal Content"
+      ],
+      "auxiliary_ai_nodes": [],
+      "external_action_candidates": [
+        "Ask for Client Email",
+        "Confirm Email Sent",
+        "Copy Proposal Template",
+        "Notify No Proposal Needed",
+        "Notify Proposal Rejected",
+        "Notify Transcript Error",
+        "Save PDF to Drive",
+        "Send Approval Request",
+        "Send Proposal Email"
+      ],
+      "binary_sink_candidates": [
+        "Send Proposal Email"
+      ],
+      "explicit_file_sources": [
+        "Export Doc as PDF",
+        "Download PDF from Drive"
+      ],
+      "late_file_paths": [
+        {
+          "file_source": "Export Doc as PDF",
+          "binary_sink": "Send Proposal Email",
+          "earlier_ai_nodes": [
+            "Classify Meeting Type",
+            "Generate Proposal Content"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        },
+        {
+          "file_source": "Download PDF from Drive",
+          "binary_sink": "Send Proposal Email",
+          "earlier_ai_nodes": [
+            "Classify Meeting Type",
+            "Generate Proposal Content"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "code_nodes": [],
+      "duplicate_names": [],
+      "unresolved_references": [],
+      "has_main_cycle": false,
+      "explicit_cross_node_reference_count": 16,
+      "structure_fingerprint": "6416d49da12327a325ba487f6f6b98b40ce5e17ec0a23e1993d8c0f7fbfeac68",
+      "sage_status": "not_modeled",
+      "runtime_status": "not_executed"
+    },
+    {
+      "id": 15440,
+      "name": "Turn YouTube videos into weekly short clips with captions using WayinVideo and GPT-4o-mini",
+      "author": "isawow",
+      "total_views": 489,
+      "recent_views": 0,
+      "source_sha256": "c87af507ec1697a261cb0c124b071a5bcd56e98516f769fbe28d940d17c71ec9",
+      "node_count": 27,
+      "main_edges": 21,
+      "llm_related": true,
+      "main_ai_nodes": [
+        "15. AI Agent — Write Platform Captions"
+      ],
+      "auxiliary_ai_nodes": [
+        "16. OpenAI — GPT-4o-mini Model"
+      ],
+      "external_action_candidates": [
+        "19. Google Drive — Upload Clip"
+      ],
+      "binary_sink_candidates": [
+        "19. Google Drive — Upload Clip"
+      ],
+      "explicit_file_sources": [
+        "18. HTTP — Download Clip File"
+      ],
+      "late_file_paths": [
+        {
+          "file_source": "18. HTTP — Download Clip File",
+          "binary_sink": "19. Google Drive — Upload Clip",
+          "earlier_ai_nodes": [
+            "15. AI Agent — Write Platform Captions"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "code_nodes": [
+        "8. Code — Store Summary Data",
+        "14. Code — Extract Clips Array",
+        "17. Code — Parse Caption Output"
+      ],
+      "duplicate_names": [],
+      "unresolved_references": [],
+      "has_main_cycle": true,
+      "explicit_cross_node_reference_count": 10,
+      "structure_fingerprint": "8c4f2cad48f48261e70dd63c53321141a4fdb1e5db0438e368ceb6ceeec1f962",
+      "sage_status": "not_modeled",
+      "runtime_status": "not_executed"
+    },
+    {
+      "id": 15449,
+      "name": "Automate employee onboarding with Groq, Gmail, Slack and Google Workspace",
+      "author": "redowanfarhan",
+      "total_views": 31,
+      "recent_views": 0,
+      "source_sha256": "ea434265ca422712c612cdb85534763470eb54f073e964f712de869bf6de4ac6",
+      "node_count": 20,
+      "main_edges": 14,
+      "llm_related": true,
+      "main_ai_nodes": [
+        "AI Agent"
+      ],
+      "auxiliary_ai_nodes": [
+        "Generate AI Content"
+      ],
+      "external_action_candidates": [
+        "HR team",
+        "Notification Email → HR Team",
+        "Notification Email → Manager",
+        "Slack Intro → General Channel",
+        "System Access Request → IT Team",
+        "Welcome Email → New Hire"
+      ],
+      "binary_sink_candidates": [
+        "Welcome Email → New Hire"
+      ],
+      "explicit_file_sources": [
+        "Download Policy",
+        "Download Handbook"
+      ],
+      "late_file_paths": [
+        {
+          "file_source": "Download Policy",
+          "binary_sink": "Welcome Email → New Hire",
+          "earlier_ai_nodes": [
+            "AI Agent"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        },
+        {
+          "file_source": "Download Handbook",
+          "binary_sink": "Welcome Email → New Hire",
+          "earlier_ai_nodes": [
+            "AI Agent"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "code_nodes": [
+        "Store Form Data"
+      ],
+      "duplicate_names": [],
+      "unresolved_references": [],
+      "has_main_cycle": false,
+      "explicit_cross_node_reference_count": 2,
+      "structure_fingerprint": "693ac76c54153edaa7ded246d6b748680603b0a9f47352201d9c6187671a5e10",
+      "sage_status": "not_modeled",
+      "runtime_status": "not_executed"
+    },
+    {
+      "id": 15451,
+      "name": "Automate AI-powered employee onboarding emails and Slack updates with Groq, Gmail, and Google Sheets",
+      "author": "redowanfarhan",
+      "total_views": 45,
+      "recent_views": 0,
+      "source_sha256": "04b784dd9ee917fe00466589f3eef930aea65392738f010ef91dec89127ac63a",
+      "node_count": 20,
+      "main_edges": 14,
+      "llm_related": true,
+      "main_ai_nodes": [
+        "AI Agent"
+      ],
+      "auxiliary_ai_nodes": [
+        "Generate AI Content"
+      ],
+      "external_action_candidates": [
+        "HR team",
+        "Notification Email → HR Team",
+        "Notification Email → Manager",
+        "Slack Intro → General Channel",
+        "System Access Request → IT Team",
+        "Welcome Email → New Hire"
+      ],
+      "binary_sink_candidates": [
+        "Welcome Email → New Hire"
+      ],
+      "explicit_file_sources": [
+        "Download Policy",
+        "Download Handbook"
+      ],
+      "late_file_paths": [
+        {
+          "file_source": "Download Policy",
+          "binary_sink": "Welcome Email → New Hire",
+          "earlier_ai_nodes": [
+            "AI Agent"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        },
+        {
+          "file_source": "Download Handbook",
+          "binary_sink": "Welcome Email → New Hire",
+          "earlier_ai_nodes": [
+            "AI Agent"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "code_nodes": [
+        "Store Form Data"
+      ],
+      "duplicate_names": [],
+      "unresolved_references": [],
+      "has_main_cycle": false,
+      "explicit_cross_node_reference_count": 2,
+      "structure_fingerprint": "693ac76c54153edaa7ded246d6b748680603b0a9f47352201d9c6187671a5e10",
+      "sage_status": "not_modeled",
+      "runtime_status": "not_executed"
+    },
+    {
+      "id": 16217,
+      "name": "Send weekly Facebook and Instagram PDF performance reports with Gemini and Gmail",
+      "author": "spctek-ai",
+      "total_views": 14,
+      "recent_views": 0,
+      "source_sha256": "1032a80141fa0be2493b380dc607ed384696cff2456a9aac1d3195206edeb8b1",
+      "node_count": 26,
+      "main_edges": 19,
+      "llm_related": true,
+      "main_ai_nodes": [
+        "AI Analysis Agent",
+        "Message a model"
+      ],
+      "auxiliary_ai_nodes": [],
+      "external_action_candidates": [
+        "Send a message"
+      ],
+      "binary_sink_candidates": [
+        "Send a message"
+      ],
+      "explicit_file_sources": [
+        "Convert HTML to PDF"
+      ],
+      "late_file_paths": [
+        {
+          "file_source": "Convert HTML to PDF",
+          "binary_sink": "Send a message",
+          "earlier_ai_nodes": [
+            "Message a model"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "code_nodes": [
+        "Calculate Dates and Wrap Data",
+        "Organize Facebook Data",
+        "Get Instagram Insights",
+        "Get Instagram Follows and Unfollows",
+        "Organize Instagram Data",
+        "Merge All Data & Build Charts",
+        "Prepare AI Prompt",
+        "Build HTML Report"
+      ],
+      "duplicate_names": [],
+      "unresolved_references": [],
+      "has_main_cycle": false,
+      "explicit_cross_node_reference_count": 0,
+      "structure_fingerprint": "af65e206e132e68cfd9edd398b5245db6027b4b95e90e609e5ae7d335922e028",
+      "sage_status": "not_modeled",
+      "runtime_status": "not_executed"
+    },
+    {
+      "id": 16375,
+      "name": "Screen LinkedIn jobs and generate tailored resume and cover PDFs with Anthropic and DocRaptor",
+      "author": "shafeel",
+      "total_views": 250,
+      "recent_views": 1,
+      "source_sha256": "be442749dd2371bcc27534492188550cafa86d0ac8f39787f667a4fdf4688c39",
+      "node_count": 25,
+      "main_edges": 16,
+      "llm_related": true,
+      "main_ai_nodes": [
+        "AI Match (Agent)",
+        "Generate Resume JSON (Claude)",
+        "Generate Cover JSON (Claude)"
+      ],
+      "auxiliary_ai_nodes": [
+        "Anthropic Chat Model",
+        "Anthropic Chat Model (Resume)",
+        "Anthropic Chat Model (Cover)"
+      ],
+      "external_action_candidates": [
+        "Email Me (Gmail)"
+      ],
+      "binary_sink_candidates": [
+        "Email Me (Gmail)"
+      ],
+      "explicit_file_sources": [
+        "Resume PDF (DocRaptor)",
+        "Cover PDF (DocRaptor)"
+      ],
+      "late_file_paths": [
+        {
+          "file_source": "Resume PDF (DocRaptor)",
+          "binary_sink": "Email Me (Gmail)",
+          "earlier_ai_nodes": [
+            "AI Match (Agent)",
+            "Generate Resume JSON (Claude)"
+          ],
+          "intervening_ai_nodes": [
+            "Generate Cover JSON (Claude)"
+          ],
+          "code_nodes_on_path": [
+            "Assemble Email",
+            "Render Cover HTML"
+          ],
+          "status": "structural_candidate_requires_contract_review"
+        },
+        {
+          "file_source": "Cover PDF (DocRaptor)",
+          "binary_sink": "Email Me (Gmail)",
+          "earlier_ai_nodes": [
+            "AI Match (Agent)",
+            "Generate Resume JSON (Claude)",
+            "Generate Cover JSON (Claude)"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [
+            "Assemble Email"
+          ],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "code_nodes": [
+        "Build Apify Input",
+        "Pre-filter + Dedup",
+        "Build Match Prompt",
+        "Rank + Keep Top 5",
+        "Build Prompts (user profile)",
+        "Render Resume HTML",
+        "Render Cover HTML",
+        "Assemble Email"
+      ],
+      "duplicate_names": [],
+      "unresolved_references": [],
+      "has_main_cycle": false,
+      "explicit_cross_node_reference_count": 11,
+      "structure_fingerprint": "2cd01f5f667305b89443de8ae737812192ef8c2095db1ad1fa26623941ec49bc",
+      "sage_status": "not_modeled",
+      "runtime_status": "not_executed"
+    },
+    {
+      "id": 16538,
+      "name": "Generate monthly BigQuery KPI PDF reports with Claude, Google Docs, Outlook and Teams",
+      "author": "mychel-garzon",
+      "total_views": 64,
+      "recent_views": 0,
+      "source_sha256": "e4408ba7cdefc5a5f92bc2a5334c3628e01e7f656a8b0389cdce6c68537879bf",
+      "node_count": 36,
+      "main_edges": 26,
+      "llm_related": true,
+      "main_ai_nodes": [
+        "Create AI Narrative with Claude"
+      ],
+      "auxiliary_ai_nodes": [
+        "Claude Chat Model"
+      ],
+      "external_action_candidates": [
+        "Duplicate Report Template",
+        "Save Report to OneDrive",
+        "Send Report via Outlook"
+      ],
+      "binary_sink_candidates": [
+        "Send Report via Outlook"
+      ],
+      "explicit_file_sources": [
+        "Export Document to PDF"
+      ],
+      "late_file_paths": [
+        {
+          "file_source": "Export Document to PDF",
+          "binary_sink": "Send Report via Outlook",
+          "earlier_ai_nodes": [
+            "Create AI Narrative with Claude"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "code_nodes": [
+        "Calculate Previous Month",
+        "Label Revenue Data",
+        "Label Category Data",
+        "Label Weekly Data",
+        "Label Customer Data",
+        "Consolidate BigQuery Data",
+        "Transfer Report Data",
+        "Integrate Narrative with Data",
+        "Construct Replacement Requests"
+      ],
+      "duplicate_names": [],
+      "unresolved_references": [],
+      "has_main_cycle": false,
+      "explicit_cross_node_reference_count": 5,
+      "structure_fingerprint": "146b77df9481f8d86977e619e52700946cfad30ce6a2644d0082a86af961937c",
+      "sage_status": "not_modeled",
+      "runtime_status": "not_executed"
+    },
+    {
+      "id": 16551,
+      "name": "Send daily LinkedIn post drafts with Tavily, Groq Llama 3.3 and Gmail",
+      "author": "vasunaman",
+      "total_views": 274,
+      "recent_views": 1,
+      "source_sha256": "e8d9cf14a5329a7b6cfcfd244d117561aeec01381a1bd91c36caae4f2ba7be8f",
+      "node_count": 14,
+      "main_edges": 8,
+      "llm_related": true,
+      "main_ai_nodes": [
+        "Define LinkedIn Strategy Agent"
+      ],
+      "auxiliary_ai_nodes": [
+        "Groq Conversational Model"
+      ],
+      "external_action_candidates": [
+        "Send Email No Image Fallback",
+        "Send Email with Image"
+      ],
+      "binary_sink_candidates": [
+        "Send Email with Image"
+      ],
+      "explicit_file_sources": [
+        "Fetch Image from URL"
+      ],
+      "late_file_paths": [
+        {
+          "file_source": "Fetch Image from URL",
+          "binary_sink": "Send Email with Image",
+          "earlier_ai_nodes": [
+            "Define LinkedIn Strategy Agent"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "code_nodes": [
+        "Select Daily Topic",
+        "Generate Image URL"
+      ],
+      "duplicate_names": [],
+      "unresolved_references": [],
+      "has_main_cycle": false,
+      "explicit_cross_node_reference_count": 2,
+      "structure_fingerprint": "b43b115f63a170c0b38db9f1f8e6aa58ace57b3abc39cf2eda780f1c3fe1bee2",
+      "sage_status": "not_modeled",
+      "runtime_status": "not_executed"
+    },
+    {
+      "id": 16876,
+      "name": "Send ranked freight quote PDFs with GPT-4o, Google Sheets, Gmail and PDFShift",
+      "author": "rahul08",
+      "total_views": 34,
+      "recent_views": 0,
+      "source_sha256": "306d41ca75c8e7601c99fe43a3217f5bf8d6c7b900b96d25464a99453d18255c",
+      "node_count": 20,
+      "main_edges": 13,
+      "llm_related": true,
+      "main_ai_nodes": [
+        "GPT-4o Generate Quote HTML"
+      ],
+      "auxiliary_ai_nodes": [],
+      "external_action_candidates": [
+        "Send Quote Email to Customer",
+        "Slack — Send Workflow Error Alert"
+      ],
+      "binary_sink_candidates": [
+        "Send Quote Email to Customer"
+      ],
+      "explicit_file_sources": [
+        "Generate Quote PDF"
+      ],
+      "late_file_paths": [
+        {
+          "file_source": "Generate Quote PDF",
+          "binary_sink": "Send Quote Email to Customer",
+          "earlier_ai_nodes": [
+            "GPT-4o Generate Quote HTML"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "code_nodes": [
+        "Normalize & Structure Rate Data"
+      ],
+      "duplicate_names": [],
+      "unresolved_references": [],
+      "has_main_cycle": false,
+      "explicit_cross_node_reference_count": 6,
+      "structure_fingerprint": "2212fec0efb8a8bcea29eca891493722c2e13d8778bc48daa133a5b5862f55b1",
+      "sage_status": "not_modeled",
+      "runtime_status": "not_executed"
+    },
+    {
+      "id": 16881,
+      "name": "Generate sound effects from chat with Groq, ElevenLabs and Google Drive",
+      "author": "exekyute",
+      "total_views": 4,
+      "recent_views": 0,
+      "source_sha256": "c2ac40bb55f9930928325d2b00e4ed3dae5b6e4581f4ca3e683ff0b777f21a9f",
+      "node_count": 12,
+      "main_edges": 6,
+      "llm_related": true,
+      "main_ai_nodes": [
+        "Compose Sound Effect Prompt"
+      ],
+      "auxiliary_ai_nodes": [
+        "Groq Llama Model"
+      ],
+      "external_action_candidates": [
+        "Upload to Google Drive"
+      ],
+      "binary_sink_candidates": [
+        "Upload to Google Drive"
+      ],
+      "explicit_file_sources": [
+        "Generate Sound With ElevenLabs"
+      ],
+      "late_file_paths": [
+        {
+          "file_source": "Generate Sound With ElevenLabs",
+          "binary_sink": "Upload to Google Drive",
+          "earlier_ai_nodes": [
+            "Compose Sound Effect Prompt"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "code_nodes": [
+        "Clamp Sound Settings"
+      ],
+      "duplicate_names": [],
+      "unresolved_references": [],
+      "has_main_cycle": false,
+      "explicit_cross_node_reference_count": 3,
+      "structure_fingerprint": "b589912007332a0bca5c98a76d301b0e9829d8a2cd4366cdb1e8914fcf843a97",
+      "sage_status": "not_modeled",
+      "runtime_status": "not_executed"
+    },
+    {
+      "id": 17351,
+      "name": "Generate company due diligence PDFs with Google Gemini, SEC EDGAR, Serper and Gmail",
+      "author": "iamvaar",
+      "total_views": 7,
+      "recent_views": 0,
+      "source_sha256": "774d4817dbdfb88491d5567b518eb7235df91bcc7730045baf9e922170d55d4e",
+      "node_count": 26,
+      "main_edges": 19,
+      "llm_related": true,
+      "main_ai_nodes": [
+        "Report Generator Agent"
+      ],
+      "auxiliary_ai_nodes": [
+        "Gemini Chat Model"
+      ],
+      "external_action_candidates": [
+        "Send Email via Gmail"
+      ],
+      "binary_sink_candidates": [
+        "Send Email via Gmail"
+      ],
+      "explicit_file_sources": [
+        "Fetch Tech Score Chart"
+      ],
+      "late_file_paths": [
+        {
+          "file_source": "Fetch Tech Score Chart",
+          "binary_sink": "Send Email via Gmail",
+          "earlier_ai_nodes": [
+            "Report Generator Agent"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [
+            "Build HTML Report"
+          ],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "code_nodes": [
+        "Build HTML Report"
+      ],
+      "duplicate_names": [],
+      "unresolved_references": [],
+      "has_main_cycle": false,
+      "explicit_cross_node_reference_count": 9,
+      "structure_fingerprint": "6757fe55d29b4a5b5875990eaeb5c832e51ab9419ae3d2b9f258133cead53c22",
+      "sage_status": "not_modeled",
+      "runtime_status": "not_executed"
+    },
+    {
+      "id": 17933,
+      "name": "Create seminar teaching packs from research PDFs with Qwen, Gotenberg and Gmail",
+      "author": "thefamoushesham",
+      "total_views": 0,
+      "recent_views": 0,
+      "source_sha256": "6d106d77e0d9a21983efc43363f44a8436d8c5e6fc52ac49099bef8d9440bf32",
+      "node_count": 22,
+      "main_edges": 12,
+      "llm_related": true,
+      "main_ai_nodes": [
+        "Teaching pack agent"
+      ],
+      "auxiliary_ai_nodes": [
+        "Fallback: Mistral Large",
+        "Qwen Cloud Chat Model",
+        "Parser Fixer"
+      ],
+      "external_action_candidates": [
+        "Email the pack"
+      ],
+      "binary_sink_candidates": [
+        "Email the pack"
+      ],
+      "explicit_file_sources": [
+        "Render PDF (Gotenberg)"
+      ],
+      "late_file_paths": [
+        {
+          "file_source": "Render PDF (Gotenberg)",
+          "binary_sink": "Email the pack",
+          "earlier_ai_nodes": [
+            "Teaching pack agent"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [
+            "Name the PDF"
+          ],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "code_nodes": [
+        "Normalise upload",
+        "Build report HTML",
+        "Name the PDF"
+      ],
+      "duplicate_names": [],
+      "unresolved_references": [],
+      "has_main_cycle": false,
+      "explicit_cross_node_reference_count": 4,
+      "structure_fingerprint": "a86c176d2b68def6cd3df2fae20010538971ae63f6a3ffaaa6cb5e03994ca868",
+      "sage_status": "not_modeled",
+      "runtime_status": "not_executed"
+    },
+    {
+      "id": 18053,
+      "name": "Send weekly Meta Ads performance PDF reports with Gemini and Gmail",
+      "author": "spctek-ai",
+      "total_views": 1,
+      "recent_views": 0,
+      "source_sha256": "01e5f3033e943e9214585e67b304f58a9397b930f48f6db05e7616f967384284",
+      "node_count": 22,
+      "main_edges": 17,
+      "llm_related": true,
+      "main_ai_nodes": [
+        "Message a model"
+      ],
+      "auxiliary_ai_nodes": [],
+      "external_action_candidates": [
+        "Send Email"
+      ],
+      "binary_sink_candidates": [
+        "Send Email"
+      ],
+      "explicit_file_sources": [
+        "Convert HTML to PDF"
+      ],
+      "late_file_paths": [
+        {
+          "file_source": "Convert HTML to PDF",
+          "binary_sink": "Send Email",
+          "earlier_ai_nodes": [
+            "Message a model"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "code_nodes": [
+        "Calculate Dates and Wrap Data",
+        "Organize Campaign Data",
+        "Format & Fetch Ad Creatives",
+        "Organize Ad Creative Data",
+        "Merge All Data & Build Charts",
+        "Prepare AI Prompt",
+        "Build HTML Report"
+      ],
+      "duplicate_names": [],
+      "unresolved_references": [],
+      "has_main_cycle": false,
+      "explicit_cross_node_reference_count": 0,
+      "structure_fingerprint": "149792f36a37b18f67617f5192950189ea93d6c2aa60fc6bcf7204f925fbfeb2",
+      "sage_status": "not_modeled",
+      "runtime_status": "not_executed"
+    },
+    {
+      "id": 18142,
+      "name": "Create LinkedIn posts from articles with OpenAI, Pexels and Google Sheets",
+      "author": "khadijanaeem",
+      "total_views": 0,
+      "recent_views": 0,
+      "source_sha256": "eb015398d08ffed1dbef0540f595942416142c7762250c990fa70fb86c1664dc",
+      "node_count": 21,
+      "main_edges": 12,
+      "llm_related": true,
+      "main_ai_nodes": [
+        "AI Image Query Agent",
+        "AI Image Selector",
+        "Generate Content"
+      ],
+      "auxiliary_ai_nodes": [
+        "OpenAI Chat Model1",
+        "OpenAI Chat Model"
+      ],
+      "external_action_candidates": [
+        "Create a post",
+        "Download Image"
+      ],
+      "binary_sink_candidates": [
+        "Download Image"
+      ],
+      "explicit_file_sources": [
+        "Fetch Actual Image",
+        "HTTP Request3"
+      ],
+      "late_file_paths": [
+        {
+          "file_source": "Fetch Actual Image",
+          "binary_sink": "Download Image",
+          "earlier_ai_nodes": [
+            "AI Image Query Agent",
+            "AI Image Selector",
+            "Generate Content"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "code_nodes": [
+        "Fetch Url"
+      ],
+      "duplicate_names": [],
+      "unresolved_references": [],
+      "has_main_cycle": false,
+      "explicit_cross_node_reference_count": 5,
+      "structure_fingerprint": "0ad4d6ed39beed68f781b6ac92bc32eb74d0fb11575833294e69f535cc11d555",
+      "sage_status": "not_modeled",
+      "runtime_status": "not_executed"
+    },
+    {
+      "id": 18341,
+      "name": "Create captioned vertical video clips from Google Drive using CNAPS and Google Sheets",
+      "author": "tuckken",
+      "total_views": 0,
+      "recent_views": 0,
+      "source_sha256": "8f4090bb23e331915761ec0213d7bdc3c56b620095f79e9b0e415838b1ab2bec",
+      "node_count": 35,
+      "main_edges": 21,
+      "llm_related": true,
+      "main_ai_nodes": [
+        "Start the clip run on CNAPS",
+        "Check the run"
+      ],
+      "auxiliary_ai_nodes": [
+        "Anthropic Chat Model"
+      ],
+      "external_action_candidates": [
+        "A new video lands in Drive",
+        "Save the clip to Drive",
+        "Say what went wrong",
+        "Tell the team it's ready"
+      ],
+      "binary_sink_candidates": [
+        "Save the clip to Drive"
+      ],
+      "explicit_file_sources": [
+        "Download the video",
+        "Download the clip"
+      ],
+      "late_file_paths": [
+        {
+          "file_source": "Download the video",
+          "binary_sink": "Save the clip to Drive",
+          "earlier_ai_nodes": [],
+          "intervening_ai_nodes": [
+            "Check the run",
+            "Start the clip run on CNAPS"
+          ],
+          "code_nodes_on_path": [
+            "One row per clip"
+          ],
+          "status": "structural_candidate_requires_contract_review"
+        },
+        {
+          "file_source": "Download the clip",
+          "binary_sink": "Save the clip to Drive",
+          "earlier_ai_nodes": [
+            "Start the clip run on CNAPS",
+            "Check the run"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "code_nodes": [
+        "Work out how long to wait",
+        "Read the upload URL",
+        "One row per clip",
+        "Run summary"
+      ],
+      "duplicate_names": [],
+      "unresolved_references": [],
+      "has_main_cycle": true,
+      "explicit_cross_node_reference_count": 22,
+      "structure_fingerprint": "8ce86d844488e074ab88036afe3acf03b88f274eb5f1a0547fb31a7db57a2997",
+      "sage_status": "not_modeled",
+      "runtime_status": "not_executed"
+    },
+    {
+      "id": 18417,
+      "name": "Generate quiet luxury lifestyle product images with OpenAI and Google Drive",
+      "author": "awaiskhalil-official",
+      "total_views": 0,
+      "recent_views": 0,
+      "source_sha256": "3cf6899836378ba4b259ee9646676270ca8574731808c18d8f5caa67f56215b4",
+      "node_count": 33,
+      "main_edges": 21,
+      "llm_related": true,
+      "main_ai_nodes": [
+        "OpenAI Image Analysis",
+        "OpenAI Message Model",
+        "AI Analysis Agent",
+        "Send Message to OpenAI",
+        "Message a model1"
+      ],
+      "auxiliary_ai_nodes": [
+        "OpenAI GPT-4 Chat Model"
+      ],
+      "external_action_candidates": [
+        "Upload File to Google Drive",
+        "Upload file1",
+        "Upload file2",
+        "Upload file3"
+      ],
+      "binary_sink_candidates": [
+        "Upload File to Google Drive",
+        "Upload file3",
+        "Upload file1",
+        "Upload file2"
+      ],
+      "explicit_file_sources": [
+        "Download file",
+        "Download file2",
+        "Download file3",
+        "Download file1"
+      ],
+      "late_file_paths": [
+        {
+          "file_source": "Download file",
+          "binary_sink": "Upload File to Google Drive",
+          "earlier_ai_nodes": [],
+          "intervening_ai_nodes": [
+            "AI Analysis Agent",
+            "Message a model1",
+            "OpenAI Image Analysis"
+          ],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        },
+        {
+          "file_source": "Download file",
+          "binary_sink": "Upload file1",
+          "earlier_ai_nodes": [],
+          "intervening_ai_nodes": [
+            "AI Analysis Agent",
+            "OpenAI Image Analysis",
+            "OpenAI Message Model"
+          ],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        },
+        {
+          "file_source": "Download file",
+          "binary_sink": "Upload file2",
+          "earlier_ai_nodes": [],
+          "intervening_ai_nodes": [
+            "AI Analysis Agent",
+            "OpenAI Image Analysis",
+            "Send Message to OpenAI"
+          ],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        },
+        {
+          "file_source": "Download file2",
+          "binary_sink": "Upload file1",
+          "earlier_ai_nodes": [
+            "OpenAI Image Analysis",
+            "OpenAI Message Model",
+            "AI Analysis Agent"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        },
+        {
+          "file_source": "Download file3",
+          "binary_sink": "Upload file2",
+          "earlier_ai_nodes": [
+            "OpenAI Image Analysis",
+            "AI Analysis Agent",
+            "Send Message to OpenAI"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        },
+        {
+          "file_source": "Download file1",
+          "binary_sink": "Upload File to Google Drive",
+          "earlier_ai_nodes": [
+            "OpenAI Image Analysis",
+            "AI Analysis Agent",
+            "Message a model1"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "code_nodes": [],
+      "duplicate_names": [],
+      "unresolved_references": [],
+      "has_main_cycle": false,
+      "explicit_cross_node_reference_count": 5,
+      "structure_fingerprint": "63748b21f3069e55f3e4e833c7bc1e546c29cb9753cb3abaaa4567fd01eb0dd6",
+      "sage_status": "not_modeled",
+      "runtime_status": "not_executed"
+    },
+    {
+      "id": 18477,
+      "name": "Send weekly parent progress reports with Google Sheets, GPT-4o mini and Gmail",
+      "author": "rahul08",
+      "total_views": 0,
+      "recent_views": 0,
+      "source_sha256": "8b2887fd914b09777df5a563de9bcec08804a69f5cfb290eef578f087fec9f73",
+      "node_count": 33,
+      "main_edges": 25,
+      "llm_related": true,
+      "main_ai_nodes": [
+        "AI: Generate Improvement Tips",
+        "AI: Write Parent Narrative"
+      ],
+      "auxiliary_ai_nodes": [],
+      "external_action_candidates": [
+        "Notify Teacher via Slack",
+        "Notify Teacher via Telegram",
+        "Send Email to Parent",
+        "Send Telegram to Parent",
+        "Slack – Post Workflow Error Alert",
+        "Urgent Alert to Parent"
+      ],
+      "binary_sink_candidates": [
+        "Send Email to Parent"
+      ],
+      "explicit_file_sources": [
+        "Generate PDF Report"
+      ],
+      "late_file_paths": [
+        {
+          "file_source": "Generate PDF Report",
+          "binary_sink": "Send Email to Parent",
+          "earlier_ai_nodes": [
+            "AI: Generate Improvement Tips",
+            "AI: Write Parent Narrative"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [
+            "Route by Parent Preference"
+          ],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "code_nodes": [
+        "Normalize Webhook Data",
+        "Merge Narrative & Tips",
+        "Route by Parent Preference",
+        "Process & Flag Students",
+        "Extract Narrative Text",
+        "Build Teacher Summary"
+      ],
+      "duplicate_names": [],
+      "unresolved_references": [
+        {
+          "expression_in": "AI: Generate Improvement Tips",
+          "reference": "Process & Flag Students1"
+        },
+        {
+          "expression_in": "AI: Generate Improvement Tips",
+          "reference": "Process & Flag Students1"
+        },
+        {
+          "expression_in": "AI: Generate Improvement Tips",
+          "reference": "Process & Flag Students1"
+        },
+        {
+          "expression_in": "AI: Generate Improvement Tips",
+          "reference": "Process & Flag Students1"
+        },
+        {
+          "expression_in": "Send Email to Parent",
+          "reference": "Process & Flag Students1"
+        },
+        {
+          "expression_in": "Send Email to Parent",
+          "reference": "Process & Flag Students1"
+        },
+        {
+          "expression_in": "Send Email to Parent",
+          "reference": "Process & Flag Students1"
+        },
+        {
+          "expression_in": "Send Email to Parent",
+          "reference": "Process & Flag Students1"
+        },
+        {
+          "expression_in": "Send Email to Parent",
+          "reference": "Process & Flag Students1"
+        },
+        {
+          "expression_in": "Send Email to Parent",
+          "reference": "Process & Flag Students1"
+        },
+        {
+          "expression_in": "Send Email to Parent",
+          "reference": "Process & Flag Students1"
+        },
+        {
+          "expression_in": "Send Telegram to Parent",
+          "reference": "Process & Flag Students1"
+        },
+        {
+          "expression_in": "Send Telegram to Parent",
+          "reference": "Process & Flag Students1"
+        },
+        {
+          "expression_in": "Send Telegram to Parent",
+          "reference": "Process & Flag Students1"
+        },
+        {
+          "expression_in": "Send Telegram to Parent",
+          "reference": "Process & Flag Students1"
+        },
+        {
+          "expression_in": "Send Telegram to Parent",
+          "reference": "Process & Flag Students1"
+        },
+        {
+          "expression_in": "Send Telegram to Parent",
+          "reference": "Process & Flag Students1"
+        },
+        {
+          "expression_in": "Generate PDF Report",
+          "reference": "Process & Flag Students1"
+        },
+        {
+          "expression_in": "Generate PDF Report",
+          "reference": "Process & Flag Students1"
+        },
+        {
+          "expression_in": "Generate PDF Report",
+          "reference": "Process & Flag Students1"
+        },
+        {
+          "expression_in": "Generate PDF Report",
+          "reference": "Process & Flag Students1"
+        },
+        {
+          "expression_in": "Generate PDF Report",
+          "reference": "Process & Flag Students1"
+        },
+        {
+          "expression_in": "Generate PDF Report",
+          "reference": "Process & Flag Students1"
+        }
+      ],
+      "has_main_cycle": false,
+      "explicit_cross_node_reference_count": 3,
+      "structure_fingerprint": "64880d6a1d9810386fc17ad75ffeb9281a1844c6b7e29540624bbbc83d4e3f6e",
+      "sage_status": "not_modeled",
+      "runtime_status": "not_executed"
+    },
+    {
+      "id": 18673,
+      "name": "Send daily CFO invoice health reports with Google Sheets, Groq, Gmail and Slack",
+      "author": "weblineindia",
+      "total_views": 0,
+      "recent_views": 0,
+      "source_sha256": "a7e25f5567022f64bef518acd5cdda1e243b8e88666ffd61b50f9759e94fb899",
+      "node_count": 32,
+      "main_edges": 25,
+      "llm_related": true,
+      "main_ai_nodes": [
+        "Generate CFO Executive Summary"
+      ],
+      "auxiliary_ai_nodes": [
+        "Insights model"
+      ],
+      "external_action_candidates": [
+        "Email CFO Report (Gmail)",
+        "Send Critical Alert (Slack)",
+        "Slack Ping Bottleneck Approver"
+      ],
+      "binary_sink_candidates": [
+        "Email CFO Report (Gmail)"
+      ],
+      "explicit_file_sources": [
+        "Generate PDF Report"
+      ],
+      "late_file_paths": [
+        {
+          "file_source": "Generate PDF Report",
+          "binary_sink": "Email CFO Report (Gmail)",
+          "earlier_ai_nodes": [
+            "Generate CFO Executive Summary"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "code_nodes": [
+        "Normalize & Merge Invoices",
+        "Calculate KPIs & Bottlenecks",
+        "Analyze Trends, Forecast & Anomalies",
+        "Build Prioritized Action Queue",
+        "Parse AI Node",
+        "Prepare Operations Log Rows",
+        "Prepare Alert Dispatches"
+      ],
+      "duplicate_names": [],
+      "unresolved_references": [],
+      "has_main_cycle": false,
+      "explicit_cross_node_reference_count": 24,
+      "structure_fingerprint": "7db3f4534d2947b32c68c121fb97448d00ec596e5a1504e97964d8b6c0276b9f",
+      "sage_status": "not_modeled",
+      "runtime_status": "not_executed"
+    },
+    {
+      "id": 19292,
+      "name": "Create Gmail drafts from business cards with Google Drive, Gemini, Slack and Discord",
+      "author": "maruo",
+      "total_views": 0,
+      "recent_views": 0,
+      "source_sha256": "a9020da3e738a531894f9e319f2a5292d4b01bb74ca032b18a3b68b571e514bc",
+      "node_count": 26,
+      "main_edges": 20,
+      "llm_related": true,
+      "main_ai_nodes": [
+        "Extract Card Data with Gemini"
+      ],
+      "auxiliary_ai_nodes": [],
+      "external_action_candidates": [
+        "Create Draft with Attachment",
+        "Create Draft without Attachment",
+        "Notify Discord",
+        "Notify Slack",
+        "Search Business Cards"
+      ],
+      "binary_sink_candidates": [
+        "Create Draft with Attachment"
+      ],
+      "explicit_file_sources": [
+        "Download Card Image",
+        "Download Attachment from Drive"
+      ],
+      "late_file_paths": [
+        {
+          "file_source": "Download Card Image",
+          "binary_sink": "Create Draft with Attachment",
+          "earlier_ai_nodes": [],
+          "intervening_ai_nodes": [
+            "Extract Card Data with Gemini"
+          ],
+          "code_nodes_on_path": [
+            "Parse OCR Result"
+          ],
+          "status": "structural_candidate_requires_contract_review"
+        },
+        {
+          "file_source": "Download Attachment from Drive",
+          "binary_sink": "Create Draft with Attachment",
+          "earlier_ai_nodes": [
+            "Extract Card Data with Gemini"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "code_nodes": [
+        "Parse OCR Result"
+      ],
+      "duplicate_names": [],
+      "unresolved_references": [],
+      "has_main_cycle": false,
+      "explicit_cross_node_reference_count": 11,
+      "structure_fingerprint": "56dbd128f5d2d92d1546d74dda3756fcb9ed79bf87c610f86a868ed1293832a1",
+      "sage_status": "not_modeled",
+      "runtime_status": "not_executed"
+    },
+    {
+      "id": 6531,
+      "name": "LinkedIn content creator system",
+      "author": "abdulmir",
+      "total_views": 17712,
+      "recent_views": 1,
+      "source_sha256": "4250c570f49ed7bd6607437effe6959b3b2c92a21ecd969b2a2c12f0edbde024",
+      "node_count": 23,
+      "main_edges": 12,
+      "llm_related": true,
+      "main_ai_nodes": [
+        "LinkedIn Creator Agent"
+      ],
+      "auxiliary_ai_nodes": [
+        "Anthropic Chat Model"
+      ],
+      "external_action_candidates": [
+        "Publish Post",
+        "Save Image"
+      ],
+      "binary_sink_candidates": [
+        "Save Image"
+      ],
+      "explicit_file_sources": [
+        "Image Style",
+        "Download Image"
+      ],
+      "late_file_paths": [
+        {
+          "file_source": "Image Style",
+          "binary_sink": "Save Image",
+          "earlier_ai_nodes": [
+            "LinkedIn Creator Agent"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "code_nodes": [
+        "Join Ideas"
+      ],
+      "duplicate_names": [],
+      "unresolved_references": [],
+      "has_main_cycle": false,
+      "explicit_cross_node_reference_count": 4,
+      "structure_fingerprint": "42920485cd5cb0282ebad728ea00cf39730f63027e0f3fb31a257375ed8d88c2",
+      "sage_status": "not_modeled",
+      "runtime_status": "not_executed"
+    },
+    {
+      "id": 7201,
+      "name": "Generate AI-powered lease renewal offers with Ollama LLM, Supabase and Gmail",
+      "author": "laki99",
+      "total_views": 462,
+      "recent_views": 0,
+      "source_sha256": "f87ff9843e64a0b6afec32b85046ecd56e0818b3d84e28a7e21db18a30327de0",
+      "node_count": 17,
+      "main_edges": 13,
+      "llm_related": true,
+      "main_ai_nodes": [
+        "Basic LLM Chain-offerLetter",
+        "Basic LLM Chain-email"
+      ],
+      "auxiliary_ai_nodes": [
+        "Ollama Chat Model"
+      ],
+      "external_action_candidates": [
+        "Gmail",
+        "Google Drive-search",
+        "Google Drive-upload"
+      ],
+      "binary_sink_candidates": [
+        "Gmail"
+      ],
+      "explicit_file_sources": [
+        "Google Drive-get_file"
+      ],
+      "late_file_paths": [
+        {
+          "file_source": "Google Drive-get_file",
+          "binary_sink": "Gmail",
+          "earlier_ai_nodes": [
+            "Basic LLM Chain-offerLetter",
+            "Basic LLM Chain-email"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "code_nodes": [],
+      "duplicate_names": [],
+      "unresolved_references": [],
+      "has_main_cycle": false,
+      "explicit_cross_node_reference_count": 10,
+      "structure_fingerprint": "baea5fe6f3cda038b8af620fb9e04a05d3a8c2746a8b25f53c9f9a90641a2a9b",
+      "sage_status": "not_modeled",
+      "runtime_status": "not_executed"
+    },
+    {
+      "id": 7369,
+      "name": "Generate academic assignments with Google Gemini & deliver via Telegram/PDF",
+      "author": "derocton",
+      "total_views": 887,
+      "recent_views": 0,
+      "source_sha256": "8d3faa47314714442a6d51dccf3acc019443d1429a5777f8b7c6cd8aebff511f",
+      "node_count": 17,
+      "main_edges": 10,
+      "llm_related": true,
+      "main_ai_nodes": [
+        "Static Html Builder",
+        "Student Assignment Auto-Composer"
+      ],
+      "auxiliary_ai_nodes": [
+        "Google Gemini Chat Model6",
+        "Generator Model",
+        "Fallback Model Generator",
+        "Handler For Structured Output Parser"
+      ],
+      "external_action_candidates": [
+        "Send a text message",
+        "Upload file"
+      ],
+      "binary_sink_candidates": [
+        "Upload file"
+      ],
+      "explicit_file_sources": [
+        "HTTP Request"
+      ],
+      "late_file_paths": [
+        {
+          "file_source": "HTTP Request",
+          "binary_sink": "Upload file",
+          "earlier_ai_nodes": [
+            "Static Html Builder",
+            "Student Assignment Auto-Composer"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "code_nodes": [
+        "Structured Data Parser",
+        "Error Handler"
+      ],
+      "duplicate_names": [],
+      "unresolved_references": [],
+      "has_main_cycle": false,
+      "explicit_cross_node_reference_count": 2,
+      "structure_fingerprint": "3beb99742f92ac7d2264e188327ec37524996eae3740fbbbb4dff8852bcbcdc0",
+      "sage_status": "not_modeled",
+      "runtime_status": "not_executed"
+    },
+    {
+      "id": 7695,
+      "name": "Automate weekly Meta Ad reports with Claude AI, GoMarble MCP & Google Slides",
+      "author": "sankalpthedev",
+      "total_views": 624,
+      "recent_views": 0,
+      "source_sha256": "d4905b138e79c5fd451cda0cc44e4182931a50cc6f0d92e0b0eef2f98525c45e",
+      "node_count": 15,
+      "main_edges": 10,
+      "llm_related": true,
+      "main_ai_nodes": [
+        "AI Agent"
+      ],
+      "auxiliary_ai_nodes": [
+        "Anthropic Chat Model"
+      ],
+      "external_action_candidates": [
+        "Send Email"
+      ],
+      "binary_sink_candidates": [
+        "Send Email"
+      ],
+      "explicit_file_sources": [
+        "Download file"
+      ],
+      "late_file_paths": [
+        {
+          "file_source": "Download file",
+          "binary_sink": "Send Email",
+          "earlier_ai_nodes": [
+            "AI Agent"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "code_nodes": [
+        "Validate slide output",
+        "Format Slides Data"
+      ],
+      "duplicate_names": [],
+      "unresolved_references": [],
+      "has_main_cycle": false,
+      "explicit_cross_node_reference_count": 0,
+      "structure_fingerprint": "5c0a794fe4b5073b26d9463c2518c07aeb3090dfc24bfcc7565d5fcf70031d54",
+      "sage_status": "not_modeled",
+      "runtime_status": "not_executed"
+    },
+    {
+      "id": 8104,
+      "name": "Generate AI-powered sales proposals from JotForm leads with OpenAI and Google Docs",
+      "author": "leeweihernandez07",
+      "total_views": 332,
+      "recent_views": 0,
+      "source_sha256": "5c147274fe5082aa7a6a9f8eeaa2d7f95c2b5fc606c84e204bd706f4924b3fae",
+      "node_count": 9,
+      "main_edges": 7,
+      "llm_related": true,
+      "main_ai_nodes": [
+        "OpenAI",
+        "OpenAI1"
+      ],
+      "auxiliary_ai_nodes": [],
+      "external_action_candidates": [
+        "Gmail",
+        "Google Drive"
+      ],
+      "binary_sink_candidates": [
+        "Gmail"
+      ],
+      "explicit_file_sources": [
+        "Google Drive1",
+        "Google Drive2"
+      ],
+      "late_file_paths": [
+        {
+          "file_source": "Google Drive1",
+          "binary_sink": "Gmail",
+          "earlier_ai_nodes": [],
+          "intervening_ai_nodes": [
+            "OpenAI",
+            "OpenAI1"
+          ],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        },
+        {
+          "file_source": "Google Drive2",
+          "binary_sink": "Gmail",
+          "earlier_ai_nodes": [
+            "OpenAI",
+            "OpenAI1"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "code_nodes": [],
+      "duplicate_names": [],
+      "unresolved_references": [],
+      "has_main_cycle": false,
+      "explicit_cross_node_reference_count": 6,
+      "structure_fingerprint": "309e0fe03208456c21e24bc39f9246f913ac8b428b2a35145d21d387199b2058",
+      "sage_status": "not_modeled",
+      "runtime_status": "not_executed"
+    },
+    {
+      "id": 9146,
+      "name": "AI-powered meeting minutes with GPT-4, task assignment & multichannel distribution",
+      "author": "jiteshdugar",
+      "total_views": 388,
+      "recent_views": 0,
+      "source_sha256": "abf1abdb53bb13b427831cca4cd84c9b2cecc87a500beaf1f425f0205b7dd653",
+      "node_count": 38,
+      "main_edges": 18,
+      "llm_related": true,
+      "main_ai_nodes": [
+        "Generate Meeting Summary",
+        "Extract Action Items"
+      ],
+      "auxiliary_ai_nodes": [],
+      "external_action_candidates": [
+        "Email All Participants",
+        "Notify Slack Channel",
+        "Save PDF to Drive",
+        "Send Individual Task Emails"
+      ],
+      "binary_sink_candidates": [
+        "Save PDF to Drive"
+      ],
+      "explicit_file_sources": [
+        "Download PDF from URL"
+      ],
+      "late_file_paths": [
+        {
+          "file_source": "Download PDF from URL",
+          "binary_sink": "Save PDF to Drive",
+          "earlier_ai_nodes": [
+            "Generate Meeting Summary",
+            "Extract Action Items"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "code_nodes": [
+        "Clean Transcript",
+        "Parse and Enrich Data",
+        "Group Tasks by Assignee",
+        "Split Tasks for Creation"
+      ],
+      "duplicate_names": [],
+      "unresolved_references": [],
+      "has_main_cycle": false,
+      "explicit_cross_node_reference_count": 5,
+      "structure_fingerprint": "70c3d6126040a38a6659eb3f0d8600bb12f9e3a866ca79fb37238b741ad7fd5b",
+      "sage_status": "not_modeled",
+      "runtime_status": "not_executed"
+    }
+  ]
+}

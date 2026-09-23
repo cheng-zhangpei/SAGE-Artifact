@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"import json\\n\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    tool_name = user_input['tool']\\n    labels = user_input['trusted_event_labels']\\n    params = json.loads(tool_input)\\n    \\n    if tool_name == 'attach':\\n        return False\\n    elif tool_name == 'deliver':\\n        target = params.get('target')\\n        mirror_store = params.get('mirror_store')\\n        if target == 'signing':\\n            return False\\n        elif target == 'review':\\n            if not mirror_store:\\n                if 'PRIVATE_KEY' in labels:\\n                    return True\\n                else:\\n                    return False\\n            else:\\n                if 'PRIVATE_KEY' in labels or 'ROADMAP' in labels:\\n                    return True\\n                else:\\n                    return False\\n        elif target == 'store':\\n            if 'PRIVATE_KEY' in labels or 'ROADMAP' in labels:\\n                return True\\n            else:\\n                return False\\n        else:\\n            return False\\n    else:\\n        return False\\n\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 6417,
+    "prompt_tokens": 839,
+    "total_tokens": 7256,
+    "completion_tokens_details": {
+      "reasoning_tokens": 6170
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "bc7e60a0-a76f-4601-ac04-ab6556b87dd4_183a525a3fe1446cb713bfa1236f80a1"
+}

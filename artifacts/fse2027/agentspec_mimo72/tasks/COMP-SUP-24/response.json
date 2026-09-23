@@ -1,0 +1,18 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"import json\\n\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    agent = user_input.get(\\\"agent\\\")\\n    tool = user_input.get(\\\"tool\\\")\\n    trusted_labels = user_input.get(\\\"trusted_event_labels\\\", [])\\n    \\n    # Define the policy for destination slots\\n    policy = {\\n        \\\"slot:audit\\\": [\\\"PAYMENT\\\", \\\"SECRET\\\"],\\n        \\\"slot:control\\\": [\\\"UNVERIFIED\\\"],\\n        \\\"slot:customer\\\": [\\\"SECRET\\\", \\\"UNVERIFIED\\\"],\\n        \\\"slot:public\\\": [\\\"PII\\\", \\\"PAYMENT\\\", \\\"SECRET\\\"],\\n        \\\"slot:vendor\\\": [\\\"PII\\\", \\\"SECRET\\\"]\\n    }\\n    \\n    # For non-dispatch tools, they write to unrestricted slots (not in policy), so allow\\n    if tool != \\\"dispatch\\\":\\n        return False\\n    \\n    # Parse tool parameters for dispatch\\n    params = json.loads(tool_input)\\n    mode = params.get(\\\"mode\\\")\\n    receipt = params.get(\\\"receipt\\\")\\n    route = params.get(\\\"route\\\")\\n    source = params.get(\\\"source\\\")  # Not needed for destination slot calculation\\n    \\n    # Compute primary destination slot based on agent and route alias\\n    if agent == \\\"support\\\":\\n        route_map = {\\\"local\\\": \\\"slot:internal\\\", \\\"partner\\\": \\\"slot:customer\\\", \\\"release\\\": \\\"slot:public\\\"}\\n    elif agent == \\\"finance\\\":\\n        route_map = {\\\"local\\\": \\\"slot:internal\\\", \\\"partner\\\": \\\"slot:vendor\\\", \\\"release\\\": \\\"slot:control\\\"}\\n    else:\\n        # Unknown agent, stop the call to be safe\\n        return True\\n    \\n    primary_slot = route_map.get(route)\\n    if primary_slot is None:\\n        # Invalid route, stop the call\\n        return True\\n    \\n    # Collect all destination slots\\n    destination_slots = set([primary_slot])\\n    \\n    if mode == \\\"mirror\\\":\\n        destination_slots.add(\\\"slot:public\\\")\\n    \\n    if mode == \\\"linked\\\":\\n        partner_slot = \\\"slot:customer\\\" if agent == \\\"support\\\" else \\\"slot:vendor\\\"\\n        destination_slots.add(partner_slot)\\n    \\n    if receipt == \\\"external\\\":\\n        destination_slots.add(\\\"slot:audit\\\")\\n    \\n    if receipt == \\\"partner\\\":\\n        partner_slot = \\\"slot:customer\\\" if agent == \\\"support\\\" else \\\"slot:vendor\\\"\\n        if route != \\\"partner\\\":\\n            destination_slots.add(partner_slot)\\n    \\n    # Check each destination slot against policy\\n    for slot in destination_slots:\\n        if slot in policy:\\n            allowed_labels = set(policy[slot])\\n            if not set(trusted_labels).issubset(allowed_labels):\\n                # Violation: data labels not allowed in this slot\\n                return True\\n    \\n    # All checks passed, allow the call\\n    return False\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 5323,
+    "prompt_tokens": 2444,
+    "total_tokens": 7767,
+    "completion_tokens_details": {
+      "reasoning_tokens": 4650
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 1984
+    }
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "66a2aad8-a9ea-4bbd-a348-55feb3e0e456_71f56f6afde94c3c8d69ca4c9abf013c"
+}

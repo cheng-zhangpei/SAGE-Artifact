@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"def pilot_candidate(user_input, tool_input, intermediate_steps):\\n    import json\\n    params = json.loads(tool_input)\\n    tool_name = user_input.get('tool')\\n    labels = user_input.get('trusted_event_labels', set())\\n    if tool_name == 'send_summary':\\n        target = params.get('target')\\n        if target == 'issues':\\n            include_reposter = params.get('include_reposter', False)\\n            if include_reposter or 'EXPLOIT' in labels:\\n                return True\\n        elif target == 'maintainer':\\n            mirror = params.get('mirror', False)\\n            if mirror and 'EXPLOIT' in labels:\\n                return True\\n    return False\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 5084,
+    "prompt_tokens": 816,
+    "total_tokens": 5900,
+    "completion_tokens_details": {
+      "reasoning_tokens": 4916
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "32626d99-3a74-4ecf-99e5-cf06d018c4cb_9e1757568294409f8d2f2afbc70444c9"
+}

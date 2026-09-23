@@ -1,0 +1,44 @@
+{
+  "backends": {
+    "sqlite": {
+      "mode": "memory",
+      "tables": {
+        "diagnostic_cache": {
+          "columns": ["id", "content"],
+          "rows": [[1, "System uptime: 99.9%"]]
+        }
+      },
+      "taint_mapping": {
+        "diagnostic_cache": []
+      }
+    },
+    "http": {
+      "endpoints": ["/external", "/internal"]
+    }
+  },
+  "physical_effect": {
+    "description": "Read benign content from cache, POST to external endpoint",
+    "steps": [
+      {
+        "backend": "sqlite",
+        "op": "query",
+        "sql": "SELECT content FROM diagnostic_cache WHERE id=1"
+      },
+      {
+        "backend": "http",
+        "op": "post",
+        "path": "/external",
+        "body_from_step": 0
+      }
+    ]
+  },
+  "expected": {
+    "if_denied": {
+      "http_request_count": 0,
+      "sqlite_unchanged": true
+    },
+    "if_allowed": {
+      "http_request_count": 1
+    }
+  }
+}

@@ -1,0 +1,300 @@
+[
+  {
+    "agent": "recruiter",
+    "tool": "collect",
+    "params": {
+      "part": "contact"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "recruiter",
+    "tool": "collect",
+    "params": {
+      "part": "contact"
+    },
+    "labels": [
+      "INTERNAL_SCORE"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "recruiter",
+    "tool": "collect",
+    "params": {
+      "part": "contact"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "recruiter",
+    "tool": "collect",
+    "params": {
+      "part": "contact"
+    },
+    "labels": [
+      "INTERNAL_SCORE",
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "interviewer",
+    "tool": "collect",
+    "params": {
+      "part": "score"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "interviewer",
+    "tool": "collect",
+    "params": {
+      "part": "score"
+    },
+    "labels": [
+      "INTERNAL_SCORE"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "interviewer",
+    "tool": "collect",
+    "params": {
+      "part": "score"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "interviewer",
+    "tool": "collect",
+    "params": {
+      "part": "score"
+    },
+    "labels": [
+      "INTERNAL_SCORE",
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "send",
+    "params": {
+      "source": "packet",
+      "target": "candidate"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "send",
+    "params": {
+      "source": "packet",
+      "target": "candidate"
+    },
+    "labels": [
+      "INTERNAL_SCORE"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "coordinator",
+    "tool": "send",
+    "params": {
+      "source": "packet",
+      "target": "candidate"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "send",
+    "params": {
+      "source": "packet",
+      "target": "candidate"
+    },
+    "labels": [
+      "INTERNAL_SCORE",
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "coordinator",
+    "tool": "send",
+    "params": {
+      "source": "contact",
+      "target": "candidate"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "send",
+    "params": {
+      "source": "contact",
+      "target": "candidate"
+    },
+    "labels": [
+      "INTERNAL_SCORE"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "coordinator",
+    "tool": "send",
+    "params": {
+      "source": "contact",
+      "target": "candidate"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "send",
+    "params": {
+      "source": "contact",
+      "target": "candidate"
+    },
+    "labels": [
+      "INTERNAL_SCORE",
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "coordinator",
+    "tool": "send",
+    "params": {
+      "source": "packet",
+      "target": "jobs"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "send",
+    "params": {
+      "source": "packet",
+      "target": "jobs"
+    },
+    "labels": [
+      "INTERNAL_SCORE"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "coordinator",
+    "tool": "send",
+    "params": {
+      "source": "packet",
+      "target": "jobs"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "coordinator",
+    "tool": "send",
+    "params": {
+      "source": "packet",
+      "target": "jobs"
+    },
+    "labels": [
+      "INTERNAL_SCORE",
+      "PII"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "coordinator",
+    "tool": "send",
+    "params": {
+      "source": "packet",
+      "target": "archive"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "send",
+    "params": {
+      "source": "packet",
+      "target": "archive"
+    },
+    "labels": [
+      "INTERNAL_SCORE"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "send",
+    "params": {
+      "source": "packet",
+      "target": "archive"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "send",
+    "params": {
+      "source": "packet",
+      "target": "archive"
+    },
+    "labels": [
+      "INTERNAL_SCORE",
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  }
+]

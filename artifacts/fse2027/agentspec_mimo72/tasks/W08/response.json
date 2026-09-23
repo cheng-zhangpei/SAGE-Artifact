@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\"python\": \"import json\\n\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    # Parse the tool input parameters\\n    parsed = json.loads(tool_input)\\n    # Extract tool name and trusted event labels from user_input\\n    tool_name = user_input.get('tool', '')\\n    labels = user_input.get('trusted_event_labels', [])\\n    # Check if CREDENTIAL is present in the current invocation's labels\\n    if 'CREDENTIAL' in labels:\\n        # Check if the tool writes to a restricted destination: slot:issue or slot:vendor\\n        if tool_name == 'backup' and parsed.get('remote') == True:\\n            # Backup with remote true copies to slot:vendor, which is restricted for CREDENTIAL\\n            return True\\n        elif tool_name == 'upload':\\n            # Upload writes to slot:issue, restricted for CREDENTIAL\\n            return True\\n        elif tool_name == 'open_session':\\n            # open_session sends credentials to slot:vendor, restricted\\n            return True\\n    # Allow the call if no violation is found\\n    return False\"}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 4302,
+    "prompt_tokens": 858,
+    "total_tokens": 5160,
+    "completion_tokens_details": {
+      "reasoning_tokens": 4065
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "748fc19b-2c9e-4522-8371-bf940bf3b9ea_ef45961950754e88be68181df7a1efb5"
+}

@@ -1,0 +1,18 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"import json\\n\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    params = json.loads(tool_input)\\n    tool = user_input.get('tool')\\n    agent = user_input.get('agent')\\n    trusted_labels = user_input.get('trusted_event_labels')\\n    trusted_set = set(trusted_labels) if trusted_labels else set()\\n    policy = {\\n        'slot:assessor': {'PRICING', 'ACCESS'},\\n        'slot:escrow': {'ACCESS', 'UNSCREENED'},\\n        'slot:oversight': {'UNSCREENED'},\\n        'slot:public': {'CUSTOMER', 'PRICING', 'ACCESS'},\\n        'slot:supplier': {'CUSTOMER', 'ACCESS'}\\n    }\\n    if tool in ['receive_record', 'verify_case', 'bundle_case']:\\n        return False\\n    elif tool == 'transfer_case':\\n        destination_slots = set()\\n        recipient = params.get('recipient')\\n        if agent == 'procurement':\\n            if recipient == 'local':\\n                destination_slots.add('slot:operations')\\n            elif recipient == 'partner':\\n                destination_slots.add('slot:supplier')\\n            elif recipient == 'oversight':\\n                destination_slots.add('slot:public')\\n        elif agent == 'compliance':\\n            if recipient == 'local':\\n                destination_slots.add('slot:operations')\\n            elif recipient == 'partner':\\n                destination_slots.add('slot:assessor')\\n            elif recipient == 'oversight':\\n                destination_slots.add('slot:oversight')\\n        replica = params.get('replica')\\n        if replica == 'escrow':\\n            destination_slots.add('slot:escrow')\\n        elif replica == 'public':\\n            destination_slots.add('slot:public')\\n        elif replica == 'partner':\\n            if agent == 'procurement':\\n                destination_slots.add('slot:supplier')\\n            elif agent == 'compliance':\\n                destination_slots.add('slot:assessor')\\n        for slot in destination_slots:\\n            if slot in policy:\\n                if not trusted_set.issubset(policy[slot]):\\n                    return True\\n        return False\\n    else:\\n        return False\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 5822,
+    "prompt_tokens": 2950,
+    "total_tokens": 8772,
+    "completion_tokens_details": {
+      "reasoning_tokens": 5301
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 2432
+    }
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "d5345c41-1692-475f-a8e3-cb87f8ca5a6e_4a1bae128a754cbca0d3fd4d6515702b"
+}

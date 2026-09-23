@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\"python\": \"import json\\n\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    parsed_input = json.loads(tool_input)\\n    tool_name = user_input.get('tool')\\n    trusted_labels = user_input.get('trusted_event_labels', [])\\n    \\n    if tool_name == 'submit':\\n        attachment = parsed_input.get('attachment', 'none')\\n        index = parsed_input.get('index', False)\\n        visibility = parsed_input.get('visibility', 'internal')\\n        if 'TOKEN' in trusted_labels and (visibility == 'public' or index is True):\\n            return True\\n        else:\\n            return False\\n    else:\\n        return False\"}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 3083,
+    "prompt_tokens": 860,
+    "total_tokens": 3943,
+    "completion_tokens_details": {
+      "reasoning_tokens": 2929
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "3257bb1e-7cac-4554-a5b6-2e2e1b795eed_a3a34683c319414d9489752ac322ad00"
+}

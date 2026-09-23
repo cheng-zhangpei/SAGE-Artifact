@@ -1,0 +1,300 @@
+[
+  {
+    "agent": "scheduler",
+    "tool": "prepare",
+    "params": {
+      "part": "patient"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "scheduler",
+    "tool": "prepare",
+    "params": {
+      "part": "patient"
+    },
+    "labels": [
+      "PHI"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "scheduler",
+    "tool": "prepare",
+    "params": {
+      "part": "patient"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "scheduler",
+    "tool": "prepare",
+    "params": {
+      "part": "patient"
+    },
+    "labels": [
+      "PHI",
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "scheduler",
+    "tool": "prepare",
+    "params": {
+      "part": "chart"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "scheduler",
+    "tool": "prepare",
+    "params": {
+      "part": "chart"
+    },
+    "labels": [
+      "PHI"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "scheduler",
+    "tool": "prepare",
+    "params": {
+      "part": "chart"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "scheduler",
+    "tool": "prepare",
+    "params": {
+      "part": "chart"
+    },
+    "labels": [
+      "PHI",
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "notifier",
+    "tool": "notify",
+    "params": {
+      "attach_chart": false,
+      "target": "calendar"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "notifier",
+    "tool": "notify",
+    "params": {
+      "attach_chart": false,
+      "target": "calendar"
+    },
+    "labels": [
+      "PHI"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "notifier",
+    "tool": "notify",
+    "params": {
+      "attach_chart": false,
+      "target": "calendar"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "notifier",
+    "tool": "notify",
+    "params": {
+      "attach_chart": false,
+      "target": "calendar"
+    },
+    "labels": [
+      "PHI",
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "notifier",
+    "tool": "notify",
+    "params": {
+      "attach_chart": true,
+      "target": "calendar"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "notifier",
+    "tool": "notify",
+    "params": {
+      "attach_chart": true,
+      "target": "calendar"
+    },
+    "labels": [
+      "PHI"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "notifier",
+    "tool": "notify",
+    "params": {
+      "attach_chart": true,
+      "target": "calendar"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "notifier",
+    "tool": "notify",
+    "params": {
+      "attach_chart": true,
+      "target": "calendar"
+    },
+    "labels": [
+      "PHI",
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "notifier",
+    "tool": "notify",
+    "params": {
+      "mirror_calendar": false,
+      "target": "portal"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "notifier",
+    "tool": "notify",
+    "params": {
+      "mirror_calendar": false,
+      "target": "portal"
+    },
+    "labels": [
+      "PHI"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "notifier",
+    "tool": "notify",
+    "params": {
+      "mirror_calendar": false,
+      "target": "portal"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "notifier",
+    "tool": "notify",
+    "params": {
+      "mirror_calendar": false,
+      "target": "portal"
+    },
+    "labels": [
+      "PHI",
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "notifier",
+    "tool": "notify",
+    "params": {
+      "mirror_calendar": true,
+      "target": "portal"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "notifier",
+    "tool": "notify",
+    "params": {
+      "mirror_calendar": true,
+      "target": "portal"
+    },
+    "labels": [
+      "PHI"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "notifier",
+    "tool": "notify",
+    "params": {
+      "mirror_calendar": true,
+      "target": "portal"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "notifier",
+    "tool": "notify",
+    "params": {
+      "mirror_calendar": true,
+      "target": "portal"
+    },
+    "labels": [
+      "PHI",
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  }
+]

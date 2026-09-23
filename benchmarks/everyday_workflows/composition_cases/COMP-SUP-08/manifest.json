@@ -1,0 +1,11 @@
+{
+  "id": "COMP-SUP-08",
+  "family": "support_finance",
+  "dispatch_count": 8,
+  "total_actions": 15,
+  "dangerous_probes": 40,
+  "benign_probes": 56,
+  "direct_coverage_certificate": "SUFFICIENT_SAFE",
+  "public_input_sha256": "9f80548620da18aad88ef2e28c7ec16aaecb6ce2b5b33f0e97e7d1cfd753b875",
+  "confirmed_model_sha256": "16eeae5bf12b618e0804efd658c2881b8e7f96fd7b8242e223e8bdb46bc7f969"
+}

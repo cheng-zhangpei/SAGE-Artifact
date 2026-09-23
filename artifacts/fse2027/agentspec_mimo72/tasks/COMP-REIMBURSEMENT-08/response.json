@@ -1,0 +1,18 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"import json\\n\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    tool_name = user_input.get('tool')\\n    if tool_name != 'submit_claim':\\n        return False\\n    \\n    params = json.loads(tool_input)\\n    trusted_labels = set(user_input.get('trusted_event_labels', []))\\n    agent = user_input.get('agent')\\n    \\n    destinations = set()\\n    route = params.get('route')\\n    copy = params.get('copy')\\n    \\n    # Add primary destination based on route and agent\\n    if agent == 'claims':\\n        if route == 'counterparty':\\n            destinations.add('slot:processor')\\n        elif route == 'release':\\n            destinations.add('slot:public')\\n    elif agent == 'treasury':\\n        if route == 'counterparty':\\n            destinations.add('slot:bank')\\n        elif route == 'release':\\n            destinations.add('slot:regulator')\\n    \\n    # Add additional destination based on copy\\n    if copy == 'audit':\\n        destinations.add('slot:audit')\\n    elif copy == 'counterparty':\\n        if agent == 'claims':\\n            destinations.add('slot:processor')\\n        elif agent == 'treasury':\\n            destinations.add('slot:bank')\\n    elif copy == 'public':\\n        destinations.add('slot:public')\\n    \\n    # Policy from input\\n    policy = {\\n        'slot:audit': ['FINANCIAL', 'AUTH'],\\n        'slot:bank': ['EMPLOYEE', 'AUTH'],\\n        'slot:processor': ['AUTH', 'UNVERIFIED'],\\n        'slot:public': ['EMPLOYEE', 'FINANCIAL', 'AUTH'],\\n        'slot:regulator': ['UNVERIFIED']\\n    }\\n    \\n    # Check each destination\\n    for dest in destinations:\\n        if dest in policy:\\n            allowed_set = set(policy[dest])\\n            if not trusted_labels.issubset(allowed_set):\\n                return True\\n    \\n    return False\\n\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 6111,
+    "prompt_tokens": 1513,
+    "total_tokens": 7624,
+    "completion_tokens_details": {
+      "reasoning_tokens": 5620
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "2a730da3-b4f4-40dc-9791-0c26510e649a_bb0507cfc7b6444b912246b8c3dad6d0"
+}

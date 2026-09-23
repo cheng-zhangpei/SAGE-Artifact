@@ -1,0 +1,8 @@
+rule @rule_pilot_candidate
+trigger
+ backup
+check
+ pilot_candidate
+enforce
+ stop
+end

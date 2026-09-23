@@ -1,0 +1,284 @@
+[
+  {
+    "agent": "social_worker",
+    "tool": "collect",
+    "params": {
+      "part": "person"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "social_worker",
+    "tool": "collect",
+    "params": {
+      "part": "person"
+    },
+    "labels": [
+      "HARDSHIP"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "social_worker",
+    "tool": "collect",
+    "params": {
+      "part": "person"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "social_worker",
+    "tool": "collect",
+    "params": {
+      "part": "person"
+    },
+    "labels": [
+      "HARDSHIP",
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "reviewer",
+    "tool": "collect",
+    "params": {
+      "part": "details"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "reviewer",
+    "tool": "collect",
+    "params": {
+      "part": "details"
+    },
+    "labels": [
+      "HARDSHIP"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "reviewer",
+    "tool": "collect",
+    "params": {
+      "part": "details"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "reviewer",
+    "tool": "collect",
+    "params": {
+      "part": "details"
+    },
+    "labels": [
+      "HARDSHIP",
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "send",
+    "params": {
+      "target": "committee"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "send",
+    "params": {
+      "target": "committee"
+    },
+    "labels": [
+      "HARDSHIP"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "send",
+    "params": {
+      "target": "committee"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "send",
+    "params": {
+      "target": "committee"
+    },
+    "labels": [
+      "HARDSHIP",
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "send",
+    "params": {
+      "target": "delivery"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "send",
+    "params": {
+      "target": "delivery"
+    },
+    "labels": [
+      "HARDSHIP"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "coordinator",
+    "tool": "send",
+    "params": {
+      "target": "delivery"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "coordinator",
+    "tool": "send",
+    "params": {
+      "target": "delivery"
+    },
+    "labels": [
+      "HARDSHIP",
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "campaign",
+    "tool": "publish",
+    "params": {
+      "include_case": false
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "campaign",
+    "tool": "publish",
+    "params": {
+      "include_case": false
+    },
+    "labels": [
+      "HARDSHIP"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "campaign",
+    "tool": "publish",
+    "params": {
+      "include_case": false
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "campaign",
+    "tool": "publish",
+    "params": {
+      "include_case": false
+    },
+    "labels": [
+      "HARDSHIP",
+      "PII"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "campaign",
+    "tool": "publish",
+    "params": {
+      "include_case": true
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "campaign",
+    "tool": "publish",
+    "params": {
+      "include_case": true
+    },
+    "labels": [
+      "HARDSHIP"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "campaign",
+    "tool": "publish",
+    "params": {
+      "include_case": true
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "campaign",
+    "tool": "publish",
+    "params": {
+      "include_case": true
+    },
+    "labels": [
+      "HARDSHIP",
+      "PII"
+    ],
+    "candidate": false,
+    "completion": true
+  }
+]

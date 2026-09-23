@@ -1,0 +1,9579 @@
+[
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "PERSONAL"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "PERSONAL"
+    },
+    "labels": [
+      "EMBARGOED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "PERSONAL"
+    },
+    "labels": [
+      "LICENSED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "PERSONAL"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "PERSONAL"
+    },
+    "labels": [
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "PERSONAL"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "PERSONAL"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "PERSONAL"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "PERSONAL"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "PERSONAL"
+    },
+    "labels": [
+      "EMBARGOED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "PERSONAL"
+    },
+    "labels": [
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "PERSONAL"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "PERSONAL"
+    },
+    "labels": [
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "PERSONAL"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "PERSONAL"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "PERSONAL"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "EMBARGOED"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "EMBARGOED"
+    },
+    "labels": [
+      "EMBARGOED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "EMBARGOED"
+    },
+    "labels": [
+      "LICENSED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "EMBARGOED"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "EMBARGOED"
+    },
+    "labels": [
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "EMBARGOED"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "EMBARGOED"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "EMBARGOED"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "EMBARGOED"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "EMBARGOED"
+    },
+    "labels": [
+      "EMBARGOED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "EMBARGOED"
+    },
+    "labels": [
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "EMBARGOED"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "EMBARGOED"
+    },
+    "labels": [
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "EMBARGOED"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "EMBARGOED"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "EMBARGOED"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "LICENSED"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "LICENSED"
+    },
+    "labels": [
+      "EMBARGOED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "LICENSED"
+    },
+    "labels": [
+      "LICENSED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "LICENSED"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "LICENSED"
+    },
+    "labels": [
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "LICENSED"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "LICENSED"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "LICENSED"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "LICENSED"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "LICENSED"
+    },
+    "labels": [
+      "EMBARGOED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "LICENSED"
+    },
+    "labels": [
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "LICENSED"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "LICENSED"
+    },
+    "labels": [
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "LICENSED"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "LICENSED"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "LICENSED"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "EMBARGOED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "LICENSED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "EMBARGOED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "research",
+    "tool": "collect_material",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editor",
+    "tool": "edit_draft",
+    "params": {},
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editor",
+    "tool": "edit_draft",
+    "params": {},
+    "labels": [
+      "EMBARGOED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editor",
+    "tool": "edit_draft",
+    "params": {},
+    "labels": [
+      "LICENSED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editor",
+    "tool": "edit_draft",
+    "params": {},
+    "labels": [
+      "EMBARGOED",
+      "LICENSED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editor",
+    "tool": "edit_draft",
+    "params": {},
+    "labels": [
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editor",
+    "tool": "edit_draft",
+    "params": {},
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editor",
+    "tool": "edit_draft",
+    "params": {},
+    "labels": [
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editor",
+    "tool": "edit_draft",
+    "params": {},
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editor",
+    "tool": "edit_draft",
+    "params": {},
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editor",
+    "tool": "edit_draft",
+    "params": {},
+    "labels": [
+      "EMBARGOED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editor",
+    "tool": "edit_draft",
+    "params": {},
+    "labels": [
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editor",
+    "tool": "edit_draft",
+    "params": {},
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editor",
+    "tool": "edit_draft",
+    "params": {},
+    "labels": [
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editor",
+    "tool": "edit_draft",
+    "params": {},
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editor",
+    "tool": "edit_draft",
+    "params": {},
+    "labels": [
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editor",
+    "tool": "edit_draft",
+    "params": {},
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "publisher",
+    "tool": "review_release",
+    "params": {
+      "source": "draft"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "publisher",
+    "tool": "review_release",
+    "params": {
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "publisher",
+    "tool": "review_release",
+    "params": {
+      "source": "draft"
+    },
+    "labels": [
+      "LICENSED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "publisher",
+    "tool": "review_release",
+    "params": {
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "publisher",
+    "tool": "review_release",
+    "params": {
+      "source": "draft"
+    },
+    "labels": [
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "publisher",
+    "tool": "review_release",
+    "params": {
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "publisher",
+    "tool": "review_release",
+    "params": {
+      "source": "draft"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "publisher",
+    "tool": "review_release",
+    "params": {
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "publisher",
+    "tool": "review_release",
+    "params": {
+      "source": "draft"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "publisher",
+    "tool": "review_release",
+    "params": {
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "publisher",
+    "tool": "review_release",
+    "params": {
+      "source": "draft"
+    },
+    "labels": [
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "publisher",
+    "tool": "review_release",
+    "params": {
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "publisher",
+    "tool": "review_release",
+    "params": {
+      "source": "draft"
+    },
+    "labels": [
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "publisher",
+    "tool": "review_release",
+    "params": {
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "publisher",
+    "tool": "review_release",
+    "params": {
+      "source": "draft"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "publisher",
+    "tool": "review_release",
+    "params": {
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "publisher",
+    "tool": "review_release",
+    "params": {
+      "source": "workspace"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "publisher",
+    "tool": "review_release",
+    "params": {
+      "source": "workspace"
+    },
+    "labels": [
+      "EMBARGOED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "publisher",
+    "tool": "review_release",
+    "params": {
+      "source": "workspace"
+    },
+    "labels": [
+      "LICENSED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "publisher",
+    "tool": "review_release",
+    "params": {
+      "source": "workspace"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "publisher",
+    "tool": "review_release",
+    "params": {
+      "source": "workspace"
+    },
+    "labels": [
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "publisher",
+    "tool": "review_release",
+    "params": {
+      "source": "workspace"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "publisher",
+    "tool": "review_release",
+    "params": {
+      "source": "workspace"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "publisher",
+    "tool": "review_release",
+    "params": {
+      "source": "workspace"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "publisher",
+    "tool": "review_release",
+    "params": {
+      "source": "workspace"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "publisher",
+    "tool": "review_release",
+    "params": {
+      "source": "workspace"
+    },
+    "labels": [
+      "EMBARGOED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "publisher",
+    "tool": "review_release",
+    "params": {
+      "source": "workspace"
+    },
+    "labels": [
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "publisher",
+    "tool": "review_release",
+    "params": {
+      "source": "workspace"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "publisher",
+    "tool": "review_release",
+    "params": {
+      "source": "workspace"
+    },
+    "labels": [
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "publisher",
+    "tool": "review_release",
+    "params": {
+      "source": "workspace"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "publisher",
+    "tool": "review_release",
+    "params": {
+      "source": "workspace"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "publisher",
+    "tool": "review_release",
+    "params": {
+      "source": "workspace"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "LICENSED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "archive",
+      "source": "service_notice"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "archive",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "archive",
+      "source": "service_notice"
+    },
+    "labels": [
+      "LICENSED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "archive",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "archive",
+      "source": "service_notice"
+    },
+    "labels": [
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "archive",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "archive",
+      "source": "service_notice"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "archive",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "archive",
+      "source": "service_notice"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "archive",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "archive",
+      "source": "service_notice"
+    },
+    "labels": [
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "archive",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "archive",
+      "source": "service_notice"
+    },
+    "labels": [
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "archive",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "archive",
+      "source": "service_notice"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "archive",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "LICENSED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "LICENSED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "none",
+      "source": "service_notice"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "none",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "none",
+      "source": "service_notice"
+    },
+    "labels": [
+      "LICENSED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "none",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "none",
+      "source": "service_notice"
+    },
+    "labels": [
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "none",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "none",
+      "source": "service_notice"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "none",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "none",
+      "source": "service_notice"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "none",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "none",
+      "source": "service_notice"
+    },
+    "labels": [
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "none",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "none",
+      "source": "service_notice"
+    },
+    "labels": [
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "none",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "none",
+      "source": "service_notice"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "none",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "partner",
+      "source": "service_notice"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "partner",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "partner",
+      "source": "service_notice"
+    },
+    "labels": [
+      "LICENSED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "partner",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "partner",
+      "source": "service_notice"
+    },
+    "labels": [
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "partner",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "partner",
+      "source": "service_notice"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "partner",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "partner",
+      "source": "service_notice"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "partner",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "partner",
+      "source": "service_notice"
+    },
+    "labels": [
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "partner",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "partner",
+      "source": "service_notice"
+    },
+    "labels": [
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "partner",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "partner",
+      "source": "service_notice"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "partner",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "release",
+      "record": "partner",
+      "source": "release"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "release",
+      "record": "partner",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "release",
+      "record": "partner",
+      "source": "release"
+    },
+    "labels": [
+      "LICENSED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "release",
+      "record": "partner",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "release",
+      "record": "partner",
+      "source": "release"
+    },
+    "labels": [
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "release",
+      "record": "partner",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "release",
+      "record": "partner",
+      "source": "release"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "release",
+      "record": "partner",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "release",
+      "record": "partner",
+      "source": "release"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "release",
+      "record": "partner",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "release",
+      "record": "partner",
+      "source": "release"
+    },
+    "labels": [
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "release",
+      "record": "partner",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "release",
+      "record": "partner",
+      "source": "release"
+    },
+    "labels": [
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "release",
+      "record": "partner",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "release",
+      "record": "partner",
+      "source": "release"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "release",
+      "record": "partner",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "partner",
+      "record": "public",
+      "source": "release"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "partner",
+      "record": "public",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "partner",
+      "record": "public",
+      "source": "release"
+    },
+    "labels": [
+      "LICENSED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "partner",
+      "record": "public",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "partner",
+      "record": "public",
+      "source": "release"
+    },
+    "labels": [
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "partner",
+      "record": "public",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "partner",
+      "record": "public",
+      "source": "release"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "partner",
+      "record": "public",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "partner",
+      "record": "public",
+      "source": "release"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "partner",
+      "record": "public",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "partner",
+      "record": "public",
+      "source": "release"
+    },
+    "labels": [
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "partner",
+      "record": "public",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "partner",
+      "record": "public",
+      "source": "release"
+    },
+    "labels": [
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "partner",
+      "record": "public",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "partner",
+      "record": "public",
+      "source": "release"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "partner",
+      "record": "public",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "LICENSED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "none",
+      "source": "service_notice"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "none",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "none",
+      "source": "service_notice"
+    },
+    "labels": [
+      "LICENSED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "none",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "none",
+      "source": "service_notice"
+    },
+    "labels": [
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "none",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "none",
+      "source": "service_notice"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "none",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "none",
+      "source": "service_notice"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "none",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "none",
+      "source": "service_notice"
+    },
+    "labels": [
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "none",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "none",
+      "source": "service_notice"
+    },
+    "labels": [
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "none",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "none",
+      "source": "service_notice"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "none",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "LICENSED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "LICENSED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "LICENSED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "LICENSED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "partner",
+      "source": "service_notice"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "partner",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "partner",
+      "source": "service_notice"
+    },
+    "labels": [
+      "LICENSED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "partner",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "partner",
+      "source": "service_notice"
+    },
+    "labels": [
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "partner",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "partner",
+      "source": "service_notice"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "partner",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "partner",
+      "source": "service_notice"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "partner",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "partner",
+      "source": "service_notice"
+    },
+    "labels": [
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "partner",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "partner",
+      "source": "service_notice"
+    },
+    "labels": [
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "partner",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "partner",
+      "source": "service_notice"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "partner",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "LICENSED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "staff",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "archive",
+      "source": "service_notice"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "archive",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "archive",
+      "source": "service_notice"
+    },
+    "labels": [
+      "LICENSED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "archive",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "archive",
+      "source": "service_notice"
+    },
+    "labels": [
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "archive",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "archive",
+      "source": "service_notice"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "archive",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "archive",
+      "source": "service_notice"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "archive",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "archive",
+      "source": "service_notice"
+    },
+    "labels": [
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "archive",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "archive",
+      "source": "service_notice"
+    },
+    "labels": [
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "archive",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "archive",
+      "source": "service_notice"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "archive",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "partner",
+      "source": "service_notice"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "partner",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "partner",
+      "source": "service_notice"
+    },
+    "labels": [
+      "LICENSED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "partner",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "partner",
+      "source": "service_notice"
+    },
+    "labels": [
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "partner",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "partner",
+      "source": "service_notice"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "partner",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "partner",
+      "source": "service_notice"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "partner",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "partner",
+      "source": "service_notice"
+    },
+    "labels": [
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "partner",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "partner",
+      "source": "service_notice"
+    },
+    "labels": [
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "partner",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "partner",
+      "source": "service_notice"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "partner",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "LICENSED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "archive",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "LICENSED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "public",
+      "source": "release"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "public",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "public",
+      "source": "release"
+    },
+    "labels": [
+      "LICENSED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "public",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "public",
+      "source": "release"
+    },
+    "labels": [
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "public",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "public",
+      "source": "release"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "public",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "public",
+      "source": "release"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "public",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "public",
+      "source": "release"
+    },
+    "labels": [
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "public",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "public",
+      "source": "release"
+    },
+    "labels": [
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "public",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "public",
+      "source": "release"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "release",
+      "record": "public",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "release",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "release",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "release",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "LICENSED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "release",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "release",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "release",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "release",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "release",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "release",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "release",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "release",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "release",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "release",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "release",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "release",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "release",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "LICENSED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "public",
+      "source": "draft"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "public",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "public",
+      "source": "draft"
+    },
+    "labels": [
+      "LICENSED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "public",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "public",
+      "source": "draft"
+    },
+    "labels": [
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "public",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "public",
+      "source": "draft"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "public",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "public",
+      "source": "draft"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "public",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "public",
+      "source": "draft"
+    },
+    "labels": [
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "public",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "public",
+      "source": "draft"
+    },
+    "labels": [
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "public",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "public",
+      "source": "draft"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "public",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "LICENSED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "partner",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "staff",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "staff",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "staff",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "LICENSED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "staff",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "staff",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "staff",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "staff",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "staff",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "staff",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "staff",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "staff",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "staff",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "staff",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "staff",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "staff",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "staff",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "LICENSED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "LICENSED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "partner",
+      "record": "none",
+      "source": "release"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "LICENSED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "workspace",
+      "audience": "staff",
+      "record": "none",
+      "source": "draft"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "partner",
+      "record": "public",
+      "source": "service_notice"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "partner",
+      "record": "public",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "partner",
+      "record": "public",
+      "source": "service_notice"
+    },
+    "labels": [
+      "LICENSED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "partner",
+      "record": "public",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "partner",
+      "record": "public",
+      "source": "service_notice"
+    },
+    "labels": [
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "partner",
+      "record": "public",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "partner",
+      "record": "public",
+      "source": "service_notice"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "partner",
+      "record": "public",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "partner",
+      "record": "public",
+      "source": "service_notice"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "partner",
+      "record": "public",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "partner",
+      "record": "public",
+      "source": "service_notice"
+    },
+    "labels": [
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "partner",
+      "record": "public",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "partner",
+      "record": "public",
+      "source": "service_notice"
+    },
+    "labels": [
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "partner",
+      "record": "public",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "partner",
+      "record": "public",
+      "source": "service_notice"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "editorial",
+    "tool": "publish",
+    "params": {
+      "assets": "release",
+      "audience": "partner",
+      "record": "public",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "archive",
+      "source": "service_notice"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "archive",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "archive",
+      "source": "service_notice"
+    },
+    "labels": [
+      "LICENSED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "archive",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "archive",
+      "source": "service_notice"
+    },
+    "labels": [
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "archive",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "archive",
+      "source": "service_notice"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "archive",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "archive",
+      "source": "service_notice"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "archive",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "archive",
+      "source": "service_notice"
+    },
+    "labels": [
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "archive",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "archive",
+      "source": "service_notice"
+    },
+    "labels": [
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "archive",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "archive",
+      "source": "service_notice"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "release",
+      "record": "archive",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "none",
+      "source": "service_notice"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "none",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "none",
+      "source": "service_notice"
+    },
+    "labels": [
+      "LICENSED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "none",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "none",
+      "source": "service_notice"
+    },
+    "labels": [
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "none",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "none",
+      "source": "service_notice"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "none",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "none",
+      "source": "service_notice"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "none",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "none",
+      "source": "service_notice"
+    },
+    "labels": [
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "none",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "none",
+      "source": "service_notice"
+    },
+    "labels": [
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "none",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "none",
+      "source": "service_notice"
+    },
+    "labels": [
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "legal",
+    "tool": "publish",
+    "params": {
+      "assets": "none",
+      "audience": "partner",
+      "record": "none",
+      "source": "service_notice"
+    },
+    "labels": [
+      "EMBARGOED",
+      "LICENSED",
+      "PERSONAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  }
+]

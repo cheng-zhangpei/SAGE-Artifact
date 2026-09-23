@@ -1,0 +1,276 @@
+[
+  {
+    "agent": "analyst",
+    "tool": "collect",
+    "params": {
+      "source": "weather"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "analyst",
+    "tool": "collect",
+    "params": {
+      "source": "weather"
+    },
+    "labels": [
+      "CONFIDENTIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "analyst",
+    "tool": "collect",
+    "params": {
+      "source": "weather"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "analyst",
+    "tool": "collect",
+    "params": {
+      "source": "weather"
+    },
+    "labels": [
+      "CONFIDENTIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "operator",
+    "tool": "collect",
+    "params": {
+      "source": "load"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "operator",
+    "tool": "collect",
+    "params": {
+      "source": "load"
+    },
+    "labels": [
+      "CONFIDENTIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "operator",
+    "tool": "collect",
+    "params": {
+      "source": "load"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "operator",
+    "tool": "collect",
+    "params": {
+      "source": "load"
+    },
+    "labels": [
+      "CONFIDENTIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "simulator",
+    "tool": "simulate",
+    "params": {},
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "simulator",
+    "tool": "simulate",
+    "params": {},
+    "labels": [
+      "CONFIDENTIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "simulator",
+    "tool": "simulate",
+    "params": {},
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "simulator",
+    "tool": "simulate",
+    "params": {},
+    "labels": [
+      "CONFIDENTIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "operator",
+    "tool": "apply",
+    "params": {
+      "target": "control"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "operator",
+    "tool": "apply",
+    "params": {
+      "target": "control"
+    },
+    "labels": [
+      "CONFIDENTIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "operator",
+    "tool": "apply",
+    "params": {
+      "target": "control"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operator",
+    "tool": "apply",
+    "params": {
+      "target": "control"
+    },
+    "labels": [
+      "CONFIDENTIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operator",
+    "tool": "apply",
+    "params": {
+      "target": "display"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "operator",
+    "tool": "apply",
+    "params": {
+      "target": "display"
+    },
+    "labels": [
+      "CONFIDENTIAL"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operator",
+    "tool": "apply",
+    "params": {
+      "target": "display"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "operator",
+    "tool": "apply",
+    "params": {
+      "target": "display"
+    },
+    "labels": [
+      "CONFIDENTIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operator",
+    "tool": "apply",
+    "params": {
+      "target": "internal"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "operator",
+    "tool": "apply",
+    "params": {
+      "target": "internal"
+    },
+    "labels": [
+      "CONFIDENTIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "operator",
+    "tool": "apply",
+    "params": {
+      "target": "internal"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "operator",
+    "tool": "apply",
+    "params": {
+      "target": "internal"
+    },
+    "labels": [
+      "CONFIDENTIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  }
+]

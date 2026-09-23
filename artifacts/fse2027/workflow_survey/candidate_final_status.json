@@ -1,0 +1,1535 @@
+{
+  "schema_version": 1,
+  "population": "all 38 workflows returned by the frozen narrow late-resource detector",
+  "claim": "collision susceptibility under source-reviewed contracts and explicit paired policy fixtures",
+  "non_claim": "not ecosystem prevalence and not observed production false-positive rate",
+  "counts": {
+    "confirmed_collision_under_reviewed_contract": 14,
+    "contract_unresolved": 1,
+    "invalid_structural_candidate": 6,
+    "no_collision_provenance_already_observed": 17
+  },
+  "confirmed_distinct_structure_fingerprints": 13,
+  "candidates": [
+    {
+      "id": 6531,
+      "name": "LinkedIn content creator system",
+      "author": "abdulmir",
+      "source_sha256": "4250c570f49ed7bd6607437effe6959b3b2c92a21ecd969b2a2c12f0edbde024",
+      "structure_fingerprint": "42920485cd5cb0282ebad728ea00cf39730f63027e0f3fb31a257375ed8d88c2",
+      "detected_paths": [
+        {
+          "file_source": "Image Style",
+          "binary_sink": "Save Image",
+          "earlier_ai_nodes": [
+            "LinkedIn Creator Agent"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "final_status": "confirmed_collision_under_reviewed_contract",
+      "subtype": "transform",
+      "review_evidence": "A Drive reference image enters image generation without entering the earlier creator-agent context; the rendered image retains its provenance.",
+      "policy_scope": "paired study fixture; labels and destination policy supplied by the study",
+      "runtime_claim": "source dependency review, not a measured production incident",
+      "sage_model": {
+        "kind": "independent_binary",
+        "sources": [
+          "Image Style"
+        ],
+        "sink": "Save Image",
+        "required_nodes": [
+          "LinkedIn Creator Agent",
+          "Image Style",
+          "Save Image"
+        ]
+      }
+    },
+    {
+      "id": 7201,
+      "name": "Generate AI-powered lease renewal offers with Ollama LLM, Supabase and Gmail",
+      "author": "laki99",
+      "source_sha256": "f87ff9843e64a0b6afec32b85046ecd56e0818b3d84e28a7e21db18a30327de0",
+      "structure_fingerprint": "baea5fe6f3cda038b8af620fb9e04a05d3a8c2746a8b25f53c9f9a90641a2a9b",
+      "detected_paths": [
+        {
+          "file_source": "Google Drive-get_file",
+          "binary_sink": "Gmail",
+          "earlier_ai_nodes": [
+            "Basic LLM Chain-offerLetter",
+            "Basic LLM Chain-email"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "final_status": "no_collision_provenance_already_observed",
+      "subtype": "derived",
+      "review_evidence": "The downloaded offer is the stored form of the preceding LLM output; no independently protected input is introduced.",
+      "policy_scope": "paired study fixture; labels and destination policy supplied by the study",
+      "runtime_claim": "source dependency review, not a measured production incident",
+      "sage_model": {
+        "kind": "generated_from_ctx",
+        "sources": [
+          "Google Drive-get_file"
+        ],
+        "sink": "Gmail",
+        "required_nodes": [
+          "Basic LLM Chain-offerLetter",
+          "Basic LLM Chain-email",
+          "Google Drive-get_file",
+          "Gmail"
+        ]
+      }
+    },
+    {
+      "id": 7369,
+      "name": "Generate academic assignments with Google Gemini & deliver via Telegram/PDF",
+      "author": "derocton",
+      "source_sha256": "8d3faa47314714442a6d51dccf3acc019443d1429a5777f8b7c6cd8aebff511f",
+      "structure_fingerprint": "3beb99742f92ac7d2264e188327ec37524996eae3740fbbbb4dff8852bcbcdc0",
+      "detected_paths": [
+        {
+          "file_source": "HTTP Request",
+          "binary_sink": "Upload file",
+          "earlier_ai_nodes": [
+            "Static Html Builder",
+            "Student Assignment Auto-Composer"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "final_status": "invalid_structural_candidate",
+      "subtype": null,
+      "review_evidence": "The HTTP file output field is dynamic and does not match the upload node's literal input field, so the binary dependency is not established.",
+      "policy_scope": "paired study fixture; labels and destination policy supplied by the study",
+      "runtime_claim": "source dependency review, not a measured production incident"
+    },
+    {
+      "id": 7695,
+      "name": "Automate weekly Meta Ad reports with Claude AI, GoMarble MCP & Google Slides",
+      "author": "sankalpthedev",
+      "source_sha256": "d4905b138e79c5fd451cda0cc44e4182931a50cc6f0d92e0b0eef2f98525c45e",
+      "structure_fingerprint": "5c0a794fe4b5073b26d9463c2518c07aeb3090dfc24bfcc7565d5fcf70031d54",
+      "detected_paths": [
+        {
+          "file_source": "Download file",
+          "binary_sink": "Send Email",
+          "earlier_ai_nodes": [
+            "AI Agent"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "final_status": "no_collision_provenance_already_observed",
+      "subtype": "derived",
+      "review_evidence": "The downloaded slides are generated from data already supplied to the agent; the download does not introduce an independent provenance.",
+      "policy_scope": "paired study fixture; labels and destination policy supplied by the study",
+      "runtime_claim": "source dependency review, not a measured production incident",
+      "sage_model": {
+        "kind": "generated_from_ctx",
+        "sources": [
+          "Download file"
+        ],
+        "sink": "Send Email",
+        "required_nodes": [
+          "AI Agent",
+          "Download file",
+          "Send Email"
+        ]
+      }
+    },
+    {
+      "id": 8104,
+      "name": "Generate AI-powered sales proposals from JotForm leads with OpenAI and Google Docs",
+      "author": "leeweihernandez07",
+      "source_sha256": "5c147274fe5082aa7a6a9f8eeaa2d7f95c2b5fc606c84e204bd706f4924b3fae",
+      "structure_fingerprint": "309e0fe03208456c21e24bc39f9246f913ac8b428b2a35145d21d387199b2058",
+      "detected_paths": [
+        {
+          "file_source": "Google Drive1",
+          "binary_sink": "Gmail",
+          "earlier_ai_nodes": [],
+          "intervening_ai_nodes": [
+            "OpenAI",
+            "OpenAI1"
+          ],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        },
+        {
+          "file_source": "Google Drive2",
+          "binary_sink": "Gmail",
+          "earlier_ai_nodes": [
+            "OpenAI",
+            "OpenAI1"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "final_status": "confirmed_collision_under_reviewed_contract",
+      "subtype": "direct_resource",
+      "review_evidence": "A fixed proposal template is copied, filled, exported, and attached; the earlier AI reads the transcript rather than the template resource.",
+      "policy_scope": "paired study fixture; labels and destination policy supplied by the study",
+      "runtime_claim": "source dependency review, not a measured production incident",
+      "sage_model": {
+        "kind": "independent_binary",
+        "sources": [
+          "Google Drive"
+        ],
+        "sink": "Gmail",
+        "required_nodes": [
+          "OpenAI",
+          "OpenAI1",
+          "Google Drive",
+          "Gmail"
+        ]
+      }
+    },
+    {
+      "id": 9146,
+      "name": "AI-powered meeting minutes with GPT-4, task assignment & multichannel distribution",
+      "author": "jiteshdugar",
+      "source_sha256": "abf1abdb53bb13b427831cca4cd84c9b2cecc87a500beaf1f425f0205b7dd653",
+      "structure_fingerprint": "70c3d6126040a38a6659eb3f0d8600bb12f9e3a866ca79fb37238b741ad7fd5b",
+      "detected_paths": [
+        {
+          "file_source": "Download PDF from URL",
+          "binary_sink": "Save PDF to Drive",
+          "earlier_ai_nodes": [
+            "Generate Meeting Summary",
+            "Extract Action Items"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "final_status": "no_collision_provenance_already_observed",
+      "subtype": "derived",
+      "review_evidence": "The downloaded PDF is generated solely from the meeting summary/action-item outputs and public formatting, all already represented upstream.",
+      "policy_scope": "paired study fixture; labels and destination policy supplied by the study",
+      "runtime_claim": "source dependency review, not a measured production incident",
+      "sage_model": {
+        "kind": "generated_from_ctx",
+        "sources": [
+          "Download PDF from URL"
+        ],
+        "sink": "Save PDF to Drive",
+        "required_nodes": [
+          "Generate Meeting Summary",
+          "Extract Action Items",
+          "Download PDF from URL",
+          "Save PDF to Drive"
+        ]
+      }
+    },
+    {
+      "id": 10126,
+      "name": "Automate YouTube thumbnail creation & social publishing with Templated.io & Blotato",
+      "author": "drfiras",
+      "source_sha256": "7d6a31b2909f53655eb1c6dafe4699d3dcfa15769704c33392e37ba556a421e3",
+      "structure_fingerprint": "a49fe1be8f5303ed671795a783c02139fc6ee49ac4af136569eefcb6dc25b813",
+      "detected_paths": [
+        {
+          "file_source": "Downloading files",
+          "binary_sink": "Upload to Google Drive",
+          "earlier_ai_nodes": [
+            "OpenAI Post Generation1"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "final_status": "confirmed_collision_under_reviewed_contract",
+      "subtype": "transform",
+      "review_evidence": "A fixed remote template is combined with AI text and the rendered thumbnail is uploaded; the template resource is absent from the earlier AI context.",
+      "policy_scope": "paired study fixture; labels and destination policy supplied by the study",
+      "runtime_claim": "source dependency review, not a measured production incident",
+      "sage_model": {
+        "kind": "independent_binary",
+        "sources": [
+          "Generate Thumbnail via Templated.io"
+        ],
+        "sink": "Upload to Google Drive",
+        "required_nodes": [
+          "OpenAI Post Generation",
+          "OpenAI Post Generation1",
+          "Generate Thumbnail via Templated.io",
+          "Upload to Google Drive"
+        ]
+      }
+    },
+    {
+      "id": 10441,
+      "name": "Weekly Facebook ads performance reports with AI-powered analysis & Gmail delivery",
+      "author": "ali01",
+      "source_sha256": "6cf902b4291a9d27bbb268f72bc5c48ccc0d5461c59c31219104ce260212f215",
+      "structure_fingerprint": "5d11d797b79514d6ad1db4b62b4ef30ff58bd98d77b206740f4fc1e5af0eff06",
+      "detected_paths": [
+        {
+          "file_source": "Generate PDF",
+          "binary_sink": "Send Email",
+          "earlier_ai_nodes": [
+            "AI Report Writer",
+            "AI Summarizer"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "final_status": "no_collision_provenance_already_observed",
+      "subtype": "derived",
+      "review_evidence": "The PDF is a rendering of the AI report HTML and introduces no independently protected field or resource.",
+      "policy_scope": "paired study fixture; labels and destination policy supplied by the study",
+      "runtime_claim": "source dependency review, not a measured production incident",
+      "sage_model": {
+        "kind": "generated_from_ctx",
+        "sources": [
+          "Generate PDF"
+        ],
+        "sink": "Send Email",
+        "required_nodes": [
+          "AI Report Writer",
+          "AI Summarizer",
+          "Generate PDF",
+          "Send Email"
+        ]
+      }
+    },
+    {
+      "id": 10880,
+      "name": "Generate Interior Moodboards with Claude/Gemini Agents, Hugging Face Image Generation, and PDF Export",
+      "author": "jamesonk",
+      "source_sha256": "c3fffd61936d3f325d9ad2c11d3cca90fe3ca1d8eb7b0d097e5ca04f80bef01c",
+      "structure_fingerprint": "d9487eb779e7741536e0700a893e2f942acf7ca5db2c47cd1c83cf99c93f11a6",
+      "detected_paths": [
+        {
+          "file_source": "PDF creator",
+          "binary_sink": "Send PDF",
+          "earlier_ai_nodes": [
+            "Conceptualization Agent",
+            "Moodboard Generator Agent"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "final_status": "no_collision_provenance_already_observed",
+      "subtype": "derived",
+      "review_evidence": "The PDF contains generated moodboard output and public rendering assets; no independently protected input is established by the workflow.",
+      "policy_scope": "paired study fixture; labels and destination policy supplied by the study",
+      "runtime_claim": "source dependency review, not a measured production incident",
+      "sage_model": {
+        "kind": "generated_from_ctx",
+        "sources": [
+          "PDF creator"
+        ],
+        "sink": "Send PDF",
+        "required_nodes": [
+          "Conceptualization Agent",
+          "Moodboard Generator Agent",
+          "PDF creator",
+          "Send PDF"
+        ]
+      }
+    },
+    {
+      "id": 11529,
+      "name": "Organize school emails with AI, Google Calendar and Drive auto-triage system",
+      "author": "anna0726",
+      "source_sha256": "6e836931f7decd141a6211475d048614c15fffefa405a7dd9fecf3b1c47e160e",
+      "structure_fingerprint": "3f220c5e02ff61dfef842650f69f4c2199fb3f146bf80f12119c0ceb07338d74",
+      "detected_paths": [
+        {
+          "file_source": "Get Email Attachments",
+          "binary_sink": "Save Photos to Drive",
+          "earlier_ai_nodes": [
+            "Extract Email Info"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "final_status": "confirmed_collision_under_reviewed_contract",
+      "subtype": "direct_resource",
+      "review_evidence": "Attachment bytes are fetched after the extractor reads email text; the photo resource is not part of the extractor's context.",
+      "policy_scope": "paired study fixture; labels and destination policy supplied by the study",
+      "runtime_claim": "source dependency review, not a measured production incident",
+      "sage_model": {
+        "kind": "independent_binary",
+        "sources": [
+          "Get Email Attachments"
+        ],
+        "sink": "Save Photos to Drive",
+        "required_nodes": [
+          "Extract Email Info",
+          "Get Email Attachments",
+          "Save Photos to Drive"
+        ]
+      }
+    },
+    {
+      "id": 11730,
+      "name": "Verify webinar signups and send personalized GPT-4 welcome kits via Gmail and Google Sheets",
+      "author": "jiteshdugar",
+      "source_sha256": "d237a20298d1da1f653ce06b1a8e5ade087edc2341eac8c86ee873fb15a5ca24",
+      "structure_fingerprint": "ee48d92fcd8cd0dc99d35f3bf90aacc00b04813f12bd15d978e878485a9627c1",
+      "detected_paths": [
+        {
+          "file_source": "Convert to PDF",
+          "binary_sink": "Send Welcome Email",
+          "earlier_ai_nodes": [
+            "Generate Welcome Message"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        },
+        {
+          "file_source": "Convert to PDF",
+          "binary_sink": "Send Follow-up Email",
+          "earlier_ai_nodes": [
+            "Generate Welcome Message"
+          ],
+          "intervening_ai_nodes": [
+            "Generate Extra Materials"
+          ],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        },
+        {
+          "file_source": "Convert to PDF (Extra Materials)",
+          "binary_sink": "Send Follow-up Email",
+          "earlier_ai_nodes": [
+            "Generate Welcome Message",
+            "Generate Extra Materials"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "final_status": "invalid_structural_candidate",
+      "subtype": null,
+      "review_evidence": "Candidate edges include a nonexistent PDF-to-follow-up path and attachment arrays without a named binary property.",
+      "policy_scope": "paired study fixture; labels and destination policy supplied by the study",
+      "runtime_claim": "source dependency review, not a measured production incident"
+    },
+    {
+      "id": 11745,
+      "name": "Generate employee performance review summaries with GPT-4, Gmail and Sheets",
+      "author": "jiteshdugar",
+      "source_sha256": "dd95ba1c0670446a1d1a9005f66411121841a8a854cf084d68211a2d2dd7ac24",
+      "structure_fingerprint": "c465c97d3c711f44ada45a264389991855c31d365d15975e96709a503dfb19a4",
+      "detected_paths": [
+        {
+          "file_source": "Download Image",
+          "binary_sink": "Send Review to Employee",
+          "earlier_ai_nodes": [
+            "AI Summary Generator"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "final_status": "confirmed_collision_under_reviewed_contract",
+      "subtype": "context_projection",
+      "review_evidence": "The rendered review includes managerName, reviewId, and reviewDate merged after AI summarization; those fields are absent from the AI prompt.",
+      "policy_scope": "paired study fixture; labels and destination policy supplied by the study",
+      "runtime_claim": "source dependency review, not a measured production incident",
+      "sage_model": {
+        "kind": "independent_binary",
+        "sources": [
+          "Generate Review Card HTML"
+        ],
+        "sink": "Send Review to Employee",
+        "required_nodes": [
+          "AI Summary Generator",
+          "Generate Review Card HTML",
+          "Send Review to Employee"
+        ]
+      }
+    },
+    {
+      "id": 11912,
+      "name": "Automated resume screening & interview scheduling with Gmail, GPT & Airtable",
+      "author": "itechnotion",
+      "source_sha256": "a0bcae55ca626a5b05aad9a5368f0575b1844c638005d6ae08d3d1ea78cd233d",
+      "structure_fingerprint": "d3fd434b7517895449376a6c6e9b92648285e360ce9596055ccbe55fedb91df1",
+      "detected_paths": [
+        {
+          "file_source": "Gmail Trigger1",
+          "binary_sink": "Upload file1",
+          "earlier_ai_nodes": [],
+          "intervening_ai_nodes": [
+            "Message a model2"
+          ],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        },
+        {
+          "file_source": "Get a message1",
+          "binary_sink": "Upload file1",
+          "earlier_ai_nodes": [
+            "Message a model2"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "final_status": "no_collision_provenance_already_observed",
+      "subtype": "already_observed",
+      "review_evidence": "A downstream AI explicitly reads text extracted from the same attachment before upload.",
+      "policy_scope": "paired study fixture; labels and destination policy supplied by the study",
+      "runtime_claim": "source dependency review, not a measured production incident",
+      "sage_model": {
+        "kind": "generated_from_ctx",
+        "sources": [
+          "Get a message1"
+        ],
+        "sink": "Upload file1",
+        "required_nodes": [
+          "Message a model2",
+          "Message a model3",
+          "AI Agent1",
+          "Get a message1",
+          "Upload file1"
+        ]
+      }
+    },
+    {
+      "id": 12731,
+      "name": "Grade and deliver multi-course assignment feedback with GPT-4o, Google Drive, Slack, and Gmail",
+      "author": "cschin",
+      "source_sha256": "a7bb39947281df5cff30d7d99a4e68f2a7d30acffefe8f60dc128675ef7d5165",
+      "structure_fingerprint": "4b53980a5c3367a389ffd0b4b7bf4faacb015bf71a0fee90edfb69dfad0f5996",
+      "detected_paths": [
+        {
+          "file_source": "Convert HTML to PDF",
+          "binary_sink": "Send Student Feedback Email",
+          "earlier_ai_nodes": [
+            "Plagiarism Check Agent",
+            "AI Grading Agent"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "final_status": "confirmed_collision_under_reviewed_contract",
+      "subtype": "context_projection",
+      "review_evidence": "The feedback PDF includes student identity and workflow fields omitted from the grading-agent prompts.",
+      "policy_scope": "paired study fixture; labels and destination policy supplied by the study",
+      "runtime_claim": "source dependency review, not a measured production incident",
+      "sage_model": {
+        "kind": "independent_binary",
+        "sources": [
+          "Generate Feedback HTML"
+        ],
+        "sink": "Send Student Feedback Email",
+        "required_nodes": [
+          "Plagiarism Check Agent",
+          "AI Grading Agent",
+          "Generate Feedback HTML",
+          "Send Student Feedback Email"
+        ]
+      }
+    },
+    {
+      "id": 12959,
+      "name": "Generate proposals with GPT-4o, Google Docs, Gmail and Slack",
+      "author": "hyrum-hurst",
+      "source_sha256": "16c0c8312a0bbd0c93ef24f5365d5f9c3bc84c0bd224663ccee5c0191d67ac0c",
+      "structure_fingerprint": "69c613fba625cfaa3eae0b7dcb64fcc4a5410336f83235097e982869c68787fb",
+      "detected_paths": [
+        {
+          "file_source": "Convert Doc to PDF",
+          "binary_sink": "Send Proposal via Email",
+          "earlier_ai_nodes": [
+            "Generate Proposal Content"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "final_status": "no_collision_provenance_already_observed",
+      "subtype": "derived",
+      "review_evidence": "The proposal document is created from the normalized client data and preceding AI proposal output; no external template is copied.",
+      "policy_scope": "paired study fixture; labels and destination policy supplied by the study",
+      "runtime_claim": "source dependency review, not a measured production incident",
+      "sage_model": {
+        "kind": "generated_from_ctx",
+        "sources": [
+          "Convert Doc to PDF"
+        ],
+        "sink": "Send Proposal via Email",
+        "required_nodes": [
+          "Generate Proposal Content",
+          "Convert Doc to PDF",
+          "Send Proposal via Email"
+        ]
+      }
+    },
+    {
+      "id": 13237,
+      "name": "Classify Gmail invoice attachments with Google Gemini and forward to freee",
+      "author": "daisuke",
+      "source_sha256": "18eb36bdbc723285625f127575fafbce9b0277e60fa44c7295e4d710d3017d69",
+      "structure_fingerprint": "3cf1ae1609e4a795aa6bdb5465b4e1a7fba258ba44fe5ca180519d7798cad9d0",
+      "detected_paths": [
+        {
+          "file_source": "Gmail Trigger",
+          "binary_sink": "Forward to freee",
+          "earlier_ai_nodes": [],
+          "intervening_ai_nodes": [
+            "Classify Invoice/Receipt (AI)"
+          ],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        },
+        {
+          "file_source": "Get Attachment",
+          "binary_sink": "Forward to freee",
+          "earlier_ai_nodes": [
+            "Classify Invoice/Receipt (AI)"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "final_status": "no_collision_provenance_already_observed",
+      "subtype": "already_observed",
+      "review_evidence": "The classifier reads extracted content from the same message attachment before it is refetched and forwarded.",
+      "policy_scope": "paired study fixture; labels and destination policy supplied by the study",
+      "runtime_claim": "source dependency review, not a measured production incident",
+      "sage_model": {
+        "kind": "generated_from_ctx",
+        "sources": [
+          "Get Attachment"
+        ],
+        "sink": "Forward to freee",
+        "required_nodes": [
+          "Classify Invoice/Receipt (AI)",
+          "Get Attachment",
+          "Forward to freee"
+        ]
+      }
+    },
+    {
+      "id": 13408,
+      "name": "Turn your portfolio into an AI assistant with OpenAI, Claude, Pinecone and Gmail",
+      "author": "suryayalavarthi",
+      "source_sha256": "b6354585855cd8f336ebfe862ceda8dfafd619197339de0bc5449bd196e56ab0",
+      "structure_fingerprint": "ffdd9c4d40627761b680d7fec934204b1596a087d76795ababc6e0a2c7c3f5ad",
+      "detected_paths": [
+        {
+          "file_source": "Download CV PDF",
+          "binary_sink": "Send CV Email",
+          "earlier_ai_nodes": [
+            "Portfolio AI Agent"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "final_status": "contract_unresolved",
+      "subtype": null,
+      "review_evidence": "The CV identifier is an empty deployment placeholder and the historical attachmentsBinary boolean contract cannot be confirmed from the artifact.",
+      "policy_scope": "paired study fixture; labels and destination policy supplied by the study",
+      "runtime_claim": "source dependency review, not a measured production incident"
+    },
+    {
+      "id": 13659,
+      "name": "Generate an AI YouTube trend report with GPT-4o, Google Sheets and PDF.co",
+      "author": "milobravo1",
+      "source_sha256": "c693cbca0688f385db3de331723e7286c2ddbbae395008ee6d5bc983e32d3511",
+      "structure_fingerprint": "0241751687b17abaada1657c76dfadf50a9b37f158f90e9bde4f25955568dd9e",
+      "detected_paths": [
+        {
+          "file_source": "Download PDF",
+          "binary_sink": "Send Report Email",
+          "earlier_ai_nodes": [
+            "Analyze Trends with AI"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "final_status": "no_collision_provenance_already_observed",
+      "subtype": "derived",
+      "review_evidence": "Charts are deterministic renderings of analyzed metrics and the embedded logo/template is a workflow constant; no protected independent runtime input is established.",
+      "policy_scope": "paired study fixture; labels and destination policy supplied by the study",
+      "runtime_claim": "source dependency review, not a measured production incident",
+      "sage_model": {
+        "kind": "generated_from_ctx",
+        "sources": [
+          "Download PDF"
+        ],
+        "sink": "Send Report Email",
+        "required_nodes": [
+          "Analyze Trends with AI",
+          "Download PDF",
+          "Send Report Email"
+        ]
+      }
+    },
+    {
+      "id": 14185,
+      "name": "Generate and Send Personalized Quotations PDF ",
+      "author": "devontoh",
+      "source_sha256": "eeb59669ebce92e734fc02fc617bd702a7caaa90864c42e0e8cf734dc27ccb0c",
+      "structure_fingerprint": "b147b56539aec758f14d84fe626712c65d1e77043a5e246e8c0fd645118a4a60",
+      "detected_paths": [
+        {
+          "file_source": "Export as PDF",
+          "binary_sink": "Send Quotation Email",
+          "earlier_ai_nodes": [
+            "OpenAI Personalize"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "final_status": "confirmed_collision_under_reviewed_contract",
+      "subtype": "direct_resource",
+      "review_evidence": "A fixed Google Docs quotation template is copied and exported after personalization; the AI does not read the template resource.",
+      "policy_scope": "paired study fixture; labels and destination policy supplied by the study",
+      "runtime_claim": "source dependency review, not a measured production incident",
+      "sage_model": {
+        "kind": "independent_binary",
+        "sources": [
+          "Copy Template"
+        ],
+        "sink": "Send Quotation Email",
+        "required_nodes": [
+          "OpenAI Personalize",
+          "Copy Template",
+          "Send Quotation Email"
+        ]
+      }
+    },
+    {
+      "id": 14717,
+      "name": "Create AI proposals from Fireflies transcripts with GPT-4o, Google Docs, Gmail and Telegram approval",
+      "author": "devontoh",
+      "source_sha256": "a172a5138173402e5c5fb7b9c70b189337175d0f764ddb393500626078d2daf5",
+      "structure_fingerprint": "6416d49da12327a325ba487f6f6b98b40ce5e17ec0a23e1993d8c0f7fbfeac68",
+      "detected_paths": [
+        {
+          "file_source": "Export Doc as PDF",
+          "binary_sink": "Send Proposal Email",
+          "earlier_ai_nodes": [
+            "Classify Meeting Type",
+            "Generate Proposal Content"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        },
+        {
+          "file_source": "Download PDF from Drive",
+          "binary_sink": "Send Proposal Email",
+          "earlier_ai_nodes": [
+            "Classify Meeting Type",
+            "Generate Proposal Content"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "final_status": "confirmed_collision_under_reviewed_contract",
+      "subtype": "direct_resource",
+      "review_evidence": "A fixed Docs template is copied, filled, exported, downloaded, and attached; its resource provenance is absent from the proposal AI context.",
+      "policy_scope": "paired study fixture; labels and destination policy supplied by the study",
+      "runtime_claim": "source dependency review, not a measured production incident",
+      "sage_model": {
+        "kind": "independent_binary",
+        "sources": [
+          "Copy Proposal Template"
+        ],
+        "sink": "Send Proposal Email",
+        "required_nodes": [
+          "Classify Meeting Type",
+          "Generate Proposal Content",
+          "Copy Proposal Template",
+          "Send Proposal Email"
+        ]
+      }
+    },
+    {
+      "id": 15440,
+      "name": "Turn YouTube videos into weekly short clips with captions using WayinVideo and GPT-4o-mini",
+      "author": "isawow",
+      "source_sha256": "c87af507ec1697a261cb0c124b071a5bcd56e98516f769fbe28d940d17c71ec9",
+      "structure_fingerprint": "8c4f2cad48f48261e70dd63c53321141a4fdb1e5db0438e368ceb6ceeec1f962",
+      "detected_paths": [
+        {
+          "file_source": "18. HTTP — Download Clip File",
+          "binary_sink": "19. Google Drive — Upload Clip",
+          "earlier_ai_nodes": [
+            "15. AI Agent — Write Platform Captions"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "final_status": "no_collision_provenance_already_observed",
+      "subtype": "already_observed",
+      "review_evidence": "The caption agent receives the video summary and timestamps from the same source-video/clip lineage; the conservative union-flow model already carries that provenance.",
+      "policy_scope": "paired study fixture; labels and destination policy supplied by the study",
+      "runtime_claim": "source dependency review, not a measured production incident",
+      "sage_model": {
+        "kind": "generated_from_ctx",
+        "sources": [
+          "18. HTTP — Download Clip File"
+        ],
+        "sink": "19. Google Drive — Upload Clip",
+        "required_nodes": [
+          "15. AI Agent — Write Platform Captions",
+          "18. HTTP — Download Clip File",
+          "19. Google Drive — Upload Clip"
+        ]
+      }
+    },
+    {
+      "id": 15449,
+      "name": "Automate employee onboarding with Groq, Gmail, Slack and Google Workspace",
+      "author": "redowanfarhan",
+      "source_sha256": "ea434265ca422712c612cdb85534763470eb54f073e964f712de869bf6de4ac6",
+      "structure_fingerprint": "693ac76c54153edaa7ded246d6b748680603b0a9f47352201d9c6187671a5e10",
+      "detected_paths": [
+        {
+          "file_source": "Download Policy",
+          "binary_sink": "Welcome Email → New Hire",
+          "earlier_ai_nodes": [
+            "AI Agent"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        },
+        {
+          "file_source": "Download Handbook",
+          "binary_sink": "Welcome Email → New Hire",
+          "earlier_ai_nodes": [
+            "AI Agent"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "final_status": "confirmed_collision_under_reviewed_contract",
+      "subtype": "direct_resource",
+      "review_evidence": "Handbook and policy files are downloaded after the AI reads form fields, then attached to the welcome email.",
+      "policy_scope": "paired study fixture; labels and destination policy supplied by the study",
+      "runtime_claim": "source dependency review, not a measured production incident",
+      "sage_model": {
+        "kind": "independent_binary",
+        "sources": [
+          "Download Handbook",
+          "Download Policy"
+        ],
+        "sink": "Welcome Email → New Hire",
+        "required_nodes": [
+          "AI Agent",
+          "Download Handbook",
+          "Download Policy",
+          "Welcome Email → New Hire"
+        ]
+      }
+    },
+    {
+      "id": 15451,
+      "name": "Automate AI-powered employee onboarding emails and Slack updates with Groq, Gmail, and Google Sheets",
+      "author": "redowanfarhan",
+      "source_sha256": "04b784dd9ee917fe00466589f3eef930aea65392738f010ef91dec89127ac63a",
+      "structure_fingerprint": "693ac76c54153edaa7ded246d6b748680603b0a9f47352201d9c6187671a5e10",
+      "detected_paths": [
+        {
+          "file_source": "Download Policy",
+          "binary_sink": "Welcome Email → New Hire",
+          "earlier_ai_nodes": [
+            "AI Agent"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        },
+        {
+          "file_source": "Download Handbook",
+          "binary_sink": "Welcome Email → New Hire",
+          "earlier_ai_nodes": [
+            "AI Agent"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "final_status": "confirmed_collision_under_reviewed_contract",
+      "subtype": "direct_resource",
+      "review_evidence": "Same independently downloaded handbook/policy structure as 15449; retained as a duplicate template, not a distinct application.",
+      "policy_scope": "paired study fixture; labels and destination policy supplied by the study",
+      "runtime_claim": "source dependency review, not a measured production incident",
+      "sage_model": {
+        "kind": "independent_binary",
+        "sources": [
+          "Download Handbook",
+          "Download Policy"
+        ],
+        "sink": "Welcome Email → New Hire",
+        "required_nodes": [
+          "AI Agent",
+          "Download Handbook",
+          "Download Policy",
+          "Welcome Email → New Hire"
+        ]
+      }
+    },
+    {
+      "id": 16217,
+      "name": "Send weekly Facebook and Instagram PDF performance reports with Gemini and Gmail",
+      "author": "spctek-ai",
+      "source_sha256": "1032a80141fa0be2493b380dc607ed384696cff2456a9aac1d3195206edeb8b1",
+      "structure_fingerprint": "af65e206e132e68cfd9edd398b5245db6027b4b95e90e609e5ae7d335922e028",
+      "detected_paths": [
+        {
+          "file_source": "Convert HTML to PDF",
+          "binary_sink": "Send a message",
+          "earlier_ai_nodes": [
+            "Message a model"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "final_status": "confirmed_collision_under_reviewed_contract",
+      "subtype": "context_projection",
+      "review_evidence": "The PDF contains post thumbnails, full captions, and permalinks while the AI prompt contains only truncated top-post text and aggregate metrics.",
+      "policy_scope": "paired study fixture; labels and destination policy supplied by the study",
+      "runtime_claim": "source dependency review, not a measured production incident",
+      "sage_model": {
+        "kind": "independent_binary",
+        "sources": [
+          "Build HTML Report"
+        ],
+        "sink": "Send a message",
+        "required_nodes": [
+          "AI Analysis Agent",
+          "Message a model",
+          "Build HTML Report",
+          "Send a message"
+        ]
+      }
+    },
+    {
+      "id": 16375,
+      "name": "Screen LinkedIn jobs and generate tailored resume and cover PDFs with Anthropic and DocRaptor",
+      "author": "shafeel",
+      "source_sha256": "be442749dd2371bcc27534492188550cafa86d0ac8f39787f667a4fdf4688c39",
+      "structure_fingerprint": "2cd01f5f667305b89443de8ae737812192ef8c2095db1ad1fa26623941ec49bc",
+      "detected_paths": [
+        {
+          "file_source": "Resume PDF (DocRaptor)",
+          "binary_sink": "Email Me (Gmail)",
+          "earlier_ai_nodes": [
+            "AI Match (Agent)",
+            "Generate Resume JSON (Claude)"
+          ],
+          "intervening_ai_nodes": [
+            "Generate Cover JSON (Claude)"
+          ],
+          "code_nodes_on_path": [
+            "Assemble Email",
+            "Render Cover HTML"
+          ],
+          "status": "structural_candidate_requires_contract_review"
+        },
+        {
+          "file_source": "Cover PDF (DocRaptor)",
+          "binary_sink": "Email Me (Gmail)",
+          "earlier_ai_nodes": [
+            "AI Match (Agent)",
+            "Generate Resume JSON (Claude)",
+            "Generate Cover JSON (Claude)"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [
+            "Assemble Email"
+          ],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "final_status": "no_collision_provenance_already_observed",
+      "subtype": "derived",
+      "review_evidence": "Both PDFs render the resume/cover outputs of the preceding agents plus public templates; no independent protected resource is introduced.",
+      "policy_scope": "paired study fixture; labels and destination policy supplied by the study",
+      "runtime_claim": "source dependency review, not a measured production incident",
+      "sage_model": {
+        "kind": "generated_from_ctx",
+        "sources": [
+          "Resume PDF (DocRaptor)",
+          "Cover PDF (DocRaptor)"
+        ],
+        "sink": "Email Me (Gmail)",
+        "required_nodes": [
+          "AI Match (Agent)",
+          "Generate Resume JSON (Claude)",
+          "Generate Cover JSON (Claude)",
+          "Resume PDF (DocRaptor)",
+          "Cover PDF (DocRaptor)",
+          "Email Me (Gmail)"
+        ]
+      }
+    },
+    {
+      "id": 16538,
+      "name": "Generate monthly BigQuery KPI PDF reports with Claude, Google Docs, Outlook and Teams",
+      "author": "mychel-garzon",
+      "source_sha256": "e4408ba7cdefc5a5f92bc2a5334c3628e01e7f656a8b0389cdce6c68537879bf",
+      "structure_fingerprint": "146b77df9481f8d86977e619e52700946cfad30ce6a2644d0082a86af961937c",
+      "detected_paths": [
+        {
+          "file_source": "Export Document to PDF",
+          "binary_sink": "Send Report via Outlook",
+          "earlier_ai_nodes": [
+            "Create AI Narrative with Claude"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "final_status": "invalid_structural_candidate",
+      "subtype": null,
+      "review_evidence": "Outlook expects binary field report_pdf, but the export node does not establish that field.",
+      "policy_scope": "paired study fixture; labels and destination policy supplied by the study",
+      "runtime_claim": "source dependency review, not a measured production incident"
+    },
+    {
+      "id": 16551,
+      "name": "Send daily LinkedIn post drafts with Tavily, Groq Llama 3.3 and Gmail",
+      "author": "vasunaman",
+      "source_sha256": "e8d9cf14a5329a7b6cfcfd244d117561aeec01381a1bd91c36caae4f2ba7be8f",
+      "structure_fingerprint": "b43b115f63a170c0b38db9f1f8e6aa58ace57b3abc39cf2eda780f1c3fe1bee2",
+      "detected_paths": [
+        {
+          "file_source": "Fetch Image from URL",
+          "binary_sink": "Send Email with Image",
+          "earlier_ai_nodes": [
+            "Define LinkedIn Strategy Agent"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "final_status": "invalid_structural_candidate",
+      "subtype": null,
+      "review_evidence": "Named expressions reference an absent node and the email attachment has no named binary property.",
+      "policy_scope": "paired study fixture; labels and destination policy supplied by the study",
+      "runtime_claim": "source dependency review, not a measured production incident"
+    },
+    {
+      "id": 16876,
+      "name": "Send ranked freight quote PDFs with GPT-4o, Google Sheets, Gmail and PDFShift",
+      "author": "rahul08",
+      "source_sha256": "306d41ca75c8e7601c99fe43a3217f5bf8d6c7b900b96d25464a99453d18255c",
+      "structure_fingerprint": "2212fec0efb8a8bcea29eca891493722c2e13d8778bc48daa133a5b5862f55b1",
+      "detected_paths": [
+        {
+          "file_source": "Generate Quote PDF",
+          "binary_sink": "Send Quote Email to Customer",
+          "earlier_ai_nodes": [
+            "GPT-4o Generate Quote HTML"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "final_status": "invalid_structural_candidate",
+      "subtype": null,
+      "review_evidence": "The email attachment array is empty, so the PDF-to-sink binary dependency is not established.",
+      "policy_scope": "paired study fixture; labels and destination policy supplied by the study",
+      "runtime_claim": "source dependency review, not a measured production incident"
+    },
+    {
+      "id": 16881,
+      "name": "Generate sound effects from chat with Groq, ElevenLabs and Google Drive",
+      "author": "exekyute",
+      "source_sha256": "c2ac40bb55f9930928325d2b00e4ed3dae5b6e4581f4ca3e683ff0b777f21a9f",
+      "structure_fingerprint": "b589912007332a0bca5c98a76d301b0e9829d8a2cd4366cdb1e8914fcf843a97",
+      "detected_paths": [
+        {
+          "file_source": "Generate Sound With ElevenLabs",
+          "binary_sink": "Upload to Google Drive",
+          "earlier_ai_nodes": [
+            "Compose Sound Effect Prompt"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "final_status": "no_collision_provenance_already_observed",
+      "subtype": "derived",
+      "review_evidence": "The audio is generated from the AI-produced sound prompt; new bytes alone do not constitute independent protected provenance.",
+      "policy_scope": "paired study fixture; labels and destination policy supplied by the study",
+      "runtime_claim": "source dependency review, not a measured production incident",
+      "sage_model": {
+        "kind": "generated_from_ctx",
+        "sources": [
+          "Generate Sound With ElevenLabs"
+        ],
+        "sink": "Upload to Google Drive",
+        "required_nodes": [
+          "Compose Sound Effect Prompt",
+          "Generate Sound With ElevenLabs",
+          "Upload to Google Drive"
+        ]
+      }
+    },
+    {
+      "id": 17351,
+      "name": "Generate company due diligence PDFs with Google Gemini, SEC EDGAR, Serper and Gmail",
+      "author": "iamvaar",
+      "source_sha256": "774d4817dbdfb88491d5567b518eb7235df91bcc7730045baf9e922170d55d4e",
+      "structure_fingerprint": "6757fe55d29b4a5b5875990eaeb5c832e51ab9419ae3d2b9f258133cead53c22",
+      "detected_paths": [
+        {
+          "file_source": "Fetch Tech Score Chart",
+          "binary_sink": "Send Email via Gmail",
+          "earlier_ai_nodes": [
+            "Report Generator Agent"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [
+            "Build HTML Report"
+          ],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "final_status": "no_collision_provenance_already_observed",
+      "subtype": "derived",
+      "review_evidence": "The chart is a deterministic rendering of the score already represented in the report data.",
+      "policy_scope": "paired study fixture; labels and destination policy supplied by the study",
+      "runtime_claim": "source dependency review, not a measured production incident",
+      "sage_model": {
+        "kind": "generated_from_ctx",
+        "sources": [
+          "Fetch Tech Score Chart"
+        ],
+        "sink": "Send Email via Gmail",
+        "required_nodes": [
+          "Report Generator Agent",
+          "Fetch Tech Score Chart",
+          "Send Email via Gmail"
+        ]
+      }
+    },
+    {
+      "id": 17933,
+      "name": "Create seminar teaching packs from research PDFs with Qwen, Gotenberg and Gmail",
+      "author": "thefamoushesham",
+      "source_sha256": "6d106d77e0d9a21983efc43363f44a8436d8c5e6fc52ac49099bef8d9440bf32",
+      "structure_fingerprint": "a86c176d2b68def6cd3df2fae20010538971ae63f6a3ffaaa6cb5e03994ca868",
+      "detected_paths": [
+        {
+          "file_source": "Render PDF (Gotenberg)",
+          "binary_sink": "Email the pack",
+          "earlier_ai_nodes": [
+            "Teaching pack agent"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [
+            "Name the PDF"
+          ],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "final_status": "no_collision_provenance_already_observed",
+      "subtype": "already_observed",
+      "review_evidence": "The teaching-pack agent reads the source paper text and the PDF is a rendering of its output.",
+      "policy_scope": "paired study fixture; labels and destination policy supplied by the study",
+      "runtime_claim": "source dependency review, not a measured production incident",
+      "sage_model": {
+        "kind": "generated_from_ctx",
+        "sources": [
+          "Render PDF (Gotenberg)"
+        ],
+        "sink": "Email the pack",
+        "required_nodes": [
+          "Teaching pack agent",
+          "Render PDF (Gotenberg)",
+          "Email the pack"
+        ]
+      }
+    },
+    {
+      "id": 18053,
+      "name": "Send weekly Meta Ads performance PDF reports with Gemini and Gmail",
+      "author": "spctek-ai",
+      "source_sha256": "01e5f3033e943e9214585e67b304f58a9397b930f48f6db05e7616f967384284",
+      "structure_fingerprint": "149792f36a37b18f67617f5192950189ea93d6c2aa60fc6bcf7204f925fbfeb2",
+      "detected_paths": [
+        {
+          "file_source": "Convert HTML to PDF",
+          "binary_sink": "Send Email",
+          "earlier_ai_nodes": [
+            "Message a model"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "final_status": "confirmed_collision_under_reviewed_contract",
+      "subtype": "context_projection",
+      "review_evidence": "The PDF embeds ad thumbnail URLs and detailed creative fields; the AI prompt supplies only selected creative metrics and omits thumbnails.",
+      "policy_scope": "paired study fixture; labels and destination policy supplied by the study",
+      "runtime_claim": "source dependency review, not a measured production incident",
+      "sage_model": {
+        "kind": "independent_binary",
+        "sources": [
+          "Build HTML Report"
+        ],
+        "sink": "Send Email",
+        "required_nodes": [
+          "Message a model",
+          "Build HTML Report",
+          "Send Email"
+        ]
+      }
+    },
+    {
+      "id": 18142,
+      "name": "Create LinkedIn posts from articles with OpenAI, Pexels and Google Sheets",
+      "author": "khadijanaeem",
+      "source_sha256": "eb015398d08ffed1dbef0540f595942416142c7762250c990fa70fb86c1664dc",
+      "structure_fingerprint": "0ad4d6ed39beed68f781b6ac92bc32eb74d0fb11575833294e69f535cc11d555",
+      "detected_paths": [
+        {
+          "file_source": "Fetch Actual Image",
+          "binary_sink": "Download Image",
+          "earlier_ai_nodes": [
+            "AI Image Query Agent",
+            "AI Image Selector",
+            "Generate Content"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "final_status": "no_collision_provenance_already_observed",
+      "subtype": "already_observed",
+      "review_evidence": "The selector analyzes the candidate image URLs before the selected variant is fetched and uploaded; the conservative resource-identity contract preserves provenance.",
+      "policy_scope": "paired study fixture; labels and destination policy supplied by the study",
+      "runtime_claim": "source dependency review, not a measured production incident",
+      "sage_model": {
+        "kind": "generated_from_ctx",
+        "sources": [
+          "Fetch Actual Image"
+        ],
+        "sink": "Download Image",
+        "required_nodes": [
+          "AI Image Query Agent",
+          "AI Image Selector",
+          "Generate Content",
+          "Fetch Actual Image",
+          "Download Image"
+        ]
+      }
+    },
+    {
+      "id": 18341,
+      "name": "Create captioned vertical video clips from Google Drive using CNAPS and Google Sheets",
+      "author": "tuckken",
+      "source_sha256": "8f4090bb23e331915761ec0213d7bdc3c56b620095f79e9b0e415838b1ab2bec",
+      "structure_fingerprint": "8ce86d844488e074ab88036afe3acf03b88f274eb5f1a0547fb31a7db57a2997",
+      "detected_paths": [
+        {
+          "file_source": "Download the video",
+          "binary_sink": "Save the clip to Drive",
+          "earlier_ai_nodes": [],
+          "intervening_ai_nodes": [
+            "Check the run",
+            "Start the clip run on CNAPS"
+          ],
+          "code_nodes_on_path": [
+            "One row per clip"
+          ],
+          "status": "structural_candidate_requires_contract_review"
+        },
+        {
+          "file_source": "Download the clip",
+          "binary_sink": "Save the clip to Drive",
+          "earlier_ai_nodes": [
+            "Start the clip run on CNAPS",
+            "Check the run"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "final_status": "no_collision_provenance_already_observed",
+      "subtype": "already_observed",
+      "review_evidence": "The clip remains a derivative of the uploaded source video and its processing lineage is already observed.",
+      "policy_scope": "paired study fixture; labels and destination policy supplied by the study",
+      "runtime_claim": "source dependency review, not a measured production incident",
+      "sage_model": {
+        "kind": "generated_from_ctx",
+        "sources": [
+          "Download the clip"
+        ],
+        "sink": "Save the clip to Drive",
+        "required_nodes": [
+          "Start the clip run on CNAPS",
+          "Check the run",
+          "Download the clip",
+          "Save the clip to Drive"
+        ]
+      }
+    },
+    {
+      "id": 18417,
+      "name": "Generate quiet luxury lifestyle product images with OpenAI and Google Drive",
+      "author": "awaiskhalil-official",
+      "source_sha256": "3cf6899836378ba4b259ee9646676270ca8574731808c18d8f5caa67f56215b4",
+      "structure_fingerprint": "63748b21f3069e55f3e4e833c7bc1e546c29cb9753cb3abaaa4567fd01eb0dd6",
+      "detected_paths": [
+        {
+          "file_source": "Download file",
+          "binary_sink": "Upload File to Google Drive",
+          "earlier_ai_nodes": [],
+          "intervening_ai_nodes": [
+            "AI Analysis Agent",
+            "Message a model1",
+            "OpenAI Image Analysis"
+          ],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        },
+        {
+          "file_source": "Download file",
+          "binary_sink": "Upload file1",
+          "earlier_ai_nodes": [],
+          "intervening_ai_nodes": [
+            "AI Analysis Agent",
+            "OpenAI Image Analysis",
+            "OpenAI Message Model"
+          ],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        },
+        {
+          "file_source": "Download file",
+          "binary_sink": "Upload file2",
+          "earlier_ai_nodes": [],
+          "intervening_ai_nodes": [
+            "AI Analysis Agent",
+            "OpenAI Image Analysis",
+            "Send Message to OpenAI"
+          ],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        },
+        {
+          "file_source": "Download file2",
+          "binary_sink": "Upload file1",
+          "earlier_ai_nodes": [
+            "OpenAI Image Analysis",
+            "OpenAI Message Model",
+            "AI Analysis Agent"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        },
+        {
+          "file_source": "Download file3",
+          "binary_sink": "Upload file2",
+          "earlier_ai_nodes": [
+            "OpenAI Image Analysis",
+            "AI Analysis Agent",
+            "Send Message to OpenAI"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        },
+        {
+          "file_source": "Download file1",
+          "binary_sink": "Upload File to Google Drive",
+          "earlier_ai_nodes": [
+            "OpenAI Image Analysis",
+            "AI Analysis Agent",
+            "Message a model1"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "final_status": "no_collision_provenance_already_observed",
+      "subtype": "already_observed",
+      "review_evidence": "The image input is read by the image-analysis agent; later image variants retain that source provenance.",
+      "policy_scope": "paired study fixture; labels and destination policy supplied by the study",
+      "runtime_claim": "source dependency review, not a measured production incident",
+      "sage_model": {
+        "kind": "generated_from_ctx",
+        "sources": [
+          "Download file"
+        ],
+        "sink": "Upload File to Google Drive",
+        "required_nodes": [
+          "OpenAI Image Analysis",
+          "OpenAI Message Model",
+          "AI Analysis Agent",
+          "Send Message to OpenAI",
+          "Message a model1",
+          "Download file",
+          "Upload File to Google Drive"
+        ]
+      }
+    },
+    {
+      "id": 18477,
+      "name": "Send weekly parent progress reports with Google Sheets, GPT-4o mini and Gmail",
+      "author": "rahul08",
+      "source_sha256": "8b2887fd914b09777df5a563de9bcec08804a69f5cfb290eef578f087fec9f73",
+      "structure_fingerprint": "64880d6a1d9810386fc17ad75ffeb9281a1844c6b7e29540624bbbc83d4e3f6e",
+      "detected_paths": [
+        {
+          "file_source": "Generate PDF Report",
+          "binary_sink": "Send Email to Parent",
+          "earlier_ai_nodes": [
+            "AI: Generate Improvement Tips",
+            "AI: Write Parent Narrative"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [
+            "Route by Parent Preference"
+          ],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "final_status": "invalid_structural_candidate",
+      "subtype": null,
+      "review_evidence": "Expressions reference a nonexistent Process & Flag Students1 node, preventing a valid executable dependency path.",
+      "policy_scope": "paired study fixture; labels and destination policy supplied by the study",
+      "runtime_claim": "source dependency review, not a measured production incident"
+    },
+    {
+      "id": 18673,
+      "name": "Send daily CFO invoice health reports with Google Sheets, Groq, Gmail and Slack",
+      "author": "weblineindia",
+      "source_sha256": "a7e25f5567022f64bef518acd5cdda1e243b8e88666ffd61b50f9759e94fb899",
+      "structure_fingerprint": "7db3f4534d2947b32c68c121fb97448d00ec596e5a1504e97964d8b6c0276b9f",
+      "detected_paths": [
+        {
+          "file_source": "Generate PDF Report",
+          "binary_sink": "Email CFO Report (Gmail)",
+          "earlier_ai_nodes": [
+            "Generate CFO Executive Summary"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "final_status": "confirmed_collision_under_reviewed_contract",
+      "subtype": "context_projection",
+      "review_evidence": "The report adds an internal dashboard URL after AI summarization; that URL is absent from the AI prompt and flows into the emailed PDF.",
+      "policy_scope": "paired study fixture; labels and destination policy supplied by the study",
+      "runtime_claim": "source dependency review, not a measured production incident",
+      "sage_model": {
+        "kind": "independent_binary",
+        "sources": [
+          "Format Email Template (HTML)"
+        ],
+        "sink": "Email CFO Report (Gmail)",
+        "required_nodes": [
+          "Generate CFO Executive Summary",
+          "Format Email Template (HTML)",
+          "Email CFO Report (Gmail)"
+        ]
+      }
+    },
+    {
+      "id": 19292,
+      "name": "Create Gmail drafts from business cards with Google Drive, Gemini, Slack and Discord",
+      "author": "maruo",
+      "source_sha256": "a9020da3e738a531894f9e319f2a5292d4b01bb74ca032b18a3b68b571e514bc",
+      "structure_fingerprint": "56dbd128f5d2d92d1546d74dda3756fcb9ed79bf87c610f86a868ed1293832a1",
+      "detected_paths": [
+        {
+          "file_source": "Download Card Image",
+          "binary_sink": "Create Draft with Attachment",
+          "earlier_ai_nodes": [],
+          "intervening_ai_nodes": [
+            "Extract Card Data with Gemini"
+          ],
+          "code_nodes_on_path": [
+            "Parse OCR Result"
+          ],
+          "status": "structural_candidate_requires_contract_review"
+        },
+        {
+          "file_source": "Download Attachment from Drive",
+          "binary_sink": "Create Draft with Attachment",
+          "earlier_ai_nodes": [
+            "Extract Card Data with Gemini"
+          ],
+          "intervening_ai_nodes": [],
+          "code_nodes_on_path": [],
+          "status": "structural_candidate_requires_contract_review"
+        }
+      ],
+      "final_status": "confirmed_collision_under_reviewed_contract",
+      "subtype": "direct_resource",
+      "review_evidence": "A separately configured Drive file is downloaded only after Gemini builds the recipient/body and is attached to the draft.",
+      "policy_scope": "paired study fixture; labels and destination policy supplied by the study",
+      "runtime_claim": "source dependency review, not a measured production incident",
+      "sage_model": {
+        "kind": "independent_binary",
+        "sources": [
+          "Download Attachment from Drive"
+        ],
+        "sink": "Create Draft with Attachment",
+        "required_nodes": [
+          "Extract Card Data with Gemini",
+          "Download Attachment from Drive",
+          "Create Draft with Attachment"
+        ]
+      }
+    }
+  ]
+}

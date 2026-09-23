@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"import json\\n\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    params = json.loads(tool_input)\\n    tool_name = user_input['tool']\\n    agent = user_input['agent']\\n    labels = user_input['trusted_event_labels']\\n\\n    policy = {\\n        'courier': ['PHI'],\\n        'debug': ['PHI', 'POLICY_ID']\\n    }\\n\\n    if tool_name == 'submit':\\n        target = params.get('target', '')\\n        if target in policy:\\n            forbidden = policy[target]\\n            if any(label in forbidden for label in labels):\\n                return True\\n\\n    return False\\n}\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 4022,
+    "prompt_tokens": 862,
+    "total_tokens": 4884,
+    "completion_tokens_details": {
+      "reasoning_tokens": 3861
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "2dea3ca6-50e4-4687-b7fe-76f034d01a54_bf34f8677d7f4404b0b2907e4a737d4b"
+}

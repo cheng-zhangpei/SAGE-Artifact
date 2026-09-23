@@ -1,0 +1,527 @@
+{
+  "description": "客户服务与财务团队共享一份案件。每次导入把一种原始资料追加到 intake，\n编辑将 intake 追加到 brief，打包员将 brief 追加到 bundle。也可直接把 intake 追加到\nbundle。原始资料分别包含客户身份、支付资料、访问凭据和未经核验的外部材料。\n另有不含受限资料的独立 bulletin 公告。除四个原始资料槽外，所有位置初始为空。\n所有写入保留旧内容；工具不会自动删除敏感字段或核验来源。调用可重复，顺序不限。\n\ndispatch 工具公共文档：\n1. route 是当前部门的地址簿别名。support 的 local/partner/release 分别是\n   slot:internal / slot:customer / slot:public；finance 的同名别名分别是\n   slot:internal / slot:vendor / slot:control。别名始终按调用 Agent 解释。\n2. source=bulletin 只使用独立公告；source=brief 使用共享 brief；source=bundle\n   使用共享 bundle。mode=linked 时还会读取 bundle 并附上其完整附件，不论 source 是什么。\n3. mode=standard 只投递到 route 指定地址；mode=mirror 同时向该地址及 slot:public\n   投递同一内容；mode=linked 同时向该地址和本部门 partner 地址投递包含附件的内容。\n4. receipt=local 不增加外部副本；receipt=external 向 slot:audit 追加同一完整内容。\n   receipt=partner 则向本部门 partner 地址追加同一内容，但 route=partner 时不另建副本。\n5. 一次 dispatch 的各接收者得到相同完整内容。本工具不生成新的敏感数据。\n未列在 policy 中的目的地没有禁止类别。请为所有列出的具体调用起草规则，\n既防止违规投递，也保留合规操作。",
+  "labels": {
+    "PII": "客户身份",
+    "PAYMENT": "支付资料",
+    "SECRET": "访问凭据",
+    "UNVERIFIED": "未经核验的外部材料"
+  },
+  "policy": {
+    "slot:customer": [
+      "SECRET",
+      "UNVERIFIED"
+    ],
+    "slot:vendor": [
+      "PII",
+      "SECRET"
+    ],
+    "slot:public": [
+      "PII",
+      "PAYMENT",
+      "SECRET"
+    ],
+    "slot:audit": [
+      "PAYMENT",
+      "SECRET"
+    ],
+    "slot:control": [
+      "UNVERIFIED"
+    ]
+  },
+  "tools": [
+    {
+      "agent": "collector",
+      "tool": "import_record",
+      "params": {
+        "category": "PII"
+      },
+      "description": "读取仅含PII的原始资料并追加到 slot:intake。"
+    },
+    {
+      "agent": "collector",
+      "tool": "import_record",
+      "params": {
+        "category": "PAYMENT"
+      },
+      "description": "读取仅含PAYMENT的原始资料并追加到 slot:intake。"
+    },
+    {
+      "agent": "collector",
+      "tool": "import_record",
+      "params": {
+        "category": "SECRET"
+      },
+      "description": "读取仅含SECRET的原始资料并追加到 slot:intake。"
+    },
+    {
+      "agent": "collector",
+      "tool": "import_record",
+      "params": {
+        "category": "UNVERIFIED"
+      },
+      "description": "读取仅含UNVERIFIED的原始资料并追加到 slot:intake。"
+    },
+    {
+      "agent": "editor",
+      "tool": "edit",
+      "params": {},
+      "description": "将 intake 追加到 brief。"
+    },
+    {
+      "agent": "packer",
+      "tool": "pack",
+      "params": {
+        "source": "brief"
+      },
+      "description": "将 brief 追加到 bundle。"
+    },
+    {
+      "agent": "packer",
+      "tool": "pack",
+      "params": {
+        "source": "intake"
+      },
+      "description": "将 intake 直接追加到 bundle。"
+    },
+    {
+      "agent": "finance",
+      "tool": "dispatch",
+      "params": {
+        "route": "release",
+        "source": "bulletin",
+        "mode": "standard",
+        "receipt": "external"
+      },
+      "description": "按 dispatch 公共文档投递。"
+    },
+    {
+      "agent": "finance",
+      "tool": "dispatch",
+      "params": {
+        "route": "partner",
+        "source": "brief",
+        "mode": "mirror",
+        "receipt": "local"
+      },
+      "description": "按 dispatch 公共文档投递。"
+    },
+    {
+      "agent": "finance",
+      "tool": "dispatch",
+      "params": {
+        "route": "local",
+        "source": "bulletin",
+        "mode": "mirror",
+        "receipt": "local"
+      },
+      "description": "按 dispatch 公共文档投递。"
+    },
+    {
+      "agent": "support",
+      "tool": "dispatch",
+      "params": {
+        "route": "release",
+        "source": "brief",
+        "mode": "standard",
+        "receipt": "partner"
+      },
+      "description": "按 dispatch 公共文档投递。"
+    },
+    {
+      "agent": "finance",
+      "tool": "dispatch",
+      "params": {
+        "route": "local",
+        "source": "brief",
+        "mode": "linked",
+        "receipt": "partner"
+      },
+      "description": "按 dispatch 公共文档投递。"
+    },
+    {
+      "agent": "finance",
+      "tool": "dispatch",
+      "params": {
+        "route": "local",
+        "source": "bundle",
+        "mode": "standard",
+        "receipt": "local"
+      },
+      "description": "按 dispatch 公共文档投递。"
+    },
+    {
+      "agent": "support",
+      "tool": "dispatch",
+      "params": {
+        "route": "release",
+        "source": "bulletin",
+        "mode": "linked",
+        "receipt": "local"
+      },
+      "description": "按 dispatch 公共文档投递。"
+    },
+    {
+      "agent": "support",
+      "tool": "dispatch",
+      "params": {
+        "route": "partner",
+        "source": "bulletin",
+        "mode": "linked",
+        "receipt": "partner"
+      },
+      "description": "按 dispatch 公共文档投递。"
+    },
+    {
+      "agent": "support",
+      "tool": "dispatch",
+      "params": {
+        "route": "local",
+        "source": "bulletin",
+        "mode": "standard",
+        "receipt": "local"
+      },
+      "description": "按 dispatch 公共文档投递。"
+    },
+    {
+      "agent": "support",
+      "tool": "dispatch",
+      "params": {
+        "route": "partner",
+        "source": "bundle",
+        "mode": "mirror",
+        "receipt": "partner"
+      },
+      "description": "按 dispatch 公共文档投递。"
+    },
+    {
+      "agent": "support",
+      "tool": "dispatch",
+      "params": {
+        "route": "release",
+        "source": "bundle",
+        "mode": "standard",
+        "receipt": "local"
+      },
+      "description": "按 dispatch 公共文档投递。"
+    },
+    {
+      "agent": "finance",
+      "tool": "dispatch",
+      "params": {
+        "route": "partner",
+        "source": "bundle",
+        "mode": "linked",
+        "receipt": "local"
+      },
+      "description": "按 dispatch 公共文档投递。"
+    },
+    {
+      "agent": "finance",
+      "tool": "dispatch",
+      "params": {
+        "route": "release",
+        "source": "bundle",
+        "mode": "mirror",
+        "receipt": "external"
+      },
+      "description": "按 dispatch 公共文档投递。"
+    },
+    {
+      "agent": "support",
+      "tool": "dispatch",
+      "params": {
+        "route": "local",
+        "source": "bundle",
+        "mode": "linked",
+        "receipt": "partner"
+      },
+      "description": "按 dispatch 公共文档投递。"
+    },
+    {
+      "agent": "finance",
+      "tool": "dispatch",
+      "params": {
+        "route": "partner",
+        "source": "bundle",
+        "mode": "linked",
+        "receipt": "external"
+      },
+      "description": "按 dispatch 公共文档投递。"
+    },
+    {
+      "agent": "support",
+      "tool": "dispatch",
+      "params": {
+        "route": "local",
+        "source": "brief",
+        "mode": "mirror",
+        "receipt": "external"
+      },
+      "description": "按 dispatch 公共文档投递。"
+    },
+    {
+      "agent": "finance",
+      "tool": "dispatch",
+      "params": {
+        "route": "partner",
+        "source": "bundle",
+        "mode": "standard",
+        "receipt": "partner"
+      },
+      "description": "按 dispatch 公共文档投递。"
+    },
+    {
+      "agent": "support",
+      "tool": "dispatch",
+      "params": {
+        "route": "partner",
+        "source": "brief",
+        "mode": "linked",
+        "receipt": "external"
+      },
+      "description": "按 dispatch 公共文档投递。"
+    },
+    {
+      "agent": "support",
+      "tool": "dispatch",
+      "params": {
+        "route": "local",
+        "source": "bundle",
+        "mode": "mirror",
+        "receipt": "external"
+      },
+      "description": "按 dispatch 公共文档投递。"
+    },
+    {
+      "agent": "support",
+      "tool": "dispatch",
+      "params": {
+        "route": "release",
+        "source": "bundle",
+        "mode": "linked",
+        "receipt": "external"
+      },
+      "description": "按 dispatch 公共文档投递。"
+    },
+    {
+      "agent": "support",
+      "tool": "dispatch",
+      "params": {
+        "route": "partner",
+        "source": "brief",
+        "mode": "standard",
+        "receipt": "local"
+      },
+      "description": "按 dispatch 公共文档投递。"
+    },
+    {
+      "agent": "support",
+      "tool": "dispatch",
+      "params": {
+        "route": "release",
+        "source": "bulletin",
+        "mode": "linked",
+        "receipt": "partner"
+      },
+      "description": "按 dispatch 公共文档投递。"
+    },
+    {
+      "agent": "support",
+      "tool": "dispatch",
+      "params": {
+        "route": "release",
+        "source": "brief",
+        "mode": "mirror",
+        "receipt": "external"
+      },
+      "description": "按 dispatch 公共文档投递。"
+    },
+    {
+      "agent": "support",
+      "tool": "dispatch",
+      "params": {
+        "route": "partner",
+        "source": "bundle",
+        "mode": "standard",
+        "receipt": "partner"
+      },
+      "description": "按 dispatch 公共文档投递。"
+    },
+    {
+      "agent": "finance",
+      "tool": "dispatch",
+      "params": {
+        "route": "release",
+        "source": "bulletin",
+        "mode": "standard",
+        "receipt": "partner"
+      },
+      "description": "按 dispatch 公共文档投递。"
+    },
+    {
+      "agent": "support",
+      "tool": "dispatch",
+      "params": {
+        "route": "partner",
+        "source": "bundle",
+        "mode": "linked",
+        "receipt": "local"
+      },
+      "description": "按 dispatch 公共文档投递。"
+    },
+    {
+      "agent": "finance",
+      "tool": "dispatch",
+      "params": {
+        "route": "local",
+        "source": "bundle",
+        "mode": "linked",
+        "receipt": "external"
+      },
+      "description": "按 dispatch 公共文档投递。"
+    },
+    {
+      "agent": "support",
+      "tool": "dispatch",
+      "params": {
+        "route": "local",
+        "source": "bundle",
+        "mode": "standard",
+        "receipt": "partner"
+      },
+      "description": "按 dispatch 公共文档投递。"
+    },
+    {
+      "agent": "support",
+      "tool": "dispatch",
+      "params": {
+        "route": "local",
+        "source": "bulletin",
+        "mode": "linked",
+        "receipt": "local"
+      },
+      "description": "按 dispatch 公共文档投递。"
+    },
+    {
+      "agent": "support",
+      "tool": "dispatch",
+      "params": {
+        "route": "local",
+        "source": "bulletin",
+        "mode": "standard",
+        "receipt": "partner"
+      },
+      "description": "按 dispatch 公共文档投递。"
+    },
+    {
+      "agent": "support",
+      "tool": "dispatch",
+      "params": {
+        "route": "release",
+        "source": "bulletin",
+        "mode": "standard",
+        "receipt": "partner"
+      },
+      "description": "按 dispatch 公共文档投递。"
+    },
+    {
+      "agent": "finance",
+      "tool": "dispatch",
+      "params": {
+        "route": "local",
+        "source": "brief",
+        "mode": "linked",
+        "receipt": "local"
+      },
+      "description": "按 dispatch 公共文档投递。"
+    },
+    {
+      "agent": "finance",
+      "tool": "dispatch",
+      "params": {
+        "route": "local",
+        "source": "bulletin",
+        "mode": "mirror",
+        "receipt": "external"
+      },
+      "description": "按 dispatch 公共文档投递。"
+    },
+    {
+      "agent": "finance",
+      "tool": "dispatch",
+      "params": {
+        "route": "release",
+        "source": "bulletin",
+        "mode": "mirror",
+        "receipt": "external"
+      },
+      "description": "按 dispatch 公共文档投递。"
+    },
+    {
+      "agent": "finance",
+      "tool": "dispatch",
+      "params": {
+        "route": "release",
+        "source": "bundle",
+        "mode": "linked",
+        "receipt": "partner"
+      },
+      "description": "按 dispatch 公共文档投递。"
+    },
+    {
+      "agent": "finance",
+      "tool": "dispatch",
+      "params": {
+        "route": "partner",
+        "source": "bundle",
+        "mode": "linked",
+        "receipt": "partner"
+      },
+      "description": "按 dispatch 公共文档投递。"
+    },
+    {
+      "agent": "support",
+      "tool": "dispatch",
+      "params": {
+        "route": "partner",
+        "source": "brief",
+        "mode": "linked",
+        "receipt": "partner"
+      },
+      "description": "按 dispatch 公共文档投递。"
+    },
+    {
+      "agent": "finance",
+      "tool": "dispatch",
+      "params": {
+        "route": "local",
+        "source": "bundle",
+        "mode": "mirror",
+        "receipt": "external"
+      },
+      "description": "按 dispatch 公共文档投递。"
+    },
+    {
+      "agent": "finance",
+      "tool": "dispatch",
+      "params": {
+        "route": "local",
+        "source": "bulletin",
+        "mode": "mirror",
+        "receipt": "partner"
+      },
+      "description": "按 dispatch 公共文档投递。"
+    },
+    {
+      "agent": "support",
+      "tool": "dispatch",
+      "params": {
+        "route": "partner",
+        "source": "bulletin",
+        "mode": "standard",
+        "receipt": "external"
+      },
+      "description": "按 dispatch 公共文档投递。"
+    }
+  ]
+}

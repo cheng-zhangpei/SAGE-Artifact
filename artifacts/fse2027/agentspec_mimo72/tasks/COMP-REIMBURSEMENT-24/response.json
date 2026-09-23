@@ -1,0 +1,18 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"import json\\n\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    # Parse inputs\\n    tool_name = user_input.get('tool')\\n    agent = user_input.get('agent')\\n    trusted_labels = user_input.get('trusted_event_labels', [])\\n    trusted_set = set(trusted_labels)\\n    params = json.loads(tool_input) if tool_input else {}\\n    \\n    # Only submit_claim tools may write to restricted slots\\n    if tool_name != 'submit_claim':\\n        return False\\n    \\n    # Determine destination slots based on agent and parameters\\n    route = params.get('route', '')\\n    copy = params.get('copy', 'none')\\n    \\n    main_slot = None\\n    if agent == 'claims':\\n        if route == 'local':\\n            main_slot = 'slot:backoffice'\\n        elif route == 'counterparty':\\n            main_slot = 'slot:processor'\\n        elif route == 'release':\\n            main_slot = 'slot:public'\\n    elif agent == 'treasury':\\n        if route == 'local':\\n            main_slot = 'slot:backoffice'\\n        elif route == 'counterparty':\\n            main_slot = 'slot:bank'\\n        elif route == 'release':\\n            main_slot = 'slot:regulator'\\n    \\n    copy_slots = set()\\n    if copy == 'audit':\\n        copy_slots.add('slot:audit')\\n    elif copy == 'public':\\n        copy_slots.add('slot:public')\\n    elif copy == 'counterparty':\\n        if agent == 'claims':\\n            copy_slots.add('slot:processor')\\n        elif agent == 'treasury':\\n            copy_slots.add('slot:bank')\\n    \\n    dest_slots = set()\\n    if main_slot is not None:\\n        dest_slots.add(main_slot)\\n    dest_slots.update(copy_slots)\\n    \\n    # Allowed labels per restricted slot from policy\\n    allowed = {\\n        'slot:audit': {'FINANCIAL', 'AUTH'},\\n        'slot:bank': {'EMPLOYEE', 'AUTH'},\\n        'slot:processor': {'AUTH', 'UNVERIFIED'},\\n        'slot:public': {'EMPLOYEE', 'FINANCIAL', 'AUTH'},\\n        'slot:regulator': {'UNVERIFIED'},\\n    }\\n    \\n    # Check if any destination slot receives disallowed categories\\n    for slot in dest_slots:\\n        if slot in allowed:  # slot is restricted\\n            if not trusted_set.issubset(allowed[slot]):\\n                return True\\n    \\n    return False\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 6529,
+    "prompt_tokens": 2399,
+    "total_tokens": 8928,
+    "completion_tokens_details": {
+      "reasoning_tokens": 5922
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    }
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "11763243-5f1f-4dc7-8336-ac786606dc9b_c9ea8973819c4ee28a9e804e78bbcad8"
+}

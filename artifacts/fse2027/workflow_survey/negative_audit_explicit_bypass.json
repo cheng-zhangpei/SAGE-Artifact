@@ -1,0 +1,6 @@
+{
+  "definition": "sink named reference whose source has no graph/expression path to an earlier AI on the same sink path",
+  "warning": "not a collision result",
+  "count": 0,
+  "findings": []
+}

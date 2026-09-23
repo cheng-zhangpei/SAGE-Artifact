@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"import json\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    tool = user_input.get('tool', '')\\n    data = json.loads(tool_input)\\n    source = data.get('source', '')\\n    target = data.get('target', '')\\n    labels = user_input.get('trusted_event_labels', {})\\n    if tool == 'upload' and target == 'public':\\n        if source == 'formatted' or source == 'packet':\\n            if 'PII' in labels:\\n                return True\\n        elif source == 'status':\\n            return False\\n    if tool == 'upload' and target == 'approval':\\n        return False\\n    if tool == 'collect' or tool == 'format_public':\\n        return False\\n    return False\\n}\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 1410,
+    "prompt_tokens": 797,
+    "total_tokens": 2207,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1227
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "f81edbef-0922-42a4-9350-376b965d232c_92296bff085642ecb7c2d3eb023481a1"
+}

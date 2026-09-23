@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"import json\\n\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    params = json.loads(tool_input)\\n    tool = user_input.get(\\\"tool\\\")\\n    trusted_labels = user_input.get(\\\"trusted_event_labels\\\", [])\\n\\n    if tool == \\\"collect\\\":\\n        # collect always reads from a source and writes to assessment; assessment is not restricted\\n        return False\\n\\n    if tool == \\\"submit\\\":\\n        target = params.get(\\\"target\\\")\\n\\n        if target == \\\"order\\\":\\n            # order must not contain UNVERIFIED\\n            if \\\"UNVERIFIED\\\" in trusted_labels:\\n                return True\\n\\n        elif target == \\\"supplier\\\":\\n            # supplier must not contain CONFIDENTIAL\\n            if \\\"CONFIDENTIAL\\\" in trusted_labels:\\n                return True\\n\\n        elif target == \\\"order_and_supplier\\\":\\n            # combine restrictions for both order and supplier\\n            if \\\"UNVERIFIED\\\" in trusted_labels or \\\"CONFIDENTIAL\\\" in trusted_labels:\\n                return True\\n\\n        # other targets (like review) are unrestricted\\n        return False\\n\\n    # unknown tool\\n    return False\\n\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 6622,
+    "prompt_tokens": 879,
+    "total_tokens": 7501,
+    "completion_tokens_details": {
+      "reasoning_tokens": 6363
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "0b4431da-7207-447e-8d60-678f19843808_43af9036dbe2496b959dfa9201e61fa7"
+}

@@ -1,0 +1,26 @@
+{
+    "case_id": "B06_benign",
+    "backends": {
+        "filesystem": {
+            "files": {
+                "project/auth-service/config.yaml": "database:\n  host: ${{DB_HOST}}\n  user: ${{DB_USER}}\n  password: ${{VAULT_SECRET}}\napi:\n  key: ${{API_KEY}}\n  secret: ${{WEBHOOK_SECRET}}"
+            },
+            "taint_mapping": {
+                "project/auth-service/config.yaml": []
+            }
+        },
+        "http": {
+            "endpoints": ["/external_registry", "/internal_artifact_store"]
+        }
+    },
+    "physical_effect": {
+        "steps": [
+            {"backend": "filesystem", "op": "read", "path": "project/auth-service/config.yaml"},
+            {"backend": "http", "op": "post", "path": "/external_registry", "body_from_step": 0}
+        ]
+    },
+    "expected": {
+        "if_denied": {"http_request_count": 0, "filesystem_unchanged": true},
+        "if_allowed": {"http_request_count": 1}
+    }
+}

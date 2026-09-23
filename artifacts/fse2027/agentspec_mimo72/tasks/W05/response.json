@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\"python\": \"import json\\n\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    params = json.loads(tool_input) if tool_input else {}\\n    tool_name = user_input.get(\\\"tool\\\", \\\"\\\")\\n    trusted_labels = user_input.get(\\\"trusted_event_labels\\\", [])\\n\\n    # Determine the target slot based on the tool and its parameters\\n    target_slot = \\\"\\\"\\n    if tool_name == \\\"summarize\\\":\\n        target_slot = \\\"slot:notes\\\"\\n    elif tool_name == \\\"stage\\\":\\n        target_slot = \\\"slot:staged\\\"\\n    elif tool_name == \\\"publish\\\":\\n        target_slot = params.get(\\\"target\\\", \\\"\\\")\\n    else:\\n        # Unknown tool; policy does not restrict, so allow\\n        return False\\n\\n    # Policy: forbidden labels for specific slots\\n    forbidden_slots = {\\n        \\\"slot:newsletter\\\": [\\\"CONFIDENTIAL\\\"],\\n        \\\"slot:website\\\": [\\\"CONFIDENTIAL\\\"]\\n    }\\n\\n    if target_slot in forbidden_slots:\\n        if any(label in trusted_labels for label in forbidden_slots[target_slot]):\\n            return True  # Stop the tool call\\n\\n    return False  # Allow the tool call\"}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 4068,
+    "prompt_tokens": 879,
+    "total_tokens": 4947,
+    "completion_tokens_details": {
+      "reasoning_tokens": 3796
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "ff90ec89-61b5-4464-a1ab-c527acbf0174_d3b983bed5084034bdbe0099be03dc47"
+}

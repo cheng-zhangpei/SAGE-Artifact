@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"import json\\n\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    params = json.loads(tool_input)\\n    tool_name = user_input.get(\\\"tool\\\")\\n    trusted_labels = set(user_input.get(\\\"trusted_event_labels\\\", []))\\n    allowed_labels = {\\n        \\\"room\\\": {\\\"PII\\\", \\\"VALUATION\\\", \\\"TOKEN\\\"},\\n        \\\"counsel\\\": {\\\"PII\\\", \\\"VALUATION\\\"},\\n        \\\"investors\\\": set(),\\n        \\\"notifications\\\": {\\\"VALUATION\\\"}\\n    }\\n    if tool_name in [\\\"collect\\\", \\\"create_access\\\"]:\\n        return False\\n    elif tool_name == \\\"deliver\\\":\\n        target = params.get(\\\"target\\\")\\n        email_copy = params.get(\\\"email_copy\\\", False)\\n        destinations = [target]\\n        if email_copy:\\n            destinations.append(\\\"notifications\\\")\\n        for dest in destinations:\\n            if dest in allowed_labels:\\n                allowed = allowed_labels[dest]\\n                if any(label not in allowed for label in trusted_labels):\\n                    return True\\n        return False\\n    else:\\n        return True\\n}\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 7063,
+    "prompt_tokens": 896,
+    "total_tokens": 7959,
+    "completion_tokens_details": {
+      "reasoning_tokens": 6803
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "8827d173-9a1f-4d4f-b351-3b41f1bb6c39_d1ab474577e544d5b36c04710a7e2ccb"
+}

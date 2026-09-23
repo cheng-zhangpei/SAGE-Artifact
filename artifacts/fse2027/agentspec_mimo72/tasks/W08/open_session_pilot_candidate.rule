@@ -1,0 +1,8 @@
+rule @rule_pilot_candidate
+trigger
+ open_session
+check
+ pilot_candidate
+enforce
+ stop
+end

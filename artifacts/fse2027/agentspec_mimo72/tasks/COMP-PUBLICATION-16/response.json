@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"def pilot_candidate(user_input, tool_input, intermediate_steps):\\n    import json\\n    tool_params = json.loads(tool_input)\\n    tool_name = user_input['tool']\\n    trusted_categories = set(user_input['trusted_event_labels'])\\n    policy = {\\n        \\\"slot:archive\\\": [\\\"UNVERIFIED\\\"],\\n        \\\"slot:counsel\\\": [\\\"UNVERIFIED\\\"],\\n        \\\"slot:public\\\": [\\\"PERSONAL\\\", \\\"EMBARGOED\\\", \\\"LICENSED\\\"],\\n        \\\"slot:syndicate\\\": [\\\"PERSONAL\\\", \\\"EMBARGOED\\\"],\\n        \\\"slot:wire\\\": [\\\"PERSONAL\\\", \\\"LICENSED\\\"]\\n    }\\n    if tool_name in ['collect_material', 'edit_draft', 'review_release']:\\n        return False\\n    elif tool_name == 'publish':\\n        audience = tool_params.get('audience')\\n        record = tool_params.get('record')\\n        agent = user_input['agent']\\n        main_target = None\\n        if agent == 'editorial':\\n            if audience == 'staff':\\n                main_target = 'slot:newsroom'\\n            elif audience == 'partner':\\n                main_target = 'slot:syndicate'\\n            elif audience == 'release':\\n                main_target = 'slot:public'\\n        elif agent == 'legal':\\n            if audience == 'staff':\\n                main_target = 'slot:newsroom'\\n            elif audience == 'partner':\\n                main_target = 'slot:counsel'\\n            elif audience == 'release':\\n                main_target = 'slot:wire'\\n        target_slots = []\\n        if main_target is not None:\\n            target_slots.append(main_target)\\n        if record != 'none':\\n            if record == 'archive':\\n                target_slots.append('slot:archive')\\n            elif record == 'public':\\n                target_slots.append('slot:public')\\n            elif record == 'partner':\\n                if agent == 'editorial':\\n                    target_slots.append('slot:syndicate')\\n                elif agent == 'legal':\\n                    target_slots.append('slot:counsel')\\n        for slot in target_slots:\\n            if slot in policy:\\n                allowed_categories = set(policy[slot])\\n                if not trusted_categories.issubset(allowed_categories):\\n                    return True\\n        return False\\n    else:\\n        return False\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 6316,
+    "prompt_tokens": 1930,
+    "total_tokens": 8246,
+    "completion_tokens_details": {
+      "reasoning_tokens": 5763
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "87890975-3479-4a51-bbc0-bd22407a5111_e926abe54201430ba2651ee36f7e0e69"
+}

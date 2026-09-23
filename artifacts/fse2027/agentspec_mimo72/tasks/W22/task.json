@@ -1,0 +1,392 @@
+{
+  "id": "W22",
+  "layer": "base",
+  "public": {
+    "description": "# 能源预测与生产控制\n\n电网分析把未核验天气预测放入共享预测集，运营方也可加入保密负荷计划。生产控制禁止未核验预测，公共信息屏不能显示保密负荷，内部模拟允许两者。模拟不会认证或删除来源属性。\n\n初始资料：slot:weather 含 UNVERIFIED；slot:load 含 CONFIDENTIAL。其他位置初始不含受限标签。\n本任务所有工具只读取各自文字描述列出的数据，不隐式读取调用者上下文。各位置保留此前内容，写入为追加；读取和全部副写入在同一次原子调用内完成。没有未说明的净化、认证或解密。工具可重复调用，调用顺序不限。请为整个工作流而不是某一条示例路径起草 guard；既要阻断禁止流，也要保留未违反策略的调用。未列在 B(v) 中的位置不禁止任何标签。",
+    "labels": {
+      "UNVERIFIED": "未核验天气预测",
+      "CONFIDENTIAL": "保密负荷计划"
+    },
+    "tools": [
+      {
+        "agent": "analyst",
+        "tool": "collect",
+        "params": {
+          "source": "weather"
+        },
+        "description": "将未核验天气预测追加共享集。"
+      },
+      {
+        "agent": "operator",
+        "tool": "collect",
+        "params": {
+          "source": "load"
+        },
+        "description": "将保密负荷计划追加共享集。"
+      },
+      {
+        "agent": "simulator",
+        "tool": "simulate",
+        "params": {},
+        "description": "根据共享集生成模拟结果，保留来源属性。"
+      },
+      {
+        "agent": "operator",
+        "tool": "apply",
+        "params": {
+          "target": "control"
+        },
+        "description": "将模拟结果用于生产控制。"
+      },
+      {
+        "agent": "operator",
+        "tool": "apply",
+        "params": {
+          "target": "display"
+        },
+        "description": "将模拟结果显示公共信息屏。"
+      },
+      {
+        "agent": "operator",
+        "tool": "apply",
+        "params": {
+          "target": "internal"
+        },
+        "description": "将模拟结果存入内部分析区。"
+      }
+    ],
+    "policy": {
+      "slot:control": [
+        "UNVERIFIED"
+      ],
+      "slot:display": [
+        "CONFIDENTIAL"
+      ]
+    }
+  },
+  "spec": {
+    "agents": [
+      "analyst",
+      "operator",
+      "simulator"
+    ],
+    "tools": [
+      "apply",
+      "collect",
+      "simulate"
+    ],
+    "labels": [
+      "CONFIDENTIAL",
+      "UNVERIFIED"
+    ],
+    "locations": [
+      "slot:control",
+      "slot:display",
+      "slot:forecast",
+      "slot:internal",
+      "slot:load",
+      "slot:simulation",
+      "slot:weather"
+    ],
+    "actions": [
+      {
+        "agent": "analyst",
+        "tool": "collect",
+        "params": {
+          "source": "weather"
+        },
+        "reads": [
+          "slot:weather"
+        ],
+        "writes": [
+          "slot:forecast"
+        ],
+        "gen": []
+      },
+      {
+        "agent": "operator",
+        "tool": "collect",
+        "params": {
+          "source": "load"
+        },
+        "reads": [
+          "slot:load"
+        ],
+        "writes": [
+          "slot:forecast"
+        ],
+        "gen": []
+      },
+      {
+        "agent": "simulator",
+        "tool": "simulate",
+        "params": {},
+        "reads": [
+          "slot:forecast"
+        ],
+        "writes": [
+          "slot:simulation"
+        ],
+        "gen": []
+      },
+      {
+        "agent": "operator",
+        "tool": "apply",
+        "params": {
+          "target": "control"
+        },
+        "reads": [
+          "slot:simulation"
+        ],
+        "writes": [
+          "slot:control"
+        ],
+        "gen": []
+      },
+      {
+        "agent": "operator",
+        "tool": "apply",
+        "params": {
+          "target": "display"
+        },
+        "reads": [
+          "slot:simulation"
+        ],
+        "writes": [
+          "slot:display"
+        ],
+        "gen": []
+      },
+      {
+        "agent": "operator",
+        "tool": "apply",
+        "params": {
+          "target": "internal"
+        },
+        "reads": [
+          "slot:simulation"
+        ],
+        "writes": [
+          "slot:internal"
+        ],
+        "gen": []
+      }
+    ],
+    "policy": {
+      "slot:control": [
+        "UNVERIFIED"
+      ],
+      "slot:display": [
+        "CONFIDENTIAL"
+      ]
+    },
+    "initial_state": {
+      "slot:weather": [
+        "UNVERIFIED"
+      ],
+      "slot:load": [
+        "CONFIDENTIAL"
+      ]
+    },
+    "constraints": []
+  },
+  "case": {
+    "id": "W22",
+    "title": "能源预测与生产控制",
+    "mechanism": "integrity_after_join",
+    "story": "电网分析把未核验天气预测放入共享预测集，运营方也可加入保密负荷计划。生产控制禁止未核验预测，公共信息屏不能显示保密负荷，内部模拟允许两者。模拟不会认证或删除来源属性。",
+    "labels": {
+      "UNVERIFIED": "未核验天气预测",
+      "CONFIDENTIAL": "保密负荷计划"
+    },
+    "initial_state": {
+      "slot:weather": [
+        "UNVERIFIED"
+      ],
+      "slot:load": [
+        "CONFIDENTIAL"
+      ]
+    },
+    "policy": {
+      "slot:control": [
+        "UNVERIFIED"
+      ],
+      "slot:display": [
+        "CONFIDENTIAL"
+      ]
+    },
+    "actions": [
+      {
+        "id": "weather",
+        "agent": "analyst",
+        "tool": "collect",
+        "params": {
+          "source": "weather"
+        },
+        "reads": [
+          "slot:weather"
+        ],
+        "writes": [
+          "slot:forecast"
+        ],
+        "gen": [],
+        "description": "将未核验天气预测追加共享集。"
+      },
+      {
+        "id": "load",
+        "agent": "operator",
+        "tool": "collect",
+        "params": {
+          "source": "load"
+        },
+        "reads": [
+          "slot:load"
+        ],
+        "writes": [
+          "slot:forecast"
+        ],
+        "gen": [],
+        "description": "将保密负荷计划追加共享集。"
+      },
+      {
+        "id": "simulate",
+        "agent": "simulator",
+        "tool": "simulate",
+        "params": {},
+        "reads": [
+          "slot:forecast"
+        ],
+        "writes": [
+          "slot:simulation"
+        ],
+        "gen": [],
+        "description": "根据共享集生成模拟结果，保留来源属性。"
+      },
+      {
+        "id": "control",
+        "agent": "operator",
+        "tool": "apply",
+        "params": {
+          "target": "control"
+        },
+        "reads": [
+          "slot:simulation"
+        ],
+        "writes": [
+          "slot:control"
+        ],
+        "gen": [],
+        "description": "将模拟结果用于生产控制。"
+      },
+      {
+        "id": "display",
+        "agent": "operator",
+        "tool": "apply",
+        "params": {
+          "target": "display"
+        },
+        "reads": [
+          "slot:simulation"
+        ],
+        "writes": [
+          "slot:display"
+        ],
+        "gen": [],
+        "description": "将模拟结果显示公共信息屏。"
+      },
+      {
+        "id": "internal",
+        "agent": "operator",
+        "tool": "apply",
+        "params": {
+          "target": "internal"
+        },
+        "reads": [
+          "slot:simulation"
+        ],
+        "writes": [
+          "slot:internal"
+        ],
+        "gen": [],
+        "description": "将模拟结果存入内部分析区。"
+      }
+    ],
+    "pairs": [
+      {
+        "id": "P1",
+        "difference": "模拟来源是否未经核验",
+        "danger": {
+          "prefix": [
+            "weather",
+            "simulate"
+          ],
+          "target": "control"
+        },
+        "benign": {
+          "prefix": [
+            "load",
+            "simulate"
+          ],
+          "target": "control"
+        }
+      },
+      {
+        "id": "P2",
+        "difference": "是否包含保密负荷",
+        "danger": {
+          "prefix": [
+            "load",
+            "simulate"
+          ],
+          "target": "display"
+        },
+        "benign": {
+          "prefix": [
+            "weather",
+            "simulate"
+          ],
+          "target": "display"
+        }
+      },
+      {
+        "id": "P3",
+        "difference": "生产控制还是内部分析",
+        "danger": {
+          "prefix": [
+            "load",
+            "weather",
+            "simulate"
+          ],
+          "target": "control"
+        },
+        "benign": {
+          "prefix": [
+            "load",
+            "weather",
+            "simulate"
+          ],
+          "target": "internal"
+        }
+      },
+      {
+        "id": "P4",
+        "difference": "是否合入负荷计划",
+        "danger": {
+          "prefix": [
+            "weather",
+            "load",
+            "simulate"
+          ],
+          "target": "display"
+        },
+        "benign": {
+          "prefix": [
+            "weather",
+            "simulate"
+          ],
+          "target": "display"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\"python\": \"import json\\n\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    params = json.loads(tool_input)\\n    trusted_labels = user_input.get('trusted_event_labels', [])\\n    tool = user_input.get('tool')\\n    \\n    policy = {\\n        'slot:ticket_a': {'TENANT_B'},\\n        'slot:ticket_b': {'TENANT_A'}\\n    }\\n    \\n    if tool == 'respond':\\n        tenant = params.get('tenant')\\n        fallback = params.get('fallback', False)\\n        \\n        if tenant == 'a' and fallback:\\n            return True\\n        \\n        if tenant == 'a' and not fallback:\\n            if 'TENANT_B' in set(trusted_labels):\\n                return True\\n            return False\\n        \\n        if tenant == 'b' and not fallback:\\n            if 'TENANT_A' in set(trusted_labels):\\n                return True\\n            return False\\n        \\n        if tenant == 'central':\\n            return False\\n    \\n    return False\"}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 4757,
+    "prompt_tokens": 929,
+    "total_tokens": 5686,
+    "completion_tokens_details": {
+      "reasoning_tokens": 4508
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 896
+    }
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "9c13d2c5-fc63-492a-ab7d-3e3925b4c196_dbcea6c6214c4c629ed6db9e913bea4a"
+}

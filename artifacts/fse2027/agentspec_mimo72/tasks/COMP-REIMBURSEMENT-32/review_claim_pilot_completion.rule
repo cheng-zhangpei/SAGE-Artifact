@@ -1,0 +1,8 @@
+rule @rule_pilot_completion
+trigger
+ review_claim
+check
+ pilot_completion
+enforce
+ stop
+end

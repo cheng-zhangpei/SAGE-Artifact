@@ -1,0 +1,3166 @@
+{
+  "definition": "lexical comparison of sink parameter fields against earlier AI parameter fields",
+  "counts": [
+    {
+      "stratum": "binary_sink_outside_narrow_detector",
+      "status": "context_projection_candidate",
+      "sink_findings": 57
+    },
+    {
+      "stratum": "binary_sink_outside_narrow_detector",
+      "status": "no_lexical_field_difference",
+      "sink_findings": 16
+    },
+    {
+      "stratum": "nonbinary_external_action",
+      "status": "context_projection_candidate",
+      "sink_findings": 48
+    },
+    {
+      "stratum": "nonbinary_external_action",
+      "status": "no_lexical_field_difference",
+      "sink_findings": 6
+    }
+  ],
+  "findings": [
+    {
+      "id": 4481,
+      "name": "AI-powered candidate screening and evaluation workflow using OpenAI and Airtable",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Send email to HR",
+      "earlier_ai_nodes": [
+        "Candidate Screener AI Agent",
+        "OpenAI Chat Model"
+      ],
+      "sink_fields": [
+        "Full Name ",
+        "Job Title",
+        "output"
+      ],
+      "ai_input_fields": [
+        "Cover Letter",
+        "Job Description",
+        "Job Title",
+        "Relevant Skills",
+        "Required Skills",
+        "text"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "Full Name ",
+        "output"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 3531,
+      "name": "Convert YouTube videos into SEO blog posts with GPT-4o, Dumpling AI, and Flux",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Gmail",
+      "earlier_ai_nodes": [
+        "Generate Blog Post"
+      ],
+      "sink_fields": [
+        "Recipient Email Address",
+        "htmlContent",
+        "message"
+      ],
+      "ai_input_fields": [
+        "transcript"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "Recipient Email Address",
+        "htmlContent",
+        "message"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 14768,
+      "name": "Auto-post trending X tweets with Gemini AI images, FLUX and Buffer",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Upload a file",
+      "earlier_ai_nodes": [
+        "Generate Tweet with Gemini",
+        "Get Daily x trends1"
+      ],
+      "sink_fields": [
+        "trend"
+      ],
+      "ai_input_fields": [
+        "trend"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [],
+      "status": "no_lexical_field_difference",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 5622,
+      "name": "Generate SWOT analysis reports with OpenAI, Google Sheets & APITemplate PDF Export",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Send Report",
+      "earlier_ai_nodes": [
+        "AI Agent",
+        "DeepSeek Reasoner",
+        "OpenAI 4.1-nano",
+        "OpenAI Chat Model",
+        "OpenAI Chat Model2"
+      ],
+      "sink_fields": [
+        "Company Name"
+      ],
+      "ai_input_fields": [
+        "Competitors",
+        "Financials",
+        "Industry"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "Company Name"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 12921,
+      "name": "Monitor construction execution from Google Drive photos with GPT‑4.1‑mini, Gmail and Google Sheets",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Drive: Share image (anyone reader)",
+      "earlier_ai_nodes": [
+        "AI: Analyze image",
+        "OpenAI Chat Model"
+      ],
+      "sink_fields": [
+        "imageId"
+      ],
+      "ai_input_fields": [],
+      "sink_fields_not_named_in_ai_inputs": [
+        "imageId"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 12921,
+      "name": "Monitor construction execution from Google Drive photos with GPT‑4.1‑mini, Gmail and Google Sheets",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Gmail: Send report",
+      "earlier_ai_nodes": [
+        "AI: Analyze image",
+        "OpenAI Chat Model"
+      ],
+      "sink_fields": [
+        "emailSubjectPrefix",
+        "emailTo",
+        "imageAnalysis",
+        "runTimestamp"
+      ],
+      "ai_input_fields": [],
+      "sink_fields_not_named_in_ai_inputs": [
+        "emailSubjectPrefix",
+        "emailTo",
+        "imageAnalysis",
+        "runTimestamp"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 1897,
+      "name": "Send specific PDF attachments from Gmail to Google Drive using OpenAI",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Upload file to folder",
+      "earlier_ai_nodes": [
+        "OpenAI matches PDF textual content"
+      ],
+      "sink_fields": [],
+      "ai_input_fields": [
+        "replyTokenSize",
+        "text"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [],
+      "status": "no_lexical_field_difference",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 8083,
+      "name": "Automate blog & LinkedIn content creation with OpenAI & Replicate AI images",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Draft Email",
+      "earlier_ai_nodes": [
+        "Content Creator"
+      ],
+      "sink_fields": [
+        "EMAIL_TO",
+        "properties"
+      ],
+      "ai_input_fields": [
+        "angle",
+        "canonical_url",
+        "images",
+        "language",
+        "notes",
+        "primary_link",
+        "reference_links",
+        "slug",
+        "tags",
+        "target_audience",
+        "title"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "EMAIL_TO",
+        "properties"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 8083,
+      "name": "Automate blog & LinkedIn content creation with OpenAI & Replicate AI images",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Published Email",
+      "earlier_ai_nodes": [
+        "Content Creator",
+        "Image prompt generator"
+      ],
+      "sink_fields": [
+        "id",
+        "properties"
+      ],
+      "ai_input_fields": [
+        "angle",
+        "canonical_url",
+        "images",
+        "language",
+        "notes",
+        "primary_link",
+        "properties",
+        "reference_links",
+        "slug",
+        "tags",
+        "target_audience",
+        "title"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "id"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 18596,
+      "name": "Generate and approve Google Business Profile posts with Gemini and Telegram",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Notify: autopilot approved",
+      "earlier_ai_nodes": [
+        "AI: Write piece",
+        "Gemini: Fixer (writer)",
+        "Gemini: Writer"
+      ],
+      "sink_fields": [
+        "chatId",
+        "text",
+        "title"
+      ],
+      "ai_input_fields": [
+        "chatInput"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "chatId",
+        "text",
+        "title"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 18596,
+      "name": "Generate and approve Google Business Profile posts with Gemini and Telegram",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Notify: client onboarded",
+      "earlier_ai_nodes": [
+        "AI: Synthesize knowledge base",
+        "Gemini: Fixer (synthesis)",
+        "Gemini: Synthesis"
+      ],
+      "sink_fields": [
+        "businessName",
+        "chatId"
+      ],
+      "ai_input_fields": [
+        "chatInput"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "businessName",
+        "chatId"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 18596,
+      "name": "Generate and approve Google Business Profile posts with Gemini and Telegram",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Send for approval",
+      "earlier_ai_nodes": [
+        "AI: Write piece",
+        "Gemini: Fixer (writer)",
+        "Gemini: Writer"
+      ],
+      "sink_fields": [
+        "chatId",
+        "pieceId",
+        "text",
+        "title"
+      ],
+      "ai_input_fields": [
+        "chatInput"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "chatId",
+        "pieceId",
+        "text",
+        "title"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 18901,
+      "name": "Generate and approve SEO content with OpenAI, Airtable, Slack, and WordPress",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Slack: Send Approval Request",
+      "earlier_ai_nodes": [
+        "AI: Create LinkedIn Post",
+        "AI: Create Twitter Thread",
+        "AI: Generate SEO Blog Content",
+        "AI: Generate Social Media Image"
+      ],
+      "sink_fields": [
+        "fields",
+        "id"
+      ],
+      "ai_input_fields": [
+        "Topic",
+        "fields",
+        "message"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "id"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 18901,
+      "name": "Generate and approve SEO content with OpenAI, Airtable, Slack, and WordPress",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Slack: Send Re-approval Request",
+      "earlier_ai_nodes": [
+        "AI: Improve Blog Content",
+        "AI: Regenerate LinkedIn Post",
+        "AI: Regenerate Twitter Thread"
+      ],
+      "sink_fields": [
+        "fields",
+        "id"
+      ],
+      "ai_input_fields": [
+        "Blog",
+        "message"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "fields",
+        "id"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 11138,
+      "name": "Generate AI photos with Gemini & auto-post to FB, Instagram & X with approval",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Confirm publishing to Facebook",
+      "earlier_ai_nodes": [
+        "AI Agent",
+        "Generate an image",
+        "OpenAI Chat Model",
+        "Speech to Text"
+      ],
+      "sink_fields": [
+        "message",
+        "publicUrl"
+      ],
+      "ai_input_fields": [
+        "text",
+        "videoPrompt"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "message",
+        "publicUrl"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 11138,
+      "name": "Generate AI photos with Gemini & auto-post to FB, Instagram & X with approval",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Confirm publishing to Instagram",
+      "earlier_ai_nodes": [
+        "AI Agent",
+        "Generate an image",
+        "OpenAI Chat Model",
+        "Speech to Text"
+      ],
+      "sink_fields": [
+        "message",
+        "publicUrl"
+      ],
+      "ai_input_fields": [
+        "text",
+        "videoPrompt"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "message",
+        "publicUrl"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 11138,
+      "name": "Generate AI photos with Gemini & auto-post to FB, Instagram & X with approval",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Confirm publishing to X",
+      "earlier_ai_nodes": [
+        "AI Agent",
+        "Generate an image",
+        "OpenAI Chat Model",
+        "Speech to Text"
+      ],
+      "sink_fields": [
+        "message",
+        "publicUrl"
+      ],
+      "ai_input_fields": [
+        "text",
+        "videoPrompt"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "message",
+        "publicUrl"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 11138,
+      "name": "Generate AI photos with Gemini & auto-post to FB, Instagram & X with approval",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Inform user about processing",
+      "earlier_ai_nodes": [
+        "AI Agent",
+        "OpenAI Chat Model",
+        "Speech to Text"
+      ],
+      "sink_fields": [
+        "message"
+      ],
+      "ai_input_fields": [
+        "text"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "message"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 11138,
+      "name": "Generate AI photos with Gemini & auto-post to FB, Instagram & X with approval",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Send Facebook Error Message",
+      "earlier_ai_nodes": [
+        "AI Agent",
+        "Generate an image",
+        "OpenAI Chat Model",
+        "Speech to Text"
+      ],
+      "sink_fields": [
+        "message"
+      ],
+      "ai_input_fields": [
+        "text",
+        "videoPrompt"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "message"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 11138,
+      "name": "Generate AI photos with Gemini & auto-post to FB, Instagram & X with approval",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Send Instagram Error Message",
+      "earlier_ai_nodes": [
+        "AI Agent",
+        "Generate an image",
+        "OpenAI Chat Model",
+        "Speech to Text"
+      ],
+      "sink_fields": [
+        "message"
+      ],
+      "ai_input_fields": [
+        "text",
+        "videoPrompt"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "message"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 11138,
+      "name": "Generate AI photos with Gemini & auto-post to FB, Instagram & X with approval",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Send X Error Message",
+      "earlier_ai_nodes": [
+        "AI Agent",
+        "Generate an image",
+        "OpenAI Chat Model",
+        "Speech to Text"
+      ],
+      "sink_fields": [
+        "message"
+      ],
+      "ai_input_fields": [
+        "text",
+        "videoPrompt"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "message"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 11138,
+      "name": "Generate AI photos with Gemini & auto-post to FB, Instagram & X with approval",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Send message and wait for response",
+      "earlier_ai_nodes": [
+        "AI Agent",
+        "Generate an image",
+        "OpenAI Chat Model",
+        "Speech to Text"
+      ],
+      "sink_fields": [
+        "message"
+      ],
+      "ai_input_fields": [
+        "text",
+        "videoPrompt"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "message"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 11138,
+      "name": "Generate AI photos with Gemini & auto-post to FB, Instagram & X with approval",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Send questions or proposal to user",
+      "earlier_ai_nodes": [
+        "AI Agent",
+        "OpenAI Chat Model",
+        "Speech to Text"
+      ],
+      "sink_fields": [
+        "message",
+        "output"
+      ],
+      "ai_input_fields": [
+        "text"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "message",
+        "output"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 7302,
+      "name": "Extract & structure invoice data with Google Vision OCR, Gemini LLM & Google Sheets",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Send a text message",
+      "earlier_ai_nodes": [
+        "Basic LLM Chain",
+        "OpenRouter Chat Model"
+      ],
+      "sink_fields": [
+        "DATE",
+        "TRANSACTION DETAIL",
+        "VALUE",
+        "VENDOR"
+      ],
+      "ai_input_fields": [
+        "responses"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "DATE",
+        "TRANSACTION DETAIL",
+        "VALUE",
+        "VENDOR"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 6486,
+      "name": "Automated social media content creation with OpenAI, LinkedIn & Twitter approval",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Create a post",
+      "earlier_ai_nodes": [
+        "Prepare Content Review Email",
+        "Social Media Content Factory",
+        "gpt-4o LLM",
+        "gpt-4o-mini"
+      ],
+      "sink_fields": [
+        "output"
+      ],
+      "ai_input_fields": [
+        "Link (optional)",
+        "Topic",
+        "formMode",
+        "output"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [],
+      "status": "no_lexical_field_difference",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 6486,
+      "name": "Automated social media content creation with OpenAI, LinkedIn & Twitter approval",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Send a message",
+      "earlier_ai_nodes": [
+        "Generate an image",
+        "Prepare Content Review Email",
+        "Social Media Content Factory",
+        "gpt-4o LLM",
+        "gpt-4o-mini"
+      ],
+      "sink_fields": [
+        "output"
+      ],
+      "ai_input_fields": [
+        "Link (optional)",
+        "Topic",
+        "formMode",
+        "output"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [],
+      "status": "no_lexical_field_difference",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 10870,
+      "name": "Transcribe long audio files beyond 25MB limit with FileFlows and OpenAI Whisper",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Send Email with Transcription",
+      "earlier_ai_nodes": [
+        "OpenAI"
+      ],
+      "sink_fields": [
+        "email"
+      ],
+      "ai_input_fields": [],
+      "sink_fields_not_named_in_ai_inputs": [
+        "email"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 10870,
+      "name": "Transcribe long audio files beyond 25MB limit with FileFlows and OpenAI Whisper",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Send Error",
+      "earlier_ai_nodes": [
+        "OpenAI"
+      ],
+      "sink_fields": [
+        "email"
+      ],
+      "ai_input_fields": [],
+      "sink_fields_not_named_in_ai_inputs": [
+        "email"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 12034,
+      "name": "Automate monthly payroll tax compliance with GPT-4, Google Sheets and Drive",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Archive to Drive",
+      "earlier_ai_nodes": [
+        "AI Tax Compliance Analyst",
+        "OpenAI GPT-4"
+      ],
+      "sink_fields": [
+        "driveFolderId"
+      ],
+      "ai_input_fields": [],
+      "sink_fields_not_named_in_ai_inputs": [
+        "driveFolderId"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 12034,
+      "name": "Automate monthly payroll tax compliance with GPT-4, Google Sheets and Drive",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Send to Tax Agent",
+      "earlier_ai_nodes": [
+        "AI Tax Compliance Analyst",
+        "OpenAI GPT-4"
+      ],
+      "sink_fields": [
+        "taxAgentEmail"
+      ],
+      "ai_input_fields": [],
+      "sink_fields_not_named_in_ai_inputs": [
+        "taxAgentEmail"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 18288,
+      "name": "Screen job applications with OpenAI, Google Sheets, Google Drive, and Gmail",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Notify HR - Low Match",
+      "earlier_ai_nodes": [
+        "OpenAI Model for CV Screening",
+        "Screen Resume with AI"
+      ],
+      "sink_fields": [
+        "ai_score",
+        "company_name",
+        "hr_email",
+        "hr_remarks",
+        "screening_result"
+      ],
+      "ai_input_fields": [
+        "job_requirements",
+        "review_threshold",
+        "strong_match_threshold",
+        "text"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "ai_score",
+        "company_name",
+        "hr_email",
+        "hr_remarks",
+        "screening_result"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 18288,
+      "name": "Screen job applications with OpenAI, Google Sheets, Google Drive, and Gmail",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Notify HR - Review Required",
+      "earlier_ai_nodes": [
+        "OpenAI Model for CV Screening",
+        "Screen Resume with AI"
+      ],
+      "sink_fields": [
+        "ai_score",
+        "company_name",
+        "hr_email",
+        "hr_remarks",
+        "screening_result"
+      ],
+      "ai_input_fields": [
+        "job_requirements",
+        "review_threshold",
+        "strong_match_threshold",
+        "text"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "ai_score",
+        "company_name",
+        "hr_email",
+        "hr_remarks",
+        "screening_result"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 18288,
+      "name": "Screen job applications with OpenAI, Google Sheets, Google Drive, and Gmail",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Notify HR - Strong Match",
+      "earlier_ai_nodes": [
+        "OpenAI Model for CV Screening",
+        "Screen Resume with AI"
+      ],
+      "sink_fields": [
+        "ai_score",
+        "company_name",
+        "hr_email",
+        "hr_remarks",
+        "screening_result"
+      ],
+      "ai_input_fields": [
+        "job_requirements",
+        "review_threshold",
+        "strong_match_threshold",
+        "text"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "ai_score",
+        "company_name",
+        "hr_email",
+        "hr_remarks",
+        "screening_result"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 18805,
+      "name": "Screen CVs for hidden prompt injections with Gemini, Google Drive, Sheets, and Telegram",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Alert Vision Path Failure",
+      "earlier_ai_nodes": [
+        "Gemini Vision Chat",
+        "Vision Analysis Screener"
+      ],
+      "sink_fields": [
+        "Full Name"
+      ],
+      "ai_input_fields": [
+        "Role"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "Full Name"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 18805,
+      "name": "Screen CVs for hidden prompt injections with Gemini, Google Drive, Sheets, and Telegram",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Notify Clean Result on Telegram",
+      "earlier_ai_nodes": [
+        "Gemini Text Chat",
+        "Gemini Vision Chat",
+        "Text Analysis Screener",
+        "Vision Analysis Screener"
+      ],
+      "sink_fields": [
+        "Full Name",
+        "Role",
+        "score_gap",
+        "trusted_reason",
+        "vision_score"
+      ],
+      "ai_input_fields": [
+        "Role",
+        "text"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "Full Name",
+        "score_gap",
+        "trusted_reason",
+        "vision_score"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 18805,
+      "name": "Screen CVs for hidden prompt injections with Gemini, Google Drive, Sheets, and Telegram",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Notify Flagged on Telegram",
+      "earlier_ai_nodes": [
+        "Gemini Text Chat",
+        "Gemini Vision Chat",
+        "Text Analysis Screener",
+        "Vision Analysis Screener"
+      ],
+      "sink_fields": [
+        "Full Name",
+        "Role",
+        "score_gap",
+        "text_qualified",
+        "text_score",
+        "vision_qualified",
+        "vision_score",
+        "years_gap"
+      ],
+      "ai_input_fields": [
+        "Role",
+        "text"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "Full Name",
+        "score_gap",
+        "text_qualified",
+        "text_score",
+        "vision_qualified",
+        "vision_score",
+        "years_gap"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 18805,
+      "name": "Screen CVs for hidden prompt injections with Gemini, Google Drive, Sheets, and Telegram",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Quarantine to Drive",
+      "earlier_ai_nodes": [
+        "Gemini Text Chat",
+        "Gemini Vision Chat",
+        "Text Analysis Screener",
+        "Vision Analysis Screener"
+      ],
+      "sink_fields": [
+        "Full Name"
+      ],
+      "ai_input_fields": [
+        "Role",
+        "text"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "Full Name"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 13528,
+      "name": "Create AI-driven social media posts and publish to all major platforms",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Facebook",
+      "earlier_ai_nodes": [
+        "Generate an image"
+      ],
+      "sink_fields": [
+        "fields"
+      ],
+      "ai_input_fields": [
+        "fields"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [],
+      "status": "no_lexical_field_difference",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 13528,
+      "name": "Create AI-driven social media posts and publish to all major platforms",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Instagram",
+      "earlier_ai_nodes": [
+        "Generate an image"
+      ],
+      "sink_fields": [
+        "id"
+      ],
+      "ai_input_fields": [
+        "fields"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "id"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 13528,
+      "name": "Create AI-driven social media posts and publish to all major platforms",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Instagram Container",
+      "earlier_ai_nodes": [
+        "Generate an image"
+      ],
+      "sink_fields": [
+        "data",
+        "fields"
+      ],
+      "ai_input_fields": [
+        "fields"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "data"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 13528,
+      "name": "Create AI-driven social media posts and publish to all major platforms",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "LinkedIn",
+      "earlier_ai_nodes": [
+        "Generate an image"
+      ],
+      "sink_fields": [
+        "fields"
+      ],
+      "ai_input_fields": [
+        "fields"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [],
+      "status": "no_lexical_field_difference",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 15652,
+      "name": "Convert Telegram voice notes into markdown journals with Groq Whisper and Gemini",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Create “Personal Journal (n8n)” Folder",
+      "earlier_ai_nodes": [
+        "Clean Transcript with Gemini",
+        "Google Gemini Chat Model"
+      ],
+      "sink_fields": [],
+      "ai_input_fields": [
+        "timestampedTranscript"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [],
+      "status": "no_lexical_field_difference",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 15652,
+      "name": "Convert Telegram voice notes into markdown journals with Groq Whisper and Gemini",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Find “Personal Journal (n8n)” Folder",
+      "earlier_ai_nodes": [
+        "Clean Transcript with Gemini",
+        "Google Gemini Chat Model"
+      ],
+      "sink_fields": [],
+      "ai_input_fields": [
+        "timestampedTranscript"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [],
+      "status": "no_lexical_field_difference",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 15652,
+      "name": "Convert Telegram voice notes into markdown journals with Groq Whisper and Gemini",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Upload Journal to Existing Folder",
+      "earlier_ai_nodes": [
+        "Clean Transcript with Gemini",
+        "Google Gemini Chat Model"
+      ],
+      "sink_fields": [
+        "id"
+      ],
+      "ai_input_fields": [
+        "timestampedTranscript"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "id"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 15652,
+      "name": "Convert Telegram voice notes into markdown journals with Groq Whisper and Gemini",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Upload Journal to New Folder",
+      "earlier_ai_nodes": [
+        "Clean Transcript with Gemini",
+        "Google Gemini Chat Model"
+      ],
+      "sink_fields": [
+        "id"
+      ],
+      "ai_input_fields": [
+        "timestampedTranscript"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "id"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 18519,
+      "name": "Score and triage job candidates with OpenAI, Google Drive, Google Sheets, and Gmail",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Email HR: Candidate Accepted",
+      "earlier_ai_nodes": [
+        "AI Evaluation Agent",
+        "OpenAI GPT-4o Mini"
+      ],
+      "sink_fields": [
+        "Score"
+      ],
+      "ai_input_fields": [
+        "body"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "Score"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 18519,
+      "name": "Score and triage job candidates with OpenAI, Google Drive, Google Sheets, and Gmail",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Email HR: Manual Review Needed",
+      "earlier_ai_nodes": [
+        "AI Evaluation Agent",
+        "OpenAI GPT-4o Mini"
+      ],
+      "sink_fields": [
+        "body",
+        "output"
+      ],
+      "ai_input_fields": [
+        "body"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "output"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 18519,
+      "name": "Score and triage job candidates with OpenAI, Google Drive, Google Sheets, and Gmail",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Email Interview Invite",
+      "earlier_ai_nodes": [
+        "AI Evaluation Agent",
+        "OpenAI GPT-4o Mini"
+      ],
+      "sink_fields": [
+        "body"
+      ],
+      "ai_input_fields": [
+        "body"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [],
+      "status": "no_lexical_field_difference",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 17705,
+      "name": "Score and route job candidates with Mistral, Gemini, Google Sheets, and Drive",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Send Rejection Email",
+      "earlier_ai_nodes": [
+        "Evaluate Candidate LLM Chain",
+        "Google Gemini Model"
+      ],
+      "sink_fields": [
+        "Email"
+      ],
+      "ai_input_fields": [
+        "prompt"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "Email"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 17705,
+      "name": "Score and route job candidates with Mistral, Gemini, Google Sheets, and Drive",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Send Shortlist Email",
+      "earlier_ai_nodes": [
+        "Evaluate Candidate LLM Chain",
+        "Google Gemini Model"
+      ],
+      "sink_fields": [
+        "Email"
+      ],
+      "ai_input_fields": [
+        "prompt"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "Email"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 17705,
+      "name": "Score and route job candidates with Mistral, Gemini, Google Sheets, and Drive",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Upload Rejection Insights to Drive",
+      "earlier_ai_nodes": [
+        "Evaluate Candidate LLM Chain",
+        "Google Gemini Model"
+      ],
+      "sink_fields": [
+        "Name",
+        "folderId"
+      ],
+      "ai_input_fields": [
+        "prompt"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "Name",
+        "folderId"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 17705,
+      "name": "Score and route job candidates with Mistral, Gemini, Google Sheets, and Drive",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Upload Rejection Resume to Drive",
+      "earlier_ai_nodes": [
+        "Evaluate Candidate LLM Chain",
+        "Google Gemini Model"
+      ],
+      "sink_fields": [
+        "CV",
+        "binary",
+        "folderId"
+      ],
+      "ai_input_fields": [
+        "prompt"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "CV",
+        "binary",
+        "folderId"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 17705,
+      "name": "Score and route job candidates with Mistral, Gemini, Google Sheets, and Drive",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Upload Shortlist Insights to Drive",
+      "earlier_ai_nodes": [
+        "Evaluate Candidate LLM Chain",
+        "Google Gemini Model"
+      ],
+      "sink_fields": [
+        "Name",
+        "folderId"
+      ],
+      "ai_input_fields": [
+        "prompt"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "Name",
+        "folderId"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 17705,
+      "name": "Score and route job candidates with Mistral, Gemini, Google Sheets, and Drive",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Upload Shortlist Resume to Drive",
+      "earlier_ai_nodes": [
+        "Evaluate Candidate LLM Chain",
+        "Google Gemini Model"
+      ],
+      "sink_fields": [
+        "CV",
+        "binary",
+        "folderId"
+      ],
+      "ai_input_fields": [
+        "prompt"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "CV",
+        "binary",
+        "folderId"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 13806,
+      "name": "Grade PDF assignments with Google Gemini and upload reports to Google Drive",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Upload file",
+      "earlier_ai_nodes": [
+        "AI Agent - Grade Assignment",
+        "Google Gemini Chat Model"
+      ],
+      "sink_fields": [
+        "body"
+      ],
+      "ai_input_fields": [
+        "answerScript",
+        "testPaperText"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "body"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 8139,
+      "name": "Automate invoice processing with OCR.Space, GPT-4 & Google Drive to Gmail",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Error",
+      "earlier_ai_nodes": [
+        "AI Agent",
+        "OpenAI Chat Model"
+      ],
+      "sink_fields": [],
+      "ai_input_fields": [
+        "company"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [],
+      "status": "no_lexical_field_difference",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 8139,
+      "name": "Automate invoice processing with OCR.Space, GPT-4 & Google Drive to Gmail",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Error1",
+      "earlier_ai_nodes": [
+        "AI Agent",
+        "OpenAI Chat Model"
+      ],
+      "sink_fields": [],
+      "ai_input_fields": [
+        "company"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [],
+      "status": "no_lexical_field_difference",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 8139,
+      "name": "Automate invoice processing with OCR.Space, GPT-4 & Google Drive to Gmail",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Send Email",
+      "earlier_ai_nodes": [
+        "AI Agent",
+        "OpenAI Chat Model"
+      ],
+      "sink_fields": [],
+      "ai_input_fields": [
+        "company"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [],
+      "status": "no_lexical_field_difference",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 18421,
+      "name": "Transcribe media URLs to AI-summarized Google Drive notes with Apify Whisper",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Upload note to Drive",
+      "earlier_ai_nodes": [
+        "OpenAI chat model",
+        "Summarize transcript"
+      ],
+      "sink_fields": [
+        "driveFolderId",
+        "fileName"
+      ],
+      "ai_input_fields": [
+        "summaryModel",
+        "text"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "driveFolderId",
+        "fileName"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 14661,
+      "name": "Generate AI sales battle cards with Olostep, Gemini, and Google Docs",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Share link & email",
+      "earlier_ai_nodes": [
+        "Pitch Assets generator",
+        "Research Analyzer",
+        "Sales battle card generator"
+      ],
+      "sink_fields": [
+        "Company Name",
+        "id"
+      ],
+      "ai_input_fields": [
+        "Company Name",
+        "Value proposition",
+        "content",
+        "markdown_content",
+        "result",
+        "sources"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "id"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 13323,
+      "name": "Cross-post social content from Google Sheets to 5 platforms with OpenAI images",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Facebook",
+      "earlier_ai_nodes": [
+        "Generate an image",
+        "Image Prompt Agent",
+        "OpenRouter Gemini 2.5 Flash"
+      ],
+      "sink_fields": [
+        "Content"
+      ],
+      "ai_input_fields": [
+        "Content",
+        "output"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [],
+      "status": "no_lexical_field_difference",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 13323,
+      "name": "Cross-post social content from Google Sheets to 5 platforms with OpenAI images",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Instagram",
+      "earlier_ai_nodes": [
+        "Generate an image",
+        "Image Prompt Agent",
+        "OpenRouter Gemini 2.5 Flash"
+      ],
+      "sink_fields": [
+        "Content",
+        "id"
+      ],
+      "ai_input_fields": [
+        "Content",
+        "output"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "id"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 13323,
+      "name": "Cross-post social content from Google Sheets to 5 platforms with OpenAI images",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Instagram Image",
+      "earlier_ai_nodes": [
+        "Generate an image",
+        "Image Prompt Agent",
+        "OpenRouter Gemini 2.5 Flash"
+      ],
+      "sink_fields": [
+        "Content",
+        "data"
+      ],
+      "ai_input_fields": [
+        "Content",
+        "output"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "data"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 13323,
+      "name": "Cross-post social content from Google Sheets to 5 platforms with OpenAI images",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "LinkedIn",
+      "earlier_ai_nodes": [
+        "Generate an image",
+        "Image Prompt Agent",
+        "OpenRouter Gemini 2.5 Flash"
+      ],
+      "sink_fields": [
+        "Content"
+      ],
+      "ai_input_fields": [
+        "Content",
+        "output"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [],
+      "status": "no_lexical_field_difference",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 3505,
+      "name": "Extract university term dates from Excel using CloudFlare markdown conversion",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Send Email with Attachment",
+      "earlier_ai_nodes": [
+        "Extract Key Events and Dates",
+        "Google Gemini Chat Model"
+      ],
+      "sink_fields": [],
+      "ai_input_fields": [
+        "target_sheet"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [],
+      "status": "no_lexical_field_difference",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 6612,
+      "name": "AI resume screening & evaluation for HR with GPT-4 & Google Workspace",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Send message via Slack to the hiring team",
+      "earlier_ai_nodes": [
+        "HR Expert Agent",
+        "Profile Analyzer Agent",
+        "gpt-4-1 model 2",
+        "gpt4-1 model"
+      ],
+      "sink_fields": [
+        "full_name",
+        "overall_fit_score",
+        "position",
+        "recommendation",
+        "strengths"
+      ],
+      "ai_input_fields": [
+        "Job Role",
+        "text"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "full_name",
+        "overall_fit_score",
+        "position",
+        "recommendation",
+        "strengths"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 15973,
+      "name": "Send AI-written invoice emails and payment reminders with Google Sheets, Gmail, Telegram and Groq",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Send Initial Invoice",
+      "earlier_ai_nodes": [
+        "AI Agent3",
+        "Groq Chat Model3"
+      ],
+      "sink_fields": [
+        "output"
+      ],
+      "ai_input_fields": [],
+      "sink_fields_not_named_in_ai_inputs": [
+        "output"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 9390,
+      "name": "Enhance product photos with Google Gemini AI for e-commerce catalog",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Save image",
+      "earlier_ai_nodes": [
+        "Edit Image"
+      ],
+      "sink_fields": [
+        "dest_folder_id",
+        "fileExtension",
+        "input_file_name_no_ext"
+      ],
+      "ai_input_fields": [
+        "text_prompt"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "dest_folder_id",
+        "fileExtension",
+        "input_file_name_no_ext"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 3194,
+      "name": "Automated voice appointment reminders with Google Calendar GPT ElevenLabs Gmail",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Send Voice Reminder",
+      "earlier_ai_nodes": [
+        "OpenAI Chat Model",
+        "create message"
+      ],
+      "sink_fields": [
+        "attendees",
+        "output"
+      ],
+      "ai_input_fields": [
+        "location",
+        "start",
+        "summary"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "attendees",
+        "output"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 3155,
+      "name": "Automatic weekly digital PR stories suggestions with Reddit and Anthropic",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Google Drive6",
+      "earlier_ai_nodes": [
+        "Anthropic Chat Model",
+        "Anthropic Chat Model1",
+        "Anthropic Chat Model2",
+        "Comments Analysis",
+        "News Analysis"
+      ],
+      "sink_fields": [],
+      "ai_input_fields": [
+        "Comments",
+        "Date",
+        "Title",
+        "URL",
+        "Upvotes",
+        "content",
+        "markdown",
+        "text"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [],
+      "status": "no_lexical_field_difference",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 3155,
+      "name": "Automatic weekly digital PR stories suggestions with Reddit and Anthropic",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Google Drive7",
+      "earlier_ai_nodes": [
+        "Anthropic Chat Model",
+        "Anthropic Chat Model1",
+        "Anthropic Chat Model2",
+        "Comments Analysis",
+        "News Analysis"
+      ],
+      "sink_fields": [
+        "id"
+      ],
+      "ai_input_fields": [
+        "Comments",
+        "Date",
+        "Title",
+        "URL",
+        "Upvotes",
+        "content",
+        "markdown",
+        "text"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "id"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 5694,
+      "name": "Automate newsletter creation & client delivery with GPT-4O, Google Sheets",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Send an email to admin",
+      "earlier_ai_nodes": [
+        "Create HTML for Newsletter"
+      ],
+      "sink_fields": [
+        "Date",
+        "webViewLink"
+      ],
+      "ai_input_fields": [
+        "Topic",
+        "hooks"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "Date",
+        "webViewLink"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 5694,
+      "name": "Automate newsletter creation & client delivery with GPT-4O, Google Sheets",
+      "stratum": "binary_sink_outside_narrow_detector",
+      "sink": "Upload doc to google drive",
+      "earlier_ai_nodes": [
+        "Create HTML for Newsletter"
+      ],
+      "sink_fields": [
+        "Date"
+      ],
+      "ai_input_fields": [
+        "Topic",
+        "hooks"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "Date"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 12576,
+      "name": "Detect and score refund risk with Webhook, OpenAI and Google Sheets",
+      "stratum": "nonbinary_external_action",
+      "sink": "Email Finance",
+      "earlier_ai_nodes": [
+        "Message a model2"
+      ],
+      "sink_fields": [
+        "currency",
+        "customer_email",
+        "order_id",
+        "order_value",
+        "recommendation_action",
+        "risk_drivers",
+        "risk_level",
+        "risk_score"
+      ],
+      "ai_input_fields": [
+        "account_age_days",
+        "billing_country",
+        "currency",
+        "order_id",
+        "order_value",
+        "refund_count_30d",
+        "refund_count_lifetime",
+        "shipping_country"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "customer_email",
+        "recommendation_action",
+        "risk_drivers",
+        "risk_level",
+        "risk_score"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 5742,
+      "name": "Manage Jira issues with natural language via Telegram and GPT-4o",
+      "stratum": "nonbinary_external_action",
+      "sink": "Response",
+      "earlier_ai_nodes": [
+        "Jira Agent",
+        "OpenAI Chat Model"
+      ],
+      "sink_fields": [
+        "message",
+        "output"
+      ],
+      "ai_input_fields": [
+        "data",
+        "text"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "message",
+        "output"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 18807,
+      "name": "Build competitor battlecards from web pages and G2 reviews with Bright Data, GPT-5.6 and Google Docs",
+      "stratum": "nonbinary_external_action",
+      "sink": "Post The Link",
+      "earlier_ai_nodes": [
+        "Battlecard Writer",
+        "Write The Battlecard"
+      ],
+      "sink_fields": [
+        "id",
+        "slack_channel",
+        "slack_message"
+      ],
+      "ai_input_fields": [
+        "brand",
+        "domain",
+        "evidence",
+        "losing_on",
+        "your_product"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "id",
+        "slack_channel",
+        "slack_message"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 13818,
+      "name": "Monitor news sentiment trends with GPT-4o-mini, MrScraper, Slack and Notion",
+      "stratum": "nonbinary_external_action",
+      "sink": "Slack - Daily Digest",
+      "earlier_ai_nodes": [
+        "OpenAI Chat Model",
+        "Sentiment & Summary AI Agent"
+      ],
+      "sink_fields": [
+        "digestMessage",
+        "slackChannel"
+      ],
+      "ai_input_fields": [
+        "author",
+        "content",
+        "publishedAt",
+        "sourceUrl",
+        "title"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "digestMessage",
+        "slackChannel"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 13818,
+      "name": "Monitor news sentiment trends with GPT-4o-mini, MrScraper, Slack and Notion",
+      "stratum": "nonbinary_external_action",
+      "sink": "Slack - Urgent Alert",
+      "earlier_ai_nodes": [
+        "OpenAI Chat Model",
+        "Sentiment & Summary AI Agent"
+      ],
+      "sink_fields": [
+        "action_reason",
+        "key_topics",
+        "publishedAt",
+        "quote",
+        "sentiment",
+        "sentimentEmoji",
+        "sentiment_score",
+        "sourceUrl",
+        "summary",
+        "title",
+        "tone"
+      ],
+      "ai_input_fields": [
+        "author",
+        "content",
+        "publishedAt",
+        "sourceUrl",
+        "title"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "action_reason",
+        "key_topics",
+        "quote",
+        "sentiment",
+        "sentimentEmoji",
+        "sentiment_score",
+        "summary",
+        "tone"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 16146,
+      "name": "Analyze skill gaps for target jobs with BrowserAct, LinkedIn and GPT-4o-mini",
+      "stratum": "nonbinary_external_action",
+      "sink": "8. Gmail — Send 90-Day Learning Plan",
+      "earlier_ai_nodes": [
+        "5. AI Agent — Skill Gap Analysis",
+        "OpenAI — GPT-4o-mini Model"
+      ],
+      "sink_fields": [
+        "email",
+        "experienceLevel",
+        "gapScore",
+        "haveCount",
+        "location",
+        "marketInsight",
+        "marketSkills",
+        "missingCount",
+        "motivationMessage",
+        "ninetyDayPlan",
+        "skillsMissing",
+        "skillsYouHave",
+        "studentName",
+        "targetRole",
+        "top3Courses",
+        "weeklyHours"
+      ],
+      "ai_input_fields": [
+        "currentSkills",
+        "day30",
+        "day60",
+        "day90",
+        "experienceLevel",
+        "jobListingsRaw",
+        "location",
+        "studentName",
+        "targetRole",
+        "today",
+        "weeklyHours"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "email",
+        "gapScore",
+        "haveCount",
+        "marketInsight",
+        "marketSkills",
+        "missingCount",
+        "motivationMessage",
+        "ninetyDayPlan",
+        "skillsMissing",
+        "skillsYouHave",
+        "top3Courses"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 15356,
+      "name": "Turn video recordings into Twitter (X) threads with WayinVideo, GPT-4o-mini and Google Sheets",
+      "stratum": "nonbinary_external_action",
+      "sink": "13. Twitter/X — Post Tweet",
+      "earlier_ai_nodes": [
+        "8. AI Agent — Write Twitter Thread",
+        "9. OpenAI — GPT-4o-mini Model"
+      ],
+      "sink_fields": [
+        "tweetText"
+      ],
+      "ai_input_fields": [
+        "formattedTranscript",
+        "niche",
+        "speakers",
+        "targetAudience",
+        "totalMinutes",
+        "videoTitle"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "tweetText"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 10625,
+      "name": "Track Singapore COE prices with AI forecasting & smart buy recommendations via Telegram",
+      "stratum": "nonbinary_external_action",
+      "sink": "Send Email Report",
+      "earlier_ai_nodes": [
+        "AI Agent - COE Analysis",
+        "OpenRouter Chat Model"
+      ],
+      "sink_fields": [
+        "subject"
+      ],
+      "ai_input_fields": [
+        "predictionPrompt"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "subject"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 10625,
+      "name": "Track Singapore COE prices with AI forecasting & smart buy recommendations via Telegram",
+      "stratum": "nonbinary_external_action",
+      "sink": "Send Telegram Alert",
+      "earlier_ai_nodes": [
+        "AI Agent - COE Analysis",
+        "OpenRouter Chat Model"
+      ],
+      "sink_fields": [
+        "recommendations",
+        "telegramChatId"
+      ],
+      "ai_input_fields": [
+        "predictionPrompt"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "recommendations",
+        "telegramChatId"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 10625,
+      "name": "Track Singapore COE prices with AI forecasting & smart buy recommendations via Telegram",
+      "stratum": "nonbinary_external_action",
+      "sink": "Urgent Market Alert",
+      "earlier_ai_nodes": [
+        "AI Agent - COE Analysis",
+        "OpenRouter Chat Model"
+      ],
+      "sink_fields": [
+        "recommendations",
+        "telegramChatId"
+      ],
+      "ai_input_fields": [
+        "predictionPrompt"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "recommendations",
+        "telegramChatId"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 13042,
+      "name": "Create WordPress posts from Reddit content via Telegram bot and Perplexity",
+      "stratum": "nonbinary_external_action",
+      "sink": "Notify User about Article Creation",
+      "earlier_ai_nodes": [
+        "Content Generation",
+        "Google Gemini Chat Model1",
+        "Google Gemini Chat Model4",
+        "Google Gemini Chat Model5",
+        "Slug Generation"
+      ],
+      "sink_fields": [
+        "text",
+        "url"
+      ],
+      "ai_input_fields": [
+        "message",
+        "output",
+        "text"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "url"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 3960,
+      "name": "Automated financial tracker: Telegram invoices to Notion with Gemini AI reports",
+      "stratum": "nonbinary_external_action",
+      "sink": "Sendback to chat and give summarize text",
+      "earlier_ai_nodes": [
+        "Basic LLM Chain",
+        "Google Gemini Chat Model"
+      ],
+      "sink_fields": [
+        "message",
+        "output"
+      ],
+      "ai_input_fields": [],
+      "sink_fields_not_named_in_ai_inputs": [
+        "message",
+        "output"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 5196,
+      "name": "Smart email draft generator",
+      "stratum": "nonbinary_external_action",
+      "sink": "Save as Gmail Draft",
+      "earlier_ai_nodes": [
+        "Process Email with AI"
+      ],
+      "sink_fields": [
+        "subject",
+        "text"
+      ],
+      "ai_input_fields": [
+        "textPlain"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "subject",
+        "text"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 9265,
+      "name": "Build a text & image responding Telegram bot with Google Gemini 2.5 Flash",
+      "stratum": "nonbinary_external_action",
+      "sink": "Send a text message",
+      "earlier_ai_nodes": [
+        "Analyze image",
+        "Google Gemini Chat Model",
+        "Knowledge Base Agent"
+      ],
+      "sink_fields": [
+        "message",
+        "output"
+      ],
+      "ai_input_fields": [
+        "text"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "message",
+        "output"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 11838,
+      "name": "Slack workflow router: AI-powered workflow selection",
+      "stratum": "nonbinary_external_action",
+      "sink": "Send \"executing workflow\" message",
+      "earlier_ai_nodes": [
+        "AI Agent",
+        "OpenAI Chat Model"
+      ],
+      "sink_fields": [
+        "channel",
+        "workflow_id",
+        "workflow_name"
+      ],
+      "ai_input_fields": [
+        "blocks"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "channel",
+        "workflow_id",
+        "workflow_name"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 11838,
+      "name": "Slack workflow router: AI-powered workflow selection",
+      "stratum": "nonbinary_external_action",
+      "sink": "Send message: error occurred",
+      "earlier_ai_nodes": [
+        "AI Agent",
+        "OpenAI Chat Model"
+      ],
+      "sink_fields": [
+        "channel"
+      ],
+      "ai_input_fields": [
+        "blocks"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "channel"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 11838,
+      "name": "Slack workflow router: AI-powered workflow selection",
+      "stratum": "nonbinary_external_action",
+      "sink": "Send message: no workflow found",
+      "earlier_ai_nodes": [
+        "AI Agent",
+        "OpenAI Chat Model"
+      ],
+      "sink_fields": [
+        "channel"
+      ],
+      "ai_input_fields": [
+        "blocks"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "channel"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 11838,
+      "name": "Slack workflow router: AI-powered workflow selection",
+      "stratum": "nonbinary_external_action",
+      "sink": "Send message: success",
+      "earlier_ai_nodes": [
+        "AI Agent",
+        "OpenAI Chat Model"
+      ],
+      "sink_fields": [
+        "channel"
+      ],
+      "ai_input_fields": [
+        "blocks"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "channel"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 7257,
+      "name": "Organize Gmail with GPT-4 & send urgent notifications via Telegram and WhatsApp",
+      "stratum": "nonbinary_external_action",
+      "sink": "Create Label if Doesn't exist1",
+      "earlier_ai_nodes": [
+        "AI Agent3",
+        "Google Gemini Chat Model2",
+        "OpenAI Chat Model",
+        "OpenRouter Chat Model2"
+      ],
+      "sink_fields": [
+        "output"
+      ],
+      "ai_input_fields": [
+        "from",
+        "headers",
+        "labelIds",
+        "subject",
+        "text",
+        "to"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "output"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 7257,
+      "name": "Organize Gmail with GPT-4 & send urgent notifications via Telegram and WhatsApp",
+      "stratum": "nonbinary_external_action",
+      "sink": "Get Existing Labels1",
+      "earlier_ai_nodes": [
+        "AI Agent3",
+        "Google Gemini Chat Model2",
+        "OpenAI Chat Model",
+        "OpenRouter Chat Model2"
+      ],
+      "sink_fields": [],
+      "ai_input_fields": [
+        "from",
+        "headers",
+        "labelIds",
+        "subject",
+        "text",
+        "to"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [],
+      "status": "no_lexical_field_difference",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 7257,
+      "name": "Organize Gmail with GPT-4 & send urgent notifications via Telegram and WhatsApp",
+      "stratum": "nonbinary_external_action",
+      "sink": "Send a text message1",
+      "earlier_ai_nodes": [
+        "AI Agent1",
+        "AI Agent3",
+        "Google Gemini Chat Model2",
+        "Google Gemini Chat Model3",
+        "OpenAI Chat Model"
+      ],
+      "sink_fields": [
+        "To",
+        "snippet",
+        "summary"
+      ],
+      "ai_input_fields": [
+        "from",
+        "headers",
+        "labelIds",
+        "subject",
+        "text",
+        "to"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "To",
+        "snippet",
+        "summary"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 7257,
+      "name": "Organize Gmail with GPT-4 & send urgent notifications via Telegram and WhatsApp",
+      "stratum": "nonbinary_external_action",
+      "sink": "Send message1",
+      "earlier_ai_nodes": [
+        "AI Agent1",
+        "AI Agent3",
+        "Google Gemini Chat Model2",
+        "Google Gemini Chat Model3",
+        "OpenAI Chat Model"
+      ],
+      "sink_fields": [
+        "To",
+        "snippet",
+        "summary"
+      ],
+      "ai_input_fields": [
+        "from",
+        "headers",
+        "labelIds",
+        "subject",
+        "text",
+        "to"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "To",
+        "snippet",
+        "summary"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 8967,
+      "name": "AI email reply based on HubSpot data + Slack approval",
+      "stratum": "nonbinary_external_action",
+      "sink": "Reply to a message",
+      "earlier_ai_nodes": [
+        "Draft Reply (AI Agent)",
+        "Google Gemini Chat Model"
+      ],
+      "sink_fields": [
+        "output",
+        "threadId"
+      ],
+      "ai_input_fields": [
+        "From",
+        "Subject",
+        "companies",
+        "deals",
+        "properties",
+        "snippet",
+        "tickets"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "output",
+        "threadId"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 8967,
+      "name": "AI email reply based on HubSpot data + Slack approval",
+      "stratum": "nonbinary_external_action",
+      "sink": "Wait for Response - Approve Auto-Reply",
+      "earlier_ai_nodes": [
+        "Draft Reply (AI Agent)",
+        "Google Gemini Chat Model"
+      ],
+      "sink_fields": [
+        "From",
+        "output",
+        "snippet"
+      ],
+      "ai_input_fields": [
+        "From",
+        "Subject",
+        "companies",
+        "deals",
+        "properties",
+        "snippet",
+        "tickets"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "output"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 13337,
+      "name": "Monitor supply chain risks and disruptions with GPT-4o and Slack alerts",
+      "stratum": "nonbinary_external_action",
+      "sink": "Send Critical Alert to Slack",
+      "earlier_ai_nodes": [
+        "Coordination Agent",
+        "OpenAI Model for Coordination Agent",
+        "OpenAI Model for Signal Monitoring Agent",
+        "Signal Monitoring Agent"
+      ],
+      "sink_fields": [
+        "output",
+        "slackChannelId"
+      ],
+      "ai_input_fields": [
+        "output",
+        "procurementData",
+        "warehouseData"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "slackChannelId"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 13337,
+      "name": "Monitor supply chain risks and disruptions with GPT-4o and Slack alerts",
+      "stratum": "nonbinary_external_action",
+      "sink": "Send Escalation Email",
+      "earlier_ai_nodes": [
+        "Coordination Agent",
+        "OpenAI Model for Coordination Agent",
+        "OpenAI Model for Signal Monitoring Agent",
+        "Signal Monitoring Agent"
+      ],
+      "sink_fields": [
+        "escalationEmail",
+        "output"
+      ],
+      "ai_input_fields": [
+        "output",
+        "procurementData",
+        "warehouseData"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "escalationEmail"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 18845,
+      "name": "Send daily competitor intel briefs to Slack with API Direct and OpenAI",
+      "stratum": "nonbinary_external_action",
+      "sink": "Post the daily brief",
+      "earlier_ai_nodes": [
+        "OpenAI Chat Model",
+        "Write the intel brief"
+      ],
+      "sink_fields": [
+        "text"
+      ],
+      "ai_input_fields": [
+        "competitor",
+        "corpus"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "text"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 16256,
+      "name": "Qualify inbound leads with OpenAI, Google Sheets and Slack alerts",
+      "stratum": "nonbinary_external_action",
+      "sink": "Alert: Hot Lead (Slack)",
+      "earlier_ai_nodes": [
+        "AI Lead Scorer",
+        "OpenAI Chat Model"
+      ],
+      "sink_fields": [
+        "category",
+        "company",
+        "email",
+        "message",
+        "name",
+        "reasoning",
+        "score",
+        "suggested_reply"
+      ],
+      "ai_input_fields": [
+        "company",
+        "email",
+        "message",
+        "name",
+        "source"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "category",
+        "reasoning",
+        "score",
+        "suggested_reply"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 9636,
+      "name": "Automated customer feedback triage with Gemini, Jotform, Google Sheets & Gmail replies",
+      "stratum": "nonbinary_external_action",
+      "sink": "Reply Customer",
+      "earlier_ai_nodes": [
+        "Google Gemini Chat Model1",
+        "QnA Agent"
+      ],
+      "sink_fields": [
+        "Describe Your Feedback:",
+        "E-mail",
+        "Name",
+        "output"
+      ],
+      "ai_input_fields": [
+        "Describe Your Feedback:"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "E-mail",
+        "Name",
+        "output"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 9636,
+      "name": "Automated customer feedback triage with Gemini, Jotform, Google Sheets & Gmail replies",
+      "stratum": "nonbinary_external_action",
+      "sink": "Send a text message",
+      "earlier_ai_nodes": [
+        "Google Gemini Chat Model1",
+        "Summarize Suggestions"
+      ],
+      "sink_fields": [
+        "Describe Your Feedback:",
+        "E-mail",
+        "Name",
+        "output"
+      ],
+      "ai_input_fields": [],
+      "sink_fields_not_named_in_ai_inputs": [
+        "Describe Your Feedback:",
+        "E-mail",
+        "Name",
+        "output"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 14254,
+      "name": "Query Databricks data and SQL insights via Slack with Gemini AI agent",
+      "stratum": "nonbinary_external_action",
+      "sink": "Post Error to Slack",
+      "earlier_ai_nodes": [
+        "Gemini Model",
+        "SQL Data Analyst Agent"
+      ],
+      "sink_fields": [
+        "channel",
+        "output",
+        "thread_ts"
+      ],
+      "ai_input_fields": [
+        "ai_friendly_schema",
+        "target_table",
+        "text"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "channel",
+        "output",
+        "thread_ts"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 14254,
+      "name": "Query Databricks data and SQL insights via Slack with Gemini AI agent",
+      "stratum": "nonbinary_external_action",
+      "sink": "Post to Slack Channel",
+      "earlier_ai_nodes": [
+        "Gemini Model",
+        "SQL Data Analyst Agent"
+      ],
+      "sink_fields": [
+        "channel",
+        "output"
+      ],
+      "ai_input_fields": [
+        "ai_friendly_schema",
+        "target_table",
+        "text"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "channel",
+        "output"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 12545,
+      "name": "Onboard new hires with GPT-4, Notion, Jira, Google Drive, Gmail and Slack",
+      "stratum": "nonbinary_external_action",
+      "sink": "Archive to Employee Folder1",
+      "earlier_ai_nodes": [
+        "AI Agent",
+        "OpenAI Chat Model"
+      ],
+      "sink_fields": [
+        "employeeId"
+      ],
+      "ai_input_fields": [],
+      "sink_fields_not_named_in_ai_inputs": [
+        "employeeId"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 12545,
+      "name": "Onboard new hires with GPT-4, Notion, Jira, Google Drive, Gmail and Slack",
+      "stratum": "nonbinary_external_action",
+      "sink": "Deliver Welcome Email (Gmail)1",
+      "earlier_ai_nodes": [
+        "AI Agent",
+        "OpenAI Chat Model"
+      ],
+      "sink_fields": [
+        "content",
+        "department",
+        "email",
+        "employeeId",
+        "firstName",
+        "itProvisioningTicket",
+        "jobTitle",
+        "requiredSystems",
+        "startDate"
+      ],
+      "ai_input_fields": [],
+      "sink_fields_not_named_in_ai_inputs": [
+        "content",
+        "department",
+        "email",
+        "employeeId",
+        "firstName",
+        "itProvisioningTicket",
+        "jobTitle",
+        "requiredSystems",
+        "startDate"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 12545,
+      "name": "Onboard new hires with GPT-4, Notion, Jira, Google Drive, Gmail and Slack",
+      "stratum": "nonbinary_external_action",
+      "sink": "Slack: Announce New Hire",
+      "earlier_ai_nodes": [
+        "AI Agent",
+        "OpenAI Chat Model"
+      ],
+      "sink_fields": [
+        "department",
+        "fullName",
+        "itProvisioningTicket",
+        "jobTitle",
+        "startDate"
+      ],
+      "ai_input_fields": [],
+      "sink_fields_not_named_in_ai_inputs": [
+        "department",
+        "fullName",
+        "itProvisioningTicket",
+        "jobTitle",
+        "startDate"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 17233,
+      "name": "Monitor competitor pricing page changes with OpenAI, Google Sheets and Slack",
+      "stratum": "nonbinary_external_action",
+      "sink": "Post Summary to Slack",
+      "earlier_ai_nodes": [
+        "Content Change Summary Agent",
+        "OpenAI GPT-5 Mini"
+      ],
+      "sink_fields": [
+        "output",
+        "url"
+      ],
+      "ai_input_fields": [
+        "Content",
+        "pageText",
+        "watchFor"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "output",
+        "url"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 10680,
+      "name": "Intelligent purchase order generator with AI supplier selection",
+      "stratum": "nonbinary_external_action",
+      "sink": "Archive in Drive",
+      "earlier_ai_nodes": [
+        "AI Supplier Selector",
+        "OpenAI Chat Model"
+      ],
+      "sink_fields": [
+        "fileName"
+      ],
+      "ai_input_fields": [
+        "aiContext"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "fileName"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 10680,
+      "name": "Intelligent purchase order generator with AI supplier selection",
+      "stratum": "nonbinary_external_action",
+      "sink": "Email to Supplier",
+      "earlier_ai_nodes": [
+        "AI Supplier Selector",
+        "OpenAI Chat Model"
+      ],
+      "sink_fields": [],
+      "ai_input_fields": [
+        "aiContext"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [],
+      "status": "no_lexical_field_difference",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 10680,
+      "name": "Intelligent purchase order generator with AI supplier selection",
+      "stratum": "nonbinary_external_action",
+      "sink": "Request Approval",
+      "earlier_ai_nodes": [
+        "AI Supplier Selector",
+        "OpenAI Chat Model"
+      ],
+      "sink_fields": [],
+      "ai_input_fields": [
+        "aiContext"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [],
+      "status": "no_lexical_field_difference",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 8563,
+      "name": "Create LinkedIn content from Telegram voice/text using Whisper, GPT-4 & Dumpling AI",
+      "stratum": "nonbinary_external_action",
+      "sink": "Send Confirmation to Telegram",
+      "earlier_ai_nodes": [
+        "GPT-4 Chat Model",
+        "Generate Idea, Context & Image Prompt",
+        "Transcribe Audio to Text"
+      ],
+      "sink_fields": [
+        "message"
+      ],
+      "ai_input_fields": [
+        "text"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "message"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 7769,
+      "name": "AI-powered restaurant booking system with Telegram, Calendar & Email notifications",
+      "stratum": "nonbinary_external_action",
+      "sink": "Telegram",
+      "earlier_ai_nodes": [
+        "Information Gathering Agent",
+        "OpenAI Chat Model",
+        "OpenAI Chat Model1"
+      ],
+      "sink_fields": [
+        "message",
+        "output"
+      ],
+      "ai_input_fields": [
+        "message"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "output"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 7769,
+      "name": "AI-powered restaurant booking system with Telegram, Calendar & Email notifications",
+      "stratum": "nonbinary_external_action",
+      "sink": "Telegram1",
+      "earlier_ai_nodes": [
+        "Information Gathering Agent",
+        "OpenAI Chat Model",
+        "OpenAI Chat Model1"
+      ],
+      "sink_fields": [
+        "message"
+      ],
+      "ai_input_fields": [
+        "message"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [],
+      "status": "no_lexical_field_difference",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 7769,
+      "name": "AI-powered restaurant booking system with Telegram, Calendar & Email notifications",
+      "stratum": "nonbinary_external_action",
+      "sink": "Telegram3",
+      "earlier_ai_nodes": [
+        "Booking Agent",
+        "Information Gathering Agent",
+        "OpenAI Chat Model",
+        "OpenAI Chat Model1",
+        "OpenAI Chat Model2"
+      ],
+      "sink_fields": [
+        "message"
+      ],
+      "ai_input_fields": [
+        "message",
+        "user_data"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [],
+      "status": "no_lexical_field_difference",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 13203,
+      "name": "Draft Gmail replies with OpenAI and OpenRouter for an inbox-zero workflow",
+      "stratum": "nonbinary_external_action",
+      "sink": "Response Not Customer Support",
+      "earlier_ai_nodes": [
+        "Client/Prospect Related?",
+        "OpenRouter Chat Model"
+      ],
+      "sink_fields": [
+        "emailBody"
+      ],
+      "ai_input_fields": [
+        "emailBody"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [],
+      "status": "no_lexical_field_difference",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 2322,
+      "name": "Speed Up Social Media Banners With BannerBear.com",
+      "stratum": "nonbinary_external_action",
+      "sink": "Discord",
+      "earlier_ai_nodes": [
+        "Generate AI Banner Image"
+      ],
+      "sink_fields": [
+        "date",
+        "location",
+        "title"
+      ],
+      "ai_input_fields": [
+        "image_prompt"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "date",
+        "location",
+        "title"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 11076,
+      "name": "Analyze Customer Reviews from 5 Platforms with Thordata Scraping & GPT-4.1 Reports",
+      "stratum": "nonbinary_external_action",
+      "sink": "Send Executive Summary Email",
+      "earlier_ai_nodes": [
+        "AI Review Sentiment Analysis"
+      ],
+      "sink_fields": [
+        "email_html",
+        "product_name"
+      ],
+      "ai_input_fields": [
+        "all_reviews_text",
+        "avg_rating",
+        "date_range",
+        "product",
+        "rating_distribution",
+        "sources",
+        "total_reviews"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "email_html",
+        "product_name"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 18185,
+      "name": "Run a human-approved shopping assistant with GPT-4.1-mini, product APIs and Slack",
+      "stratum": "nonbinary_external_action",
+      "sink": "Slack - Notify Customer",
+      "earlier_ai_nodes": [
+        "AI Agent - Shopping Assistant",
+        "OpenAI Chat Model"
+      ],
+      "sink_fields": [
+        "estimatedDelivery",
+        "orderCurrency",
+        "orderId",
+        "orderStatus",
+        "orderTotal",
+        "quantity",
+        "selectedProductName",
+        "slackChannel"
+      ],
+      "ai_input_fields": [
+        "chatInput",
+        "currency",
+        "maxBudget"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "estimatedDelivery",
+        "orderCurrency",
+        "orderId",
+        "orderStatus",
+        "orderTotal",
+        "quantity",
+        "selectedProductName",
+        "slackChannel"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 16552,
+      "name": "Send GitHub release audio newsletters with OpenAI, Google Drive, Gmail and Sheets",
+      "stratum": "nonbinary_external_action",
+      "sink": "12. Gmail — Send Audio Newsletter",
+      "earlier_ai_nodes": [
+        "3. AI Agent — Write Spoken Script",
+        "OpenAI Chat Model"
+      ],
+      "sink_fields": [
+        "bccList",
+        "emailSubject",
+        "htmlBody"
+      ],
+      "ai_input_fields": [
+        "author",
+        "plainChangelog",
+        "releaseDate",
+        "releaseName",
+        "repoName",
+        "totalChanges",
+        "version"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "bccList",
+        "emailSubject",
+        "htmlBody"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 16552,
+      "name": "Send GitHub release audio newsletters with OpenAI, Google Drive, Gmail and Sheets",
+      "stratum": "nonbinary_external_action",
+      "sink": "6. Google Drive — Save MP3 File",
+      "earlier_ai_nodes": [
+        "3. AI Agent — Write Spoken Script",
+        "OpenAI Chat Model"
+      ],
+      "sink_fields": [
+        "audioFilename"
+      ],
+      "ai_input_fields": [
+        "author",
+        "plainChangelog",
+        "releaseDate",
+        "releaseName",
+        "repoName",
+        "totalChanges",
+        "version"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "audioFilename"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 16552,
+      "name": "Send GitHub release audio newsletters with OpenAI, Google Drive, Gmail and Sheets",
+      "stratum": "nonbinary_external_action",
+      "sink": "7. Google Drive — Make File Public",
+      "earlier_ai_nodes": [
+        "3. AI Agent — Write Spoken Script",
+        "OpenAI Chat Model"
+      ],
+      "sink_fields": [
+        "id"
+      ],
+      "ai_input_fields": [
+        "author",
+        "plainChangelog",
+        "releaseDate",
+        "releaseName",
+        "repoName",
+        "totalChanges",
+        "version"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "id"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 10034,
+      "name": "AI-powered code review with linting, red-marked corrections in Google Sheets & Slack",
+      "stratum": "nonbinary_external_action",
+      "sink": "Post Review Summary",
+      "earlier_ai_nodes": [
+        "AI Agent",
+        "Google Gemini Chat Model"
+      ],
+      "sink_fields": [
+        "summaryText"
+      ],
+      "ai_input_fields": [
+        "code",
+        "lintErrors",
+        "lintScore",
+        "reviewPrompt"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "summaryText"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 19314,
+      "name": "Detect at-risk gym clients with Supabase, Gemini, Slack, Gmail, and Sheets",
+      "stratum": "nonbinary_external_action",
+      "sink": "Send Client Gmail Message",
+      "earlier_ai_nodes": [
+        "Generate Re Engagement Draft with Gemini"
+      ],
+      "sink_fields": [
+        "body",
+        "client_email",
+        "client_email_subject_seed",
+        "output",
+        "response",
+        "subject"
+      ],
+      "ai_input_fields": [
+        "client_context_summary"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "body",
+        "client_email",
+        "client_email_subject_seed",
+        "output",
+        "response",
+        "subject"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 19314,
+      "name": "Detect at-risk gym clients with Supabase, Gemini, Slack, Gmail, and Sheets",
+      "stratum": "nonbinary_external_action",
+      "sink": "Send Coach Slack Alert",
+      "earlier_ai_nodes": [
+        "Generate Re Engagement Draft with Gemini"
+      ],
+      "sink_fields": [
+        "slack_message"
+      ],
+      "ai_input_fields": [
+        "client_context_summary"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "slack_message"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    },
+    {
+      "id": 2491,
+      "name": "Create LinkedIn contributions with AI and notify users on Slack",
+      "stratum": "nonbinary_external_action",
+      "sink": "Post new LinkedIn contributions to Slack channel",
+      "earlier_ai_nodes": [
+        "LinkedIn Contribution Writer"
+      ],
+      "sink_fields": [
+        "ArticleTitle",
+        "matches",
+        "message"
+      ],
+      "ai_input_fields": [
+        "ArticleContributions",
+        "ArticleTitle",
+        "ArticleTopics"
+      ],
+      "sink_fields_not_named_in_ai_inputs": [
+        "matches",
+        "message"
+      ],
+      "status": "context_projection_candidate",
+      "warning": "lexical field comparison only; aliases, implicit item flow, data identity, labels and policy require review"
+    }
+  ]
+}

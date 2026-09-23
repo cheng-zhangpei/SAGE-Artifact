@@ -1,0 +1,5499 @@
+[
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "EMPLOYEE"
+    },
+    "labels": [],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "EMPLOYEE"
+    },
+    "labels": [
+      "AUTH"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "EMPLOYEE"
+    },
+    "labels": [
+      "EMPLOYEE"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "EMPLOYEE"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "EMPLOYEE"
+    },
+    "labels": [
+      "FINANCIAL"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "EMPLOYEE"
+    },
+    "labels": [
+      "AUTH",
+      "FINANCIAL"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "EMPLOYEE"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "FINANCIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "EMPLOYEE"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "FINANCIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "EMPLOYEE"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "EMPLOYEE"
+    },
+    "labels": [
+      "AUTH",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "EMPLOYEE"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "EMPLOYEE"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "EMPLOYEE"
+    },
+    "labels": [
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "EMPLOYEE"
+    },
+    "labels": [
+      "AUTH",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "EMPLOYEE"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "EMPLOYEE"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "FINANCIAL"
+    },
+    "labels": [],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "FINANCIAL"
+    },
+    "labels": [
+      "AUTH"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "FINANCIAL"
+    },
+    "labels": [
+      "EMPLOYEE"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "FINANCIAL"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "FINANCIAL"
+    },
+    "labels": [
+      "FINANCIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "FINANCIAL"
+    },
+    "labels": [
+      "AUTH",
+      "FINANCIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "FINANCIAL"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "FINANCIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "FINANCIAL"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "FINANCIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "FINANCIAL"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "FINANCIAL"
+    },
+    "labels": [
+      "AUTH",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "FINANCIAL"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "FINANCIAL"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "FINANCIAL"
+    },
+    "labels": [
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "FINANCIAL"
+    },
+    "labels": [
+      "AUTH",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "FINANCIAL"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "FINANCIAL"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "AUTH"
+    },
+    "labels": [],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "AUTH"
+    },
+    "labels": [
+      "AUTH"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "AUTH"
+    },
+    "labels": [
+      "EMPLOYEE"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "AUTH"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "AUTH"
+    },
+    "labels": [
+      "FINANCIAL"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "AUTH"
+    },
+    "labels": [
+      "AUTH",
+      "FINANCIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "AUTH"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "FINANCIAL"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "AUTH"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "FINANCIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "AUTH"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "AUTH"
+    },
+    "labels": [
+      "AUTH",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "AUTH"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "AUTH"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "AUTH"
+    },
+    "labels": [
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "AUTH"
+    },
+    "labels": [
+      "AUTH",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "AUTH"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "AUTH"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "AUTH"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "EMPLOYEE"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "FINANCIAL"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "AUTH",
+      "FINANCIAL"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "FINANCIAL"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "FINANCIAL"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "AUTH",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "AUTH",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "intake",
+    "tool": "import_expense",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "reviewer",
+    "tool": "review_claim",
+    "params": {},
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "reviewer",
+    "tool": "review_claim",
+    "params": {},
+    "labels": [
+      "AUTH"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "reviewer",
+    "tool": "review_claim",
+    "params": {},
+    "labels": [
+      "EMPLOYEE"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "reviewer",
+    "tool": "review_claim",
+    "params": {},
+    "labels": [
+      "AUTH",
+      "EMPLOYEE"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "reviewer",
+    "tool": "review_claim",
+    "params": {},
+    "labels": [
+      "FINANCIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "reviewer",
+    "tool": "review_claim",
+    "params": {},
+    "labels": [
+      "AUTH",
+      "FINANCIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "reviewer",
+    "tool": "review_claim",
+    "params": {},
+    "labels": [
+      "EMPLOYEE",
+      "FINANCIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "reviewer",
+    "tool": "review_claim",
+    "params": {},
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "FINANCIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "reviewer",
+    "tool": "review_claim",
+    "params": {},
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "reviewer",
+    "tool": "review_claim",
+    "params": {},
+    "labels": [
+      "AUTH",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "reviewer",
+    "tool": "review_claim",
+    "params": {},
+    "labels": [
+      "EMPLOYEE",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "reviewer",
+    "tool": "review_claim",
+    "params": {},
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "reviewer",
+    "tool": "review_claim",
+    "params": {},
+    "labels": [
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "reviewer",
+    "tool": "review_claim",
+    "params": {},
+    "labels": [
+      "AUTH",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "reviewer",
+    "tool": "review_claim",
+    "params": {},
+    "labels": [
+      "EMPLOYEE",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "reviewer",
+    "tool": "review_claim",
+    "params": {},
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clerk",
+    "tool": "assemble_packet",
+    "params": {
+      "source": "approved"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clerk",
+    "tool": "assemble_packet",
+    "params": {
+      "source": "approved"
+    },
+    "labels": [
+      "AUTH"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clerk",
+    "tool": "assemble_packet",
+    "params": {
+      "source": "approved"
+    },
+    "labels": [
+      "EMPLOYEE"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clerk",
+    "tool": "assemble_packet",
+    "params": {
+      "source": "approved"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clerk",
+    "tool": "assemble_packet",
+    "params": {
+      "source": "approved"
+    },
+    "labels": [
+      "FINANCIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clerk",
+    "tool": "assemble_packet",
+    "params": {
+      "source": "approved"
+    },
+    "labels": [
+      "AUTH",
+      "FINANCIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clerk",
+    "tool": "assemble_packet",
+    "params": {
+      "source": "approved"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "FINANCIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clerk",
+    "tool": "assemble_packet",
+    "params": {
+      "source": "approved"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "FINANCIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clerk",
+    "tool": "assemble_packet",
+    "params": {
+      "source": "approved"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clerk",
+    "tool": "assemble_packet",
+    "params": {
+      "source": "approved"
+    },
+    "labels": [
+      "AUTH",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clerk",
+    "tool": "assemble_packet",
+    "params": {
+      "source": "approved"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clerk",
+    "tool": "assemble_packet",
+    "params": {
+      "source": "approved"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clerk",
+    "tool": "assemble_packet",
+    "params": {
+      "source": "approved"
+    },
+    "labels": [
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clerk",
+    "tool": "assemble_packet",
+    "params": {
+      "source": "approved"
+    },
+    "labels": [
+      "AUTH",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clerk",
+    "tool": "assemble_packet",
+    "params": {
+      "source": "approved"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clerk",
+    "tool": "assemble_packet",
+    "params": {
+      "source": "approved"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clerk",
+    "tool": "assemble_packet",
+    "params": {
+      "source": "claim"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clerk",
+    "tool": "assemble_packet",
+    "params": {
+      "source": "claim"
+    },
+    "labels": [
+      "AUTH"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clerk",
+    "tool": "assemble_packet",
+    "params": {
+      "source": "claim"
+    },
+    "labels": [
+      "EMPLOYEE"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clerk",
+    "tool": "assemble_packet",
+    "params": {
+      "source": "claim"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clerk",
+    "tool": "assemble_packet",
+    "params": {
+      "source": "claim"
+    },
+    "labels": [
+      "FINANCIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clerk",
+    "tool": "assemble_packet",
+    "params": {
+      "source": "claim"
+    },
+    "labels": [
+      "AUTH",
+      "FINANCIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clerk",
+    "tool": "assemble_packet",
+    "params": {
+      "source": "claim"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "FINANCIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clerk",
+    "tool": "assemble_packet",
+    "params": {
+      "source": "claim"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "FINANCIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clerk",
+    "tool": "assemble_packet",
+    "params": {
+      "source": "claim"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clerk",
+    "tool": "assemble_packet",
+    "params": {
+      "source": "claim"
+    },
+    "labels": [
+      "AUTH",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clerk",
+    "tool": "assemble_packet",
+    "params": {
+      "source": "claim"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clerk",
+    "tool": "assemble_packet",
+    "params": {
+      "source": "claim"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clerk",
+    "tool": "assemble_packet",
+    "params": {
+      "source": "claim"
+    },
+    "labels": [
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clerk",
+    "tool": "assemble_packet",
+    "params": {
+      "source": "claim"
+    },
+    "labels": [
+      "AUTH",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clerk",
+    "tool": "assemble_packet",
+    "params": {
+      "source": "claim"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clerk",
+    "tool": "assemble_packet",
+    "params": {
+      "source": "claim"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "none",
+      "route": "release",
+      "source": "packet"
+    },
+    "labels": [],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "none",
+      "route": "release",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "none",
+      "route": "release",
+      "source": "packet"
+    },
+    "labels": [
+      "EMPLOYEE"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "none",
+      "route": "release",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "none",
+      "route": "release",
+      "source": "packet"
+    },
+    "labels": [
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "none",
+      "route": "release",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "none",
+      "route": "release",
+      "source": "packet"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "none",
+      "route": "release",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "none",
+      "route": "release",
+      "source": "packet"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "none",
+      "route": "release",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "none",
+      "route": "release",
+      "source": "packet"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "none",
+      "route": "release",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "none",
+      "route": "release",
+      "source": "packet"
+    },
+    "labels": [
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "none",
+      "route": "release",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "none",
+      "route": "release",
+      "source": "packet"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "none",
+      "route": "release",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "none",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "none",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "none",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "EMPLOYEE"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "none",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "none",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "none",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "none",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "none",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "none",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "none",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "none",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "none",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "none",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "none",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "none",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "none",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "claim",
+      "route": "release",
+      "source": "approved"
+    },
+    "labels": [],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "claim",
+      "route": "release",
+      "source": "approved"
+    },
+    "labels": [
+      "AUTH"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "claim",
+      "route": "release",
+      "source": "approved"
+    },
+    "labels": [
+      "EMPLOYEE"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "claim",
+      "route": "release",
+      "source": "approved"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "claim",
+      "route": "release",
+      "source": "approved"
+    },
+    "labels": [
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "claim",
+      "route": "release",
+      "source": "approved"
+    },
+    "labels": [
+      "AUTH",
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "claim",
+      "route": "release",
+      "source": "approved"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "claim",
+      "route": "release",
+      "source": "approved"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "claim",
+      "route": "release",
+      "source": "approved"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "claim",
+      "route": "release",
+      "source": "approved"
+    },
+    "labels": [
+      "AUTH",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "claim",
+      "route": "release",
+      "source": "approved"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "claim",
+      "route": "release",
+      "source": "approved"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "claim",
+      "route": "release",
+      "source": "approved"
+    },
+    "labels": [
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "claim",
+      "route": "release",
+      "source": "approved"
+    },
+    "labels": [
+      "AUTH",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "claim",
+      "route": "release",
+      "source": "approved"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "claim",
+      "route": "release",
+      "source": "approved"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "packet",
+      "route": "release",
+      "source": "approved"
+    },
+    "labels": [],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "packet",
+      "route": "release",
+      "source": "approved"
+    },
+    "labels": [
+      "AUTH"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "packet",
+      "route": "release",
+      "source": "approved"
+    },
+    "labels": [
+      "EMPLOYEE"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "packet",
+      "route": "release",
+      "source": "approved"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "packet",
+      "route": "release",
+      "source": "approved"
+    },
+    "labels": [
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "packet",
+      "route": "release",
+      "source": "approved"
+    },
+    "labels": [
+      "AUTH",
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "packet",
+      "route": "release",
+      "source": "approved"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "packet",
+      "route": "release",
+      "source": "approved"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "packet",
+      "route": "release",
+      "source": "approved"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "packet",
+      "route": "release",
+      "source": "approved"
+    },
+    "labels": [
+      "AUTH",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "packet",
+      "route": "release",
+      "source": "approved"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "packet",
+      "route": "release",
+      "source": "approved"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "packet",
+      "route": "release",
+      "source": "approved"
+    },
+    "labels": [
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "packet",
+      "route": "release",
+      "source": "approved"
+    },
+    "labels": [
+      "AUTH",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "packet",
+      "route": "release",
+      "source": "approved"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "packet",
+      "route": "release",
+      "source": "approved"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "claim",
+      "route": "release",
+      "source": "handbook"
+    },
+    "labels": [],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "claim",
+      "route": "release",
+      "source": "handbook"
+    },
+    "labels": [
+      "AUTH"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "claim",
+      "route": "release",
+      "source": "handbook"
+    },
+    "labels": [
+      "EMPLOYEE"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "claim",
+      "route": "release",
+      "source": "handbook"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "claim",
+      "route": "release",
+      "source": "handbook"
+    },
+    "labels": [
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "claim",
+      "route": "release",
+      "source": "handbook"
+    },
+    "labels": [
+      "AUTH",
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "claim",
+      "route": "release",
+      "source": "handbook"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "claim",
+      "route": "release",
+      "source": "handbook"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "claim",
+      "route": "release",
+      "source": "handbook"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "claim",
+      "route": "release",
+      "source": "handbook"
+    },
+    "labels": [
+      "AUTH",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "claim",
+      "route": "release",
+      "source": "handbook"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "claim",
+      "route": "release",
+      "source": "handbook"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "claim",
+      "route": "release",
+      "source": "handbook"
+    },
+    "labels": [
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "claim",
+      "route": "release",
+      "source": "handbook"
+    },
+    "labels": [
+      "AUTH",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "claim",
+      "route": "release",
+      "source": "handbook"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "claim",
+      "route": "release",
+      "source": "handbook"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "packet",
+      "route": "release",
+      "source": "packet"
+    },
+    "labels": [],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "packet",
+      "route": "release",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "packet",
+      "route": "release",
+      "source": "packet"
+    },
+    "labels": [
+      "EMPLOYEE"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "packet",
+      "route": "release",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "packet",
+      "route": "release",
+      "source": "packet"
+    },
+    "labels": [
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "packet",
+      "route": "release",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "packet",
+      "route": "release",
+      "source": "packet"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "packet",
+      "route": "release",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "packet",
+      "route": "release",
+      "source": "packet"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "packet",
+      "route": "release",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "packet",
+      "route": "release",
+      "source": "packet"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "packet",
+      "route": "release",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "packet",
+      "route": "release",
+      "source": "packet"
+    },
+    "labels": [
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "packet",
+      "route": "release",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "packet",
+      "route": "release",
+      "source": "packet"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "packet",
+      "route": "release",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "AUTH"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "EMPLOYEE"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "AUTH",
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "AUTH",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "AUTH",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "EMPLOYEE"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "AUTH"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "EMPLOYEE"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "AUTH",
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "AUTH",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "AUTH",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "packet",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "packet",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "AUTH"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "packet",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "EMPLOYEE"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "packet",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "packet",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "packet",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "AUTH",
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "packet",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "packet",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "packet",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "packet",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "AUTH",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "packet",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "packet",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "packet",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "packet",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "AUTH",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "packet",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "packet",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "EMPLOYEE"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "public",
+      "include": "packet",
+      "route": "local",
+      "source": "packet"
+    },
+    "labels": [],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "public",
+      "include": "packet",
+      "route": "local",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "public",
+      "include": "packet",
+      "route": "local",
+      "source": "packet"
+    },
+    "labels": [
+      "EMPLOYEE"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "public",
+      "include": "packet",
+      "route": "local",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "public",
+      "include": "packet",
+      "route": "local",
+      "source": "packet"
+    },
+    "labels": [
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "public",
+      "include": "packet",
+      "route": "local",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "public",
+      "include": "packet",
+      "route": "local",
+      "source": "packet"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "public",
+      "include": "packet",
+      "route": "local",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "public",
+      "include": "packet",
+      "route": "local",
+      "source": "packet"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "public",
+      "include": "packet",
+      "route": "local",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "public",
+      "include": "packet",
+      "route": "local",
+      "source": "packet"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "public",
+      "include": "packet",
+      "route": "local",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "public",
+      "include": "packet",
+      "route": "local",
+      "source": "packet"
+    },
+    "labels": [
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "public",
+      "include": "packet",
+      "route": "local",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "public",
+      "include": "packet",
+      "route": "local",
+      "source": "packet"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "public",
+      "include": "packet",
+      "route": "local",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "EMPLOYEE"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "none",
+      "include": "claim",
+      "route": "counterparty",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "none",
+      "route": "release",
+      "source": "approved"
+    },
+    "labels": [],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "none",
+      "route": "release",
+      "source": "approved"
+    },
+    "labels": [
+      "AUTH"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "none",
+      "route": "release",
+      "source": "approved"
+    },
+    "labels": [
+      "EMPLOYEE"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "none",
+      "route": "release",
+      "source": "approved"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "none",
+      "route": "release",
+      "source": "approved"
+    },
+    "labels": [
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "none",
+      "route": "release",
+      "source": "approved"
+    },
+    "labels": [
+      "AUTH",
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "none",
+      "route": "release",
+      "source": "approved"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "none",
+      "route": "release",
+      "source": "approved"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "none",
+      "route": "release",
+      "source": "approved"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "none",
+      "route": "release",
+      "source": "approved"
+    },
+    "labels": [
+      "AUTH",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "none",
+      "route": "release",
+      "source": "approved"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "none",
+      "route": "release",
+      "source": "approved"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "none",
+      "route": "release",
+      "source": "approved"
+    },
+    "labels": [
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "none",
+      "route": "release",
+      "source": "approved"
+    },
+    "labels": [
+      "AUTH",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "none",
+      "route": "release",
+      "source": "approved"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "treasury",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "counterparty",
+      "include": "none",
+      "route": "release",
+      "source": "approved"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "none",
+      "route": "release",
+      "source": "packet"
+    },
+    "labels": [],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "none",
+      "route": "release",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "none",
+      "route": "release",
+      "source": "packet"
+    },
+    "labels": [
+      "EMPLOYEE"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "none",
+      "route": "release",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "none",
+      "route": "release",
+      "source": "packet"
+    },
+    "labels": [
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "none",
+      "route": "release",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "none",
+      "route": "release",
+      "source": "packet"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "none",
+      "route": "release",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "none",
+      "route": "release",
+      "source": "packet"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "none",
+      "route": "release",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "none",
+      "route": "release",
+      "source": "packet"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "none",
+      "route": "release",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "none",
+      "route": "release",
+      "source": "packet"
+    },
+    "labels": [
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "none",
+      "route": "release",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "none",
+      "route": "release",
+      "source": "packet"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "audit",
+      "include": "none",
+      "route": "release",
+      "source": "packet"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "public",
+      "include": "packet",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [],
+    "candidate": null,
+    "completion": false
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "public",
+      "include": "packet",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "AUTH"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "public",
+      "include": "packet",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "EMPLOYEE"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "public",
+      "include": "packet",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "public",
+      "include": "packet",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "public",
+      "include": "packet",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "AUTH",
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "public",
+      "include": "packet",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "public",
+      "include": "packet",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "FINANCIAL"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "public",
+      "include": "packet",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "public",
+      "include": "packet",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "AUTH",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "public",
+      "include": "packet",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "public",
+      "include": "packet",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "public",
+      "include": "packet",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "public",
+      "include": "packet",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "AUTH",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "public",
+      "include": "packet",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "EMPLOYEE",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  },
+  {
+    "agent": "claims",
+    "tool": "submit_claim",
+    "params": {
+      "copy": "public",
+      "include": "packet",
+      "route": "counterparty",
+      "source": "handbook"
+    },
+    "labels": [
+      "AUTH",
+      "EMPLOYEE",
+      "FINANCIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": null,
+    "completion": true
+  }
+]

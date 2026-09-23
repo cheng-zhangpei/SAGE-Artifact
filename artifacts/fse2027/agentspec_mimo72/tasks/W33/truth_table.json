@@ -1,0 +1,308 @@
+[
+  {
+    "agent": "quality",
+    "tool": "export",
+    "params": {
+      "join": false,
+      "target": "text_vendor"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "quality",
+    "tool": "export",
+    "params": {
+      "join": false,
+      "target": "text_vendor"
+    },
+    "labels": [
+      "BIOMETRIC"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "quality",
+    "tool": "export",
+    "params": {
+      "join": false,
+      "target": "text_vendor"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "quality",
+    "tool": "export",
+    "params": {
+      "join": false,
+      "target": "text_vendor"
+    },
+    "labels": [
+      "BIOMETRIC",
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "quality",
+    "tool": "export",
+    "params": {
+      "join": true,
+      "target": "text_vendor"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "quality",
+    "tool": "export",
+    "params": {
+      "join": true,
+      "target": "text_vendor"
+    },
+    "labels": [
+      "BIOMETRIC"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "quality",
+    "tool": "export",
+    "params": {
+      "join": true,
+      "target": "text_vendor"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "quality",
+    "tool": "export",
+    "params": {
+      "join": true,
+      "target": "text_vendor"
+    },
+    "labels": [
+      "BIOMETRIC",
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "quality",
+    "tool": "export",
+    "params": {
+      "join": false,
+      "target": "acoustic"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "quality",
+    "tool": "export",
+    "params": {
+      "join": false,
+      "target": "acoustic"
+    },
+    "labels": [
+      "BIOMETRIC"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "quality",
+    "tool": "export",
+    "params": {
+      "join": false,
+      "target": "acoustic"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "quality",
+    "tool": "export",
+    "params": {
+      "join": false,
+      "target": "acoustic"
+    },
+    "labels": [
+      "BIOMETRIC",
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "quality",
+    "tool": "export",
+    "params": {
+      "join": true,
+      "target": "acoustic"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "quality",
+    "tool": "export",
+    "params": {
+      "join": true,
+      "target": "acoustic"
+    },
+    "labels": [
+      "BIOMETRIC"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "quality",
+    "tool": "export",
+    "params": {
+      "join": true,
+      "target": "acoustic"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "quality",
+    "tool": "export",
+    "params": {
+      "join": true,
+      "target": "acoustic"
+    },
+    "labels": [
+      "BIOMETRIC",
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "quality",
+    "tool": "export",
+    "params": {
+      "join": true,
+      "target": "internal"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "quality",
+    "tool": "export",
+    "params": {
+      "join": true,
+      "target": "internal"
+    },
+    "labels": [
+      "BIOMETRIC"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "quality",
+    "tool": "export",
+    "params": {
+      "join": true,
+      "target": "internal"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "quality",
+    "tool": "export",
+    "params": {
+      "join": true,
+      "target": "internal"
+    },
+    "labels": [
+      "BIOMETRIC",
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "quality",
+    "tool": "export",
+    "params": {
+      "join": true,
+      "target": "both"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "quality",
+    "tool": "export",
+    "params": {
+      "join": true,
+      "target": "both"
+    },
+    "labels": [
+      "BIOMETRIC"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "quality",
+    "tool": "export",
+    "params": {
+      "join": true,
+      "target": "both"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "quality",
+    "tool": "export",
+    "params": {
+      "join": true,
+      "target": "both"
+    },
+    "labels": [
+      "BIOMETRIC",
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "schema_version": 2,
+  "audit_revision": "persisted reads and exact receiver/store assertions; all six baselines physically executed",
+  "status": "PASS",
+  "created_at_utc": "2026-09-19T15:49:42.589820+00:00",
+  "python": "3.11.3",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "network_scope": "127.0.0.1 loopback only",
+  "suite": "three controlled business scenarios x 24 workflow instances",
+  "source_sha256": "a916f2d002a8a0940eca2b0baa44719e5b315337439848d70ce2ae428cdd4376"
+}

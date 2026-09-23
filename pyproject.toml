@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sage-guard-research"
+version = "0.1.0"
+description = "Synthesis and verification of information-flow guards"
+requires-python = ">=3.9"
+dependencies = ["z3-solver>=4.13", "PyYAML>=6.0", "grpcio>=1.66"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9"]
+llm = ["openai>=1,<3", "requests>=2,<3"]
+
+[tool.setuptools.packages.find]
+include = ["sage*", "experiments*", "benchmarks*", "integrations*"]
+
+[tool.pytest.ini_options]
+testpaths = ["sage/v2/tests"]
+addopts = "-ra"

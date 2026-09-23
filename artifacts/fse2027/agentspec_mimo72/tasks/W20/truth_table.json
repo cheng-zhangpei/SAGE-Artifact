@@ -1,0 +1,142 @@
+[
+  {
+    "agent": "developer",
+    "tool": "prepare",
+    "params": {},
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "developer",
+    "tool": "prepare",
+    "params": {},
+    "labels": [
+      "TOKEN"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "developer",
+    "tool": "attach",
+    "params": {},
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "developer",
+    "tool": "attach",
+    "params": {},
+    "labels": [
+      "TOKEN"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "bot",
+    "tool": "submit",
+    "params": {
+      "attachment": "none",
+      "index": false,
+      "visibility": "public"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "bot",
+    "tool": "submit",
+    "params": {
+      "attachment": "none",
+      "index": false,
+      "visibility": "public"
+    },
+    "labels": [
+      "TOKEN"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "bot",
+    "tool": "submit",
+    "params": {
+      "attachment": "dump",
+      "index": false,
+      "visibility": "internal"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "bot",
+    "tool": "submit",
+    "params": {
+      "attachment": "dump",
+      "index": false,
+      "visibility": "internal"
+    },
+    "labels": [
+      "TOKEN"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "bot",
+    "tool": "submit",
+    "params": {
+      "attachment": "dump",
+      "index": false,
+      "visibility": "public"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "bot",
+    "tool": "submit",
+    "params": {
+      "attachment": "dump",
+      "index": false,
+      "visibility": "public"
+    },
+    "labels": [
+      "TOKEN"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "bot",
+    "tool": "submit",
+    "params": {
+      "attachment": "dump",
+      "index": true,
+      "visibility": "internal"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "bot",
+    "tool": "submit",
+    "params": {
+      "attachment": "dump",
+      "index": true,
+      "visibility": "internal"
+    },
+    "labels": [
+      "TOKEN"
+    ],
+    "candidate": true,
+    "completion": true
+  }
+]

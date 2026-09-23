@@ -1,0 +1,8 @@
+rule @rule_pilot_candidate
+trigger
+ assemble_build
+check
+ pilot_candidate
+enforce
+ stop
+end

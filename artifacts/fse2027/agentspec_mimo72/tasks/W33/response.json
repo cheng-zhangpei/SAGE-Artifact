@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"import json\\n\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    params = json.loads(tool_input)\\n    target = params.get('target')\\n    trusted_labels = set(user_input.get('trusted_event_labels', []))\\n\\n    restrictions = {\\n        'acoustic': {'PII'},\\n        'text_vendor': {'BIOMETRIC'}\\n    }\\n\\n    if target == 'both':\\n        destinations = ['acoustic', 'text_vendor']\\n    else:\\n        destinations = [target]\\n\\n    for dest in destinations:\\n        forbidden = restrictions.get(dest, set())\\n        if not trusted_labels.isdisjoint(forbidden):\\n            return True\\n\\n    return False\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 3840,
+    "prompt_tokens": 837,
+    "total_tokens": 4677,
+    "completion_tokens_details": {
+      "reasoning_tokens": 3672
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "408cc620-536d-4bc4-995e-6b8f1e0c32dc_746a2eeff56946dd989864032e3f1fa2"
+}

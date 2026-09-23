@@ -1,0 +1,300 @@
+[
+  {
+    "agent": "search",
+    "tool": "retrieve",
+    "params": {
+      "tenant": "a"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "search",
+    "tool": "retrieve",
+    "params": {
+      "tenant": "a"
+    },
+    "labels": [
+      "TENANT_A"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "search",
+    "tool": "retrieve",
+    "params": {
+      "tenant": "a"
+    },
+    "labels": [
+      "TENANT_B"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "search",
+    "tool": "retrieve",
+    "params": {
+      "tenant": "a"
+    },
+    "labels": [
+      "TENANT_A",
+      "TENANT_B"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "search",
+    "tool": "retrieve",
+    "params": {
+      "tenant": "b"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "search",
+    "tool": "retrieve",
+    "params": {
+      "tenant": "b"
+    },
+    "labels": [
+      "TENANT_A"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "search",
+    "tool": "retrieve",
+    "params": {
+      "tenant": "b"
+    },
+    "labels": [
+      "TENANT_B"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "search",
+    "tool": "retrieve",
+    "params": {
+      "tenant": "b"
+    },
+    "labels": [
+      "TENANT_A",
+      "TENANT_B"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "support",
+    "tool": "respond",
+    "params": {
+      "fallback": false,
+      "tenant": "a"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "support",
+    "tool": "respond",
+    "params": {
+      "fallback": false,
+      "tenant": "a"
+    },
+    "labels": [
+      "TENANT_A"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "support",
+    "tool": "respond",
+    "params": {
+      "fallback": false,
+      "tenant": "a"
+    },
+    "labels": [
+      "TENANT_B"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "respond",
+    "params": {
+      "fallback": false,
+      "tenant": "a"
+    },
+    "labels": [
+      "TENANT_A",
+      "TENANT_B"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "respond",
+    "params": {
+      "fallback": false,
+      "tenant": "b"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "support",
+    "tool": "respond",
+    "params": {
+      "fallback": false,
+      "tenant": "b"
+    },
+    "labels": [
+      "TENANT_A"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "respond",
+    "params": {
+      "fallback": false,
+      "tenant": "b"
+    },
+    "labels": [
+      "TENANT_B"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "support",
+    "tool": "respond",
+    "params": {
+      "fallback": false,
+      "tenant": "b"
+    },
+    "labels": [
+      "TENANT_A",
+      "TENANT_B"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "respond",
+    "params": {
+      "fallback": true,
+      "tenant": "a"
+    },
+    "labels": [],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "support",
+    "tool": "respond",
+    "params": {
+      "fallback": true,
+      "tenant": "a"
+    },
+    "labels": [
+      "TENANT_A"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "support",
+    "tool": "respond",
+    "params": {
+      "fallback": true,
+      "tenant": "a"
+    },
+    "labels": [
+      "TENANT_B"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "respond",
+    "params": {
+      "fallback": true,
+      "tenant": "a"
+    },
+    "labels": [
+      "TENANT_A",
+      "TENANT_B"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "respond",
+    "params": {
+      "fallback": false,
+      "tenant": "central"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "support",
+    "tool": "respond",
+    "params": {
+      "fallback": false,
+      "tenant": "central"
+    },
+    "labels": [
+      "TENANT_A"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "support",
+    "tool": "respond",
+    "params": {
+      "fallback": false,
+      "tenant": "central"
+    },
+    "labels": [
+      "TENANT_B"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "support",
+    "tool": "respond",
+    "params": {
+      "fallback": false,
+      "tenant": "central"
+    },
+    "labels": [
+      "TENANT_A",
+      "TENANT_B"
+    ],
+    "candidate": false,
+    "completion": false
+  }
+]

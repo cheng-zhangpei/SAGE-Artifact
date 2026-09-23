@@ -1,0 +1,280 @@
+[
+  {
+    "agent": "registrar",
+    "tool": "prepare",
+    "params": {
+      "part": "identity"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "registrar",
+    "tool": "prepare",
+    "params": {
+      "part": "identity"
+    },
+    "labels": [
+      "GRADE"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "registrar",
+    "tool": "prepare",
+    "params": {
+      "part": "identity"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "registrar",
+    "tool": "prepare",
+    "params": {
+      "part": "identity"
+    },
+    "labels": [
+      "GRADE",
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "grader",
+    "tool": "calculate",
+    "params": {},
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "grader",
+    "tool": "calculate",
+    "params": {},
+    "labels": [
+      "GRADE"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "grader",
+    "tool": "calculate",
+    "params": {},
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "grader",
+    "tool": "calculate",
+    "params": {},
+    "labels": [
+      "GRADE",
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "teacher",
+    "tool": "publish",
+    "params": {
+      "target": "class_board"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "teacher",
+    "tool": "publish",
+    "params": {
+      "target": "class_board"
+    },
+    "labels": [
+      "GRADE"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "teacher",
+    "tool": "publish",
+    "params": {
+      "target": "class_board"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "teacher",
+    "tool": "publish",
+    "params": {
+      "target": "class_board"
+    },
+    "labels": [
+      "GRADE",
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "teacher",
+    "tool": "publish",
+    "params": {
+      "target": "student_portal"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "teacher",
+    "tool": "publish",
+    "params": {
+      "target": "student_portal"
+    },
+    "labels": [
+      "GRADE"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "teacher",
+    "tool": "publish",
+    "params": {
+      "target": "student_portal"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "teacher",
+    "tool": "publish",
+    "params": {
+      "target": "student_portal"
+    },
+    "labels": [
+      "GRADE",
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "teacher",
+    "tool": "publish",
+    "params": {
+      "target": "identity_queue"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "teacher",
+    "tool": "publish",
+    "params": {
+      "target": "identity_queue"
+    },
+    "labels": [
+      "GRADE"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "teacher",
+    "tool": "publish",
+    "params": {
+      "target": "identity_queue"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "teacher",
+    "tool": "publish",
+    "params": {
+      "target": "identity_queue"
+    },
+    "labels": [
+      "GRADE",
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "teacher",
+    "tool": "publish",
+    "params": {
+      "source": "timetable",
+      "target": "class_board"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "teacher",
+    "tool": "publish",
+    "params": {
+      "source": "timetable",
+      "target": "class_board"
+    },
+    "labels": [
+      "GRADE"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "teacher",
+    "tool": "publish",
+    "params": {
+      "source": "timetable",
+      "target": "class_board"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "teacher",
+    "tool": "publish",
+    "params": {
+      "source": "timetable",
+      "target": "class_board"
+    },
+    "labels": [
+      "GRADE",
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  }
+]

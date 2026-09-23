@@ -1,0 +1,2466 @@
+{
+  "id": "COMP-REIMBURSEMENT-08",
+  "layer": "composition",
+  "metrics": {
+    "candidate": {
+      "status": "FAIL",
+      "dangerous": 62,
+      "benign": 34,
+      "missed": 20,
+      "blocked": 18,
+      "unknown_probes": 0,
+      "benign_prefix_blocked": 0,
+      "first_witness": {
+        "prefix": [
+          "expense_import_EMPLOYEE",
+          "expense_review",
+          "expense_assemble"
+        ],
+        "target": "expense_submit_007",
+        "dangerous": true,
+        "labels": [
+          "EMPLOYEE"
+        ],
+        "candidate": false,
+        "candidate_plus_sage": true,
+        "direct_sage": true,
+        "blocked_prefix": {
+          "candidate": [],
+          "candidate_plus_sage": [],
+          "direct_sage": []
+        },
+        "unknown_prefix": {
+          "candidate": false,
+          "candidate_plus_sage": false,
+          "direct_sage": false
+        }
+      }
+    },
+    "candidate_plus_sage": {
+      "status": "PASS",
+      "dangerous": 62,
+      "benign": 34,
+      "missed": 0,
+      "blocked": 18,
+      "unknown_probes": 0,
+      "benign_prefix_blocked": 0,
+      "first_witness": null
+    },
+    "direct_sage": {
+      "status": "PASS",
+      "dangerous": 62,
+      "benign": 34,
+      "missed": 0,
+      "blocked": 0,
+      "unknown_probes": 0,
+      "benign_prefix_blocked": 0,
+      "first_witness": null
+    }
+  },
+  "probes": [
+    {
+      "prefix": [
+        "expense_review",
+        "expense_assemble"
+      ],
+      "target": "expense_submit_000",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_review",
+        "expense_assemble"
+      ],
+      "target": "expense_submit_001",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_review",
+        "expense_assemble"
+      ],
+      "target": "expense_submit_002",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_review",
+        "expense_assemble"
+      ],
+      "target": "expense_submit_003",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_review",
+        "expense_assemble"
+      ],
+      "target": "expense_submit_004",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_review",
+        "expense_assemble"
+      ],
+      "target": "expense_submit_005",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_review",
+        "expense_assemble"
+      ],
+      "target": "expense_submit_006",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_review",
+        "expense_assemble"
+      ],
+      "target": "expense_submit_007",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_fastpack"
+      ],
+      "target": "expense_submit_000",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_fastpack"
+      ],
+      "target": "expense_submit_001",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_fastpack"
+      ],
+      "target": "expense_submit_002",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_fastpack"
+      ],
+      "target": "expense_submit_003",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_fastpack"
+      ],
+      "target": "expense_submit_004",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_fastpack"
+      ],
+      "target": "expense_submit_005",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_fastpack"
+      ],
+      "target": "expense_submit_006",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_fastpack"
+      ],
+      "target": "expense_submit_007",
+      "dangerous": false,
+      "labels": [],
+      "candidate": false,
+      "candidate_plus_sage": false,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_EMPLOYEE",
+        "expense_review",
+        "expense_assemble"
+      ],
+      "target": "expense_submit_000",
+      "dangerous": true,
+      "labels": [
+        "EMPLOYEE"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_EMPLOYEE",
+        "expense_review",
+        "expense_assemble"
+      ],
+      "target": "expense_submit_001",
+      "dangerous": false,
+      "labels": [
+        "EMPLOYEE"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_EMPLOYEE",
+        "expense_review",
+        "expense_assemble"
+      ],
+      "target": "expense_submit_002",
+      "dangerous": true,
+      "labels": [
+        "EMPLOYEE"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_EMPLOYEE",
+        "expense_review",
+        "expense_assemble"
+      ],
+      "target": "expense_submit_003",
+      "dangerous": true,
+      "labels": [
+        "EMPLOYEE"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_EMPLOYEE",
+        "expense_review",
+        "expense_assemble"
+      ],
+      "target": "expense_submit_004",
+      "dangerous": false,
+      "labels": [
+        "EMPLOYEE"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_EMPLOYEE",
+        "expense_review",
+        "expense_assemble"
+      ],
+      "target": "expense_submit_005",
+      "dangerous": true,
+      "labels": [
+        "EMPLOYEE"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_EMPLOYEE",
+        "expense_review",
+        "expense_assemble"
+      ],
+      "target": "expense_submit_006",
+      "dangerous": false,
+      "labels": [
+        "EMPLOYEE"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_EMPLOYEE",
+        "expense_review",
+        "expense_assemble"
+      ],
+      "target": "expense_submit_007",
+      "dangerous": true,
+      "labels": [
+        "EMPLOYEE"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_EMPLOYEE",
+        "expense_fastpack"
+      ],
+      "target": "expense_submit_000",
+      "dangerous": true,
+      "labels": [
+        "EMPLOYEE"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_EMPLOYEE",
+        "expense_fastpack"
+      ],
+      "target": "expense_submit_001",
+      "dangerous": false,
+      "labels": [
+        "EMPLOYEE"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_EMPLOYEE",
+        "expense_fastpack"
+      ],
+      "target": "expense_submit_002",
+      "dangerous": true,
+      "labels": [
+        "EMPLOYEE"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_EMPLOYEE",
+        "expense_fastpack"
+      ],
+      "target": "expense_submit_003",
+      "dangerous": true,
+      "labels": [
+        "EMPLOYEE"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_EMPLOYEE",
+        "expense_fastpack"
+      ],
+      "target": "expense_submit_004",
+      "dangerous": false,
+      "labels": [
+        "EMPLOYEE"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_EMPLOYEE",
+        "expense_fastpack"
+      ],
+      "target": "expense_submit_005",
+      "dangerous": true,
+      "labels": [
+        "EMPLOYEE"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_EMPLOYEE",
+        "expense_fastpack"
+      ],
+      "target": "expense_submit_006",
+      "dangerous": false,
+      "labels": [
+        "EMPLOYEE"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_EMPLOYEE",
+        "expense_fastpack"
+      ],
+      "target": "expense_submit_007",
+      "dangerous": true,
+      "labels": [
+        "EMPLOYEE"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_FINANCIAL",
+        "expense_review",
+        "expense_assemble"
+      ],
+      "target": "expense_submit_000",
+      "dangerous": false,
+      "labels": [
+        "FINANCIAL"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_FINANCIAL",
+        "expense_review",
+        "expense_assemble"
+      ],
+      "target": "expense_submit_001",
+      "dangerous": false,
+      "labels": [
+        "FINANCIAL"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_FINANCIAL",
+        "expense_review",
+        "expense_assemble"
+      ],
+      "target": "expense_submit_002",
+      "dangerous": true,
+      "labels": [
+        "FINANCIAL"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_FINANCIAL",
+        "expense_review",
+        "expense_assemble"
+      ],
+      "target": "expense_submit_003",
+      "dangerous": true,
+      "labels": [
+        "FINANCIAL"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_FINANCIAL",
+        "expense_review",
+        "expense_assemble"
+      ],
+      "target": "expense_submit_004",
+      "dangerous": true,
+      "labels": [
+        "FINANCIAL"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_FINANCIAL",
+        "expense_review",
+        "expense_assemble"
+      ],
+      "target": "expense_submit_005",
+      "dangerous": true,
+      "labels": [
+        "FINANCIAL"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_FINANCIAL",
+        "expense_review",
+        "expense_assemble"
+      ],
+      "target": "expense_submit_006",
+      "dangerous": false,
+      "labels": [
+        "FINANCIAL"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_FINANCIAL",
+        "expense_review",
+        "expense_assemble"
+      ],
+      "target": "expense_submit_007",
+      "dangerous": false,
+      "labels": [
+        "FINANCIAL"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_FINANCIAL",
+        "expense_fastpack"
+      ],
+      "target": "expense_submit_000",
+      "dangerous": false,
+      "labels": [
+        "FINANCIAL"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_FINANCIAL",
+        "expense_fastpack"
+      ],
+      "target": "expense_submit_001",
+      "dangerous": false,
+      "labels": [
+        "FINANCIAL"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_FINANCIAL",
+        "expense_fastpack"
+      ],
+      "target": "expense_submit_002",
+      "dangerous": true,
+      "labels": [
+        "FINANCIAL"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_FINANCIAL",
+        "expense_fastpack"
+      ],
+      "target": "expense_submit_003",
+      "dangerous": true,
+      "labels": [
+        "FINANCIAL"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_FINANCIAL",
+        "expense_fastpack"
+      ],
+      "target": "expense_submit_004",
+      "dangerous": true,
+      "labels": [
+        "FINANCIAL"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_FINANCIAL",
+        "expense_fastpack"
+      ],
+      "target": "expense_submit_005",
+      "dangerous": true,
+      "labels": [
+        "FINANCIAL"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_FINANCIAL",
+        "expense_fastpack"
+      ],
+      "target": "expense_submit_006",
+      "dangerous": false,
+      "labels": [
+        "FINANCIAL"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_FINANCIAL",
+        "expense_fastpack"
+      ],
+      "target": "expense_submit_007",
+      "dangerous": false,
+      "labels": [
+        "FINANCIAL"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_AUTH",
+        "expense_review",
+        "expense_assemble"
+      ],
+      "target": "expense_submit_000",
+      "dangerous": true,
+      "labels": [
+        "AUTH"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_AUTH",
+        "expense_review",
+        "expense_assemble"
+      ],
+      "target": "expense_submit_001",
+      "dangerous": true,
+      "labels": [
+        "AUTH"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_AUTH",
+        "expense_review",
+        "expense_assemble"
+      ],
+      "target": "expense_submit_002",
+      "dangerous": true,
+      "labels": [
+        "AUTH"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_AUTH",
+        "expense_review",
+        "expense_assemble"
+      ],
+      "target": "expense_submit_003",
+      "dangerous": true,
+      "labels": [
+        "AUTH"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_AUTH",
+        "expense_review",
+        "expense_assemble"
+      ],
+      "target": "expense_submit_004",
+      "dangerous": true,
+      "labels": [
+        "AUTH"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_AUTH",
+        "expense_review",
+        "expense_assemble"
+      ],
+      "target": "expense_submit_005",
+      "dangerous": true,
+      "labels": [
+        "AUTH"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_AUTH",
+        "expense_review",
+        "expense_assemble"
+      ],
+      "target": "expense_submit_006",
+      "dangerous": true,
+      "labels": [
+        "AUTH"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_AUTH",
+        "expense_review",
+        "expense_assemble"
+      ],
+      "target": "expense_submit_007",
+      "dangerous": true,
+      "labels": [
+        "AUTH"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_AUTH",
+        "expense_fastpack"
+      ],
+      "target": "expense_submit_000",
+      "dangerous": true,
+      "labels": [
+        "AUTH"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_AUTH",
+        "expense_fastpack"
+      ],
+      "target": "expense_submit_001",
+      "dangerous": true,
+      "labels": [
+        "AUTH"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_AUTH",
+        "expense_fastpack"
+      ],
+      "target": "expense_submit_002",
+      "dangerous": true,
+      "labels": [
+        "AUTH"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_AUTH",
+        "expense_fastpack"
+      ],
+      "target": "expense_submit_003",
+      "dangerous": true,
+      "labels": [
+        "AUTH"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_AUTH",
+        "expense_fastpack"
+      ],
+      "target": "expense_submit_004",
+      "dangerous": true,
+      "labels": [
+        "AUTH"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_AUTH",
+        "expense_fastpack"
+      ],
+      "target": "expense_submit_005",
+      "dangerous": true,
+      "labels": [
+        "AUTH"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_AUTH",
+        "expense_fastpack"
+      ],
+      "target": "expense_submit_006",
+      "dangerous": true,
+      "labels": [
+        "AUTH"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_AUTH",
+        "expense_fastpack"
+      ],
+      "target": "expense_submit_007",
+      "dangerous": true,
+      "labels": [
+        "AUTH"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_UNVERIFIED",
+        "expense_review",
+        "expense_assemble"
+      ],
+      "target": "expense_submit_000",
+      "dangerous": true,
+      "labels": [
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_UNVERIFIED",
+        "expense_review",
+        "expense_assemble"
+      ],
+      "target": "expense_submit_001",
+      "dangerous": true,
+      "labels": [
+        "UNVERIFIED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_UNVERIFIED",
+        "expense_review",
+        "expense_assemble"
+      ],
+      "target": "expense_submit_002",
+      "dangerous": true,
+      "labels": [
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_UNVERIFIED",
+        "expense_review",
+        "expense_assemble"
+      ],
+      "target": "expense_submit_003",
+      "dangerous": true,
+      "labels": [
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_UNVERIFIED",
+        "expense_review",
+        "expense_assemble"
+      ],
+      "target": "expense_submit_004",
+      "dangerous": true,
+      "labels": [
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_UNVERIFIED",
+        "expense_review",
+        "expense_assemble"
+      ],
+      "target": "expense_submit_005",
+      "dangerous": false,
+      "labels": [
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_UNVERIFIED",
+        "expense_review",
+        "expense_assemble"
+      ],
+      "target": "expense_submit_006",
+      "dangerous": true,
+      "labels": [
+        "UNVERIFIED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_UNVERIFIED",
+        "expense_review",
+        "expense_assemble"
+      ],
+      "target": "expense_submit_007",
+      "dangerous": false,
+      "labels": [
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_UNVERIFIED",
+        "expense_fastpack"
+      ],
+      "target": "expense_submit_000",
+      "dangerous": true,
+      "labels": [
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_UNVERIFIED",
+        "expense_fastpack"
+      ],
+      "target": "expense_submit_001",
+      "dangerous": true,
+      "labels": [
+        "UNVERIFIED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_UNVERIFIED",
+        "expense_fastpack"
+      ],
+      "target": "expense_submit_002",
+      "dangerous": true,
+      "labels": [
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_UNVERIFIED",
+        "expense_fastpack"
+      ],
+      "target": "expense_submit_003",
+      "dangerous": true,
+      "labels": [
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_UNVERIFIED",
+        "expense_fastpack"
+      ],
+      "target": "expense_submit_004",
+      "dangerous": true,
+      "labels": [
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_UNVERIFIED",
+        "expense_fastpack"
+      ],
+      "target": "expense_submit_005",
+      "dangerous": false,
+      "labels": [
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_UNVERIFIED",
+        "expense_fastpack"
+      ],
+      "target": "expense_submit_006",
+      "dangerous": true,
+      "labels": [
+        "UNVERIFIED"
+      ],
+      "candidate": false,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_UNVERIFIED",
+        "expense_fastpack"
+      ],
+      "target": "expense_submit_007",
+      "dangerous": false,
+      "labels": [
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": false,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_EMPLOYEE",
+        "expense_import_FINANCIAL",
+        "expense_import_AUTH",
+        "expense_import_UNVERIFIED",
+        "expense_review",
+        "expense_assemble"
+      ],
+      "target": "expense_submit_000",
+      "dangerous": true,
+      "labels": [
+        "AUTH",
+        "EMPLOYEE",
+        "FINANCIAL",
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_EMPLOYEE",
+        "expense_import_FINANCIAL",
+        "expense_import_AUTH",
+        "expense_import_UNVERIFIED",
+        "expense_review",
+        "expense_assemble"
+      ],
+      "target": "expense_submit_001",
+      "dangerous": true,
+      "labels": [
+        "AUTH",
+        "EMPLOYEE",
+        "FINANCIAL",
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_EMPLOYEE",
+        "expense_import_FINANCIAL",
+        "expense_import_AUTH",
+        "expense_import_UNVERIFIED",
+        "expense_review",
+        "expense_assemble"
+      ],
+      "target": "expense_submit_002",
+      "dangerous": true,
+      "labels": [
+        "AUTH",
+        "EMPLOYEE",
+        "FINANCIAL",
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_EMPLOYEE",
+        "expense_import_FINANCIAL",
+        "expense_import_AUTH",
+        "expense_import_UNVERIFIED",
+        "expense_review",
+        "expense_assemble"
+      ],
+      "target": "expense_submit_003",
+      "dangerous": true,
+      "labels": [
+        "AUTH",
+        "EMPLOYEE",
+        "FINANCIAL",
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_EMPLOYEE",
+        "expense_import_FINANCIAL",
+        "expense_import_AUTH",
+        "expense_import_UNVERIFIED",
+        "expense_review",
+        "expense_assemble"
+      ],
+      "target": "expense_submit_004",
+      "dangerous": true,
+      "labels": [
+        "AUTH",
+        "EMPLOYEE",
+        "FINANCIAL",
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_EMPLOYEE",
+        "expense_import_FINANCIAL",
+        "expense_import_AUTH",
+        "expense_import_UNVERIFIED",
+        "expense_review",
+        "expense_assemble"
+      ],
+      "target": "expense_submit_005",
+      "dangerous": true,
+      "labels": [
+        "AUTH",
+        "EMPLOYEE",
+        "FINANCIAL",
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_EMPLOYEE",
+        "expense_import_FINANCIAL",
+        "expense_import_AUTH",
+        "expense_import_UNVERIFIED",
+        "expense_review",
+        "expense_assemble"
+      ],
+      "target": "expense_submit_006",
+      "dangerous": true,
+      "labels": [
+        "AUTH",
+        "EMPLOYEE",
+        "FINANCIAL",
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_EMPLOYEE",
+        "expense_import_FINANCIAL",
+        "expense_import_AUTH",
+        "expense_import_UNVERIFIED",
+        "expense_review",
+        "expense_assemble"
+      ],
+      "target": "expense_submit_007",
+      "dangerous": true,
+      "labels": [
+        "AUTH",
+        "EMPLOYEE",
+        "FINANCIAL",
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_EMPLOYEE",
+        "expense_import_FINANCIAL",
+        "expense_import_AUTH",
+        "expense_import_UNVERIFIED",
+        "expense_fastpack"
+      ],
+      "target": "expense_submit_000",
+      "dangerous": true,
+      "labels": [
+        "AUTH",
+        "EMPLOYEE",
+        "FINANCIAL",
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_EMPLOYEE",
+        "expense_import_FINANCIAL",
+        "expense_import_AUTH",
+        "expense_import_UNVERIFIED",
+        "expense_fastpack"
+      ],
+      "target": "expense_submit_001",
+      "dangerous": true,
+      "labels": [
+        "AUTH",
+        "EMPLOYEE",
+        "FINANCIAL",
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_EMPLOYEE",
+        "expense_import_FINANCIAL",
+        "expense_import_AUTH",
+        "expense_import_UNVERIFIED",
+        "expense_fastpack"
+      ],
+      "target": "expense_submit_002",
+      "dangerous": true,
+      "labels": [
+        "AUTH",
+        "EMPLOYEE",
+        "FINANCIAL",
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_EMPLOYEE",
+        "expense_import_FINANCIAL",
+        "expense_import_AUTH",
+        "expense_import_UNVERIFIED",
+        "expense_fastpack"
+      ],
+      "target": "expense_submit_003",
+      "dangerous": true,
+      "labels": [
+        "AUTH",
+        "EMPLOYEE",
+        "FINANCIAL",
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_EMPLOYEE",
+        "expense_import_FINANCIAL",
+        "expense_import_AUTH",
+        "expense_import_UNVERIFIED",
+        "expense_fastpack"
+      ],
+      "target": "expense_submit_004",
+      "dangerous": true,
+      "labels": [
+        "AUTH",
+        "EMPLOYEE",
+        "FINANCIAL",
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_EMPLOYEE",
+        "expense_import_FINANCIAL",
+        "expense_import_AUTH",
+        "expense_import_UNVERIFIED",
+        "expense_fastpack"
+      ],
+      "target": "expense_submit_005",
+      "dangerous": true,
+      "labels": [
+        "AUTH",
+        "EMPLOYEE",
+        "FINANCIAL",
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_EMPLOYEE",
+        "expense_import_FINANCIAL",
+        "expense_import_AUTH",
+        "expense_import_UNVERIFIED",
+        "expense_fastpack"
+      ],
+      "target": "expense_submit_006",
+      "dangerous": true,
+      "labels": [
+        "AUTH",
+        "EMPLOYEE",
+        "FINANCIAL",
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    },
+    {
+      "prefix": [
+        "expense_import_EMPLOYEE",
+        "expense_import_FINANCIAL",
+        "expense_import_AUTH",
+        "expense_import_UNVERIFIED",
+        "expense_fastpack"
+      ],
+      "target": "expense_submit_007",
+      "dangerous": true,
+      "labels": [
+        "AUTH",
+        "EMPLOYEE",
+        "FINANCIAL",
+        "UNVERIFIED"
+      ],
+      "candidate": true,
+      "candidate_plus_sage": true,
+      "direct_sage": true,
+      "blocked_prefix": {
+        "candidate": [],
+        "candidate_plus_sage": [],
+        "direct_sage": []
+      },
+      "unknown_prefix": {
+        "candidate": false,
+        "candidate_plus_sage": false,
+        "direct_sage": false
+      }
+    }
+  ],
+  "runtime_invocations": 480,
+  "observable_domain_checks": 240,
+  "candidate_runtime_errors": [],
+  "certificate": "exhaustive finite observable-domain coverage; sufficient, not reachability-complete"
+}

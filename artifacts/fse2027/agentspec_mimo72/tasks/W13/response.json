@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"import json\\n\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    params = json.loads(tool_input)\\n    tool = user_input.get('tool', '')\\n    trusted_labels = set(user_input.get('trusted_event_labels', []))\\n\\n    if tool == 'collect':\\n        return False\\n    elif tool == 'send':\\n        target = params.get('target', '')\\n        allowed = {'candidate': {'INTERNAL_SCORE'}, 'jobs': {'PII', 'INTERNAL_SCORE'}, 'archive': {'PII', 'INTERNAL_SCORE'}}\\n        if target in allowed:\\n            allowed_set = allowed[target]\\n        else:\\n            allowed_set = {'PII', 'INTERNAL_SCORE'}\\n        if not trusted_labels.issubset(allowed_set):\\n            return True\\n        else:\\n            return False\\n    else:\\n        return False\\n\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 5872,
+    "prompt_tokens": 852,
+    "total_tokens": 6724,
+    "completion_tokens_details": {
+      "reasoning_tokens": 5672
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "07c5201e-7451-444b-bd3d-2602999826ac_40625295d03a4941b875b2a1f2c18dcf"
+}

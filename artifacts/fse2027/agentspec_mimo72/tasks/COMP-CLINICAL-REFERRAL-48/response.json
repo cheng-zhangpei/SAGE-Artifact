@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"import json\\n\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    params = json.loads(tool_input)\\n    agent = user_input.get('agent')\\n    trusted_labels = user_input.get('trusted_event_labels')\\n    tool_name = user_input.get('tool')\\n    \\n    if tool_name != 'route_referral':\\n        return False\\n    \\n    destination = params.get('destination')\\n    record = params.get('record')\\n    \\n    dest_slot = None\\n    if agent == 'care':\\n        if destination == 'local':\\n            dest_slot = 'slot:hospital'\\n        elif destination == 'partner':\\n            dest_slot = 'slot:scheduler'\\n        elif destination == 'release':\\n            dest_slot = 'slot:public'\\n    elif agent == 'research':\\n        if destination == 'local':\\n            dest_slot = 'slot:hospital'\\n        elif destination == 'partner':\\n            dest_slot = 'slot:research'\\n        elif destination == 'release':\\n            dest_slot = 'slot:lab'\\n    \\n    rec_slot = None\\n    if record == 'audit':\\n        rec_slot = 'slot:audit'\\n    elif record == 'partner':\\n        rec_slot = 'slot:partner'\\n    elif record == 'public':\\n        rec_slot = 'slot:public'\\n    \\n    policy = {\\n        'slot:audit': ['DIAGNOSIS', 'AUTH'],\\n        'slot:lab': ['PATIENT', 'AUTH'],\\n        'slot:public': ['PATIENT', 'DIAGNOSIS', 'AUTH'],\\n        'slot:research': ['PATIENT', 'UNVERIFIED'],\\n        'slot:scheduler': ['DIAGNOSIS', 'AUTH']\\n    }\\n    \\n    if dest_slot in policy:\\n        allowed = policy[dest_slot]\\n        if not all(label in allowed for label in trusted_labels):\\n            return True\\n    \\n    if rec_slot in policy:\\n        allowed = policy[rec_slot]\\n        if not all(label in allowed for label in trusted_labels):\\n            return True\\n    \\n    return False\\n\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 5368,
+    "prompt_tokens": 3805,
+    "total_tokens": 9173,
+    "completion_tokens_details": {
+      "reasoning_tokens": 4862
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "a2464534-7a6e-41a7-b7a2-0efbc838b146_2bba6eb655384ed6a64ee6def6d504d1"
+}

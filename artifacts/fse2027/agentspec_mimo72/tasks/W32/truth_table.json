@@ -1,0 +1,134 @@
+[
+  {
+    "agent": "researcher",
+    "tool": "prepare_summary",
+    "params": {},
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "researcher",
+    "tool": "prepare_summary",
+    "params": {},
+    "labels": [
+      "EXPLOIT"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "researcher",
+    "tool": "attach_reproducer",
+    "params": {},
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "researcher",
+    "tool": "attach_reproducer",
+    "params": {},
+    "labels": [
+      "EXPLOIT"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "bot",
+    "tool": "send_summary",
+    "params": {
+      "include_reproducer": false,
+      "target": "issues"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "bot",
+    "tool": "send_summary",
+    "params": {
+      "include_reproducer": false,
+      "target": "issues"
+    },
+    "labels": [
+      "EXPLOIT"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "bot",
+    "tool": "send_summary",
+    "params": {
+      "include_reproducer": true,
+      "target": "issues"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "bot",
+    "tool": "send_summary",
+    "params": {
+      "include_reproducer": true,
+      "target": "issues"
+    },
+    "labels": [
+      "EXPLOIT"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "bot",
+    "tool": "send_summary",
+    "params": {
+      "mirror": false,
+      "target": "maintainer"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "bot",
+    "tool": "send_summary",
+    "params": {
+      "mirror": false,
+      "target": "maintainer"
+    },
+    "labels": [
+      "EXPLOIT"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "bot",
+    "tool": "send_summary",
+    "params": {
+      "mirror": true,
+      "target": "maintainer"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "bot",
+    "tool": "send_summary",
+    "params": {
+      "mirror": true,
+      "target": "maintainer"
+    },
+    "labels": [
+      "EXPLOIT"
+    ],
+    "candidate": true,
+    "completion": true
+  }
+]

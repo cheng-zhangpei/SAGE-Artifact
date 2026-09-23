@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"import json\\n\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    # Parse the tool parameters if provided\\n    params = json.loads(tool_input) if tool_input else {}\\n    \\n    # Extract necessary context from user_input\\n    trusted_labels = user_input.get('trusted_event_labels', [])\\n    tool_name = user_input.get('tool', '')\\n    agent = user_input.get('agent', '')\\n    \\n    # Policy for restricted slots (labels that cannot be written to each slot)\\n    restricted_labels = {\\n        'eu': ['US_SUBJECT'],\\n        'us': ['EU_SUBJECT'],\\n        'demo': ['EU_SUBJECT', 'US_SUBJECT']\\n    }\\n    \\n    # For collect tools (no region parameter), allow since they write to shared batch\\n    if tool_name == 'collect':\\n        return False\\n    \\n    # For export tools, check if target region allows the labels in the batch\\n    elif tool_name == 'export':\\n        region = params.get('region', '')\\n        \\n        # If region is not in restricted list (e.g., 'joint'), allow\\n        if region not in restricted_labels:\\n            return False\\n        \\n        # Check if any label being exported is forbidden in the target region\\n        forbidden = restricted_labels[region]\\n        if any(label in forbidden for label in trusted_labels):\\n            return True  # Block: forbidden label would be written to restricted slot\\n        else:\\n            return False\\n    \\n    # Default: allow other tools (though only collect and export are expected)\\n    return False\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 3523,
+    "prompt_tokens": 823,
+    "total_tokens": 4346,
+    "completion_tokens_details": {
+      "reasoning_tokens": 3161
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "30eb4caa-d5bf-4d79-bea2-1a3991e630aa_34ea46bd11594463be71201205a0c833"
+}

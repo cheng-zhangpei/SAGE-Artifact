@@ -1,0 +1,2649 @@
+[
+  {
+    "id": 6531,
+    "kind": "independent_binary",
+    "sources": [
+      "Image Style"
+    ],
+    "sink": "Save Image",
+    "required": [
+      "LinkedIn Creator Agent",
+      "Image Style",
+      "Save Image"
+    ],
+    "rationale": "A Drive reference image enters image generation without entering the earlier creator-agent context; the rendered image retains its provenance.",
+    "limitations": "paired study fixture; labels and destination policy supplied by the study; source dependency review, not a measured production incident",
+    "candidate_status": "confirmed_collision_under_reviewed_contract",
+    "candidate_subtype": "transform",
+    "source_sha256": "4250c570f49ed7bd6607437effe6959b3b2c92a21ecd969b2a2c12f0edbde024",
+    "source_name": "LinkedIn content creator system",
+    "coverage": "exhaustive within declared finite sequential slice and listed initial states; not full n8n model",
+    "policy_and_labels": "study supplied; no measured native attack/false-positive rate",
+    "initial_state_count": 2,
+    "events": 4,
+    "dangerous_events": 1,
+    "observations": {
+      "ctx": {
+        "collision_classes": 1,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 1
+      },
+      "event": {
+        "collision_classes": 0,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 0
+      }
+    },
+    "denial_attribution": {
+      "ctx": [
+        {
+          "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+          "action": "workflow_agent/Save Image(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+            "action": "workflow_agent/Save Image(binary_fields='0',recipient='study@example.invalid')"
+          }
+        },
+        {
+          "state": "State(slot:binary_0={step_1}; slot:control={step_1})",
+          "action": "workflow_agent/Save Image(binary_fields='0',recipient='study@example.invalid')",
+          "category": "observation_collision",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+            "action": "workflow_agent/Save Image(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ],
+      "event": [
+        {
+          "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+          "action": "workflow_agent/Save Image(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+            "action": "workflow_agent/Save Image(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ]
+    },
+    "witnesses": [
+      {
+        "same_action": "workflow_agent/Save Image(binary_fields='0',recipient='study@example.invalid')",
+        "benign_state": "State(slot:binary_0={step_1}; slot:control={step_1})",
+        "dangerous_state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})"
+      }
+    ],
+    "compiled_rules": [
+      "Constraint(direct:workflow_agent:Save Image:restricted: workflow_agent/Save Image deny {restricted})"
+    ],
+    "compiled_verified": true,
+    "empty_guard_counterexamples": [
+      [
+        "backend/Image Style(resource='fixed_source_0')",
+        "workflow_agent/Save Image(binary_fields='0',recipient='study@example.invalid')"
+      ]
+    ],
+    "native_execution": false
+  },
+  {
+    "id": 7201,
+    "kind": "generated_from_ctx",
+    "sources": [
+      "Google Drive-get_file"
+    ],
+    "sink": "Gmail",
+    "required": [
+      "Basic LLM Chain-offerLetter",
+      "Basic LLM Chain-email",
+      "Google Drive-get_file",
+      "Gmail"
+    ],
+    "rationale": "The downloaded offer is the stored form of the preceding LLM output; no independently protected input is introduced.",
+    "limitations": "paired study fixture; labels and destination policy supplied by the study; source dependency review, not a measured production incident",
+    "candidate_status": "no_collision_provenance_already_observed",
+    "candidate_subtype": "derived",
+    "source_sha256": "f87ff9843e64a0b6afec32b85046ecd56e0818b3d84e28a7e21db18a30327de0",
+    "source_name": "Generate AI-powered lease renewal offers with Ollama LLM, Supabase and Gmail",
+    "coverage": "exhaustive within declared finite sequential slice and listed initial states; not full n8n model",
+    "policy_and_labels": "study supplied; no measured native attack/false-positive rate",
+    "initial_state_count": 2,
+    "events": 4,
+    "dangerous_events": 1,
+    "observations": {
+      "ctx": {
+        "collision_classes": 0,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 0
+      },
+      "event": {
+        "collision_classes": 0,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 0
+      }
+    },
+    "denial_attribution": {
+      "ctx": [
+        {
+          "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+          "action": "workflow_agent/Gmail(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+            "action": "workflow_agent/Gmail(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ],
+      "event": [
+        {
+          "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+          "action": "workflow_agent/Gmail(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+            "action": "workflow_agent/Gmail(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ]
+    },
+    "witnesses": [],
+    "compiled_rules": [
+      "Constraint(direct:workflow_agent:Gmail:restricted: workflow_agent/Gmail deny {restricted})"
+    ],
+    "compiled_verified": true,
+    "empty_guard_counterexamples": [
+      [
+        "backend/Google Drive-get_file(resource='fixed_source_0')",
+        "workflow_agent/Gmail(binary_fields='0',recipient='study@example.invalid')"
+      ]
+    ],
+    "native_execution": false
+  },
+  {
+    "id": 7695,
+    "kind": "generated_from_ctx",
+    "sources": [
+      "Download file"
+    ],
+    "sink": "Send Email",
+    "required": [
+      "AI Agent",
+      "Download file",
+      "Send Email"
+    ],
+    "rationale": "The downloaded slides are generated from data already supplied to the agent; the download does not introduce an independent provenance.",
+    "limitations": "paired study fixture; labels and destination policy supplied by the study; source dependency review, not a measured production incident",
+    "candidate_status": "no_collision_provenance_already_observed",
+    "candidate_subtype": "derived",
+    "source_sha256": "d4905b138e79c5fd451cda0cc44e4182931a50cc6f0d92e0b0eef2f98525c45e",
+    "source_name": "Automate weekly Meta Ad reports with Claude AI, GoMarble MCP & Google Slides",
+    "coverage": "exhaustive within declared finite sequential slice and listed initial states; not full n8n model",
+    "policy_and_labels": "study supplied; no measured native attack/false-positive rate",
+    "initial_state_count": 2,
+    "events": 4,
+    "dangerous_events": 1,
+    "observations": {
+      "ctx": {
+        "collision_classes": 0,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 0
+      },
+      "event": {
+        "collision_classes": 0,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 0
+      }
+    },
+    "denial_attribution": {
+      "ctx": [
+        {
+          "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+          "action": "workflow_agent/Send Email(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+            "action": "workflow_agent/Send Email(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ],
+      "event": [
+        {
+          "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+          "action": "workflow_agent/Send Email(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+            "action": "workflow_agent/Send Email(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ]
+    },
+    "witnesses": [],
+    "compiled_rules": [
+      "Constraint(direct:workflow_agent:Send Email:restricted: workflow_agent/Send Email deny {restricted})"
+    ],
+    "compiled_verified": true,
+    "empty_guard_counterexamples": [
+      [
+        "backend/Download file(resource='fixed_source_0')",
+        "workflow_agent/Send Email(binary_fields='0',recipient='study@example.invalid')"
+      ]
+    ],
+    "native_execution": false
+  },
+  {
+    "id": 8104,
+    "kind": "independent_binary",
+    "sources": [
+      "Google Drive"
+    ],
+    "sink": "Gmail",
+    "required": [
+      "OpenAI",
+      "OpenAI1",
+      "Google Drive",
+      "Gmail"
+    ],
+    "rationale": "A fixed proposal template is copied, filled, exported, and attached; the earlier AI reads the transcript rather than the template resource.",
+    "limitations": "paired study fixture; labels and destination policy supplied by the study; source dependency review, not a measured production incident",
+    "candidate_status": "confirmed_collision_under_reviewed_contract",
+    "candidate_subtype": "direct_resource",
+    "source_sha256": "5c147274fe5082aa7a6a9f8eeaa2d7f95c2b5fc606c84e204bd706f4924b3fae",
+    "source_name": "Generate AI-powered sales proposals from JotForm leads with OpenAI and Google Docs",
+    "coverage": "exhaustive within declared finite sequential slice and listed initial states; not full n8n model",
+    "policy_and_labels": "study supplied; no measured native attack/false-positive rate",
+    "initial_state_count": 2,
+    "events": 4,
+    "dangerous_events": 1,
+    "observations": {
+      "ctx": {
+        "collision_classes": 1,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 1
+      },
+      "event": {
+        "collision_classes": 0,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 0
+      }
+    },
+    "denial_attribution": {
+      "ctx": [
+        {
+          "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+          "action": "workflow_agent/Gmail(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+            "action": "workflow_agent/Gmail(binary_fields='0',recipient='study@example.invalid')"
+          }
+        },
+        {
+          "state": "State(slot:binary_0={step_1}; slot:control={step_1})",
+          "action": "workflow_agent/Gmail(binary_fields='0',recipient='study@example.invalid')",
+          "category": "observation_collision",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+            "action": "workflow_agent/Gmail(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ],
+      "event": [
+        {
+          "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+          "action": "workflow_agent/Gmail(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+            "action": "workflow_agent/Gmail(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ]
+    },
+    "witnesses": [
+      {
+        "same_action": "workflow_agent/Gmail(binary_fields='0',recipient='study@example.invalid')",
+        "benign_state": "State(slot:binary_0={step_1}; slot:control={step_1})",
+        "dangerous_state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})"
+      }
+    ],
+    "compiled_rules": [
+      "Constraint(direct:workflow_agent:Gmail:restricted: workflow_agent/Gmail deny {restricted})"
+    ],
+    "compiled_verified": true,
+    "empty_guard_counterexamples": [
+      [
+        "backend/Google Drive(resource='fixed_source_0')",
+        "workflow_agent/Gmail(binary_fields='0',recipient='study@example.invalid')"
+      ]
+    ],
+    "native_execution": false
+  },
+  {
+    "id": 9146,
+    "kind": "generated_from_ctx",
+    "sources": [
+      "Download PDF from URL"
+    ],
+    "sink": "Save PDF to Drive",
+    "required": [
+      "Generate Meeting Summary",
+      "Extract Action Items",
+      "Download PDF from URL",
+      "Save PDF to Drive"
+    ],
+    "rationale": "The downloaded PDF is generated solely from the meeting summary/action-item outputs and public formatting, all already represented upstream.",
+    "limitations": "paired study fixture; labels and destination policy supplied by the study; source dependency review, not a measured production incident",
+    "candidate_status": "no_collision_provenance_already_observed",
+    "candidate_subtype": "derived",
+    "source_sha256": "abf1abdb53bb13b427831cca4cd84c9b2cecc87a500beaf1f425f0205b7dd653",
+    "source_name": "AI-powered meeting minutes with GPT-4, task assignment & multichannel distribution",
+    "coverage": "exhaustive within declared finite sequential slice and listed initial states; not full n8n model",
+    "policy_and_labels": "study supplied; no measured native attack/false-positive rate",
+    "initial_state_count": 2,
+    "events": 4,
+    "dangerous_events": 1,
+    "observations": {
+      "ctx": {
+        "collision_classes": 0,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 0
+      },
+      "event": {
+        "collision_classes": 0,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 0
+      }
+    },
+    "denial_attribution": {
+      "ctx": [
+        {
+          "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+          "action": "workflow_agent/Save PDF to Drive(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+            "action": "workflow_agent/Save PDF to Drive(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ],
+      "event": [
+        {
+          "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+          "action": "workflow_agent/Save PDF to Drive(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+            "action": "workflow_agent/Save PDF to Drive(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ]
+    },
+    "witnesses": [],
+    "compiled_rules": [
+      "Constraint(direct:workflow_agent:Save PDF to Drive:restricted: workflow_agent/Save PDF to Drive deny {restricted})"
+    ],
+    "compiled_verified": true,
+    "empty_guard_counterexamples": [
+      [
+        "backend/Download PDF from URL(resource='fixed_source_0')",
+        "workflow_agent/Save PDF to Drive(binary_fields='0',recipient='study@example.invalid')"
+      ]
+    ],
+    "native_execution": false
+  },
+  {
+    "id": 10126,
+    "kind": "independent_binary",
+    "sources": [
+      "Generate Thumbnail via Templated.io"
+    ],
+    "sink": "Upload to Google Drive",
+    "required": [
+      "OpenAI Post Generation",
+      "OpenAI Post Generation1",
+      "Generate Thumbnail via Templated.io",
+      "Upload to Google Drive"
+    ],
+    "rationale": "A fixed remote template is combined with AI text and the rendered thumbnail is uploaded; the template resource is absent from the earlier AI context.",
+    "limitations": "paired study fixture; labels and destination policy supplied by the study; source dependency review, not a measured production incident",
+    "candidate_status": "confirmed_collision_under_reviewed_contract",
+    "candidate_subtype": "transform",
+    "source_sha256": "7d6a31b2909f53655eb1c6dafe4699d3dcfa15769704c33392e37ba556a421e3",
+    "source_name": "Automate YouTube thumbnail creation & social publishing with Templated.io & Blotato",
+    "coverage": "exhaustive within declared finite sequential slice and listed initial states; not full n8n model",
+    "policy_and_labels": "study supplied; no measured native attack/false-positive rate",
+    "initial_state_count": 2,
+    "events": 4,
+    "dangerous_events": 1,
+    "observations": {
+      "ctx": {
+        "collision_classes": 1,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 1
+      },
+      "event": {
+        "collision_classes": 0,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 0
+      }
+    },
+    "denial_attribution": {
+      "ctx": [
+        {
+          "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+          "action": "workflow_agent/Upload to Google Drive(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+            "action": "workflow_agent/Upload to Google Drive(binary_fields='0',recipient='study@example.invalid')"
+          }
+        },
+        {
+          "state": "State(slot:binary_0={step_1}; slot:control={step_1})",
+          "action": "workflow_agent/Upload to Google Drive(binary_fields='0',recipient='study@example.invalid')",
+          "category": "observation_collision",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+            "action": "workflow_agent/Upload to Google Drive(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ],
+      "event": [
+        {
+          "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+          "action": "workflow_agent/Upload to Google Drive(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+            "action": "workflow_agent/Upload to Google Drive(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ]
+    },
+    "witnesses": [
+      {
+        "same_action": "workflow_agent/Upload to Google Drive(binary_fields='0',recipient='study@example.invalid')",
+        "benign_state": "State(slot:binary_0={step_1}; slot:control={step_1})",
+        "dangerous_state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})"
+      }
+    ],
+    "compiled_rules": [
+      "Constraint(direct:workflow_agent:Upload to Google Drive:restricted: workflow_agent/Upload to Google Drive deny {restricted})"
+    ],
+    "compiled_verified": true,
+    "empty_guard_counterexamples": [
+      [
+        "backend/Generate Thumbnail via Templated.io(resource='fixed_source_0')",
+        "workflow_agent/Upload to Google Drive(binary_fields='0',recipient='study@example.invalid')"
+      ]
+    ],
+    "native_execution": false
+  },
+  {
+    "id": 10441,
+    "kind": "generated_from_ctx",
+    "sources": [
+      "Generate PDF"
+    ],
+    "sink": "Send Email",
+    "required": [
+      "AI Report Writer",
+      "AI Summarizer",
+      "Generate PDF",
+      "Send Email"
+    ],
+    "rationale": "The PDF is a rendering of the AI report HTML and introduces no independently protected field or resource.",
+    "limitations": "paired study fixture; labels and destination policy supplied by the study; source dependency review, not a measured production incident",
+    "candidate_status": "no_collision_provenance_already_observed",
+    "candidate_subtype": "derived",
+    "source_sha256": "6cf902b4291a9d27bbb268f72bc5c48ccc0d5461c59c31219104ce260212f215",
+    "source_name": "Weekly Facebook ads performance reports with AI-powered analysis & Gmail delivery",
+    "coverage": "exhaustive within declared finite sequential slice and listed initial states; not full n8n model",
+    "policy_and_labels": "study supplied; no measured native attack/false-positive rate",
+    "initial_state_count": 2,
+    "events": 4,
+    "dangerous_events": 1,
+    "observations": {
+      "ctx": {
+        "collision_classes": 0,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 0
+      },
+      "event": {
+        "collision_classes": 0,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 0
+      }
+    },
+    "denial_attribution": {
+      "ctx": [
+        {
+          "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+          "action": "workflow_agent/Send Email(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+            "action": "workflow_agent/Send Email(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ],
+      "event": [
+        {
+          "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+          "action": "workflow_agent/Send Email(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+            "action": "workflow_agent/Send Email(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ]
+    },
+    "witnesses": [],
+    "compiled_rules": [
+      "Constraint(direct:workflow_agent:Send Email:restricted: workflow_agent/Send Email deny {restricted})"
+    ],
+    "compiled_verified": true,
+    "empty_guard_counterexamples": [
+      [
+        "backend/Generate PDF(resource='fixed_source_0')",
+        "workflow_agent/Send Email(binary_fields='0',recipient='study@example.invalid')"
+      ]
+    ],
+    "native_execution": false
+  },
+  {
+    "id": 10880,
+    "kind": "generated_from_ctx",
+    "sources": [
+      "PDF creator"
+    ],
+    "sink": "Send PDF",
+    "required": [
+      "Conceptualization Agent",
+      "Moodboard Generator Agent",
+      "PDF creator",
+      "Send PDF"
+    ],
+    "rationale": "The PDF contains generated moodboard output and public rendering assets; no independently protected input is established by the workflow.",
+    "limitations": "paired study fixture; labels and destination policy supplied by the study; source dependency review, not a measured production incident",
+    "candidate_status": "no_collision_provenance_already_observed",
+    "candidate_subtype": "derived",
+    "source_sha256": "c3fffd61936d3f325d9ad2c11d3cca90fe3ca1d8eb7b0d097e5ca04f80bef01c",
+    "source_name": "Generate Interior Moodboards with Claude/Gemini Agents, Hugging Face Image Generation, and PDF Export",
+    "coverage": "exhaustive within declared finite sequential slice and listed initial states; not full n8n model",
+    "policy_and_labels": "study supplied; no measured native attack/false-positive rate",
+    "initial_state_count": 2,
+    "events": 4,
+    "dangerous_events": 1,
+    "observations": {
+      "ctx": {
+        "collision_classes": 0,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 0
+      },
+      "event": {
+        "collision_classes": 0,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 0
+      }
+    },
+    "denial_attribution": {
+      "ctx": [
+        {
+          "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+          "action": "workflow_agent/Send PDF(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+            "action": "workflow_agent/Send PDF(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ],
+      "event": [
+        {
+          "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+          "action": "workflow_agent/Send PDF(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+            "action": "workflow_agent/Send PDF(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ]
+    },
+    "witnesses": [],
+    "compiled_rules": [
+      "Constraint(direct:workflow_agent:Send PDF:restricted: workflow_agent/Send PDF deny {restricted})"
+    ],
+    "compiled_verified": true,
+    "empty_guard_counterexamples": [
+      [
+        "backend/PDF creator(resource='fixed_source_0')",
+        "workflow_agent/Send PDF(binary_fields='0',recipient='study@example.invalid')"
+      ]
+    ],
+    "native_execution": false
+  },
+  {
+    "id": 11529,
+    "kind": "independent_binary",
+    "sources": [
+      "Get Email Attachments"
+    ],
+    "sink": "Save Photos to Drive",
+    "required": [
+      "Extract Email Info",
+      "Get Email Attachments",
+      "Save Photos to Drive"
+    ],
+    "rationale": "Attachment bytes are fetched after the extractor reads email text; the photo resource is not part of the extractor's context.",
+    "limitations": "paired study fixture; labels and destination policy supplied by the study; source dependency review, not a measured production incident",
+    "candidate_status": "confirmed_collision_under_reviewed_contract",
+    "candidate_subtype": "direct_resource",
+    "source_sha256": "6e836931f7decd141a6211475d048614c15fffefa405a7dd9fecf3b1c47e160e",
+    "source_name": "Organize school emails with AI, Google Calendar and Drive auto-triage system",
+    "coverage": "exhaustive within declared finite sequential slice and listed initial states; not full n8n model",
+    "policy_and_labels": "study supplied; no measured native attack/false-positive rate",
+    "initial_state_count": 2,
+    "events": 4,
+    "dangerous_events": 1,
+    "observations": {
+      "ctx": {
+        "collision_classes": 1,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 1
+      },
+      "event": {
+        "collision_classes": 0,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 0
+      }
+    },
+    "denial_attribution": {
+      "ctx": [
+        {
+          "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+          "action": "workflow_agent/Save Photos to Drive(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+            "action": "workflow_agent/Save Photos to Drive(binary_fields='0',recipient='study@example.invalid')"
+          }
+        },
+        {
+          "state": "State(slot:binary_0={step_1}; slot:control={step_1})",
+          "action": "workflow_agent/Save Photos to Drive(binary_fields='0',recipient='study@example.invalid')",
+          "category": "observation_collision",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+            "action": "workflow_agent/Save Photos to Drive(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ],
+      "event": [
+        {
+          "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+          "action": "workflow_agent/Save Photos to Drive(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+            "action": "workflow_agent/Save Photos to Drive(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ]
+    },
+    "witnesses": [
+      {
+        "same_action": "workflow_agent/Save Photos to Drive(binary_fields='0',recipient='study@example.invalid')",
+        "benign_state": "State(slot:binary_0={step_1}; slot:control={step_1})",
+        "dangerous_state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})"
+      }
+    ],
+    "compiled_rules": [
+      "Constraint(direct:workflow_agent:Save Photos to Drive:restricted: workflow_agent/Save Photos to Drive deny {restricted})"
+    ],
+    "compiled_verified": true,
+    "empty_guard_counterexamples": [
+      [
+        "backend/Get Email Attachments(resource='fixed_source_0')",
+        "workflow_agent/Save Photos to Drive(binary_fields='0',recipient='study@example.invalid')"
+      ]
+    ],
+    "native_execution": false
+  },
+  {
+    "id": 11745,
+    "kind": "independent_binary",
+    "sources": [
+      "Generate Review Card HTML"
+    ],
+    "sink": "Send Review to Employee",
+    "required": [
+      "AI Summary Generator",
+      "Generate Review Card HTML",
+      "Send Review to Employee"
+    ],
+    "rationale": "The rendered review includes managerName, reviewId, and reviewDate merged after AI summarization; those fields are absent from the AI prompt.",
+    "limitations": "paired study fixture; labels and destination policy supplied by the study; source dependency review, not a measured production incident",
+    "candidate_status": "confirmed_collision_under_reviewed_contract",
+    "candidate_subtype": "context_projection",
+    "source_sha256": "dd95ba1c0670446a1d1a9005f66411121841a8a854cf084d68211a2d2dd7ac24",
+    "source_name": "Generate employee performance review summaries with GPT-4, Gmail and Sheets",
+    "coverage": "exhaustive within declared finite sequential slice and listed initial states; not full n8n model",
+    "policy_and_labels": "study supplied; no measured native attack/false-positive rate",
+    "initial_state_count": 2,
+    "events": 4,
+    "dangerous_events": 1,
+    "observations": {
+      "ctx": {
+        "collision_classes": 1,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 1
+      },
+      "event": {
+        "collision_classes": 0,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 0
+      }
+    },
+    "denial_attribution": {
+      "ctx": [
+        {
+          "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+          "action": "workflow_agent/Send Review to Employee(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+            "action": "workflow_agent/Send Review to Employee(binary_fields='0',recipient='study@example.invalid')"
+          }
+        },
+        {
+          "state": "State(slot:binary_0={step_1}; slot:control={step_1})",
+          "action": "workflow_agent/Send Review to Employee(binary_fields='0',recipient='study@example.invalid')",
+          "category": "observation_collision",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+            "action": "workflow_agent/Send Review to Employee(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ],
+      "event": [
+        {
+          "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+          "action": "workflow_agent/Send Review to Employee(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+            "action": "workflow_agent/Send Review to Employee(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ]
+    },
+    "witnesses": [
+      {
+        "same_action": "workflow_agent/Send Review to Employee(binary_fields='0',recipient='study@example.invalid')",
+        "benign_state": "State(slot:binary_0={step_1}; slot:control={step_1})",
+        "dangerous_state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})"
+      }
+    ],
+    "compiled_rules": [
+      "Constraint(direct:workflow_agent:Send Review to Employee:restricted: workflow_agent/Send Review to Employee deny {restricted})"
+    ],
+    "compiled_verified": true,
+    "empty_guard_counterexamples": [
+      [
+        "backend/Generate Review Card HTML(resource='fixed_source_0')",
+        "workflow_agent/Send Review to Employee(binary_fields='0',recipient='study@example.invalid')"
+      ]
+    ],
+    "native_execution": false
+  },
+  {
+    "id": 11912,
+    "kind": "generated_from_ctx",
+    "sources": [
+      "Get a message1"
+    ],
+    "sink": "Upload file1",
+    "required": [
+      "Message a model2",
+      "Message a model3",
+      "AI Agent1",
+      "Get a message1",
+      "Upload file1"
+    ],
+    "rationale": "A downstream AI explicitly reads text extracted from the same attachment before upload.",
+    "limitations": "paired study fixture; labels and destination policy supplied by the study; source dependency review, not a measured production incident",
+    "candidate_status": "no_collision_provenance_already_observed",
+    "candidate_subtype": "already_observed",
+    "source_sha256": "a0bcae55ca626a5b05aad9a5368f0575b1844c638005d6ae08d3d1ea78cd233d",
+    "source_name": "Automated resume screening & interview scheduling with Gmail, GPT & Airtable",
+    "coverage": "exhaustive within declared finite sequential slice and listed initial states; not full n8n model",
+    "policy_and_labels": "study supplied; no measured native attack/false-positive rate",
+    "initial_state_count": 2,
+    "events": 4,
+    "dangerous_events": 1,
+    "observations": {
+      "ctx": {
+        "collision_classes": 0,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 0
+      },
+      "event": {
+        "collision_classes": 0,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 0
+      }
+    },
+    "denial_attribution": {
+      "ctx": [
+        {
+          "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+          "action": "workflow_agent/Upload file1(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+            "action": "workflow_agent/Upload file1(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ],
+      "event": [
+        {
+          "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+          "action": "workflow_agent/Upload file1(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+            "action": "workflow_agent/Upload file1(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ]
+    },
+    "witnesses": [],
+    "compiled_rules": [
+      "Constraint(direct:workflow_agent:Upload file1:restricted: workflow_agent/Upload file1 deny {restricted})"
+    ],
+    "compiled_verified": true,
+    "empty_guard_counterexamples": [
+      [
+        "backend/Get a message1(resource='fixed_source_0')",
+        "workflow_agent/Upload file1(binary_fields='0',recipient='study@example.invalid')"
+      ]
+    ],
+    "native_execution": false
+  },
+  {
+    "id": 12731,
+    "kind": "independent_binary",
+    "sources": [
+      "Generate Feedback HTML"
+    ],
+    "sink": "Send Student Feedback Email",
+    "required": [
+      "Plagiarism Check Agent",
+      "AI Grading Agent",
+      "Generate Feedback HTML",
+      "Send Student Feedback Email"
+    ],
+    "rationale": "The feedback PDF includes student identity and workflow fields omitted from the grading-agent prompts.",
+    "limitations": "paired study fixture; labels and destination policy supplied by the study; source dependency review, not a measured production incident",
+    "candidate_status": "confirmed_collision_under_reviewed_contract",
+    "candidate_subtype": "context_projection",
+    "source_sha256": "a7bb39947281df5cff30d7d99a4e68f2a7d30acffefe8f60dc128675ef7d5165",
+    "source_name": "Grade and deliver multi-course assignment feedback with GPT-4o, Google Drive, Slack, and Gmail",
+    "coverage": "exhaustive within declared finite sequential slice and listed initial states; not full n8n model",
+    "policy_and_labels": "study supplied; no measured native attack/false-positive rate",
+    "initial_state_count": 2,
+    "events": 4,
+    "dangerous_events": 1,
+    "observations": {
+      "ctx": {
+        "collision_classes": 1,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 1
+      },
+      "event": {
+        "collision_classes": 0,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 0
+      }
+    },
+    "denial_attribution": {
+      "ctx": [
+        {
+          "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+          "action": "workflow_agent/Send Student Feedback Email(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+            "action": "workflow_agent/Send Student Feedback Email(binary_fields='0',recipient='study@example.invalid')"
+          }
+        },
+        {
+          "state": "State(slot:binary_0={step_1}; slot:control={step_1})",
+          "action": "workflow_agent/Send Student Feedback Email(binary_fields='0',recipient='study@example.invalid')",
+          "category": "observation_collision",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+            "action": "workflow_agent/Send Student Feedback Email(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ],
+      "event": [
+        {
+          "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+          "action": "workflow_agent/Send Student Feedback Email(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+            "action": "workflow_agent/Send Student Feedback Email(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ]
+    },
+    "witnesses": [
+      {
+        "same_action": "workflow_agent/Send Student Feedback Email(binary_fields='0',recipient='study@example.invalid')",
+        "benign_state": "State(slot:binary_0={step_1}; slot:control={step_1})",
+        "dangerous_state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})"
+      }
+    ],
+    "compiled_rules": [
+      "Constraint(direct:workflow_agent:Send Student Feedback Email:restricted: workflow_agent/Send Student Feedback Email deny {restricted})"
+    ],
+    "compiled_verified": true,
+    "empty_guard_counterexamples": [
+      [
+        "backend/Generate Feedback HTML(resource='fixed_source_0')",
+        "workflow_agent/Send Student Feedback Email(binary_fields='0',recipient='study@example.invalid')"
+      ]
+    ],
+    "native_execution": false
+  },
+  {
+    "id": 12959,
+    "kind": "generated_from_ctx",
+    "sources": [
+      "Convert Doc to PDF"
+    ],
+    "sink": "Send Proposal via Email",
+    "required": [
+      "Generate Proposal Content",
+      "Convert Doc to PDF",
+      "Send Proposal via Email"
+    ],
+    "rationale": "The proposal document is created from the normalized client data and preceding AI proposal output; no external template is copied.",
+    "limitations": "paired study fixture; labels and destination policy supplied by the study; source dependency review, not a measured production incident",
+    "candidate_status": "no_collision_provenance_already_observed",
+    "candidate_subtype": "derived",
+    "source_sha256": "16c0c8312a0bbd0c93ef24f5365d5f9c3bc84c0bd224663ccee5c0191d67ac0c",
+    "source_name": "Generate proposals with GPT-4o, Google Docs, Gmail and Slack",
+    "coverage": "exhaustive within declared finite sequential slice and listed initial states; not full n8n model",
+    "policy_and_labels": "study supplied; no measured native attack/false-positive rate",
+    "initial_state_count": 2,
+    "events": 4,
+    "dangerous_events": 1,
+    "observations": {
+      "ctx": {
+        "collision_classes": 0,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 0
+      },
+      "event": {
+        "collision_classes": 0,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 0
+      }
+    },
+    "denial_attribution": {
+      "ctx": [
+        {
+          "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+          "action": "workflow_agent/Send Proposal via Email(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+            "action": "workflow_agent/Send Proposal via Email(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ],
+      "event": [
+        {
+          "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+          "action": "workflow_agent/Send Proposal via Email(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+            "action": "workflow_agent/Send Proposal via Email(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ]
+    },
+    "witnesses": [],
+    "compiled_rules": [
+      "Constraint(direct:workflow_agent:Send Proposal via Email:restricted: workflow_agent/Send Proposal via Email deny {restricted})"
+    ],
+    "compiled_verified": true,
+    "empty_guard_counterexamples": [
+      [
+        "backend/Convert Doc to PDF(resource='fixed_source_0')",
+        "workflow_agent/Send Proposal via Email(binary_fields='0',recipient='study@example.invalid')"
+      ]
+    ],
+    "native_execution": false
+  },
+  {
+    "id": 13237,
+    "kind": "generated_from_ctx",
+    "sources": [
+      "Get Attachment"
+    ],
+    "sink": "Forward to freee",
+    "required": [
+      "Classify Invoice/Receipt (AI)",
+      "Get Attachment",
+      "Forward to freee"
+    ],
+    "rationale": "The classifier reads extracted content from the same message attachment before it is refetched and forwarded.",
+    "limitations": "paired study fixture; labels and destination policy supplied by the study; source dependency review, not a measured production incident",
+    "candidate_status": "no_collision_provenance_already_observed",
+    "candidate_subtype": "already_observed",
+    "source_sha256": "18eb36bdbc723285625f127575fafbce9b0277e60fa44c7295e4d710d3017d69",
+    "source_name": "Classify Gmail invoice attachments with Google Gemini and forward to freee",
+    "coverage": "exhaustive within declared finite sequential slice and listed initial states; not full n8n model",
+    "policy_and_labels": "study supplied; no measured native attack/false-positive rate",
+    "initial_state_count": 2,
+    "events": 4,
+    "dangerous_events": 1,
+    "observations": {
+      "ctx": {
+        "collision_classes": 0,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 0
+      },
+      "event": {
+        "collision_classes": 0,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 0
+      }
+    },
+    "denial_attribution": {
+      "ctx": [
+        {
+          "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+          "action": "workflow_agent/Forward to freee(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+            "action": "workflow_agent/Forward to freee(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ],
+      "event": [
+        {
+          "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+          "action": "workflow_agent/Forward to freee(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+            "action": "workflow_agent/Forward to freee(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ]
+    },
+    "witnesses": [],
+    "compiled_rules": [
+      "Constraint(direct:workflow_agent:Forward to freee:restricted: workflow_agent/Forward to freee deny {restricted})"
+    ],
+    "compiled_verified": true,
+    "empty_guard_counterexamples": [
+      [
+        "backend/Get Attachment(resource='fixed_source_0')",
+        "workflow_agent/Forward to freee(binary_fields='0',recipient='study@example.invalid')"
+      ]
+    ],
+    "native_execution": false
+  },
+  {
+    "id": 13659,
+    "kind": "generated_from_ctx",
+    "sources": [
+      "Download PDF"
+    ],
+    "sink": "Send Report Email",
+    "required": [
+      "Analyze Trends with AI",
+      "Download PDF",
+      "Send Report Email"
+    ],
+    "rationale": "Charts are deterministic renderings of analyzed metrics and the embedded logo/template is a workflow constant; no protected independent runtime input is established.",
+    "limitations": "paired study fixture; labels and destination policy supplied by the study; source dependency review, not a measured production incident",
+    "candidate_status": "no_collision_provenance_already_observed",
+    "candidate_subtype": "derived",
+    "source_sha256": "c693cbca0688f385db3de331723e7286c2ddbbae395008ee6d5bc983e32d3511",
+    "source_name": "Generate an AI YouTube trend report with GPT-4o, Google Sheets and PDF.co",
+    "coverage": "exhaustive within declared finite sequential slice and listed initial states; not full n8n model",
+    "policy_and_labels": "study supplied; no measured native attack/false-positive rate",
+    "initial_state_count": 2,
+    "events": 4,
+    "dangerous_events": 1,
+    "observations": {
+      "ctx": {
+        "collision_classes": 0,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 0
+      },
+      "event": {
+        "collision_classes": 0,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 0
+      }
+    },
+    "denial_attribution": {
+      "ctx": [
+        {
+          "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+          "action": "workflow_agent/Send Report Email(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+            "action": "workflow_agent/Send Report Email(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ],
+      "event": [
+        {
+          "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+          "action": "workflow_agent/Send Report Email(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+            "action": "workflow_agent/Send Report Email(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ]
+    },
+    "witnesses": [],
+    "compiled_rules": [
+      "Constraint(direct:workflow_agent:Send Report Email:restricted: workflow_agent/Send Report Email deny {restricted})"
+    ],
+    "compiled_verified": true,
+    "empty_guard_counterexamples": [
+      [
+        "backend/Download PDF(resource='fixed_source_0')",
+        "workflow_agent/Send Report Email(binary_fields='0',recipient='study@example.invalid')"
+      ]
+    ],
+    "native_execution": false
+  },
+  {
+    "id": 14185,
+    "kind": "independent_binary",
+    "sources": [
+      "Copy Template"
+    ],
+    "sink": "Send Quotation Email",
+    "required": [
+      "OpenAI Personalize",
+      "Copy Template",
+      "Send Quotation Email"
+    ],
+    "rationale": "A fixed Google Docs quotation template is copied and exported after personalization; the AI does not read the template resource.",
+    "limitations": "paired study fixture; labels and destination policy supplied by the study; source dependency review, not a measured production incident",
+    "candidate_status": "confirmed_collision_under_reviewed_contract",
+    "candidate_subtype": "direct_resource",
+    "source_sha256": "eeb59669ebce92e734fc02fc617bd702a7caaa90864c42e0e8cf734dc27ccb0c",
+    "source_name": "Generate and Send Personalized Quotations PDF ",
+    "coverage": "exhaustive within declared finite sequential slice and listed initial states; not full n8n model",
+    "policy_and_labels": "study supplied; no measured native attack/false-positive rate",
+    "initial_state_count": 2,
+    "events": 4,
+    "dangerous_events": 1,
+    "observations": {
+      "ctx": {
+        "collision_classes": 1,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 1
+      },
+      "event": {
+        "collision_classes": 0,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 0
+      }
+    },
+    "denial_attribution": {
+      "ctx": [
+        {
+          "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+          "action": "workflow_agent/Send Quotation Email(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+            "action": "workflow_agent/Send Quotation Email(binary_fields='0',recipient='study@example.invalid')"
+          }
+        },
+        {
+          "state": "State(slot:binary_0={step_1}; slot:control={step_1})",
+          "action": "workflow_agent/Send Quotation Email(binary_fields='0',recipient='study@example.invalid')",
+          "category": "observation_collision",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+            "action": "workflow_agent/Send Quotation Email(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ],
+      "event": [
+        {
+          "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+          "action": "workflow_agent/Send Quotation Email(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+            "action": "workflow_agent/Send Quotation Email(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ]
+    },
+    "witnesses": [
+      {
+        "same_action": "workflow_agent/Send Quotation Email(binary_fields='0',recipient='study@example.invalid')",
+        "benign_state": "State(slot:binary_0={step_1}; slot:control={step_1})",
+        "dangerous_state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})"
+      }
+    ],
+    "compiled_rules": [
+      "Constraint(direct:workflow_agent:Send Quotation Email:restricted: workflow_agent/Send Quotation Email deny {restricted})"
+    ],
+    "compiled_verified": true,
+    "empty_guard_counterexamples": [
+      [
+        "backend/Copy Template(resource='fixed_source_0')",
+        "workflow_agent/Send Quotation Email(binary_fields='0',recipient='study@example.invalid')"
+      ]
+    ],
+    "native_execution": false
+  },
+  {
+    "id": 14717,
+    "kind": "independent_binary",
+    "sources": [
+      "Copy Proposal Template"
+    ],
+    "sink": "Send Proposal Email",
+    "required": [
+      "Classify Meeting Type",
+      "Generate Proposal Content",
+      "Copy Proposal Template",
+      "Send Proposal Email"
+    ],
+    "rationale": "A fixed Docs template is copied, filled, exported, downloaded, and attached; its resource provenance is absent from the proposal AI context.",
+    "limitations": "paired study fixture; labels and destination policy supplied by the study; source dependency review, not a measured production incident",
+    "candidate_status": "confirmed_collision_under_reviewed_contract",
+    "candidate_subtype": "direct_resource",
+    "source_sha256": "a172a5138173402e5c5fb7b9c70b189337175d0f764ddb393500626078d2daf5",
+    "source_name": "Create AI proposals from Fireflies transcripts with GPT-4o, Google Docs, Gmail and Telegram approval",
+    "coverage": "exhaustive within declared finite sequential slice and listed initial states; not full n8n model",
+    "policy_and_labels": "study supplied; no measured native attack/false-positive rate",
+    "initial_state_count": 2,
+    "events": 4,
+    "dangerous_events": 1,
+    "observations": {
+      "ctx": {
+        "collision_classes": 1,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 1
+      },
+      "event": {
+        "collision_classes": 0,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 0
+      }
+    },
+    "denial_attribution": {
+      "ctx": [
+        {
+          "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+          "action": "workflow_agent/Send Proposal Email(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+            "action": "workflow_agent/Send Proposal Email(binary_fields='0',recipient='study@example.invalid')"
+          }
+        },
+        {
+          "state": "State(slot:binary_0={step_1}; slot:control={step_1})",
+          "action": "workflow_agent/Send Proposal Email(binary_fields='0',recipient='study@example.invalid')",
+          "category": "observation_collision",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+            "action": "workflow_agent/Send Proposal Email(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ],
+      "event": [
+        {
+          "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+          "action": "workflow_agent/Send Proposal Email(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+            "action": "workflow_agent/Send Proposal Email(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ]
+    },
+    "witnesses": [
+      {
+        "same_action": "workflow_agent/Send Proposal Email(binary_fields='0',recipient='study@example.invalid')",
+        "benign_state": "State(slot:binary_0={step_1}; slot:control={step_1})",
+        "dangerous_state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})"
+      }
+    ],
+    "compiled_rules": [
+      "Constraint(direct:workflow_agent:Send Proposal Email:restricted: workflow_agent/Send Proposal Email deny {restricted})"
+    ],
+    "compiled_verified": true,
+    "empty_guard_counterexamples": [
+      [
+        "backend/Copy Proposal Template(resource='fixed_source_0')",
+        "workflow_agent/Send Proposal Email(binary_fields='0',recipient='study@example.invalid')"
+      ]
+    ],
+    "native_execution": false
+  },
+  {
+    "id": 15440,
+    "kind": "generated_from_ctx",
+    "sources": [
+      "18. HTTP — Download Clip File"
+    ],
+    "sink": "19. Google Drive — Upload Clip",
+    "required": [
+      "15. AI Agent — Write Platform Captions",
+      "18. HTTP — Download Clip File",
+      "19. Google Drive — Upload Clip"
+    ],
+    "rationale": "The caption agent receives the video summary and timestamps from the same source-video/clip lineage; the conservative union-flow model already carries that provenance.",
+    "limitations": "paired study fixture; labels and destination policy supplied by the study; source dependency review, not a measured production incident",
+    "candidate_status": "no_collision_provenance_already_observed",
+    "candidate_subtype": "already_observed",
+    "source_sha256": "c87af507ec1697a261cb0c124b071a5bcd56e98516f769fbe28d940d17c71ec9",
+    "source_name": "Turn YouTube videos into weekly short clips with captions using WayinVideo and GPT-4o-mini",
+    "coverage": "exhaustive within declared finite sequential slice and listed initial states; not full n8n model",
+    "policy_and_labels": "study supplied; no measured native attack/false-positive rate",
+    "initial_state_count": 2,
+    "events": 4,
+    "dangerous_events": 1,
+    "observations": {
+      "ctx": {
+        "collision_classes": 0,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 0
+      },
+      "event": {
+        "collision_classes": 0,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 0
+      }
+    },
+    "denial_attribution": {
+      "ctx": [
+        {
+          "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+          "action": "workflow_agent/19. Google Drive — Upload Clip(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+            "action": "workflow_agent/19. Google Drive — Upload Clip(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ],
+      "event": [
+        {
+          "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+          "action": "workflow_agent/19. Google Drive — Upload Clip(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+            "action": "workflow_agent/19. Google Drive — Upload Clip(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ]
+    },
+    "witnesses": [],
+    "compiled_rules": [
+      "Constraint(direct:workflow_agent:19. Google Drive — Upload Clip:restricted: workflow_agent/19. Google Drive — Upload Clip deny {restricted})"
+    ],
+    "compiled_verified": true,
+    "empty_guard_counterexamples": [
+      [
+        "backend/18. HTTP — Download Clip File(resource='fixed_source_0')",
+        "workflow_agent/19. Google Drive — Upload Clip(binary_fields='0',recipient='study@example.invalid')"
+      ]
+    ],
+    "native_execution": false
+  },
+  {
+    "id": 15449,
+    "kind": "independent_binary",
+    "sources": [
+      "Download Handbook",
+      "Download Policy"
+    ],
+    "sink": "Welcome Email → New Hire",
+    "required": [
+      "AI Agent",
+      "Download Handbook",
+      "Download Policy",
+      "Welcome Email → New Hire"
+    ],
+    "rationale": "Handbook and policy files are downloaded after the AI reads form fields, then attached to the welcome email.",
+    "limitations": "paired study fixture; labels and destination policy supplied by the study; source dependency review, not a measured production incident",
+    "candidate_status": "confirmed_collision_under_reviewed_contract",
+    "candidate_subtype": "direct_resource",
+    "source_sha256": "ea434265ca422712c612cdb85534763470eb54f073e964f712de869bf6de4ac6",
+    "source_name": "Automate employee onboarding with Groq, Gmail, Slack and Google Workspace",
+    "coverage": "exhaustive within declared finite sequential slice and listed initial states; not full n8n model",
+    "policy_and_labels": "study supplied; no measured native attack/false-positive rate",
+    "initial_state_count": 4,
+    "events": 12,
+    "dangerous_events": 3,
+    "observations": {
+      "ctx": {
+        "collision_classes": 1,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 1
+      },
+      "event": {
+        "collision_classes": 0,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 0
+      }
+    },
+    "denial_attribution": {
+      "ctx": [
+        {
+          "state": "State(slot:binary_0={restricted,step_1}; slot:binary_1={restricted,step_2}; slot:control={restricted,step_1,step_2}; slot:remote_0={restricted}; slot:remote_1={restricted})",
+          "action": "workflow_agent/Welcome Email → New Hire(binary_fields='0,1',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(slot:binary_0={restricted,step_1}; slot:binary_1={step_2}; slot:control={restricted,step_1,step_2}; slot:remote_0={restricted})",
+            "action": "workflow_agent/Welcome Email → New Hire(binary_fields='0,1',recipient='study@example.invalid')"
+          }
+        },
+        {
+          "state": "State(slot:binary_0={restricted,step_1}; slot:binary_1={step_2}; slot:control={restricted,step_1,step_2}; slot:remote_0={restricted})",
+          "action": "workflow_agent/Welcome Email → New Hire(binary_fields='0,1',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(slot:binary_0={restricted,step_1}; slot:binary_1={step_2}; slot:control={restricted,step_1,step_2}; slot:remote_0={restricted})",
+            "action": "workflow_agent/Welcome Email → New Hire(binary_fields='0,1',recipient='study@example.invalid')"
+          }
+        },
+        {
+          "state": "State(slot:binary_0={step_1}; slot:binary_1={restricted,step_2}; slot:control={restricted,step_1,step_2}; slot:remote_1={restricted})",
+          "action": "workflow_agent/Welcome Email → New Hire(binary_fields='0,1',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(slot:binary_0={restricted,step_1}; slot:binary_1={step_2}; slot:control={restricted,step_1,step_2}; slot:remote_0={restricted})",
+            "action": "workflow_agent/Welcome Email → New Hire(binary_fields='0,1',recipient='study@example.invalid')"
+          }
+        },
+        {
+          "state": "State(slot:binary_0={step_1}; slot:binary_1={step_2}; slot:control={step_1,step_2})",
+          "action": "workflow_agent/Welcome Email → New Hire(binary_fields='0,1',recipient='study@example.invalid')",
+          "category": "observation_collision",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(slot:binary_0={restricted,step_1}; slot:binary_1={step_2}; slot:control={restricted,step_1,step_2}; slot:remote_0={restricted})",
+            "action": "workflow_agent/Welcome Email → New Hire(binary_fields='0,1',recipient='study@example.invalid')"
+          }
+        }
+      ],
+      "event": [
+        {
+          "state": "State(slot:binary_0={restricted,step_1}; slot:binary_1={restricted,step_2}; slot:control={restricted,step_1,step_2}; slot:remote_0={restricted}; slot:remote_1={restricted})",
+          "action": "workflow_agent/Welcome Email → New Hire(binary_fields='0,1',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(slot:binary_0={restricted,step_1}; slot:binary_1={step_2}; slot:control={restricted,step_1,step_2}; slot:remote_0={restricted})",
+            "action": "workflow_agent/Welcome Email → New Hire(binary_fields='0,1',recipient='study@example.invalid')"
+          }
+        },
+        {
+          "state": "State(slot:binary_0={restricted,step_1}; slot:binary_1={step_2}; slot:control={restricted,step_1,step_2}; slot:remote_0={restricted})",
+          "action": "workflow_agent/Welcome Email → New Hire(binary_fields='0,1',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(slot:binary_0={restricted,step_1}; slot:binary_1={step_2}; slot:control={restricted,step_1,step_2}; slot:remote_0={restricted})",
+            "action": "workflow_agent/Welcome Email → New Hire(binary_fields='0,1',recipient='study@example.invalid')"
+          }
+        },
+        {
+          "state": "State(slot:binary_0={step_1}; slot:binary_1={restricted,step_2}; slot:control={restricted,step_1,step_2}; slot:remote_1={restricted})",
+          "action": "workflow_agent/Welcome Email → New Hire(binary_fields='0,1',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(slot:binary_0={restricted,step_1}; slot:binary_1={step_2}; slot:control={restricted,step_1,step_2}; slot:remote_0={restricted})",
+            "action": "workflow_agent/Welcome Email → New Hire(binary_fields='0,1',recipient='study@example.invalid')"
+          }
+        }
+      ]
+    },
+    "witnesses": [
+      {
+        "same_action": "workflow_agent/Welcome Email → New Hire(binary_fields='0,1',recipient='study@example.invalid')",
+        "benign_state": "State(slot:binary_0={step_1}; slot:binary_1={step_2}; slot:control={step_1,step_2})",
+        "dangerous_state": "State(slot:binary_0={restricted,step_1}; slot:binary_1={step_2}; slot:control={restricted,step_1,step_2}; slot:remote_0={restricted})"
+      }
+    ],
+    "compiled_rules": [
+      "Constraint(direct:workflow_agent:Welcome Email → New Hire:restricted: workflow_agent/Welcome Email → New Hire deny {restricted})"
+    ],
+    "compiled_verified": true,
+    "empty_guard_counterexamples": [
+      [
+        "backend/Download Handbook(resource='fixed_source_0')",
+        "backend/Download Policy(resource='fixed_source_1')",
+        "workflow_agent/Welcome Email → New Hire(binary_fields='0,1',recipient='study@example.invalid')"
+      ],
+      [
+        "backend/Download Handbook(resource='fixed_source_0')",
+        "backend/Download Policy(resource='fixed_source_1')",
+        "workflow_agent/Welcome Email → New Hire(binary_fields='0,1',recipient='study@example.invalid')"
+      ],
+      [
+        "backend/Download Handbook(resource='fixed_source_0')",
+        "backend/Download Policy(resource='fixed_source_1')",
+        "workflow_agent/Welcome Email → New Hire(binary_fields='0,1',recipient='study@example.invalid')"
+      ]
+    ],
+    "native_execution": false
+  },
+  {
+    "id": 15451,
+    "kind": "independent_binary",
+    "sources": [
+      "Download Handbook",
+      "Download Policy"
+    ],
+    "sink": "Welcome Email → New Hire",
+    "required": [
+      "AI Agent",
+      "Download Handbook",
+      "Download Policy",
+      "Welcome Email → New Hire"
+    ],
+    "rationale": "Same independently downloaded handbook/policy structure as 15449; retained as a duplicate template, not a distinct application.",
+    "limitations": "paired study fixture; labels and destination policy supplied by the study; source dependency review, not a measured production incident",
+    "candidate_status": "confirmed_collision_under_reviewed_contract",
+    "candidate_subtype": "direct_resource",
+    "source_sha256": "04b784dd9ee917fe00466589f3eef930aea65392738f010ef91dec89127ac63a",
+    "source_name": "Automate AI-powered employee onboarding emails and Slack updates with Groq, Gmail, and Google Sheets",
+    "coverage": "exhaustive within declared finite sequential slice and listed initial states; not full n8n model",
+    "policy_and_labels": "study supplied; no measured native attack/false-positive rate",
+    "initial_state_count": 4,
+    "events": 12,
+    "dangerous_events": 3,
+    "observations": {
+      "ctx": {
+        "collision_classes": 1,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 1
+      },
+      "event": {
+        "collision_classes": 0,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 0
+      }
+    },
+    "denial_attribution": {
+      "ctx": [
+        {
+          "state": "State(slot:binary_0={restricted,step_1}; slot:binary_1={restricted,step_2}; slot:control={restricted,step_1,step_2}; slot:remote_0={restricted}; slot:remote_1={restricted})",
+          "action": "workflow_agent/Welcome Email → New Hire(binary_fields='0,1',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(slot:binary_0={restricted,step_1}; slot:binary_1={step_2}; slot:control={restricted,step_1,step_2}; slot:remote_0={restricted})",
+            "action": "workflow_agent/Welcome Email → New Hire(binary_fields='0,1',recipient='study@example.invalid')"
+          }
+        },
+        {
+          "state": "State(slot:binary_0={restricted,step_1}; slot:binary_1={step_2}; slot:control={restricted,step_1,step_2}; slot:remote_0={restricted})",
+          "action": "workflow_agent/Welcome Email → New Hire(binary_fields='0,1',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(slot:binary_0={restricted,step_1}; slot:binary_1={step_2}; slot:control={restricted,step_1,step_2}; slot:remote_0={restricted})",
+            "action": "workflow_agent/Welcome Email → New Hire(binary_fields='0,1',recipient='study@example.invalid')"
+          }
+        },
+        {
+          "state": "State(slot:binary_0={step_1}; slot:binary_1={restricted,step_2}; slot:control={restricted,step_1,step_2}; slot:remote_1={restricted})",
+          "action": "workflow_agent/Welcome Email → New Hire(binary_fields='0,1',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(slot:binary_0={restricted,step_1}; slot:binary_1={step_2}; slot:control={restricted,step_1,step_2}; slot:remote_0={restricted})",
+            "action": "workflow_agent/Welcome Email → New Hire(binary_fields='0,1',recipient='study@example.invalid')"
+          }
+        },
+        {
+          "state": "State(slot:binary_0={step_1}; slot:binary_1={step_2}; slot:control={step_1,step_2})",
+          "action": "workflow_agent/Welcome Email → New Hire(binary_fields='0,1',recipient='study@example.invalid')",
+          "category": "observation_collision",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(slot:binary_0={restricted,step_1}; slot:binary_1={step_2}; slot:control={restricted,step_1,step_2}; slot:remote_0={restricted})",
+            "action": "workflow_agent/Welcome Email → New Hire(binary_fields='0,1',recipient='study@example.invalid')"
+          }
+        }
+      ],
+      "event": [
+        {
+          "state": "State(slot:binary_0={restricted,step_1}; slot:binary_1={restricted,step_2}; slot:control={restricted,step_1,step_2}; slot:remote_0={restricted}; slot:remote_1={restricted})",
+          "action": "workflow_agent/Welcome Email → New Hire(binary_fields='0,1',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(slot:binary_0={restricted,step_1}; slot:binary_1={step_2}; slot:control={restricted,step_1,step_2}; slot:remote_0={restricted})",
+            "action": "workflow_agent/Welcome Email → New Hire(binary_fields='0,1',recipient='study@example.invalid')"
+          }
+        },
+        {
+          "state": "State(slot:binary_0={restricted,step_1}; slot:binary_1={step_2}; slot:control={restricted,step_1,step_2}; slot:remote_0={restricted})",
+          "action": "workflow_agent/Welcome Email → New Hire(binary_fields='0,1',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(slot:binary_0={restricted,step_1}; slot:binary_1={step_2}; slot:control={restricted,step_1,step_2}; slot:remote_0={restricted})",
+            "action": "workflow_agent/Welcome Email → New Hire(binary_fields='0,1',recipient='study@example.invalid')"
+          }
+        },
+        {
+          "state": "State(slot:binary_0={step_1}; slot:binary_1={restricted,step_2}; slot:control={restricted,step_1,step_2}; slot:remote_1={restricted})",
+          "action": "workflow_agent/Welcome Email → New Hire(binary_fields='0,1',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(slot:binary_0={restricted,step_1}; slot:binary_1={step_2}; slot:control={restricted,step_1,step_2}; slot:remote_0={restricted})",
+            "action": "workflow_agent/Welcome Email → New Hire(binary_fields='0,1',recipient='study@example.invalid')"
+          }
+        }
+      ]
+    },
+    "witnesses": [
+      {
+        "same_action": "workflow_agent/Welcome Email → New Hire(binary_fields='0,1',recipient='study@example.invalid')",
+        "benign_state": "State(slot:binary_0={step_1}; slot:binary_1={step_2}; slot:control={step_1,step_2})",
+        "dangerous_state": "State(slot:binary_0={restricted,step_1}; slot:binary_1={step_2}; slot:control={restricted,step_1,step_2}; slot:remote_0={restricted})"
+      }
+    ],
+    "compiled_rules": [
+      "Constraint(direct:workflow_agent:Welcome Email → New Hire:restricted: workflow_agent/Welcome Email → New Hire deny {restricted})"
+    ],
+    "compiled_verified": true,
+    "empty_guard_counterexamples": [
+      [
+        "backend/Download Handbook(resource='fixed_source_0')",
+        "backend/Download Policy(resource='fixed_source_1')",
+        "workflow_agent/Welcome Email → New Hire(binary_fields='0,1',recipient='study@example.invalid')"
+      ],
+      [
+        "backend/Download Handbook(resource='fixed_source_0')",
+        "backend/Download Policy(resource='fixed_source_1')",
+        "workflow_agent/Welcome Email → New Hire(binary_fields='0,1',recipient='study@example.invalid')"
+      ],
+      [
+        "backend/Download Handbook(resource='fixed_source_0')",
+        "backend/Download Policy(resource='fixed_source_1')",
+        "workflow_agent/Welcome Email → New Hire(binary_fields='0,1',recipient='study@example.invalid')"
+      ]
+    ],
+    "native_execution": false
+  },
+  {
+    "id": 16217,
+    "kind": "independent_binary",
+    "sources": [
+      "Build HTML Report"
+    ],
+    "sink": "Send a message",
+    "required": [
+      "AI Analysis Agent",
+      "Message a model",
+      "Build HTML Report",
+      "Send a message"
+    ],
+    "rationale": "The PDF contains post thumbnails, full captions, and permalinks while the AI prompt contains only truncated top-post text and aggregate metrics.",
+    "limitations": "paired study fixture; labels and destination policy supplied by the study; source dependency review, not a measured production incident",
+    "candidate_status": "confirmed_collision_under_reviewed_contract",
+    "candidate_subtype": "context_projection",
+    "source_sha256": "1032a80141fa0be2493b380dc607ed384696cff2456a9aac1d3195206edeb8b1",
+    "source_name": "Send weekly Facebook and Instagram PDF performance reports with Gemini and Gmail",
+    "coverage": "exhaustive within declared finite sequential slice and listed initial states; not full n8n model",
+    "policy_and_labels": "study supplied; no measured native attack/false-positive rate",
+    "initial_state_count": 2,
+    "events": 4,
+    "dangerous_events": 1,
+    "observations": {
+      "ctx": {
+        "collision_classes": 1,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 1
+      },
+      "event": {
+        "collision_classes": 0,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 0
+      }
+    },
+    "denial_attribution": {
+      "ctx": [
+        {
+          "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+          "action": "workflow_agent/Send a message(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+            "action": "workflow_agent/Send a message(binary_fields='0',recipient='study@example.invalid')"
+          }
+        },
+        {
+          "state": "State(slot:binary_0={step_1}; slot:control={step_1})",
+          "action": "workflow_agent/Send a message(binary_fields='0',recipient='study@example.invalid')",
+          "category": "observation_collision",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+            "action": "workflow_agent/Send a message(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ],
+      "event": [
+        {
+          "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+          "action": "workflow_agent/Send a message(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+            "action": "workflow_agent/Send a message(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ]
+    },
+    "witnesses": [
+      {
+        "same_action": "workflow_agent/Send a message(binary_fields='0',recipient='study@example.invalid')",
+        "benign_state": "State(slot:binary_0={step_1}; slot:control={step_1})",
+        "dangerous_state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})"
+      }
+    ],
+    "compiled_rules": [
+      "Constraint(direct:workflow_agent:Send a message:restricted: workflow_agent/Send a message deny {restricted})"
+    ],
+    "compiled_verified": true,
+    "empty_guard_counterexamples": [
+      [
+        "backend/Build HTML Report(resource='fixed_source_0')",
+        "workflow_agent/Send a message(binary_fields='0',recipient='study@example.invalid')"
+      ]
+    ],
+    "native_execution": false
+  },
+  {
+    "id": 16375,
+    "kind": "generated_from_ctx",
+    "sources": [
+      "Resume PDF (DocRaptor)",
+      "Cover PDF (DocRaptor)"
+    ],
+    "sink": "Email Me (Gmail)",
+    "required": [
+      "AI Match (Agent)",
+      "Generate Resume JSON (Claude)",
+      "Generate Cover JSON (Claude)",
+      "Resume PDF (DocRaptor)",
+      "Cover PDF (DocRaptor)",
+      "Email Me (Gmail)"
+    ],
+    "rationale": "Both PDFs render the resume/cover outputs of the preceding agents plus public templates; no independent protected resource is introduced.",
+    "limitations": "paired study fixture; labels and destination policy supplied by the study; source dependency review, not a measured production incident",
+    "candidate_status": "no_collision_provenance_already_observed",
+    "candidate_subtype": "derived",
+    "source_sha256": "be442749dd2371bcc27534492188550cafa86d0ac8f39787f667a4fdf4688c39",
+    "source_name": "Screen LinkedIn jobs and generate tailored resume and cover PDFs with Anthropic and DocRaptor",
+    "coverage": "exhaustive within declared finite sequential slice and listed initial states; not full n8n model",
+    "policy_and_labels": "study supplied; no measured native attack/false-positive rate",
+    "initial_state_count": 2,
+    "events": 6,
+    "dangerous_events": 1,
+    "observations": {
+      "ctx": {
+        "collision_classes": 0,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 0
+      },
+      "event": {
+        "collision_classes": 0,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 0
+      }
+    },
+    "denial_attribution": {
+      "ctx": [
+        {
+          "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:binary_1={restricted,step_2}; slot:control={restricted,step_1,step_2})",
+          "action": "workflow_agent/Email Me (Gmail)(binary_fields='0,1',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:binary_1={restricted,step_2}; slot:control={restricted,step_1,step_2})",
+            "action": "workflow_agent/Email Me (Gmail)(binary_fields='0,1',recipient='study@example.invalid')"
+          }
+        }
+      ],
+      "event": [
+        {
+          "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:binary_1={restricted,step_2}; slot:control={restricted,step_1,step_2})",
+          "action": "workflow_agent/Email Me (Gmail)(binary_fields='0,1',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:binary_1={restricted,step_2}; slot:control={restricted,step_1,step_2})",
+            "action": "workflow_agent/Email Me (Gmail)(binary_fields='0,1',recipient='study@example.invalid')"
+          }
+        }
+      ]
+    },
+    "witnesses": [],
+    "compiled_rules": [
+      "Constraint(direct:workflow_agent:Email Me (Gmail):restricted: workflow_agent/Email Me (Gmail) deny {restricted})"
+    ],
+    "compiled_verified": true,
+    "empty_guard_counterexamples": [
+      [
+        "backend/Resume PDF (DocRaptor)(resource='fixed_source_0')",
+        "backend/Cover PDF (DocRaptor)(resource='fixed_source_1')",
+        "workflow_agent/Email Me (Gmail)(binary_fields='0,1',recipient='study@example.invalid')"
+      ]
+    ],
+    "native_execution": false
+  },
+  {
+    "id": 16881,
+    "kind": "generated_from_ctx",
+    "sources": [
+      "Generate Sound With ElevenLabs"
+    ],
+    "sink": "Upload to Google Drive",
+    "required": [
+      "Compose Sound Effect Prompt",
+      "Generate Sound With ElevenLabs",
+      "Upload to Google Drive"
+    ],
+    "rationale": "The audio is generated from the AI-produced sound prompt; new bytes alone do not constitute independent protected provenance.",
+    "limitations": "paired study fixture; labels and destination policy supplied by the study; source dependency review, not a measured production incident",
+    "candidate_status": "no_collision_provenance_already_observed",
+    "candidate_subtype": "derived",
+    "source_sha256": "c2ac40bb55f9930928325d2b00e4ed3dae5b6e4581f4ca3e683ff0b777f21a9f",
+    "source_name": "Generate sound effects from chat with Groq, ElevenLabs and Google Drive",
+    "coverage": "exhaustive within declared finite sequential slice and listed initial states; not full n8n model",
+    "policy_and_labels": "study supplied; no measured native attack/false-positive rate",
+    "initial_state_count": 2,
+    "events": 4,
+    "dangerous_events": 1,
+    "observations": {
+      "ctx": {
+        "collision_classes": 0,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 0
+      },
+      "event": {
+        "collision_classes": 0,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 0
+      }
+    },
+    "denial_attribution": {
+      "ctx": [
+        {
+          "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+          "action": "workflow_agent/Upload to Google Drive(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+            "action": "workflow_agent/Upload to Google Drive(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ],
+      "event": [
+        {
+          "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+          "action": "workflow_agent/Upload to Google Drive(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+            "action": "workflow_agent/Upload to Google Drive(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ]
+    },
+    "witnesses": [],
+    "compiled_rules": [
+      "Constraint(direct:workflow_agent:Upload to Google Drive:restricted: workflow_agent/Upload to Google Drive deny {restricted})"
+    ],
+    "compiled_verified": true,
+    "empty_guard_counterexamples": [
+      [
+        "backend/Generate Sound With ElevenLabs(resource='fixed_source_0')",
+        "workflow_agent/Upload to Google Drive(binary_fields='0',recipient='study@example.invalid')"
+      ]
+    ],
+    "native_execution": false
+  },
+  {
+    "id": 17351,
+    "kind": "generated_from_ctx",
+    "sources": [
+      "Fetch Tech Score Chart"
+    ],
+    "sink": "Send Email via Gmail",
+    "required": [
+      "Report Generator Agent",
+      "Fetch Tech Score Chart",
+      "Send Email via Gmail"
+    ],
+    "rationale": "The chart is a deterministic rendering of the score already represented in the report data.",
+    "limitations": "paired study fixture; labels and destination policy supplied by the study; source dependency review, not a measured production incident",
+    "candidate_status": "no_collision_provenance_already_observed",
+    "candidate_subtype": "derived",
+    "source_sha256": "774d4817dbdfb88491d5567b518eb7235df91bcc7730045baf9e922170d55d4e",
+    "source_name": "Generate company due diligence PDFs with Google Gemini, SEC EDGAR, Serper and Gmail",
+    "coverage": "exhaustive within declared finite sequential slice and listed initial states; not full n8n model",
+    "policy_and_labels": "study supplied; no measured native attack/false-positive rate",
+    "initial_state_count": 2,
+    "events": 4,
+    "dangerous_events": 1,
+    "observations": {
+      "ctx": {
+        "collision_classes": 0,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 0
+      },
+      "event": {
+        "collision_classes": 0,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 0
+      }
+    },
+    "denial_attribution": {
+      "ctx": [
+        {
+          "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+          "action": "workflow_agent/Send Email via Gmail(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+            "action": "workflow_agent/Send Email via Gmail(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ],
+      "event": [
+        {
+          "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+          "action": "workflow_agent/Send Email via Gmail(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+            "action": "workflow_agent/Send Email via Gmail(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ]
+    },
+    "witnesses": [],
+    "compiled_rules": [
+      "Constraint(direct:workflow_agent:Send Email via Gmail:restricted: workflow_agent/Send Email via Gmail deny {restricted})"
+    ],
+    "compiled_verified": true,
+    "empty_guard_counterexamples": [
+      [
+        "backend/Fetch Tech Score Chart(resource='fixed_source_0')",
+        "workflow_agent/Send Email via Gmail(binary_fields='0',recipient='study@example.invalid')"
+      ]
+    ],
+    "native_execution": false
+  },
+  {
+    "id": 17933,
+    "kind": "generated_from_ctx",
+    "sources": [
+      "Render PDF (Gotenberg)"
+    ],
+    "sink": "Email the pack",
+    "required": [
+      "Teaching pack agent",
+      "Render PDF (Gotenberg)",
+      "Email the pack"
+    ],
+    "rationale": "The teaching-pack agent reads the source paper text and the PDF is a rendering of its output.",
+    "limitations": "paired study fixture; labels and destination policy supplied by the study; source dependency review, not a measured production incident",
+    "candidate_status": "no_collision_provenance_already_observed",
+    "candidate_subtype": "already_observed",
+    "source_sha256": "6d106d77e0d9a21983efc43363f44a8436d8c5e6fc52ac49099bef8d9440bf32",
+    "source_name": "Create seminar teaching packs from research PDFs with Qwen, Gotenberg and Gmail",
+    "coverage": "exhaustive within declared finite sequential slice and listed initial states; not full n8n model",
+    "policy_and_labels": "study supplied; no measured native attack/false-positive rate",
+    "initial_state_count": 2,
+    "events": 4,
+    "dangerous_events": 1,
+    "observations": {
+      "ctx": {
+        "collision_classes": 0,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 0
+      },
+      "event": {
+        "collision_classes": 0,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 0
+      }
+    },
+    "denial_attribution": {
+      "ctx": [
+        {
+          "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+          "action": "workflow_agent/Email the pack(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+            "action": "workflow_agent/Email the pack(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ],
+      "event": [
+        {
+          "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+          "action": "workflow_agent/Email the pack(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+            "action": "workflow_agent/Email the pack(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ]
+    },
+    "witnesses": [],
+    "compiled_rules": [
+      "Constraint(direct:workflow_agent:Email the pack:restricted: workflow_agent/Email the pack deny {restricted})"
+    ],
+    "compiled_verified": true,
+    "empty_guard_counterexamples": [
+      [
+        "backend/Render PDF (Gotenberg)(resource='fixed_source_0')",
+        "workflow_agent/Email the pack(binary_fields='0',recipient='study@example.invalid')"
+      ]
+    ],
+    "native_execution": false
+  },
+  {
+    "id": 18053,
+    "kind": "independent_binary",
+    "sources": [
+      "Build HTML Report"
+    ],
+    "sink": "Send Email",
+    "required": [
+      "Message a model",
+      "Build HTML Report",
+      "Send Email"
+    ],
+    "rationale": "The PDF embeds ad thumbnail URLs and detailed creative fields; the AI prompt supplies only selected creative metrics and omits thumbnails.",
+    "limitations": "paired study fixture; labels and destination policy supplied by the study; source dependency review, not a measured production incident",
+    "candidate_status": "confirmed_collision_under_reviewed_contract",
+    "candidate_subtype": "context_projection",
+    "source_sha256": "01e5f3033e943e9214585e67b304f58a9397b930f48f6db05e7616f967384284",
+    "source_name": "Send weekly Meta Ads performance PDF reports with Gemini and Gmail",
+    "coverage": "exhaustive within declared finite sequential slice and listed initial states; not full n8n model",
+    "policy_and_labels": "study supplied; no measured native attack/false-positive rate",
+    "initial_state_count": 2,
+    "events": 4,
+    "dangerous_events": 1,
+    "observations": {
+      "ctx": {
+        "collision_classes": 1,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 1
+      },
+      "event": {
+        "collision_classes": 0,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 0
+      }
+    },
+    "denial_attribution": {
+      "ctx": [
+        {
+          "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+          "action": "workflow_agent/Send Email(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+            "action": "workflow_agent/Send Email(binary_fields='0',recipient='study@example.invalid')"
+          }
+        },
+        {
+          "state": "State(slot:binary_0={step_1}; slot:control={step_1})",
+          "action": "workflow_agent/Send Email(binary_fields='0',recipient='study@example.invalid')",
+          "category": "observation_collision",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+            "action": "workflow_agent/Send Email(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ],
+      "event": [
+        {
+          "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+          "action": "workflow_agent/Send Email(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+            "action": "workflow_agent/Send Email(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ]
+    },
+    "witnesses": [
+      {
+        "same_action": "workflow_agent/Send Email(binary_fields='0',recipient='study@example.invalid')",
+        "benign_state": "State(slot:binary_0={step_1}; slot:control={step_1})",
+        "dangerous_state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})"
+      }
+    ],
+    "compiled_rules": [
+      "Constraint(direct:workflow_agent:Send Email:restricted: workflow_agent/Send Email deny {restricted})"
+    ],
+    "compiled_verified": true,
+    "empty_guard_counterexamples": [
+      [
+        "backend/Build HTML Report(resource='fixed_source_0')",
+        "workflow_agent/Send Email(binary_fields='0',recipient='study@example.invalid')"
+      ]
+    ],
+    "native_execution": false
+  },
+  {
+    "id": 18142,
+    "kind": "generated_from_ctx",
+    "sources": [
+      "Fetch Actual Image"
+    ],
+    "sink": "Download Image",
+    "required": [
+      "AI Image Query Agent",
+      "AI Image Selector",
+      "Generate Content",
+      "Fetch Actual Image",
+      "Download Image"
+    ],
+    "rationale": "The selector analyzes the candidate image URLs before the selected variant is fetched and uploaded; the conservative resource-identity contract preserves provenance.",
+    "limitations": "paired study fixture; labels and destination policy supplied by the study; source dependency review, not a measured production incident",
+    "candidate_status": "no_collision_provenance_already_observed",
+    "candidate_subtype": "already_observed",
+    "source_sha256": "eb015398d08ffed1dbef0540f595942416142c7762250c990fa70fb86c1664dc",
+    "source_name": "Create LinkedIn posts from articles with OpenAI, Pexels and Google Sheets",
+    "coverage": "exhaustive within declared finite sequential slice and listed initial states; not full n8n model",
+    "policy_and_labels": "study supplied; no measured native attack/false-positive rate",
+    "initial_state_count": 2,
+    "events": 4,
+    "dangerous_events": 1,
+    "observations": {
+      "ctx": {
+        "collision_classes": 0,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 0
+      },
+      "event": {
+        "collision_classes": 0,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 0
+      }
+    },
+    "denial_attribution": {
+      "ctx": [
+        {
+          "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+          "action": "workflow_agent/Download Image(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+            "action": "workflow_agent/Download Image(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ],
+      "event": [
+        {
+          "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+          "action": "workflow_agent/Download Image(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+            "action": "workflow_agent/Download Image(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ]
+    },
+    "witnesses": [],
+    "compiled_rules": [
+      "Constraint(direct:workflow_agent:Download Image:restricted: workflow_agent/Download Image deny {restricted})"
+    ],
+    "compiled_verified": true,
+    "empty_guard_counterexamples": [
+      [
+        "backend/Fetch Actual Image(resource='fixed_source_0')",
+        "workflow_agent/Download Image(binary_fields='0',recipient='study@example.invalid')"
+      ]
+    ],
+    "native_execution": false
+  },
+  {
+    "id": 18341,
+    "kind": "generated_from_ctx",
+    "sources": [
+      "Download the clip"
+    ],
+    "sink": "Save the clip to Drive",
+    "required": [
+      "Start the clip run on CNAPS",
+      "Check the run",
+      "Download the clip",
+      "Save the clip to Drive"
+    ],
+    "rationale": "The clip remains a derivative of the uploaded source video and its processing lineage is already observed.",
+    "limitations": "paired study fixture; labels and destination policy supplied by the study; source dependency review, not a measured production incident",
+    "candidate_status": "no_collision_provenance_already_observed",
+    "candidate_subtype": "already_observed",
+    "source_sha256": "8f4090bb23e331915761ec0213d7bdc3c56b620095f79e9b0e415838b1ab2bec",
+    "source_name": "Create captioned vertical video clips from Google Drive using CNAPS and Google Sheets",
+    "coverage": "exhaustive within declared finite sequential slice and listed initial states; not full n8n model",
+    "policy_and_labels": "study supplied; no measured native attack/false-positive rate",
+    "initial_state_count": 2,
+    "events": 4,
+    "dangerous_events": 1,
+    "observations": {
+      "ctx": {
+        "collision_classes": 0,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 0
+      },
+      "event": {
+        "collision_classes": 0,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 0
+      }
+    },
+    "denial_attribution": {
+      "ctx": [
+        {
+          "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+          "action": "workflow_agent/Save the clip to Drive(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+            "action": "workflow_agent/Save the clip to Drive(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ],
+      "event": [
+        {
+          "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+          "action": "workflow_agent/Save the clip to Drive(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+            "action": "workflow_agent/Save the clip to Drive(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ]
+    },
+    "witnesses": [],
+    "compiled_rules": [
+      "Constraint(direct:workflow_agent:Save the clip to Drive:restricted: workflow_agent/Save the clip to Drive deny {restricted})"
+    ],
+    "compiled_verified": true,
+    "empty_guard_counterexamples": [
+      [
+        "backend/Download the clip(resource='fixed_source_0')",
+        "workflow_agent/Save the clip to Drive(binary_fields='0',recipient='study@example.invalid')"
+      ]
+    ],
+    "native_execution": false
+  },
+  {
+    "id": 18417,
+    "kind": "generated_from_ctx",
+    "sources": [
+      "Download file"
+    ],
+    "sink": "Upload File to Google Drive",
+    "required": [
+      "OpenAI Image Analysis",
+      "OpenAI Message Model",
+      "AI Analysis Agent",
+      "Send Message to OpenAI",
+      "Message a model1",
+      "Download file",
+      "Upload File to Google Drive"
+    ],
+    "rationale": "The image input is read by the image-analysis agent; later image variants retain that source provenance.",
+    "limitations": "paired study fixture; labels and destination policy supplied by the study; source dependency review, not a measured production incident",
+    "candidate_status": "no_collision_provenance_already_observed",
+    "candidate_subtype": "already_observed",
+    "source_sha256": "3cf6899836378ba4b259ee9646676270ca8574731808c18d8f5caa67f56215b4",
+    "source_name": "Generate quiet luxury lifestyle product images with OpenAI and Google Drive",
+    "coverage": "exhaustive within declared finite sequential slice and listed initial states; not full n8n model",
+    "policy_and_labels": "study supplied; no measured native attack/false-positive rate",
+    "initial_state_count": 2,
+    "events": 4,
+    "dangerous_events": 1,
+    "observations": {
+      "ctx": {
+        "collision_classes": 0,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 0
+      },
+      "event": {
+        "collision_classes": 0,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 0
+      }
+    },
+    "denial_attribution": {
+      "ctx": [
+        {
+          "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+          "action": "workflow_agent/Upload File to Google Drive(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+            "action": "workflow_agent/Upload File to Google Drive(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ],
+      "event": [
+        {
+          "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+          "action": "workflow_agent/Upload File to Google Drive(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(ctx:workflow_agent={restricted}; slot:binary_0={restricted,step_1}; slot:control={restricted,step_1})",
+            "action": "workflow_agent/Upload File to Google Drive(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ]
+    },
+    "witnesses": [],
+    "compiled_rules": [
+      "Constraint(direct:workflow_agent:Upload File to Google Drive:restricted: workflow_agent/Upload File to Google Drive deny {restricted})"
+    ],
+    "compiled_verified": true,
+    "empty_guard_counterexamples": [
+      [
+        "backend/Download file(resource='fixed_source_0')",
+        "workflow_agent/Upload File to Google Drive(binary_fields='0',recipient='study@example.invalid')"
+      ]
+    ],
+    "native_execution": false
+  },
+  {
+    "id": 18673,
+    "kind": "independent_binary",
+    "sources": [
+      "Format Email Template (HTML)"
+    ],
+    "sink": "Email CFO Report (Gmail)",
+    "required": [
+      "Generate CFO Executive Summary",
+      "Format Email Template (HTML)",
+      "Email CFO Report (Gmail)"
+    ],
+    "rationale": "The report adds an internal dashboard URL after AI summarization; that URL is absent from the AI prompt and flows into the emailed PDF.",
+    "limitations": "paired study fixture; labels and destination policy supplied by the study; source dependency review, not a measured production incident",
+    "candidate_status": "confirmed_collision_under_reviewed_contract",
+    "candidate_subtype": "context_projection",
+    "source_sha256": "a7e25f5567022f64bef518acd5cdda1e243b8e88666ffd61b50f9759e94fb899",
+    "source_name": "Send daily CFO invoice health reports with Google Sheets, Groq, Gmail and Slack",
+    "coverage": "exhaustive within declared finite sequential slice and listed initial states; not full n8n model",
+    "policy_and_labels": "study supplied; no measured native attack/false-positive rate",
+    "initial_state_count": 2,
+    "events": 4,
+    "dangerous_events": 1,
+    "observations": {
+      "ctx": {
+        "collision_classes": 1,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 1
+      },
+      "event": {
+        "collision_classes": 0,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 0
+      }
+    },
+    "denial_attribution": {
+      "ctx": [
+        {
+          "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+          "action": "workflow_agent/Email CFO Report (Gmail)(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+            "action": "workflow_agent/Email CFO Report (Gmail)(binary_fields='0',recipient='study@example.invalid')"
+          }
+        },
+        {
+          "state": "State(slot:binary_0={step_1}; slot:control={step_1})",
+          "action": "workflow_agent/Email CFO Report (Gmail)(binary_fields='0',recipient='study@example.invalid')",
+          "category": "observation_collision",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+            "action": "workflow_agent/Email CFO Report (Gmail)(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ],
+      "event": [
+        {
+          "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+          "action": "workflow_agent/Email CFO Report (Gmail)(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+            "action": "workflow_agent/Email CFO Report (Gmail)(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ]
+    },
+    "witnesses": [
+      {
+        "same_action": "workflow_agent/Email CFO Report (Gmail)(binary_fields='0',recipient='study@example.invalid')",
+        "benign_state": "State(slot:binary_0={step_1}; slot:control={step_1})",
+        "dangerous_state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})"
+      }
+    ],
+    "compiled_rules": [
+      "Constraint(direct:workflow_agent:Email CFO Report (Gmail):restricted: workflow_agent/Email CFO Report (Gmail) deny {restricted})"
+    ],
+    "compiled_verified": true,
+    "empty_guard_counterexamples": [
+      [
+        "backend/Format Email Template (HTML)(resource='fixed_source_0')",
+        "workflow_agent/Email CFO Report (Gmail)(binary_fields='0',recipient='study@example.invalid')"
+      ]
+    ],
+    "native_execution": false
+  },
+  {
+    "id": 19292,
+    "kind": "independent_binary",
+    "sources": [
+      "Download Attachment from Drive"
+    ],
+    "sink": "Create Draft with Attachment",
+    "required": [
+      "Extract Card Data with Gemini",
+      "Download Attachment from Drive",
+      "Create Draft with Attachment"
+    ],
+    "rationale": "A separately configured Drive file is downloaded only after Gemini builds the recipient/body and is attached to the draft.",
+    "limitations": "paired study fixture; labels and destination policy supplied by the study; source dependency review, not a measured production incident",
+    "candidate_status": "confirmed_collision_under_reviewed_contract",
+    "candidate_subtype": "direct_resource",
+    "source_sha256": "a9020da3e738a531894f9e319f2a5292d4b01bb74ca032b18a3b68b571e514bc",
+    "source_name": "Create Gmail drafts from business cards with Google Drive, Gemini, Slack and Discord",
+    "coverage": "exhaustive within declared finite sequential slice and listed initial states; not full n8n model",
+    "policy_and_labels": "study supplied; no measured native attack/false-positive rate",
+    "initial_state_count": 2,
+    "events": 4,
+    "dangerous_events": 1,
+    "observations": {
+      "ctx": {
+        "collision_classes": 1,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 1
+      },
+      "event": {
+        "collision_classes": 0,
+        "benign_send_events": 1,
+        "blocked_benign_send_events": 0
+      }
+    },
+    "denial_attribution": {
+      "ctx": [
+        {
+          "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+          "action": "workflow_agent/Create Draft with Attachment(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+            "action": "workflow_agent/Create Draft with Attachment(binary_fields='0',recipient='study@example.invalid')"
+          }
+        },
+        {
+          "state": "State(slot:binary_0={step_1}; slot:control={step_1})",
+          "action": "workflow_agent/Create Draft with Attachment(binary_fields='0',recipient='study@example.invalid')",
+          "category": "observation_collision",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+            "action": "workflow_agent/Create Draft with Attachment(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ],
+      "event": [
+        {
+          "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+          "action": "workflow_agent/Create Draft with Attachment(binary_fields='0',recipient='study@example.invalid')",
+          "category": "model_danger_concrete_unknown",
+          "concrete_allowed": null,
+          "dangerous_mate": {
+            "state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})",
+            "action": "workflow_agent/Create Draft with Attachment(binary_fields='0',recipient='study@example.invalid')"
+          }
+        }
+      ]
+    },
+    "witnesses": [
+      {
+        "same_action": "workflow_agent/Create Draft with Attachment(binary_fields='0',recipient='study@example.invalid')",
+        "benign_state": "State(slot:binary_0={step_1}; slot:control={step_1})",
+        "dangerous_state": "State(slot:binary_0={restricted,step_1}; slot:control={restricted,step_1}; slot:remote_0={restricted})"
+      }
+    ],
+    "compiled_rules": [
+      "Constraint(direct:workflow_agent:Create Draft with Attachment:restricted: workflow_agent/Create Draft with Attachment deny {restricted})"
+    ],
+    "compiled_verified": true,
+    "empty_guard_counterexamples": [
+      [
+        "backend/Download Attachment from Drive(resource='fixed_source_0')",
+        "workflow_agent/Create Draft with Attachment(binary_fields='0',recipient='study@example.invalid')"
+      ]
+    ],
+    "native_execution": false
+  }
+]

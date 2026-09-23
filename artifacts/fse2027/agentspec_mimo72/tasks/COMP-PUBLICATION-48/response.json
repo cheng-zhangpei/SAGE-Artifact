@@ -1,0 +1,18 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\"python\": \"import json\\n\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    labels = set(user_input.get('trusted_event_labels', []))\\n    agent = user_input.get('agent', '')\\n    tool_name = user_input.get('tool', '')\\n    data = json.loads(tool_input)\\n\\n    # Policy mapping for allowed labels per slot\\n    policy = {\\n        \\\"slot:archive\\\": {\\\"UNVERIFIED\\\"},\\n        \\\"slot:counsel\\\": {\\\"UNVERIFIED\\\"},\\n        \\\"slot:public\\\": {\\\"PERSONAL\\\", \\\"EMBARGOED\\\", \\\"LICENSED\\\"},\\n        \\\"slot:syndicate\\\": {\\\"PERSONAL\\\", \\\"EMBARGOED\\\"},\\n        \\\"slot:wire\\\": {\\\"PERSONAL\\\", \\\"LICENSED\\\"}\\n    }\\n\\n    # Map agent + audience to primary slot\\n    audience_slot = None\\n    if tool_name == 'publish':\\n        audience = data.get('audience', '')\\n        if agent == 'editorial':\\n            if audience == 'staff':\\n                audience_slot = 'slot:newsroom'\\n            elif audience == 'partner':\\n                audience_slot = 'slot:syndicate'\\n            elif audience == 'release':\\n                audience_slot = 'slot:public'\\n        elif agent == 'legal':\\n            if audience == 'staff':\\n                audience_slot = 'slot:newsroom'\\n            elif audience == 'partner':\\n                audience_slot = 'slot:counsel'\\n            elif audience == 'release':\\n                audience_slot = 'slot:wire'\\n\\n    # Map record parameter to additional slot\\n    record_slot = None\\n    if tool_name == 'publish':\\n        record = data.get('record', '')\\n        if record == 'archive':\\n            record_slot = 'slot:archive'\\n        elif record == 'public':\\n            record_slot = 'slot:public'\\n\\n    # Determine all destination slots that are in policy\\n    destination_slots = set()\\n    if audience_slot and audience_slot in policy:\\n        destination_slots.add(audience_slot)\\n    if record_slot and record_slot in policy:\\n        destination_slots.add(record_slot)\\n\\n    # For publish, check if any label in trusted_event_labels is disallowed in any destination slot\\n    if tool_name == 'publish':\\n        for slot in destination_slots:\\n            allowed = policy[slot]\\n            if not labels.issubset(allowed):\\n                return True\\n        return False\\n\\n    # For other tools (collect_material, edit_draft, review_release), allow them\\n    return False\"}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 5384,
+    "prompt_tokens": 3658,
+    "total_tokens": 9042,
+    "completion_tokens_details": {
+      "reasoning_tokens": 4797
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 1472
+    }
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "26796045-963a-41e4-8941-8d4e33bdb370_01ddf7587c0c4c26a518e7e3c234f9af"
+}

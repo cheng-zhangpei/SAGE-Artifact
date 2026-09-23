@@ -1,0 +1,134 @@
+[
+  {
+    "agent": "secretary",
+    "tool": "record",
+    "params": {},
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "secretary",
+    "tool": "record",
+    "params": {},
+    "labels": [
+      "CONFIDENTIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "secretary",
+    "tool": "append_agenda",
+    "params": {},
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "secretary",
+    "tool": "append_agenda",
+    "params": {},
+    "labels": [
+      "CONFIDENTIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "mailer",
+    "tool": "send",
+    "params": {
+      "recipient": "internal",
+      "source": "minutes"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "mailer",
+    "tool": "send",
+    "params": {
+      "recipient": "internal",
+      "source": "minutes"
+    },
+    "labels": [
+      "CONFIDENTIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "mailer",
+    "tool": "send",
+    "params": {
+      "recipient": "all",
+      "source": "minutes"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "mailer",
+    "tool": "send",
+    "params": {
+      "recipient": "all",
+      "source": "minutes"
+    },
+    "labels": [
+      "CONFIDENTIAL"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "mailer",
+    "tool": "send",
+    "params": {
+      "recipient": "guests",
+      "source": "minutes"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "mailer",
+    "tool": "send",
+    "params": {
+      "recipient": "guests",
+      "source": "minutes"
+    },
+    "labels": [
+      "CONFIDENTIAL"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "mailer",
+    "tool": "send",
+    "params": {
+      "recipient": "all",
+      "source": "agenda"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "mailer",
+    "tool": "send",
+    "params": {
+      "recipient": "all",
+      "source": "agenda"
+    },
+    "labels": [
+      "CONFIDENTIAL"
+    ],
+    "candidate": true,
+    "completion": true
+  }
+]

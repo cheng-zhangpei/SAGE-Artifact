@@ -1,0 +1,18 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\"python\": \"import json\\n\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    tool = user_input.get('tool', '')\\n    agent = user_input.get('agent', '')\\n    labels = set(user_input.get('trusted_event_labels', []))\\n    params = json.loads(tool_input)\\n    \\n    # Policy map: slot -> set of prohibited labels\\n    policy = {\\n        'slot:audit': {'SOURCE', 'CREDENTIAL'},\\n        'slot:marketplace': {'CUSTOMER', 'CREDENTIAL'},\\n        'slot:production': {'UNVERIFIED'},\\n        'slot:public': {'CUSTOMER', 'SOURCE', 'CREDENTIAL'},\\n        'slot:vendor': {'SOURCE', 'CREDENTIAL'}\\n    }\\n    \\n    # Tool-specific logic\\n    if tool == 'import_component':\\n        # Writes to slot:staging, not in policy -> always allowed\\n        return False\\n    \\n    elif tool == 'review_component':\\n        # Appends staging to reviewed; slot:reviewed not in policy -> allowed\\n        return False\\n    \\n    elif tool == 'assemble_build':\\n        # Appends to slot:artifact; not in policy -> allowed\\n        return False\\n    \\n    elif tool == 'deliver_build':\\n        channel = params.get('channel', '')\\n        payload = params.get('payload', '')\\n        source = params.get('source', '')\\n        telemetry = params.get('telemetry', '')\\n        \\n        # Determine main destination slot from channel and agent\\n        main_dest = None\\n        if agent == 'release':\\n            if channel == 'local':\\n                main_dest = 'slot:internal'\\n            elif channel == 'release':\\n                main_dest = 'slot:marketplace'\\n            elif channel == 'partner':\\n                main_dest = 'slot:public'\\n        elif agent == 'operations':\\n            if channel == 'local':\\n                main_dest = 'slot:internal'\\n            elif channel == 'release':\\n                main_dest = 'slot:vendor'\\n            elif channel == 'partner':\\n                main_dest = 'slot:production'\\n        \\n        # Collect all destination slots to check\\n        check_slots = []\\n        if main_dest in policy:\\n            check_slots.append(main_dest)\\n        if telemetry == 'audit' and 'slot:audit' in policy:\\n            check_slots.append('slot:audit')\\n        if telemetry == 'public' and 'slot:public' in policy:\\n            check_slots.append('slot:public')\\n        \\n        # Check if any prohibited label in current labels is present\\n        for slot in check_slots:\\n            if not labels.isdisjoint(policy[slot]):\\n                return True  # block\\n        return False  # allow\\n    \\n    # Unknown tool: allow (policy doesn't forbid it)\\n    return False\"}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 5448,
+    "prompt_tokens": 2840,
+    "total_tokens": 8288,
+    "completion_tokens_details": {
+      "reasoning_tokens": 4795
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 2368
+    }
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "cb2b18b9-0e7b-4af2-bb6d-b8b4b5bd9f77_0d8cd4fd1c02433b981641f46a435557"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "COMP-PUBLICATION-16",
+  "family": "publication",
+  "dispatch_count": 16,
+  "total_actions": 23,
+  "dangerous_probes": 74,
+  "benign_probes": 118,
+  "direct_coverage_certificate": "SUFFICIENT_SAFE",
+  "public_input_sha256": "236aaac2dbf13902780ae6fcb6130ca03484b2772a066c255b6e9683c256b554",
+  "confirmed_model_sha256": "82b7f58bde382414f74672f2edfdd8de69d84587f76ec1b7ed7dbbbf5fc7c9bb"
+}

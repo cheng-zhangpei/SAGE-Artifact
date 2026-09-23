@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\"python\": \"import json\\n\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    tool_name = user_input.get('tool')\\n    trusted_labels = set(user_input.get('trusted_event_labels', []))\\n    params = json.loads(tool_input)\\n    \\n    policy = {\\n        'slot:agency': {'PCI'},\\n        'slot:board': {'PII', 'PCI'}\\n    }\\n    \\n    if tool_name == 'attach':\\n        doc = params.get('document')\\n        if doc == 'passport':\\n            doc_labels = {'PII'}\\n        elif doc == 'card':\\n            doc_labels = {'PCI'}\\n        else:\\n            doc_labels = set()\\n        return False\\n    \\n    elif tool_name == 'submit':\\n        source = params.get('source')\\n        target = params.get('target')\\n        \\n        if target not in policy:\\n            return False\\n        \\n        forbidden = policy[target]\\n        \\n        if source == 'itinerary':\\n            return False\\n        \\n        if source == 'request':\\n            source_labels = trusted_labels\\n            if not source_labels.isdisjoint(forbidden):\\n                return True\\n            return False\\n    \\n    return False\"}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 5083,
+    "prompt_tokens": 879,
+    "total_tokens": 5962,
+    "completion_tokens_details": {
+      "reasoning_tokens": 4789
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "e02bdb17-f232-4309-8960-6051fd5ba5d7_45cec2cb29844335a4ad68fd81e7eb77"
+}

@@ -1,0 +1,300 @@
+[
+  {
+    "agent": "hr",
+    "tool": "assemble",
+    "params": {
+      "part": "identities"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "hr",
+    "tool": "assemble",
+    "params": {
+      "part": "identities"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "hr",
+    "tool": "assemble",
+    "params": {
+      "part": "identities"
+    },
+    "labels": [
+      "SALARY"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "hr",
+    "tool": "assemble",
+    "params": {
+      "part": "identities"
+    },
+    "labels": [
+      "PII",
+      "SALARY"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "payroll",
+    "tool": "assemble",
+    "params": {
+      "part": "salaries"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "payroll",
+    "tool": "assemble",
+    "params": {
+      "part": "salaries"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "payroll",
+    "tool": "assemble",
+    "params": {
+      "part": "salaries"
+    },
+    "labels": [
+      "SALARY"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "payroll",
+    "tool": "assemble",
+    "params": {
+      "part": "salaries"
+    },
+    "labels": [
+      "PII",
+      "SALARY"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "finance",
+    "tool": "export",
+    "params": {
+      "cc": "none",
+      "target": "analytics"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "finance",
+    "tool": "export",
+    "params": {
+      "cc": "none",
+      "target": "analytics"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "export",
+    "params": {
+      "cc": "none",
+      "target": "analytics"
+    },
+    "labels": [
+      "SALARY"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "finance",
+    "tool": "export",
+    "params": {
+      "cc": "none",
+      "target": "analytics"
+    },
+    "labels": [
+      "PII",
+      "SALARY"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "export",
+    "params": {
+      "cc": "none",
+      "target": "tax"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "finance",
+    "tool": "export",
+    "params": {
+      "cc": "none",
+      "target": "tax"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "finance",
+    "tool": "export",
+    "params": {
+      "cc": "none",
+      "target": "tax"
+    },
+    "labels": [
+      "SALARY"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "finance",
+    "tool": "export",
+    "params": {
+      "cc": "none",
+      "target": "tax"
+    },
+    "labels": [
+      "PII",
+      "SALARY"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "finance",
+    "tool": "export",
+    "params": {
+      "cc": "public",
+      "target": "tax"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "finance",
+    "tool": "export",
+    "params": {
+      "cc": "public",
+      "target": "tax"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "export",
+    "params": {
+      "cc": "public",
+      "target": "tax"
+    },
+    "labels": [
+      "SALARY"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "export",
+    "params": {
+      "cc": "public",
+      "target": "tax"
+    },
+    "labels": [
+      "PII",
+      "SALARY"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "export",
+    "params": {
+      "cc": "none",
+      "target": "public"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "finance",
+    "tool": "export",
+    "params": {
+      "cc": "none",
+      "target": "public"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "export",
+    "params": {
+      "cc": "none",
+      "target": "public"
+    },
+    "labels": [
+      "SALARY"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "finance",
+    "tool": "export",
+    "params": {
+      "cc": "none",
+      "target": "public"
+    },
+    "labels": [
+      "PII",
+      "SALARY"
+    ],
+    "candidate": true,
+    "completion": true
+  }
+]

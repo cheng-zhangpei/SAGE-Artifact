@@ -1,0 +1,18 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"def pilot_candidate(user_input, tool_input, intermediate_steps):\\n    import json\\n    tool = user_input.get('tool', '')\\n    labels = user_input.get('trusted_event_labels', set())\\n    if tool not in ('route_referral', 'register_material', 'review_referral', 'assemble_referral'):\\n        return False\\n    params = json.loads(tool_input) if isinstance(tool_input, str) else tool_input\\n    if tool == 'register_material':\\n        cat = params.get('category', '')\\n        if cat in labels:\\n            return False\\n        else:\\n            return True\\n    if tool == 'review_referral':\\n        return False\\n    if tool == 'assemble_referral':\\n        return False\\n    if tool == 'route_referral':\\n        agent = user_input.get('agent', '')\\n        dest = params.get('destination', '')\\n        record = params.get('record', '')\\n        src = params.get('source', '')\\n        attachment = params.get('attachment', '')\\n        dest_slot = ''\\n        if agent == 'care':\\n            if dest == 'local':\\n                dest_slot = 'slot:hospital'\\n            elif dest == 'partner':\\n                dest_slot = 'slot:scheduler'\\n            elif dest == 'release':\\n                dest_slot = 'slot:public'\\n        elif agent == 'research':\\n            if dest == 'local':\\n                dest_slot = 'slot:hospital'\\n            elif dest == 'partner':\\n                dest_slot = 'slot:research'\\n            elif dest == 'release':\\n                dest_slot = 'slot:lab'\\n        policy = {\\n            'slot:audit': {'DIAGNOSIS', 'AUTH'},\\n            'slot:lab': {'PATIENT', 'AUTH'},\\n            'slot:public': {'PATIENT', 'DIAGNOSIS', 'AUTH'},\\n            'slot:research': {'PATIENT', 'UNVERIFIED'},\\n            'slot:scheduler': {'DIAGNOSIS', 'AUTH'},\\n            'slot:hospital': set()\\n        }\\n        all_labels = {'AUTH', 'DIAGNOSIS', 'PATIENT', 'UNVERIFIED'}\\n        def allowed_for_slot(slot):\\n            return policy.get(slot, all_labels)\\n        dest_allowed = allowed_for_slot(dest_slot)\\n        if not labels.issubset(dest_allowed):\\n            return True\\n        record_slot = ''\\n        if record != 'none':\\n            if record == 'audit':\\n                record_slot = 'slot:audit'\\n            elif record == 'partner':\\n                if agent == 'care':\\n                    record_slot = 'slot:scheduler'\\n                else:\\n                    record_slot = 'slot:research'\\n            elif record == 'public':\\n                record_slot = 'slot:public'\\n            if record_slot:\\n                rec_allowed = allowed_for_slot(record_slot)\\n                if not labels.issubset(rec_allowed):\\n                    return True\\n        return False\\n    return False\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 3807,
+    "prompt_tokens": 3350,
+    "total_tokens": 7157,
+    "completion_tokens_details": {
+      "reasoning_tokens": 3115
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 2880
+    }
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "bf5775c9-ed9a-43b3-9d9d-cf7e6b2782d7_7c9cbfa1c0134b90a0b2eb441486bfca"
+}

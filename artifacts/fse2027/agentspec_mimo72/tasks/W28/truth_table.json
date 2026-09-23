@@ -1,0 +1,128 @@
+[
+  {
+    "agent": "vision",
+    "tool": "suggest",
+    "params": {},
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "vision",
+    "tool": "suggest",
+    "params": {},
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "engineer",
+    "tool": "append_standard",
+    "params": {},
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "engineer",
+    "tool": "append_standard",
+    "params": {},
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "planner",
+    "tool": "ticket",
+    "params": {},
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "planner",
+    "tool": "ticket",
+    "params": {},
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "controller",
+    "tool": "apply",
+    "params": {
+      "source": "ticket",
+      "target": "production"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "controller",
+    "tool": "apply",
+    "params": {
+      "source": "ticket",
+      "target": "production"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "controller",
+    "tool": "apply",
+    "params": {
+      "source": "ticket",
+      "target": "simulation"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "controller",
+    "tool": "apply",
+    "params": {
+      "source": "ticket",
+      "target": "simulation"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "controller",
+    "tool": "apply",
+    "params": {
+      "source": "standard",
+      "target": "production"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "controller",
+    "tool": "apply",
+    "params": {
+      "source": "standard",
+      "target": "production"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"import json\\n\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    tool_info = json.loads(tool_input)\\n    tool_name = user_input[\\\"tool\\\"]\\n    labels = set(user_input.get(\\\"trusted_event_labels\\\", []))\\n    if tool_name == \\\"notify\\\":\\n        target = tool_info.get(\\\"target\\\", \\\"\\\")\\n        mirror = tool_info.get(\\\"mirror_calendar\\\", False)\\n        if target == \\\"calendar\\\" or mirror:\\n            if \\\"PII\\\" in labels or \\\"PHI\\\" in labels:\\n                return True\\n    return False\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 4925,
+    "prompt_tokens": 873,
+    "total_tokens": 5798,
+    "completion_tokens_details": {
+      "reasoning_tokens": 4789
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "22ef059c-0968-4bec-adad-c5f6cc805c03_b291edff184941d89c4fb21fbab2e538"
+}

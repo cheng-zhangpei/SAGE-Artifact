@@ -1,0 +1,276 @@
+[
+  {
+    "agent": "support",
+    "tool": "collect",
+    "params": {
+      "part": "player"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "support",
+    "tool": "collect",
+    "params": {
+      "part": "player"
+    },
+    "labels": [
+      "DETECTION_RULE"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "support",
+    "tool": "collect",
+    "params": {
+      "part": "player"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "support",
+    "tool": "collect",
+    "params": {
+      "part": "player"
+    },
+    "labels": [
+      "DETECTION_RULE",
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "security",
+    "tool": "collect",
+    "params": {
+      "part": "rules"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "security",
+    "tool": "collect",
+    "params": {
+      "part": "rules"
+    },
+    "labels": [
+      "DETECTION_RULE"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "security",
+    "tool": "collect",
+    "params": {
+      "part": "rules"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "security",
+    "tool": "collect",
+    "params": {
+      "part": "rules"
+    },
+    "labels": [
+      "DETECTION_RULE",
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "writer",
+    "tool": "explain",
+    "params": {},
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "writer",
+    "tool": "explain",
+    "params": {},
+    "labels": [
+      "DETECTION_RULE"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "writer",
+    "tool": "explain",
+    "params": {},
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "writer",
+    "tool": "explain",
+    "params": {},
+    "labels": [
+      "DETECTION_RULE",
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "support",
+    "tool": "send",
+    "params": {
+      "target": "player"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "support",
+    "tool": "send",
+    "params": {
+      "target": "player"
+    },
+    "labels": [
+      "DETECTION_RULE"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "send",
+    "params": {
+      "target": "player"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "support",
+    "tool": "send",
+    "params": {
+      "target": "player"
+    },
+    "labels": [
+      "DETECTION_RULE",
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "send",
+    "params": {
+      "target": "notice"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "support",
+    "tool": "send",
+    "params": {
+      "target": "notice"
+    },
+    "labels": [
+      "DETECTION_RULE"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "send",
+    "params": {
+      "target": "notice"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "send",
+    "params": {
+      "target": "notice"
+    },
+    "labels": [
+      "DETECTION_RULE",
+      "PII"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "support",
+    "tool": "send",
+    "params": {
+      "target": "security"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "support",
+    "tool": "send",
+    "params": {
+      "target": "security"
+    },
+    "labels": [
+      "DETECTION_RULE"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "support",
+    "tool": "send",
+    "params": {
+      "target": "security"
+    },
+    "labels": [
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "support",
+    "tool": "send",
+    "params": {
+      "target": "security"
+    },
+    "labels": [
+      "DETECTION_RULE",
+      "PII"
+    ],
+    "candidate": false,
+    "completion": false
+  }
+]

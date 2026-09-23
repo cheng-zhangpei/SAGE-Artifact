@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"import json\\n\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    tool_name = user_input[\\\"tool\\\"]\\n    trusted_labels = set(user_input[\\\"trusted_event_labels\\\"])\\n    params = json.loads(tool_input)\\n\\n    if tool_name == \\\"collect\\\":\\n        return False\\n    if tool_name == \\\"stage\\\":\\n        return False\\n    if tool_name == \\\"announce\\\":\\n        attachments = params[\\\"attachments\\\"]\\n        target = params[\\\"target\\\"]\\n        if not attachments:\\n            return False\\n        if target == \\\"status\\\":\\n            if \\\"PII\\\" in trusted_labels and \\\"CREDENTIAL\\\" in trusted_labels:\\n                return True\\n            else:\\n                return False\\n        elif target == \\\"coordinator\\\":\\n            if \\\"CREDENTIAL\\\" in trusted_labels:\\n                return True\\n            else:\\n                return False\\n        elif target == \\\"response_room\\\":\\n            return False\\n        else:\\n            return False\\n    return False\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 4868,
+    "prompt_tokens": 982,
+    "total_tokens": 5850,
+    "completion_tokens_details": {
+      "reasoning_tokens": 4638
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "292b9d8d-0e13-4b7c-90df-b96e40eb484d_abede953d2b4471e903027460cdf7029"
+}

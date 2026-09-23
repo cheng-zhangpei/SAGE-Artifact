@@ -1,0 +1,276 @@
+[
+  {
+    "agent": "analyst",
+    "tool": "collect",
+    "params": {
+      "source": "earnings"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "analyst",
+    "tool": "collect",
+    "params": {
+      "source": "earnings"
+    },
+    "labels": [
+      "MNPI"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "analyst",
+    "tool": "collect",
+    "params": {
+      "source": "earnings"
+    },
+    "labels": [
+      "POSITION"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "analyst",
+    "tool": "collect",
+    "params": {
+      "source": "earnings"
+    },
+    "labels": [
+      "MNPI",
+      "POSITION"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "advisor",
+    "tool": "collect",
+    "params": {
+      "source": "positions"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "advisor",
+    "tool": "collect",
+    "params": {
+      "source": "positions"
+    },
+    "labels": [
+      "MNPI"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "advisor",
+    "tool": "collect",
+    "params": {
+      "source": "positions"
+    },
+    "labels": [
+      "POSITION"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "advisor",
+    "tool": "collect",
+    "params": {
+      "source": "positions"
+    },
+    "labels": [
+      "MNPI",
+      "POSITION"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editor",
+    "tool": "summarize",
+    "params": {},
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editor",
+    "tool": "summarize",
+    "params": {},
+    "labels": [
+      "MNPI"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editor",
+    "tool": "summarize",
+    "params": {},
+    "labels": [
+      "POSITION"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "editor",
+    "tool": "summarize",
+    "params": {},
+    "labels": [
+      "MNPI",
+      "POSITION"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "publisher",
+    "tool": "send",
+    "params": {
+      "target": "research"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "publisher",
+    "tool": "send",
+    "params": {
+      "target": "research"
+    },
+    "labels": [
+      "MNPI"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "publisher",
+    "tool": "send",
+    "params": {
+      "target": "research"
+    },
+    "labels": [
+      "POSITION"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "publisher",
+    "tool": "send",
+    "params": {
+      "target": "research"
+    },
+    "labels": [
+      "MNPI",
+      "POSITION"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "publisher",
+    "tool": "send",
+    "params": {
+      "target": "sales"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "publisher",
+    "tool": "send",
+    "params": {
+      "target": "sales"
+    },
+    "labels": [
+      "MNPI"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "publisher",
+    "tool": "send",
+    "params": {
+      "target": "sales"
+    },
+    "labels": [
+      "POSITION"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "publisher",
+    "tool": "send",
+    "params": {
+      "target": "sales"
+    },
+    "labels": [
+      "MNPI",
+      "POSITION"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "publisher",
+    "tool": "send",
+    "params": {
+      "target": "compliance"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "publisher",
+    "tool": "send",
+    "params": {
+      "target": "compliance"
+    },
+    "labels": [
+      "MNPI"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "publisher",
+    "tool": "send",
+    "params": {
+      "target": "compliance"
+    },
+    "labels": [
+      "POSITION"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "publisher",
+    "tool": "send",
+    "params": {
+      "target": "compliance"
+    },
+    "labels": [
+      "MNPI",
+      "POSITION"
+    ],
+    "candidate": false,
+    "completion": false
+  }
+]

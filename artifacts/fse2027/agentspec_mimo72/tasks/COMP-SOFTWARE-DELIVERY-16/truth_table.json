@@ -1,0 +1,5499 @@
+[
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "CUSTOMER"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "CUSTOMER"
+    },
+    "labels": [
+      "CREDENTIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "CUSTOMER"
+    },
+    "labels": [
+      "CUSTOMER"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "CUSTOMER"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "CUSTOMER"
+    },
+    "labels": [
+      "SOURCE"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "CUSTOMER"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "SOURCE"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "CUSTOMER"
+    },
+    "labels": [
+      "CUSTOMER",
+      "SOURCE"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "CUSTOMER"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "SOURCE"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "CUSTOMER"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "CUSTOMER"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "CUSTOMER"
+    },
+    "labels": [
+      "CUSTOMER",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "CUSTOMER"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "CUSTOMER"
+    },
+    "labels": [
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "CUSTOMER"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "CUSTOMER"
+    },
+    "labels": [
+      "CUSTOMER",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "CUSTOMER"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "SOURCE"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "SOURCE"
+    },
+    "labels": [
+      "CREDENTIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "SOURCE"
+    },
+    "labels": [
+      "CUSTOMER"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "SOURCE"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "SOURCE"
+    },
+    "labels": [
+      "SOURCE"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "SOURCE"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "SOURCE"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "SOURCE"
+    },
+    "labels": [
+      "CUSTOMER",
+      "SOURCE"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "SOURCE"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "SOURCE"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "SOURCE"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "SOURCE"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "SOURCE"
+    },
+    "labels": [
+      "CUSTOMER",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "SOURCE"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "SOURCE"
+    },
+    "labels": [
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "SOURCE"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "SOURCE"
+    },
+    "labels": [
+      "CUSTOMER",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "SOURCE"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "CREDENTIAL"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "CREDENTIAL"
+    },
+    "labels": [
+      "CREDENTIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "CREDENTIAL"
+    },
+    "labels": [
+      "CUSTOMER"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "CREDENTIAL"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "CREDENTIAL"
+    },
+    "labels": [
+      "SOURCE"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "CREDENTIAL"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "SOURCE"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "CREDENTIAL"
+    },
+    "labels": [
+      "CUSTOMER",
+      "SOURCE"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "CREDENTIAL"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "SOURCE"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "CREDENTIAL"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "CREDENTIAL"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "CREDENTIAL"
+    },
+    "labels": [
+      "CUSTOMER",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "CREDENTIAL"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "CREDENTIAL"
+    },
+    "labels": [
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "CREDENTIAL"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "CREDENTIAL"
+    },
+    "labels": [
+      "CUSTOMER",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "CREDENTIAL"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "CREDENTIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "CUSTOMER"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "SOURCE"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "SOURCE"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "CUSTOMER",
+      "SOURCE"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "SOURCE"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "CUSTOMER",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "CUSTOMER",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "builder",
+    "tool": "import_component",
+    "params": {
+      "category": "UNVERIFIED"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "reviewer",
+    "tool": "review_component",
+    "params": {},
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "reviewer",
+    "tool": "review_component",
+    "params": {},
+    "labels": [
+      "CREDENTIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "reviewer",
+    "tool": "review_component",
+    "params": {},
+    "labels": [
+      "CUSTOMER"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "reviewer",
+    "tool": "review_component",
+    "params": {},
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "reviewer",
+    "tool": "review_component",
+    "params": {},
+    "labels": [
+      "SOURCE"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "reviewer",
+    "tool": "review_component",
+    "params": {},
+    "labels": [
+      "CREDENTIAL",
+      "SOURCE"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "reviewer",
+    "tool": "review_component",
+    "params": {},
+    "labels": [
+      "CUSTOMER",
+      "SOURCE"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "reviewer",
+    "tool": "review_component",
+    "params": {},
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "SOURCE"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "reviewer",
+    "tool": "review_component",
+    "params": {},
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "reviewer",
+    "tool": "review_component",
+    "params": {},
+    "labels": [
+      "CREDENTIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "reviewer",
+    "tool": "review_component",
+    "params": {},
+    "labels": [
+      "CUSTOMER",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "reviewer",
+    "tool": "review_component",
+    "params": {},
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "reviewer",
+    "tool": "review_component",
+    "params": {},
+    "labels": [
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "reviewer",
+    "tool": "review_component",
+    "params": {},
+    "labels": [
+      "CREDENTIAL",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "reviewer",
+    "tool": "review_component",
+    "params": {},
+    "labels": [
+      "CUSTOMER",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "reviewer",
+    "tool": "review_component",
+    "params": {},
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release_bot",
+    "tool": "assemble_build",
+    "params": {
+      "source": "reviewed"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release_bot",
+    "tool": "assemble_build",
+    "params": {
+      "source": "reviewed"
+    },
+    "labels": [
+      "CREDENTIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release_bot",
+    "tool": "assemble_build",
+    "params": {
+      "source": "reviewed"
+    },
+    "labels": [
+      "CUSTOMER"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release_bot",
+    "tool": "assemble_build",
+    "params": {
+      "source": "reviewed"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release_bot",
+    "tool": "assemble_build",
+    "params": {
+      "source": "reviewed"
+    },
+    "labels": [
+      "SOURCE"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release_bot",
+    "tool": "assemble_build",
+    "params": {
+      "source": "reviewed"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "SOURCE"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release_bot",
+    "tool": "assemble_build",
+    "params": {
+      "source": "reviewed"
+    },
+    "labels": [
+      "CUSTOMER",
+      "SOURCE"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release_bot",
+    "tool": "assemble_build",
+    "params": {
+      "source": "reviewed"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "SOURCE"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release_bot",
+    "tool": "assemble_build",
+    "params": {
+      "source": "reviewed"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release_bot",
+    "tool": "assemble_build",
+    "params": {
+      "source": "reviewed"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release_bot",
+    "tool": "assemble_build",
+    "params": {
+      "source": "reviewed"
+    },
+    "labels": [
+      "CUSTOMER",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release_bot",
+    "tool": "assemble_build",
+    "params": {
+      "source": "reviewed"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release_bot",
+    "tool": "assemble_build",
+    "params": {
+      "source": "reviewed"
+    },
+    "labels": [
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release_bot",
+    "tool": "assemble_build",
+    "params": {
+      "source": "reviewed"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release_bot",
+    "tool": "assemble_build",
+    "params": {
+      "source": "reviewed"
+    },
+    "labels": [
+      "CUSTOMER",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release_bot",
+    "tool": "assemble_build",
+    "params": {
+      "source": "reviewed"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release_bot",
+    "tool": "assemble_build",
+    "params": {
+      "source": "staging"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release_bot",
+    "tool": "assemble_build",
+    "params": {
+      "source": "staging"
+    },
+    "labels": [
+      "CREDENTIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release_bot",
+    "tool": "assemble_build",
+    "params": {
+      "source": "staging"
+    },
+    "labels": [
+      "CUSTOMER"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release_bot",
+    "tool": "assemble_build",
+    "params": {
+      "source": "staging"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release_bot",
+    "tool": "assemble_build",
+    "params": {
+      "source": "staging"
+    },
+    "labels": [
+      "SOURCE"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release_bot",
+    "tool": "assemble_build",
+    "params": {
+      "source": "staging"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "SOURCE"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release_bot",
+    "tool": "assemble_build",
+    "params": {
+      "source": "staging"
+    },
+    "labels": [
+      "CUSTOMER",
+      "SOURCE"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release_bot",
+    "tool": "assemble_build",
+    "params": {
+      "source": "staging"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "SOURCE"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release_bot",
+    "tool": "assemble_build",
+    "params": {
+      "source": "staging"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release_bot",
+    "tool": "assemble_build",
+    "params": {
+      "source": "staging"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release_bot",
+    "tool": "assemble_build",
+    "params": {
+      "source": "staging"
+    },
+    "labels": [
+      "CUSTOMER",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release_bot",
+    "tool": "assemble_build",
+    "params": {
+      "source": "staging"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release_bot",
+    "tool": "assemble_build",
+    "params": {
+      "source": "staging"
+    },
+    "labels": [
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release_bot",
+    "tool": "assemble_build",
+    "params": {
+      "source": "staging"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release_bot",
+    "tool": "assemble_build",
+    "params": {
+      "source": "staging"
+    },
+    "labels": [
+      "CUSTOMER",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release_bot",
+    "tool": "assemble_build",
+    "params": {
+      "source": "staging"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "local",
+      "payload": "staging",
+      "source": "status_note",
+      "telemetry": "partner"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "local",
+      "payload": "staging",
+      "source": "status_note",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CREDENTIAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "local",
+      "payload": "staging",
+      "source": "status_note",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CUSTOMER"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "local",
+      "payload": "staging",
+      "source": "status_note",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "local",
+      "payload": "staging",
+      "source": "status_note",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "SOURCE"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "local",
+      "payload": "staging",
+      "source": "status_note",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "SOURCE"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "local",
+      "payload": "staging",
+      "source": "status_note",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CUSTOMER",
+      "SOURCE"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "local",
+      "payload": "staging",
+      "source": "status_note",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "SOURCE"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "local",
+      "payload": "staging",
+      "source": "status_note",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "local",
+      "payload": "staging",
+      "source": "status_note",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "local",
+      "payload": "staging",
+      "source": "status_note",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CUSTOMER",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "local",
+      "payload": "staging",
+      "source": "status_note",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "local",
+      "payload": "staging",
+      "source": "status_note",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "local",
+      "payload": "staging",
+      "source": "status_note",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "local",
+      "payload": "staging",
+      "source": "status_note",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CUSTOMER",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "local",
+      "payload": "staging",
+      "source": "status_note",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "artifact",
+      "source": "artifact",
+      "telemetry": "none"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "artifact",
+      "source": "artifact",
+      "telemetry": "none"
+    },
+    "labels": [
+      "CREDENTIAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "artifact",
+      "source": "artifact",
+      "telemetry": "none"
+    },
+    "labels": [
+      "CUSTOMER"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "artifact",
+      "source": "artifact",
+      "telemetry": "none"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "artifact",
+      "source": "artifact",
+      "telemetry": "none"
+    },
+    "labels": [
+      "SOURCE"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "artifact",
+      "source": "artifact",
+      "telemetry": "none"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "SOURCE"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "artifact",
+      "source": "artifact",
+      "telemetry": "none"
+    },
+    "labels": [
+      "CUSTOMER",
+      "SOURCE"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "artifact",
+      "source": "artifact",
+      "telemetry": "none"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "SOURCE"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "artifact",
+      "source": "artifact",
+      "telemetry": "none"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "artifact",
+      "source": "artifact",
+      "telemetry": "none"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "artifact",
+      "source": "artifact",
+      "telemetry": "none"
+    },
+    "labels": [
+      "CUSTOMER",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "artifact",
+      "source": "artifact",
+      "telemetry": "none"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "artifact",
+      "source": "artifact",
+      "telemetry": "none"
+    },
+    "labels": [
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "artifact",
+      "source": "artifact",
+      "telemetry": "none"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "artifact",
+      "source": "artifact",
+      "telemetry": "none"
+    },
+    "labels": [
+      "CUSTOMER",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "artifact",
+      "source": "artifact",
+      "telemetry": "none"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "staging",
+      "source": "status_note",
+      "telemetry": "public"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "staging",
+      "source": "status_note",
+      "telemetry": "public"
+    },
+    "labels": [
+      "CREDENTIAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "staging",
+      "source": "status_note",
+      "telemetry": "public"
+    },
+    "labels": [
+      "CUSTOMER"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "staging",
+      "source": "status_note",
+      "telemetry": "public"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "staging",
+      "source": "status_note",
+      "telemetry": "public"
+    },
+    "labels": [
+      "SOURCE"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "staging",
+      "source": "status_note",
+      "telemetry": "public"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "SOURCE"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "staging",
+      "source": "status_note",
+      "telemetry": "public"
+    },
+    "labels": [
+      "CUSTOMER",
+      "SOURCE"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "staging",
+      "source": "status_note",
+      "telemetry": "public"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "SOURCE"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "staging",
+      "source": "status_note",
+      "telemetry": "public"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "staging",
+      "source": "status_note",
+      "telemetry": "public"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "staging",
+      "source": "status_note",
+      "telemetry": "public"
+    },
+    "labels": [
+      "CUSTOMER",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "staging",
+      "source": "status_note",
+      "telemetry": "public"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "staging",
+      "source": "status_note",
+      "telemetry": "public"
+    },
+    "labels": [
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "staging",
+      "source": "status_note",
+      "telemetry": "public"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "staging",
+      "source": "status_note",
+      "telemetry": "public"
+    },
+    "labels": [
+      "CUSTOMER",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "staging",
+      "source": "status_note",
+      "telemetry": "public"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "local",
+      "payload": "none",
+      "source": "status_note",
+      "telemetry": "partner"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "local",
+      "payload": "none",
+      "source": "status_note",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CREDENTIAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "local",
+      "payload": "none",
+      "source": "status_note",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CUSTOMER"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "local",
+      "payload": "none",
+      "source": "status_note",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "local",
+      "payload": "none",
+      "source": "status_note",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "SOURCE"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "local",
+      "payload": "none",
+      "source": "status_note",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "SOURCE"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "local",
+      "payload": "none",
+      "source": "status_note",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CUSTOMER",
+      "SOURCE"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "local",
+      "payload": "none",
+      "source": "status_note",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "SOURCE"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "local",
+      "payload": "none",
+      "source": "status_note",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "local",
+      "payload": "none",
+      "source": "status_note",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "local",
+      "payload": "none",
+      "source": "status_note",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CUSTOMER",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "local",
+      "payload": "none",
+      "source": "status_note",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "local",
+      "payload": "none",
+      "source": "status_note",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "local",
+      "payload": "none",
+      "source": "status_note",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "local",
+      "payload": "none",
+      "source": "status_note",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CUSTOMER",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "local",
+      "payload": "none",
+      "source": "status_note",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "staging",
+      "source": "artifact",
+      "telemetry": "audit"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "staging",
+      "source": "artifact",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CREDENTIAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "staging",
+      "source": "artifact",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CUSTOMER"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "staging",
+      "source": "artifact",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "staging",
+      "source": "artifact",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "SOURCE"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "staging",
+      "source": "artifact",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "SOURCE"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "staging",
+      "source": "artifact",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CUSTOMER",
+      "SOURCE"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "staging",
+      "source": "artifact",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "SOURCE"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "staging",
+      "source": "artifact",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "staging",
+      "source": "artifact",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "staging",
+      "source": "artifact",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CUSTOMER",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "staging",
+      "source": "artifact",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "staging",
+      "source": "artifact",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "staging",
+      "source": "artifact",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "staging",
+      "source": "artifact",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CUSTOMER",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "staging",
+      "source": "artifact",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "reviewed",
+      "telemetry": "none"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "reviewed",
+      "telemetry": "none"
+    },
+    "labels": [
+      "CREDENTIAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "reviewed",
+      "telemetry": "none"
+    },
+    "labels": [
+      "CUSTOMER"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "reviewed",
+      "telemetry": "none"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "reviewed",
+      "telemetry": "none"
+    },
+    "labels": [
+      "SOURCE"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "reviewed",
+      "telemetry": "none"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "SOURCE"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "reviewed",
+      "telemetry": "none"
+    },
+    "labels": [
+      "CUSTOMER",
+      "SOURCE"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "reviewed",
+      "telemetry": "none"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "SOURCE"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "reviewed",
+      "telemetry": "none"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "reviewed",
+      "telemetry": "none"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "reviewed",
+      "telemetry": "none"
+    },
+    "labels": [
+      "CUSTOMER",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "reviewed",
+      "telemetry": "none"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "reviewed",
+      "telemetry": "none"
+    },
+    "labels": [
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "reviewed",
+      "telemetry": "none"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "reviewed",
+      "telemetry": "none"
+    },
+    "labels": [
+      "CUSTOMER",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "reviewed",
+      "telemetry": "none"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "partner"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CREDENTIAL"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CUSTOMER"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "SOURCE"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "SOURCE"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CUSTOMER",
+      "SOURCE"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "SOURCE"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CUSTOMER",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CUSTOMER",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "artifact",
+      "source": "artifact",
+      "telemetry": "partner"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "artifact",
+      "source": "artifact",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CREDENTIAL"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "artifact",
+      "source": "artifact",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CUSTOMER"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "artifact",
+      "source": "artifact",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "artifact",
+      "source": "artifact",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "SOURCE"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "artifact",
+      "source": "artifact",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "SOURCE"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "artifact",
+      "source": "artifact",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CUSTOMER",
+      "SOURCE"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "artifact",
+      "source": "artifact",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "SOURCE"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "artifact",
+      "source": "artifact",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "artifact",
+      "source": "artifact",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "artifact",
+      "source": "artifact",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CUSTOMER",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "artifact",
+      "source": "artifact",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "artifact",
+      "source": "artifact",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "artifact",
+      "source": "artifact",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "artifact",
+      "source": "artifact",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CUSTOMER",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "artifact",
+      "source": "artifact",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "artifact",
+      "source": "status_note",
+      "telemetry": "public"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "artifact",
+      "source": "status_note",
+      "telemetry": "public"
+    },
+    "labels": [
+      "CREDENTIAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "artifact",
+      "source": "status_note",
+      "telemetry": "public"
+    },
+    "labels": [
+      "CUSTOMER"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "artifact",
+      "source": "status_note",
+      "telemetry": "public"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "artifact",
+      "source": "status_note",
+      "telemetry": "public"
+    },
+    "labels": [
+      "SOURCE"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "artifact",
+      "source": "status_note",
+      "telemetry": "public"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "SOURCE"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "artifact",
+      "source": "status_note",
+      "telemetry": "public"
+    },
+    "labels": [
+      "CUSTOMER",
+      "SOURCE"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "artifact",
+      "source": "status_note",
+      "telemetry": "public"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "SOURCE"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "artifact",
+      "source": "status_note",
+      "telemetry": "public"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "artifact",
+      "source": "status_note",
+      "telemetry": "public"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "artifact",
+      "source": "status_note",
+      "telemetry": "public"
+    },
+    "labels": [
+      "CUSTOMER",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "artifact",
+      "source": "status_note",
+      "telemetry": "public"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "artifact",
+      "source": "status_note",
+      "telemetry": "public"
+    },
+    "labels": [
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "artifact",
+      "source": "status_note",
+      "telemetry": "public"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "artifact",
+      "source": "status_note",
+      "telemetry": "public"
+    },
+    "labels": [
+      "CUSTOMER",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "artifact",
+      "source": "status_note",
+      "telemetry": "public"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "none"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "none"
+    },
+    "labels": [
+      "CREDENTIAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "none"
+    },
+    "labels": [
+      "CUSTOMER"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "none"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "none"
+    },
+    "labels": [
+      "SOURCE"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "none"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "SOURCE"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "none"
+    },
+    "labels": [
+      "CUSTOMER",
+      "SOURCE"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "none"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "SOURCE"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "none"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "none"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "none"
+    },
+    "labels": [
+      "CUSTOMER",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "none"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "none"
+    },
+    "labels": [
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "none"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "none"
+    },
+    "labels": [
+      "CUSTOMER",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "none"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "status_note",
+      "telemetry": "audit"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "status_note",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CREDENTIAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "status_note",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CUSTOMER"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "status_note",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "status_note",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "SOURCE"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "status_note",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "SOURCE"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "status_note",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CUSTOMER",
+      "SOURCE"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "status_note",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "SOURCE"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "status_note",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "status_note",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "status_note",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CUSTOMER",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "status_note",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "status_note",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "status_note",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "status_note",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CUSTOMER",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "status_note",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "audit"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CREDENTIAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CUSTOMER"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "SOURCE"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "SOURCE"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CUSTOMER",
+      "SOURCE"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "SOURCE"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CUSTOMER",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CUSTOMER",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "release",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "artifact",
+      "telemetry": "partner"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "artifact",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CREDENTIAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "artifact",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CUSTOMER"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "artifact",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "artifact",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "SOURCE"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "artifact",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "SOURCE"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "artifact",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CUSTOMER",
+      "SOURCE"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "artifact",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "SOURCE"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "artifact",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "artifact",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "artifact",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CUSTOMER",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "artifact",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "artifact",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "artifact",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "artifact",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CUSTOMER",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "artifact",
+      "telemetry": "partner"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "local",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "audit"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "local",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CREDENTIAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "local",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CUSTOMER"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "local",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "local",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "SOURCE"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "local",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "SOURCE"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "local",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CUSTOMER",
+      "SOURCE"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "local",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "SOURCE"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "local",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "local",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "local",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CUSTOMER",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "local",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "local",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "local",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "local",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CUSTOMER",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "local",
+      "payload": "staging",
+      "source": "reviewed",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "artifact",
+      "source": "status_note",
+      "telemetry": "audit"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "artifact",
+      "source": "status_note",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CREDENTIAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "artifact",
+      "source": "status_note",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CUSTOMER"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "artifact",
+      "source": "status_note",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "artifact",
+      "source": "status_note",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "SOURCE"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "artifact",
+      "source": "status_note",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "SOURCE"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "artifact",
+      "source": "status_note",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CUSTOMER",
+      "SOURCE"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "artifact",
+      "source": "status_note",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "SOURCE"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "artifact",
+      "source": "status_note",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "artifact",
+      "source": "status_note",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "artifact",
+      "source": "status_note",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CUSTOMER",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "artifact",
+      "source": "status_note",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "artifact",
+      "source": "status_note",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "artifact",
+      "source": "status_note",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "artifact",
+      "source": "status_note",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CUSTOMER",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "release",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "artifact",
+      "source": "status_note",
+      "telemetry": "audit"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "artifact",
+      "telemetry": "public"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "artifact",
+      "telemetry": "public"
+    },
+    "labels": [
+      "CREDENTIAL"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "artifact",
+      "telemetry": "public"
+    },
+    "labels": [
+      "CUSTOMER"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "artifact",
+      "telemetry": "public"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "artifact",
+      "telemetry": "public"
+    },
+    "labels": [
+      "SOURCE"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "artifact",
+      "telemetry": "public"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "SOURCE"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "artifact",
+      "telemetry": "public"
+    },
+    "labels": [
+      "CUSTOMER",
+      "SOURCE"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "artifact",
+      "telemetry": "public"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "SOURCE"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "artifact",
+      "telemetry": "public"
+    },
+    "labels": [
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": false
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "artifact",
+      "telemetry": "public"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "artifact",
+      "telemetry": "public"
+    },
+    "labels": [
+      "CUSTOMER",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "artifact",
+      "telemetry": "public"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "artifact",
+      "telemetry": "public"
+    },
+    "labels": [
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "artifact",
+      "telemetry": "public"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "artifact",
+      "telemetry": "public"
+    },
+    "labels": [
+      "CUSTOMER",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operations",
+    "tool": "deliver_build",
+    "params": {
+      "channel": "partner",
+      "payload": "none",
+      "source": "artifact",
+      "telemetry": "public"
+    },
+    "labels": [
+      "CREDENTIAL",
+      "CUSTOMER",
+      "SOURCE",
+      "UNVERIFIED"
+    ],
+    "candidate": true,
+    "completion": true
+  }
+]

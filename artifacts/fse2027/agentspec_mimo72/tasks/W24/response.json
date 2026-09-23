@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"import json\\n\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    tool_name = user_input['tool']\\n    params = json.loads(tool_input)\\n    trusted_labels = user_input['trusted_event_labels']\\n    if tool_name == 'send' and params.get('target') == 'delivery':\\n        if 'PII' in trusted_labels:\\n            return True\\n    return False\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 6321,
+    "prompt_tokens": 833,
+    "total_tokens": 7154,
+    "completion_tokens_details": {
+      "reasoning_tokens": 6223
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "84342f60-156e-4d6e-b639-b75039a3b20c_4e71ff72dd6e4137be76a5f7b7ef9e76"
+}

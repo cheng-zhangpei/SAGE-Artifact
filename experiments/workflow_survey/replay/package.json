@@ -1,0 +1,9 @@
+{
+  "name": "sage-workflow-local-replay",
+  "private": true,
+  "description": "Offline replay of audited n8n data handling functions",
+  "dependencies": {
+    "typescript": "5.9.3",
+    "nodemailer": "7.0.10"
+  }
+}

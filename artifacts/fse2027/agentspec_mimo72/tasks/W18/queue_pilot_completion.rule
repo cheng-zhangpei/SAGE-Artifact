@@ -1,0 +1,8 @@
+rule @rule_pilot_completion
+trigger
+ queue
+check
+ pilot_completion
+enforce
+ stop
+end

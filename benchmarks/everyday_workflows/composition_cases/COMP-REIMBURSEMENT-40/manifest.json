@@ -1,0 +1,11 @@
+{
+  "id": "COMP-REIMBURSEMENT-40",
+  "family": "reimbursement",
+  "dispatch_count": 40,
+  "total_actions": 47,
+  "dangerous_probes": 239,
+  "benign_probes": 241,
+  "direct_coverage_certificate": "SUFFICIENT_SAFE",
+  "public_input_sha256": "ce1ed7eb6e31e2b99dea6755a7ee27d52be6c1915b7c60bc814272c3b0d2fe4c",
+  "confirmed_model_sha256": "6ef685ee3195b0078a2e2ad25ade2e91f5164841d80ef124362421cea741df1f"
+}

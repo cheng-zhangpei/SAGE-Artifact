@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"import json\\n\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    params = json.loads(tool_input)\\n    tool_name = user_input.get('tool', '')\\n    trusted_labels = user_input.get('trusted_event_labels', [])\\n    if tool_name == 'release':\\n        route = params.get('route', '')\\n        if route in ['web', 'mail'] and 'EMBARGO' in trusted_labels:\\n            return True\\n    return False\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 3604,
+    "prompt_tokens": 844,
+    "total_tokens": 4448,
+    "completion_tokens_details": {
+      "reasoning_tokens": 3490
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "287c56de-84fa-496f-8279-a08d6da3bbfa_2487e82443da4d5b82d63003fbf1312e"
+}

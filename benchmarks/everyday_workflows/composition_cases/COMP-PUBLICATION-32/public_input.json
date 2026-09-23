@@ -1,0 +1,438 @@
+{
+  "description": "编辑与法务团队共享发布材料。采集把一种来源追加到 workspace，编辑把\nworkspace 追加到 draft，发布审查把 draft 追加到 release；紧急打包可把 workspace 直接\n追加到 release。另有独立且干净的 service_notice。内容不会自动解禁、清除许可限制或完成核验。\n\npublish 工具说明：editorial 的 staff/partner/release 分别对应 slot:newsroom/slot:syndicate/slot:public；legal 的相同别名分别对应 slot:newsroom/slot:counsel/slot:wire。record=archive 对应 slot:archive，record=public 对应 slot:public。audience 按调用团队解释；source 选择\nservice_notice、draft 或 release。assets=release 会附带 release，assets=workspace 会附带\n原始 workspace。record=archive 增加完整归档副本，record=partner 增加本团队partner副本，\nrecord=public 增加公开镜像。所有副本内容相同。请为全部具体调用起草规则。\n除标签原始来源外，所有位置初始为空。全部写入追加并保留旧内容；调用可重复且顺序不限。所有工具不生成新标签。参数 none 表示不附加材料或副本。所有未列入 policy 的位置不禁止任何类别。位置名称均以 slot: 为前缀。",
+  "labels": {
+    "PERSONAL": "作者或受访者个人资料",
+    "EMBARGOED": "尚未解禁内容",
+    "LICENSED": "限制再分发的素材",
+    "UNVERIFIED": "未经事实核验的内容"
+  },
+  "policy": {
+    "slot:syndicate": [
+      "PERSONAL",
+      "EMBARGOED"
+    ],
+    "slot:public": [
+      "PERSONAL",
+      "EMBARGOED",
+      "LICENSED"
+    ],
+    "slot:archive": [
+      "UNVERIFIED"
+    ],
+    "slot:counsel": [
+      "UNVERIFIED"
+    ],
+    "slot:wire": [
+      "PERSONAL",
+      "LICENSED"
+    ]
+  },
+  "tools": [
+    {
+      "agent": "research",
+      "tool": "collect_material",
+      "params": {
+        "category": "PERSONAL"
+      },
+      "description": "读取仅含PERSONAL的来源并追加到 slot:workspace。"
+    },
+    {
+      "agent": "research",
+      "tool": "collect_material",
+      "params": {
+        "category": "EMBARGOED"
+      },
+      "description": "读取仅含EMBARGOED的来源并追加到 slot:workspace。"
+    },
+    {
+      "agent": "research",
+      "tool": "collect_material",
+      "params": {
+        "category": "LICENSED"
+      },
+      "description": "读取仅含LICENSED的来源并追加到 slot:workspace。"
+    },
+    {
+      "agent": "research",
+      "tool": "collect_material",
+      "params": {
+        "category": "UNVERIFIED"
+      },
+      "description": "读取仅含UNVERIFIED的来源并追加到 slot:workspace。"
+    },
+    {
+      "agent": "editor",
+      "tool": "edit_draft",
+      "params": {},
+      "description": "将 workspace 追加到 draft。"
+    },
+    {
+      "agent": "publisher",
+      "tool": "review_release",
+      "params": {
+        "source": "draft"
+      },
+      "description": "将 draft 追加到 release。"
+    },
+    {
+      "agent": "publisher",
+      "tool": "review_release",
+      "params": {
+        "source": "workspace"
+      },
+      "description": "将 workspace 直接追加到 release。"
+    },
+    {
+      "agent": "legal",
+      "tool": "publish",
+      "params": {
+        "audience": "partner",
+        "source": "release",
+        "assets": "none",
+        "record": "archive"
+      },
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "agent": "legal",
+      "tool": "publish",
+      "params": {
+        "audience": "partner",
+        "source": "service_notice",
+        "assets": "none",
+        "record": "archive"
+      },
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "agent": "editorial",
+      "tool": "publish",
+      "params": {
+        "audience": "staff",
+        "source": "draft",
+        "assets": "release",
+        "record": "none"
+      },
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "agent": "editorial",
+      "tool": "publish",
+      "params": {
+        "audience": "release",
+        "source": "release",
+        "assets": "workspace",
+        "record": "none"
+      },
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "agent": "legal",
+      "tool": "publish",
+      "params": {
+        "audience": "release",
+        "source": "service_notice",
+        "assets": "none",
+        "record": "none"
+      },
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "agent": "legal",
+      "tool": "publish",
+      "params": {
+        "audience": "staff",
+        "source": "service_notice",
+        "assets": "release",
+        "record": "partner"
+      },
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "agent": "editorial",
+      "tool": "publish",
+      "params": {
+        "audience": "release",
+        "source": "release",
+        "assets": "release",
+        "record": "partner"
+      },
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "agent": "legal",
+      "tool": "publish",
+      "params": {
+        "audience": "partner",
+        "source": "release",
+        "assets": "release",
+        "record": "public"
+      },
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "agent": "editorial",
+      "tool": "publish",
+      "params": {
+        "audience": "staff",
+        "source": "release",
+        "assets": "release",
+        "record": "none"
+      },
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "agent": "editorial",
+      "tool": "publish",
+      "params": {
+        "audience": "partner",
+        "source": "service_notice",
+        "assets": "workspace",
+        "record": "none"
+      },
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "agent": "legal",
+      "tool": "publish",
+      "params": {
+        "audience": "release",
+        "source": "draft",
+        "assets": "workspace",
+        "record": "partner"
+      },
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "agent": "legal",
+      "tool": "publish",
+      "params": {
+        "audience": "release",
+        "source": "draft",
+        "assets": "workspace",
+        "record": "none"
+      },
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "agent": "editorial",
+      "tool": "publish",
+      "params": {
+        "audience": "staff",
+        "source": "release",
+        "assets": "workspace",
+        "record": "archive"
+      },
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "agent": "legal",
+      "tool": "publish",
+      "params": {
+        "audience": "staff",
+        "source": "release",
+        "assets": "release",
+        "record": "archive"
+      },
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "agent": "editorial",
+      "tool": "publish",
+      "params": {
+        "audience": "staff",
+        "source": "service_notice",
+        "assets": "release",
+        "record": "partner"
+      },
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "agent": "editorial",
+      "tool": "publish",
+      "params": {
+        "audience": "staff",
+        "source": "draft",
+        "assets": "release",
+        "record": "partner"
+      },
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "agent": "editorial",
+      "tool": "publish",
+      "params": {
+        "audience": "partner",
+        "source": "service_notice",
+        "assets": "workspace",
+        "record": "archive"
+      },
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "agent": "editorial",
+      "tool": "publish",
+      "params": {
+        "audience": "staff",
+        "source": "service_notice",
+        "assets": "workspace",
+        "record": "partner"
+      },
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "agent": "editorial",
+      "tool": "publish",
+      "params": {
+        "audience": "partner",
+        "source": "release",
+        "assets": "workspace",
+        "record": "archive"
+      },
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "agent": "editorial",
+      "tool": "publish",
+      "params": {
+        "audience": "staff",
+        "source": "draft",
+        "assets": "workspace",
+        "record": "none"
+      },
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "agent": "legal",
+      "tool": "publish",
+      "params": {
+        "audience": "release",
+        "source": "release",
+        "assets": "workspace",
+        "record": "public"
+      },
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "agent": "editorial",
+      "tool": "publish",
+      "params": {
+        "audience": "release",
+        "source": "draft",
+        "assets": "release",
+        "record": "none"
+      },
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "agent": "legal",
+      "tool": "publish",
+      "params": {
+        "audience": "release",
+        "source": "draft",
+        "assets": "none",
+        "record": "partner"
+      },
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "agent": "editorial",
+      "tool": "publish",
+      "params": {
+        "audience": "release",
+        "source": "draft",
+        "assets": "none",
+        "record": "public"
+      },
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "agent": "editorial",
+      "tool": "publish",
+      "params": {
+        "audience": "staff",
+        "source": "draft",
+        "assets": "workspace",
+        "record": "partner"
+      },
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "agent": "legal",
+      "tool": "publish",
+      "params": {
+        "audience": "staff",
+        "source": "release",
+        "assets": "none",
+        "record": "none"
+      },
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "agent": "editorial",
+      "tool": "publish",
+      "params": {
+        "audience": "partner",
+        "source": "draft",
+        "assets": "none",
+        "record": "none"
+      },
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "agent": "editorial",
+      "tool": "publish",
+      "params": {
+        "audience": "partner",
+        "source": "release",
+        "assets": "workspace",
+        "record": "none"
+      },
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "agent": "legal",
+      "tool": "publish",
+      "params": {
+        "audience": "staff",
+        "source": "draft",
+        "assets": "workspace",
+        "record": "none"
+      },
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "agent": "editorial",
+      "tool": "publish",
+      "params": {
+        "audience": "partner",
+        "source": "service_notice",
+        "assets": "release",
+        "record": "public"
+      },
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "agent": "legal",
+      "tool": "publish",
+      "params": {
+        "audience": "release",
+        "source": "service_notice",
+        "assets": "none",
+        "record": "archive"
+      },
+      "description": "按 publish 公共说明发布。"
+    },
+    {
+      "agent": "legal",
+      "tool": "publish",
+      "params": {
+        "audience": "partner",
+        "source": "service_notice",
+        "assets": "none",
+        "record": "none"
+      },
+      "description": "按 publish 公共说明发布。"
+    }
+  ]
+}

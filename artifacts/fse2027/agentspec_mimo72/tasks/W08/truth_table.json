@@ -1,0 +1,134 @@
+[
+  {
+    "agent": "collector",
+    "tool": "collect",
+    "params": {
+      "source": "config"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "collect",
+    "params": {
+      "source": "config"
+    },
+    "labels": [
+      "CREDENTIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "collect",
+    "params": {
+      "source": "health"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "collector",
+    "tool": "collect",
+    "params": {
+      "source": "health"
+    },
+    "labels": [
+      "CREDENTIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "operator",
+    "tool": "backup",
+    "params": {
+      "remote": false
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "operator",
+    "tool": "backup",
+    "params": {
+      "remote": false
+    },
+    "labels": [
+      "CREDENTIAL"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "operator",
+    "tool": "backup",
+    "params": {
+      "remote": true
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "operator",
+    "tool": "backup",
+    "params": {
+      "remote": true
+    },
+    "labels": [
+      "CREDENTIAL"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operator",
+    "tool": "upload",
+    "params": {
+      "target": "issue"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "operator",
+    "tool": "upload",
+    "params": {
+      "target": "issue"
+    },
+    "labels": [
+      "CREDENTIAL"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "operator",
+    "tool": "open_session",
+    "params": {
+      "target": "vendor"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "operator",
+    "tool": "open_session",
+    "params": {
+      "target": "vendor"
+    },
+    "labels": [
+      "CREDENTIAL"
+    ],
+    "candidate": true,
+    "completion": true
+  }
+]

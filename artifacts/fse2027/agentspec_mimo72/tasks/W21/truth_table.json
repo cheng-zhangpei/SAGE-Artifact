@@ -1,0 +1,272 @@
+[
+  {
+    "agent": "orders",
+    "tool": "prepare",
+    "params": {},
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "orders",
+    "tool": "prepare",
+    "params": {},
+    "labels": [
+      "ADDRESS"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "orders",
+    "tool": "prepare",
+    "params": {},
+    "labels": [
+      "HEALTH"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "orders",
+    "tool": "prepare",
+    "params": {},
+    "labels": [
+      "ADDRESS",
+      "HEALTH"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "nutrition",
+    "tool": "annotate",
+    "params": {},
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "nutrition",
+    "tool": "annotate",
+    "params": {},
+    "labels": [
+      "ADDRESS"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "nutrition",
+    "tool": "annotate",
+    "params": {},
+    "labels": [
+      "HEALTH"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "nutrition",
+    "tool": "annotate",
+    "params": {},
+    "labels": [
+      "ADDRESS",
+      "HEALTH"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "dispatcher",
+    "tool": "send",
+    "params": {
+      "target": "rider"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "dispatcher",
+    "tool": "send",
+    "params": {
+      "target": "rider"
+    },
+    "labels": [
+      "ADDRESS"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "dispatcher",
+    "tool": "send",
+    "params": {
+      "target": "rider"
+    },
+    "labels": [
+      "HEALTH"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "dispatcher",
+    "tool": "send",
+    "params": {
+      "target": "rider"
+    },
+    "labels": [
+      "ADDRESS",
+      "HEALTH"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "dispatcher",
+    "tool": "send",
+    "params": {
+      "target": "kitchen"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "dispatcher",
+    "tool": "send",
+    "params": {
+      "target": "kitchen"
+    },
+    "labels": [
+      "ADDRESS"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "dispatcher",
+    "tool": "send",
+    "params": {
+      "target": "kitchen"
+    },
+    "labels": [
+      "HEALTH"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "dispatcher",
+    "tool": "send",
+    "params": {
+      "target": "kitchen"
+    },
+    "labels": [
+      "ADDRESS",
+      "HEALTH"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "dispatcher",
+    "tool": "send",
+    "params": {
+      "target": "review"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "dispatcher",
+    "tool": "send",
+    "params": {
+      "target": "review"
+    },
+    "labels": [
+      "ADDRESS"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "dispatcher",
+    "tool": "send",
+    "params": {
+      "target": "review"
+    },
+    "labels": [
+      "HEALTH"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "dispatcher",
+    "tool": "send",
+    "params": {
+      "target": "review"
+    },
+    "labels": [
+      "ADDRESS",
+      "HEALTH"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "dispatcher",
+    "tool": "send",
+    "params": {
+      "source": "menu",
+      "target": "review"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "dispatcher",
+    "tool": "send",
+    "params": {
+      "source": "menu",
+      "target": "review"
+    },
+    "labels": [
+      "ADDRESS"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "dispatcher",
+    "tool": "send",
+    "params": {
+      "source": "menu",
+      "target": "review"
+    },
+    "labels": [
+      "HEALTH"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "dispatcher",
+    "tool": "send",
+    "params": {
+      "source": "menu",
+      "target": "review"
+    },
+    "labels": [
+      "ADDRESS",
+      "HEALTH"
+    ],
+    "candidate": true,
+    "completion": true
+  }
+]

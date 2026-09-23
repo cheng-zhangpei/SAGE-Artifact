@@ -1,0 +1,296 @@
+[
+  {
+    "agent": "adjuster",
+    "tool": "attach",
+    "params": {
+      "part": "scan"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "adjuster",
+    "tool": "attach",
+    "params": {
+      "part": "scan"
+    },
+    "labels": [
+      "PHI"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "adjuster",
+    "tool": "attach",
+    "params": {
+      "part": "scan"
+    },
+    "labels": [
+      "POLICY_ID"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "adjuster",
+    "tool": "attach",
+    "params": {
+      "part": "scan"
+    },
+    "labels": [
+      "PHI",
+      "POLICY_ID"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clerk",
+    "tool": "attach",
+    "params": {
+      "part": "policy"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clerk",
+    "tool": "attach",
+    "params": {
+      "part": "policy"
+    },
+    "labels": [
+      "PHI"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clerk",
+    "tool": "attach",
+    "params": {
+      "part": "policy"
+    },
+    "labels": [
+      "POLICY_ID"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "clerk",
+    "tool": "attach",
+    "params": {
+      "part": "policy"
+    },
+    "labels": [
+      "PHI",
+      "POLICY_ID"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "sender",
+    "tool": "submit",
+    "params": {
+      "receipt": "normal",
+      "target": "insurer"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "sender",
+    "tool": "submit",
+    "params": {
+      "receipt": "normal",
+      "target": "insurer"
+    },
+    "labels": [
+      "PHI"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "sender",
+    "tool": "submit",
+    "params": {
+      "receipt": "normal",
+      "target": "insurer"
+    },
+    "labels": [
+      "POLICY_ID"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "sender",
+    "tool": "submit",
+    "params": {
+      "receipt": "normal",
+      "target": "insurer"
+    },
+    "labels": [
+      "PHI",
+      "POLICY_ID"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "sender",
+    "tool": "submit",
+    "params": {
+      "receipt": "verbose",
+      "target": "insurer"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "sender",
+    "tool": "submit",
+    "params": {
+      "receipt": "verbose",
+      "target": "insurer"
+    },
+    "labels": [
+      "PHI"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "sender",
+    "tool": "submit",
+    "params": {
+      "receipt": "verbose",
+      "target": "insurer"
+    },
+    "labels": [
+      "POLICY_ID"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "sender",
+    "tool": "submit",
+    "params": {
+      "receipt": "verbose",
+      "target": "insurer"
+    },
+    "labels": [
+      "PHI",
+      "POLICY_ID"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "sender",
+    "tool": "submit",
+    "params": {
+      "receipt": "normal",
+      "target": "courier"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "sender",
+    "tool": "submit",
+    "params": {
+      "receipt": "normal",
+      "target": "courier"
+    },
+    "labels": [
+      "PHI"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "sender",
+    "tool": "submit",
+    "params": {
+      "receipt": "normal",
+      "target": "courier"
+    },
+    "labels": [
+      "POLICY_ID"
+    ],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "sender",
+    "tool": "submit",
+    "params": {
+      "receipt": "normal",
+      "target": "courier"
+    },
+    "labels": [
+      "PHI",
+      "POLICY_ID"
+    ],
+    "candidate": true,
+    "completion": true
+  },
+  {
+    "agent": "sender",
+    "tool": "receipt",
+    "params": {
+      "target": "debug"
+    },
+    "labels": [],
+    "candidate": false,
+    "completion": false
+  },
+  {
+    "agent": "sender",
+    "tool": "receipt",
+    "params": {
+      "target": "debug"
+    },
+    "labels": [
+      "PHI"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "sender",
+    "tool": "receipt",
+    "params": {
+      "target": "debug"
+    },
+    "labels": [
+      "POLICY_ID"
+    ],
+    "candidate": false,
+    "completion": true
+  },
+  {
+    "agent": "sender",
+    "tool": "receipt",
+    "params": {
+      "target": "debug"
+    },
+    "labels": [
+      "PHI",
+      "POLICY_ID"
+    ],
+    "candidate": false,
+    "completion": true
+  }
+]

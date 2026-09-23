@@ -1,0 +1,18 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"def pilot_candidate(user_input, tool_input, intermediate_steps):\\n    import json\\n    params = json.loads(tool_input)\\n    labels = user_input['trusted_event_labels']\\n    tool = user_input['tool']\\n    agent = user_input['agent']\\n    \\n    policy = {\\n        'slot:archive': ['UNVERIFIED'],\\n        'slot:counsel': ['UNVERIFIED'],\\n        'slot:public': ['PERSONAL', 'EMBARGOED', 'LICENSED'],\\n        'slot:syndicate': ['PERSONAL', 'EMBARGOED'],\\n        'slot:wire': ['PERSONAL', 'LICENSED']\\n    }\\n    \\n    if tool in ['collect_material', 'edit_draft', 'review_release']:\\n        return False\\n    elif tool == 'publish':\\n        audience = params.get('audience')\\n        record = params.get('record')\\n        primary_slot = None\\n        if agent == 'editorial':\\n            if audience == 'staff':\\n                primary_slot = 'slot:newsroom'\\n            elif audience == 'partner':\\n                primary_slot = 'slot:syndicate'\\n            elif audience == 'release':\\n                primary_slot = 'slot:public'\\n        elif agent == 'legal':\\n            if audience == 'staff':\\n                primary_slot = 'slot:newsroom'\\n            elif audience == 'partner':\\n                primary_slot = 'slot:counsel'\\n            elif audience == 'release':\\n                primary_slot = 'slot:wire'\\n        additional_slot = None\\n        if record == 'archive':\\n            additional_slot = 'slot:archive'\\n        elif record == 'public':\\n            additional_slot = 'slot:public'\\n        elif record == 'partner':\\n            additional_slot = 'slot:partner'\\n        target_slots = set()\\n        if primary_slot:\\n            target_slots.add(primary_slot)\\n        if additional_slot:\\n            target_slots.add(additional_slot)\\n        label_set = set(labels) if not isinstance(labels, set) else labels\\n        for slot in target_slots:\\n            if slot in policy:\\n                allowed_set = set(policy[slot])\\n                if not label_set.issubset(allowed_set):\\n                    return True\\n        return False\\n    else:\\n        return False\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 6304,
+    "prompt_tokens": 2362,
+    "total_tokens": 8666,
+    "completion_tokens_details": {
+      "reasoning_tokens": 5771
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    }
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "57ad8f37-8d3f-427f-a758-266240c8a845_2a7afcf4543d49a28a8378e4dc7fa1d9"
+}

@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"import json\\n\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    params = json.loads(tool_input)\\n    tool = user_input.get('tool')\\n    labels = user_input.get('trusted_event_labels', [])\\n    \\n    if tool == 'prepare' or tool == 'calculate':\\n        return False\\n    elif tool == 'publish':\\n        target = params.get('target')\\n        if target == 'class_board':\\n            if 'PII' in labels or 'GRADE' in labels:\\n                return True\\n            else:\\n                return False\\n        elif target == 'identity_queue':\\n            if 'GRADE' in labels:\\n                return True\\n            else:\\n                return False\\n        elif target == 'student_portal':\\n            return False\\n        else:\\n            return False\\n    else:\\n        return False\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 5080,
+    "prompt_tokens": 870,
+    "total_tokens": 5950,
+    "completion_tokens_details": {
+      "reasoning_tokens": 4880
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "8157cccf-93f9-408f-99e7-0e30bdb70a1b_792711f037614a93942229948a301243"
+}

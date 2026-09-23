@@ -1,0 +1,18 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\"python\": \"import json\\n\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    agent = user_input.get('agent')\\n    tool = user_input.get('tool')\\n    labels = user_input.get('trusted_event_labels', set())\\n    params = json.loads(tool_input)\\n    \\n    # Policy mapping slots to forbidden categories\\n    policy = {\\n        'slot:audit': {'SOURCE', 'CREDENTIAL'},\\n        'slot:marketplace': {'CUSTOMER', 'CREDENTIAL'},\\n        'slot:production': {'UNVERIFIED'},\\n        'slot:public': {'CUSTOMER', 'SOURCE', 'CREDENTIAL'},\\n        'slot:vendor': {'SOURCE', 'CREDENTIAL'}\\n    }\\n    \\n    # Helper to check if labels are allowed in a slot\\n    def allowed_in_slot(slot, current_labels):\\n        if slot in policy:\\n            forbidden = policy[slot]\\n            if not current_labels.isdisjoint(forbidden):\\n                return False\\n        return True\\n    \\n    # Tool-specific rules\\n    if tool == 'import_component':\\n        # Importing into slot:staging (not restricted)\\n        return False\\n    \\n    elif tool == 'review_component':\\n        # Moving staging to reviewed (not restricted)\\n        return False\\n    \\n    elif tool == 'assemble_build':\\n        # Assembling into artifact (not restricted)\\n        return False\\n    \\n    elif tool == 'deliver_build':\\n        channel = params.get('channel')\\n        payload = params.get('payload')\\n        telemetry = params.get('telemetry')\\n        \\n        # Determine destination slots based on agent and channel\\n        dest_slots = []\\n        if agent == 'release':\\n            if channel == 'local':\\n                dest_slots.append('slot:internal')\\n            elif channel == 'release':\\n                dest_slots.append('slot:public')\\n            elif channel == 'partner':\\n                dest_slots.append('slot:marketplace')\\n        elif agent == 'operations':\\n            if channel == 'local':\\n                dest_slots.append('slot:internal')\\n            elif channel == 'release':\\n                dest_slots.append('slot:production')\\n            elif channel == 'partner':\\n                dest_slots.append('slot:vendor')\\n        \\n        # Add telemetry slots\\n        if telemetry == 'audit':\\n            dest_slots.append('slot:audit')\\n        elif telemetry == 'partner':\\n            # Partner telemetry goes to the same slot as channel partner\\n            if agent == 'release':\\n                dest_slots.append('slot:marketplace')\\n            elif agent == 'operations':\\n                dest_slots.append('slot:vendor')\\n        elif telemetry == 'public':\\n            dest_slots.append('slot:public')\\n        \\n        # Remove duplicates while preserving order\\n        unique_slots = []\\n        seen = set()\\n        for slot in dest_slots:\\n            if slot not in seen:\\n                seen.add(slot)\\n                unique_slots.append(slot)\\n        \\n        # Check each destination slot\\n        for slot in unique_slots:\\n            if not allowed_in_slot(slot, labels):\\n                return True\\n        \\n        return False\\n    \\n    # Default allow for any unknown tool\\n    return False\"}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 6018,
+    "prompt_tokens": 2394,
+    "total_tokens": 8412,
+    "completion_tokens_details": {
+      "reasoning_tokens": 5271
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 1920
+    }
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "6002fc4f-edbf-4a54-95d3-ec328a3511c9_3e14b87eaa2d4a42b6d4262c0e1ff897"
+}

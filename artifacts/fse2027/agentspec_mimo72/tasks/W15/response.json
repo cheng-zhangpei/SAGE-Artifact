@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"import json\\n\\ndef pilot_candidate(user_input, tool_input, intermediate_steps):\\n    params = json.loads(tool_input)\\n    tool_name = user_input.get('tool')\\n    trusted_labels = user_input.get('trusted_event_labels', set())\\n    if tool_name == 'collect':\\n        return False\\n    elif tool_name == 'route':\\n        destination = params.get('destination')\\n        archive = params.get('archive')\\n        if destination == 'customer' and 'PII' in trusted_labels:\\n            return True\\n        if archive == 'outsourced' and 'RISK' in trusted_labels:\\n            return True\\n        return False\\n    else:\\n        return False\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 4787,
+    "prompt_tokens": 845,
+    "total_tokens": 5632,
+    "completion_tokens_details": {
+      "reasoning_tokens": 4625
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "42de374d-9283-4c26-b339-b731cdf90b7d_ea5706b70b0041d49ab16b0490abc8ea"
+}

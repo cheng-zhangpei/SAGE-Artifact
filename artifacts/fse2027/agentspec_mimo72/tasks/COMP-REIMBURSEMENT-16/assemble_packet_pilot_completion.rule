@@ -1,0 +1,8 @@
+rule @rule_pilot_completion
+trigger
+ assemble_packet
+check
+ pilot_completion
+enforce
+ stop
+end

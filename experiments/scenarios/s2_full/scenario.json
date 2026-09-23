@@ -1,0 +1,45 @@
+{
+  "name": "s2_full",
+  "description": "Enterprise DevOps Pipeline",
+  "agents": ["dev_lead", "builder", "deployer"],
+  "tools": ["commit_code", "build_artifact", "deploy"],
+  "labels": ["CREDENTIAL"],
+  "actions": [
+    {
+      "agent": "dev_lead",
+      "tool": "commit_code",
+      "params": {"repo": "main", "source": "external"},
+      "reads": ["ctx:dev_lead"],
+      "writes": ["slot:shared.repo.main"],
+      "gen": ["CREDENTIAL"]
+    },
+    {
+      "agent": "builder",
+      "tool": "build_artifact",
+      "params": {"repo": "main"},
+      "reads": ["ctx:builder", "slot:shared.repo.main"],
+      "writes": ["slot:shared.artifact.v1"],
+      "gen": []
+    },
+    {
+      "agent": "deployer",
+      "tool": "deploy",
+      "params": {"artifact": "v1", "env": "staging"},
+      "reads": ["ctx:deployer", "slot:shared.artifact.v1"],
+      "writes": ["slot:staging.env"],
+      "gen": []
+    },
+    {
+      "agent": "deployer",
+      "tool": "deploy",
+      "params": {"artifact": "v1", "env": "production"},
+      "reads": ["ctx:deployer", "slot:shared.artifact.v1"],
+      "writes": ["slot:production.env"],
+      "gen": []
+    }
+  ],
+  "policy": {
+    "slot:production.env": ["CREDENTIAL"]
+  },
+  "initial_state": {}
+}
