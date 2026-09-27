@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\"python\": \"def pilot_policy(trace):\\n    import json as json\\n    from collections import set, list\\n    action, label = trace[-1]\\n    tool_name = action.name\\n    params = json.loads(action.arguments)\\n    categories = label.subset\\n    \\n    policy = {\\n        \\\"slot:archive\\\": {\\\"UNVERIFIED\\\"},\\n        \\\"slot:counsel\\\": {\\\"UNVERIFIED\\\"},\\n        \\\"slot:public\\\": {\\\"PERSONAL\\\", \\\"EMBARGOED\\\", \\\"LICENSED\\\"},\\n        \\\"slot:syndicate\\\": {\\\"PERSONAL\\\", \\\"EMBARGOED\\\"},\\n        \\\"slot:wire\\\": {\\\"PERSONAL\\\", \\\"LICENSED\\\"}\\n    }\\n    \\n    if tool_name == \\\"research/collect_material\\\":\\n        return None\\n    \\n    elif tool_name == \\\"editor/edit_draft\\\":\\n        return None\\n    \\n    elif tool_name == \\\"publisher/review_release\\\":\\n        return None\\n    \\n    elif tool_name in (\\\"editorial/publish\\\", \\\"legal/publish\\\"):\\n        audience = params.get(\\\"audience\\\")\\n        source = params.get(\\\"source\\\")\\n        assets = params.get(\\\"assets\\\")\\n        record = params.get(\\\"record\\\")\\n        \\n        target_slots = []\\n        if tool_name == \\\"editorial/publish\\\":\\n            audience_map = {\\\"staff\\\": \\\"slot:newsroom\\\", \\\"partner\\\": \\\"slot:syndicate\\\", \\\"release\\\": \\\"slot:public\\\"}\\n        else:\\n            audience_map = {\\\"staff\\\": \\\"slot:newsroom\\\", \\\"partner\\\": \\\"slot:counsel\\\", \\\"release\\\": \\\"slot:wire\\\"}\\n        \\n        main_slot = audience_map.get(audience)\\n        if main_slot:\\n            target_slots.append(main_slot)\\n        \\n        if record == \\\"archive\\\":\\n            target_slots.append(\\\"slot:archive\\\")\\n        elif record == \\\"partner\\\":\\n            if tool_name == \\\"editorial/publish\\\":\\n                target_slots.append(\\\"slot:syndicate\\\")\\n            else:\\n                target_slots.append(\\\"slot:counsel\\\")\\n        elif record == \\\"public\\\":\\n            target_slots.append(\\\"slot:public\\\")\\n        \\n        for slot in set(target_slots):\\n            allowed = policy.get(slot, set())\\n            if not categories.issubset(allowed):\\n                raise PolicyViolation(f\\\"Categories {categories} not allowed in {slot}\\\")\\n        \\n        return None\\n    \\n    else:\\n        raise PolicyViolation(f\\\"Unknown tool: {tool_name}\\\")\"}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 4534,
+    "prompt_tokens": 2715,
+    "total_tokens": 7249,
+    "completion_tokens_details": {
+      "reasoning_tokens": 3949
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "c079583d-fd04-4d58-a478-a2d1928cff0e_87902d35e3b244daace58caf54db47b0"
+}

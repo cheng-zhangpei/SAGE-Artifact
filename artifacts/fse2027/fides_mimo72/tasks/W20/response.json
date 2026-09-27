@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"def pilot_policy(trace):\\n    action, label = trace[-1]\\n    if action.name in [\\\"developer/prepare\\\", \\\"developer/attach\\\"]:\\n        return None\\n    elif action.name == \\\"bot/submit\\\":\\n        params = json.loads(action.arguments)\\n        if (params.get(\\\"visibility\\\") == \\\"public\\\" or params.get(\\\"index\\\")) and \\\"TOKEN\\\" in label.subset:\\n            raise PolicyViolation(\\\"TOKEN must not reach public repository or external index.\\\")\\n        return None\\n    else:\\n        return None\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 4901,
+    "prompt_tokens": 918,
+    "total_tokens": 5819,
+    "completion_tokens_details": {
+      "reasoning_tokens": 4774
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "dc5eee6c-126a-4b9c-8cb3-adad5b0c6e62_de0755f8b93445e3b66caf5442c98cd2"
+}

@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"def pilot_policy(trace):\\n    import json as json_module  # json is available but we alias to avoid name collision\\n    \\n    if not trace:\\n        return None\\n    \\n    action, label = trace[-1]\\n    \\n    # Only portal/upload actions need checking for public target restrictions\\n    if action.name != 'portal/upload':\\n        return None\\n    \\n    params = json_module.loads(action.arguments)\\n    target = params.get('target')\\n    \\n    # Policy only restricts public slot\\n    if target != 'public':\\n        return None\\n    \\n    # Check if PII is in the data categories being written\\n    if 'PII' in label.subset:\\n        raise PolicyViolation('Public slot cannot contain PII data')\\n    \\n    return None\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 2241,
+    "prompt_tokens": 852,
+    "total_tokens": 3093,
+    "completion_tokens_details": {
+      "reasoning_tokens": 2051
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "03f5838b-00df-41d2-95d9-40c50e3b93c6_e440c8c5dd2543f1beb4302ed273403a"
+}

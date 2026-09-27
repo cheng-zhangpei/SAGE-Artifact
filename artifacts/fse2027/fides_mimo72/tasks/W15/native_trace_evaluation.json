@@ -1,0 +1,594 @@
+{
+  "id": "W15",
+  "layer": "base",
+  "complexity": "Base",
+  "candidate_load": {
+    "status": "EXECUTABLE",
+    "error": null
+  },
+  "source_sha256": "f24be400c27a9fa3d8271eba9b44cbc0376cdec405d1447ae2671fc88978c594",
+  "arms": {
+    "candidate": [
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "identity",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "outsourced",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "identity",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "regulator",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "risk",
+            "labels": [
+              "RISK"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "customer",
+            "labels": [
+              "RISK"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "risk",
+            "labels": [
+              "RISK"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "regulator",
+            "labels": [
+              "RISK"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "risk",
+            "labels": [
+              "RISK"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "both",
+            "labels": [
+              "RISK"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "risk",
+            "labels": [
+              "RISK"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "outsourced",
+            "labels": [
+              "RISK"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "identity",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "both",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "identity",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "customer",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ],
+    "candidate_plus_sage": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "outsourced",
+        "steps": [
+          {
+            "action": "identity",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "outsourced",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "identity",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "regulator",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "customer",
+        "steps": [
+          {
+            "action": "risk",
+            "labels": [
+              "RISK"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "customer",
+            "labels": [
+              "RISK"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "risk",
+            "labels": [
+              "RISK"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "regulator",
+            "labels": [
+              "RISK"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "both",
+        "steps": [
+          {
+            "action": "risk",
+            "labels": [
+              "RISK"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "both",
+            "labels": [
+              "RISK"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "risk",
+            "labels": [
+              "RISK"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "outsourced",
+            "labels": [
+              "RISK"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "both",
+        "steps": [
+          {
+            "action": "identity",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "both",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "identity",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "customer",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ],
+    "direct_sage": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "outsourced",
+        "steps": [
+          {
+            "action": "identity",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "outsourced",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "identity",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "regulator",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "customer",
+        "steps": [
+          {
+            "action": "risk",
+            "labels": [
+              "RISK"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "customer",
+            "labels": [
+              "RISK"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "risk",
+            "labels": [
+              "RISK"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "regulator",
+            "labels": [
+              "RISK"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "both",
+        "steps": [
+          {
+            "action": "risk",
+            "labels": [
+              "RISK"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "both",
+            "labels": [
+              "RISK"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "risk",
+            "labels": [
+              "RISK"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "outsourced",
+            "labels": [
+              "RISK"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "both",
+        "steps": [
+          {
+            "action": "identity",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "both",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "identity",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "customer",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ]
+  }
+}

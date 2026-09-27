@@ -1,0 +1,18 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\"python\":\"def pilot_policy(trace):\\n    import json\\n    last = trace[-1]\\n    action, label = last\\n    name = action.name\\n    params = json.loads(action.arguments)\\n    if name in ('care/route_referral', 'research/route_referral'):\\n        dest = params['destination']\\n        team = 'care' if name.startswith('care') else 'research'\\n        if team == 'care':\\n            dest_map = {'local': 'slot:hospital', 'partner': 'slot:scheduler', 'release': 'slot:public'}\\n        else:\\n            dest_map = {'local': 'slot:hospital', 'partner': 'slot:research', 'release': 'slot:lab'}\\n        rec = params['record']\\n        if rec == 'none':\\n            rec_slot = None\\n        else:\\n            rec_slot = {'audit': 'slot:audit', 'partner': 'slot:partner', 'public': 'slot:public'}.get(rec)\\n        dest_slot = dest_map.get(dest)\\n        subset = label.subset\\n        allowed_dest = {'slot:hospital': ['DIAGNOSIS','AUTH','PATIENT','UNVERIFIED'],\\n                        'slot:scheduler': ['DIAGNOSIS','AUTH'],\\n                        'slot:public': ['PATIENT','DIAGNOSIS','AUTH'],\\n                        'slot:research': ['PATIENT','UNVERIFIED'],\\n                        'slot:lab': ['PATIENT','AUTH']}\\n        if dest_slot in allowed_dest and not set(subset).issubset(set(allowed_dest[dest_slot])):\\n            raise PolicyViolation('Destination slot policy violation')\\n        if rec_slot and rec_slot in allowed_dest and not set(subset).issubset(set(allowed_dest[rec_slot])):\\n            raise PolicyViolation('Record slot policy violation')\\n    return None\"}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 4070,
+    "prompt_tokens": 3952,
+    "total_tokens": 8022,
+    "completion_tokens_details": {
+      "reasoning_tokens": 3651
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 3328
+    }
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "6bfcfbe6-2fbc-45d6-83d9-21c35286beb1_9a1a506106314dd0a6d9c884474a1d7e"
+}

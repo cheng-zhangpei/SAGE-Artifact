@@ -1,0 +1,18 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"def pilot_policy(trace):\\n    if not trace:\\n        return None\\n    last_action, last_label = trace[-1]\\n    action_name = last_action.name\\n    args = json.loads(last_action.arguments)\\n    label_categories = last_label.subset\\n    slot_policies = {\\n        \\\"slot:archive\\\": {\\\"UNVERIFIED\\\"},\\n        \\\"slot:counsel\\\": {\\\"UNVERIFIED\\\"},\\n        \\\"slot:public\\\": {\\\"PERSONAL\\\", \\\"EMBARGOED\\\", \\\"LICENSED\\\"},\\n        \\\"slot:syndicate\\\": {\\\"PERSONAL\\\", \\\"EMBARGOED\\\"},\\n        \\\"slot:wire\\\": {\\\"PERSONAL\\\", \\\"LICENSED\\\"}\\n    }\\n    if action_name in [\\\"research/collect_material\\\", \\\"editor/edit_draft\\\", \\\"publisher/review_release\\\"]:\\n        return None\\n    elif action_name in [\\\"legal/publish\\\", \\\"editorial/publish\\\"]:\\n        audience = args.get(\\\"audience\\\")\\n        record = args.get(\\\"record\\\")\\n        if action_name == \\\"editorial/publish\\\":\\n            audience_slot_map = {\\\"staff\\\": \\\"slot:newsroom\\\", \\\"partner\\\": \\\"slot:syndicate\\\", \\\"release\\\": \\\"slot:public\\\"}\\n        else:\\n            audience_slot_map = {\\\"staff\\\": \\\"slot:newsroom\\\", \\\"partner\\\": \\\"slot:counsel\\\", \\\"release\\\": \\\"slot:wire\\\"}\\n        audience_slot = audience_slot_map.get(audience)\\n        additional_slot = None\\n        if record == \\\"archive\\\":\\n            additional_slot = \\\"slot:archive\\\"\\n        elif record == \\\"partner\\\":\\n            additional_slot = \\\"slot:partner\\\"\\n        elif record == \\\"public\\\":\\n            additional_slot = \\\"slot:public\\\"\\n        dest_slots = [audience_slot]\\n        if additional_slot is not None:\\n            dest_slots.append(additional_slot)\\n        if len(dest_slots) > 0 and dest_slots[0] in slot_policies:\\n            if not label_categories.issubset(slot_policies[dest_slots[0]]):\\n                raise PolicyViolation(\\\"Category not allowed in destination slot\\\")\\n        if len(dest_slots) > 1 and dest_slots[1] in slot_policies:\\n            if not label_categories.issubset(slot_policies[dest_slots[1]]):\\n                raise PolicyViolation(\\\"Category not allowed in destination slot\\\")\\n        return None\\n    else:\\n        raise PolicyViolation(\\\"Unknown action\\\")\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 7299,
+    "prompt_tokens": 3759,
+    "total_tokens": 11058,
+    "completion_tokens_details": {
+      "reasoning_tokens": 6745
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 3200
+    }
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "8aca95b5-f643-4fa5-89ee-f3d98780a1f2_b4e2f83b0025451fb914f2733a78f6f7"
+}

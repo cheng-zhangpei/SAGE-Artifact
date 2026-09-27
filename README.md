@@ -16,6 +16,7 @@ paper's supplementary material.
 | Paper evidence | Reproduction code | Frozen records |
 |---|---|---|
 | AgentSpec runtime study on 72 authoring tasks | `experiments/agentspec_native_pilot` | `artifacts/fse2027/agentspec_mimo72` |
+| FIDES policy-interface reproduction on the same tasks | `experiments/fides_native_pilot` | `artifacts/fse2027/fides_mimo72` |
 | Guard authoring on the same 72 tasks | `benchmarks/everyday_workflows` | `artifacts/fse2027/authoring72` |
 | Physical enforcement on 72 workflow instances | `integrations/physical72` | `artifacts/fse2027/physical72` |
 | Context-invisible observation diagnostic (36 pairs) | `benchmarks/context_invisible` | Case fixtures in the same directory |
@@ -55,6 +56,8 @@ python -m benchmarks.everyday_workflows.validate
 python -m benchmarks.everyday_workflows.composition_suite validate
 python experiments/agentspec_native_pilot/summarize_results.py \
   --output artifacts/fse2027/agentspec_mimo72
+python -m experiments.fides_native_pilot.matched_probe_evaluate --output artifacts/fse2027/fides_mimo72
+python experiments/cross_runtime_matched_audit.py
 ```
 
 Re-run the physical workflow experiment in a fresh output directory:

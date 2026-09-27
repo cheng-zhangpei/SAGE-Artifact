@@ -1,0 +1,651 @@
+{
+  "id": "W03",
+  "layer": "base",
+  "complexity": "Base",
+  "candidate_load": {
+    "status": "EXECUTABLE",
+    "error": null
+  },
+  "source_sha256": "987a22b72b4df78d06707cf0e0f3a3bfe8c2d691a7c3cbb1f17306ffb9854e90",
+  "arms": {
+    "candidate": [
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "patch",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "credential",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "registry",
+            "labels": [
+              "CREDENTIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "patch",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "registry",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "credential",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "patch",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "production",
+            "labels": [
+              "CREDENTIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "credential",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "production",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "audited",
+        "steps": [
+          {
+            "action": "credential",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "audited",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Writing restricted label to forbidden slot"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "credential",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "internal",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "patch",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "production",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "patch",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "registry",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ],
+    "candidate_plus_sage": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "registry",
+        "steps": [
+          {
+            "action": "patch",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "credential",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "registry",
+            "labels": [
+              "CREDENTIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "patch",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "registry",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "production",
+        "steps": [
+          {
+            "action": "credential",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "patch",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "production",
+            "labels": [
+              "CREDENTIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "credential",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "production",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "audited",
+        "steps": [
+          {
+            "action": "credential",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "audited",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "credential",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "internal",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "production",
+        "steps": [
+          {
+            "action": "patch",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "production",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "patch",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "registry",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ],
+    "direct_sage": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "registry",
+        "steps": [
+          {
+            "action": "patch",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "credential",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "registry",
+            "labels": [
+              "CREDENTIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "patch",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "registry",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "production",
+        "steps": [
+          {
+            "action": "credential",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "patch",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "production",
+            "labels": [
+              "CREDENTIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "credential",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "production",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "audited",
+        "steps": [
+          {
+            "action": "credential",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "audited",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "credential",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "internal",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "production",
+        "steps": [
+          {
+            "action": "patch",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "production",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "patch",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "registry",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ]
+  }
+}

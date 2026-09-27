@@ -1,0 +1,594 @@
+{
+  "id": "W26",
+  "layer": "base",
+  "complexity": "Base",
+  "candidate_load": {
+    "status": "EXECUTABLE",
+    "error": null
+  },
+  "source_sha256": "1478b2dcacb7aff8726256d71534b8969d9cb3b861af8dc00359b769f606f299",
+  "arms": {
+    "candidate": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "all",
+        "steps": [
+          {
+            "action": "minutes",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "all",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Confidential data cannot be sent to external guests."
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "minutes",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "internal",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "guests",
+        "steps": [
+          {
+            "action": "minutes",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "guests",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Confidential data cannot be sent to external guests."
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "agenda",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "guests",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "all",
+        "steps": [
+          {
+            "action": "minutes",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "agenda",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "all",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Confidential data cannot be sent to external guests."
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "agenda",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "all",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "all",
+        "steps": [
+          {
+            "action": "minutes",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "all",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Confidential data cannot be sent to external guests."
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "minutes",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "agenda_only",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ],
+    "candidate_plus_sage": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "all",
+        "steps": [
+          {
+            "action": "minutes",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "all",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "minutes",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "internal",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "guests",
+        "steps": [
+          {
+            "action": "minutes",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "guests",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "agenda",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "guests",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "all",
+        "steps": [
+          {
+            "action": "minutes",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "agenda",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "all",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "agenda",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "all",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "all",
+        "steps": [
+          {
+            "action": "minutes",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "all",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "minutes",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "agenda_only",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ],
+    "direct_sage": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "all",
+        "steps": [
+          {
+            "action": "minutes",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "all",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "minutes",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "internal",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "guests",
+        "steps": [
+          {
+            "action": "minutes",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "guests",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "agenda",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "guests",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "all",
+        "steps": [
+          {
+            "action": "minutes",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "agenda",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "all",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "agenda",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "all",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "all",
+        "steps": [
+          {
+            "action": "minutes",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "all",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "minutes",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "agenda_only",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ]
+  }
+}

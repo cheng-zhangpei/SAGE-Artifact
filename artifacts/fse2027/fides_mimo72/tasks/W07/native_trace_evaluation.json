@@ -1,0 +1,549 @@
+{
+  "id": "W07",
+  "layer": "base",
+  "complexity": "Base",
+  "candidate_load": {
+    "status": "EXECUTABLE",
+    "error": null
+  },
+  "source_sha256": "1c73012c34b75a1928bd63c8dd9008bda015ef07bce69dc9fac8ab97742e7eca",
+  "arms": {
+    "candidate": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "merchant",
+        "steps": [
+          {
+            "action": "prepare",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "merchant",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: merchant_relations/update: case contains PII or TOKEN"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "prepare",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "internal",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "audit",
+        "steps": [
+          {
+            "action": "prepare",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "token",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "audit",
+            "labels": [
+              "PII",
+              "TOKEN"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: refunds/notify: case contains TOKEN"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "prepare",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "audit",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "merchant",
+        "steps": [
+          {
+            "action": "token",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "merchant",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: merchant_relations/update: case contains PII or TOKEN"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "merchant",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "receipt",
+        "steps": [
+          {
+            "action": "receipt",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: refunds/issue_receipt: writes TOKEN to merchant"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "merchant",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ],
+    "candidate_plus_sage": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "merchant",
+        "steps": [
+          {
+            "action": "prepare",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "merchant",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "prepare",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "internal",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "audit",
+        "steps": [
+          {
+            "action": "prepare",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "token",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "audit",
+            "labels": [
+              "PII",
+              "TOKEN"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "prepare",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "audit",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "merchant",
+        "steps": [
+          {
+            "action": "token",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "merchant",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "merchant",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "receipt",
+        "steps": [
+          {
+            "action": "receipt",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "merchant",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ],
+    "direct_sage": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "merchant",
+        "steps": [
+          {
+            "action": "prepare",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "merchant",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "prepare",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "internal",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "audit",
+        "steps": [
+          {
+            "action": "prepare",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "token",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "audit",
+            "labels": [
+              "PII",
+              "TOKEN"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "prepare",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "audit",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "merchant",
+        "steps": [
+          {
+            "action": "token",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "merchant",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "merchant",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "receipt",
+        "steps": [
+          {
+            "action": "receipt",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "merchant",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ]
+  }
+}

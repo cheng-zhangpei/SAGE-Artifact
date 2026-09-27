@@ -1,0 +1,627 @@
+{
+  "id": "W06",
+  "layer": "base",
+  "complexity": "Base",
+  "candidate_load": {
+    "status": "EXECUTABLE",
+    "error": null
+  },
+  "source_sha256": "a3dbe6113e13ba9e948f7bd2bc5aee322601e4c43f9f03ed4ff33392a0d4dd39",
+  "arms": {
+    "candidate": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "agency",
+        "steps": [
+          {
+            "action": "passport",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "card",
+            "labels": [
+              "PCI"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "agency",
+            "labels": [
+              "PCI",
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Cannot send PCI to slot:agency"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "passport",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "agency",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "board",
+        "steps": [
+          {
+            "action": "passport",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "board",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Cannot send PII or PCI to slot:board"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "passport",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "agency",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "agency",
+        "steps": [
+          {
+            "action": "card",
+            "labels": [
+              "PCI"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "agency",
+            "labels": [
+              "PCI"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Cannot send PCI to slot:agency"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "card",
+            "labels": [
+              "PCI"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "internal",
+            "labels": [
+              "PCI"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "board",
+        "steps": [
+          {
+            "action": "passport",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "board",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Cannot send PII or PCI to slot:board"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "passport",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "itinerary",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ],
+    "candidate_plus_sage": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "agency",
+        "steps": [
+          {
+            "action": "passport",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "card",
+            "labels": [
+              "PCI"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "agency",
+            "labels": [
+              "PCI",
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "passport",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "agency",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "board",
+        "steps": [
+          {
+            "action": "passport",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "board",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "passport",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "agency",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "agency",
+        "steps": [
+          {
+            "action": "card",
+            "labels": [
+              "PCI"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "agency",
+            "labels": [
+              "PCI"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "card",
+            "labels": [
+              "PCI"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "internal",
+            "labels": [
+              "PCI"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "board",
+        "steps": [
+          {
+            "action": "passport",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "board",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "passport",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "itinerary",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ],
+    "direct_sage": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "agency",
+        "steps": [
+          {
+            "action": "passport",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "card",
+            "labels": [
+              "PCI"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "agency",
+            "labels": [
+              "PCI",
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "passport",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "agency",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "board",
+        "steps": [
+          {
+            "action": "passport",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "board",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "passport",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "agency",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "agency",
+        "steps": [
+          {
+            "action": "card",
+            "labels": [
+              "PCI"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "agency",
+            "labels": [
+              "PCI"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "card",
+            "labels": [
+              "PCI"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "internal",
+            "labels": [
+              "PCI"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "board",
+        "steps": [
+          {
+            "action": "passport",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "board",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "passport",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "itinerary",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ]
+  }
+}

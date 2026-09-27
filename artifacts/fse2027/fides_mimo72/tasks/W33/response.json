@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"def pilot_policy(trace):\\n    last_item = trace[-1]\\n    action, label = last_item\\n    if action.name != 'quality/export':\\n        return None\\n    exported_labels = label.subset\\n    params = json.loads(action.arguments)\\n    target_val = params.get('target')\\n    if target_val == 'text_vendor':\\n        if 'BIOMETRIC' in exported_labels:\\n            raise PolicyViolation('Export to text_vendor includes BIOMETRIC, which is forbidden.')\\n    elif target_val == 'acoustic':\\n        if 'PII' in exported_labels:\\n            raise PolicyViolation('Export to acoustic includes PII, which is forbidden.')\\n    elif target_val == 'both':\\n        if 'BIOMETRIC' in exported_labels or 'PII' in exported_labels:\\n            raise PolicyViolation('Export to both external endpoints includes forbidden labels.')\\n    else:\\n        return None\\n    return None\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 6682,
+    "prompt_tokens": 889,
+    "total_tokens": 7571,
+    "completion_tokens_details": {
+      "reasoning_tokens": 6466
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "b7a8994e-c87b-4282-beed-febc061ae16e_a68f1a64422947d9a725bb35cdc40c50"
+}

@@ -1,0 +1,18 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"def pilot_policy(trace):\\n    action, label = trace[-1]\\n    cats = label.subset\\n    args = json.loads(action.arguments)\\n    name = action.name\\n    forbidden = {\\n        \\\"slot:audit\\\": {\\\"SOURCE\\\", \\\"CREDENTIAL\\\"},\\n        \\\"slot:marketplace\\\": {\\\"CUSTOMER\\\", \\\"CREDENTIAL\\\"},\\n        \\\"slot:production\\\": {\\\"UNVERIFIED\\\"},\\n        \\\"slot:public\\\": {\\\"CUSTOMER\\\", \\\"SOURCE\\\", \\\"CREDENTIAL\\\"},\\n        \\\"slot:vendor\\\": {\\\"SOURCE\\\", \\\"CREDENTIAL\\\"}\\n    }\\n    if name == \\\"builder/import_component\\\":\\n        pass\\n    elif name == \\\"reviewer/review_component\\\":\\n        pass\\n    elif name == \\\"release_bot/assemble_build\\\":\\n        pass\\n    elif name in (\\\"release/deliver_build\\\", \\\"operations/deliver_build\\\"):\\n        channel = args.get(\\\"channel\\\")\\n        telemetry = args.get(\\\"telemetry\\\")\\n        agent = \\\"release\\\" if name == \\\"release/deliver_build\\\" else \\\"operations\\\"\\n        if agent == \\\"release\\\":\\n            slot_map = {\\\"local\\\": \\\"slot:internal\\\", \\\"partner\\\": \\\"slot:marketplace\\\", \\\"release\\\": \\\"slot:public\\\"}\\n        else:\\n            slot_map = {\\\"local\\\": \\\"slot:internal\\\", \\\"partner\\\": \\\"slot:vendor\\\", \\\"release\\\": \\\"slot:production\\\"}\\n        slots = {slot_map[channel]}\\n        if telemetry == \\\"audit\\\":\\n            slots.add(\\\"slot:audit\\\")\\n        elif telemetry == \\\"partner\\\":\\n            slots.add(slot_map[channel])\\n        elif telemetry == \\\"public\\\":\\n            slots.add(\\\"slot:public\\\")\\n        if any(cat in forbidden[slot] for slot in slots for cat in cats if slot in forbidden):\\n            raise PolicyViolation(\\\"Deliver build writes forbidden categories to restricted slot\\\")\\n    else:\\n        raise PolicyViolation(\\\"Unknown action\\\")\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 5453,
+    "prompt_tokens": 1678,
+    "total_tokens": 7131,
+    "completion_tokens_details": {
+      "reasoning_tokens": 5007
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "8bd2cbd0-0e44-4706-897f-7ed48e5d3f78_4f7384bd069d4aa4be0d1fde31e5a8cc"
+}

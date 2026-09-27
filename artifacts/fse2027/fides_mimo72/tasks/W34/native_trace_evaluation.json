@@ -1,0 +1,822 @@
+{
+  "id": "W34",
+  "layer": "base",
+  "complexity": "Base",
+  "candidate_load": {
+    "status": "EXECUTABLE",
+    "error": null
+  },
+  "source_sha256": "3349bad81773e6368bf6efd23e67ea9584a43969f8bcf1fc4b2efc6ec56496d6",
+  "arms": {
+    "candidate": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "reply",
+        "steps": [
+          {
+            "action": "player",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "rules",
+            "labels": [
+              "DETECTION_RULE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "explain",
+            "labels": [
+              "DETECTION_RULE",
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "reply",
+            "labels": [
+              "DETECTION_RULE",
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Sending to player with forbidden labels"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "player",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "explain",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "reply",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "notice",
+        "steps": [
+          {
+            "action": "player",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "explain",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "notice",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Sending to notice with forbidden labels"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "player",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "explain",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "reply",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "reply",
+        "steps": [
+          {
+            "action": "rules",
+            "labels": [
+              "DETECTION_RULE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "explain",
+            "labels": [
+              "DETECTION_RULE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "reply",
+            "labels": [
+              "DETECTION_RULE"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Sending to player with forbidden labels"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "rules",
+            "labels": [
+              "DETECTION_RULE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "explain",
+            "labels": [
+              "DETECTION_RULE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "internal",
+            "labels": [
+              "DETECTION_RULE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "notice",
+        "steps": [
+          {
+            "action": "player",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "rules",
+            "labels": [
+              "DETECTION_RULE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "explain",
+            "labels": [
+              "DETECTION_RULE",
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "notice",
+            "labels": [
+              "DETECTION_RULE",
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Sending to notice with forbidden labels"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "explain",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "notice",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ],
+    "candidate_plus_sage": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "reply",
+        "steps": [
+          {
+            "action": "player",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "rules",
+            "labels": [
+              "DETECTION_RULE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "explain",
+            "labels": [
+              "DETECTION_RULE",
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "reply",
+            "labels": [
+              "DETECTION_RULE",
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "player",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "explain",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "reply",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "notice",
+        "steps": [
+          {
+            "action": "player",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "explain",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "notice",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "player",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "explain",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "reply",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "reply",
+        "steps": [
+          {
+            "action": "rules",
+            "labels": [
+              "DETECTION_RULE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "explain",
+            "labels": [
+              "DETECTION_RULE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "reply",
+            "labels": [
+              "DETECTION_RULE"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "rules",
+            "labels": [
+              "DETECTION_RULE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "explain",
+            "labels": [
+              "DETECTION_RULE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "internal",
+            "labels": [
+              "DETECTION_RULE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "notice",
+        "steps": [
+          {
+            "action": "player",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "rules",
+            "labels": [
+              "DETECTION_RULE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "explain",
+            "labels": [
+              "DETECTION_RULE",
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "notice",
+            "labels": [
+              "DETECTION_RULE",
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "explain",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "notice",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ],
+    "direct_sage": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "reply",
+        "steps": [
+          {
+            "action": "player",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "rules",
+            "labels": [
+              "DETECTION_RULE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "explain",
+            "labels": [
+              "DETECTION_RULE",
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "reply",
+            "labels": [
+              "DETECTION_RULE",
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "player",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "explain",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "reply",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "notice",
+        "steps": [
+          {
+            "action": "player",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "explain",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "notice",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "player",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "explain",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "reply",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "reply",
+        "steps": [
+          {
+            "action": "rules",
+            "labels": [
+              "DETECTION_RULE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "explain",
+            "labels": [
+              "DETECTION_RULE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "reply",
+            "labels": [
+              "DETECTION_RULE"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "rules",
+            "labels": [
+              "DETECTION_RULE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "explain",
+            "labels": [
+              "DETECTION_RULE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "internal",
+            "labels": [
+              "DETECTION_RULE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "notice",
+        "steps": [
+          {
+            "action": "player",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "rules",
+            "labels": [
+              "DETECTION_RULE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "explain",
+            "labels": [
+              "DETECTION_RULE",
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "notice",
+            "labels": [
+              "DETECTION_RULE",
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "explain",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "notice",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ]
+  }
+}

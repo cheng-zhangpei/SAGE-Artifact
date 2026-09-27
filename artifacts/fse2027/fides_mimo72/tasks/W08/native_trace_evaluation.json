@@ -1,0 +1,546 @@
+{
+  "id": "W08",
+  "layer": "base",
+  "complexity": "Base",
+  "candidate_load": {
+    "status": "EXECUTABLE",
+    "error": null
+  },
+  "source_sha256": "6e8007e46b8c2226dcb21138ab35b86b007ef4c710fc68ede309782bb821ed04",
+  "arms": {
+    "candidate": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "remote",
+        "steps": [
+          {
+            "action": "snapshot",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "remote",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Cannot send CREDENTIAL to restricted slot"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "snapshot",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "vault",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "issue",
+        "steps": [
+          {
+            "action": "snapshot",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "issue",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Cannot send CREDENTIAL to restricted slot"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "health",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "issue",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "remote",
+        "steps": [
+          {
+            "action": "snapshot",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "health",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "remote",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Cannot send CREDENTIAL to restricted slot"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "health",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "remote",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "temporary",
+        "steps": [
+          {
+            "action": "temporary",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Cannot send CREDENTIAL to restricted slot"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "remote",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ],
+    "candidate_plus_sage": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "remote",
+        "steps": [
+          {
+            "action": "snapshot",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "remote",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "snapshot",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "vault",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "issue",
+        "steps": [
+          {
+            "action": "snapshot",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "issue",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "health",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "issue",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "remote",
+        "steps": [
+          {
+            "action": "snapshot",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "health",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "remote",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "health",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "remote",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "temporary",
+        "steps": [
+          {
+            "action": "temporary",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "remote",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ],
+    "direct_sage": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "remote",
+        "steps": [
+          {
+            "action": "snapshot",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "remote",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "snapshot",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "vault",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "issue",
+        "steps": [
+          {
+            "action": "snapshot",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "issue",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "health",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "issue",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "remote",
+        "steps": [
+          {
+            "action": "snapshot",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "health",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "remote",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "health",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "remote",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "temporary",
+        "steps": [
+          {
+            "action": "temporary",
+            "labels": [
+              "CREDENTIAL"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "remote",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ]
+  }
+}

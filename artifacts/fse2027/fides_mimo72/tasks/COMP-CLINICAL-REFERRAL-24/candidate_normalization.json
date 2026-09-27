@@ -1,0 +1,4 @@
+{
+  "rule": "remove_single_stray_terminal_brace",
+  "original_error": "unmatched '}' (<unknown>, line 47)"
+}

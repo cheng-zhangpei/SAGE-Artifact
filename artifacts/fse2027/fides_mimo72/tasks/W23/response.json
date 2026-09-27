@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"def pilot_policy(trace):\\n    allowed_for_sms = {\\\"PII\\\"}\\n    for action, label in trace:\\n        params = json.loads(action.arguments)\\n        destination = None\\n        if action.name == \\\"frontdesk/notify\\\":\\n            if params.get(\\\"target\\\") == \\\"sms\\\":\\n                destination = \\\"sms\\\"\\n        elif action.name == \\\"events/export\\\":\\n            if params.get(\\\"source\\\") == \\\"agenda\\\":\\n                destination = None\\n            else:\\n                destination = \\\"website\\\"\\n        if destination == \\\"sms\\\":\\n            if not label.subset.issubset(allowed_for_sms):\\n                raise PolicyViolation(\\\"SMS service only allows PII.\\\")\\n    return None\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 5792,
+    "prompt_tokens": 862,
+    "total_tokens": 6654,
+    "completion_tokens_details": {
+      "reasoning_tokens": 5625
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "b3a88fb3-9153-491e-915c-64e265bd13ea_d1daf1bfd2044738abba267fc9c033ce"
+}

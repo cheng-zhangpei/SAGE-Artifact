@@ -1,0 +1,299 @@
+{
+  "id": "W29",
+  "layer": "base",
+  "complexity": "Base",
+  "candidate_load": {
+    "status": "INVALID",
+    "error": {
+      "type": "JSONDecodeError",
+      "detail": "Expecting value: line 1 column 1 (char 0)"
+    }
+  },
+  "source_sha256": null,
+  "arms": {
+    "candidate": [],
+    "candidate_plus_sage": [],
+    "direct_sage": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "research",
+        "steps": [
+          {
+            "action": "earnings",
+            "labels": [
+              "MNPI"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "positions",
+            "labels": [
+              "POSITION"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "summarize",
+            "labels": [
+              "MNPI",
+              "POSITION"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "research",
+            "labels": [
+              "MNPI",
+              "POSITION"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "earnings",
+            "labels": [
+              "MNPI"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "summarize",
+            "labels": [
+              "MNPI"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "research",
+            "labels": [
+              "MNPI"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "sales",
+        "steps": [
+          {
+            "action": "positions",
+            "labels": [
+              "POSITION"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "earnings",
+            "labels": [
+              "MNPI"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "summarize",
+            "labels": [
+              "MNPI",
+              "POSITION"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "sales",
+            "labels": [
+              "MNPI",
+              "POSITION"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "positions",
+            "labels": [
+              "POSITION"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "summarize",
+            "labels": [
+              "POSITION"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "sales",
+            "labels": [
+              "POSITION"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "sales",
+        "steps": [
+          {
+            "action": "earnings",
+            "labels": [
+              "MNPI"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "summarize",
+            "labels": [
+              "MNPI"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "sales",
+            "labels": [
+              "MNPI"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "earnings",
+            "labels": [
+              "MNPI"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "summarize",
+            "labels": [
+              "MNPI"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "compliance",
+            "labels": [
+              "MNPI"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "research",
+        "steps": [
+          {
+            "action": "positions",
+            "labels": [
+              "POSITION"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "summarize",
+            "labels": [
+              "POSITION"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "research",
+            "labels": [
+              "POSITION"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "positions",
+            "labels": [
+              "POSITION"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "summarize",
+            "labels": [
+              "POSITION"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "compliance",
+            "labels": [
+              "POSITION"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ]
+  }
+}

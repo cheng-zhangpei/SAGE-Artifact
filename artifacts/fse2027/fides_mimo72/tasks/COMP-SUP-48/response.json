@@ -1,0 +1,18 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"def pilot_policy(trace):\\n    action, label = trace[-1]\\n    params = json.loads(action.arguments)\\n    name = action.name\\n    \\n    policy = {\\n        'slot:audit': ['PAYMENT', 'SECRET'],\\n        'slot:control': ['UNVERIFIED'],\\n        'slot:customer': ['SECRET', 'UNVERIFIED'],\\n        'slot:public': ['PII', 'PAYMENT', 'SECRET'],\\n        'slot:vendor': ['PII', 'SECRET']\\n    }\\n    \\n    # Define route aliases per department\\n    support_aliases = {'local': 'slot:internal', 'partner': 'slot:customer', 'release': 'slot:public'}\\n    finance_aliases = {'local': 'slot:internal', 'partner': 'slot:vendor', 'release': 'slot:control'}\\n    \\n    # All non-dispatch tools have no destination policy restrictions\\n    if name not in ['finance/dispatch', 'support/dispatch']:\\n        return None\\n    \\n    # Determine department and route aliases\\n    if name.startswith('support'):\\n        aliases = support_aliases\\n        dept = 'support'\\n    else:\\n        aliases = finance_aliases\\n        dept = 'finance'\\n    \\n    route = params.get('route', '')\\n    mode = params.get('mode', '')\\n    receipt = params.get('receipt', '')\\n    \\n    # Collect all destination slots\\n    destinations = set()\\n    \\n    # Primary route destination\\n    if route in aliases:\\n        destinations.add(aliases[route])\\n    else:\\n        raise PolicyViolation('Invalid route alias')\\n    \\n    # Mode adds extra destinations\\n    if mode == 'mirror':\\n        destinations.add('slot:public')\\n    elif mode == 'linked':\\n        partner = aliases.get('partner')\\n        if partner:\\n            destinations.add(partner)\\n    \\n    # Receipt adds extra destinations\\n    if receipt == 'external':\\n        destinations.add('slot:audit')\\n    elif receipt == 'partner':\\n        partner = aliases.get('partner')\\n        if partner and route != 'partner':\\n            destinations.add(partner)\\n    \\n    # Check each destination against policy\\n    for slot in destinations:\\n        allowed = policy.get(slot, [])\\n        if not label.subset.issubset(set(allowed)):\\n            raise PolicyViolation(f'Data categories {label.subset} not permitted in {slot}')\\n    \\n    return None\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 7163,
+    "prompt_tokens": 4323,
+    "total_tokens": 11486,
+    "completion_tokens_details": {
+      "reasoning_tokens": 6585
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 3264
+    }
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "5b4afacf-3e55-4438-aacd-185d6a167819_001999eab3df459a87a2b59ad779c228"
+}

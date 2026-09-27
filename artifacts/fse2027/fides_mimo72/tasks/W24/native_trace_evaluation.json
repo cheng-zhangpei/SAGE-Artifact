@@ -1,0 +1,594 @@
+{
+  "id": "W24",
+  "layer": "base",
+  "complexity": "Base",
+  "candidate_load": {
+    "status": "EXECUTABLE",
+    "error": null
+  },
+  "source_sha256": "384a4f95a371710c9bb35e20d36a1520bb9b5fdc5d6042a135d624b205ae48d3",
+  "arms": {
+    "candidate": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "delivery",
+        "steps": [
+          {
+            "action": "person",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "details",
+            "labels": [
+              "HARDSHIP"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "delivery",
+            "labels": [
+              "HARDSHIP",
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Delivery slot cannot contain PII"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "delivery",
+        "steps": [
+          {
+            "action": "person",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "delivery",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Delivery slot cannot contain PII"
+            }
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "person",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "attached",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "person",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "cover",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "details",
+            "labels": [
+              "HARDSHIP"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "attached",
+            "labels": [
+              "HARDSHIP"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "details",
+            "labels": [
+              "HARDSHIP"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "committee",
+            "labels": [
+              "HARDSHIP"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "details",
+            "labels": [
+              "HARDSHIP"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "delivery",
+            "labels": [
+              "HARDSHIP"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "delivery",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ],
+    "candidate_plus_sage": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "delivery",
+        "steps": [
+          {
+            "action": "person",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "details",
+            "labels": [
+              "HARDSHIP"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "delivery",
+            "labels": [
+              "HARDSHIP",
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "delivery",
+        "steps": [
+          {
+            "action": "person",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "delivery",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Delivery slot cannot contain PII"
+            }
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "attached",
+        "steps": [
+          {
+            "action": "person",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "attached",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "person",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "cover",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "attached",
+        "steps": [
+          {
+            "action": "details",
+            "labels": [
+              "HARDSHIP"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "attached",
+            "labels": [
+              "HARDSHIP"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "details",
+            "labels": [
+              "HARDSHIP"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "committee",
+            "labels": [
+              "HARDSHIP"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "delivery",
+        "steps": [
+          {
+            "action": "details",
+            "labels": [
+              "HARDSHIP"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "delivery",
+            "labels": [
+              "HARDSHIP"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "delivery",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ],
+    "direct_sage": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "delivery",
+        "steps": [
+          {
+            "action": "person",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "details",
+            "labels": [
+              "HARDSHIP"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "delivery",
+            "labels": [
+              "HARDSHIP",
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "person",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "delivery",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "attached",
+        "steps": [
+          {
+            "action": "person",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "attached",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "person",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "cover",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "attached",
+        "steps": [
+          {
+            "action": "details",
+            "labels": [
+              "HARDSHIP"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "attached",
+            "labels": [
+              "HARDSHIP"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "details",
+            "labels": [
+              "HARDSHIP"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "committee",
+            "labels": [
+              "HARDSHIP"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "delivery",
+        "steps": [
+          {
+            "action": "details",
+            "labels": [
+              "HARDSHIP"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "delivery",
+            "labels": [
+              "HARDSHIP"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "delivery",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,5820 @@
+{
+  "id": "COMP-PUBLICATION-16",
+  "layer": "composition",
+  "complexity": "Composition-16",
+  "load_status": "EXECUTABLE",
+  "load_error": null,
+  "normalization": null,
+  "probes": [
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_edit",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_review",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Category not allowed in slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "publish_collect_PERSONAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_EMBARGOED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_LICENSED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_collect_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "publish_emergency",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    }
+  ]
+}

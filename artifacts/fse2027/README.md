@@ -12,6 +12,7 @@ the 936 MiB public-workflow download cache.
 | `authoring72/mimo` | MiMo-v2.5 candidates and SAGE evaluation for 72 tasks | `benchmarks/everyday_workflows` |
 | `authoring72/gpt55` | GPT-5.5 candidates and SAGE evaluation for the same 72 tasks | `benchmarks/everyday_workflows` |
 | `agentspec_mimo72` | 72 MiMo predicates, compiled completions, AgentSpec rules, truth tables, and evaluations | `experiments/agentspec_native_pilot` |
+| `fides_mimo72` | 72 MiMo trace-policy responses, matched probes, and evaluations | `experiments/fides_native_pilot` |
 | `physical72` | Audited results for 72 SQLite/filesystem/loopback-HTTP executions | `integrations/physical72` |
 | `workflow_survey` | Final classification of all 38 detector-positive templates, source hashes, and download manifest | `experiments/workflow_survey` |
 

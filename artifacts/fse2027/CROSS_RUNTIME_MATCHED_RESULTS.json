@@ -1,0 +1,341 @@
+{
+  "audit": {
+    "same_task_ids": true,
+    "same_public_semantic_payloads": true,
+    "same_model": true,
+    "same_temperature": true,
+    "same_max_tokens": true,
+    "same_target_probe_oracles": true,
+    "same_normalization_rule": "remove_single_stray_terminal_brace",
+    "same_sidecar_order": "SAGE first; native candidate only if SAGE allows"
+  },
+  "AgentSpec": {
+    "tasks": 72,
+    "candidate_loaded": 72,
+    "candidate_invalid": 0,
+    "runtime_error_tasks": 5,
+    "arms": {
+      "candidate": {
+        "dangerous_total": 6012,
+        "dangerous_evaluable": 5176,
+        "dangerous_denied": 3190,
+        "benign_total": 6372,
+        "benign_evaluable": 5600,
+        "benign_denied": 1724,
+        "unknown_probes": 1608,
+        "der": 61.6306027820711,
+        "bbr": 30.785714285714285
+      },
+      "candidate_plus_sage": {
+        "dangerous_total": 6012,
+        "dangerous_evaluable": 5954,
+        "dangerous_denied": 5954,
+        "benign_total": 6372,
+        "benign_evaluable": 5600,
+        "benign_denied": 1724,
+        "unknown_probes": 830,
+        "der": 100.0,
+        "bbr": 30.785714285714285
+      },
+      "direct_sage": {
+        "dangerous_total": 6012,
+        "dangerous_evaluable": 6012,
+        "dangerous_denied": 6012,
+        "benign_total": 6372,
+        "benign_evaluable": 6372,
+        "benign_denied": 0,
+        "unknown_probes": 0,
+        "der": 100.0,
+        "bbr": 0.0
+      }
+    }
+  },
+  "FIDES": {
+    "tasks": 72,
+    "candidate_executable": 68,
+    "candidate_invalid": 4,
+    "runtime_error_tasks": 8,
+    "arms": {
+      "candidate": {
+        "dangerous_total": 6012,
+        "dangerous_evaluable": 4873,
+        "dangerous_denied": 2700,
+        "benign_total": 6372,
+        "benign_evaluable": 5183,
+        "benign_denied": 1569,
+        "unknown_probes": 2328,
+        "der": 55.407346603734865,
+        "bbr": 30.27204321821339
+      },
+      "candidate_plus_sage": {
+        "dangerous_total": 6012,
+        "dangerous_evaluable": 5822,
+        "dangerous_denied": 5822,
+        "benign_total": 6372,
+        "benign_evaluable": 5183,
+        "benign_denied": 1569,
+        "unknown_probes": 1379,
+        "der": 100.0,
+        "bbr": 30.27204321821339
+      },
+      "direct_sage": {
+        "dangerous_total": 6012,
+        "dangerous_evaluable": 6012,
+        "dangerous_denied": 6012,
+        "benign_total": 6372,
+        "benign_evaluable": 6372,
+        "benign_denied": 0,
+        "unknown_probes": 0,
+        "der": 100.0,
+        "bbr": 0.0
+      }
+    },
+    "by_complexity": {
+      "Base": {
+        "candidate": {
+          "dangerous_total": 144,
+          "dangerous_evaluable": 132,
+          "dangerous_denied": 99,
+          "benign_total": 144,
+          "benign_evaluable": 132,
+          "benign_denied": 12,
+          "unknown_probes": 24,
+          "der": 75.0,
+          "bbr": 9.090909090909092
+        },
+        "candidate_plus_sage": {
+          "dangerous_total": 144,
+          "dangerous_evaluable": 136,
+          "dangerous_denied": 136,
+          "benign_total": 144,
+          "benign_evaluable": 132,
+          "benign_denied": 12,
+          "unknown_probes": 20,
+          "der": 100.0,
+          "bbr": 9.090909090909092
+        },
+        "direct_sage": {
+          "dangerous_total": 144,
+          "dangerous_evaluable": 144,
+          "dangerous_denied": 144,
+          "benign_total": 144,
+          "benign_evaluable": 144,
+          "benign_denied": 0,
+          "unknown_probes": 0,
+          "der": 100.0,
+          "bbr": 0.0
+        }
+      },
+      "Composition-08": {
+        "candidate": {
+          "dangerous_total": 301,
+          "dangerous_evaluable": 199,
+          "dangerous_denied": 103,
+          "benign_total": 275,
+          "benign_evaluable": 185,
+          "benign_denied": 44,
+          "unknown_probes": 192,
+          "der": 51.75879396984924,
+          "bbr": 23.783783783783782
+        },
+        "candidate_plus_sage": {
+          "dangerous_total": 301,
+          "dangerous_evaluable": 239,
+          "dangerous_denied": 239,
+          "benign_total": 275,
+          "benign_evaluable": 185,
+          "benign_denied": 44,
+          "unknown_probes": 152,
+          "der": 100.0,
+          "bbr": 23.783783783783782
+        },
+        "direct_sage": {
+          "dangerous_total": 301,
+          "dangerous_evaluable": 301,
+          "dangerous_denied": 301,
+          "benign_total": 275,
+          "benign_evaluable": 275,
+          "benign_denied": 0,
+          "unknown_probes": 0,
+          "der": 100.0,
+          "bbr": 0.0
+        }
+      },
+      "Composition-16": {
+        "candidate": {
+          "dangerous_total": 606,
+          "dangerous_evaluable": 409,
+          "dangerous_denied": 206,
+          "benign_total": 546,
+          "benign_evaluable": 359,
+          "benign_denied": 142,
+          "unknown_probes": 384,
+          "der": 50.36674816625917,
+          "bbr": 39.55431754874652
+        },
+        "candidate_plus_sage": {
+          "dangerous_total": 606,
+          "dangerous_evaluable": 606,
+          "dangerous_denied": 606,
+          "benign_total": 546,
+          "benign_evaluable": 359,
+          "benign_denied": 142,
+          "unknown_probes": 187,
+          "der": 100.0,
+          "bbr": 39.55431754874652
+        },
+        "direct_sage": {
+          "dangerous_total": 606,
+          "dangerous_evaluable": 606,
+          "dangerous_denied": 606,
+          "benign_total": 546,
+          "benign_evaluable": 546,
+          "benign_denied": 0,
+          "unknown_probes": 0,
+          "der": 100.0,
+          "bbr": 0.0
+        }
+      },
+      "Composition-24": {
+        "candidate": {
+          "dangerous_total": 872,
+          "dangerous_evaluable": 452,
+          "dangerous_denied": 236,
+          "benign_total": 856,
+          "benign_evaluable": 412,
+          "benign_denied": 141,
+          "unknown_probes": 864,
+          "der": 52.21238938053097,
+          "bbr": 34.22330097087379
+        },
+        "candidate_plus_sage": {
+          "dangerous_total": 872,
+          "dangerous_evaluable": 752,
+          "dangerous_denied": 752,
+          "benign_total": 856,
+          "benign_evaluable": 412,
+          "benign_denied": 141,
+          "unknown_probes": 564,
+          "der": 100.0,
+          "bbr": 34.22330097087379
+        },
+        "direct_sage": {
+          "dangerous_total": 872,
+          "dangerous_evaluable": 872,
+          "dangerous_denied": 872,
+          "benign_total": 856,
+          "benign_evaluable": 856,
+          "benign_denied": 0,
+          "unknown_probes": 0,
+          "der": 100.0,
+          "bbr": 0.0
+        }
+      },
+      "Composition-32": {
+        "candidate": {
+          "dangerous_total": 1112,
+          "dangerous_evaluable": 922,
+          "dangerous_denied": 543,
+          "benign_total": 1192,
+          "benign_evaluable": 998,
+          "benign_denied": 284,
+          "unknown_probes": 384,
+          "der": 58.893709327548805,
+          "bbr": 28.45691382765531
+        },
+        "candidate_plus_sage": {
+          "dangerous_total": 1112,
+          "dangerous_evaluable": 1112,
+          "dangerous_denied": 1112,
+          "benign_total": 1192,
+          "benign_evaluable": 998,
+          "benign_denied": 284,
+          "unknown_probes": 194,
+          "der": 100.0,
+          "bbr": 28.45691382765531
+        },
+        "direct_sage": {
+          "dangerous_total": 1112,
+          "dangerous_evaluable": 1112,
+          "dangerous_denied": 1112,
+          "benign_total": 1192,
+          "benign_evaluable": 1192,
+          "benign_denied": 0,
+          "unknown_probes": 0,
+          "der": 100.0,
+          "bbr": 0.0
+        }
+      },
+      "Composition-40": {
+        "candidate": {
+          "dangerous_total": 1367,
+          "dangerous_evaluable": 1149,
+          "dangerous_denied": 659,
+          "benign_total": 1513,
+          "benign_evaluable": 1251,
+          "benign_denied": 317,
+          "unknown_probes": 480,
+          "der": 57.35422106179286,
+          "bbr": 25.33972821742606
+        },
+        "candidate_plus_sage": {
+          "dangerous_total": 1367,
+          "dangerous_evaluable": 1367,
+          "dangerous_denied": 1367,
+          "benign_total": 1513,
+          "benign_evaluable": 1251,
+          "benign_denied": 317,
+          "unknown_probes": 262,
+          "der": 100.0,
+          "bbr": 25.33972821742606
+        },
+        "direct_sage": {
+          "dangerous_total": 1367,
+          "dangerous_evaluable": 1367,
+          "dangerous_denied": 1367,
+          "benign_total": 1513,
+          "benign_evaluable": 1513,
+          "benign_denied": 0,
+          "unknown_probes": 0,
+          "der": 100.0,
+          "bbr": 0.0
+        }
+      },
+      "Composition-48": {
+        "candidate": {
+          "dangerous_total": 1610,
+          "dangerous_evaluable": 1610,
+          "dangerous_denied": 854,
+          "benign_total": 1846,
+          "benign_evaluable": 1846,
+          "benign_denied": 629,
+          "unknown_probes": 0,
+          "der": 53.04347826086956,
+          "bbr": 34.07367280606717
+        },
+        "candidate_plus_sage": {
+          "dangerous_total": 1610,
+          "dangerous_evaluable": 1610,
+          "dangerous_denied": 1610,
+          "benign_total": 1846,
+          "benign_evaluable": 1846,
+          "benign_denied": 629,
+          "unknown_probes": 0,
+          "der": 100.0,
+          "bbr": 34.07367280606717
+        },
+        "direct_sage": {
+          "dangerous_total": 1610,
+          "dangerous_evaluable": 1610,
+          "dangerous_denied": 1610,
+          "benign_total": 1846,
+          "benign_evaluable": 1846,
+          "benign_denied": 0,
+          "unknown_probes": 0,
+          "der": 100.0,
+          "bbr": 0.0
+        }
+      }
+    }
+  }
+}

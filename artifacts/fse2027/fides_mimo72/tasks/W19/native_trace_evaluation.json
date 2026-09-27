@@ -1,0 +1,714 @@
+{
+  "id": "W19",
+  "layer": "base",
+  "complexity": "Base",
+  "candidate_load": {
+    "status": "EXECUTABLE",
+    "error": null
+  },
+  "source_sha256": "5e16a60f8d541b2bee6c0bad26cdb269464ad5b70b0213d274601570b873eefe",
+  "arms": {
+    "candidate": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "to_eu",
+        "steps": [
+          {
+            "action": "eu",
+            "labels": [
+              "EU_SUBJECT"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "us",
+            "labels": [
+              "US_SUBJECT"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "to_eu",
+            "labels": [
+              "EU_SUBJECT",
+              "US_SUBJECT"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Export to slot:eu contains forbidden data"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "eu",
+            "labels": [
+              "EU_SUBJECT"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "to_eu",
+            "labels": [
+              "EU_SUBJECT"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "to_us",
+        "steps": [
+          {
+            "action": "us",
+            "labels": [
+              "US_SUBJECT"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "eu",
+            "labels": [
+              "EU_SUBJECT"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "to_us",
+            "labels": [
+              "EU_SUBJECT",
+              "US_SUBJECT"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Export to slot:us contains forbidden data"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "us",
+            "labels": [
+              "US_SUBJECT"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "to_us",
+            "labels": [
+              "US_SUBJECT"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "demo",
+        "steps": [
+          {
+            "action": "eu",
+            "labels": [
+              "EU_SUBJECT"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "demo",
+            "labels": [
+              "EU_SUBJECT"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Export to slot:demo contains forbidden data"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "eu",
+            "labels": [
+              "EU_SUBJECT"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "to_eu",
+            "labels": [
+              "EU_SUBJECT"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "to_us",
+        "steps": [
+          {
+            "action": "eu",
+            "labels": [
+              "EU_SUBJECT"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "us",
+            "labels": [
+              "US_SUBJECT"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "to_us",
+            "labels": [
+              "EU_SUBJECT",
+              "US_SUBJECT"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Export to slot:us contains forbidden data"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "eu",
+            "labels": [
+              "EU_SUBJECT"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "us",
+            "labels": [
+              "US_SUBJECT"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "joint",
+            "labels": [
+              "EU_SUBJECT",
+              "US_SUBJECT"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ],
+    "candidate_plus_sage": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "to_eu",
+        "steps": [
+          {
+            "action": "eu",
+            "labels": [
+              "EU_SUBJECT"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "us",
+            "labels": [
+              "US_SUBJECT"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "to_eu",
+            "labels": [
+              "EU_SUBJECT",
+              "US_SUBJECT"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "eu",
+            "labels": [
+              "EU_SUBJECT"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "to_eu",
+            "labels": [
+              "EU_SUBJECT"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "to_us",
+        "steps": [
+          {
+            "action": "us",
+            "labels": [
+              "US_SUBJECT"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "eu",
+            "labels": [
+              "EU_SUBJECT"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "to_us",
+            "labels": [
+              "EU_SUBJECT",
+              "US_SUBJECT"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "us",
+            "labels": [
+              "US_SUBJECT"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "to_us",
+            "labels": [
+              "US_SUBJECT"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "demo",
+        "steps": [
+          {
+            "action": "eu",
+            "labels": [
+              "EU_SUBJECT"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "demo",
+            "labels": [
+              "EU_SUBJECT"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "eu",
+            "labels": [
+              "EU_SUBJECT"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "to_eu",
+            "labels": [
+              "EU_SUBJECT"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "to_us",
+        "steps": [
+          {
+            "action": "eu",
+            "labels": [
+              "EU_SUBJECT"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "us",
+            "labels": [
+              "US_SUBJECT"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "to_us",
+            "labels": [
+              "EU_SUBJECT",
+              "US_SUBJECT"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "eu",
+            "labels": [
+              "EU_SUBJECT"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "us",
+            "labels": [
+              "US_SUBJECT"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "joint",
+            "labels": [
+              "EU_SUBJECT",
+              "US_SUBJECT"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ],
+    "direct_sage": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "to_eu",
+        "steps": [
+          {
+            "action": "eu",
+            "labels": [
+              "EU_SUBJECT"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "us",
+            "labels": [
+              "US_SUBJECT"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "to_eu",
+            "labels": [
+              "EU_SUBJECT",
+              "US_SUBJECT"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "eu",
+            "labels": [
+              "EU_SUBJECT"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "to_eu",
+            "labels": [
+              "EU_SUBJECT"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "to_us",
+        "steps": [
+          {
+            "action": "us",
+            "labels": [
+              "US_SUBJECT"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "eu",
+            "labels": [
+              "EU_SUBJECT"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "to_us",
+            "labels": [
+              "EU_SUBJECT",
+              "US_SUBJECT"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "us",
+            "labels": [
+              "US_SUBJECT"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "to_us",
+            "labels": [
+              "US_SUBJECT"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "demo",
+        "steps": [
+          {
+            "action": "eu",
+            "labels": [
+              "EU_SUBJECT"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "demo",
+            "labels": [
+              "EU_SUBJECT"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "eu",
+            "labels": [
+              "EU_SUBJECT"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "to_eu",
+            "labels": [
+              "EU_SUBJECT"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "to_us",
+        "steps": [
+          {
+            "action": "eu",
+            "labels": [
+              "EU_SUBJECT"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "us",
+            "labels": [
+              "US_SUBJECT"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "to_us",
+            "labels": [
+              "EU_SUBJECT",
+              "US_SUBJECT"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "eu",
+            "labels": [
+              "EU_SUBJECT"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "us",
+            "labels": [
+              "US_SUBJECT"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "joint",
+            "labels": [
+              "EU_SUBJECT",
+              "US_SUBJECT"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ]
+  }
+}

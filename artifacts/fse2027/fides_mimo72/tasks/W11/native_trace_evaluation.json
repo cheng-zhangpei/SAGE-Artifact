@@ -1,0 +1,717 @@
+{
+  "id": "W11",
+  "layer": "base",
+  "complexity": "Base",
+  "candidate_load": {
+    "status": "EXECUTABLE",
+    "error": null
+  },
+  "source_sha256": "6df46f11dd6672e95ed16bb60cab3e226c19635785da58a0001ca680c0ec2506",
+  "arms": {
+    "candidate": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "ticket_a",
+        "steps": [
+          {
+            "action": "search_a",
+            "labels": [
+              "TENANT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "search_b",
+            "labels": [
+              "TENANT_B"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "ticket_a",
+            "labels": [
+              "TENANT_A",
+              "TENANT_B"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Forbidden label flow to slot:ticket_a"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "search_a",
+            "labels": [
+              "TENANT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "ticket_a",
+            "labels": [
+              "TENANT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "ticket_b",
+        "steps": [
+          {
+            "action": "search_b",
+            "labels": [
+              "TENANT_B"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "search_a",
+            "labels": [
+              "TENANT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "ticket_b",
+            "labels": [
+              "TENANT_A",
+              "TENANT_B"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Forbidden label flow to slot:ticket_b"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "search_b",
+            "labels": [
+              "TENANT_B"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "ticket_b",
+            "labels": [
+              "TENANT_B"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "fallback",
+        "steps": [
+          {
+            "action": "search_a",
+            "labels": [
+              "TENANT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "fallback",
+            "labels": [
+              "TENANT_A",
+              "TENANT_B"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Forbidden label flow to slot:ticket_a"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "search_a",
+            "labels": [
+              "TENANT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "ticket_a",
+            "labels": [
+              "TENANT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "ticket_b",
+        "steps": [
+          {
+            "action": "search_a",
+            "labels": [
+              "TENANT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "search_b",
+            "labels": [
+              "TENANT_B"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "ticket_b",
+            "labels": [
+              "TENANT_A",
+              "TENANT_B"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Forbidden label flow to slot:ticket_b"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "search_a",
+            "labels": [
+              "TENANT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "search_b",
+            "labels": [
+              "TENANT_B"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "vault",
+            "labels": [
+              "TENANT_A",
+              "TENANT_B"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ],
+    "candidate_plus_sage": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "ticket_a",
+        "steps": [
+          {
+            "action": "search_a",
+            "labels": [
+              "TENANT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "search_b",
+            "labels": [
+              "TENANT_B"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "ticket_a",
+            "labels": [
+              "TENANT_A",
+              "TENANT_B"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "search_a",
+            "labels": [
+              "TENANT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "ticket_a",
+            "labels": [
+              "TENANT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "ticket_b",
+        "steps": [
+          {
+            "action": "search_b",
+            "labels": [
+              "TENANT_B"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "search_a",
+            "labels": [
+              "TENANT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "ticket_b",
+            "labels": [
+              "TENANT_A",
+              "TENANT_B"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "search_b",
+            "labels": [
+              "TENANT_B"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "ticket_b",
+            "labels": [
+              "TENANT_B"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "fallback",
+        "steps": [
+          {
+            "action": "search_a",
+            "labels": [
+              "TENANT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "fallback",
+            "labels": [
+              "TENANT_A",
+              "TENANT_B"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "search_a",
+            "labels": [
+              "TENANT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "ticket_a",
+            "labels": [
+              "TENANT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "ticket_b",
+        "steps": [
+          {
+            "action": "search_a",
+            "labels": [
+              "TENANT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "search_b",
+            "labels": [
+              "TENANT_B"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "ticket_b",
+            "labels": [
+              "TENANT_A",
+              "TENANT_B"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "search_a",
+            "labels": [
+              "TENANT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "search_b",
+            "labels": [
+              "TENANT_B"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "vault",
+            "labels": [
+              "TENANT_A",
+              "TENANT_B"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ],
+    "direct_sage": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "ticket_a",
+        "steps": [
+          {
+            "action": "search_a",
+            "labels": [
+              "TENANT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "search_b",
+            "labels": [
+              "TENANT_B"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "ticket_a",
+            "labels": [
+              "TENANT_A",
+              "TENANT_B"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "search_a",
+            "labels": [
+              "TENANT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "ticket_a",
+            "labels": [
+              "TENANT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "ticket_b",
+        "steps": [
+          {
+            "action": "search_b",
+            "labels": [
+              "TENANT_B"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "search_a",
+            "labels": [
+              "TENANT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "ticket_b",
+            "labels": [
+              "TENANT_A",
+              "TENANT_B"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "search_b",
+            "labels": [
+              "TENANT_B"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "ticket_b",
+            "labels": [
+              "TENANT_B"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "fallback",
+        "steps": [
+          {
+            "action": "search_a",
+            "labels": [
+              "TENANT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "fallback",
+            "labels": [
+              "TENANT_A",
+              "TENANT_B"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "search_a",
+            "labels": [
+              "TENANT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "ticket_a",
+            "labels": [
+              "TENANT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "ticket_b",
+        "steps": [
+          {
+            "action": "search_a",
+            "labels": [
+              "TENANT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "search_b",
+            "labels": [
+              "TENANT_B"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "ticket_b",
+            "labels": [
+              "TENANT_A",
+              "TENANT_B"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "search_a",
+            "labels": [
+              "TENANT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "search_b",
+            "labels": [
+              "TENANT_B"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "vault",
+            "labels": [
+              "TENANT_A",
+              "TENANT_B"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ]
+  }
+}

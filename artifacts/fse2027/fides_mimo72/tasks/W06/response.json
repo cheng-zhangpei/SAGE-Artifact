@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"def pilot_policy(trace):\\n    current = trace[-1]\\n    action, label = current\\n    name = action.name\\n    args = json.loads(action.arguments)\\n    \\n    policy_dict = {\\n        'slot:agency': {'PCI'},\\n        'slot:board': {'PII', 'PCI'}\\n    }\\n    \\n    if name == 'assistant/attach':\\n        if not label.subset.issubset({'PII'}):\\n            raise PolicyViolation('assistant/attach only allowed to read/write PII')\\n        target = 'slot:request'\\n        if target in policy_dict and not label.subset.isdisjoint(policy_dict[target]):\\n            raise PolicyViolation('Target slot:request forbids labels in {}'.format(label.subset))\\n        return None\\n    \\n    elif name == 'finance/attach':\\n        if not label.subset.issubset({'PCI'}):\\n            raise PolicyViolation('finance/attach only allowed to read/write PCI')\\n        target = 'slot:request'\\n        if target in policy_dict and not label.subset.isdisjoint(policy_dict[target]):\\n            raise PolicyViolation('Target slot:request forbids labels in {}'.format(label.subset))\\n        return None\\n    \\n    elif name == 'travel/submit':\\n        source = args.get('source')\\n        target = args.get('target')\\n        \\n        if target == 'agency':\\n            if not label.subset.isdisjoint({'PCI'}):\\n                raise PolicyViolation('Cannot send PCI to slot:agency')\\n            return None\\n        \\n        elif target == 'finance':\\n            return None\\n        \\n        elif target == 'board':\\n            if not label.subset.isdisjoint({'PII', 'PCI'}):\\n                raise PolicyViolation('Cannot send PII or PCI to slot:board')\\n            return None\\n        \\n        else:\\n            return None\\n    \\n    else:\\n        raise PolicyViolation('Unknown action {}'.format(name))\\n\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 5496,
+    "prompt_tokens": 937,
+    "total_tokens": 6433,
+    "completion_tokens_details": {
+      "reasoning_tokens": 5036
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "aa8bf3f4-be15-46ab-a3d0-e022e380bae0_fa4c2b5af0f34850b5cfbc81a3a03046"
+}

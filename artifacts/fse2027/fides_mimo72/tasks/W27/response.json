@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\"python\":\"def pilot_policy(trace):\\n    if not trace:\\n        raise PolicyViolation(\\\"Empty trace\\\")\\n    action, label = trace[-1]\\n    valid_names = {\\\"signer/attach\\\", \\\"product/attach\\\", \\\"release/deliver\\\"}\\n    if action.name not in valid_names:\\n        raise PolicyViolation(f\\\"Invalid action name: {action.name}\\\")\\n    if action.name in {\\\"signer/attach\\\", \\\"product/attach\\\"}:\\n        return None\\n    if action.name == \\\"release/deliver\\\":\\n        # Determine data categories in package before this delivery\\n        has_private_key = any(prev[0].name == \\\"signer/attach\\\" for prev in trace[:-1])\\n        has_roadmap = any(prev[0].name == \\\"product/attach\\\" for prev in trace[:-1])\\n        categories = set()\\n        if has_private_key:\\n            categories.add(\\\"PRIVATE_KEY\\\")\\n        if has_roadmap:\\n            categories.add(\\\"ROADMAP\\\")\\n        params = json.loads(action.arguments)\\n        target = params.get(\\\"target\\\")\\n        mirror_store = params.get(\\\"mirror_store\\\", False)\\n        # Define allowed data categories per destination from natural-language description\\n        allowed_review = {\\\"ROADMAP\\\"}\\n        allowed_store = set()  # empty\\n        allowed_signing = {\\\"PRIVATE_KEY\\\", \\\"ROADMAP\\\"}\\n        if mirror_store:\\n            # Deliver to both reviewer and store: must satisfy both restrictions\\n            if not categories.issubset(allowed_review) or not categories.issubset(allowed_store):\\n                raise PolicyViolation(\\\"Package not allowed for both reviewer and store\\\")\\n        else:\\n            if target == \\\"review\\\":\\n                allowed = allowed_review\\n            elif target == \\\"store\\\":\\n                allowed = allowed_store\\n            elif target == \\\"signing\\\":\\n                allowed = allowed_signing\\n            else:\\n                raise PolicyViolation(f\\\"Invalid target: {target}\\\")\\n            if not categories.issubset(allowed):\\n                raise PolicyViolation(f\\\"Package not allowed for target {target}\\\")\\n        return None\\n    raise PolicyViolation(\\\"Unhandled action type\\\")\"}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 6201,
+    "prompt_tokens": 902,
+    "total_tokens": 7103,
+    "completion_tokens_details": {
+      "reasoning_tokens": 5717
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "9782be25-cfdd-4ed1-ac93-05029c0208d3_39c1f251f3c848e0be15985db821a7cd"
+}

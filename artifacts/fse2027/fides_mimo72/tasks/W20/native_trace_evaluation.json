@@ -1,0 +1,564 @@
+{
+  "id": "W20",
+  "layer": "base",
+  "complexity": "Base",
+  "candidate_load": {
+    "status": "EXECUTABLE",
+    "error": null
+  },
+  "source_sha256": "e78957acb5d6d76fe06d360515ec4e15046803dc5bca58fed4ca30fccd3d7713",
+  "arms": {
+    "candidate": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "dump_public",
+        "steps": [
+          {
+            "action": "metadata",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "dump_public",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: TOKEN must not reach public repository or external index."
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "metadata",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "public",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "indexed",
+        "steps": [
+          {
+            "action": "metadata",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "indexed",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: TOKEN must not reach public repository or external index."
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "metadata",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "internal",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "public",
+        "steps": [
+          {
+            "action": "attach",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "public",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: TOKEN must not reach public repository or external index."
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "metadata",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "public",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "public",
+        "steps": [
+          {
+            "action": "attach",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "public",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: TOKEN must not reach public repository or external index."
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "attach",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "internal",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ],
+    "candidate_plus_sage": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "dump_public",
+        "steps": [
+          {
+            "action": "metadata",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "dump_public",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "metadata",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "public",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "indexed",
+        "steps": [
+          {
+            "action": "metadata",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "indexed",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "metadata",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "internal",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "public",
+        "steps": [
+          {
+            "action": "attach",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "public",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "metadata",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "public",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "public",
+        "steps": [
+          {
+            "action": "attach",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "public",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "attach",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "internal",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ],
+    "direct_sage": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "dump_public",
+        "steps": [
+          {
+            "action": "metadata",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "dump_public",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "metadata",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "public",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "indexed",
+        "steps": [
+          {
+            "action": "metadata",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "indexed",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "metadata",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "internal",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "public",
+        "steps": [
+          {
+            "action": "attach",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "public",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "metadata",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "public",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "public",
+        "steps": [
+          {
+            "action": "attach",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "public",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "attach",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "internal",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,645 @@
+{
+  "id": "W02",
+  "layer": "base",
+  "complexity": "Base",
+  "candidate_load": {
+    "status": "EXECUTABLE",
+    "error": null
+  },
+  "source_sha256": "d1590c2a0db465d6d11d71e948ddc291e37d05fe18e11d0ecc683d4beb64ac2e",
+  "arms": {
+    "candidate": [
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "salaries",
+            "labels": [
+              "SALARY"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "identities",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "analytics",
+            "labels": [
+              "PII",
+              "SALARY"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "salaries",
+            "labels": [
+              "SALARY"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "analytics",
+            "labels": [
+              "SALARY"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "salaries",
+            "labels": [
+              "SALARY"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "public",
+            "labels": [
+              "SALARY"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "salaries",
+            "labels": [
+              "SALARY"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "tax",
+            "labels": [
+              "SALARY"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "identities",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "salaries",
+            "labels": [
+              "SALARY"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "tax_cc",
+            "labels": [
+              "PII",
+              "SALARY"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "identities",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "salaries",
+            "labels": [
+              "SALARY"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "tax",
+            "labels": [
+              "PII",
+              "SALARY"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "identities",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "analytics",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "analytics",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ],
+    "candidate_plus_sage": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "analytics",
+        "steps": [
+          {
+            "action": "salaries",
+            "labels": [
+              "SALARY"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "identities",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "analytics",
+            "labels": [
+              "PII",
+              "SALARY"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "salaries",
+            "labels": [
+              "SALARY"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "analytics",
+            "labels": [
+              "SALARY"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "public",
+        "steps": [
+          {
+            "action": "salaries",
+            "labels": [
+              "SALARY"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "public",
+            "labels": [
+              "SALARY"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "salaries",
+            "labels": [
+              "SALARY"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "tax",
+            "labels": [
+              "SALARY"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "tax_cc",
+        "steps": [
+          {
+            "action": "identities",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "salaries",
+            "labels": [
+              "SALARY"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "tax_cc",
+            "labels": [
+              "PII",
+              "SALARY"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "identities",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "salaries",
+            "labels": [
+              "SALARY"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "tax",
+            "labels": [
+              "PII",
+              "SALARY"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "analytics",
+        "steps": [
+          {
+            "action": "identities",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "analytics",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "analytics",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ],
+    "direct_sage": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "analytics",
+        "steps": [
+          {
+            "action": "salaries",
+            "labels": [
+              "SALARY"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "identities",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "analytics",
+            "labels": [
+              "PII",
+              "SALARY"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "salaries",
+            "labels": [
+              "SALARY"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "analytics",
+            "labels": [
+              "SALARY"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "public",
+        "steps": [
+          {
+            "action": "salaries",
+            "labels": [
+              "SALARY"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "public",
+            "labels": [
+              "SALARY"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "salaries",
+            "labels": [
+              "SALARY"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "tax",
+            "labels": [
+              "SALARY"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "tax_cc",
+        "steps": [
+          {
+            "action": "identities",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "salaries",
+            "labels": [
+              "SALARY"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "tax_cc",
+            "labels": [
+              "PII",
+              "SALARY"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "identities",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "salaries",
+            "labels": [
+              "SALARY"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "tax",
+            "labels": [
+              "PII",
+              "SALARY"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "analytics",
+        "steps": [
+          {
+            "action": "identities",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "analytics",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "analytics",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ]
+  }
+}

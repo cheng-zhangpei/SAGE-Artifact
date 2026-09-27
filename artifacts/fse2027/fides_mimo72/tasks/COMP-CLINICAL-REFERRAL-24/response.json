@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\"python\":\"def pilot_policy(trace):\\n    if not trace:\\n        return None\\n    action, label = trace[-1]\\n    params = json.loads(action.arguments)\\n    name = action.name\\n    sub = label.subset if hasattr(label, 'subset') else set()\\n    if name == 'intake/register_material':\\n        return None\\n    if name == 'clinician/review_referral':\\n        return None\\n    if name == 'coordinator/assemble_referral':\\n        src = params.get('source', '')\\n        if src not in {'reviewed', 'referral'}:\\n            raise PolicyViolation('Invalid source for assemble_referral')\\n        return None\\n    if name == 'care/route_referral' or name == 'research/route_referral':\\n        agent = name.split('/')[0]\\n        src = params.get('source', '')\\n        dest = params.get('destination', '')\\n        att = params.get('attachment', '')\\n        rec = params.get('record', '')\\n        dest_map = {}\\n        if agent == 'care':\\n            dest_map = {'local': 'slot:hospital', 'partner': 'slot:scheduler', 'release': 'slot:public'}\\n        elif agent == 'research':\\n            dest_map = {'local': 'slot:hospital', 'partner': 'slot:research', 'release': 'slot:lab'}\\n        allowed_policy = {\\n            'slot:audit': {'DIAGNOSIS', 'AUTH'},\\n            'slot:lab': {'PATIENT', 'AUTH'},\\n            'slot:public': {'PATIENT', 'DIAGNOSIS', 'AUTH'},\\n            'slot:research': {'PATIENT', 'UNVERIFIED'},\\n            'slot:scheduler': {'DIAGNOSIS', 'AUTH'}\\n        }\\n        write_slots = []\\n        if dest in dest_map:\\n            write_slots.append(dest_map[dest])\\n        if rec == 'audit':\\n            write_slots.append('slot:audit')\\n        elif rec == 'public':\\n            write_slots.append('slot:public')\\n        for slot in write_slots:\\n            if slot in allowed_policy:\\n                if not sub.issubset(allowed_policy[slot]):\\n                    raise PolicyViolation(f'Category set {sub} not allowed in {slot}')\\n        return None\\n    raise PolicyViolation(f'Unknown tool {name}')}\"}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 4051,
+    "prompt_tokens": 2832,
+    "total_tokens": 6883,
+    "completion_tokens_details": {
+      "reasoning_tokens": 3504
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "fb4d42fc-798b-4824-a51b-ab5961ea9ed6_c6750f4c65e547b1a6e922d109ce9437"
+}

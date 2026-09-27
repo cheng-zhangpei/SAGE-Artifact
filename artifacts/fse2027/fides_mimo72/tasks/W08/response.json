@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\"python\": \"def pilot_policy(trace):\\n    if not trace:\\n        return None\\n    action, label = trace[-1]\\n    params = json.loads(action.arguments)\\n    restricted_slots = {'issue', 'vendor'}\\n    target_restricted = False\\n    if action.name == 'collector/collect':\\n        target_restricted = False\\n    elif action.name == 'operator/backup':\\n        if params.get('remote'):\\n            target_restricted = True\\n        else:\\n            target_restricted = False\\n    elif action.name == 'operator/upload':\\n        target_restricted = True\\n    elif action.name == 'operator/open_session':\\n        target_restricted = True\\n    else:\\n        target_restricted = False\\n    if target_restricted and 'CREDENTIAL' in label.subset:\\n        raise PolicyViolation('Cannot send CREDENTIAL to restricted slot')\\n    return None\"}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 5419,
+    "prompt_tokens": 915,
+    "total_tokens": 6334,
+    "completion_tokens_details": {
+      "reasoning_tokens": 5218
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "3357f542-3585-4c97-8cc6-9730ef0c44b9_a80a9b67288545ae844cba062c9feb01"
+}

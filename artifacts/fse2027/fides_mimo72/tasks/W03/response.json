@@ -1,0 +1,18 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"def pilot_policy(trace):\\n    if not trace:\\n        return None\\n    last_item = trace[-1]\\n    action, label = last_item\\n    params = json.loads(action.arguments)\\n    subset = label.subset\\n    forbidden_map = {\\n        \\\"slot:external_log\\\": [\\\"CREDENTIAL\\\"],\\n        \\\"slot:production\\\": [\\\"UNVERIFIED\\\"],\\n        \\\"slot:registry\\\": [\\\"CREDENTIAL\\\"]\\n    }\\n    if action.name in [\\\"build/assemble\\\", \\\"ops/assemble\\\"]:\\n        return None\\n    elif action.name == \\\"release/publish\\\":\\n        targets_to_check = set()\\n        target = params.get(\\\"target\\\")\\n        if target in forbidden_map:\\n            targets_to_check.add(target)\\n        if params.get(\\\"audit\\\") == \\\"external\\\":\\n            targets_to_check.add(\\\"slot:external_log\\\")\\n        if any(any(lbl in forbidden_map[tgt] for lbl in subset) for tgt in targets_to_check):\\n            raise PolicyViolation(\\\"Writing restricted label to forbidden slot\\\")\\n        return None\\n    else:\\n        raise PolicyViolation(f\\\"Action {action.name} not permitted\\\")\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 5857,
+    "prompt_tokens": 962,
+    "total_tokens": 6819,
+    "completion_tokens_details": {
+      "reasoning_tokens": 5592
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 960
+    }
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "008627c9-5566-4161-b783-cd6f07c526fe_2f563f7693fb4fefa40b9e656f9407a3"
+}

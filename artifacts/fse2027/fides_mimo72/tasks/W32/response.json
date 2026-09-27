@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"def pilot_policy(trace):\\n    if not trace:\\n        return None\\n    action, label = trace[-1]\\n    if action.name != 'bot/send_summary':\\n        return None\\n    args = json.loads(action.arguments)\\n    target = args.get('target', '')\\n    include_reproducer = args.get('include_reproducer', False)\\n    mirror = args.get('mirror', False)\\n    if target == 'issues' and ('EXPLOIT' in label.subset):\\n        raise PolicyViolation('Cannot send exploit code to public issues')\\n    if mirror and ('EXPLOIT' in label.subset):\\n        raise PolicyViolation('Cannot mirror exploit code to public repository')\\n    return None\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 3635,
+    "prompt_tokens": 879,
+    "total_tokens": 4514,
+    "completion_tokens_details": {
+      "reasoning_tokens": 3470
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "726c0cd6-1e52-499f-8eff-867837c5657d_0eb350d8f3e848029f945aea2ac0e33f"
+}

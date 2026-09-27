@@ -1,0 +1,18 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"def pilot_policy(trace):\\n    action, label = trace[-1]\\n    args = json.loads(action.arguments) if action.arguments else {}\\n    \\n    support_route = {\\n        'local': 'slot:internal',\\n        'partner': 'slot:customer',\\n        'release': 'slot:public'\\n    }\\n    finance_route = {\\n        'local': 'slot:internal',\\n        'partner': 'slot:vendor',\\n        'release': 'slot:control'\\n    }\\n    \\n    if action.name == 'collector/import_record':\\n        return None\\n    elif action.name == 'editor/edit':\\n        return None\\n    elif action.name == 'packer/pack':\\n        return None\\n    elif action.name == 'finance/dispatch' or action.name == 'support/dispatch':\\n        route = args.get('route', '')\\n        mode = args.get('mode', 'standard')\\n        receipt = args.get('receipt', 'local')\\n        source = args.get('source', 'bulletin')\\n        \\n        if source == 'bulletin':\\n            source_has_categories = False\\n        else:\\n            source_has_categories = True\\n        \\n        if action.name == 'finance/dispatch':\\n            primary_slot = finance_route.get(route)\\n            partner_slot = finance_route.get('partner')\\n        else:\\n            primary_slot = support_route.get(route)\\n            partner_slot = support_route.get('partner')\\n        \\n        destination_slots = {primary_slot}\\n        if mode == 'mirror':\\n            destination_slots.add('slot:public')\\n        if mode == 'linked':\\n            destination_slots.add(partner_slot)\\n        if receipt == 'external':\\n            destination_slots.add('slot:audit')\\n        if receipt == 'partner':\\n            if primary_slot != partner_slot:\\n                destination_slots.add(partner_slot)\\n        \\n        categories = label.subset\\n        for slot in destination_slots:\\n            if slot in policy:\\n                allowed = set(policy[slot])\\n                if not categories.issubset(allowed):\\n                    raise PolicyViolation(f\\\"Categories {categories} not allowed in {slot}\\\")\\n        return None\\n    else:\\n        raise PolicyViolation(\\\"Unknown tool action\\\")\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 4734,
+    "prompt_tokens": 2778,
+    "total_tokens": 7512,
+    "completion_tokens_details": {
+      "reasoning_tokens": 4213
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 2240
+    }
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "4b644437-155d-4301-81ad-e2eb06233a73_2dd995d523744404a646cd5cc30dbfd7"
+}

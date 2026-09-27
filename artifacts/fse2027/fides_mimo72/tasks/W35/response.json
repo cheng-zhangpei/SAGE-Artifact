@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\"python\":\"def pilot_policy(trace):\\n    if not trace:\\n        return None\\n    action, label = trace[-1]\\n    if action.name == 'operator/apply':\\n        args = json.loads(action.arguments)\\n        if args.get('target') == 'machine':\\n            if 'UNVERIFIED' in label.subset:\\n                raise PolicyViolation('Prohibiting unverified instructions on machine')\\n    return None\"}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 4014,
+    "prompt_tokens": 864,
+    "total_tokens": 4878,
+    "completion_tokens_details": {
+      "reasoning_tokens": 3916
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "cb68df10-d5f9-4a14-86e9-14ca6342fe57_a2c4c13aac4444ada348571e326c83e0"
+}

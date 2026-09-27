@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"def pilot_policy(trace):\\n    if not trace:\\n        return None\\n    action, label = trace[-1]\\n    action_name = action.name\\n    arguments = json.loads(action.arguments)\\n    if action_name == \\\"support/send\\\":\\n        target = arguments.get(\\\"target\\\", \\\"\\\")\\n        forbidden = set()\\n        if target == \\\"player\\\":\\n            forbidden = {\\\"DETECTION_RULE\\\"}\\n        elif target == \\\"notice\\\":\\n            forbidden = {\\\"PII\\\", \\\"DETECTION_RULE\\\"}\\n        else:\\n            return None\\n        if label.subset.intersection(forbidden):\\n            raise PolicyViolation(f\\\"Sending to {target} with forbidden labels\\\")\\n    return None\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 4438,
+    "prompt_tokens": 849,
+    "total_tokens": 5287,
+    "completion_tokens_details": {
+      "reasoning_tokens": 4275
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "cf21a57c-1e90-48c9-a9fb-dc1396498d21_74693fbda1fe49f09975e87b4a8e911e"
+}

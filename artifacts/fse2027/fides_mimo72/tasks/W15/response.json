@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"def pilot_policy(trace):\\n    # Allowed label sets per location (policy)\\n    allowed = {\\n        'slot:customer': {'RISK'},\\n        'slot:outsourcer': {'PII'}\\n    }\\n    # Reconstruct package labels from all previous collect actions\\n    package = set()\\n    for item in trace[:-1]:\\n        action = item[0]\\n        if action.name == 'onboarding/collect':\\n            package.add('PII')\\n        elif action.name == 'risk_team/collect':\\n            package.add('RISK')\\n    # Current action\\n    last = trace[-1]\\n    action = last[0]\\n    if action.name != 'bank/route':\\n        return None\\n    params = json.loads(action.arguments)\\n    dest = params.get('destination')\\n    arch = params.get('archive')\\n    # Check destination restriction\\n    if dest in allowed:\\n        if not package.issubset(allowed[dest]):\\n            raise PolicyViolation('Destination receives disallowed labels')\\n    # Check archive restriction\\n    if arch in allowed:\\n        if not package.issubset(allowed[arch]):\\n            raise PolicyViolation('Archive receives disallowed labels')\\n    return None\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 4947,
+    "prompt_tokens": 905,
+    "total_tokens": 5852,
+    "completion_tokens_details": {
+      "reasoning_tokens": 4655
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "7d795ab1-025b-43b0-bed1-a206c4ffa612_f9796afb4d5044efb6b6f06bd1144c09"
+}

@@ -1,0 +1,678 @@
+{
+  "id": "W21",
+  "layer": "base",
+  "complexity": "Base",
+  "candidate_load": {
+    "status": "EXECUTABLE",
+    "error": null
+  },
+  "source_sha256": "2d5a34a7ee01aca9acb0ccbed276eda062a39e5482ef43f01ea00dea8ae94d35",
+  "arms": {
+    "candidate": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "rider",
+        "steps": [
+          {
+            "action": "address",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "infer",
+            "labels": [
+              "HEALTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "rider",
+            "labels": [
+              "ADDRESS",
+              "HEALTH"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Rider cannot receive health data"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "address",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "rider",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "review",
+        "steps": [
+          {
+            "action": "address",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "review",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Review cannot contain address or health data"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "address",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "rider",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "rider",
+        "steps": [
+          {
+            "action": "infer",
+            "labels": [
+              "HEALTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "rider",
+            "labels": [
+              "HEALTH"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Rider cannot receive health data"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "infer",
+            "labels": [
+              "HEALTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "kitchen",
+            "labels": [
+              "HEALTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "review",
+        "steps": [
+          {
+            "action": "address",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "infer",
+            "labels": [
+              "HEALTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "review",
+            "labels": [
+              "ADDRESS",
+              "HEALTH"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Review cannot contain address or health data"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "address",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "infer",
+            "labels": [
+              "HEALTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "menu",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ],
+    "candidate_plus_sage": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "rider",
+        "steps": [
+          {
+            "action": "address",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "infer",
+            "labels": [
+              "HEALTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "rider",
+            "labels": [
+              "ADDRESS",
+              "HEALTH"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "address",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "rider",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "review",
+        "steps": [
+          {
+            "action": "address",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "review",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "address",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "rider",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "rider",
+        "steps": [
+          {
+            "action": "infer",
+            "labels": [
+              "HEALTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "rider",
+            "labels": [
+              "HEALTH"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "infer",
+            "labels": [
+              "HEALTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "kitchen",
+            "labels": [
+              "HEALTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "review",
+        "steps": [
+          {
+            "action": "address",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "infer",
+            "labels": [
+              "HEALTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "review",
+            "labels": [
+              "ADDRESS",
+              "HEALTH"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "address",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "infer",
+            "labels": [
+              "HEALTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "menu",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ],
+    "direct_sage": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "rider",
+        "steps": [
+          {
+            "action": "address",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "infer",
+            "labels": [
+              "HEALTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "rider",
+            "labels": [
+              "ADDRESS",
+              "HEALTH"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "address",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "rider",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "review",
+        "steps": [
+          {
+            "action": "address",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "review",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "address",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "rider",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "rider",
+        "steps": [
+          {
+            "action": "infer",
+            "labels": [
+              "HEALTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "rider",
+            "labels": [
+              "HEALTH"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "infer",
+            "labels": [
+              "HEALTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "kitchen",
+            "labels": [
+              "HEALTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "review",
+        "steps": [
+          {
+            "action": "address",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "infer",
+            "labels": [
+              "HEALTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "review",
+            "labels": [
+              "ADDRESS",
+              "HEALTH"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "address",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "infer",
+            "labels": [
+              "HEALTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "menu",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ]
+  }
+}

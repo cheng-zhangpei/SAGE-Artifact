@@ -1,0 +1,603 @@
+{
+  "id": "W27",
+  "layer": "base",
+  "complexity": "Base",
+  "candidate_load": {
+    "status": "EXECUTABLE",
+    "error": null
+  },
+  "source_sha256": "e5604876ce26d5fea54264b261bb27efcabc924282f9b82ff1678c626eba1aac",
+  "arms": {
+    "candidate": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "review",
+        "steps": [
+          {
+            "action": "roadmap",
+            "labels": [
+              "ROADMAP"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "key",
+            "labels": [
+              "PRIVATE_KEY"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "review",
+            "labels": [
+              "PRIVATE_KEY",
+              "ROADMAP"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Package not allowed for target review"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "roadmap",
+            "labels": [
+              "ROADMAP"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "review",
+            "labels": [
+              "ROADMAP"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "mirror",
+        "steps": [
+          {
+            "action": "roadmap",
+            "labels": [
+              "ROADMAP"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "mirror",
+            "labels": [
+              "ROADMAP"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Package not allowed for both reviewer and store"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "roadmap",
+            "labels": [
+              "ROADMAP"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "review",
+            "labels": [
+              "ROADMAP"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "review",
+        "steps": [
+          {
+            "action": "key",
+            "labels": [
+              "PRIVATE_KEY"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "review",
+            "labels": [
+              "PRIVATE_KEY"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Package not allowed for target review"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "key",
+            "labels": [
+              "PRIVATE_KEY"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "signing",
+            "labels": [
+              "PRIVATE_KEY"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "store",
+        "steps": [
+          {
+            "action": "roadmap",
+            "labels": [
+              "ROADMAP"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "store",
+            "labels": [
+              "ROADMAP"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Package not allowed for target store"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "store",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ],
+    "candidate_plus_sage": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "review",
+        "steps": [
+          {
+            "action": "roadmap",
+            "labels": [
+              "ROADMAP"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "key",
+            "labels": [
+              "PRIVATE_KEY"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "review",
+            "labels": [
+              "PRIVATE_KEY",
+              "ROADMAP"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "roadmap",
+            "labels": [
+              "ROADMAP"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "review",
+            "labels": [
+              "ROADMAP"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "mirror",
+        "steps": [
+          {
+            "action": "roadmap",
+            "labels": [
+              "ROADMAP"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "mirror",
+            "labels": [
+              "ROADMAP"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "roadmap",
+            "labels": [
+              "ROADMAP"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "review",
+            "labels": [
+              "ROADMAP"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "review",
+        "steps": [
+          {
+            "action": "key",
+            "labels": [
+              "PRIVATE_KEY"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "review",
+            "labels": [
+              "PRIVATE_KEY"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "key",
+            "labels": [
+              "PRIVATE_KEY"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "signing",
+            "labels": [
+              "PRIVATE_KEY"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "store",
+        "steps": [
+          {
+            "action": "roadmap",
+            "labels": [
+              "ROADMAP"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "store",
+            "labels": [
+              "ROADMAP"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "store",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ],
+    "direct_sage": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "review",
+        "steps": [
+          {
+            "action": "roadmap",
+            "labels": [
+              "ROADMAP"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "key",
+            "labels": [
+              "PRIVATE_KEY"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "review",
+            "labels": [
+              "PRIVATE_KEY",
+              "ROADMAP"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "roadmap",
+            "labels": [
+              "ROADMAP"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "review",
+            "labels": [
+              "ROADMAP"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "mirror",
+        "steps": [
+          {
+            "action": "roadmap",
+            "labels": [
+              "ROADMAP"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "mirror",
+            "labels": [
+              "ROADMAP"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "roadmap",
+            "labels": [
+              "ROADMAP"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "review",
+            "labels": [
+              "ROADMAP"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "review",
+        "steps": [
+          {
+            "action": "key",
+            "labels": [
+              "PRIVATE_KEY"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "review",
+            "labels": [
+              "PRIVATE_KEY"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "key",
+            "labels": [
+              "PRIVATE_KEY"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "signing",
+            "labels": [
+              "PRIVATE_KEY"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "store",
+        "steps": [
+          {
+            "action": "roadmap",
+            "labels": [
+              "ROADMAP"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "store",
+            "labels": [
+              "ROADMAP"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "store",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ]
+  }
+}

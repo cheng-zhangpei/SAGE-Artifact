@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 16384,
+    "prompt_tokens": 843,
+    "total_tokens": 17227,
+    "completion_tokens_details": {
+      "reasoning_tokens": 16383
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "858e1742-2f9d-4d8f-b563-f691e76586e2_6430a589f2db4ce8ad871fec558895b7"
+}

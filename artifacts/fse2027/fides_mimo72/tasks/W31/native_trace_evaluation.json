@@ -1,0 +1,807 @@
+{
+  "id": "W31",
+  "layer": "base",
+  "complexity": "Base",
+  "candidate_load": {
+    "status": "EXECUTABLE",
+    "error": null
+  },
+  "source_sha256": "8b4da502485225a28081cd7444f21ddffaf68b06f8dfdb83fe59ded6bfe174ae",
+  "arms": {
+    "candidate": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "all_a",
+        "steps": [
+          {
+            "action": "prepare_a",
+            "labels": [
+              "CLIENT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "prepare_b",
+            "labels": [
+              "CLIENT_B"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "all_a",
+            "labels": [
+              "CLIENT_A",
+              "CLIENT_B"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: CLIENT_B cannot be sent to slot:out_a"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "own_a",
+        "steps": [
+          {
+            "action": "prepare_a",
+            "labels": [
+              "CLIENT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "prepare_b",
+            "labels": [
+              "CLIENT_B"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "own_a",
+            "labels": [
+              "CLIENT_A"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Invalid destination for mailer"
+            }
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "all_b",
+        "steps": [
+          {
+            "action": "prepare_a",
+            "labels": [
+              "CLIENT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "prepare_b",
+            "labels": [
+              "CLIENT_B"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "all_b",
+            "labels": [
+              "CLIENT_A",
+              "CLIENT_B"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: CLIENT_A cannot be sent to slot:out_b"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "own_b",
+        "steps": [
+          {
+            "action": "prepare_a",
+            "labels": [
+              "CLIENT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "prepare_b",
+            "labels": [
+              "CLIENT_B"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "own_b",
+            "labels": [
+              "CLIENT_B"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Invalid destination for mailer"
+            }
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "all_a",
+        "steps": [
+          {
+            "action": "prepare_a",
+            "labels": [
+              "CLIENT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "prepare_b",
+            "labels": [
+              "CLIENT_B"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "all_a",
+            "labels": [
+              "CLIENT_A",
+              "CLIENT_B"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: CLIENT_B cannot be sent to slot:out_a"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "all_a",
+        "steps": [
+          {
+            "action": "prepare_a",
+            "labels": [
+              "CLIENT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "all_a",
+            "labels": [
+              "CLIENT_A"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Invalid destination for mailer"
+            }
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "all_b",
+        "steps": [
+          {
+            "action": "prepare_a",
+            "labels": [
+              "CLIENT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "prepare_b",
+            "labels": [
+              "CLIENT_B"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "all_b",
+            "labels": [
+              "CLIENT_A",
+              "CLIENT_B"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: CLIENT_A cannot be sent to slot:out_b"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "prepare_a",
+            "labels": [
+              "CLIENT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "prepare_b",
+            "labels": [
+              "CLIENT_B"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "archive",
+            "labels": [
+              "CLIENT_A",
+              "CLIENT_B"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ],
+    "candidate_plus_sage": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "all_a",
+        "steps": [
+          {
+            "action": "prepare_a",
+            "labels": [
+              "CLIENT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "prepare_b",
+            "labels": [
+              "CLIENT_B"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "all_a",
+            "labels": [
+              "CLIENT_A",
+              "CLIENT_B"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "own_a",
+        "steps": [
+          {
+            "action": "prepare_a",
+            "labels": [
+              "CLIENT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "prepare_b",
+            "labels": [
+              "CLIENT_B"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "own_a",
+            "labels": [
+              "CLIENT_A"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Invalid destination for mailer"
+            }
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "all_b",
+        "steps": [
+          {
+            "action": "prepare_a",
+            "labels": [
+              "CLIENT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "prepare_b",
+            "labels": [
+              "CLIENT_B"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "all_b",
+            "labels": [
+              "CLIENT_A",
+              "CLIENT_B"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "own_b",
+        "steps": [
+          {
+            "action": "prepare_a",
+            "labels": [
+              "CLIENT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "prepare_b",
+            "labels": [
+              "CLIENT_B"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "own_b",
+            "labels": [
+              "CLIENT_B"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Invalid destination for mailer"
+            }
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "all_a",
+        "steps": [
+          {
+            "action": "prepare_a",
+            "labels": [
+              "CLIENT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "prepare_b",
+            "labels": [
+              "CLIENT_B"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "all_a",
+            "labels": [
+              "CLIENT_A",
+              "CLIENT_B"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "all_a",
+        "steps": [
+          {
+            "action": "prepare_a",
+            "labels": [
+              "CLIENT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "all_a",
+            "labels": [
+              "CLIENT_A"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Invalid destination for mailer"
+            }
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "all_b",
+        "steps": [
+          {
+            "action": "prepare_a",
+            "labels": [
+              "CLIENT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "prepare_b",
+            "labels": [
+              "CLIENT_B"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "all_b",
+            "labels": [
+              "CLIENT_A",
+              "CLIENT_B"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "prepare_a",
+            "labels": [
+              "CLIENT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "prepare_b",
+            "labels": [
+              "CLIENT_B"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "archive",
+            "labels": [
+              "CLIENT_A",
+              "CLIENT_B"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ],
+    "direct_sage": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "all_a",
+        "steps": [
+          {
+            "action": "prepare_a",
+            "labels": [
+              "CLIENT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "prepare_b",
+            "labels": [
+              "CLIENT_B"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "all_a",
+            "labels": [
+              "CLIENT_A",
+              "CLIENT_B"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "prepare_a",
+            "labels": [
+              "CLIENT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "prepare_b",
+            "labels": [
+              "CLIENT_B"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "own_a",
+            "labels": [
+              "CLIENT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "all_b",
+        "steps": [
+          {
+            "action": "prepare_a",
+            "labels": [
+              "CLIENT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "prepare_b",
+            "labels": [
+              "CLIENT_B"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "all_b",
+            "labels": [
+              "CLIENT_A",
+              "CLIENT_B"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "prepare_a",
+            "labels": [
+              "CLIENT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "prepare_b",
+            "labels": [
+              "CLIENT_B"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "own_b",
+            "labels": [
+              "CLIENT_B"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "all_a",
+        "steps": [
+          {
+            "action": "prepare_a",
+            "labels": [
+              "CLIENT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "prepare_b",
+            "labels": [
+              "CLIENT_B"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "all_a",
+            "labels": [
+              "CLIENT_A",
+              "CLIENT_B"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "prepare_a",
+            "labels": [
+              "CLIENT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "all_a",
+            "labels": [
+              "CLIENT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "all_b",
+        "steps": [
+          {
+            "action": "prepare_a",
+            "labels": [
+              "CLIENT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "prepare_b",
+            "labels": [
+              "CLIENT_B"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "all_b",
+            "labels": [
+              "CLIENT_A",
+              "CLIENT_B"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "prepare_a",
+            "labels": [
+              "CLIENT_A"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "prepare_b",
+            "labels": [
+              "CLIENT_B"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "archive",
+            "labels": [
+              "CLIENT_A",
+              "CLIENT_B"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ]
+  }
+}

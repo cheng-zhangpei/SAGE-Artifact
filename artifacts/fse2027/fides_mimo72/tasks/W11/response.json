@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\"python\": \"def pilot_policy(trace):\\n    # Extract current action and label\\n    action, label = trace[-1]\\n    \\n    # Define forbidden label mappings for slots\\n    forbidden = {\\n        'slot:ticket_a': {'TENANT_B'},\\n        'slot:ticket_b': {'TENANT_A'}\\n    }\\n    \\n    # Determine target slot based on action and parameters\\n    if action.name == 'search/retrieve':\\n        params = json.loads(action.arguments)\\n        tenant = params.get('tenant', '')\\n        if tenant == 'a' or tenant == 'b':\\n            target_slot = 'slot:summary'\\n        else:\\n            raise PolicyViolation('Invalid tenant for search/retrieve')\\n    elif action.name == 'support/respond':\\n        params = json.loads(action.arguments)\\n        tenant = params.get('tenant', '')\\n        fallback = params.get('fallback', False)\\n        if tenant == 'central':\\n            target_slot = 'slot:central'\\n        elif tenant == 'a':\\n            target_slot = 'slot:ticket_a'\\n            if fallback:\\n                # Fallback reads other tenant's index, may introduce forbidden labels\\n                # Must check label against forbidden for ticket_a\\n                pass\\n        elif tenant == 'b':\\n            target_slot = 'slot:ticket_b'\\n        else:\\n            raise PolicyViolation('Invalid tenant for support/respond')\\n    else:\\n        raise PolicyViolation('Unknown action')\\n    \\n    # Check if target slot has forbidden labels\\n    if target_slot in forbidden:\\n        forbidden_labels = forbidden[target_slot]\\n        # Check intersection between label subset and forbidden labels\\n        if not label.subset.isdisjoint(forbidden_labels):\\n            raise PolicyViolation(f'Forbidden label flow to {target_slot}')\\n    \\n    return None\"}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 3084,
+    "prompt_tokens": 983,
+    "total_tokens": 4067,
+    "completion_tokens_details": {
+      "reasoning_tokens": 2671
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "4116e2d1-9a35-4910-aa6e-70584e43338d_3fd7f75cf3ef4007a2794e9eecc9f5fb"
+}

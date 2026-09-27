@@ -1,0 +1,876 @@
+{
+  "id": "W22",
+  "layer": "base",
+  "complexity": "Base",
+  "candidate_load": {
+    "status": "EXECUTABLE",
+    "error": null
+  },
+  "source_sha256": "22cbc05bffa69dbf8715d65b0fd37d08de90ee551207d2dd1f54a83a643df7f5",
+  "arms": {
+    "candidate": [
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "weather",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "simulate",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "control",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "load",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "simulate",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "control",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "load",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "simulate",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "display",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "weather",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "simulate",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "display",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "load",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "weather",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "simulate",
+            "labels": [
+              "CONFIDENTIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "control",
+            "labels": [
+              "CONFIDENTIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "load",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "weather",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "simulate",
+            "labels": [
+              "CONFIDENTIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "internal",
+            "labels": [
+              "CONFIDENTIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "weather",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "load",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "simulate",
+            "labels": [
+              "CONFIDENTIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "display",
+            "labels": [
+              "CONFIDENTIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "weather",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "simulate",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "display",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ],
+    "candidate_plus_sage": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "control",
+        "steps": [
+          {
+            "action": "weather",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "simulate",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "control",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "load",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "simulate",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "control",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "display",
+        "steps": [
+          {
+            "action": "load",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "simulate",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "display",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "weather",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "simulate",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "display",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "control",
+        "steps": [
+          {
+            "action": "load",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "weather",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "simulate",
+            "labels": [
+              "CONFIDENTIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "control",
+            "labels": [
+              "CONFIDENTIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "load",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "weather",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "simulate",
+            "labels": [
+              "CONFIDENTIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "internal",
+            "labels": [
+              "CONFIDENTIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "display",
+        "steps": [
+          {
+            "action": "weather",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "load",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "simulate",
+            "labels": [
+              "CONFIDENTIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "display",
+            "labels": [
+              "CONFIDENTIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "weather",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "simulate",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "display",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ],
+    "direct_sage": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "control",
+        "steps": [
+          {
+            "action": "weather",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "simulate",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "control",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "load",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "simulate",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "control",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "display",
+        "steps": [
+          {
+            "action": "load",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "simulate",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "display",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "weather",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "simulate",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "display",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "control",
+        "steps": [
+          {
+            "action": "load",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "weather",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "simulate",
+            "labels": [
+              "CONFIDENTIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "control",
+            "labels": [
+              "CONFIDENTIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "load",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "weather",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "simulate",
+            "labels": [
+              "CONFIDENTIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "internal",
+            "labels": [
+              "CONFIDENTIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "display",
+        "steps": [
+          {
+            "action": "weather",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "load",
+            "labels": [
+              "CONFIDENTIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "simulate",
+            "labels": [
+              "CONFIDENTIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "display",
+            "labels": [
+              "CONFIDENTIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "weather",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "simulate",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "display",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ]
+  }
+}

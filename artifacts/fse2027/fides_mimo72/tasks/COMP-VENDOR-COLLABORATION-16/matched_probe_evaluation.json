@@ -1,0 +1,7020 @@
+{
+  "id": "COMP-VENDOR-COLLABORATION-16",
+  "layer": "composition",
+  "complexity": "Composition-16",
+  "load_status": "EXECUTABLE",
+  "load_error": null,
+  "normalization": {
+    "rule": "remove_single_stray_terminal_brace",
+    "original_error": "unmatched '}' (<unknown>, line 61)"
+  },
+  "probes": [
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: verify_case should not read or generate categories"
+          }
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": true,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "DENY",
+          "detail": {
+            "type": "PolicyViolation",
+            "detail": "Policy violation: bundle_case should not read or generate categories"
+          }
+        }
+      ],
+      "candidate_raw": "ERROR",
+      "candidate_detail": {
+        "type": "NameError",
+        "detail": "name 'policy' is not defined"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    }
+  ]
+}

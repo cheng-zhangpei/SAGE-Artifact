@@ -1,0 +1,648 @@
+{
+  "id": "W17",
+  "layer": "base",
+  "complexity": "Base",
+  "candidate_load": {
+    "status": "EXECUTABLE",
+    "error": null
+  },
+  "source_sha256": "ee71655340cef1cc67aeff8bca7d33556da4081921e6cc56becbe142d4a441f3",
+  "arms": {
+    "candidate": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "tracking",
+        "steps": [
+          {
+            "action": "label",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "scan",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "tracking",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Cannot send cache to public tracking; may contain ADDRESS."
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "tracking",
+        "steps": [
+          {
+            "action": "scan",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "tracking",
+            "labels": [],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Cannot send cache to public tracking; may contain ADDRESS."
+            }
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "tracking",
+        "steps": [
+          {
+            "action": "label",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "tracking",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Cannot send cache to public tracking; may contain ADDRESS."
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "label",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "carrier",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "tracking",
+        "steps": [
+          {
+            "action": "label",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "scan",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "tracking",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Cannot send cache to public tracking; may contain ADDRESS."
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "label",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "scan",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "direct",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "mirror",
+        "steps": [
+          {
+            "action": "label",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "mirror",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Cannot mirror cache to public tracking; may contain ADDRESS."
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "label",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "carrier",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ],
+    "candidate_plus_sage": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "tracking",
+        "steps": [
+          {
+            "action": "label",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "scan",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "tracking",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "tracking",
+        "steps": [
+          {
+            "action": "scan",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "tracking",
+            "labels": [],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Cannot send cache to public tracking; may contain ADDRESS."
+            }
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "tracking",
+        "steps": [
+          {
+            "action": "label",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "tracking",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "label",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "carrier",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "tracking",
+        "steps": [
+          {
+            "action": "label",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "scan",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "tracking",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "label",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "scan",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "direct",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "mirror",
+        "steps": [
+          {
+            "action": "label",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "mirror",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "label",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "carrier",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ],
+    "direct_sage": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "tracking",
+        "steps": [
+          {
+            "action": "label",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "scan",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "tracking",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "scan",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "tracking",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "tracking",
+        "steps": [
+          {
+            "action": "label",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "tracking",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "label",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "carrier",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "tracking",
+        "steps": [
+          {
+            "action": "label",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "scan",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "tracking",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "label",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "scan",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "direct",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "mirror",
+        "steps": [
+          {
+            "action": "label",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "mirror",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "label",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "carrier",
+            "labels": [
+              "ADDRESS"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ]
+  }
+}

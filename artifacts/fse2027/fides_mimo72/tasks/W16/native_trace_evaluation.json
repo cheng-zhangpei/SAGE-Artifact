@@ -1,0 +1,582 @@
+{
+  "id": "W16",
+  "layer": "base",
+  "complexity": "Base",
+  "candidate_load": {
+    "status": "EXECUTABLE",
+    "error": null
+  },
+  "source_sha256": "3a2d30d613dfd59906dc29c8063aa629cdbc156f2ebd61969e261f86a3e1413a",
+  "arms": {
+    "candidate": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "sms",
+        "steps": [
+          {
+            "action": "contact",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "code",
+            "labels": [
+              "ACCESS_CODE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "sms",
+            "labels": [
+              "ACCESS_CODE",
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: sms allows only ACCESS_CODE"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "sms",
+        "steps": [
+          {
+            "action": "contact",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "sms",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: sms allows only ACCESS_CODE"
+            }
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "contact",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "listing",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "sms",
+        "steps": [
+          {
+            "action": "contact",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "sms",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: sms allows only ACCESS_CODE"
+            }
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "code",
+            "labels": [
+              "ACCESS_CODE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "sms",
+            "labels": [
+              "ACCESS_CODE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "code",
+            "labels": [
+              "ACCESS_CODE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "private",
+            "labels": [
+              "ACCESS_CODE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "issue_sms",
+            "labels": [
+              "ACCESS_CODE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "sms",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ],
+    "candidate_plus_sage": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "sms",
+        "steps": [
+          {
+            "action": "contact",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "code",
+            "labels": [
+              "ACCESS_CODE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "sms",
+            "labels": [
+              "ACCESS_CODE",
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "sms",
+        "steps": [
+          {
+            "action": "contact",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "sms",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: sms allows only ACCESS_CODE"
+            }
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "listing",
+        "steps": [
+          {
+            "action": "contact",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "listing",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "sms",
+        "steps": [
+          {
+            "action": "contact",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "sms",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: sms allows only ACCESS_CODE"
+            }
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "sms",
+        "steps": [
+          {
+            "action": "code",
+            "labels": [
+              "ACCESS_CODE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "sms",
+            "labels": [
+              "ACCESS_CODE"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "code",
+            "labels": [
+              "ACCESS_CODE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "private",
+            "labels": [
+              "ACCESS_CODE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "issue_sms",
+        "steps": [
+          {
+            "action": "issue_sms",
+            "labels": [
+              "ACCESS_CODE"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "sms",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ],
+    "direct_sage": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "sms",
+        "steps": [
+          {
+            "action": "contact",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "code",
+            "labels": [
+              "ACCESS_CODE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "sms",
+            "labels": [
+              "ACCESS_CODE",
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "contact",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "sms",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "listing",
+        "steps": [
+          {
+            "action": "contact",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "listing",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "contact",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "sms",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "sms",
+        "steps": [
+          {
+            "action": "code",
+            "labels": [
+              "ACCESS_CODE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "sms",
+            "labels": [
+              "ACCESS_CODE"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "code",
+            "labels": [
+              "ACCESS_CODE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "private",
+            "labels": [
+              "ACCESS_CODE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "issue_sms",
+        "steps": [
+          {
+            "action": "issue_sms",
+            "labels": [
+              "ACCESS_CODE"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "sms",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ]
+  }
+}

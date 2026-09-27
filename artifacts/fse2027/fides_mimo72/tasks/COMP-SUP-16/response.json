@@ -1,0 +1,18 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"def pilot_policy(trace):\\n    if not trace:\\n        return\\n    action, label = trace[-1]\\n    name = action.name\\n    if name not in ['finance/dispatch', 'support/dispatch']:\\n        return\\n    params = json.loads(action.arguments)\\n    dept = name.split('/')[0]\\n    mode = params.get('mode')\\n    receipt = params.get('receipt')\\n    route = params.get('route')\\n    if dept == 'support':\\n        rmap = {'local': 'slot:intake', 'partner': 'slot:customer', 'release': 'slot:public'}\\n        partner = 'slot:customer'\\n    elif dept == 'finance':\\n        rmap = {'local': 'slot:intake', 'partner': 'slot:vendor', 'release': 'slot:control'}\\n        partner = 'slot:vendor'\\n    else:\\n        raise PolicyViolation('Unknown department')\\n    dests = set()\\n    primary = rmap.get(route)\\n    if primary is None:\\n        raise PolicyViolation('Invalid route')\\n    dests.add(primary)\\n    if mode == 'mirror':\\n        dests.add('slot:public')\\n    if mode == 'linked':\\n        dests.add(partner)\\n    if receipt == 'external':\\n        dests.add('slot:audit')\\n    if receipt == 'partner' and route != 'partner':\\n        dests.add(partner)\\n    for d in dests:\\n        if d in policy and not label.subset.issubset(set(policy[d])):\\n            raise PolicyViolation('Destination ' + d + ' disallows some data categories')\\n    return None\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 5225,
+    "prompt_tokens": 2265,
+    "total_tokens": 7490,
+    "completion_tokens_details": {
+      "reasoning_tokens": 4836
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 1728
+    }
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "c4cc9bda-05be-460b-9e48-e2f83ee72d99_af3d2518f49e4e3a9e1fbc09c9e6b0bd"
+}

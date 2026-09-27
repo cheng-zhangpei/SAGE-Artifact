@@ -1,0 +1,642 @@
+{
+  "id": "W13",
+  "layer": "base",
+  "complexity": "Base",
+  "candidate_load": {
+    "status": "EXECUTABLE",
+    "error": null
+  },
+  "source_sha256": "5787207c67f5fb3c5a69b9de76adce02bdaf95e19eb2ea108a87573a16b677e4",
+  "arms": {
+    "candidate": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "candidate",
+        "steps": [
+          {
+            "action": "contact",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "score",
+            "labels": [
+              "INTERNAL_SCORE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "candidate",
+            "labels": [
+              "INTERNAL_SCORE",
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Data sent to candidate includes disallowed categories"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "candidate",
+        "steps": [
+          {
+            "action": "contact",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "candidate",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Data sent to candidate includes disallowed categories"
+            }
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "contact",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "jobs",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "candidate",
+        "steps": [
+          {
+            "action": "contact",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "candidate",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Data sent to candidate includes disallowed categories"
+            }
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "score",
+            "labels": [
+              "INTERNAL_SCORE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "candidate",
+            "labels": [
+              "INTERNAL_SCORE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "contact_only",
+        "steps": [
+          {
+            "action": "score",
+            "labels": [
+              "INTERNAL_SCORE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "contact_only",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Data sent to candidate includes disallowed categories"
+            }
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "score",
+            "labels": [
+              "INTERNAL_SCORE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "jobs",
+            "labels": [
+              "INTERNAL_SCORE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "score",
+            "labels": [
+              "INTERNAL_SCORE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "archive",
+            "labels": [
+              "INTERNAL_SCORE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ],
+    "candidate_plus_sage": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "candidate",
+        "steps": [
+          {
+            "action": "contact",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "score",
+            "labels": [
+              "INTERNAL_SCORE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "candidate",
+            "labels": [
+              "INTERNAL_SCORE",
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "candidate",
+        "steps": [
+          {
+            "action": "contact",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "candidate",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Data sent to candidate includes disallowed categories"
+            }
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "jobs",
+        "steps": [
+          {
+            "action": "contact",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "jobs",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "candidate",
+        "steps": [
+          {
+            "action": "contact",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "candidate",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Data sent to candidate includes disallowed categories"
+            }
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "candidate",
+        "steps": [
+          {
+            "action": "score",
+            "labels": [
+              "INTERNAL_SCORE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "candidate",
+            "labels": [
+              "INTERNAL_SCORE"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "contact_only",
+        "steps": [
+          {
+            "action": "score",
+            "labels": [
+              "INTERNAL_SCORE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "contact_only",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Data sent to candidate includes disallowed categories"
+            }
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "jobs",
+        "steps": [
+          {
+            "action": "score",
+            "labels": [
+              "INTERNAL_SCORE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "jobs",
+            "labels": [
+              "INTERNAL_SCORE"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "score",
+            "labels": [
+              "INTERNAL_SCORE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "archive",
+            "labels": [
+              "INTERNAL_SCORE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ],
+    "direct_sage": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "candidate",
+        "steps": [
+          {
+            "action": "contact",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "score",
+            "labels": [
+              "INTERNAL_SCORE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "candidate",
+            "labels": [
+              "INTERNAL_SCORE",
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "contact",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "candidate",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "jobs",
+        "steps": [
+          {
+            "action": "contact",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "jobs",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "contact",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "candidate",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "candidate",
+        "steps": [
+          {
+            "action": "score",
+            "labels": [
+              "INTERNAL_SCORE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "candidate",
+            "labels": [
+              "INTERNAL_SCORE"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "score",
+            "labels": [
+              "INTERNAL_SCORE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "contact_only",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "jobs",
+        "steps": [
+          {
+            "action": "score",
+            "labels": [
+              "INTERNAL_SCORE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "jobs",
+            "labels": [
+              "INTERNAL_SCORE"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "score",
+            "labels": [
+              "INTERNAL_SCORE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "archive",
+            "labels": [
+              "INTERNAL_SCORE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ]
+  }
+}

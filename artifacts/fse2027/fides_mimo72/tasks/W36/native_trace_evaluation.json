@@ -1,0 +1,714 @@
+{
+  "id": "W36",
+  "layer": "base",
+  "complexity": "Base",
+  "candidate_load": {
+    "status": "EXECUTABLE",
+    "error": null
+  },
+  "source_sha256": "32d65b2dde7530a22d04ecc697a8fe12f79d33acf2a219067ea095545e84f22e",
+  "arms": {
+    "candidate": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "counsel",
+        "steps": [
+          {
+            "action": "employees",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "valuation",
+            "labels": [
+              "VALUATION"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "token",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "counsel",
+            "labels": [
+              "PII",
+              "TOKEN",
+              "VALUATION"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: TOKEN not allowed in counsel"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "employees",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "valuation",
+            "labels": [
+              "VALUATION"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "counsel",
+            "labels": [
+              "PII",
+              "VALUATION"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "notified",
+        "steps": [
+          {
+            "action": "valuation",
+            "labels": [
+              "VALUATION"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "employees",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "notified",
+            "labels": [
+              "PII",
+              "VALUATION"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: PII or TOKEN not allowed in notifications"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "valuation",
+            "labels": [
+              "VALUATION"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "notified",
+            "labels": [
+              "VALUATION"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "notified",
+        "steps": [
+          {
+            "action": "token",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "notified",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: PII or TOKEN not allowed in notifications"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "token",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "room",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "investors",
+        "steps": [
+          {
+            "action": "valuation",
+            "labels": [
+              "VALUATION"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "investors",
+            "labels": [
+              "VALUATION"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Sensitive data not allowed in investors"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "valuation",
+            "labels": [
+              "VALUATION"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "counsel",
+            "labels": [
+              "VALUATION"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ],
+    "candidate_plus_sage": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "counsel",
+        "steps": [
+          {
+            "action": "employees",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "valuation",
+            "labels": [
+              "VALUATION"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "token",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "counsel",
+            "labels": [
+              "PII",
+              "TOKEN",
+              "VALUATION"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "employees",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "valuation",
+            "labels": [
+              "VALUATION"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "counsel",
+            "labels": [
+              "PII",
+              "VALUATION"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "notified",
+        "steps": [
+          {
+            "action": "valuation",
+            "labels": [
+              "VALUATION"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "employees",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "notified",
+            "labels": [
+              "PII",
+              "VALUATION"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "valuation",
+            "labels": [
+              "VALUATION"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "notified",
+            "labels": [
+              "VALUATION"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "notified",
+        "steps": [
+          {
+            "action": "token",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "notified",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "token",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "room",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "investors",
+        "steps": [
+          {
+            "action": "valuation",
+            "labels": [
+              "VALUATION"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "investors",
+            "labels": [
+              "VALUATION"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "valuation",
+            "labels": [
+              "VALUATION"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "counsel",
+            "labels": [
+              "VALUATION"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ],
+    "direct_sage": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "counsel",
+        "steps": [
+          {
+            "action": "employees",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "valuation",
+            "labels": [
+              "VALUATION"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "token",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "counsel",
+            "labels": [
+              "PII",
+              "TOKEN",
+              "VALUATION"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "employees",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "valuation",
+            "labels": [
+              "VALUATION"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "counsel",
+            "labels": [
+              "PII",
+              "VALUATION"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "notified",
+        "steps": [
+          {
+            "action": "valuation",
+            "labels": [
+              "VALUATION"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "employees",
+            "labels": [
+              "PII"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "notified",
+            "labels": [
+              "PII",
+              "VALUATION"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "valuation",
+            "labels": [
+              "VALUATION"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "notified",
+            "labels": [
+              "VALUATION"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "notified",
+        "steps": [
+          {
+            "action": "token",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "notified",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "token",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "room",
+            "labels": [
+              "TOKEN"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "investors",
+        "steps": [
+          {
+            "action": "valuation",
+            "labels": [
+              "VALUATION"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "investors",
+            "labels": [
+              "VALUATION"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "valuation",
+            "labels": [
+              "VALUATION"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "counsel",
+            "labels": [
+              "VALUATION"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ]
+  }
+}

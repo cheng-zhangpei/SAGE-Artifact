@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"def pilot_policy(trace):\\n    if not trace:\\n        return\\n    current_action, current_label = trace[-1]\\n    action_name = current_action.name\\n    arguments = json.loads(current_action.arguments)\\n    label_subset = current_label.subset\\n\\n    allowed_labels = {\\n        \\\"slot:coordinator\\\": {\\\"CREDENTIAL\\\"},\\n        \\\"slot:status\\\": {\\\"PII\\\", \\\"CREDENTIAL\\\"}\\n    }\\n\\n    if action_name == \\\"investigator/collect\\\":\\n        # Writes to slot:handoff, no restriction\\n        pass\\n    elif action_name == \\\"oncall/stage\\\":\\n        # Writes to slot:staged, no restriction\\n        pass\\n    elif action_name == \\\"notifier/announce\\\":\\n        target = arguments.get(\\\"target\\\")\\n        if target == \\\"status\\\":\\n            if not label_subset.issubset(allowed_labels[\\\"slot:status\\\"]):\\n                raise PolicyViolation(\\\"Labels not allowed in status page\\\")\\n        elif target == \\\"coordinator\\\":\\n            if not label_subset.issubset(allowed_labels[\\\"slot:coordinator\\\"]):\\n                raise PolicyViolation(\\\"Labels not allowed in coordinator\\\")\\n        elif target == \\\"response_room\\\":\\n            # No restriction for slot:room\\n            pass\\n        else:\\n            # Unknown target, assume allowed\\n            pass\\n    else:\\n        # Unknown action, but should not occur in this workflow\\n        pass\\n\\n    return None\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 6865,
+    "prompt_tokens": 1058,
+    "total_tokens": 7923,
+    "completion_tokens_details": {
+      "reasoning_tokens": 6531
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "6820d619-1100-4cc5-9fdf-67f216584f71_3509c61b7a2b481688027d6a20383dd3"
+}

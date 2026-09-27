@@ -1,0 +1,18 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"def pilot_policy(trace):\\n    import json\\n    last_item = trace[-1]\\n    action, label = last_item\\n    action_name = action.name\\n    params = json.loads(action.arguments)\\n    label_set = label.subset\\n    \\n    # Policy dict for allowed categories per location\\n    policy_dict = {\\n        \\\"slot:audit\\\": {\\\"FINANCIAL\\\", \\\"AUTH\\\"},\\n        \\\"slot:bank\\\": {\\\"EMPLOYEE\\\", \\\"AUTH\\\"},\\n        \\\"slot:processor\\\": {\\\"AUTH\\\", \\\"UNVERIFIED\\\"},\\n        \\\"slot:public\\\": {\\\"EMPLOYEE\\\", \\\"FINANCIAL\\\", \\\"AUTH\\\"},\\n        \\\"slot:regulator\\\": {\\\"UNVERIFIED\\\"}\\n    }\\n    \\n    # Check import_expense\\n    if action_name == \\\"intake/import_expense\\\":\\n        cat = params[\\\"category\\\"]\\n        # Label must be exactly the declared category\\n        if label_set != {cat}:\\n            raise PolicyViolation(\\\"import_expense label mismatch\\\")\\n        # Destination slot:claim is unrestricted per policy, allow\\n        return None\\n    \\n    # Check review_claim\\n    elif action_name == \\\"reviewer/review_claim\\\":\\n        # source slot:claim and destination slot:approved both unrestricted\\n        return None\\n    \\n    # Check assemble_packet\\n    elif action_name == \\\"clerk/assemble_packet\\\":\\n        # source and destination both unrestricted\\n        return None\\n    \\n    # Check submit_claim for claims or treasury\\n    elif action_name in [\\\"claims/submit_claim\\\", \\\"treasury/submit_claim\\\"]:\\n        team = \\\"claims\\\" if action_name == \\\"claims/submit_claim\\\" else \\\"treasury\\\"\\n        route = params[\\\"route\\\"]\\n        copy = params[\\\"copy\\\"]\\n        source = params[\\\"source\\\"]\\n        include = params[\\\"include\\\"]\\n        \\n        # Determine main destination from route and team\\n        if team == \\\"claims\\\":\\n            route_map = {\\\"local\\\": \\\"slot:backoffice\\\", \\\"counterparty\\\": \\\"slot:processor\\\", \\\"release\\\": \\\"slot:public\\\"}\\n        else:  # treasury\\n            route_map = {\\\"local\\\": \\\"slot:backoffice\\\", \\\"counterparty\\\": \\\"slot:bank\\\", \\\"release\\\": \\\"slot:regulator\\\"}\\n        main_dest = route_map.get(route)\\n        destinations = {main_dest} if main_dest else set()\\n        \\n        # Add extra destinations based on copy\\n        if copy == \\\"audit\\\":\\n            destinations.add(\\\"slot:audit\\\")\\n        if copy == \\\"public\\\":\\n            destinations.add(\\\"slot:public\\\")\\n        if copy == \\\"counterparty\\\":\\n            # team-specific counterparty slot\\n            destinations.add(\\\"slot:processor\\\" if team == \\\"claims\\\" else \\\"slot:bank\\\")\\n        \\n        # Check label subset against each destination's allowed categories\\n        for dest in destinations:\\n            if dest in policy_dict:\\n                if not label_set.issubset(policy_dict[dest]):\\n                    raise PolicyViolation(\\\"submit_claim label exceeds destination policy\\\")\\n        return None\\n    \\n    # Unknown action\\n    raise PolicyViolation(\\\"unrecognized action\\\")\\n}\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 6240,
+    "prompt_tokens": 4417,
+    "total_tokens": 10657,
+    "completion_tokens_details": {
+      "reasoning_tokens": 5518
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 3264
+    }
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "e92eb2ec-ce72-4405-b3de-5e5e6c9063e8_82da36581a6a4fe3af4b73c958752366"
+}

@@ -1,0 +1,2966 @@
+{
+  "id": "COMP-SOFTWARE-DELIVERY-08",
+  "layer": "composition",
+  "complexity": "Composition-08",
+  "load_status": "EXECUTABLE",
+  "load_error": null,
+  "normalization": null,
+  "probes": [
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_review",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_review",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_review",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_review",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_review",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_review",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_review",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_review",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_review",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_review",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Deliver build writes forbidden categories to restricted slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_review",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Deliver build writes forbidden categories to restricted slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_review",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_review",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Deliver build writes forbidden categories to restricted slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_review",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Deliver build writes forbidden categories to restricted slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_review",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_review",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Deliver build writes forbidden categories to restricted slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Deliver build writes forbidden categories to restricted slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Deliver build writes forbidden categories to restricted slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_SOURCE",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_review",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_SOURCE",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_review",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Deliver build writes forbidden categories to restricted slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_SOURCE",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_review",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Deliver build writes forbidden categories to restricted slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_SOURCE",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_review",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_SOURCE",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_review",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Deliver build writes forbidden categories to restricted slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_SOURCE",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_review",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_SOURCE",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_review",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_SOURCE",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_review",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_SOURCE",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_SOURCE",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Deliver build writes forbidden categories to restricted slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_SOURCE",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Deliver build writes forbidden categories to restricted slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_SOURCE",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_SOURCE",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Deliver build writes forbidden categories to restricted slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_SOURCE",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_SOURCE",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_SOURCE",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_CREDENTIAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_review",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_CREDENTIAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_review",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Deliver build writes forbidden categories to restricted slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_CREDENTIAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_review",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Deliver build writes forbidden categories to restricted slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_CREDENTIAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_review",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_CREDENTIAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_review",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Deliver build writes forbidden categories to restricted slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_CREDENTIAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_review",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Deliver build writes forbidden categories to restricted slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_CREDENTIAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_review",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_CREDENTIAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_review",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_CREDENTIAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_CREDENTIAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Deliver build writes forbidden categories to restricted slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_CREDENTIAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Deliver build writes forbidden categories to restricted slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_CREDENTIAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_CREDENTIAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Deliver build writes forbidden categories to restricted slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_CREDENTIAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_CREDENTIAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_CREDENTIAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_review",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_review",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_review",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_review",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_review",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_review",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_review",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Deliver build writes forbidden categories to restricted slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_review",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Deliver build writes forbidden categories to restricted slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Deliver build writes forbidden categories to restricted slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Deliver build writes forbidden categories to restricted slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_import_SOURCE",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_import_CREDENTIAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_import_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_review",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_import_SOURCE",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_import_CREDENTIAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_import_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_review",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Deliver build writes forbidden categories to restricted slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_import_SOURCE",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_import_CREDENTIAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_import_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_review",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Deliver build writes forbidden categories to restricted slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_import_SOURCE",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_import_CREDENTIAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_import_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_review",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_import_SOURCE",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_import_CREDENTIAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_import_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_review",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Deliver build writes forbidden categories to restricted slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_import_SOURCE",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_import_CREDENTIAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_import_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_review",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Deliver build writes forbidden categories to restricted slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_import_SOURCE",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_import_CREDENTIAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_import_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_review",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Deliver build writes forbidden categories to restricted slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_import_SOURCE",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_import_CREDENTIAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_import_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_review",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Deliver build writes forbidden categories to restricted slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_import_SOURCE",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_import_CREDENTIAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_import_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_import_SOURCE",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_import_CREDENTIAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_import_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Deliver build writes forbidden categories to restricted slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_import_SOURCE",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_import_CREDENTIAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_import_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Deliver build writes forbidden categories to restricted slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_import_SOURCE",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_import_CREDENTIAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_import_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_import_SOURCE",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_import_CREDENTIAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_import_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Deliver build writes forbidden categories to restricted slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_import_SOURCE",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_import_CREDENTIAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_import_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_import_SOURCE",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_import_CREDENTIAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_import_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Deliver build writes forbidden categories to restricted slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "SOFT_import_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_import_SOURCE",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_import_CREDENTIAL",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_import_UNVERIFIED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "SOFT_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Deliver build writes forbidden categories to restricted slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    }
+  ]
+}

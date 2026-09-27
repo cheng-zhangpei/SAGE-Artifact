@@ -1,0 +1,18 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"def pilot_policy(trace):\\n    # Extract current action and label\\n    action, label = trace[-1]\\n    name = action.name\\n    args = json.loads(action.arguments)\\n    \\n    # Policy mapping slots to allowed categories\\n    slot_policy = {\\n        'slot:assessor': {'PRICING', 'ACCESS'},\\n        'slot:escrow': {'ACCESS', 'UNSCREENED'},\\n        'slot:oversight': {'UNSCREENED'},\\n        'slot:public': {'CUSTOMER', 'PRICING', 'ACCESS'},\\n        'slot:supplier': {'CUSTOMER', 'ACCESS'}\\n    }\\n    \\n    # Team-specific recipient mappings for transfer_case\\n    team_recipient_map = {\\n        'procurement': {\\n            'local': 'slot:operations',\\n            'partner': 'slot:supplier',\\n            'oversight': 'slot:public'\\n        },\\n        'compliance': {\\n            'local': 'slot:operations',\\n            'partner': 'slot:assessor',\\n            'oversight': 'slot:oversight'\\n        }\\n    }\\n    \\n    # Handle transfer_case tool calls\\n    if name in ['procurement/transfer_case', 'compliance/transfer_case']:\\n        team = name.split('/')[0]\\n        recipient = args.get('recipient')\\n        replica = args.get('replica')\\n        \\n        # Determine destination slots\\n        dest_slots = set()\\n        # Add primary recipient slot if mapped\\n        if team in team_recipient_map and recipient in team_recipient_map[team]:\\n            dest_slots.add(team_recipient_map[team][recipient])\\n        \\n        # Add replica-based slots\\n        if replica == 'escrow':\\n            dest_slots.add('slot:escrow')\\n        elif replica == 'public':\\n            dest_slots.add('slot:public')\\n        elif replica == 'partner':\\n            if team == 'procurement':\\n                dest_slots.add('slot:supplier')\\n            elif team == 'compliance':\\n                dest_slots.add('slot:assessor')\\n        \\n        # Check each destination slot against policy\\n        for slot in dest_slots:\\n            if slot in slot_policy:\\n                allowed = slot_policy[slot]\\n                # If any category in label.subset is not allowed in slot, reject\\n                if not label.subset.issubset(allowed):\\n                    raise PolicyViolation(f\\\"Data categories {label.subset} not allowed in {slot}\\\")\\n        return None\\n    \\n    # For all other tools, allow unconditionally\\n    return None\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 5328,
+    "prompt_tokens": 3449,
+    "total_tokens": 8777,
+    "completion_tokens_details": {
+      "reasoning_tokens": 4727
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 3072
+    }
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "0aa6e866-7971-422c-9a9e-ccf445bc1e2a_71f39332d3f2402887d7ae6437e49449"
+}

@@ -1,0 +1,774 @@
+{
+  "id": "W28",
+  "layer": "base",
+  "complexity": "Base",
+  "candidate_load": {
+    "status": "EXECUTABLE",
+    "error": null
+  },
+  "source_sha256": "2eda76170a9f6d00c8c93eeebfe5cb398d82988abfa2e05f0e12d003a04ab96d",
+  "arms": {
+    "candidate": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "production",
+        "steps": [
+          {
+            "action": "suggest",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "ticket",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "production",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Unverified suggestions cannot be used in production control"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "standard",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "ticket",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "production",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "production",
+        "steps": [
+          {
+            "action": "suggest",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "ticket",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "production",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Unverified suggestions cannot be used in production control"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "suggest",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "ticket",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "simulation",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "production",
+        "steps": [
+          {
+            "action": "suggest",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "standard",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "ticket",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "production",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Unverified suggestions cannot be used in production control"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "standard",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "ticket",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "production",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "production",
+        "steps": [
+          {
+            "action": "suggest",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "ticket",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "production",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Unverified suggestions cannot be used in production control"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "suggest",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "ticket",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "direct",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ],
+    "candidate_plus_sage": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "production",
+        "steps": [
+          {
+            "action": "suggest",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "ticket",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "production",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "standard",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "ticket",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "production",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "production",
+        "steps": [
+          {
+            "action": "suggest",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "ticket",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "production",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "suggest",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "ticket",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "simulation",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "production",
+        "steps": [
+          {
+            "action": "suggest",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "standard",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "ticket",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "production",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "standard",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "ticket",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "production",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "production",
+        "steps": [
+          {
+            "action": "suggest",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "ticket",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "production",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "suggest",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "ticket",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "direct",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ],
+    "direct_sage": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "production",
+        "steps": [
+          {
+            "action": "suggest",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "ticket",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "production",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "standard",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "ticket",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "production",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "production",
+        "steps": [
+          {
+            "action": "suggest",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "ticket",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "production",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "suggest",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "ticket",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "simulation",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "production",
+        "steps": [
+          {
+            "action": "suggest",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "standard",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "ticket",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "production",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "standard",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "ticket",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "production",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "production",
+        "steps": [
+          {
+            "action": "suggest",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "ticket",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "production",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "suggest",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "ticket",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "direct",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ]
+  }
+}

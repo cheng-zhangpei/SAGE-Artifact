@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"def pilot_policy(trace):\\n    if not trace:\\n        return None\\n    action, label = trace[-1]\\n    if action.name == 'publisher/publish':\\n        target = action.params.get('target')\\n        if target in ('website', 'newsletter') and 'CONFIDENTIAL' in label.subset:\\n            raise PolicyViolation('CONFIDENTIAL label cannot be written to ' + target)\\n    return None\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 5230,
+    "prompt_tokens": 939,
+    "total_tokens": 6169,
+    "completion_tokens_details": {
+      "reasoning_tokens": 5128
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "9a6aa51d-b53e-4af9-ba6b-3c63b7669867_971e6c61c9ea4ab99e4305e818ab9862"
+}

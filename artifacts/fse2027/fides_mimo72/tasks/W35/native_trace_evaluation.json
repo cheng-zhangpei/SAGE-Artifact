@@ -1,0 +1,774 @@
+{
+  "id": "W35",
+  "layer": "base",
+  "complexity": "Base",
+  "candidate_load": {
+    "status": "EXECUTABLE",
+    "error": null
+  },
+  "source_sha256": "d9bebe85360d39e15843558259c1a2d5925c953d693e728c4d11c3a5322af6e4",
+  "arms": {
+    "candidate": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "machine",
+        "steps": [
+          {
+            "action": "forum",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "stage",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "machine",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Prohibiting unverified instructions on machine"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "manual",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "stage",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "machine",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "machine",
+        "steps": [
+          {
+            "action": "forum",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "manual",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "stage",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "machine",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Prohibiting unverified instructions on machine"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "manual",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "stage",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "machine",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "machine",
+        "steps": [
+          {
+            "action": "forum",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "stage",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "machine",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Prohibiting unverified instructions on machine"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "forum",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "stage",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "rehearsal",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "machine",
+        "steps": [
+          {
+            "action": "forum",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "stage",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "machine",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Prohibiting unverified instructions on machine"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "forum",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "stage",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "direct",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ],
+    "candidate_plus_sage": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "machine",
+        "steps": [
+          {
+            "action": "forum",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "stage",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "machine",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "manual",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "stage",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "machine",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "machine",
+        "steps": [
+          {
+            "action": "forum",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "manual",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "stage",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "machine",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "manual",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "stage",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "machine",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "machine",
+        "steps": [
+          {
+            "action": "forum",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "stage",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "machine",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "forum",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "stage",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "rehearsal",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "machine",
+        "steps": [
+          {
+            "action": "forum",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "stage",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "machine",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "forum",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "stage",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "direct",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ],
+    "direct_sage": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "machine",
+        "steps": [
+          {
+            "action": "forum",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "stage",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "machine",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "manual",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "stage",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "machine",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "machine",
+        "steps": [
+          {
+            "action": "forum",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "manual",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "stage",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "machine",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "manual",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "stage",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "machine",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "machine",
+        "steps": [
+          {
+            "action": "forum",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "stage",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "machine",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "forum",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "stage",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "rehearsal",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "machine",
+        "steps": [
+          {
+            "action": "forum",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "stage",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "machine",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "forum",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "stage",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "direct",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ]
+  }
+}

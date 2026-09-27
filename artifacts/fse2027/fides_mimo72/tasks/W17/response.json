@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"def pilot_policy(trace):\\n    # Extract the last action\\n    last_action, last_label = trace[-1]\\n    action_name = last_action.name\\n    action_args = json.loads(last_action.arguments)\\n    \\n    # Warehouse append: always allowed (adds label with ADDRESS to cache, but cache can hold it)\\n    if action_name == 'warehouse/append':\\n        return None\\n    \\n    # Vehicle append: always allowed (adds scan without ADDRESS)\\n    elif action_name == 'vehicle/append':\\n        return None\\n    \\n    # Notifier publish actions\\n    elif action_name == 'notifier/publish':\\n        source = action_args.get('source')\\n        target = action_args.get('target')\\n        mirror = action_args.get('mirror')\\n        \\n        # Case: publishing only scan to tracking (no cache) → allowed\\n        if source == 'scan' and target == 'tracking':\\n            return None\\n        \\n        # Case: publishing cache to carrier only → allowed\\n        if source == 'cache' and target == 'carrier' and mirror is None:\\n            return None\\n        \\n        # Case: publishing cache to tracking → forbidden (cache may contain ADDRESS)\\n        if source == 'cache' and target == 'tracking':\\n            raise PolicyViolation('Cannot send cache to public tracking; may contain ADDRESS.')\\n        \\n        # Case: mirror action → if includes tracking, forbidden\\n        if mirror == 'tracking' and source == 'cache':\\n            raise PolicyViolation('Cannot mirror cache to public tracking; may contain ADDRESS.')\\n        \\n        # Any other combination not covered → reject by default\\n        raise PolicyViolation('Unrecognized notifier/publish action.')\\n    \\n    # Any other action → reject\\n    else:\\n        raise PolicyViolation('Unknown action: ' + action_name)\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 4020,
+    "prompt_tokens": 898,
+    "total_tokens": 4918,
+    "completion_tokens_details": {
+      "reasoning_tokens": 3602
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "b92322f4-23e1-4d81-a383-e723b84fed00_824bba4f781d43dc8a63c60c4440deaf"
+}

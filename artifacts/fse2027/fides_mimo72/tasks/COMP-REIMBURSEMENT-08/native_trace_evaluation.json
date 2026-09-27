@@ -1,0 +1,3861 @@
+{
+  "id": "COMP-REIMBURSEMENT-08",
+  "layer": "composition",
+  "complexity": "Composition-08",
+  "candidate_load": {
+    "status": "INVALID",
+    "error": {
+      "type": "ValueError",
+      "detail": "Only from typing import Set is allowed"
+    }
+  },
+  "source_sha256": "58145b3135b7c45c93e5cc1b43ed621b32a5c860162a6ccf98fea5181156556b",
+  "arms": {
+    "candidate": [],
+    "candidate_plus_sage": [],
+    "direct_sage": [
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "expense_review",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_assemble",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_000",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "expense_review",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_assemble",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_001",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "expense_review",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_assemble",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_002",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "expense_review",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_assemble",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_003",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "expense_review",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_assemble",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_004",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "expense_review",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_assemble",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_005",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "expense_review",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_assemble",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_006",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "expense_review",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_assemble",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_007",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "expense_fastpack",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_000",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "expense_fastpack",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_001",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "expense_fastpack",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_002",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "expense_fastpack",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_003",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "expense_fastpack",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_004",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "expense_fastpack",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_005",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "expense_fastpack",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_006",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "expense_fastpack",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_007",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_000",
+        "steps": [
+          {
+            "action": "expense_import_EMPLOYEE",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_review",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_assemble",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_000",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "expense_import_EMPLOYEE",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_review",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_assemble",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_001",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_002",
+        "steps": [
+          {
+            "action": "expense_import_EMPLOYEE",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_review",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_assemble",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_002",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_003",
+        "steps": [
+          {
+            "action": "expense_import_EMPLOYEE",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_review",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_assemble",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_003",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "expense_import_EMPLOYEE",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_review",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_assemble",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_004",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_005",
+        "steps": [
+          {
+            "action": "expense_import_EMPLOYEE",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_review",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_assemble",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_005",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "expense_import_EMPLOYEE",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_review",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_assemble",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_006",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_007",
+        "steps": [
+          {
+            "action": "expense_import_EMPLOYEE",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_review",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_assemble",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_007",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_000",
+        "steps": [
+          {
+            "action": "expense_import_EMPLOYEE",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_fastpack",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_000",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "expense_import_EMPLOYEE",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_fastpack",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_001",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_002",
+        "steps": [
+          {
+            "action": "expense_import_EMPLOYEE",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_fastpack",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_002",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_003",
+        "steps": [
+          {
+            "action": "expense_import_EMPLOYEE",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_fastpack",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_003",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "expense_import_EMPLOYEE",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_fastpack",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_004",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_005",
+        "steps": [
+          {
+            "action": "expense_import_EMPLOYEE",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_fastpack",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_005",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "expense_import_EMPLOYEE",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_fastpack",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_006",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_007",
+        "steps": [
+          {
+            "action": "expense_import_EMPLOYEE",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_fastpack",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_007",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "expense_import_FINANCIAL",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_review",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_assemble",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_000",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "expense_import_FINANCIAL",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_review",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_assemble",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_001",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_002",
+        "steps": [
+          {
+            "action": "expense_import_FINANCIAL",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_review",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_assemble",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_002",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_003",
+        "steps": [
+          {
+            "action": "expense_import_FINANCIAL",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_review",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_assemble",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_003",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_004",
+        "steps": [
+          {
+            "action": "expense_import_FINANCIAL",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_review",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_assemble",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_004",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_005",
+        "steps": [
+          {
+            "action": "expense_import_FINANCIAL",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_review",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_assemble",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_005",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "expense_import_FINANCIAL",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_review",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_assemble",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_006",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "expense_import_FINANCIAL",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_review",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_assemble",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_007",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "expense_import_FINANCIAL",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_fastpack",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_000",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "expense_import_FINANCIAL",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_fastpack",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_001",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_002",
+        "steps": [
+          {
+            "action": "expense_import_FINANCIAL",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_fastpack",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_002",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_003",
+        "steps": [
+          {
+            "action": "expense_import_FINANCIAL",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_fastpack",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_003",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_004",
+        "steps": [
+          {
+            "action": "expense_import_FINANCIAL",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_fastpack",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_004",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_005",
+        "steps": [
+          {
+            "action": "expense_import_FINANCIAL",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_fastpack",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_005",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "expense_import_FINANCIAL",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_fastpack",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_006",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "expense_import_FINANCIAL",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_fastpack",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_007",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_000",
+        "steps": [
+          {
+            "action": "expense_import_AUTH",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_review",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_assemble",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_000",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_001",
+        "steps": [
+          {
+            "action": "expense_import_AUTH",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_review",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_assemble",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_001",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_002",
+        "steps": [
+          {
+            "action": "expense_import_AUTH",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_review",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_assemble",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_002",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_003",
+        "steps": [
+          {
+            "action": "expense_import_AUTH",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_review",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_assemble",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_003",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_004",
+        "steps": [
+          {
+            "action": "expense_import_AUTH",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_review",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_assemble",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_004",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_005",
+        "steps": [
+          {
+            "action": "expense_import_AUTH",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_review",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_assemble",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_005",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_006",
+        "steps": [
+          {
+            "action": "expense_import_AUTH",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_review",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_assemble",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_006",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_007",
+        "steps": [
+          {
+            "action": "expense_import_AUTH",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_review",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_assemble",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_007",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_000",
+        "steps": [
+          {
+            "action": "expense_import_AUTH",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_fastpack",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_000",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_001",
+        "steps": [
+          {
+            "action": "expense_import_AUTH",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_fastpack",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_001",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_002",
+        "steps": [
+          {
+            "action": "expense_import_AUTH",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_fastpack",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_002",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_003",
+        "steps": [
+          {
+            "action": "expense_import_AUTH",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_fastpack",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_003",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_004",
+        "steps": [
+          {
+            "action": "expense_import_AUTH",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_fastpack",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_004",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_005",
+        "steps": [
+          {
+            "action": "expense_import_AUTH",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_fastpack",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_005",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_006",
+        "steps": [
+          {
+            "action": "expense_import_AUTH",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_fastpack",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_006",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_007",
+        "steps": [
+          {
+            "action": "expense_import_AUTH",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_fastpack",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_007",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_000",
+        "steps": [
+          {
+            "action": "expense_import_UNVERIFIED",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_review",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_assemble",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_000",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_001",
+        "steps": [
+          {
+            "action": "expense_import_UNVERIFIED",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_review",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_assemble",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_001",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_002",
+        "steps": [
+          {
+            "action": "expense_import_UNVERIFIED",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_review",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_assemble",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_002",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_003",
+        "steps": [
+          {
+            "action": "expense_import_UNVERIFIED",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_review",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_assemble",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_003",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_004",
+        "steps": [
+          {
+            "action": "expense_import_UNVERIFIED",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_review",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_assemble",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_004",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "expense_import_UNVERIFIED",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_review",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_assemble",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_005",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_006",
+        "steps": [
+          {
+            "action": "expense_import_UNVERIFIED",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_review",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_assemble",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_006",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "expense_import_UNVERIFIED",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_review",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_assemble",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_007",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_000",
+        "steps": [
+          {
+            "action": "expense_import_UNVERIFIED",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_fastpack",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_000",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_001",
+        "steps": [
+          {
+            "action": "expense_import_UNVERIFIED",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_fastpack",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_001",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_002",
+        "steps": [
+          {
+            "action": "expense_import_UNVERIFIED",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_fastpack",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_002",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_003",
+        "steps": [
+          {
+            "action": "expense_import_UNVERIFIED",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_fastpack",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_003",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_004",
+        "steps": [
+          {
+            "action": "expense_import_UNVERIFIED",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_fastpack",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_004",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "expense_import_UNVERIFIED",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_fastpack",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_005",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_006",
+        "steps": [
+          {
+            "action": "expense_import_UNVERIFIED",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_fastpack",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_006",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "expense_import_UNVERIFIED",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_fastpack",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_007",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_000",
+        "steps": [
+          {
+            "action": "expense_import_EMPLOYEE",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_import_FINANCIAL",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_import_AUTH",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_import_UNVERIFIED",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_review",
+            "labels": [
+              "AUTH",
+              "EMPLOYEE",
+              "FINANCIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_assemble",
+            "labels": [
+              "AUTH",
+              "EMPLOYEE",
+              "FINANCIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_000",
+            "labels": [
+              "AUTH",
+              "EMPLOYEE",
+              "FINANCIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_001",
+        "steps": [
+          {
+            "action": "expense_import_EMPLOYEE",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_import_FINANCIAL",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_import_AUTH",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_import_UNVERIFIED",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_review",
+            "labels": [
+              "AUTH",
+              "EMPLOYEE",
+              "FINANCIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_assemble",
+            "labels": [
+              "AUTH",
+              "EMPLOYEE",
+              "FINANCIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_001",
+            "labels": [
+              "AUTH",
+              "EMPLOYEE",
+              "FINANCIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_002",
+        "steps": [
+          {
+            "action": "expense_import_EMPLOYEE",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_import_FINANCIAL",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_import_AUTH",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_import_UNVERIFIED",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_review",
+            "labels": [
+              "AUTH",
+              "EMPLOYEE",
+              "FINANCIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_assemble",
+            "labels": [
+              "AUTH",
+              "EMPLOYEE",
+              "FINANCIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_002",
+            "labels": [
+              "AUTH",
+              "EMPLOYEE",
+              "FINANCIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_003",
+        "steps": [
+          {
+            "action": "expense_import_EMPLOYEE",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_import_FINANCIAL",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_import_AUTH",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_import_UNVERIFIED",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_review",
+            "labels": [
+              "AUTH",
+              "EMPLOYEE",
+              "FINANCIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_assemble",
+            "labels": [
+              "AUTH",
+              "EMPLOYEE",
+              "FINANCIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_003",
+            "labels": [
+              "AUTH",
+              "EMPLOYEE",
+              "FINANCIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_004",
+        "steps": [
+          {
+            "action": "expense_import_EMPLOYEE",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_import_FINANCIAL",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_import_AUTH",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_import_UNVERIFIED",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_review",
+            "labels": [
+              "AUTH",
+              "EMPLOYEE",
+              "FINANCIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_assemble",
+            "labels": [
+              "AUTH",
+              "EMPLOYEE",
+              "FINANCIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_004",
+            "labels": [
+              "AUTH",
+              "EMPLOYEE",
+              "FINANCIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_005",
+        "steps": [
+          {
+            "action": "expense_import_EMPLOYEE",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_import_FINANCIAL",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_import_AUTH",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_import_UNVERIFIED",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_review",
+            "labels": [
+              "AUTH",
+              "EMPLOYEE",
+              "FINANCIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_assemble",
+            "labels": [
+              "AUTH",
+              "EMPLOYEE",
+              "FINANCIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_005",
+            "labels": [
+              "AUTH",
+              "EMPLOYEE",
+              "FINANCIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_006",
+        "steps": [
+          {
+            "action": "expense_import_EMPLOYEE",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_import_FINANCIAL",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_import_AUTH",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_import_UNVERIFIED",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_review",
+            "labels": [
+              "AUTH",
+              "EMPLOYEE",
+              "FINANCIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_assemble",
+            "labels": [
+              "AUTH",
+              "EMPLOYEE",
+              "FINANCIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_006",
+            "labels": [
+              "AUTH",
+              "EMPLOYEE",
+              "FINANCIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_007",
+        "steps": [
+          {
+            "action": "expense_import_EMPLOYEE",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_import_FINANCIAL",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_import_AUTH",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_import_UNVERIFIED",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_review",
+            "labels": [
+              "AUTH",
+              "EMPLOYEE",
+              "FINANCIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_assemble",
+            "labels": [
+              "AUTH",
+              "EMPLOYEE",
+              "FINANCIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_007",
+            "labels": [
+              "AUTH",
+              "EMPLOYEE",
+              "FINANCIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_000",
+        "steps": [
+          {
+            "action": "expense_import_EMPLOYEE",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_import_FINANCIAL",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_import_AUTH",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_import_UNVERIFIED",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_fastpack",
+            "labels": [
+              "AUTH",
+              "EMPLOYEE",
+              "FINANCIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_000",
+            "labels": [
+              "AUTH",
+              "EMPLOYEE",
+              "FINANCIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_001",
+        "steps": [
+          {
+            "action": "expense_import_EMPLOYEE",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_import_FINANCIAL",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_import_AUTH",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_import_UNVERIFIED",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_fastpack",
+            "labels": [
+              "AUTH",
+              "EMPLOYEE",
+              "FINANCIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_001",
+            "labels": [
+              "AUTH",
+              "EMPLOYEE",
+              "FINANCIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_002",
+        "steps": [
+          {
+            "action": "expense_import_EMPLOYEE",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_import_FINANCIAL",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_import_AUTH",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_import_UNVERIFIED",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_fastpack",
+            "labels": [
+              "AUTH",
+              "EMPLOYEE",
+              "FINANCIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_002",
+            "labels": [
+              "AUTH",
+              "EMPLOYEE",
+              "FINANCIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_003",
+        "steps": [
+          {
+            "action": "expense_import_EMPLOYEE",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_import_FINANCIAL",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_import_AUTH",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_import_UNVERIFIED",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_fastpack",
+            "labels": [
+              "AUTH",
+              "EMPLOYEE",
+              "FINANCIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_003",
+            "labels": [
+              "AUTH",
+              "EMPLOYEE",
+              "FINANCIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_004",
+        "steps": [
+          {
+            "action": "expense_import_EMPLOYEE",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_import_FINANCIAL",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_import_AUTH",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_import_UNVERIFIED",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_fastpack",
+            "labels": [
+              "AUTH",
+              "EMPLOYEE",
+              "FINANCIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_004",
+            "labels": [
+              "AUTH",
+              "EMPLOYEE",
+              "FINANCIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_005",
+        "steps": [
+          {
+            "action": "expense_import_EMPLOYEE",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_import_FINANCIAL",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_import_AUTH",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_import_UNVERIFIED",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_fastpack",
+            "labels": [
+              "AUTH",
+              "EMPLOYEE",
+              "FINANCIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_005",
+            "labels": [
+              "AUTH",
+              "EMPLOYEE",
+              "FINANCIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_006",
+        "steps": [
+          {
+            "action": "expense_import_EMPLOYEE",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_import_FINANCIAL",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_import_AUTH",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_import_UNVERIFIED",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_fastpack",
+            "labels": [
+              "AUTH",
+              "EMPLOYEE",
+              "FINANCIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_006",
+            "labels": [
+              "AUTH",
+              "EMPLOYEE",
+              "FINANCIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "expense_submit_007",
+        "steps": [
+          {
+            "action": "expense_import_EMPLOYEE",
+            "labels": [
+              "EMPLOYEE"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_import_FINANCIAL",
+            "labels": [
+              "FINANCIAL"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_import_AUTH",
+            "labels": [
+              "AUTH"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_import_UNVERIFIED",
+            "labels": [
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_fastpack",
+            "labels": [
+              "AUTH",
+              "EMPLOYEE",
+              "FINANCIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "expense_submit_007",
+            "labels": [
+              "AUTH",
+              "EMPLOYEE",
+              "FINANCIAL",
+              "UNVERIFIED"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      }
+    ]
+  }
+}

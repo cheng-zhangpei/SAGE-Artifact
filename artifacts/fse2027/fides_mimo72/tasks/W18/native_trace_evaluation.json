@@ -1,0 +1,642 @@
+{
+  "id": "W18",
+  "layer": "base",
+  "complexity": "Base",
+  "candidate_load": {
+    "status": "EXECUTABLE",
+    "error": null
+  },
+  "source_sha256": "91b7a4ff9fd2d9f877e966d5cd8aa826a0f11b22f2339de26b8788b2e92f4557",
+  "arms": {
+    "candidate": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "web",
+        "steps": [
+          {
+            "action": "collect",
+            "labels": [
+              "EMBARGO"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "preview",
+            "labels": [
+              "EMBARGO"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "queue",
+            "labels": [
+              "EMBARGO"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "web",
+            "labels": [
+              "EMBARGO"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: EMBARGO is not allowed on web or mail"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "preview",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "queue",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "web",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "mail",
+        "steps": [
+          {
+            "action": "collect",
+            "labels": [
+              "EMBARGO"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "mail",
+            "labels": [
+              "EMBARGO"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: EMBARGO is not allowed on web or mail"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "collect",
+            "labels": [
+              "EMBARGO"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "room",
+            "labels": [
+              "EMBARGO"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "web",
+        "steps": [
+          {
+            "action": "collect",
+            "labels": [
+              "EMBARGO"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "alternate",
+            "labels": [
+              "EMBARGO"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "web",
+            "labels": [
+              "EMBARGO"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: EMBARGO is not allowed on web or mail"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "alternate",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "web",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "mail",
+        "steps": [
+          {
+            "action": "collect",
+            "labels": [
+              "EMBARGO"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "mail",
+            "labels": [
+              "EMBARGO"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: EMBARGO is not allowed on web or mail"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "mail",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ],
+    "candidate_plus_sage": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "web",
+        "steps": [
+          {
+            "action": "collect",
+            "labels": [
+              "EMBARGO"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "preview",
+            "labels": [
+              "EMBARGO"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "queue",
+            "labels": [
+              "EMBARGO"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "web",
+            "labels": [
+              "EMBARGO"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "preview",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "queue",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "web",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "mail",
+        "steps": [
+          {
+            "action": "collect",
+            "labels": [
+              "EMBARGO"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "mail",
+            "labels": [
+              "EMBARGO"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "collect",
+            "labels": [
+              "EMBARGO"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "room",
+            "labels": [
+              "EMBARGO"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "web",
+        "steps": [
+          {
+            "action": "collect",
+            "labels": [
+              "EMBARGO"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "alternate",
+            "labels": [
+              "EMBARGO"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "web",
+            "labels": [
+              "EMBARGO"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "alternate",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "web",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "mail",
+        "steps": [
+          {
+            "action": "collect",
+            "labels": [
+              "EMBARGO"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "mail",
+            "labels": [
+              "EMBARGO"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "mail",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ],
+    "direct_sage": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "web",
+        "steps": [
+          {
+            "action": "collect",
+            "labels": [
+              "EMBARGO"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "preview",
+            "labels": [
+              "EMBARGO"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "queue",
+            "labels": [
+              "EMBARGO"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "web",
+            "labels": [
+              "EMBARGO"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "preview",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "queue",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "web",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "mail",
+        "steps": [
+          {
+            "action": "collect",
+            "labels": [
+              "EMBARGO"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "mail",
+            "labels": [
+              "EMBARGO"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "collect",
+            "labels": [
+              "EMBARGO"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "room",
+            "labels": [
+              "EMBARGO"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "web",
+        "steps": [
+          {
+            "action": "collect",
+            "labels": [
+              "EMBARGO"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "alternate",
+            "labels": [
+              "EMBARGO"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "web",
+            "labels": [
+              "EMBARGO"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "alternate",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "web",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "mail",
+        "steps": [
+          {
+            "action": "collect",
+            "labels": [
+              "EMBARGO"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "mail",
+            "labels": [
+              "EMBARGO"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "mail",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ]
+  }
+}

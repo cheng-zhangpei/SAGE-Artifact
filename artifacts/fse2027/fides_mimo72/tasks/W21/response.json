@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\"python\": \"def pilot_policy(trace):\\n    action, label = trace[-1]\\n    if action.name == 'dispatcher/send':\\n        args = json.loads(action.arguments)\\n        target = args.get('target')\\n        if target == 'rider':\\n            if not label.subset.issubset({'ADDRESS'}):\\n                raise PolicyViolation('Rider cannot receive health data')\\n        elif target == 'review':\\n            if not label.subset.isdisjoint({'ADDRESS', 'HEALTH'}):\\n                raise PolicyViolation('Review cannot contain address or health data')\\n    return None\"}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 2821,
+    "prompt_tokens": 849,
+    "total_tokens": 3670,
+    "completion_tokens_details": {
+      "reasoning_tokens": 2684
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "ee8fa623-496e-499f-9d1a-e1c456ab01d4_cddc10e4b84546219a306977da6ac72a"
+}

@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"def pilot_policy(trace):\\n    if not trace:\\n        return None\\n    action, label = trace[-1]\\n    if action.name != 'storage/backup':\\n        return None\\n    args = json.loads(action.arguments)\\n    route = args.get('route')\\n    manifest = args.get('manifest', False)\\n    vendor_writing = False\\n    if route == 'vendor':\\n        vendor_writing = True\\n    elif manifest is True and route == 'primary':\\n        vendor_writing = True\\n    if vendor_writing:\\n        pii_present = any(trace[i][0].name == 'database/dump' for i in range(len(trace) - 1))\\n        if pii_present:\\n            raise PolicyViolation('Writing PII to vendor bucket is prohibited.')\\n    return None\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 6942,
+    "prompt_tokens": 859,
+    "total_tokens": 7801,
+    "completion_tokens_details": {
+      "reasoning_tokens": 6755
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "b3ebe1c8-8df6-4470-8c97-0a665cbfc516_d7308447f62140d0ad266fec750ea9d0"
+}

@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\"python\": \"def pilot_policy(trace):\\n    if not trace:\\n        return None\\n    action, label = trace[-1]\\n    name = action.name\\n    args = json.loads(action.arguments)\\n    categories = label.subset\\n    allowed = {\\n        \\\"slot:assessor\\\": {\\\"PRICING\\\", \\\"ACCESS\\\"},\\n        \\\"slot:escrow\\\": {\\\"ACCESS\\\", \\\"UNSCREENED\\\"},\\n        \\\"slot:oversight\\\": {\\\"UNSCREENED\\\"},\\n        \\\"slot:public\\\": {\\\"CUSTOMER\\\", \\\"PRICING\\\", \\\"ACCESS\\\"},\\n        \\\"slot:supplier\\\": {\\\"CUSTOMER\\\", \\\"ACCESS\\\"}\\n    }\\n    if name in [\\\"procurement/transfer_case\\\", \\\"compliance/transfer_case\\\"]:\\n        team = \\\"procurement\\\" if \\\"procurement\\\" in name else \\\"compliance\\\"\\n        recipient = args.get(\\\"recipient\\\")\\n        replica = args.get(\\\"replica\\\")\\n        recipient_slot = None\\n        if team == \\\"procurement\\\":\\n            if recipient == \\\"local\\\":\\n                recipient_slot = \\\"slot:operations\\\"\\n            elif recipient == \\\"partner\\\":\\n                recipient_slot = \\\"slot:supplier\\\"\\n            elif recipient == \\\"oversight\\\":\\n                recipient_slot = \\\"slot:public\\\"\\n        else:\\n            if recipient == \\\"local\\\":\\n                recipient_slot = \\\"slot:operations\\\"\\n            elif recipient == \\\"partner\\\":\\n                recipient_slot = \\\"slot:assessor\\\"\\n            elif recipient == \\\"oversight\\\":\\n                recipient_slot = \\\"slot:oversight\\\"\\n        destinations = set()\\n        if recipient_slot:\\n            destinations.add(recipient_slot)\\n        if replica == \\\"escrow\\\":\\n            destinations.add(\\\"slot:escrow\\\")\\n        elif replica == \\\"public\\\":\\n            destinations.add(\\\"slot:public\\\")\\n        elif replica == \\\"partner\\\":\\n            if team == \\\"procurement\\\":\\n                destinations.add(\\\"slot:supplier\\\")\\n            else:\\n                destinations.add(\\\"slot:assessor\\\")\\n        for slot in destinations:\\n            if slot in allowed and not categories.issubset(allowed[slot]):\\n                raise PolicyViolation(f\\\"Categories {categories} not allowed in {slot}\\\")\\n        return None\\n    else:\\n        return None\"}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 5296,
+    "prompt_tokens": 4594,
+    "total_tokens": 9890,
+    "completion_tokens_details": {
+      "reasoning_tokens": 4782
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "ba48639f-f993-4627-aa1b-eed615668270_da896cedf542414aa1bd72f30cb51d04"
+}

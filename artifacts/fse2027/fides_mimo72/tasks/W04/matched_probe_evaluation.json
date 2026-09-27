@@ -1,0 +1,153 @@
+{
+  "id": "W04",
+  "layer": "base",
+  "complexity": "Base",
+  "load_status": "INVALID",
+  "load_error": {
+    "type": "JSONDecodeError",
+    "detail": "Expecting value: line 1 column 1 (char 0)"
+  },
+  "normalization": null,
+  "probes": [
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [],
+      "candidate_raw": "INVALID",
+      "candidate_detail": {
+        "type": "JSONDecodeError",
+        "detail": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [],
+      "candidate_raw": "INVALID",
+      "candidate_detail": {
+        "type": "JSONDecodeError",
+        "detail": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [],
+      "candidate_raw": "INVALID",
+      "candidate_detail": {
+        "type": "JSONDecodeError",
+        "detail": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [],
+      "candidate_raw": "INVALID",
+      "candidate_detail": {
+        "type": "JSONDecodeError",
+        "detail": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [],
+      "candidate_raw": "INVALID",
+      "candidate_detail": {
+        "type": "JSONDecodeError",
+        "detail": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [],
+      "candidate_raw": "INVALID",
+      "candidate_detail": {
+        "type": "JSONDecodeError",
+        "detail": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [],
+      "candidate_raw": "INVALID",
+      "candidate_detail": {
+        "type": "JSONDecodeError",
+        "detail": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [],
+      "candidate_raw": "INVALID",
+      "candidate_detail": {
+        "type": "JSONDecodeError",
+        "detail": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "UNKNOWN",
+      "candidate_plus_sage": "UNKNOWN",
+      "direct_sage": "ALLOW"
+    }
+  ]
+}

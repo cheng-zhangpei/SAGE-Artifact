@@ -1,0 +1,459 @@
+{
+  "id": "W36",
+  "layer": "base",
+  "public": {
+    "description": "# 并购尽调资料与通知副本\n\n尽调包包含员工身份、估值模型和数据室访问令牌。数据室允许三者，法律顾问不允许令牌，公开投资者网站不允许三者，外部通知平台不允许身份和令牌。email_copy会复制完整包，不是状态通知。\n\n初始资料：slot:employees 含 PII；slot:valuation 含 VALUATION。其他位置初始不含受限标签。\n本任务所有工具只读取各自文字描述列出的数据，不隐式读取调用者上下文。各位置保留此前内容，写入为追加；读取和全部副写入在同一次原子调用内完成。没有未说明的净化、认证或解密。工具可重复调用，调用顺序不限。请为整个工作流而不是某一条示例路径起草 guard；既要阻断禁止流，也要保留未违反策略的调用。未列在 B(v) 中的位置不禁止任何标签。",
+    "labels": {
+      "PII": "员工身份",
+      "VALUATION": "非公开估值",
+      "TOKEN": "数据室访问令牌"
+    },
+    "tools": [
+      {
+        "agent": "hr",
+        "tool": "collect",
+        "params": {
+          "part": "employees"
+        },
+        "description": "将员工身份追加尽调包。"
+      },
+      {
+        "agent": "finance",
+        "tool": "collect",
+        "params": {
+          "part": "valuation"
+        },
+        "description": "将估值追加尽调包。"
+      },
+      {
+        "agent": "room_admin",
+        "tool": "create_access",
+        "params": {},
+        "description": "新建令牌追加尽调包。"
+      },
+      {
+        "agent": "coordinator",
+        "tool": "deliver",
+        "params": {
+          "target": "counsel",
+          "email_copy": false
+        },
+        "description": "将完整包交法律顾问。"
+      },
+      {
+        "agent": "coordinator",
+        "tool": "deliver",
+        "params": {
+          "target": "room",
+          "email_copy": false
+        },
+        "description": "将完整包存授权数据室。"
+      },
+      {
+        "agent": "coordinator",
+        "tool": "deliver",
+        "params": {
+          "target": "room",
+          "email_copy": true
+        },
+        "description": "将完整包写数据室并复制通知平台。"
+      },
+      {
+        "agent": "coordinator",
+        "tool": "deliver",
+        "params": {
+          "target": "investors",
+          "email_copy": false
+        },
+        "description": "将完整包公开投资者网站。"
+      }
+    ],
+    "policy": {
+      "slot:counsel": [
+        "TOKEN"
+      ],
+      "slot:investors": [
+        "PII",
+        "VALUATION",
+        "TOKEN"
+      ],
+      "slot:notifications": [
+        "PII",
+        "TOKEN"
+      ]
+    }
+  },
+  "spec": {
+    "agents": [
+      "coordinator",
+      "finance",
+      "hr",
+      "room_admin"
+    ],
+    "tools": [
+      "collect",
+      "create_access",
+      "deliver"
+    ],
+    "labels": [
+      "PII",
+      "TOKEN",
+      "VALUATION"
+    ],
+    "locations": [
+      "slot:counsel",
+      "slot:employees",
+      "slot:investors",
+      "slot:notifications",
+      "slot:packet",
+      "slot:room",
+      "slot:valuation"
+    ],
+    "actions": [
+      {
+        "agent": "hr",
+        "tool": "collect",
+        "params": {
+          "part": "employees"
+        },
+        "reads": [
+          "slot:employees"
+        ],
+        "writes": [
+          "slot:packet"
+        ],
+        "gen": []
+      },
+      {
+        "agent": "finance",
+        "tool": "collect",
+        "params": {
+          "part": "valuation"
+        },
+        "reads": [
+          "slot:valuation"
+        ],
+        "writes": [
+          "slot:packet"
+        ],
+        "gen": []
+      },
+      {
+        "agent": "room_admin",
+        "tool": "create_access",
+        "params": {},
+        "reads": [],
+        "writes": [
+          "slot:packet"
+        ],
+        "gen": [
+          "TOKEN"
+        ]
+      },
+      {
+        "agent": "coordinator",
+        "tool": "deliver",
+        "params": {
+          "target": "counsel",
+          "email_copy": false
+        },
+        "reads": [
+          "slot:packet"
+        ],
+        "writes": [
+          "slot:counsel"
+        ],
+        "gen": []
+      },
+      {
+        "agent": "coordinator",
+        "tool": "deliver",
+        "params": {
+          "target": "room",
+          "email_copy": false
+        },
+        "reads": [
+          "slot:packet"
+        ],
+        "writes": [
+          "slot:room"
+        ],
+        "gen": []
+      },
+      {
+        "agent": "coordinator",
+        "tool": "deliver",
+        "params": {
+          "target": "room",
+          "email_copy": true
+        },
+        "reads": [
+          "slot:packet"
+        ],
+        "writes": [
+          "slot:room",
+          "slot:notifications"
+        ],
+        "gen": []
+      },
+      {
+        "agent": "coordinator",
+        "tool": "deliver",
+        "params": {
+          "target": "investors",
+          "email_copy": false
+        },
+        "reads": [
+          "slot:packet"
+        ],
+        "writes": [
+          "slot:investors"
+        ],
+        "gen": []
+      }
+    ],
+    "policy": {
+      "slot:counsel": [
+        "TOKEN"
+      ],
+      "slot:investors": [
+        "PII",
+        "VALUATION",
+        "TOKEN"
+      ],
+      "slot:notifications": [
+        "PII",
+        "TOKEN"
+      ]
+    },
+    "initial_state": {
+      "slot:employees": [
+        "PII"
+      ],
+      "slot:valuation": [
+        "VALUATION"
+      ]
+    },
+    "constraints": []
+  },
+  "case": {
+    "id": "W36",
+    "title": "并购尽调资料与通知副本",
+    "mechanism": "multi_label_multi_target_notification",
+    "story": "尽调包包含员工身份、估值模型和数据室访问令牌。数据室允许三者，法律顾问不允许令牌，公开投资者网站不允许三者，外部通知平台不允许身份和令牌。email_copy会复制完整包，不是状态通知。",
+    "labels": {
+      "PII": "员工身份",
+      "VALUATION": "非公开估值",
+      "TOKEN": "数据室访问令牌"
+    },
+    "initial_state": {
+      "slot:employees": [
+        "PII"
+      ],
+      "slot:valuation": [
+        "VALUATION"
+      ]
+    },
+    "policy": {
+      "slot:counsel": [
+        "TOKEN"
+      ],
+      "slot:investors": [
+        "PII",
+        "VALUATION",
+        "TOKEN"
+      ],
+      "slot:notifications": [
+        "PII",
+        "TOKEN"
+      ]
+    },
+    "actions": [
+      {
+        "id": "employees",
+        "agent": "hr",
+        "tool": "collect",
+        "params": {
+          "part": "employees"
+        },
+        "reads": [
+          "slot:employees"
+        ],
+        "writes": [
+          "slot:packet"
+        ],
+        "gen": [],
+        "description": "将员工身份追加尽调包。"
+      },
+      {
+        "id": "valuation",
+        "agent": "finance",
+        "tool": "collect",
+        "params": {
+          "part": "valuation"
+        },
+        "reads": [
+          "slot:valuation"
+        ],
+        "writes": [
+          "slot:packet"
+        ],
+        "gen": [],
+        "description": "将估值追加尽调包。"
+      },
+      {
+        "id": "token",
+        "agent": "room_admin",
+        "tool": "create_access",
+        "params": {},
+        "reads": [],
+        "writes": [
+          "slot:packet"
+        ],
+        "gen": [
+          "TOKEN"
+        ],
+        "description": "新建令牌追加尽调包。"
+      },
+      {
+        "id": "counsel",
+        "agent": "coordinator",
+        "tool": "deliver",
+        "params": {
+          "target": "counsel",
+          "email_copy": false
+        },
+        "reads": [
+          "slot:packet"
+        ],
+        "writes": [
+          "slot:counsel"
+        ],
+        "gen": [],
+        "description": "将完整包交法律顾问。"
+      },
+      {
+        "id": "room",
+        "agent": "coordinator",
+        "tool": "deliver",
+        "params": {
+          "target": "room",
+          "email_copy": false
+        },
+        "reads": [
+          "slot:packet"
+        ],
+        "writes": [
+          "slot:room"
+        ],
+        "gen": [],
+        "description": "将完整包存授权数据室。"
+      },
+      {
+        "id": "notified",
+        "agent": "coordinator",
+        "tool": "deliver",
+        "params": {
+          "target": "room",
+          "email_copy": true
+        },
+        "reads": [
+          "slot:packet"
+        ],
+        "writes": [
+          "slot:room",
+          "slot:notifications"
+        ],
+        "gen": [],
+        "description": "将完整包写数据室并复制通知平台。"
+      },
+      {
+        "id": "investors",
+        "agent": "coordinator",
+        "tool": "deliver",
+        "params": {
+          "target": "investors",
+          "email_copy": false
+        },
+        "reads": [
+          "slot:packet"
+        ],
+        "writes": [
+          "slot:investors"
+        ],
+        "gen": [],
+        "description": "将完整包公开投资者网站。"
+      }
+    ],
+    "pairs": [
+      {
+        "id": "P1",
+        "difference": "顾问包是否含令牌",
+        "danger": {
+          "prefix": [
+            "employees",
+            "valuation",
+            "token"
+          ],
+          "target": "counsel"
+        },
+        "benign": {
+          "prefix": [
+            "employees",
+            "valuation"
+          ],
+          "target": "counsel"
+        }
+      },
+      {
+        "id": "P2",
+        "difference": "通知是否含员工身份",
+        "danger": {
+          "prefix": [
+            "valuation",
+            "employees"
+          ],
+          "target": "notified"
+        },
+        "benign": {
+          "prefix": [
+            "valuation"
+          ],
+          "target": "notified"
+        }
+      },
+      {
+        "id": "P3",
+        "difference": "令牌是否复制通知平台",
+        "danger": {
+          "prefix": [
+            "token"
+          ],
+          "target": "notified"
+        },
+        "benign": {
+          "prefix": [
+            "token"
+          ],
+          "target": "room"
+        }
+      },
+      {
+        "id": "P4",
+        "difference": "估值进入公开站还是顾问",
+        "danger": {
+          "prefix": [
+            "valuation"
+          ],
+          "target": "investors"
+        },
+        "benign": {
+          "prefix": [
+            "valuation"
+          ],
+          "target": "counsel"
+        }
+      }
+    ]
+  }
+}

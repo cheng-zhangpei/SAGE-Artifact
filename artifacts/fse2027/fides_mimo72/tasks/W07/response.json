@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"def pilot_policy(trace):\\n    # Initialize state to track labels in slot:case\\n    case_labels = set()\\n    \\n    for (action, _) in trace:\\n        name = action.name\\n        \\n        if name == 'refunds/prepare':\\n            # Writes PII to slot:case\\n            case_labels.add('PII')\\n        \\n        elif name == 'refunds/issue_token':\\n            # Writes TOKEN to slot:case\\n            case_labels.add('TOKEN')\\n        \\n        elif name == 'merchant_relations/update':\\n            # Copies slot:case to slot:merchant; forbidden: PII, TOKEN\\n            if not case_labels.isdisjoint({'PII', 'TOKEN'}):\\n                raise PolicyViolation('merchant_relations/update: case contains PII or TOKEN')\\n        \\n        elif name == 'customer_care/update':\\n            # Copies slot:case to slot:internal; no restrictions\\n            pass\\n        \\n        elif name == 'refunds/notify':\\n            # Copies slot:case to slot:audit; forbidden: TOKEN\\n            if 'TOKEN' in case_labels:\\n                raise PolicyViolation('refunds/notify: case contains TOKEN')\\n        \\n        elif name == 'refunds/issue_receipt':\\n            # Writes TOKEN directly to slot:merchant; always forbidden\\n            raise PolicyViolation('refunds/issue_receipt: writes TOKEN to merchant')\\n        \\n        else:\\n            # Unknown tool; per problem statement, only listed tools exist\\n            raise PolicyViolation(f'Unknown tool: {name}')\\n    \\n    return None\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 8447,
+    "prompt_tokens": 934,
+    "total_tokens": 9381,
+    "completion_tokens_details": {
+      "reasoning_tokens": 8081
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "0fca086a-a8c6-45db-9dc6-d0006e8e5d00_19fc856eab14407fac4c921109db9559"
+}

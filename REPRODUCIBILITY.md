@@ -53,6 +53,21 @@ checkout additionally requires Git, Java 17, and network access to the upstream
 repository. The paper does not treat this experiment as a comparison against
 author-supplied AgentSpec policies.
 
+## FIDES policy-interface reproduction
+
+This arm reproduces the policy-evaluation logic published in the FIDES tutorial:
+labelled `ToolCall` traces are checked before effects, and rejection raises
+`PolicyViolation`. The shared benchmark supplies trusted event labels so that
+the study isolates policy authoring and SAGE completion; it does not reproduce
+the full FIDES planner or AgentDojo integration.
+
+Recompute the matched probe summary and unified table from frozen responses:
+
+```bash
+python -m experiments.fides_native_pilot.matched_probe_evaluate --output artifacts/fse2027/fides_mimo72
+python experiments/cross_runtime_matched_audit.py
+```
+
 ## Physical workflows
 
 ```bash

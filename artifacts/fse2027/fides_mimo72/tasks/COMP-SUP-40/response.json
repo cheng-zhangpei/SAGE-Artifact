@@ -1,0 +1,18 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"def pilot_policy(trace):\\n    action, label = trace[-1]\\n    if not action.name.endswith('/dispatch'):\\n        return None\\n    params = json.loads(action.arguments)\\n    agent = 'support' if action.name.startswith('support') else 'finance'\\n    if agent == 'support':\\n        route_map = {'local': 'slot:intake', 'partner': 'slot:customer', 'release': 'slot:public'}\\n        partner_slot = 'slot:customer'\\n    else:\\n        route_map = {'local': 'slot:intake', 'partner': 'slot:vendor', 'release': 'slot:control'}\\n        partner_slot = 'slot:vendor'\\n    destinations = set()\\n    primary = route_map[params['route']]\\n    destinations.add(primary)\\n    mode = params['mode']\\n    receipt = params['receipt']\\n    if mode == 'mirror':\\n        destinations.add('slot:public')\\n    elif mode == 'linked':\\n        destinations.add(partner_slot)\\n    if receipt == 'external':\\n        destinations.add('slot:audit')\\n    elif receipt == 'partner' and params['route'] != 'partner':\\n        destinations.add(partner_slot)\\n    restricted = destinations.intersection(policy.keys())\\n    violating = {dest for dest in restricted if not label.subset.issubset(set(policy[dest]))}\\n    if violating:\\n        raise PolicyViolation(f'Unauthorized categories for destinations: {violating}')\\n    return None\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 6519,
+    "prompt_tokens": 3810,
+    "total_tokens": 10329,
+    "completion_tokens_details": {
+      "reasoning_tokens": 6175
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 3264
+    }
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "5b0f909d-1285-4819-818c-80aa67fa405a_f8f80eaf25ea41eb8bad86603c3554b0"
+}

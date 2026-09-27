@@ -1,0 +1,18 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"def pilot_policy(trace):\\n    if not trace:\\n        raise PolicyViolation(\\\"Trace is empty\\\")\\n    action, label = trace[-1]\\n    action_name = action.name\\n    arguments = json.loads(action.arguments)\\n    categories = label.subset\\n    policy = {\\n        \\\"slot:archive\\\": [\\\"UNVERIFIED\\\"],\\n        \\\"slot:counsel\\\": [\\\"UNVERIFIED\\\"],\\n        \\\"slot:public\\\": [\\\"PERSONAL\\\", \\\"EMBARGOED\\\", \\\"LICENSED\\\"],\\n        \\\"slot:syndicate\\\": [\\\"PERSONAL\\\", \\\"EMBARGOED\\\"],\\n        \\\"slot:wire\\\": [\\\"PERSONAL\\\", \\\"LICENSED\\\"]\\n    }\\n    if action_name == \\\"research/collect_material\\\":\\n        return None\\n    elif action_name == \\\"editor/edit_draft\\\":\\n        return None\\n    elif action_name == \\\"publisher/review_release\\\":\\n        return None\\n    elif action_name == \\\"legal/publish\\\" or action_name == \\\"editorial/publish\\\":\\n        if action_name.startswith(\\\"legal\\\"):\\n            team = \\\"legal\\\"\\n        else:\\n            team = \\\"editorial\\\"\\n        audience = arguments.get(\\\"audience\\\")\\n        record = arguments.get(\\\"record\\\")\\n        if team == \\\"editorial\\\":\\n            if audience == \\\"staff\\\":\\n                primary_slot = \\\"slot:newsroom\\\"\\n            elif audience == \\\"partner\\\":\\n                primary_slot = \\\"slot:syndicate\\\"\\n            elif audience == \\\"release\\\":\\n                primary_slot = \\\"slot:public\\\"\\n            else:\\n                raise PolicyViolation(\\\"Invalid audience for editorial\\\")\\n        elif team == \\\"legal\\\":\\n            if audience == \\\"staff\\\":\\n                primary_slot = \\\"slot:newsroom\\\"\\n            elif audience == \\\"partner\\\":\\n                primary_slot = \\\"slot:counsel\\\"\\n            elif audience == \\\"release\\\":\\n                primary_slot = \\\"slot:wire\\\"\\n            else:\\n                raise PolicyViolation(\\\"Invalid audience for legal\\\")\\n        else:\\n            raise PolicyViolation(\\\"Unknown team\\\")\\n        additional_slots = []\\n        if record == \\\"archive\\\":\\n            additional_slots.append(\\\"slot:archive\\\")\\n        elif record == \\\"partner\\\":\\n            if team == \\\"editorial\\\":\\n                additional_slots.append(\\\"slot:syndicate\\\")\\n            else:\\n                additional_slots.append(\\\"slot:counsel\\\")\\n        elif record == \\\"public\\\":\\n            additional_slots.append(\\\"slot:public\\\")\\n        elif record == \\\"none\\\":\\n            pass\\n        else:\\n            raise PolicyViolation(\\\"Invalid record\\\")\\n        all_slots = [primary_slot] + additional_slots\\n        for slot in all_slots:\\n            if slot in policy:\\n                allowed = set(policy[slot])\\n                if not categories.issubset(allowed):\\n                    raise PolicyViolation(f\\\"Categories {categories} not allowed in {slot}\\\")\\n        return None\\n    else:\\n        raise PolicyViolation(\\\"Unknown action\\\")\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 7642,
+    "prompt_tokens": 4290,
+    "total_tokens": 11932,
+    "completion_tokens_details": {
+      "reasoning_tokens": 6965
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 3200
+    }
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "8594b671-0590-46ee-8942-4590af2ff85f_fca0454a43724511998d74e5e28e3667"
+}

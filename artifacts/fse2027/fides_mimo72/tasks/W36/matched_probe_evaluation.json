@@ -1,0 +1,206 @@
+{
+  "id": "W36",
+  "layer": "base",
+  "complexity": "Base",
+  "load_status": "EXECUTABLE",
+  "load_error": null,
+  "normalization": null,
+  "probes": [
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "employees",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "valuation",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "token",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: TOKEN not allowed in counsel"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "employees",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "valuation",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "valuation",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "employees",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: PII or TOKEN not allowed in notifications"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "valuation",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "token",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: PII or TOKEN not allowed in notifications"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "token",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "valuation",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Sensitive data not allowed in investors"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "valuation",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    }
+  ]
+}

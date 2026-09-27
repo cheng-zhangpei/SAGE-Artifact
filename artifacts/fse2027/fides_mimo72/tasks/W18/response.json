@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"def pilot_policy(trace):\\n    action, label = trace[-1]\\n    args = json.loads(action.arguments)\\n    dest = None\\n    if action.name == \\\"reporter/collect\\\":\\n        dest = \\\"slot:brief\\\"\\n    elif action.name == \\\"editor/preview\\\":\\n        dest = \\\"slot:preview\\\"\\n    elif action.name == \\\"producer/queue\\\":\\n        dest = \\\"slot:queue\\\"\\n    elif action.name == \\\"publisher/release\\\":\\n        route = args.get(\\\"route\\\")\\n        if route == \\\"web\\\":\\n            dest = \\\"slot:web\\\"\\n        elif route == \\\"mail\\\":\\n            dest = \\\"slot:mail\\\"\\n        elif route == \\\"room\\\":\\n            dest = \\\"slot:room\\\"\\n    if dest in (\\\"slot:web\\\", \\\"slot:mail\\\") and \\\"EMBARGO\\\" in label.subset:\\n        raise PolicyViolation(\\\"EMBARGO is not allowed on web or mail\\\")\\n    return None\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 6618,
+    "prompt_tokens": 911,
+    "total_tokens": 7529,
+    "completion_tokens_details": {
+      "reasoning_tokens": 6389
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "9789aadc-5edb-467f-b507-8e6afca68fd0_224abaed98024040bd32461af656bad3"
+}

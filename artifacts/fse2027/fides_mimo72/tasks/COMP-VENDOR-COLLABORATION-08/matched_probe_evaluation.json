@@ -1,0 +1,2996 @@
+{
+  "id": "COMP-VENDOR-COLLABORATION-08",
+  "layer": "composition",
+  "complexity": "Composition-08",
+  "load_status": "EXECUTABLE",
+  "load_error": null,
+  "normalization": null,
+  "probes": [
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Label categories not allowed in slot:assessor"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Label categories not allowed in slot:escrow"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Label categories not allowed in slot:assessor"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Label categories not allowed in slot:escrow"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Label categories not allowed in slot:supplier"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Label categories not allowed in slot:escrow"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Label categories not allowed in slot:supplier"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Label categories not allowed in slot:escrow"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Label categories not allowed in slot:public"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Label categories not allowed in slot:assessor"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Label categories not allowed in slot:public"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Label categories not allowed in slot:supplier"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Label categories not allowed in slot:public"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Label categories not allowed in slot:public"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Label categories not allowed in slot:public"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Label categories not allowed in slot:public"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Label categories not allowed in slot:assessor"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Label categories not allowed in slot:public"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Label categories not allowed in slot:supplier"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Label categories not allowed in slot:public"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Label categories not allowed in slot:public"
+      },
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Label categories not allowed in slot:public"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Label categories not allowed in slot:public"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Label categories not allowed in slot:assessor"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Label categories not allowed in slot:public"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Label categories not allowed in slot:supplier"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Label categories not allowed in slot:public"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Label categories not allowed in slot:public"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_verify",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_bundle",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Label categories not allowed in slot:public"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Label categories not allowed in slot:public"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Label categories not allowed in slot:assessor"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Label categories not allowed in slot:public"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Label categories not allowed in slot:supplier"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Label categories not allowed in slot:public"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Label categories not allowed in slot:public"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "vendor_receive_CUSTOMER",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_PRICING",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_ACCESS",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_receive_UNSCREENED",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "vendor_fastpack",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Label categories not allowed in slot:public"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    }
+  ]
+}

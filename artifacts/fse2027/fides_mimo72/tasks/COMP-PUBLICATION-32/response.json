@@ -1,0 +1,18 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\"python\":\"def pilot_policy(trace):\\n    policy = {\\n        'slot:archive': {'UNVERIFIED'},\\n        'slot:counsel': {'UNVERIFIED'},\\n        'slot:public': {'PERSONAL', 'EMBARGOED', 'LICENSED'},\\n        'slot:syndicate': {'PERSONAL', 'EMBARGOED'},\\n        'slot:wire': {'PERSONAL', 'LICENSED'}\\n    }\\n    action, label = trace[-1]\\n    args = json.loads(action.arguments)\\n    name = action.name\\n    if name == 'research/collect_material':\\n        slots = {'slot:workspace'}\\n    elif name == 'editor/edit_draft':\\n        slots = {'slot:draft'}\\n    elif name == 'publisher/review_release':\\n        slots = {'slot:release'}\\n    elif name in ('editorial/publish', 'legal/publish'):\\n        audience = args.get('audience', '')\\n        record = args.get('record', '')\\n        if name == 'editorial/publish':\\n            base = {'staff': 'slot:newsroom', 'partner': 'slot:syndicate', 'release': 'slot:public'}.get(audience)\\n        else:\\n            base = {'staff': 'slot:newsroom', 'partner': 'slot:counsel', 'release': 'slot:wire'}.get(audience)\\n        slots = set()\\n        if base:\\n            slots.add(base)\\n        if record == 'archive':\\n            slots.add('slot:archive')\\n        elif record == 'partner':\\n            if name == 'editorial/publish':\\n                slots.add('slot:syndicate')\\n            else:\\n                slots.add('slot:counsel')\\n        elif record == 'public':\\n            slots.add('slot:public')\\n    else:\\n        raise PolicyViolation('unknown tool')\\n    subset = label.subset\\n    for s in slots:\\n        if s in policy and not subset.isdisjoint(policy[s]):\\n            raise PolicyViolation('category forbidden in slot ' + s)\\n    return None\"}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 5060,
+    "prompt_tokens": 3238,
+    "total_tokens": 8298,
+    "completion_tokens_details": {
+      "reasoning_tokens": 4573
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 2176
+    }
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "77c82d52-622d-4edb-9172-91176b283de7_4c8282efc51241b3a19cb25f46aa5d57"
+}

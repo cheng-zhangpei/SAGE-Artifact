@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"def pilot_policy(trace):\\n    if not trace:\\n        return None\\n    last_item = trace[-1]\\n    action = last_item[0]\\n    label = last_item[1]\\n\\n    if action.name == 'broker/prepare':\\n        return None\\n    elif action.name == 'locks/issue':\\n        params = json.loads(action.arguments)\\n        target = params.get('target')\\n        if target == 'sms':\\n            allowed = {'ACCESS_CODE'}\\n            if not label.subset.issubset(allowed):\\n                raise PolicyViolation('sms allows only ACCESS_CODE')\\n            return None\\n        elif target == 'visit':\\n            return None\\n        else:\\n            raise PolicyViolation('Invalid target for locks/issue')\\n    elif action.name == 'broker/send':\\n        params = json.loads(action.arguments)\\n        target = params.get('target')\\n        if target == 'listing':\\n            allowed = {'PII', 'ACCESS_CODE'}\\n            if not label.subset.issubset(allowed):\\n                raise PolicyViolation('listing allows only PII and ACCESS_CODE')\\n            return None\\n        elif target == 'sms':\\n            allowed = {'ACCESS_CODE'}\\n            if not label.subset.issubset(allowed):\\n                raise PolicyViolation('sms allows only ACCESS_CODE')\\n            return None\\n        elif target == 'private':\\n            return None\\n        else:\\n            raise PolicyViolation('Invalid target for broker/send')\\n    else:\\n        raise PolicyViolation('Unknown action name')\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 5039,
+    "prompt_tokens": 872,
+    "total_tokens": 5911,
+    "completion_tokens_details": {
+      "reasoning_tokens": 4681
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "43ca7b96-163b-4deb-bd73-20ee22a897b6_5ad7b0a8617f4dacb8d5234d6de6cca4"
+}

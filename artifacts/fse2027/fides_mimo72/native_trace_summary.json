@@ -1,0 +1,466 @@
+{
+  "tasks": 72,
+  "candidate_executable": 68,
+  "candidate_invalid": 4,
+  "arms": {
+    "candidate": {
+      "evaluated_tasks": 68,
+      "statuses": {
+        "PASS": 26,
+        "FAIL": 35,
+        "ERROR": 7,
+        "INVALID": 4
+      },
+      "dangerous": 5822,
+      "benign": 6162,
+      "dangerous_denied": 2801,
+      "dangerous_errors": 848,
+      "benign_denied": 1628,
+      "benign_errors": 920,
+      "der": 48.11061490896599,
+      "bbr": 26.419993508601102
+    },
+    "candidate_plus_sage": {
+      "evaluated_tasks": 68,
+      "statuses": {
+        "PASS": 68,
+        "FAIL": 0,
+        "ERROR": 0,
+        "INVALID": 4
+      },
+      "dangerous": 5822,
+      "benign": 6162,
+      "dangerous_denied": 5822,
+      "dangerous_errors": 0,
+      "benign_denied": 1628,
+      "benign_errors": 920,
+      "der": 100.0,
+      "bbr": 26.419993508601102
+    },
+    "direct_sage": {
+      "evaluated_tasks": 72,
+      "statuses": {
+        "PASS": 72,
+        "FAIL": 0,
+        "ERROR": 0,
+        "INVALID": 0
+      },
+      "dangerous": 6012,
+      "benign": 6372,
+      "dangerous_denied": 6012,
+      "dangerous_errors": 0,
+      "benign_denied": 0,
+      "benign_errors": 0,
+      "der": 100.0,
+      "bbr": 0.0
+    }
+  },
+  "by_complexity": {
+    "Base": {
+      "tasks": 36,
+      "candidate_executable": 34,
+      "candidate_invalid": 2,
+      "arms": {
+        "candidate": {
+          "evaluated_tasks": 34,
+          "statuses": {
+            "PASS": 23,
+            "FAIL": 10,
+            "ERROR": 1,
+            "INVALID": 2
+          },
+          "dangerous": 136,
+          "benign": 136,
+          "dangerous_denied": 99,
+          "dangerous_errors": 4,
+          "benign_denied": 12,
+          "benign_errors": 4,
+          "der": 72.79411764705883,
+          "bbr": 8.823529411764707
+        },
+        "candidate_plus_sage": {
+          "evaluated_tasks": 34,
+          "statuses": {
+            "PASS": 34,
+            "FAIL": 0,
+            "ERROR": 0,
+            "INVALID": 2
+          },
+          "dangerous": 136,
+          "benign": 136,
+          "dangerous_denied": 136,
+          "dangerous_errors": 0,
+          "benign_denied": 12,
+          "benign_errors": 4,
+          "der": 100.0,
+          "bbr": 8.823529411764707
+        },
+        "direct_sage": {
+          "evaluated_tasks": 36,
+          "statuses": {
+            "PASS": 36,
+            "FAIL": 0,
+            "ERROR": 0,
+            "INVALID": 0
+          },
+          "dangerous": 144,
+          "benign": 144,
+          "dangerous_denied": 144,
+          "dangerous_errors": 0,
+          "benign_denied": 0,
+          "benign_errors": 0,
+          "der": 100.0,
+          "bbr": 0.0
+        }
+      }
+    },
+    "Composition-08": {
+      "tasks": 6,
+      "candidate_executable": 5,
+      "candidate_invalid": 1,
+      "arms": {
+        "candidate": {
+          "evaluated_tasks": 5,
+          "statuses": {
+            "PASS": 0,
+            "FAIL": 4,
+            "ERROR": 1,
+            "INVALID": 1
+          },
+          "dangerous": 239,
+          "benign": 241,
+          "dangerous_denied": 103,
+          "dangerous_errors": 40,
+          "benign_denied": 44,
+          "benign_errors": 56,
+          "der": 43.09623430962343,
+          "bbr": 18.25726141078838
+        },
+        "candidate_plus_sage": {
+          "evaluated_tasks": 5,
+          "statuses": {
+            "PASS": 5,
+            "FAIL": 0,
+            "ERROR": 0,
+            "INVALID": 1
+          },
+          "dangerous": 239,
+          "benign": 241,
+          "dangerous_denied": 239,
+          "dangerous_errors": 0,
+          "benign_denied": 44,
+          "benign_errors": 56,
+          "der": 100.0,
+          "bbr": 18.25726141078838
+        },
+        "direct_sage": {
+          "evaluated_tasks": 6,
+          "statuses": {
+            "PASS": 6,
+            "FAIL": 0,
+            "ERROR": 0,
+            "INVALID": 0
+          },
+          "dangerous": 301,
+          "benign": 275,
+          "dangerous_denied": 301,
+          "dangerous_errors": 0,
+          "benign_denied": 0,
+          "benign_errors": 0,
+          "der": 100.0,
+          "bbr": 0.0
+        }
+      }
+    },
+    "Composition-16": {
+      "tasks": 6,
+      "candidate_executable": 6,
+      "candidate_invalid": 0,
+      "arms": {
+        "candidate": {
+          "evaluated_tasks": 6,
+          "statuses": {
+            "PASS": 1,
+            "FAIL": 4,
+            "ERROR": 1,
+            "INVALID": 0
+          },
+          "dangerous": 606,
+          "benign": 546,
+          "dangerous_denied": 307,
+          "dangerous_errors": 96,
+          "benign_denied": 201,
+          "benign_errors": 128,
+          "der": 50.66006600660066,
+          "bbr": 36.81318681318681
+        },
+        "candidate_plus_sage": {
+          "evaluated_tasks": 6,
+          "statuses": {
+            "PASS": 6,
+            "FAIL": 0,
+            "ERROR": 0,
+            "INVALID": 0
+          },
+          "dangerous": 606,
+          "benign": 546,
+          "dangerous_denied": 606,
+          "dangerous_errors": 0,
+          "benign_denied": 201,
+          "benign_errors": 128,
+          "der": 100.0,
+          "bbr": 36.81318681318681
+        },
+        "direct_sage": {
+          "evaluated_tasks": 6,
+          "statuses": {
+            "PASS": 6,
+            "FAIL": 0,
+            "ERROR": 0,
+            "INVALID": 0
+          },
+          "dangerous": 606,
+          "benign": 546,
+          "dangerous_denied": 606,
+          "dangerous_errors": 0,
+          "benign_denied": 0,
+          "benign_errors": 0,
+          "der": 100.0,
+          "bbr": 0.0
+        }
+      }
+    },
+    "Composition-24": {
+      "tasks": 6,
+      "candidate_executable": 5,
+      "candidate_invalid": 1,
+      "arms": {
+        "candidate": {
+          "evaluated_tasks": 5,
+          "statuses": {
+            "PASS": 0,
+            "FAIL": 3,
+            "ERROR": 2,
+            "INVALID": 1
+          },
+          "dangerous": 752,
+          "benign": 688,
+          "dangerous_denied": 236,
+          "dangerous_errors": 300,
+          "benign_denied": 141,
+          "benign_errors": 276,
+          "der": 31.382978723404257,
+          "bbr": 20.49418604651163
+        },
+        "candidate_plus_sage": {
+          "evaluated_tasks": 5,
+          "statuses": {
+            "PASS": 5,
+            "FAIL": 0,
+            "ERROR": 0,
+            "INVALID": 1
+          },
+          "dangerous": 752,
+          "benign": 688,
+          "dangerous_denied": 752,
+          "dangerous_errors": 0,
+          "benign_denied": 141,
+          "benign_errors": 276,
+          "der": 100.0,
+          "bbr": 20.49418604651163
+        },
+        "direct_sage": {
+          "evaluated_tasks": 6,
+          "statuses": {
+            "PASS": 6,
+            "FAIL": 0,
+            "ERROR": 0,
+            "INVALID": 0
+          },
+          "dangerous": 872,
+          "benign": 856,
+          "dangerous_denied": 872,
+          "dangerous_errors": 0,
+          "benign_denied": 0,
+          "benign_errors": 0,
+          "der": 100.0,
+          "bbr": 0.0
+        }
+      }
+    },
+    "Composition-32": {
+      "tasks": 6,
+      "candidate_executable": 6,
+      "candidate_invalid": 0,
+      "arms": {
+        "candidate": {
+          "evaluated_tasks": 6,
+          "statuses": {
+            "PASS": 1,
+            "FAIL": 4,
+            "ERROR": 1,
+            "INVALID": 0
+          },
+          "dangerous": 1112,
+          "benign": 1192,
+          "dangerous_denied": 543,
+          "dangerous_errors": 190,
+          "benign_denied": 284,
+          "benign_errors": 194,
+          "der": 48.830935251798564,
+          "bbr": 23.825503355704697
+        },
+        "candidate_plus_sage": {
+          "evaluated_tasks": 6,
+          "statuses": {
+            "PASS": 6,
+            "FAIL": 0,
+            "ERROR": 0,
+            "INVALID": 0
+          },
+          "dangerous": 1112,
+          "benign": 1192,
+          "dangerous_denied": 1112,
+          "dangerous_errors": 0,
+          "benign_denied": 284,
+          "benign_errors": 194,
+          "der": 100.0,
+          "bbr": 23.825503355704697
+        },
+        "direct_sage": {
+          "evaluated_tasks": 6,
+          "statuses": {
+            "PASS": 6,
+            "FAIL": 0,
+            "ERROR": 0,
+            "INVALID": 0
+          },
+          "dangerous": 1112,
+          "benign": 1192,
+          "dangerous_denied": 1112,
+          "dangerous_errors": 0,
+          "benign_denied": 0,
+          "benign_errors": 0,
+          "der": 100.0,
+          "bbr": 0.0
+        }
+      }
+    },
+    "Composition-40": {
+      "tasks": 6,
+      "candidate_executable": 6,
+      "candidate_invalid": 0,
+      "arms": {
+        "candidate": {
+          "evaluated_tasks": 6,
+          "statuses": {
+            "PASS": 1,
+            "FAIL": 4,
+            "ERROR": 1,
+            "INVALID": 0
+          },
+          "dangerous": 1367,
+          "benign": 1513,
+          "dangerous_denied": 659,
+          "dangerous_errors": 218,
+          "benign_denied": 317,
+          "benign_errors": 262,
+          "der": 48.20775420629115,
+          "bbr": 20.9517514871117
+        },
+        "candidate_plus_sage": {
+          "evaluated_tasks": 6,
+          "statuses": {
+            "PASS": 6,
+            "FAIL": 0,
+            "ERROR": 0,
+            "INVALID": 0
+          },
+          "dangerous": 1367,
+          "benign": 1513,
+          "dangerous_denied": 1367,
+          "dangerous_errors": 0,
+          "benign_denied": 317,
+          "benign_errors": 262,
+          "der": 100.0,
+          "bbr": 20.9517514871117
+        },
+        "direct_sage": {
+          "evaluated_tasks": 6,
+          "statuses": {
+            "PASS": 6,
+            "FAIL": 0,
+            "ERROR": 0,
+            "INVALID": 0
+          },
+          "dangerous": 1367,
+          "benign": 1513,
+          "dangerous_denied": 1367,
+          "dangerous_errors": 0,
+          "benign_denied": 0,
+          "benign_errors": 0,
+          "der": 100.0,
+          "bbr": 0.0
+        }
+      }
+    },
+    "Composition-48": {
+      "tasks": 6,
+      "candidate_executable": 6,
+      "candidate_invalid": 0,
+      "arms": {
+        "candidate": {
+          "evaluated_tasks": 6,
+          "statuses": {
+            "PASS": 0,
+            "FAIL": 6,
+            "ERROR": 0,
+            "INVALID": 0
+          },
+          "dangerous": 1610,
+          "benign": 1846,
+          "dangerous_denied": 854,
+          "dangerous_errors": 0,
+          "benign_denied": 629,
+          "benign_errors": 0,
+          "der": 53.04347826086956,
+          "bbr": 34.07367280606717
+        },
+        "candidate_plus_sage": {
+          "evaluated_tasks": 6,
+          "statuses": {
+            "PASS": 6,
+            "FAIL": 0,
+            "ERROR": 0,
+            "INVALID": 0
+          },
+          "dangerous": 1610,
+          "benign": 1846,
+          "dangerous_denied": 1610,
+          "dangerous_errors": 0,
+          "benign_denied": 629,
+          "benign_errors": 0,
+          "der": 100.0,
+          "bbr": 34.07367280606717
+        },
+        "direct_sage": {
+          "evaluated_tasks": 6,
+          "statuses": {
+            "PASS": 6,
+            "FAIL": 0,
+            "ERROR": 0,
+            "INVALID": 0
+          },
+          "dangerous": 1610,
+          "benign": 1846,
+          "dangerous_denied": 1610,
+          "dangerous_errors": 0,
+          "benign_denied": 0,
+          "benign_errors": 0,
+          "der": 100.0,
+          "bbr": 0.0
+        }
+      }
+    }
+  }
+}

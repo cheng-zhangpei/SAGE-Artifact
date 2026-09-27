@@ -1,0 +1,624 @@
+{
+  "id": "W14",
+  "layer": "base",
+  "complexity": "Base",
+  "candidate_load": {
+    "status": "EXECUTABLE",
+    "error": null
+  },
+  "source_sha256": "7660188a9e93bb398a1f03efd62d86b8a3a9597c1197206745b0bcb356665ce5",
+  "arms": {
+    "candidate": [
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "scan",
+            "labels": [
+              "PHI"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "verbose",
+            "labels": [
+              "PHI"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "scan",
+            "labels": [
+              "PHI"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "normal",
+            "labels": [
+              "PHI"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "courier",
+        "steps": [
+          {
+            "action": "policy",
+            "labels": [
+              "POLICY_ID"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "scan",
+            "labels": [
+              "PHI"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "courier",
+            "labels": [
+              "PHI",
+              "POLICY_ID"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Label subset not allowed at courier"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "courier",
+        "steps": [
+          {
+            "action": "policy",
+            "labels": [
+              "POLICY_ID"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "courier",
+            "labels": [
+              "POLICY_ID"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Label subset not allowed at courier"
+            }
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "policy",
+            "labels": [
+              "POLICY_ID"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "verbose",
+            "labels": [
+              "POLICY_ID"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "policy",
+            "labels": [
+              "POLICY_ID"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "receipt",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "scan",
+            "labels": [
+              "PHI"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "courier",
+            "labels": [
+              "PHI"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "scan",
+            "labels": [
+              "PHI"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "normal",
+            "labels": [
+              "PHI"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ],
+    "candidate_plus_sage": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "verbose",
+        "steps": [
+          {
+            "action": "scan",
+            "labels": [
+              "PHI"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "verbose",
+            "labels": [
+              "PHI"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "scan",
+            "labels": [
+              "PHI"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "normal",
+            "labels": [
+              "PHI"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "courier",
+        "steps": [
+          {
+            "action": "policy",
+            "labels": [
+              "POLICY_ID"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "scan",
+            "labels": [
+              "PHI"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "courier",
+            "labels": [
+              "PHI",
+              "POLICY_ID"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "courier",
+        "steps": [
+          {
+            "action": "policy",
+            "labels": [
+              "POLICY_ID"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "courier",
+            "labels": [
+              "POLICY_ID"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: Label subset not allowed at courier"
+            }
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "verbose",
+        "steps": [
+          {
+            "action": "policy",
+            "labels": [
+              "POLICY_ID"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "verbose",
+            "labels": [
+              "POLICY_ID"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "policy",
+            "labels": [
+              "POLICY_ID"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "receipt",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "courier",
+        "steps": [
+          {
+            "action": "scan",
+            "labels": [
+              "PHI"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "courier",
+            "labels": [
+              "PHI"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "SAGECompletion",
+              "detail": "checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "scan",
+            "labels": [
+              "PHI"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "normal",
+            "labels": [
+              "PHI"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ],
+    "direct_sage": [
+      {
+        "outcome": "DENY",
+        "blocked_at": "verbose",
+        "steps": [
+          {
+            "action": "scan",
+            "labels": [
+              "PHI"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "verbose",
+            "labels": [
+              "PHI"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "scan",
+            "labels": [
+              "PHI"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "normal",
+            "labels": [
+              "PHI"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "courier",
+        "steps": [
+          {
+            "action": "policy",
+            "labels": [
+              "POLICY_ID"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "scan",
+            "labels": [
+              "PHI"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "courier",
+            "labels": [
+              "PHI",
+              "POLICY_ID"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "policy",
+            "labels": [
+              "POLICY_ID"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "courier",
+            "labels": [
+              "POLICY_ID"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "verbose",
+        "steps": [
+          {
+            "action": "policy",
+            "labels": [
+              "POLICY_ID"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "verbose",
+            "labels": [
+              "POLICY_ID"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "policy",
+            "labels": [
+              "POLICY_ID"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "receipt",
+            "labels": [],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      },
+      {
+        "outcome": "DENY",
+        "blocked_at": "courier",
+        "steps": [
+          {
+            "action": "scan",
+            "labels": [
+              "PHI"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "courier",
+            "labels": [
+              "PHI"
+            ],
+            "outcome": "DENY",
+            "detail": {
+              "type": "PolicyViolation",
+              "detail": "Policy violation: SAGE checked completion"
+            }
+          }
+        ],
+        "dangerous": true
+      },
+      {
+        "outcome": "ALLOW",
+        "blocked_at": null,
+        "steps": [
+          {
+            "action": "scan",
+            "labels": [
+              "PHI"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          },
+          {
+            "action": "normal",
+            "labels": [
+              "PHI"
+            ],
+            "outcome": "ALLOW",
+            "detail": null
+          }
+        ],
+        "dangerous": false
+      }
+    ]
+  }
+}

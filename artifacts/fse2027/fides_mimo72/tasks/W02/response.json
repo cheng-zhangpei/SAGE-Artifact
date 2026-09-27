@@ -1,0 +1,16 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\"python\":\"def pilot_policy(trace):\\n    # Extract current action from the last trace item\\n    if not trace:\\n        return None\\n    current_act, current_lbl = trace[-1]\\n    action_name = current_act.name\\n    action_params = json.loads(current_act.arguments)\\n\\n    # Define policy restrictions\\n    policy_restrictions = {\\n        \\\"slot:analytics\\\": [\\\"PII\\\"],\\n        \\\"slot:public\\\": [\\\"PII\\\", \\\"SALARY\\\"]\\n    }\\n\\n    # Compute current bundle labels by checking all previous assembles\\n    bundle_labels = set()\\n    for prev_act, prev_lbl in trace[:-1]:\\n        if prev_act.name in [\\\"hr/assemble\\\", \\\"payroll/assemble\\\"]:\\n            bundle_labels = bundle_labels.union(prev_lbl.subset)\\n\\n    # Tool-specific checks\\n    if action_name == \\\"hr/assemble\\\":\\n        # Always allowed: writes PII to slot:bundle (no restrictions)\\n        return None\\n\\n    elif action_name == \\\"payroll/assemble\\\":\\n        # Always allowed: writes SALARY to slot:bundle (no restrictions)\\n        return None\\n\\n    elif action_name == \\\"finance/export\\\":\\n        target = action_params.get(\\\"target\\\")\\n        cc = action_params.get(\\\"cc\\\")\\n\\n        # Check target restrictions\\n        if target in policy_restrictions:\\n            allowed = set(policy_restrictions[target])\\n            if not bundle_labels.issubset(allowed):\\n                raise PolicyViolation(\\\"Bundle contains labels not allowed in target slot\\\")\\n\\n        # Check cc restrictions if not \\\"none\\\"\\n        if cc != \\\"none\\\" and cc in policy_restrictions:\\n            allowed = set(policy_restrictions[cc])\\n            if not bundle_labels.issubset(allowed):\\n                raise PolicyViolation(\\\"Bundle contains labels not allowed in cc slot\\\")\\n\\n        return None\\n\\n    else:\\n        raise PolicyViolation(\\\"Unknown tool\\\")\"}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 7262,
+    "prompt_tokens": 940,
+    "total_tokens": 8202,
+    "completion_tokens_details": {
+      "reasoning_tokens": 6830
+    },
+    "prompt_tokens_details": null
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "ce9a2939-73eb-4d65-a29b-7108633f8177_fabaf483a23e42b99bdbf2e4bd7244dc"
+}

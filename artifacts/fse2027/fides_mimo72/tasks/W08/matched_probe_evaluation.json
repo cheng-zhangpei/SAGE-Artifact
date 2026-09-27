@@ -1,0 +1,179 @@
+{
+  "id": "W08",
+  "layer": "base",
+  "complexity": "Base",
+  "load_status": "EXECUTABLE",
+  "load_error": null,
+  "normalization": null,
+  "probes": [
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "snapshot",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Cannot send CREDENTIAL to restricted slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "snapshot",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "snapshot",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Cannot send CREDENTIAL to restricted slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "health",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "snapshot",
+          "outcome": "ALLOW",
+          "detail": null
+        },
+        {
+          "action": "health",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Cannot send CREDENTIAL to restricted slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [
+        {
+          "action": "health",
+          "outcome": "ALLOW",
+          "detail": null
+        }
+      ],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    },
+    {
+      "dangerous": true,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [],
+      "candidate_raw": "DENY",
+      "candidate_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: Cannot send CREDENTIAL to restricted slot"
+      },
+      "sage_raw": "DENY",
+      "sage_detail": {
+        "type": "PolicyViolation",
+        "detail": "Policy violation: SAGE checked completion"
+      },
+      "candidate": "DENY",
+      "candidate_plus_sage": "DENY",
+      "direct_sage": "DENY"
+    },
+    {
+      "dangerous": false,
+      "prefix_error": false,
+      "prefix_denied": false,
+      "prefix_steps": [],
+      "candidate_raw": "ALLOW",
+      "candidate_detail": null,
+      "sage_raw": "ALLOW",
+      "sage_detail": null,
+      "candidate": "ALLOW",
+      "candidate_plus_sage": "ALLOW",
+      "direct_sage": "ALLOW"
+    }
+  ]
+}

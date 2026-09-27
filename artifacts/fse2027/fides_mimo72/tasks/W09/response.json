@@ -1,0 +1,18 @@
+{
+  "transport_status": "OK",
+  "raw_content": "{\n  \"python\": \"def pilot_policy(trace):\\n    if not trace:\\n        return None\\n    action, label = trace[-1]\\n    args = json.loads(action.arguments)\\n    name = action.name\\n    if name == \\\"researcher/collect\\\":\\n        return None\\n    elif name == \\\"buyer/collect\\\":\\n        return None\\n    elif name == \\\"buyer/submit\\\":\\n        target = args.get(\\\"target\\\")\\n        if target is None:\\n            raise PolicyViolation(\\\"buyer/submit missing target\\\")\\n        if target == \\\"order\\\":\\n            if \\\"UNVERIFIED\\\" in label.subset:\\n                raise PolicyViolation(\\\"slot:order cannot contain UNVERIFIED\\\")\\n        elif target == \\\"supplier\\\":\\n            if \\\"CONFIDENTIAL\\\" in label.subset:\\n                raise PolicyViolation(\\\"slot:supplier cannot contain CONFIDENTIAL\\\")\\n        elif target == \\\"review\\\":\\n            pass\\n        elif target == \\\"order_and_supplier\\\":\\n            if \\\"UNVERIFIED\\\" in label.subset or \\\"CONFIDENTIAL\\\" in label.subset:\\n                raise PolicyViolation(\\\"slot:order cannot contain UNVERIFIED and slot:supplier cannot contain CONFIDENTIAL\\\")\\n        else:\\n            raise PolicyViolation(\\\"unknown target for buyer/submit\\\")\\n        return None\\n    else:\\n        raise PolicyViolation(\\\"unknown action\\\")\\n\"\n}",
+  "finish_reason": "stop",
+  "usage": {
+    "completion_tokens": 6386,
+    "prompt_tokens": 938,
+    "total_tokens": 7324,
+    "completion_tokens_details": {
+      "reasoning_tokens": 6080
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 896
+    }
+  },
+  "response_model": "mimo-v2.5",
+  "response_id": "aee69118-6bc3-4a37-863d-6b5f8f24eae4_4a80b5fc9edb4b068a7016594e5f74a9"
+}
