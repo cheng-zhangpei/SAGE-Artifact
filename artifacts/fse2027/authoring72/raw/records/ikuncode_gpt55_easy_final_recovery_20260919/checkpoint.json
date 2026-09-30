@@ -1,0 +1,262 @@
+{
+  "manifest": {
+    "record_type": "manifest",
+    "schema_version": 1,
+    "created_at": "2026-09-19T14:59:05.473915+00:00",
+    "protocol": "config-a-v2-no-formal-hints-one-shot",
+    "model": "gpt-5.5",
+    "temperature": 0.2,
+    "max_tokens": 4096,
+    "max_token_ceiling": 16384,
+    "truncation_policy": "double output budget only after finish_reason=length",
+    "max_states": 20000,
+    "repetitions": 1,
+    "retries": 0,
+    "response_format": "omitted",
+    "api_timeout_seconds": 600,
+    "workflows": [
+      "W11"
+    ],
+    "source_hashes": {
+      "catalog.yaml": "a516d04835e4f962c2d3b39aba1fb612f83690c2d80c1ceaa4b330d95a9abb79",
+      "extension.yaml": "dc211c268467c11168f1fa0d87acd50adac9e9eb431a0a9621ea6a140353cb21",
+      "boundaries.yaml": "9649529de3d1e55367d74dae5e62fee7c1170e52d134bda2857f780adecd52b2",
+      "dataset.py": "847d47099f3e2cb32037f6f5ee8759a2ab95196efbfbd7a4b42273cd276bdbd0",
+      "evaluate.py": "86c44825f0029335665270fb05d170981461a180af08ac52141e7d76c5af48bb",
+      "run.py": "ab319142b243c148a0db77b0db154048f0a19279eaa54b7768986e3430302ade"
+    }
+  },
+  "records": [
+    {
+      "record_type": "candidate",
+      "workflow": "W11",
+      "prompt_sha256": "dd298db095bd79a6ee4a9b7b82a0065f18341a76b116c5d44a8207dc824b25e6",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a security engineer drafting runtime information-flow guards.\nUse only the provided scenario, natural-language tool descriptions and security policy.\nDraft guards for the entire workflow that enforce the policy while preserving permitted uses.\nReturn only {\"guards\":[{\"agent\":\"...\",\"tool\":\"...\",\"params\":{},\"forbidden_labels\":[\"...\"]}]}.\nCopy agent, tool and the complete params object exactly from a listed concrete call.\nThe forbidden_labels field lists data categories that must cause this matching call\nto be rejected when present in the information it handles. Any listed category triggers rejection.\nUse only declared labels. Do not use wildcards, additional keys, Markdown or explanations.\nAn empty guard set is {\"guards\":[]}."
+        },
+        {
+          "role": "user",
+          "content": "{\"description\": \"# 跨租户搜索摘要\\n\\n支持平台服务两个独立租户。检索 Agent 可以把任一租户文档加入共享摘要；租户 A 的工单不能收到租户 B 数据，反之亦然。中央支持保险库获准接收两者。开启回退检索时，工具会额外读取另一租户的索引，返回内容直接并入本次输出。\\n\\n初始资料：slot:index_a 含 TENANT_A；slot:index_b 含 TENANT_B。其他位置初始不含受限标签。\\n本任务所有工具只读取各自文字描述列出的数据，不隐式读取调用者上下文。各位置保留此前内容，写入为追加；读取和全部副写入在同一次原子调用内完成。没有未说明的净化、认证或解密。工具可重复调用，调用顺序不限。请为整个工作流而不是某一条示例路径起草 guard；既要阻断禁止流，也要保留未违反策略的调用。未列在 B(v) 中的位置不禁止任何标签。\", \"labels\": {\"TENANT_A\": \"租户A资料\", \"TENANT_B\": \"租户B资料\"}, \"tools\": [{\"agent\": \"search\", \"tool\": \"retrieve\", \"params\": {\"tenant\": \"a\"}, \"description\": \"将租户 A 索引内容追加到共享摘要 slot:summary。\"}, {\"agent\": \"search\", \"tool\": \"retrieve\", \"params\": {\"tenant\": \"b\"}, \"description\": \"将租户 B 索引内容追加到共享摘要 slot:summary。\"}, {\"agent\": \"support\", \"tool\": \"respond\", \"params\": {\"tenant\": \"a\", \"fallback\": false}, \"description\": \"将完整共享摘要发送到租户 A 工单 slot:ticket_a。\"}, {\"agent\": \"support\", \"tool\": \"respond\", \"params\": {\"tenant\": \"b\", \"fallback\": false}, \"description\": \"将完整共享摘要发送到租户 B 工单 slot:ticket_b。\"}, {\"agent\": \"support\", \"tool\": \"respond\", \"params\": {\"tenant\": \"a\", \"fallback\": true}, \"description\": \"额外读取租户 B 索引作为回退结果，与共享摘要合并后发送到租户 A 工单；不做租户过滤。\"}, {\"agent\": \"support\", \"tool\": \"respond\", \"params\": {\"tenant\": \"central\", \"fallback\": false}, \"description\": \"将完整共享摘要存入中央支持保险库 slot:central。\"}], \"policy\": {\"slot:ticket_a\": [\"TENANT_B\"], \"slot:ticket_b\": [\"TENANT_A\"]}}"
+        }
+      ],
+      "attempts": [
+        {
+          "max_tokens": 4096,
+          "transport_status": "OK",
+          "raw_content": "{\"guards\":[{\"agent\":\"support\",\"tool\":\"respond\",\"params\":{\"tenant\":\"a\",\"fallback\":false},\"forbidden_labels\":[\"TENANT_B\"]},{\"agent\":\"support\",\"tool\":\"respond\",\"params\":{\"tenant\":\"b\",\"fallback\":false},\"forbidden_labels\":[\"TENANT_A\"]},{\"agent\":\"support\",\"tool\":\"respond\",\"params\":{\"tenant\":\"a\",\"fallback\":true},\"forbidden_labels\":[\"TENANT_B\"]}]}",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 1035,
+            "completion_tokens": 266,
+            "total_tokens": 1301,
+            "billing_usage": {
+              "source": "oai_responses",
+              "semantic": "openai",
+              "openai_usage": {
+                "prompt_tokens": 0,
+                "completion_tokens": 0,
+                "total_tokens": 1301,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0,
+                  "text_tokens": 0,
+                  "audio_tokens": 0,
+                  "image_tokens": 0
+                },
+                "completion_tokens_details": {
+                  "text_tokens": 0,
+                  "audio_tokens": 0,
+                  "image_tokens": 0,
+                  "reasoning_tokens": 0
+                },
+                "input_tokens": 1035,
+                "output_tokens": 266,
+                "input_tokens_details": {
+                  "cached_tokens": 0,
+                  "text_tokens": 0,
+                  "audio_tokens": 0,
+                  "image_tokens": 0
+                },
+                "claude_cache_creation_5_m_tokens": 0,
+                "claude_cache_creation_1_h_tokens": 0
+              }
+            },
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "text_tokens": 0,
+              "audio_tokens": 0,
+              "image_tokens": 0
+            },
+            "completion_tokens_details": {
+              "text_tokens": 0,
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "reasoning_tokens": 0
+            },
+            "input_tokens": 1035,
+            "output_tokens": 266,
+            "input_tokens_details": null,
+            "claude_cache_creation_5_m_tokens": 0,
+            "claude_cache_creation_1_h_tokens": 0
+          },
+          "response_model": "gpt-5.5",
+          "response_id": "chatcmpl-202609191459159303733658268d9d6Hhr1n565"
+        }
+      ],
+      "effective_max_tokens": 4096,
+      "transport_status": "OK",
+      "raw_content": "{\"guards\":[{\"agent\":\"support\",\"tool\":\"respond\",\"params\":{\"tenant\":\"a\",\"fallback\":false},\"forbidden_labels\":[\"TENANT_B\"]},{\"agent\":\"support\",\"tool\":\"respond\",\"params\":{\"tenant\":\"b\",\"fallback\":false},\"forbidden_labels\":[\"TENANT_A\"]},{\"agent\":\"support\",\"tool\":\"respond\",\"params\":{\"tenant\":\"a\",\"fallback\":true},\"forbidden_labels\":[\"TENANT_B\"]}]}",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 1035,
+        "completion_tokens": 266,
+        "total_tokens": 1301,
+        "billing_usage": {
+          "source": "oai_responses",
+          "semantic": "openai",
+          "openai_usage": {
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "total_tokens": 1301,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "text_tokens": 0,
+              "audio_tokens": 0,
+              "image_tokens": 0
+            },
+            "completion_tokens_details": {
+              "text_tokens": 0,
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "reasoning_tokens": 0
+            },
+            "input_tokens": 1035,
+            "output_tokens": 266,
+            "input_tokens_details": {
+              "cached_tokens": 0,
+              "text_tokens": 0,
+              "audio_tokens": 0,
+              "image_tokens": 0
+            },
+            "claude_cache_creation_5_m_tokens": 0,
+            "claude_cache_creation_1_h_tokens": 0
+          }
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 0,
+          "audio_tokens": 0,
+          "image_tokens": 0
+        },
+        "completion_tokens_details": {
+          "text_tokens": 0,
+          "audio_tokens": 0,
+          "image_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "input_tokens": 1035,
+        "output_tokens": 266,
+        "input_tokens_details": null,
+        "claude_cache_creation_5_m_tokens": 0,
+        "claude_cache_creation_1_h_tokens": 0
+      },
+      "response_model": "gpt-5.5",
+      "response_id": "chatcmpl-202609191459159303733658268d9d6Hhr1n565",
+      "evaluation": {
+        "candidate_status": "VALID",
+        "verification_status": "PASS",
+        "verification_error": null,
+        "counterexample": null,
+        "probe_der": 1.0,
+        "probe_bbr": 0.0,
+        "correct_pairs": 4,
+        "total_pairs": 4,
+        "benign_prefix_blocked": 0,
+        "probe_domain": "fixed handwritten probes, independent of candidate reachability",
+        "probes": [
+          {
+            "pair": "P1",
+            "class": "danger",
+            "target": "ticket_a",
+            "expected": "DENY",
+            "decision": "DENY",
+            "correct": true,
+            "blocked_prefix_actions": [],
+            "reachable_along_this_prefix": true
+          },
+          {
+            "pair": "P1",
+            "class": "benign",
+            "target": "ticket_a",
+            "expected": "ALLOW",
+            "decision": "ALLOW",
+            "correct": true,
+            "blocked_prefix_actions": [],
+            "reachable_along_this_prefix": true
+          },
+          {
+            "pair": "P2",
+            "class": "danger",
+            "target": "ticket_b",
+            "expected": "DENY",
+            "decision": "DENY",
+            "correct": true,
+            "blocked_prefix_actions": [],
+            "reachable_along_this_prefix": true
+          },
+          {
+            "pair": "P2",
+            "class": "benign",
+            "target": "ticket_b",
+            "expected": "ALLOW",
+            "decision": "ALLOW",
+            "correct": true,
+            "blocked_prefix_actions": [],
+            "reachable_along_this_prefix": true
+          },
+          {
+            "pair": "P3",
+            "class": "danger",
+            "target": "fallback",
+            "expected": "DENY",
+            "decision": "DENY",
+            "correct": true,
+            "blocked_prefix_actions": [],
+            "reachable_along_this_prefix": true
+          },
+          {
+            "pair": "P3",
+            "class": "benign",
+            "target": "ticket_a",
+            "expected": "ALLOW",
+            "decision": "ALLOW",
+            "correct": true,
+            "blocked_prefix_actions": [],
+            "reachable_along_this_prefix": true
+          },
+          {
+            "pair": "P4",
+            "class": "danger",
+            "target": "ticket_b",
+            "expected": "DENY",
+            "decision": "DENY",
+            "correct": true,
+            "blocked_prefix_actions": [],
+            "reachable_along_this_prefix": true
+          },
+          {
+            "pair": "P4",
+            "class": "benign",
+            "target": "vault",
+            "expected": "ALLOW",
+            "decision": "ALLOW",
+            "correct": true,
+            "blocked_prefix_actions": [],
+            "reachable_along_this_prefix": true
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -66,6 +66,8 @@ def audit_inputs():
     fm = json.loads((FIDES / 'manifest.json').read_text(encoding='utf-8'))
     assert am['tasks'] == fm['tasks'] and len(am['tasks']) == 72
     mismatches = []
+    oracle_mismatches = []
+    probe_count = 0
     for ident in am['tasks']:
         ap = json.loads((AGENTSPEC / 'tasks' / ident / 'prompt.json').read_text(encoding='utf-8'))
         fp = json.loads((FIDES / 'tasks' / ident / 'prompt.json').read_text(encoding='utf-8'))
@@ -75,13 +77,22 @@ def audit_inputs():
             assert tool.pop('fides_action_name') == f"{tool['agent']}/{tool['tool']}"
         if a != f:
             mismatches.append(ident)
+        agent_probes = json.loads((AGENTSPEC / 'tasks' / ident / 'evaluation.json').read_text(encoding='utf-8'))['probes']
+        fides_probes = json.loads((FIDES / 'tasks' / ident / 'matched_probe_evaluation.json').read_text(encoding='utf-8'))['probes']
+        if len(agent_probes) != len(fides_probes) or any(
+            ap['dangerous'] != fp['dangerous'] for ap, fp in zip(agent_probes, fides_probes)
+        ):
+            oracle_mismatches.append(ident)
+        probe_count += len(agent_probes)
     assert not mismatches
+    assert not oracle_mismatches, f'Target-probe oracle mismatch: {oracle_mismatches}'
     return {
         'same_task_ids': True, 'same_public_semantic_payloads': True,
         'same_model': am['model'] == fm['model'] == 'mimo-v2.5',
         'same_temperature': am['temperature'] == fm['temperature'] == 0.2,
         'same_max_tokens': am['max_tokens'] == fm['max_tokens'] == 16384,
         'same_target_probe_oracles': True,
+        'matched_target_probes': probe_count,
         'same_normalization_rule': 'remove_single_stray_terminal_brace',
         'same_sidecar_order': 'SAGE first; native candidate only if SAGE allows',
     }

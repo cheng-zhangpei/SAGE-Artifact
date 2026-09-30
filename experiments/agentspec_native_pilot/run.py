@@ -7,18 +7,24 @@ import hashlib
 import io
 import itertools
 import json
+import os
 import subprocess
 import sys
 import zipfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-UPSTREAM = ROOT / 'external/AgentSpec'
+UPSTREAM = Path(os.environ.get('AGENTSPEC_SOURCE', str(ROOT / 'external/AgentSpec')))
 COMMIT = 'e6fa3902e2cfb9681f454b355691b771f70543f8'
-JAVA = Path('D:/SpringBoot/jdk-17.0.8/bin/java.exe')
+JAVA = os.environ.get('JAVA', 'java')
 
 
 def prepare(out):
+    if not (UPSTREAM / '.git').exists():
+        raise FileNotFoundError(
+            f'AgentSpec source checkout missing at {UPSTREAM}; clone the pinned upstream repository '
+            'there or set AGENTSPEC_SOURCE to an existing checkout.'
+        )
     archive = subprocess.check_output(['git', '-C', str(UPSTREAM), 'archive', '--format=zip', COMMIT, 'src', 'README.md'])
     runtime = out / 'runtime'
     with zipfile.ZipFile(io.BytesIO(archive)) as z:
@@ -33,7 +39,10 @@ def prepare(out):
             line = line.replace(';', " | 'pilot_candidate' | 'pilot_completion' ;", 1)
         edited.append(line)
     grammar.write_text('\n'.join(edited) + '\n', encoding='utf-8')
-    subprocess.run([str(JAVA), '-jar', str(grammar.parent / 'antlr-4.13.2-complete.jar'),
+    jar = grammar.parent / 'antlr-4.13.2-complete.jar'
+    if not jar.exists():
+        raise FileNotFoundError(f'Pinned AgentSpec archive lacks the ANTLR jar: {jar}')
+    subprocess.run([str(JAVA), '-jar', str(jar),
                     '-Dlanguage=Python3', grammar.name], cwd=grammar.parent, check=True, capture_output=True)
     for p in (ROOT, runtime / 'src'):
         sys.path.insert(0, str(p))

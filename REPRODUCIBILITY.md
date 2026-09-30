@@ -7,6 +7,8 @@ from the repository root:
 
 ```bash
 python -m venv .venv
+# Windows PowerShell: .venv\Scripts\Activate.ps1
+# POSIX shell: source .venv/bin/activate
 python -m pip install -e ".[dev]"
 ```
 
@@ -34,6 +36,27 @@ counterexample search, coverage checking, and DirectSAGE. The latter two check
 the benchmark identifiers, finite action spaces, safe initial states, declared
 dangerous/benign probes, and compiled guards.
 
+## Frozen guard-authoring responses and coverage audit
+
+The original model responses and prompts are in
+`artifacts/fse2027/authoring72/raw`. The `mimo` and `gpt55` report files retain
+earlier bounded-search P/F/U classifications; these are historical records,
+not the final P/F/U values used in the paper. The final classification applies
+the conservative coverage check and replays candidate-admitted unsafe witnesses.
+It leaves the fixed-probe DER and BBR counts unchanged.
+
+Recompute this audit without contacting a model provider:
+
+```bash
+python -m benchmarks.everyday_workflows.audit_frozen_composition \
+  --output output/authoring_coverage_recomputed.json
+```
+
+The recomputed JSON should match
+`artifacts/fse2027/authoring72/coverage_audit_results.json`. The composition
+counts are MiMo 26 PASS / 9 FAIL / 1 UNKNOWN and GPT-5.5 25 PASS / 11 FAIL /
+0 UNKNOWN; adding the 36 base tasks yields the paper's 61/10/1 and 61/11/0.
+
 ## AgentSpec runtime study
 
 The frozen study uses AgentSpec commit
@@ -47,10 +70,16 @@ python experiments/agentspec_native_pilot/summarize_results.py \
   --output artifacts/fse2027/agentspec_mimo72
 ```
 
+This command writes derived summary files into the selected directory. Run it
+on a copy of `agentspec_mimo72` when checking the committed file hashes.
+
 The study registers the candidate and completed predicates in AgentSpec's
 interpreter and uses AgentSpec's STOP enforcement. Rebuilding the interpreter
 checkout additionally requires Git, Java 17, and network access to the upstream
-repository. The paper does not treat this experiment as a comparison against
+repository. Clone `https://github.com/haoyuwang99/AgentSpec.git` into
+`external/AgentSpec` (or set `AGENTSPEC_SOURCE` to an existing checkout). The
+runner archives the pinned commit and uses `java` from `PATH`; set `JAVA` to a
+Java 17 executable when needed. The paper does not treat this experiment as a comparison against
 author-supplied AgentSpec policies.
 
 ## FIDES policy-interface reproduction
@@ -67,6 +96,12 @@ Recompute the matched probe summary and unified table from frozen responses:
 python -m experiments.fides_native_pilot.matched_probe_evaluate --output artifacts/fse2027/fides_mimo72
 python experiments/cross_runtime_matched_audit.py
 ```
+
+The FIDES evaluator writes per-task diagnostics. Python set iteration may
+change which denied destination appears first in a diagnostic string, while
+probe decisions and aggregate scores remain the same. Run it on a copy when
+checking committed file hashes. Two hash seeds reproduced the frozen aggregate
+summary exactly.
 
 ## Physical workflows
 
@@ -99,8 +134,8 @@ the prevalence of deployed-guard collisions.
 
 ## Frozen LLM records
 
-The complete paper-facing MiMo-v2.5 and GPT-5.5 records for the 72 authoring
-tasks are under `artifacts/fse2027/authoring72`. The AgentSpec study retains its
+The paper-facing MiMo-v2.5 and GPT-5.5 summaries and raw retained responses
+for the 72 authoring tasks are under `artifacts/fse2027/authoring72`. The AgentSpec study retains its
 prompts, raw responses, predicate source, compiled completion, truth tables,
 and evaluations under `artifacts/fse2027/agentspec_mimo72`. Offline analysis
 does not contact a model provider.
@@ -118,5 +153,3 @@ Get-Content artifacts/fse2027/SHA256SUMS | ForEach-Object {
   }
 }
 ```
-
-

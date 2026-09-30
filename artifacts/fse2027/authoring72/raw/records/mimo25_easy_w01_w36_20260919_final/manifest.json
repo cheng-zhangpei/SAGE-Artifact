@@ -1,0 +1,171 @@
+{
+  "protocol": "config-a-v2-no-formal-hints-one-shot",
+  "model": "mimo-v2.5",
+  "selection_rule": "First VALID candidate in chronological source order. A workflow was rerun only after API_ERROR or TRUNCATED; PASS/FAIL outcomes were never rerun.",
+  "initial_max_tokens": 4096,
+  "truncation_policy": "4096 -> 8192 -> 16384 only after finish_reason=length",
+  "source_checkpoints": [
+    {
+      "path": "output\\mimo25_easy_w01_w36_20260919_r1\\checkpoint.json",
+      "sha256": "6561fd9c46b9a0b159c74a2b853971d7109b31dda9e92f4ad1e7d32810162ac1"
+    },
+    {
+      "path": "output\\mimo25_easy_w19_w36_20260919\\checkpoint.json",
+      "sha256": "321568696da8f6e6736f73d9d2409437dd24f7af6f34e4851be57f359e7e4b87"
+    },
+    {
+      "path": "output\\mimo25_easy_recovery_20260919\\checkpoint.json",
+      "sha256": "164c58db70016552ede52cdf26d101b3c4f9efdeebba3947c3164d3af5b3714d"
+    },
+    {
+      "path": "output\\mimo25_easy_w16_recovery2_20260919\\checkpoint.json",
+      "sha256": "676d0013f87f84a914708437a68a1a465900abd22a04954e4ca018692f0aaef5"
+    }
+  ],
+  "selected_sources": {
+    "W01": {
+      "path": "output\\mimo25_easy_w01_w36_20260919_r1\\checkpoint.json",
+      "position": 1
+    },
+    "W02": {
+      "path": "output\\mimo25_easy_w01_w36_20260919_r1\\checkpoint.json",
+      "position": 2
+    },
+    "W03": {
+      "path": "output\\mimo25_easy_w01_w36_20260919_r1\\checkpoint.json",
+      "position": 3
+    },
+    "W04": {
+      "path": "output\\mimo25_easy_w01_w36_20260919_r1\\checkpoint.json",
+      "position": 4
+    },
+    "W05": {
+      "path": "output\\mimo25_easy_w01_w36_20260919_r1\\checkpoint.json",
+      "position": 5
+    },
+    "W06": {
+      "path": "output\\mimo25_easy_w01_w36_20260919_r1\\checkpoint.json",
+      "position": 6
+    },
+    "W07": {
+      "path": "output\\mimo25_easy_w01_w36_20260919_r1\\checkpoint.json",
+      "position": 7
+    },
+    "W08": {
+      "path": "output\\mimo25_easy_w01_w36_20260919_r1\\checkpoint.json",
+      "position": 8
+    },
+    "W09": {
+      "path": "output\\mimo25_easy_w01_w36_20260919_r1\\checkpoint.json",
+      "position": 9
+    },
+    "W10": {
+      "path": "output\\mimo25_easy_w01_w36_20260919_r1\\checkpoint.json",
+      "position": 10
+    },
+    "W11": {
+      "path": "output\\mimo25_easy_w01_w36_20260919_r1\\checkpoint.json",
+      "position": 11
+    },
+    "W12": {
+      "path": "output\\mimo25_easy_w01_w36_20260919_r1\\checkpoint.json",
+      "position": 12
+    },
+    "W13": {
+      "path": "output\\mimo25_easy_w01_w36_20260919_r1\\checkpoint.json",
+      "position": 13
+    },
+    "W14": {
+      "path": "output\\mimo25_easy_w01_w36_20260919_r1\\checkpoint.json",
+      "position": 14
+    },
+    "W15": {
+      "path": "output\\mimo25_easy_w01_w36_20260919_r1\\checkpoint.json",
+      "position": 15
+    },
+    "W16": {
+      "path": "output\\mimo25_easy_w16_recovery2_20260919\\checkpoint.json",
+      "position": 1
+    },
+    "W17": {
+      "path": "output\\mimo25_easy_w01_w36_20260919_r1\\checkpoint.json",
+      "position": 17
+    },
+    "W18": {
+      "path": "output\\mimo25_easy_recovery_20260919\\checkpoint.json",
+      "position": 2
+    },
+    "W19": {
+      "path": "output\\mimo25_easy_w19_w36_20260919\\checkpoint.json",
+      "position": 1
+    },
+    "W20": {
+      "path": "output\\mimo25_easy_recovery_20260919\\checkpoint.json",
+      "position": 3
+    },
+    "W21": {
+      "path": "output\\mimo25_easy_w19_w36_20260919\\checkpoint.json",
+      "position": 3
+    },
+    "W22": {
+      "path": "output\\mimo25_easy_w19_w36_20260919\\checkpoint.json",
+      "position": 4
+    },
+    "W23": {
+      "path": "output\\mimo25_easy_w19_w36_20260919\\checkpoint.json",
+      "position": 5
+    },
+    "W24": {
+      "path": "output\\mimo25_easy_w19_w36_20260919\\checkpoint.json",
+      "position": 6
+    },
+    "W25": {
+      "path": "output\\mimo25_easy_w19_w36_20260919\\checkpoint.json",
+      "position": 7
+    },
+    "W26": {
+      "path": "output\\mimo25_easy_w19_w36_20260919\\checkpoint.json",
+      "position": 8
+    },
+    "W27": {
+      "path": "output\\mimo25_easy_w19_w36_20260919\\checkpoint.json",
+      "position": 9
+    },
+    "W28": {
+      "path": "output\\mimo25_easy_w19_w36_20260919\\checkpoint.json",
+      "position": 10
+    },
+    "W29": {
+      "path": "output\\mimo25_easy_recovery_20260919\\checkpoint.json",
+      "position": 4
+    },
+    "W30": {
+      "path": "output\\mimo25_easy_recovery_20260919\\checkpoint.json",
+      "position": 5
+    },
+    "W31": {
+      "path": "output\\mimo25_easy_recovery_20260919\\checkpoint.json",
+      "position": 6
+    },
+    "W32": {
+      "path": "output\\mimo25_easy_recovery_20260919\\checkpoint.json",
+      "position": 7
+    },
+    "W33": {
+      "path": "output\\mimo25_easy_recovery_20260919\\checkpoint.json",
+      "position": 8
+    },
+    "W34": {
+      "path": "output\\mimo25_easy_recovery_20260919\\checkpoint.json",
+      "position": 9
+    },
+    "W35": {
+      "path": "output\\mimo25_easy_recovery_20260919\\checkpoint.json",
+      "position": 10
+    },
+    "W36": {
+      "path": "output\\mimo25_easy_recovery_20260919\\checkpoint.json",
+      "position": 11
+    }
+  }
+}

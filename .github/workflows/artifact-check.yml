@@ -1,0 +1,25 @@
+name: Offline artifact checks
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  offline:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install offline dependencies
+        run: python -m pip install -e ".[dev]"
+      - name: Test semantic core and physical harness
+        run: python -m pytest sage/v2/tests benchmarks/everyday_workflows integrations/physical72 -q
+      - name: Recompute frozen authoring coverage
+        run: python -m benchmarks.everyday_workflows.audit_frozen_composition --output authoring_coverage_ci.json
+      - name: Check matched runtime inputs and frozen scores
+        run: python experiments/cross_runtime_matched_audit.py

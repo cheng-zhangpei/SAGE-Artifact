@@ -1,0 +1,814 @@
+{
+  "manifest": {
+    "record_type": "manifest",
+    "created_at": "2026-09-19T13:21:48.390958+00:00",
+    "protocol": "composition-config-a-v1-one-shot",
+    "model": "gpt-5.5",
+    "temperature": 0.2,
+    "initial_max_tokens": 8192,
+    "max_token_ceiling": 32768,
+    "max_states": 5000,
+    "verification_protocol": "Use sufficient action-coverage certificate when available; otherwise run bounded counterexample search only for an unblocked executable diagnostic miss; else UNKNOWN.",
+    "truncation_policy": "double only after finish_reason=length",
+    "retries": "no quality retries; transport recovery must be a separate recorded run",
+    "response_format": "omitted",
+    "api_timeout_seconds": 600,
+    "tasks": [
+      "COMP-REIMBURSEMENT-32",
+      "COMP-CLINICAL-REFERRAL-24",
+      "COMP-CLINICAL-REFERRAL-32",
+      "COMP-CLINICAL-REFERRAL-40",
+      "COMP-CLINICAL-REFERRAL-48",
+      "COMP-SOFTWARE-DELIVERY-08"
+    ],
+    "source_hashes": {
+      "composition_suite.py": "3fc6de618224600370fdb31e9cda53c7e8cd0e5ae407c2a4597a15b919550f17",
+      "business_families.py": "6be791d6e6f105d2b39f0d93df7420281158b7ca1416a27824bff552dea6edb2",
+      "dense.py": "4c2354854c7df8ab2d917f347aa9ce7b483fc0cc3eb9522a0591a582dc5fbc7a",
+      "run.py": "361aac897ad92bf91dc3b1f5b5ca204bfcfd8a386dd033507a72384a7164ae44",
+      "evaluate.py": "86c44825f0029335665270fb05d170981461a180af08ac52141e7d76c5af48bb"
+    }
+  },
+  "records": [
+    {
+      "record_type": "candidate",
+      "workflow": "COMP-REIMBURSEMENT-32",
+      "family": "reimbursement",
+      "count": 32,
+      "total_actions": 39,
+      "prompt_sha256": "bdac5ab6b37c4f0688f893ef8d7e6bf7607c32627454be9dfdd073df87932e5a",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a security engineer drafting runtime information-flow guards.\nUse only the provided scenario, natural-language tool descriptions and security policy.\nDraft guards for the entire workflow that enforce the policy while preserving permitted uses.\nReturn only {\"guards\":[{\"agent\":\"...\",\"tool\":\"...\",\"params\":{},\"forbidden_labels\":[\"...\"]}]}.\nCopy agent, tool and the complete params object exactly from a listed concrete call.\nThe forbidden_labels field lists data categories that must cause this matching call\nto be rejected when present in the information it handles. Any listed category triggers rejection.\nUse only declared labels. Do not use wildcards, additional keys, Markdown or explanations.\nAn empty guard set is {\"guards\":[]}."
+        },
+        {
+          "role": "user",
+          "content": "{\"description\": \"报销与资金团队共享报销案件。导入把一种原始材料追加到 claim，复核把\\nclaim 追加到 approved，装订把 approved 追加到 packet；快速装订可把 claim 直接追加到\\npacket。另有不含受限资料的 handbook。所有写入保留旧内容，工具不自动脱敏或验证票据。\\n\\nsubmit_claim 工具说明：claims 的 local/counterparty/release 分别对应 slot:backoffice/slot:processor/slot:public；treasury 的相同别名分别对应 slot:backoffice/slot:bank/slot:regulator。copy=audit 对应 slot:audit，copy=public 对应 slot:public。route 按调用团队解释；source 选择\\nhandbook、approved 或 packet。include=packet 会额外附上 packet，include=claim 会附上\\n原始 claim。copy=audit 增加审计副本，copy=counterparty 增加本团队交易对手副本，\\ncopy=public 增加公开副本。各接收者得到相同完整内容。请为全部具体调用起草规则。\\n除标签原始来源外，所有位置初始为空。全部写入追加并保留旧内容；调用可重复且顺序不限。所有工具不生成新标签。参数 none 表示不附加材料或副本。所有未列入 policy 的位置不禁止任何类别。位置名称均以 slot: 为前缀。\", \"labels\": {\"EMPLOYEE\": \"员工身份资料\", \"FINANCIAL\": \"报销与账户资料\", \"AUTH\": \"审批或支付凭据\", \"UNVERIFIED\": \"未经核验的票据材料\"}, \"policy\": {\"slot:processor\": [\"AUTH\", \"UNVERIFIED\"], \"slot:bank\": [\"EMPLOYEE\", \"AUTH\"], \"slot:public\": [\"EMPLOYEE\", \"FINANCIAL\", \"AUTH\"], \"slot:audit\": [\"FINANCIAL\", \"AUTH\"], \"slot:regulator\": [\"UNVERIFIED\"]}, \"tools\": [{\"agent\": \"intake\", \"tool\": \"import_expense\", \"params\": {\"category\": \"EMPLOYEE\"}, \"description\": \"读取仅含EMPLOYEE的材料并追加到 slot:claim。\"}, {\"agent\": \"intake\", \"tool\": \"import_expense\", \"params\": {\"category\": \"FINANCIAL\"}, \"description\": \"读取仅含FINANCIAL的材料并追加到 slot:claim。\"}, {\"agent\": \"intake\", \"tool\": \"import_expense\", \"params\": {\"category\": \"AUTH\"}, \"description\": \"读取仅含AUTH的材料并追加到 slot:claim。\"}, {\"agent\": \"intake\", \"tool\": \"import_expense\", \"params\": {\"category\": \"UNVERIFIED\"}, \"description\": \"读取仅含UNVERIFIED的材料并追加到 slot:claim。\"}, {\"agent\": \"reviewer\", \"tool\": \"review_claim\", \"params\": {}, \"description\": \"将 claim 追加到 approved。\"}, {\"agent\": \"clerk\", \"tool\": \"assemble_packet\", \"params\": {\"source\": \"approved\"}, \"description\": \"将 approved 追加到 packet。\"}, {\"agent\": \"clerk\", \"tool\": \"assemble_packet\", \"params\": {\"source\": \"claim\"}, \"description\": \"将 claim 直接追加到 packet。\"}, {\"agent\": \"treasury\", \"tool\": \"submit_claim\", \"params\": {\"route\": \"release\", \"source\": \"packet\", \"include\": \"none\", \"copy\": \"counterparty\"}, \"description\": \"按 submit_claim 公共说明提交。\"}, {\"agent\": \"claims\", \"tool\": \"submit_claim\", \"params\": {\"route\": \"counterparty\", \"source\": \"packet\", \"include\": \"none\", \"copy\": \"none\"}, \"description\": \"按 submit_claim 公共说明提交。\"}, {\"agent\": \"claims\", \"tool\": \"submit_claim\", \"params\": {\"route\": \"release\", \"source\": \"approved\", \"include\": \"claim\", \"copy\": \"counterparty\"}, \"description\": \"按 submit_claim 公共说明提交。\"}, {\"agent\": \"claims\", \"tool\": \"submit_claim\", \"params\": {\"route\": \"release\", \"source\": \"approved\", \"include\": \"packet\", \"copy\": \"counterparty\"}, \"description\": \"按 submit_claim 公共说明提交。\"}, {\"agent\": \"treasury\", \"tool\": \"submit_claim\", \"params\": {\"route\": \"release\", \"source\": \"handbook\", \"include\": \"claim\", \"copy\": \"audit\"}, \"description\": \"按 submit_claim 公共说明提交。\"}, {\"agent\": \"claims\", \"tool\": \"submit_claim\", \"params\": {\"route\": \"release\", \"source\": \"packet\", \"include\": \"packet\", \"copy\": \"audit\"}, \"description\": \"按 submit_claim 公共说明提交。\"}, {\"agent\": \"claims\", \"tool\": \"submit_claim\", \"params\": {\"route\": \"counterparty\", \"source\": \"handbook\", \"include\": \"claim\", \"copy\": \"none\"}, \"description\": \"按 submit_claim 公共说明提交。\"}, {\"agent\": \"treasury\", \"tool\": \"submit_claim\", \"params\": {\"route\": \"counterparty\", \"source\": \"packet\", \"include\": \"claim\", \"copy\": \"none\"}, \"description\": \"按 submit_claim 公共说明提交。\"}, {\"agent\": \"treasury\", \"tool\": \"submit_claim\", \"params\": {\"route\": \"counterparty\", \"source\": \"handbook\", \"include\": \"claim\", \"copy\": \"audit\"}, \"description\": \"按 submit_claim 公共说明提交。\"}, {\"agent\": \"treasury\", \"tool\": \"submit_claim\", \"params\": {\"route\": \"counterparty\", \"source\": \"handbook\", \"include\": \"packet\", \"copy\": \"audit\"}, \"description\": \"按 submit_claim 公共说明提交。\"}, {\"agent\": \"claims\", \"tool\": \"submit_claim\", \"params\": {\"route\": \"counterparty\", \"source\": \"packet\", \"include\": \"claim\", \"copy\": \"counterparty\"}, \"description\": \"按 submit_claim 公共说明提交。\"}, {\"agent\": \"claims\", \"tool\": \"submit_claim\", \"params\": {\"route\": \"local\", \"source\": \"packet\", \"include\": \"packet\", \"copy\": \"public\"}, \"description\": \"按 submit_claim 公共说明提交。\"}, {\"agent\": \"claims\", \"tool\": \"submit_claim\", \"params\": {\"route\": \"counterparty\", \"source\": \"packet\", \"include\": \"claim\", \"copy\": \"none\"}, \"description\": \"按 submit_claim 公共说明提交。\"}, {\"agent\": \"treasury\", \"tool\": \"submit_claim\", \"params\": {\"route\": \"release\", \"source\": \"approved\", \"include\": \"none\", \"copy\": \"counterparty\"}, \"description\": \"按 submit_claim 公共说明提交。\"}, {\"agent\": \"claims\", \"tool\": \"submit_claim\", \"params\": {\"route\": \"release\", \"source\": \"packet\", \"include\": \"none\", \"copy\": \"audit\"}, \"description\": \"按 submit_claim 公共说明提交。\"}, {\"agent\": \"claims\", \"tool\": \"submit_claim\", \"params\": {\"route\": \"counterparty\", \"source\": \"handbook\", \"include\": \"packet\", \"copy\": \"public\"}, \"description\": \"按 submit_claim 公共说明提交。\"}, {\"agent\": \"claims\", \"tool\": \"submit_claim\", \"params\": {\"route\": \"release\", \"source\": \"handbook\", \"include\": \"none\", \"copy\": \"counterparty\"}, \"description\": \"按 submit_claim 公共说明提交。\"}, {\"agent\": \"claims\", \"tool\": \"submit_claim\", \"params\": {\"route\": \"release\", \"source\": \"approved\", \"include\": \"none\", \"copy\": \"none\"}, \"description\": \"按 submit_claim 公共说明提交。\"}, {\"agent\": \"claims\", \"tool\": \"submit_claim\", \"params\": {\"route\": \"counterparty\", \"source\": \"approved\", \"include\": \"packet\", \"copy\": \"none\"}, \"description\": \"按 submit_claim 公共说明提交。\"}, {\"agent\": \"claims\", \"tool\": \"submit_claim\", \"params\": {\"route\": \"counterparty\", \"source\": \"handbook\", \"include\": \"packet\", \"copy\": \"audit\"}, \"description\": \"按 submit_claim 公共说明提交。\"}, {\"agent\": \"claims\", \"tool\": \"submit_claim\", \"params\": {\"route\": \"local\", \"source\": \"packet\", \"include\": \"claim\", \"copy\": \"public\"}, \"description\": \"按 submit_claim 公共说明提交。\"}, {\"agent\": \"treasury\", \"tool\": \"submit_claim\", \"params\": {\"route\": \"local\", \"source\": \"handbook\", \"include\": \"none\", \"copy\": \"none\"}, \"description\": \"按 submit_claim 公共说明提交。\"}, {\"agent\": \"treasury\", \"tool\": \"submit_claim\", \"params\": {\"route\": \"release\", \"source\": \"approved\", \"include\": \"none\", \"copy\": \"none\"}, \"description\": \"按 submit_claim 公共说明提交。\"}, {\"agent\": \"treasury\", \"tool\": \"submit_claim\", \"params\": {\"route\": \"release\", \"source\": \"approved\", \"include\": \"packet\", \"copy\": \"audit\"}, \"description\": \"按 submit_claim 公共说明提交。\"}, {\"agent\": \"treasury\", \"tool\": \"submit_claim\", \"params\": {\"route\": \"counterparty\", \"source\": \"packet\", \"include\": \"claim\", \"copy\": \"public\"}, \"description\": \"按 submit_claim 公共说明提交。\"}, {\"agent\": \"treasury\", \"tool\": \"submit_claim\", \"params\": {\"route\": \"release\", \"source\": \"handbook\", \"include\": \"claim\", \"copy\": \"none\"}, \"description\": \"按 submit_claim 公共说明提交。\"}, {\"agent\": \"treasury\", \"tool\": \"submit_claim\", \"params\": {\"route\": \"counterparty\", \"source\": \"packet\", \"include\": \"packet\", \"copy\": \"counterparty\"}, \"description\": \"按 submit_claim 公共说明提交。\"}, {\"agent\": \"treasury\", \"tool\": \"submit_claim\", \"params\": {\"route\": \"local\", \"source\": \"packet\", \"include\": \"packet\", \"copy\": \"none\"}, \"description\": \"按 submit_claim 公共说明提交。\"}, {\"agent\": \"treasury\", \"tool\": \"submit_claim\", \"params\": {\"route\": \"local\", \"source\": \"approved\", \"include\": \"packet\", \"copy\": \"audit\"}, \"description\": \"按 submit_claim 公共说明提交。\"}, {\"agent\": \"claims\", \"tool\": \"submit_claim\", \"params\": {\"route\": \"release\", \"source\": \"handbook\", \"include\": \"claim\", \"copy\": \"none\"}, \"description\": \"按 submit_claim 公共说明提交。\"}, {\"agent\": \"claims\", \"tool\": \"submit_claim\", \"params\": {\"route\": \"local\", \"source\": \"approved\", \"include\": \"none\", \"copy\": \"counterparty\"}, \"description\": \"按 submit_claim 公共说明提交。\"}, {\"agent\": \"treasury\", \"tool\": \"submit_claim\", \"params\": {\"route\": \"counterparty\", \"source\": \"approved\", \"include\": \"none\", \"copy\": \"none\"}, \"description\": \"按 submit_claim 公共说明提交。\"}]}"
+        }
+      ],
+      "attempts": [
+        {
+          "max_tokens": 8192,
+          "transport_status": "API_ERROR",
+          "error": "Transport or response decoding failure"
+        }
+      ],
+      "effective_max_tokens": 8192,
+      "transport_status": "API_ERROR",
+      "error": "Transport or response decoding failure",
+      "evaluation": {
+        "candidate_status": "NOT_EVALUATED",
+        "verification_status": "NOT_RUN"
+      }
+    },
+    {
+      "record_type": "candidate",
+      "workflow": "COMP-CLINICAL-REFERRAL-24",
+      "family": "clinical_referral",
+      "count": 24,
+      "total_actions": 31,
+      "prompt_sha256": "e4b0075cb58fa86d2165f0d681bfd74346952fd6e85e600512ec63f1567fe1f8",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a security engineer drafting runtime information-flow guards.\nUse only the provided scenario, natural-language tool descriptions and security policy.\nDraft guards for the entire workflow that enforce the policy while preserving permitted uses.\nReturn only {\"guards\":[{\"agent\":\"...\",\"tool\":\"...\",\"params\":{},\"forbidden_labels\":[\"...\"]}]}.\nCopy agent, tool and the complete params object exactly from a listed concrete call.\nThe forbidden_labels field lists data categories that must cause this matching call\nto be rejected when present in the information it handles. Any listed category triggers rejection.\nUse only declared labels. Do not use wildcards, additional keys, Markdown or explanations.\nAn empty guard set is {\"guards\":[]}."
+        },
+        {
+          "role": "user",
+          "content": "{\"description\": \"临床转诊与研究团队共享转诊材料。登记把一种原始材料追加到 referral，\\n临床复核把 referral 追加到 reviewed，协调员把 reviewed 追加到 packet；快速制包可直接\\n把 referral 追加到 packet。另有不含受限信息的 clinic_notice。工具不会自动去标识、\\n验证外部检查或撤销授权。\\n\\nroute_referral 工具说明：care 的 local/partner/release\\n分别对应 slot:hospital/slot:scheduler/slot:public；research 的相同别名分别对应\\nslot:hospital/slot:research/slot:lab。destination 按调用团队解释；source 选择\\nclinic_notice、reviewed 或 packet。attachment=packet 会附上 packet，attachment=referral\\n会附上原始 referral。record=audit 增加完整审计副本，record=partner 增加本团队 partner\\n副本，record=public 增加公开副本。每个接收方得到相同完整内容。请为所有调用起草规则。\\n除标签原始来源外，所有位置初始为空。全部写入追加并保留旧内容；调用可重复且顺序不限。所有工具不生成新标签。参数 none 表示不附加材料或副本。所有未列入 policy 的位置不禁止任何类别。位置名称均以 slot: 为前缀。\", \"labels\": {\"PATIENT\": \"患者身份与联系方式\", \"DIAGNOSIS\": \"诊断与治疗资料\", \"AUTH\": \"转诊授权凭据\", \"UNVERIFIED\": \"未经核验的外部检查材料\"}, \"policy\": {\"slot:scheduler\": [\"DIAGNOSIS\", \"AUTH\"], \"slot:lab\": [\"PATIENT\", \"AUTH\"], \"slot:public\": [\"PATIENT\", \"DIAGNOSIS\", \"AUTH\"], \"slot:audit\": [\"DIAGNOSIS\", \"AUTH\"], \"slot:research\": [\"PATIENT\", \"UNVERIFIED\"]}, \"tools\": [{\"agent\": \"intake\", \"tool\": \"register_material\", \"params\": {\"category\": \"PATIENT\"}, \"description\": \"读取仅含PATIENT的材料并追加到 slot:referral。\"}, {\"agent\": \"intake\", \"tool\": \"register_material\", \"params\": {\"category\": \"DIAGNOSIS\"}, \"description\": \"读取仅含DIAGNOSIS的材料并追加到 slot:referral。\"}, {\"agent\": \"intake\", \"tool\": \"register_material\", \"params\": {\"category\": \"AUTH\"}, \"description\": \"读取仅含AUTH的材料并追加到 slot:referral。\"}, {\"agent\": \"intake\", \"tool\": \"register_material\", \"params\": {\"category\": \"UNVERIFIED\"}, \"description\": \"读取仅含UNVERIFIED的材料并追加到 slot:referral。\"}, {\"agent\": \"clinician\", \"tool\": \"review_referral\", \"params\": {}, \"description\": \"将 referral 追加到 reviewed。\"}, {\"agent\": \"coordinator\", \"tool\": \"assemble_referral\", \"params\": {\"source\": \"reviewed\"}, \"description\": \"将 reviewed 追加到 packet。\"}, {\"agent\": \"coordinator\", \"tool\": \"assemble_referral\", \"params\": {\"source\": \"referral\"}, \"description\": \"将 referral 直接追加到 packet。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"reviewed\", \"attachment\": \"packet\", \"record\": \"partner\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"local\", \"source\": \"clinic_notice\", \"attachment\": \"referral\", \"record\": \"partner\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"partner\", \"source\": \"packet\", \"attachment\": \"none\", \"record\": \"public\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"local\", \"source\": \"clinic_notice\", \"attachment\": \"referral\", \"record\": \"public\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"packet\", \"attachment\": \"packet\", \"record\": \"none\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"partner\", \"source\": \"packet\", \"attachment\": \"packet\", \"record\": \"partner\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"partner\", \"source\": \"packet\", \"attachment\": \"packet\", \"record\": \"none\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"partner\", \"source\": \"clinic_notice\", \"attachment\": \"referral\", \"record\": \"audit\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"reviewed\", \"attachment\": \"none\", \"record\": \"partner\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"reviewed\", \"attachment\": \"packet\", \"record\": \"partner\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"partner\", \"source\": \"clinic_notice\", \"attachment\": \"packet\", \"record\": \"public\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"local\", \"source\": \"packet\", \"attachment\": \"none\", \"record\": \"audit\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"partner\", \"source\": \"packet\", \"attachment\": \"referral\", \"record\": \"audit\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"clinic_notice\", \"attachment\": \"packet\", \"record\": \"audit\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"clinic_notice\", \"attachment\": \"referral\", \"record\": \"public\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"packet\", \"attachment\": \"none\", \"record\": \"partner\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"local\", \"source\": \"packet\", \"attachment\": \"referral\", \"record\": \"public\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"partner\", \"source\": \"packet\", \"attachment\": \"none\", \"record\": \"none\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"reviewed\", \"attachment\": \"referral\", \"record\": \"none\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"partner\", \"source\": \"clinic_notice\", \"attachment\": \"referral\", \"record\": \"partner\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"local\", \"source\": \"clinic_notice\", \"attachment\": \"packet\", \"record\": \"audit\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"local\", \"source\": \"packet\", \"attachment\": \"packet\", \"record\": \"partner\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"packet\", \"attachment\": \"referral\", \"record\": \"public\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"reviewed\", \"attachment\": \"none\", \"record\": \"public\"}, \"description\": \"按 route_referral 公共说明执行。\"}]}"
+        }
+      ],
+      "attempts": [
+        {
+          "max_tokens": 8192,
+          "transport_status": "OK",
+          "raw_content": "{\"guards\":[{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"reviewed\",\"attachment\":\"packet\",\"record\":\"partner\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"local\",\"source\":\"clinic_notice\",\"attachment\":\"referral\",\"record\":\"partner\"},\"forbidden_labels\":[\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"packet\",\"attachment\":\"none\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"local\",\"source\":\"clinic_notice\",\"attachment\":\"referral\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"packet\",\"attachment\":\"packet\",\"record\":\"none\"},\"forbidden_labels\":[\"PATIENT\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"packet\",\"attachment\":\"packet\",\"record\":\"partner\"},\"forbidden_labels\":[\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"packet\",\"attachment\":\"packet\",\"record\":\"none\"},\"forbidden_labels\":[\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"clinic_notice\",\"attachment\":\"referral\",\"record\":\"audit\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\",\"UNVERIFIED\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"reviewed\",\"attachment\":\"none\",\"record\":\"partner\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"reviewed\",\"attachment\":\"packet\",\"record\":\"partner\"},\"forbidden_labels\":[\"PATIENT\",\"AUTH\",\"UNVERIFIED\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"clinic_notice\",\"attachment\":\"packet\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"local\",\"source\":\"packet\",\"attachment\":\"none\",\"record\":\"audit\"},\"forbidden_labels\":[\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"packet\",\"attachment\":\"referral\",\"record\":\"audit\"},\"forbidden_labels\":[\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"clinic_notice\",\"attachment\":\"packet\",\"record\":\"audit\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"clinic_notice\",\"attachment\":\"referral\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"packet\",\"attachment\":\"none\",\"record\":\"partner\"},\"forbidden_labels\":[\"PATIENT\",\"AUTH\",\"UNVERIFIED\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"local\",\"source\":\"packet\",\"attachment\":\"referral\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"packet\",\"attachment\":\"none\",\"record\":\"none\"},\"forbidden_labels\":[\"PATIENT\",\"UNVERIFIED\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"reviewed\",\"attachment\":\"referral\",\"record\":\"none\"},\"forbidden_labels\":[\"PATIENT\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"clinic_notice\",\"attachment\":\"referral\",\"record\":\"partner\"},\"forbidden_labels\":[\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"local\",\"source\":\"clinic_notice\",\"attachment\":\"packet\",\"record\":\"audit\"},\"forbidden_labels\":[\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"local\",\"source\":\"packet\",\"attachment\":\"packet\",\"record\":\"partner\"},\"forbidden_labels\":[\"PATIENT\",\"UNVERIFIED\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"packet\",\"attachment\":\"referral\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"reviewed\",\"attachment\":\"none\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]}]}",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 2516,
+            "completion_tokens": 2221,
+            "total_tokens": 4737,
+            "billing_usage": {
+              "source": "oai_responses",
+              "semantic": "openai",
+              "openai_usage": {
+                "prompt_tokens": 0,
+                "completion_tokens": 0,
+                "total_tokens": 4737,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0,
+                  "text_tokens": 0,
+                  "audio_tokens": 0,
+                  "image_tokens": 0
+                },
+                "completion_tokens_details": {
+                  "text_tokens": 0,
+                  "audio_tokens": 0,
+                  "image_tokens": 0,
+                  "reasoning_tokens": 0
+                },
+                "input_tokens": 2516,
+                "output_tokens": 2221,
+                "input_tokens_details": {
+                  "cached_tokens": 0,
+                  "text_tokens": 0,
+                  "audio_tokens": 0,
+                  "image_tokens": 0
+                },
+                "claude_cache_creation_5_m_tokens": 0,
+                "claude_cache_creation_1_h_tokens": 0
+              }
+            },
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "text_tokens": 0,
+              "audio_tokens": 0,
+              "image_tokens": 0
+            },
+            "completion_tokens_details": {
+              "text_tokens": 0,
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "reasoning_tokens": 0
+            },
+            "input_tokens": 2516,
+            "output_tokens": 2221,
+            "input_tokens_details": null,
+            "claude_cache_creation_5_m_tokens": 0,
+            "claude_cache_creation_1_h_tokens": 0
+          },
+          "response_model": "gpt-5.5",
+          "response_id": "chatcmpl-202609191323492551373118268d9d6diz6ffkZ"
+        }
+      ],
+      "effective_max_tokens": 8192,
+      "transport_status": "OK",
+      "raw_content": "{\"guards\":[{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"reviewed\",\"attachment\":\"packet\",\"record\":\"partner\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"local\",\"source\":\"clinic_notice\",\"attachment\":\"referral\",\"record\":\"partner\"},\"forbidden_labels\":[\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"packet\",\"attachment\":\"none\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"local\",\"source\":\"clinic_notice\",\"attachment\":\"referral\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"packet\",\"attachment\":\"packet\",\"record\":\"none\"},\"forbidden_labels\":[\"PATIENT\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"packet\",\"attachment\":\"packet\",\"record\":\"partner\"},\"forbidden_labels\":[\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"packet\",\"attachment\":\"packet\",\"record\":\"none\"},\"forbidden_labels\":[\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"clinic_notice\",\"attachment\":\"referral\",\"record\":\"audit\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\",\"UNVERIFIED\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"reviewed\",\"attachment\":\"none\",\"record\":\"partner\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"reviewed\",\"attachment\":\"packet\",\"record\":\"partner\"},\"forbidden_labels\":[\"PATIENT\",\"AUTH\",\"UNVERIFIED\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"clinic_notice\",\"attachment\":\"packet\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"local\",\"source\":\"packet\",\"attachment\":\"none\",\"record\":\"audit\"},\"forbidden_labels\":[\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"packet\",\"attachment\":\"referral\",\"record\":\"audit\"},\"forbidden_labels\":[\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"clinic_notice\",\"attachment\":\"packet\",\"record\":\"audit\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"clinic_notice\",\"attachment\":\"referral\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"packet\",\"attachment\":\"none\",\"record\":\"partner\"},\"forbidden_labels\":[\"PATIENT\",\"AUTH\",\"UNVERIFIED\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"local\",\"source\":\"packet\",\"attachment\":\"referral\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"packet\",\"attachment\":\"none\",\"record\":\"none\"},\"forbidden_labels\":[\"PATIENT\",\"UNVERIFIED\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"reviewed\",\"attachment\":\"referral\",\"record\":\"none\"},\"forbidden_labels\":[\"PATIENT\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"clinic_notice\",\"attachment\":\"referral\",\"record\":\"partner\"},\"forbidden_labels\":[\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"local\",\"source\":\"clinic_notice\",\"attachment\":\"packet\",\"record\":\"audit\"},\"forbidden_labels\":[\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"local\",\"source\":\"packet\",\"attachment\":\"packet\",\"record\":\"partner\"},\"forbidden_labels\":[\"PATIENT\",\"UNVERIFIED\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"packet\",\"attachment\":\"referral\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"reviewed\",\"attachment\":\"none\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]}]}",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2516,
+        "completion_tokens": 2221,
+        "total_tokens": 4737,
+        "billing_usage": {
+          "source": "oai_responses",
+          "semantic": "openai",
+          "openai_usage": {
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "total_tokens": 4737,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "text_tokens": 0,
+              "audio_tokens": 0,
+              "image_tokens": 0
+            },
+            "completion_tokens_details": {
+              "text_tokens": 0,
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "reasoning_tokens": 0
+            },
+            "input_tokens": 2516,
+            "output_tokens": 2221,
+            "input_tokens_details": {
+              "cached_tokens": 0,
+              "text_tokens": 0,
+              "audio_tokens": 0,
+              "image_tokens": 0
+            },
+            "claude_cache_creation_5_m_tokens": 0,
+            "claude_cache_creation_1_h_tokens": 0
+          }
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 0,
+          "audio_tokens": 0,
+          "image_tokens": 0
+        },
+        "completion_tokens_details": {
+          "text_tokens": 0,
+          "audio_tokens": 0,
+          "image_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "input_tokens": 2516,
+        "output_tokens": 2221,
+        "input_tokens_details": null,
+        "claude_cache_creation_5_m_tokens": 0,
+        "claude_cache_creation_1_h_tokens": 0
+      },
+      "response_model": "gpt-5.5",
+      "response_id": "chatcmpl-202609191323492551373118268d9d6diz6ffkZ",
+      "evaluation": {
+        "candidate_status": "VALID",
+        "verification_status": "PASS",
+        "verification_basis": "SUFFICIENT_ACTION_COVERAGE",
+        "verification_error": null,
+        "counterexample": null,
+        "coverage_certificate": "SUFFICIENT_SAFE",
+        "trace_search": "NOT_RUN",
+        "dangerous_probes": 164,
+        "benign_probes": 124,
+        "missed": 0,
+        "blocked": 0,
+        "prefix_block_decisions": 0,
+        "mismatches": []
+      }
+    },
+    {
+      "record_type": "candidate",
+      "workflow": "COMP-CLINICAL-REFERRAL-32",
+      "family": "clinical_referral",
+      "count": 32,
+      "total_actions": 39,
+      "prompt_sha256": "4ef7debf2c93f69dcb8a6eee03dc2a77834f18e04cc1be84dceffe2bebb5224e",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a security engineer drafting runtime information-flow guards.\nUse only the provided scenario, natural-language tool descriptions and security policy.\nDraft guards for the entire workflow that enforce the policy while preserving permitted uses.\nReturn only {\"guards\":[{\"agent\":\"...\",\"tool\":\"...\",\"params\":{},\"forbidden_labels\":[\"...\"]}]}.\nCopy agent, tool and the complete params object exactly from a listed concrete call.\nThe forbidden_labels field lists data categories that must cause this matching call\nto be rejected when present in the information it handles. Any listed category triggers rejection.\nUse only declared labels. Do not use wildcards, additional keys, Markdown or explanations.\nAn empty guard set is {\"guards\":[]}."
+        },
+        {
+          "role": "user",
+          "content": "{\"description\": \"临床转诊与研究团队共享转诊材料。登记把一种原始材料追加到 referral，\\n临床复核把 referral 追加到 reviewed，协调员把 reviewed 追加到 packet；快速制包可直接\\n把 referral 追加到 packet。另有不含受限信息的 clinic_notice。工具不会自动去标识、\\n验证外部检查或撤销授权。\\n\\nroute_referral 工具说明：care 的 local/partner/release\\n分别对应 slot:hospital/slot:scheduler/slot:public；research 的相同别名分别对应\\nslot:hospital/slot:research/slot:lab。destination 按调用团队解释；source 选择\\nclinic_notice、reviewed 或 packet。attachment=packet 会附上 packet，attachment=referral\\n会附上原始 referral。record=audit 增加完整审计副本，record=partner 增加本团队 partner\\n副本，record=public 增加公开副本。每个接收方得到相同完整内容。请为所有调用起草规则。\\n除标签原始来源外，所有位置初始为空。全部写入追加并保留旧内容；调用可重复且顺序不限。所有工具不生成新标签。参数 none 表示不附加材料或副本。所有未列入 policy 的位置不禁止任何类别。位置名称均以 slot: 为前缀。\", \"labels\": {\"PATIENT\": \"患者身份与联系方式\", \"DIAGNOSIS\": \"诊断与治疗资料\", \"AUTH\": \"转诊授权凭据\", \"UNVERIFIED\": \"未经核验的外部检查材料\"}, \"policy\": {\"slot:scheduler\": [\"DIAGNOSIS\", \"AUTH\"], \"slot:lab\": [\"PATIENT\", \"AUTH\"], \"slot:public\": [\"PATIENT\", \"DIAGNOSIS\", \"AUTH\"], \"slot:audit\": [\"DIAGNOSIS\", \"AUTH\"], \"slot:research\": [\"PATIENT\", \"UNVERIFIED\"]}, \"tools\": [{\"agent\": \"intake\", \"tool\": \"register_material\", \"params\": {\"category\": \"PATIENT\"}, \"description\": \"读取仅含PATIENT的材料并追加到 slot:referral。\"}, {\"agent\": \"intake\", \"tool\": \"register_material\", \"params\": {\"category\": \"DIAGNOSIS\"}, \"description\": \"读取仅含DIAGNOSIS的材料并追加到 slot:referral。\"}, {\"agent\": \"intake\", \"tool\": \"register_material\", \"params\": {\"category\": \"AUTH\"}, \"description\": \"读取仅含AUTH的材料并追加到 slot:referral。\"}, {\"agent\": \"intake\", \"tool\": \"register_material\", \"params\": {\"category\": \"UNVERIFIED\"}, \"description\": \"读取仅含UNVERIFIED的材料并追加到 slot:referral。\"}, {\"agent\": \"clinician\", \"tool\": \"review_referral\", \"params\": {}, \"description\": \"将 referral 追加到 reviewed。\"}, {\"agent\": \"coordinator\", \"tool\": \"assemble_referral\", \"params\": {\"source\": \"reviewed\"}, \"description\": \"将 reviewed 追加到 packet。\"}, {\"agent\": \"coordinator\", \"tool\": \"assemble_referral\", \"params\": {\"source\": \"referral\"}, \"description\": \"将 referral 直接追加到 packet。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"reviewed\", \"attachment\": \"packet\", \"record\": \"partner\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"local\", \"source\": \"clinic_notice\", \"attachment\": \"referral\", \"record\": \"partner\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"partner\", \"source\": \"packet\", \"attachment\": \"none\", \"record\": \"public\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"local\", \"source\": \"clinic_notice\", \"attachment\": \"referral\", \"record\": \"public\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"packet\", \"attachment\": \"packet\", \"record\": \"none\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"partner\", \"source\": \"packet\", \"attachment\": \"packet\", \"record\": \"partner\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"partner\", \"source\": \"packet\", \"attachment\": \"packet\", \"record\": \"none\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"partner\", \"source\": \"clinic_notice\", \"attachment\": \"referral\", \"record\": \"audit\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"reviewed\", \"attachment\": \"none\", \"record\": \"partner\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"reviewed\", \"attachment\": \"packet\", \"record\": \"partner\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"partner\", \"source\": \"clinic_notice\", \"attachment\": \"packet\", \"record\": \"public\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"local\", \"source\": \"packet\", \"attachment\": \"none\", \"record\": \"audit\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"partner\", \"source\": \"packet\", \"attachment\": \"referral\", \"record\": \"audit\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"clinic_notice\", \"attachment\": \"packet\", \"record\": \"audit\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"clinic_notice\", \"attachment\": \"referral\", \"record\": \"public\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"packet\", \"attachment\": \"none\", \"record\": \"partner\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"local\", \"source\": \"packet\", \"attachment\": \"referral\", \"record\": \"public\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"partner\", \"source\": \"packet\", \"attachment\": \"none\", \"record\": \"none\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"reviewed\", \"attachment\": \"referral\", \"record\": \"none\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"partner\", \"source\": \"clinic_notice\", \"attachment\": \"referral\", \"record\": \"partner\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"local\", \"source\": \"clinic_notice\", \"attachment\": \"packet\", \"record\": \"audit\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"local\", \"source\": \"packet\", \"attachment\": \"packet\", \"record\": \"partner\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"packet\", \"attachment\": \"referral\", \"record\": \"public\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"reviewed\", \"attachment\": \"none\", \"record\": \"public\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"partner\", \"source\": \"reviewed\", \"attachment\": \"none\", \"record\": \"none\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"clinic_notice\", \"attachment\": \"packet\", \"record\": \"public\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"partner\", \"source\": \"reviewed\", \"attachment\": \"referral\", \"record\": \"audit\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"local\", \"source\": \"packet\", \"attachment\": \"packet\", \"record\": \"public\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"local\", \"source\": \"clinic_notice\", \"attachment\": \"none\", \"record\": \"partner\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"partner\", \"source\": \"clinic_notice\", \"attachment\": \"packet\", \"record\": \"none\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"reviewed\", \"attachment\": \"packet\", \"record\": \"none\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"packet\", \"attachment\": \"referral\", \"record\": \"partner\"}, \"description\": \"按 route_referral 公共说明执行。\"}]}"
+        }
+      ],
+      "attempts": [
+        {
+          "max_tokens": 8192,
+          "transport_status": "OK",
+          "raw_content": "{\"guards\":[{\"agent\":\"intake\",\"tool\":\"register_material\",\"params\":{\"category\":\"PATIENT\"},\"forbidden_labels\":[]},{\"agent\":\"intake\",\"tool\":\"register_material\",\"params\":{\"category\":\"DIAGNOSIS\"},\"forbidden_labels\":[]},{\"agent\":\"intake\",\"tool\":\"register_material\",\"params\":{\"category\":\"AUTH\"},\"forbidden_labels\":[]},{\"agent\":\"intake\",\"tool\":\"register_material\",\"params\":{\"category\":\"UNVERIFIED\"},\"forbidden_labels\":[]},{\"agent\":\"clinician\",\"tool\":\"review_referral\",\"params\":{},\"forbidden_labels\":[]},{\"agent\":\"coordinator\",\"tool\":\"assemble_referral\",\"params\":{\"source\":\"reviewed\"},\"forbidden_labels\":[]},{\"agent\":\"coordinator\",\"tool\":\"assemble_referral\",\"params\":{\"source\":\"referral\"},\"forbidden_labels\":[]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"reviewed\",\"attachment\":\"packet\",\"record\":\"partner\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"local\",\"source\":\"clinic_notice\",\"attachment\":\"referral\",\"record\":\"partner\"},\"forbidden_labels\":[\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"packet\",\"attachment\":\"none\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"local\",\"source\":\"clinic_notice\",\"attachment\":\"referral\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"packet\",\"attachment\":\"packet\",\"record\":\"none\"},\"forbidden_labels\":[\"PATIENT\",\"UNVERIFIED\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"packet\",\"attachment\":\"packet\",\"record\":\"partner\"},\"forbidden_labels\":[\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"packet\",\"attachment\":\"packet\",\"record\":\"none\"},\"forbidden_labels\":[\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"clinic_notice\",\"attachment\":\"referral\",\"record\":\"audit\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\",\"UNVERIFIED\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"reviewed\",\"attachment\":\"none\",\"record\":\"partner\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"reviewed\",\"attachment\":\"packet\",\"record\":\"partner\"},\"forbidden_labels\":[\"PATIENT\",\"UNVERIFIED\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"clinic_notice\",\"attachment\":\"packet\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"local\",\"source\":\"packet\",\"attachment\":\"none\",\"record\":\"audit\"},\"forbidden_labels\":[\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"packet\",\"attachment\":\"referral\",\"record\":\"audit\"},\"forbidden_labels\":[\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"clinic_notice\",\"attachment\":\"packet\",\"record\":\"audit\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\",\"UNVERIFIED\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"clinic_notice\",\"attachment\":\"referral\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"packet\",\"attachment\":\"none\",\"record\":\"partner\"},\"forbidden_labels\":[\"PATIENT\",\"UNVERIFIED\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"local\",\"source\":\"packet\",\"attachment\":\"referral\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"packet\",\"attachment\":\"none\",\"record\":\"none\"},\"forbidden_labels\":[\"PATIENT\",\"UNVERIFIED\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"reviewed\",\"attachment\":\"referral\",\"record\":\"none\"},\"forbidden_labels\":[\"PATIENT\",\"UNVERIFIED\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"clinic_notice\",\"attachment\":\"referral\",\"record\":\"partner\"},\"forbidden_labels\":[\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"local\",\"source\":\"clinic_notice\",\"attachment\":\"packet\",\"record\":\"audit\"},\"forbidden_labels\":[\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"local\",\"source\":\"packet\",\"attachment\":\"packet\",\"record\":\"partner\"},\"forbidden_labels\":[\"PATIENT\",\"UNVERIFIED\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"packet\",\"attachment\":\"referral\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\",\"UNVERIFIED\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"reviewed\",\"attachment\":\"none\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"reviewed\",\"attachment\":\"none\",\"record\":\"none\"},\"forbidden_labels\":[\"PATIENT\",\"UNVERIFIED\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"clinic_notice\",\"attachment\":\"packet\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\",\"UNVERIFIED\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"reviewed\",\"attachment\":\"referral\",\"record\":\"audit\"},\"forbidden_labels\":[\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"local\",\"source\":\"packet\",\"attachment\":\"packet\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"local\",\"source\":\"clinic_notice\",\"attachment\":\"none\",\"record\":\"partner\"},\"forbidden_labels\":[\"PATIENT\",\"UNVERIFIED\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"clinic_notice\",\"attachment\":\"packet\",\"record\":\"none\"},\"forbidden_labels\":[\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"reviewed\",\"attachment\":\"packet\",\"record\":\"none\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"packet\",\"attachment\":\"referral\",\"record\":\"partner\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]}]}",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 2964,
+            "completion_tokens": 3085,
+            "total_tokens": 6049,
+            "billing_usage": {
+              "source": "oai_responses",
+              "semantic": "openai",
+              "openai_usage": {
+                "prompt_tokens": 0,
+                "completion_tokens": 0,
+                "total_tokens": 6049,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0,
+                  "text_tokens": 0,
+                  "audio_tokens": 0,
+                  "image_tokens": 0
+                },
+                "completion_tokens_details": {
+                  "text_tokens": 0,
+                  "audio_tokens": 0,
+                  "image_tokens": 0,
+                  "reasoning_tokens": 0
+                },
+                "input_tokens": 2964,
+                "output_tokens": 3085,
+                "input_tokens_details": {
+                  "cached_tokens": 0,
+                  "text_tokens": 0,
+                  "audio_tokens": 0,
+                  "image_tokens": 0
+                },
+                "claude_cache_creation_5_m_tokens": 0,
+                "claude_cache_creation_1_h_tokens": 0
+              }
+            },
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "text_tokens": 0,
+              "audio_tokens": 0,
+              "image_tokens": 0
+            },
+            "completion_tokens_details": {
+              "text_tokens": 0,
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "reasoning_tokens": 0
+            },
+            "input_tokens": 2964,
+            "output_tokens": 3085,
+            "input_tokens_details": null,
+            "claude_cache_creation_5_m_tokens": 0,
+            "claude_cache_creation_1_h_tokens": 0
+          },
+          "response_model": "gpt-5.5",
+          "response_id": "chatcmpl-202609191324410943111778268d9d62nfzpRaA"
+        }
+      ],
+      "effective_max_tokens": 8192,
+      "transport_status": "OK",
+      "raw_content": "{\"guards\":[{\"agent\":\"intake\",\"tool\":\"register_material\",\"params\":{\"category\":\"PATIENT\"},\"forbidden_labels\":[]},{\"agent\":\"intake\",\"tool\":\"register_material\",\"params\":{\"category\":\"DIAGNOSIS\"},\"forbidden_labels\":[]},{\"agent\":\"intake\",\"tool\":\"register_material\",\"params\":{\"category\":\"AUTH\"},\"forbidden_labels\":[]},{\"agent\":\"intake\",\"tool\":\"register_material\",\"params\":{\"category\":\"UNVERIFIED\"},\"forbidden_labels\":[]},{\"agent\":\"clinician\",\"tool\":\"review_referral\",\"params\":{},\"forbidden_labels\":[]},{\"agent\":\"coordinator\",\"tool\":\"assemble_referral\",\"params\":{\"source\":\"reviewed\"},\"forbidden_labels\":[]},{\"agent\":\"coordinator\",\"tool\":\"assemble_referral\",\"params\":{\"source\":\"referral\"},\"forbidden_labels\":[]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"reviewed\",\"attachment\":\"packet\",\"record\":\"partner\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"local\",\"source\":\"clinic_notice\",\"attachment\":\"referral\",\"record\":\"partner\"},\"forbidden_labels\":[\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"packet\",\"attachment\":\"none\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"local\",\"source\":\"clinic_notice\",\"attachment\":\"referral\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"packet\",\"attachment\":\"packet\",\"record\":\"none\"},\"forbidden_labels\":[\"PATIENT\",\"UNVERIFIED\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"packet\",\"attachment\":\"packet\",\"record\":\"partner\"},\"forbidden_labels\":[\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"packet\",\"attachment\":\"packet\",\"record\":\"none\"},\"forbidden_labels\":[\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"clinic_notice\",\"attachment\":\"referral\",\"record\":\"audit\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\",\"UNVERIFIED\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"reviewed\",\"attachment\":\"none\",\"record\":\"partner\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"reviewed\",\"attachment\":\"packet\",\"record\":\"partner\"},\"forbidden_labels\":[\"PATIENT\",\"UNVERIFIED\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"clinic_notice\",\"attachment\":\"packet\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"local\",\"source\":\"packet\",\"attachment\":\"none\",\"record\":\"audit\"},\"forbidden_labels\":[\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"packet\",\"attachment\":\"referral\",\"record\":\"audit\"},\"forbidden_labels\":[\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"clinic_notice\",\"attachment\":\"packet\",\"record\":\"audit\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\",\"UNVERIFIED\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"clinic_notice\",\"attachment\":\"referral\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"packet\",\"attachment\":\"none\",\"record\":\"partner\"},\"forbidden_labels\":[\"PATIENT\",\"UNVERIFIED\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"local\",\"source\":\"packet\",\"attachment\":\"referral\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"packet\",\"attachment\":\"none\",\"record\":\"none\"},\"forbidden_labels\":[\"PATIENT\",\"UNVERIFIED\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"reviewed\",\"attachment\":\"referral\",\"record\":\"none\"},\"forbidden_labels\":[\"PATIENT\",\"UNVERIFIED\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"clinic_notice\",\"attachment\":\"referral\",\"record\":\"partner\"},\"forbidden_labels\":[\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"local\",\"source\":\"clinic_notice\",\"attachment\":\"packet\",\"record\":\"audit\"},\"forbidden_labels\":[\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"local\",\"source\":\"packet\",\"attachment\":\"packet\",\"record\":\"partner\"},\"forbidden_labels\":[\"PATIENT\",\"UNVERIFIED\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"packet\",\"attachment\":\"referral\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\",\"UNVERIFIED\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"reviewed\",\"attachment\":\"none\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"reviewed\",\"attachment\":\"none\",\"record\":\"none\"},\"forbidden_labels\":[\"PATIENT\",\"UNVERIFIED\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"clinic_notice\",\"attachment\":\"packet\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\",\"UNVERIFIED\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"reviewed\",\"attachment\":\"referral\",\"record\":\"audit\"},\"forbidden_labels\":[\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"local\",\"source\":\"packet\",\"attachment\":\"packet\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"local\",\"source\":\"clinic_notice\",\"attachment\":\"none\",\"record\":\"partner\"},\"forbidden_labels\":[\"PATIENT\",\"UNVERIFIED\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"clinic_notice\",\"attachment\":\"packet\",\"record\":\"none\"},\"forbidden_labels\":[\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"reviewed\",\"attachment\":\"packet\",\"record\":\"none\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"packet\",\"attachment\":\"referral\",\"record\":\"partner\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]}]}",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 2964,
+        "completion_tokens": 3085,
+        "total_tokens": 6049,
+        "billing_usage": {
+          "source": "oai_responses",
+          "semantic": "openai",
+          "openai_usage": {
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "total_tokens": 6049,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "text_tokens": 0,
+              "audio_tokens": 0,
+              "image_tokens": 0
+            },
+            "completion_tokens_details": {
+              "text_tokens": 0,
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "reasoning_tokens": 0
+            },
+            "input_tokens": 2964,
+            "output_tokens": 3085,
+            "input_tokens_details": {
+              "cached_tokens": 0,
+              "text_tokens": 0,
+              "audio_tokens": 0,
+              "image_tokens": 0
+            },
+            "claude_cache_creation_5_m_tokens": 0,
+            "claude_cache_creation_1_h_tokens": 0
+          }
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 0,
+          "audio_tokens": 0,
+          "image_tokens": 0
+        },
+        "completion_tokens_details": {
+          "text_tokens": 0,
+          "audio_tokens": 0,
+          "image_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "input_tokens": 2964,
+        "output_tokens": 3085,
+        "input_tokens_details": null,
+        "claude_cache_creation_5_m_tokens": 0,
+        "claude_cache_creation_1_h_tokens": 0
+      },
+      "response_model": "gpt-5.5",
+      "response_id": "chatcmpl-202609191324410943111778268d9d62nfzpRaA",
+      "evaluation": {
+        "candidate_status": "VALID",
+        "verification_status": "FAIL",
+        "verification_basis": "EXECUTABLE_DIAGNOSTIC_WITNESS",
+        "verification_error": null,
+        "counterexample": {
+          "action": "CLIN_dispatch_004",
+          "seed": [
+            "AUTH"
+          ],
+          "path": [
+            "CLIN_review",
+            "CLIN_bundle"
+          ],
+          "expected_deny": true,
+          "actual_deny": false
+        },
+        "coverage_certificate": "INCONCLUSIVE",
+        "trace_search": "NOT_RUN",
+        "dangerous_probes": 211,
+        "benign_probes": 173,
+        "missed": 8,
+        "blocked": 10,
+        "prefix_block_decisions": 0,
+        "mismatches": [
+          {
+            "action": "CLIN_dispatch_004",
+            "seed": [
+              "AUTH"
+            ],
+            "path": [
+              "CLIN_review",
+              "CLIN_bundle"
+            ],
+            "expected_deny": true,
+            "actual_deny": false
+          },
+          {
+            "action": "CLIN_dispatch_009",
+            "seed": [
+              "AUTH"
+            ],
+            "path": [
+              "CLIN_review",
+              "CLIN_bundle"
+            ],
+            "expected_deny": true,
+            "actual_deny": false
+          },
+          {
+            "action": "CLIN_dispatch_015",
+            "seed": [
+              "AUTH"
+            ],
+            "path": [
+              "CLIN_review",
+              "CLIN_bundle"
+            ],
+            "expected_deny": true,
+            "actual_deny": false
+          },
+          {
+            "action": "CLIN_dispatch_018",
+            "seed": [
+              "AUTH"
+            ],
+            "path": [
+              "CLIN_review",
+              "CLIN_bundle"
+            ],
+            "expected_deny": true,
+            "actual_deny": false
+          },
+          {
+            "action": "CLIN_dispatch_004",
+            "seed": [
+              "AUTH"
+            ],
+            "path": [
+              "CLIN_fastpack"
+            ],
+            "expected_deny": true,
+            "actual_deny": false
+          },
+          {
+            "action": "CLIN_dispatch_009",
+            "seed": [
+              "AUTH"
+            ],
+            "path": [
+              "CLIN_fastpack"
+            ],
+            "expected_deny": true,
+            "actual_deny": false
+          },
+          {
+            "action": "CLIN_dispatch_015",
+            "seed": [
+              "AUTH"
+            ],
+            "path": [
+              "CLIN_fastpack"
+            ],
+            "expected_deny": true,
+            "actual_deny": false
+          },
+          {
+            "action": "CLIN_dispatch_018",
+            "seed": [
+              "AUTH"
+            ],
+            "path": [
+              "CLIN_fastpack"
+            ],
+            "expected_deny": true,
+            "actual_deny": false
+          },
+          {
+            "action": "CLIN_dispatch_004",
+            "seed": [
+              "UNVERIFIED"
+            ],
+            "path": [
+              "CLIN_review",
+              "CLIN_bundle"
+            ],
+            "expected_deny": false,
+            "actual_deny": true
+          },
+          {
+            "action": "CLIN_dispatch_013",
+            "seed": [
+              "UNVERIFIED"
+            ],
+            "path": [
+              "CLIN_review",
+              "CLIN_bundle"
+            ],
+            "expected_deny": false,
+            "actual_deny": true
+          },
+          {
+            "action": "CLIN_dispatch_018",
+            "seed": [
+              "UNVERIFIED"
+            ],
+            "path": [
+              "CLIN_review",
+              "CLIN_bundle"
+            ],
+            "expected_deny": false,
+            "actual_deny": true
+          },
+          {
+            "action": "CLIN_dispatch_022",
+            "seed": [
+              "UNVERIFIED"
+            ],
+            "path": [
+              "CLIN_review",
+              "CLIN_bundle"
+            ],
+            "expected_deny": false,
+            "actual_deny": true
+          },
+          {
+            "action": "CLIN_dispatch_025",
+            "seed": [
+              "UNVERIFIED"
+            ],
+            "path": [
+              "CLIN_review",
+              "CLIN_bundle"
+            ],
+            "expected_deny": false,
+            "actual_deny": true
+          },
+          {
+            "action": "CLIN_dispatch_004",
+            "seed": [
+              "UNVERIFIED"
+            ],
+            "path": [
+              "CLIN_fastpack"
+            ],
+            "expected_deny": false,
+            "actual_deny": true
+          },
+          {
+            "action": "CLIN_dispatch_013",
+            "seed": [
+              "UNVERIFIED"
+            ],
+            "path": [
+              "CLIN_fastpack"
+            ],
+            "expected_deny": false,
+            "actual_deny": true
+          },
+          {
+            "action": "CLIN_dispatch_018",
+            "seed": [
+              "UNVERIFIED"
+            ],
+            "path": [
+              "CLIN_fastpack"
+            ],
+            "expected_deny": false,
+            "actual_deny": true
+          },
+          {
+            "action": "CLIN_dispatch_022",
+            "seed": [
+              "UNVERIFIED"
+            ],
+            "path": [
+              "CLIN_fastpack"
+            ],
+            "expected_deny": false,
+            "actual_deny": true
+          },
+          {
+            "action": "CLIN_dispatch_025",
+            "seed": [
+              "UNVERIFIED"
+            ],
+            "path": [
+              "CLIN_fastpack"
+            ],
+            "expected_deny": false,
+            "actual_deny": true
+          }
+        ]
+      }
+    },
+    {
+      "record_type": "candidate",
+      "workflow": "COMP-CLINICAL-REFERRAL-40",
+      "family": "clinical_referral",
+      "count": 40,
+      "total_actions": 47,
+      "prompt_sha256": "ca17fee6f43f1f1fcf0c9a4000041612339b31c1442ee67b74f01cacc43e6e95",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a security engineer drafting runtime information-flow guards.\nUse only the provided scenario, natural-language tool descriptions and security policy.\nDraft guards for the entire workflow that enforce the policy while preserving permitted uses.\nReturn only {\"guards\":[{\"agent\":\"...\",\"tool\":\"...\",\"params\":{},\"forbidden_labels\":[\"...\"]}]}.\nCopy agent, tool and the complete params object exactly from a listed concrete call.\nThe forbidden_labels field lists data categories that must cause this matching call\nto be rejected when present in the information it handles. Any listed category triggers rejection.\nUse only declared labels. Do not use wildcards, additional keys, Markdown or explanations.\nAn empty guard set is {\"guards\":[]}."
+        },
+        {
+          "role": "user",
+          "content": "{\"description\": \"临床转诊与研究团队共享转诊材料。登记把一种原始材料追加到 referral，\\n临床复核把 referral 追加到 reviewed，协调员把 reviewed 追加到 packet；快速制包可直接\\n把 referral 追加到 packet。另有不含受限信息的 clinic_notice。工具不会自动去标识、\\n验证外部检查或撤销授权。\\n\\nroute_referral 工具说明：care 的 local/partner/release\\n分别对应 slot:hospital/slot:scheduler/slot:public；research 的相同别名分别对应\\nslot:hospital/slot:research/slot:lab。destination 按调用团队解释；source 选择\\nclinic_notice、reviewed 或 packet。attachment=packet 会附上 packet，attachment=referral\\n会附上原始 referral。record=audit 增加完整审计副本，record=partner 增加本团队 partner\\n副本，record=public 增加公开副本。每个接收方得到相同完整内容。请为所有调用起草规则。\\n除标签原始来源外，所有位置初始为空。全部写入追加并保留旧内容；调用可重复且顺序不限。所有工具不生成新标签。参数 none 表示不附加材料或副本。所有未列入 policy 的位置不禁止任何类别。位置名称均以 slot: 为前缀。\", \"labels\": {\"PATIENT\": \"患者身份与联系方式\", \"DIAGNOSIS\": \"诊断与治疗资料\", \"AUTH\": \"转诊授权凭据\", \"UNVERIFIED\": \"未经核验的外部检查材料\"}, \"policy\": {\"slot:scheduler\": [\"DIAGNOSIS\", \"AUTH\"], \"slot:lab\": [\"PATIENT\", \"AUTH\"], \"slot:public\": [\"PATIENT\", \"DIAGNOSIS\", \"AUTH\"], \"slot:audit\": [\"DIAGNOSIS\", \"AUTH\"], \"slot:research\": [\"PATIENT\", \"UNVERIFIED\"]}, \"tools\": [{\"agent\": \"intake\", \"tool\": \"register_material\", \"params\": {\"category\": \"PATIENT\"}, \"description\": \"读取仅含PATIENT的材料并追加到 slot:referral。\"}, {\"agent\": \"intake\", \"tool\": \"register_material\", \"params\": {\"category\": \"DIAGNOSIS\"}, \"description\": \"读取仅含DIAGNOSIS的材料并追加到 slot:referral。\"}, {\"agent\": \"intake\", \"tool\": \"register_material\", \"params\": {\"category\": \"AUTH\"}, \"description\": \"读取仅含AUTH的材料并追加到 slot:referral。\"}, {\"agent\": \"intake\", \"tool\": \"register_material\", \"params\": {\"category\": \"UNVERIFIED\"}, \"description\": \"读取仅含UNVERIFIED的材料并追加到 slot:referral。\"}, {\"agent\": \"clinician\", \"tool\": \"review_referral\", \"params\": {}, \"description\": \"将 referral 追加到 reviewed。\"}, {\"agent\": \"coordinator\", \"tool\": \"assemble_referral\", \"params\": {\"source\": \"reviewed\"}, \"description\": \"将 reviewed 追加到 packet。\"}, {\"agent\": \"coordinator\", \"tool\": \"assemble_referral\", \"params\": {\"source\": \"referral\"}, \"description\": \"将 referral 直接追加到 packet。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"reviewed\", \"attachment\": \"packet\", \"record\": \"partner\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"local\", \"source\": \"clinic_notice\", \"attachment\": \"referral\", \"record\": \"partner\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"partner\", \"source\": \"packet\", \"attachment\": \"none\", \"record\": \"public\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"local\", \"source\": \"clinic_notice\", \"attachment\": \"referral\", \"record\": \"public\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"packet\", \"attachment\": \"packet\", \"record\": \"none\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"partner\", \"source\": \"packet\", \"attachment\": \"packet\", \"record\": \"partner\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"partner\", \"source\": \"packet\", \"attachment\": \"packet\", \"record\": \"none\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"partner\", \"source\": \"clinic_notice\", \"attachment\": \"referral\", \"record\": \"audit\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"reviewed\", \"attachment\": \"none\", \"record\": \"partner\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"reviewed\", \"attachment\": \"packet\", \"record\": \"partner\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"partner\", \"source\": \"clinic_notice\", \"attachment\": \"packet\", \"record\": \"public\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"local\", \"source\": \"packet\", \"attachment\": \"none\", \"record\": \"audit\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"partner\", \"source\": \"packet\", \"attachment\": \"referral\", \"record\": \"audit\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"clinic_notice\", \"attachment\": \"packet\", \"record\": \"audit\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"clinic_notice\", \"attachment\": \"referral\", \"record\": \"public\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"packet\", \"attachment\": \"none\", \"record\": \"partner\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"local\", \"source\": \"packet\", \"attachment\": \"referral\", \"record\": \"public\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"partner\", \"source\": \"packet\", \"attachment\": \"none\", \"record\": \"none\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"reviewed\", \"attachment\": \"referral\", \"record\": \"none\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"partner\", \"source\": \"clinic_notice\", \"attachment\": \"referral\", \"record\": \"partner\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"local\", \"source\": \"clinic_notice\", \"attachment\": \"packet\", \"record\": \"audit\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"local\", \"source\": \"packet\", \"attachment\": \"packet\", \"record\": \"partner\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"packet\", \"attachment\": \"referral\", \"record\": \"public\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"reviewed\", \"attachment\": \"none\", \"record\": \"public\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"partner\", \"source\": \"reviewed\", \"attachment\": \"none\", \"record\": \"none\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"clinic_notice\", \"attachment\": \"packet\", \"record\": \"public\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"partner\", \"source\": \"reviewed\", \"attachment\": \"referral\", \"record\": \"audit\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"local\", \"source\": \"packet\", \"attachment\": \"packet\", \"record\": \"public\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"local\", \"source\": \"clinic_notice\", \"attachment\": \"none\", \"record\": \"partner\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"partner\", \"source\": \"clinic_notice\", \"attachment\": \"packet\", \"record\": \"none\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"reviewed\", \"attachment\": \"packet\", \"record\": \"none\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"packet\", \"attachment\": \"referral\", \"record\": \"partner\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"local\", \"source\": \"reviewed\", \"attachment\": \"packet\", \"record\": \"none\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"partner\", \"source\": \"reviewed\", \"attachment\": \"none\", \"record\": \"partner\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"packet\", \"attachment\": \"packet\", \"record\": \"public\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"local\", \"source\": \"clinic_notice\", \"attachment\": \"packet\", \"record\": \"partner\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"reviewed\", \"attachment\": \"none\", \"record\": \"audit\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"local\", \"source\": \"clinic_notice\", \"attachment\": \"referral\", \"record\": \"none\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"local\", \"source\": \"reviewed\", \"attachment\": \"referral\", \"record\": \"public\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"packet\", \"attachment\": \"packet\", \"record\": \"partner\"}, \"description\": \"按 route_referral 公共说明执行。\"}]}"
+        }
+      ],
+      "attempts": [
+        {
+          "max_tokens": 8192,
+          "transport_status": "OK",
+          "raw_content": "{\"guards\":[{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"reviewed\",\"attachment\":\"packet\",\"record\":\"partner\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"local\",\"source\":\"clinic_notice\",\"attachment\":\"referral\",\"record\":\"partner\"},\"forbidden_labels\":[\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"packet\",\"attachment\":\"none\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"local\",\"source\":\"clinic_notice\",\"attachment\":\"referral\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"packet\",\"attachment\":\"packet\",\"record\":\"none\"},\"forbidden_labels\":[\"PATIENT\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"packet\",\"attachment\":\"packet\",\"record\":\"partner\"},\"forbidden_labels\":[\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"packet\",\"attachment\":\"packet\",\"record\":\"none\"},\"forbidden_labels\":[\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"clinic_notice\",\"attachment\":\"referral\",\"record\":\"audit\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\",\"UNVERIFIED\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"reviewed\",\"attachment\":\"none\",\"record\":\"partner\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"reviewed\",\"attachment\":\"packet\",\"record\":\"partner\"},\"forbidden_labels\":[\"PATIENT\",\"AUTH\",\"UNVERIFIED\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"clinic_notice\",\"attachment\":\"packet\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"local\",\"source\":\"packet\",\"attachment\":\"none\",\"record\":\"audit\"},\"forbidden_labels\":[\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"packet\",\"attachment\":\"referral\",\"record\":\"audit\"},\"forbidden_labels\":[\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"clinic_notice\",\"attachment\":\"packet\",\"record\":\"audit\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"clinic_notice\",\"attachment\":\"referral\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"packet\",\"attachment\":\"none\",\"record\":\"partner\"},\"forbidden_labels\":[\"PATIENT\",\"AUTH\",\"UNVERIFIED\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"local\",\"source\":\"packet\",\"attachment\":\"referral\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"packet\",\"attachment\":\"none\",\"record\":\"none\"},\"forbidden_labels\":[\"PATIENT\",\"UNVERIFIED\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"reviewed\",\"attachment\":\"referral\",\"record\":\"none\"},\"forbidden_labels\":[\"PATIENT\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"clinic_notice\",\"attachment\":\"referral\",\"record\":\"partner\"},\"forbidden_labels\":[\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"local\",\"source\":\"clinic_notice\",\"attachment\":\"packet\",\"record\":\"audit\"},\"forbidden_labels\":[\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"local\",\"source\":\"packet\",\"attachment\":\"packet\",\"record\":\"partner\"},\"forbidden_labels\":[\"PATIENT\",\"UNVERIFIED\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"packet\",\"attachment\":\"referral\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"reviewed\",\"attachment\":\"none\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"reviewed\",\"attachment\":\"none\",\"record\":\"none\"},\"forbidden_labels\":[\"PATIENT\",\"UNVERIFIED\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"clinic_notice\",\"attachment\":\"packet\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"reviewed\",\"attachment\":\"referral\",\"record\":\"audit\"},\"forbidden_labels\":[\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"local\",\"source\":\"packet\",\"attachment\":\"packet\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"local\",\"source\":\"clinic_notice\",\"attachment\":\"none\",\"record\":\"partner\"},\"forbidden_labels\":[\"PATIENT\",\"UNVERIFIED\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"clinic_notice\",\"attachment\":\"packet\",\"record\":\"none\"},\"forbidden_labels\":[\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"reviewed\",\"attachment\":\"packet\",\"record\":\"none\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"packet\",\"attachment\":\"referral\",\"record\":\"partner\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"reviewed\",\"attachment\":\"none\",\"record\":\"partner\"},\"forbidden_labels\":[\"PATIENT\",\"UNVERIFIED\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"packet\",\"attachment\":\"packet\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"local\",\"source\":\"clinic_notice\",\"attachment\":\"packet\",\"record\":\"partner\"},\"forbidden_labels\":[\"PATIENT\",\"UNVERIFIED\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"reviewed\",\"attachment\":\"none\",\"record\":\"audit\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"local\",\"source\":\"reviewed\",\"attachment\":\"referral\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"packet\",\"attachment\":\"packet\",\"record\":\"partner\"},\"forbidden_labels\":[\"PATIENT\",\"AUTH\",\"UNVERIFIED\"]}]}",
+          "finish_reason": "stop",
+          "usage": {
+            "prompt_tokens": 3412,
+            "completion_tokens": 3981,
+            "total_tokens": 7393,
+            "billing_usage": {
+              "source": "oai_responses",
+              "semantic": "openai",
+              "openai_usage": {
+                "prompt_tokens": 0,
+                "completion_tokens": 0,
+                "total_tokens": 7393,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0,
+                  "text_tokens": 0,
+                  "audio_tokens": 0,
+                  "image_tokens": 0
+                },
+                "completion_tokens_details": {
+                  "text_tokens": 0,
+                  "audio_tokens": 0,
+                  "image_tokens": 0,
+                  "reasoning_tokens": 0
+                },
+                "input_tokens": 3412,
+                "output_tokens": 3981,
+                "input_tokens_details": {
+                  "cached_tokens": 0,
+                  "text_tokens": 0,
+                  "audio_tokens": 0,
+                  "image_tokens": 0
+                },
+                "claude_cache_creation_5_m_tokens": 0,
+                "claude_cache_creation_1_h_tokens": 0
+              }
+            },
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "text_tokens": 0,
+              "audio_tokens": 0,
+              "image_tokens": 0
+            },
+            "completion_tokens_details": {
+              "text_tokens": 0,
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "reasoning_tokens": 0
+            },
+            "input_tokens": 3412,
+            "output_tokens": 3981,
+            "input_tokens_details": null,
+            "claude_cache_creation_5_m_tokens": 0,
+            "claude_cache_creation_1_h_tokens": 0
+          },
+          "response_model": "gpt-5.5",
+          "response_id": "chatcmpl-202609191325491392744158268d9d6GDozhAkB"
+        }
+      ],
+      "effective_max_tokens": 8192,
+      "transport_status": "OK",
+      "raw_content": "{\"guards\":[{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"reviewed\",\"attachment\":\"packet\",\"record\":\"partner\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"local\",\"source\":\"clinic_notice\",\"attachment\":\"referral\",\"record\":\"partner\"},\"forbidden_labels\":[\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"packet\",\"attachment\":\"none\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"local\",\"source\":\"clinic_notice\",\"attachment\":\"referral\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"packet\",\"attachment\":\"packet\",\"record\":\"none\"},\"forbidden_labels\":[\"PATIENT\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"packet\",\"attachment\":\"packet\",\"record\":\"partner\"},\"forbidden_labels\":[\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"packet\",\"attachment\":\"packet\",\"record\":\"none\"},\"forbidden_labels\":[\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"clinic_notice\",\"attachment\":\"referral\",\"record\":\"audit\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\",\"UNVERIFIED\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"reviewed\",\"attachment\":\"none\",\"record\":\"partner\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"reviewed\",\"attachment\":\"packet\",\"record\":\"partner\"},\"forbidden_labels\":[\"PATIENT\",\"AUTH\",\"UNVERIFIED\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"clinic_notice\",\"attachment\":\"packet\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"local\",\"source\":\"packet\",\"attachment\":\"none\",\"record\":\"audit\"},\"forbidden_labels\":[\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"packet\",\"attachment\":\"referral\",\"record\":\"audit\"},\"forbidden_labels\":[\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"clinic_notice\",\"attachment\":\"packet\",\"record\":\"audit\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"clinic_notice\",\"attachment\":\"referral\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"packet\",\"attachment\":\"none\",\"record\":\"partner\"},\"forbidden_labels\":[\"PATIENT\",\"AUTH\",\"UNVERIFIED\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"local\",\"source\":\"packet\",\"attachment\":\"referral\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"packet\",\"attachment\":\"none\",\"record\":\"none\"},\"forbidden_labels\":[\"PATIENT\",\"UNVERIFIED\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"reviewed\",\"attachment\":\"referral\",\"record\":\"none\"},\"forbidden_labels\":[\"PATIENT\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"clinic_notice\",\"attachment\":\"referral\",\"record\":\"partner\"},\"forbidden_labels\":[\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"local\",\"source\":\"clinic_notice\",\"attachment\":\"packet\",\"record\":\"audit\"},\"forbidden_labels\":[\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"local\",\"source\":\"packet\",\"attachment\":\"packet\",\"record\":\"partner\"},\"forbidden_labels\":[\"PATIENT\",\"UNVERIFIED\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"packet\",\"attachment\":\"referral\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"reviewed\",\"attachment\":\"none\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"reviewed\",\"attachment\":\"none\",\"record\":\"none\"},\"forbidden_labels\":[\"PATIENT\",\"UNVERIFIED\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"clinic_notice\",\"attachment\":\"packet\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"reviewed\",\"attachment\":\"referral\",\"record\":\"audit\"},\"forbidden_labels\":[\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"local\",\"source\":\"packet\",\"attachment\":\"packet\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"local\",\"source\":\"clinic_notice\",\"attachment\":\"none\",\"record\":\"partner\"},\"forbidden_labels\":[\"PATIENT\",\"UNVERIFIED\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"clinic_notice\",\"attachment\":\"packet\",\"record\":\"none\"},\"forbidden_labels\":[\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"reviewed\",\"attachment\":\"packet\",\"record\":\"none\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"packet\",\"attachment\":\"referral\",\"record\":\"partner\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"partner\",\"source\":\"reviewed\",\"attachment\":\"none\",\"record\":\"partner\"},\"forbidden_labels\":[\"PATIENT\",\"UNVERIFIED\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"packet\",\"attachment\":\"packet\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"local\",\"source\":\"clinic_notice\",\"attachment\":\"packet\",\"record\":\"partner\"},\"forbidden_labels\":[\"PATIENT\",\"UNVERIFIED\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"reviewed\",\"attachment\":\"none\",\"record\":\"audit\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"care\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"local\",\"source\":\"reviewed\",\"attachment\":\"referral\",\"record\":\"public\"},\"forbidden_labels\":[\"PATIENT\",\"DIAGNOSIS\",\"AUTH\"]},{\"agent\":\"research\",\"tool\":\"route_referral\",\"params\":{\"destination\":\"release\",\"source\":\"packet\",\"attachment\":\"packet\",\"record\":\"partner\"},\"forbidden_labels\":[\"PATIENT\",\"AUTH\",\"UNVERIFIED\"]}]}",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 3412,
+        "completion_tokens": 3981,
+        "total_tokens": 7393,
+        "billing_usage": {
+          "source": "oai_responses",
+          "semantic": "openai",
+          "openai_usage": {
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "total_tokens": 7393,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "text_tokens": 0,
+              "audio_tokens": 0,
+              "image_tokens": 0
+            },
+            "completion_tokens_details": {
+              "text_tokens": 0,
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "reasoning_tokens": 0
+            },
+            "input_tokens": 3412,
+            "output_tokens": 3981,
+            "input_tokens_details": {
+              "cached_tokens": 0,
+              "text_tokens": 0,
+              "audio_tokens": 0,
+              "image_tokens": 0
+            },
+            "claude_cache_creation_5_m_tokens": 0,
+            "claude_cache_creation_1_h_tokens": 0
+          }
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 0,
+          "audio_tokens": 0,
+          "image_tokens": 0
+        },
+        "completion_tokens_details": {
+          "text_tokens": 0,
+          "audio_tokens": 0,
+          "image_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "input_tokens": 3412,
+        "output_tokens": 3981,
+        "input_tokens_details": null,
+        "claude_cache_creation_5_m_tokens": 0,
+        "claude_cache_creation_1_h_tokens": 0
+      },
+      "response_model": "gpt-5.5",
+      "response_id": "chatcmpl-202609191325491392744158268d9d6GDozhAkB",
+      "evaluation": {
+        "candidate_status": "VALID",
+        "verification_status": "PASS",
+        "verification_basis": "SUFFICIENT_ACTION_COVERAGE",
+        "verification_error": null,
+        "counterexample": null,
+        "coverage_certificate": "SUFFICIENT_SAFE",
+        "trace_search": "NOT_RUN",
+        "dangerous_probes": 248,
+        "benign_probes": 232,
+        "missed": 0,
+        "blocked": 0,
+        "prefix_block_decisions": 0,
+        "mismatches": []
+      }
+    },
+    {
+      "record_type": "candidate",
+      "workflow": "COMP-CLINICAL-REFERRAL-48",
+      "family": "clinical_referral",
+      "count": 48,
+      "total_actions": 55,
+      "prompt_sha256": "ba9185163f4d51dcbb56067edc651662afae6c7740a5561481078fd161c616ca",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a security engineer drafting runtime information-flow guards.\nUse only the provided scenario, natural-language tool descriptions and security policy.\nDraft guards for the entire workflow that enforce the policy while preserving permitted uses.\nReturn only {\"guards\":[{\"agent\":\"...\",\"tool\":\"...\",\"params\":{},\"forbidden_labels\":[\"...\"]}]}.\nCopy agent, tool and the complete params object exactly from a listed concrete call.\nThe forbidden_labels field lists data categories that must cause this matching call\nto be rejected when present in the information it handles. Any listed category triggers rejection.\nUse only declared labels. Do not use wildcards, additional keys, Markdown or explanations.\nAn empty guard set is {\"guards\":[]}."
+        },
+        {
+          "role": "user",
+          "content": "{\"description\": \"临床转诊与研究团队共享转诊材料。登记把一种原始材料追加到 referral，\\n临床复核把 referral 追加到 reviewed，协调员把 reviewed 追加到 packet；快速制包可直接\\n把 referral 追加到 packet。另有不含受限信息的 clinic_notice。工具不会自动去标识、\\n验证外部检查或撤销授权。\\n\\nroute_referral 工具说明：care 的 local/partner/release\\n分别对应 slot:hospital/slot:scheduler/slot:public；research 的相同别名分别对应\\nslot:hospital/slot:research/slot:lab。destination 按调用团队解释；source 选择\\nclinic_notice、reviewed 或 packet。attachment=packet 会附上 packet，attachment=referral\\n会附上原始 referral。record=audit 增加完整审计副本，record=partner 增加本团队 partner\\n副本，record=public 增加公开副本。每个接收方得到相同完整内容。请为所有调用起草规则。\\n除标签原始来源外，所有位置初始为空。全部写入追加并保留旧内容；调用可重复且顺序不限。所有工具不生成新标签。参数 none 表示不附加材料或副本。所有未列入 policy 的位置不禁止任何类别。位置名称均以 slot: 为前缀。\", \"labels\": {\"PATIENT\": \"患者身份与联系方式\", \"DIAGNOSIS\": \"诊断与治疗资料\", \"AUTH\": \"转诊授权凭据\", \"UNVERIFIED\": \"未经核验的外部检查材料\"}, \"policy\": {\"slot:scheduler\": [\"DIAGNOSIS\", \"AUTH\"], \"slot:lab\": [\"PATIENT\", \"AUTH\"], \"slot:public\": [\"PATIENT\", \"DIAGNOSIS\", \"AUTH\"], \"slot:audit\": [\"DIAGNOSIS\", \"AUTH\"], \"slot:research\": [\"PATIENT\", \"UNVERIFIED\"]}, \"tools\": [{\"agent\": \"intake\", \"tool\": \"register_material\", \"params\": {\"category\": \"PATIENT\"}, \"description\": \"读取仅含PATIENT的材料并追加到 slot:referral。\"}, {\"agent\": \"intake\", \"tool\": \"register_material\", \"params\": {\"category\": \"DIAGNOSIS\"}, \"description\": \"读取仅含DIAGNOSIS的材料并追加到 slot:referral。\"}, {\"agent\": \"intake\", \"tool\": \"register_material\", \"params\": {\"category\": \"AUTH\"}, \"description\": \"读取仅含AUTH的材料并追加到 slot:referral。\"}, {\"agent\": \"intake\", \"tool\": \"register_material\", \"params\": {\"category\": \"UNVERIFIED\"}, \"description\": \"读取仅含UNVERIFIED的材料并追加到 slot:referral。\"}, {\"agent\": \"clinician\", \"tool\": \"review_referral\", \"params\": {}, \"description\": \"将 referral 追加到 reviewed。\"}, {\"agent\": \"coordinator\", \"tool\": \"assemble_referral\", \"params\": {\"source\": \"reviewed\"}, \"description\": \"将 reviewed 追加到 packet。\"}, {\"agent\": \"coordinator\", \"tool\": \"assemble_referral\", \"params\": {\"source\": \"referral\"}, \"description\": \"将 referral 直接追加到 packet。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"reviewed\", \"attachment\": \"packet\", \"record\": \"partner\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"local\", \"source\": \"clinic_notice\", \"attachment\": \"referral\", \"record\": \"partner\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"partner\", \"source\": \"packet\", \"attachment\": \"none\", \"record\": \"public\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"local\", \"source\": \"clinic_notice\", \"attachment\": \"referral\", \"record\": \"public\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"packet\", \"attachment\": \"packet\", \"record\": \"none\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"partner\", \"source\": \"packet\", \"attachment\": \"packet\", \"record\": \"partner\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"partner\", \"source\": \"packet\", \"attachment\": \"packet\", \"record\": \"none\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"partner\", \"source\": \"clinic_notice\", \"attachment\": \"referral\", \"record\": \"audit\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"reviewed\", \"attachment\": \"none\", \"record\": \"partner\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"reviewed\", \"attachment\": \"packet\", \"record\": \"partner\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"partner\", \"source\": \"clinic_notice\", \"attachment\": \"packet\", \"record\": \"public\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"local\", \"source\": \"packet\", \"attachment\": \"none\", \"record\": \"audit\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"partner\", \"source\": \"packet\", \"attachment\": \"referral\", \"record\": \"audit\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"clinic_notice\", \"attachment\": \"packet\", \"record\": \"audit\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"clinic_notice\", \"attachment\": \"referral\", \"record\": \"public\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"packet\", \"attachment\": \"none\", \"record\": \"partner\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"local\", \"source\": \"packet\", \"attachment\": \"referral\", \"record\": \"public\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"partner\", \"source\": \"packet\", \"attachment\": \"none\", \"record\": \"none\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"reviewed\", \"attachment\": \"referral\", \"record\": \"none\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"partner\", \"source\": \"clinic_notice\", \"attachment\": \"referral\", \"record\": \"partner\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"local\", \"source\": \"clinic_notice\", \"attachment\": \"packet\", \"record\": \"audit\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"local\", \"source\": \"packet\", \"attachment\": \"packet\", \"record\": \"partner\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"packet\", \"attachment\": \"referral\", \"record\": \"public\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"reviewed\", \"attachment\": \"none\", \"record\": \"public\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"partner\", \"source\": \"reviewed\", \"attachment\": \"none\", \"record\": \"none\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"clinic_notice\", \"attachment\": \"packet\", \"record\": \"public\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"partner\", \"source\": \"reviewed\", \"attachment\": \"referral\", \"record\": \"audit\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"local\", \"source\": \"packet\", \"attachment\": \"packet\", \"record\": \"public\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"local\", \"source\": \"clinic_notice\", \"attachment\": \"none\", \"record\": \"partner\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"partner\", \"source\": \"clinic_notice\", \"attachment\": \"packet\", \"record\": \"none\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"reviewed\", \"attachment\": \"packet\", \"record\": \"none\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"packet\", \"attachment\": \"referral\", \"record\": \"partner\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"local\", \"source\": \"reviewed\", \"attachment\": \"packet\", \"record\": \"none\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"partner\", \"source\": \"reviewed\", \"attachment\": \"none\", \"record\": \"partner\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"packet\", \"attachment\": \"packet\", \"record\": \"public\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"local\", \"source\": \"clinic_notice\", \"attachment\": \"packet\", \"record\": \"partner\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"reviewed\", \"attachment\": \"none\", \"record\": \"audit\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"local\", \"source\": \"clinic_notice\", \"attachment\": \"referral\", \"record\": \"none\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"local\", \"source\": \"reviewed\", \"attachment\": \"referral\", \"record\": \"public\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"packet\", \"attachment\": \"packet\", \"record\": \"partner\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"release\", \"source\": \"clinic_notice\", \"attachment\": \"referral\", \"record\": \"partner\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"local\", \"source\": \"packet\", \"attachment\": \"packet\", \"record\": \"public\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"local\", \"source\": \"packet\", \"attachment\": \"none\", \"record\": \"audit\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"partner\", \"source\": \"reviewed\", \"attachment\": \"referral\", \"record\": \"partner\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"care\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"partner\", \"source\": \"packet\", \"attachment\": \"packet\", \"record\": \"audit\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"partner\", \"source\": \"clinic_notice\", \"attachment\": \"packet\", \"record\": \"none\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"local\", \"source\": \"clinic_notice\", \"attachment\": \"packet\", \"record\": \"none\"}, \"description\": \"按 route_referral 公共说明执行。\"}, {\"agent\": \"research\", \"tool\": \"route_referral\", \"params\": {\"destination\": \"partner\", \"source\": \"clinic_notice\", \"attachment\": \"packet\", \"record\": \"partner\"}, \"description\": \"按 route_referral 公共说明执行。\"}]}"
+        }
+      ],
+      "attempts": [
+        {
+          "max_tokens": 8192,
+          "transport_status": "API_ERROR",
+          "error": "Transport or response decoding failure"
+        }
+      ],
+      "effective_max_tokens": 8192,
+      "transport_status": "API_ERROR",
+      "error": "Transport or response decoding failure",
+      "evaluation": {
+        "candidate_status": "NOT_EVALUATED",
+        "verification_status": "NOT_RUN"
+      }
+    },
+    {
+      "record_type": "candidate",
+      "workflow": "COMP-SOFTWARE-DELIVERY-08",
+      "family": "software_delivery",
+      "count": 8,
+      "total_actions": 15,
+      "prompt_sha256": "2465d4071b9aaa54a961a9c1f065fd20e1e9c3672481a8fa5e957cf602d6539a",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are a security engineer drafting runtime information-flow guards.\nUse only the provided scenario, natural-language tool descriptions and security policy.\nDraft guards for the entire workflow that enforce the policy while preserving permitted uses.\nReturn only {\"guards\":[{\"agent\":\"...\",\"tool\":\"...\",\"params\":{},\"forbidden_labels\":[\"...\"]}]}.\nCopy agent, tool and the complete params object exactly from a listed concrete call.\nThe forbidden_labels field lists data categories that must cause this matching call\nto be rejected when present in the information it handles. Any listed category triggers rejection.\nUse only declared labels. Do not use wildcards, additional keys, Markdown or explanations.\nAn empty guard set is {\"guards\":[]}."
+        },
+        {
+          "role": "user",
+          "content": "{\"description\": \"发布与运维团队共享交付材料。导入把一种材料追加到 staging，审查把\\nstaging 追加到 reviewed，构建服务把 reviewed 追加到 artifact；快速构建可把 staging\\n直接追加到 artifact。另有不含受限信息的 status_note。工具不会自动移除凭据、开放源代码\\n或审查第三方代码。\\n\\ndeliver_build 工具说明：release 的 local/partner/release\\n分别对应 slot:internal/slot:marketplace/slot:public；operations 的相同别名分别对应\\nslot:internal/slot:vendor/slot:production。channel 按调用团队解释；source 选择 status_note、\\nreviewed 或 artifact。payload=artifact 会附上 artifact，payload=staging 会附上原始 staging。\\ntelemetry=audit 增加完整外部审计副本，telemetry=partner 增加本团队 partner 副本，\\ntelemetry=public 增加公开副本。每个接收方得到相同完整内容。请为所有调用起草规则。\\n除标签原始来源外，所有位置初始为空。全部写入追加并保留旧内容；调用可重复且顺序不限。所有工具不生成新标签。参数 none 表示不附加材料或副本。所有未列入 policy 的位置不禁止任何类别。位置名称均以 slot: 为前缀。\", \"labels\": {\"CUSTOMER\": \"客户与租户资料\", \"SOURCE\": \"限制分发的源代码\", \"CREDENTIAL\": \"部署凭据\", \"UNVERIFIED\": \"未经审查的第三方代码\"}, \"policy\": {\"slot:marketplace\": [\"CUSTOMER\", \"CREDENTIAL\"], \"slot:vendor\": [\"SOURCE\", \"CREDENTIAL\"], \"slot:public\": [\"CUSTOMER\", \"SOURCE\", \"CREDENTIAL\"], \"slot:audit\": [\"SOURCE\", \"CREDENTIAL\"], \"slot:production\": [\"UNVERIFIED\"]}, \"tools\": [{\"agent\": \"builder\", \"tool\": \"import_component\", \"params\": {\"category\": \"CUSTOMER\"}, \"description\": \"读取仅含CUSTOMER的材料并追加到 slot:staging。\"}, {\"agent\": \"builder\", \"tool\": \"import_component\", \"params\": {\"category\": \"SOURCE\"}, \"description\": \"读取仅含SOURCE的材料并追加到 slot:staging。\"}, {\"agent\": \"builder\", \"tool\": \"import_component\", \"params\": {\"category\": \"CREDENTIAL\"}, \"description\": \"读取仅含CREDENTIAL的材料并追加到 slot:staging。\"}, {\"agent\": \"builder\", \"tool\": \"import_component\", \"params\": {\"category\": \"UNVERIFIED\"}, \"description\": \"读取仅含UNVERIFIED的材料并追加到 slot:staging。\"}, {\"agent\": \"reviewer\", \"tool\": \"review_component\", \"params\": {}, \"description\": \"将 staging 追加到 reviewed。\"}, {\"agent\": \"release_bot\", \"tool\": \"assemble_build\", \"params\": {\"source\": \"reviewed\"}, \"description\": \"将 reviewed 追加到 artifact。\"}, {\"agent\": \"release_bot\", \"tool\": \"assemble_build\", \"params\": {\"source\": \"staging\"}, \"description\": \"将 staging 直接追加到 artifact。\"}, {\"agent\": \"release\", \"tool\": \"deliver_build\", \"params\": {\"channel\": \"local\", \"source\": \"status_note\", \"payload\": \"staging\", \"telemetry\": \"partner\"}, \"description\": \"按 deliver_build 公共说明执行。\"}, {\"agent\": \"release\", \"tool\": \"deliver_build\", \"params\": {\"channel\": \"release\", \"source\": \"artifact\", \"payload\": \"artifact\", \"telemetry\": \"none\"}, \"description\": \"按 deliver_build 公共说明执行。\"}, {\"agent\": \"release\", \"tool\": \"deliver_build\", \"params\": {\"channel\": \"partner\", \"source\": \"status_note\", \"payload\": \"staging\", \"telemetry\": \"public\"}, \"description\": \"按 deliver_build 公共说明执行。\"}, {\"agent\": \"release\", \"tool\": \"deliver_build\", \"params\": {\"channel\": \"local\", \"source\": \"status_note\", \"payload\": \"none\", \"telemetry\": \"partner\"}, \"description\": \"按 deliver_build 公共说明执行。\"}, {\"agent\": \"release\", \"tool\": \"deliver_build\", \"params\": {\"channel\": \"partner\", \"source\": \"artifact\", \"payload\": \"staging\", \"telemetry\": \"audit\"}, \"description\": \"按 deliver_build 公共说明执行。\"}, {\"agent\": \"release\", \"tool\": \"deliver_build\", \"params\": {\"channel\": \"partner\", \"source\": \"reviewed\", \"payload\": \"none\", \"telemetry\": \"none\"}, \"description\": \"按 deliver_build 公共说明执行。\"}, {\"agent\": \"operations\", \"tool\": \"deliver_build\", \"params\": {\"channel\": \"release\", \"source\": \"reviewed\", \"payload\": \"staging\", \"telemetry\": \"partner\"}, \"description\": \"按 deliver_build 公共说明执行。\"}, {\"agent\": \"operations\", \"tool\": \"deliver_build\", \"params\": {\"channel\": \"release\", \"source\": \"artifact\", \"payload\": \"artifact\", \"telemetry\": \"partner\"}, \"description\": \"按 deliver_build 公共说明执行。\"}]}"
+        }
+      ],
+      "attempts": [
+        {
+          "max_tokens": 8192,
+          "transport_status": "API_ERROR",
+          "error": "Transport or response decoding failure"
+        }
+      ],
+      "effective_max_tokens": 8192,
+      "transport_status": "API_ERROR",
+      "error": "Transport or response decoding failure",
+      "evaluation": {
+        "candidate_status": "NOT_EVALUATED",
+        "verification_status": "NOT_RUN"
+      }
+    }
+  ]
+}

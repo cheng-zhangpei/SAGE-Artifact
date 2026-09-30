@@ -42,6 +42,8 @@ Create an environment and install the package:
 
 ```bash
 python -m venv .venv
+# Windows PowerShell: .venv\Scripts\Activate.ps1
+# POSIX shell: source .venv/bin/activate
 python -m pip install -e ".[dev]"
 ```
 
@@ -54,6 +56,8 @@ Run the principal offline checks:
 python -m pytest sage/v2/tests benchmarks/everyday_workflows integrations/physical72 -q
 python -m benchmarks.everyday_workflows.validate
 python -m benchmarks.everyday_workflows.composition_suite validate
+python -m benchmarks.everyday_workflows.audit_frozen_composition \
+  --output output/authoring_coverage_recomputed.json
 python experiments/agentspec_native_pilot/summarize_results.py \
   --output artifacts/fse2027/agentspec_mimo72
 python -m experiments.fides_native_pilot.matched_probe_evaluate --output artifacts/fse2027/fides_mimo72
@@ -87,5 +91,4 @@ taint-bearing benchmark fixtures and have no external validity.
 The repository is prepared for double-anonymous review. Please use the
 anonymous review URL supplied in the paper rather than attempting to identify
 the authors or the source repository.
-
 
