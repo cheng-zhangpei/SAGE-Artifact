@@ -81,6 +81,14 @@ online experiments, and the location of every frozen result. The committed
 model responses make the paper-facing analyses reproducible without paid API
 calls.
 
+For guard authoring, the [AgentSpec protocol](experiments/agentspec_native_pilot/PROTOCOL.md)
+documents the pilot and full-run settings. The [matched-interface audit](artifacts/fse2027/CROSS_RUNTIME_MATCHED_REPORT.md)
+reports the shared settings and evaluation checks. Retained prompts, responses,
+and run configurations are provided with the [authoring records](artifacts/fse2027/authoring72/raw/).
+Use the configuration of the relevant retained run: pilot budgets and recovery
+runs may differ. API model identifiers are those recorded by the provider;
+they do not establish an immutable model snapshot.
+
 ## Integrity and anonymity
 
 `artifacts/fse2027/SHA256SUMS` records SHA-256 digests for the frozen evidence.
@@ -91,4 +99,3 @@ taint-bearing benchmark fixtures and have no external validity.
 The repository is prepared for double-anonymous review. Please use the
 anonymous review URL supplied in the paper rather than attempting to identify
 the authors or the source repository.
-
